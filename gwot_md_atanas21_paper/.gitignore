@@ -1,0 +1,7 @@
+processed_h5_*.tar.bz2
+processed_h5_*.tar.bz2.part
+neuropal_label_*.json.bz2
+official_h5/
+data_paper_snapshot_*/
+atanas21_gwot_md_paper_h*/
+atanas21_paper_top5/

@@ -1,0 +1,77 @@
+{
+  "protocol_id": "unified_main_benchmark_cv5_seed42_v1",
+  "canonical_manifest": "runs/unified_main_benchmark_cv5_seed42_v1/canonical_fold_manifest.csv",
+  "canonical_manifest_sha256": "7da5fe83c35e07788e401d3746c306ef4b38748dc0ed2affa7e90fec7bab00a6",
+  "fold_roots": {
+    "atanas": "Data/Atanas_SF_unified_000776/cv5_grouped_v1",
+    "rld": "Data/Dunn_001623/cv5_grouped_v1"
+  },
+  "fold_counts": {
+    "atanas": {
+      "0": {
+        "train": 22,
+        "val": 8,
+        "test": 8
+      },
+      "1": {
+        "train": 22,
+        "val": 8,
+        "test": 8
+      },
+      "2": {
+        "train": 23,
+        "val": 7,
+        "test": 8
+      },
+      "3": {
+        "train": 24,
+        "val": 7,
+        "test": 7
+      },
+      "4": {
+        "train": 23,
+        "val": 8,
+        "test": 7
+      }
+    },
+    "rld": {
+      "0": {
+        "train": 57,
+        "val": 19,
+        "test": 19
+      },
+      "1": {
+        "train": 57,
+        "val": 19,
+        "test": 19
+      },
+      "2": {
+        "train": 57,
+        "val": 19,
+        "test": 19
+      },
+      "3": {
+        "train": 57,
+        "val": 19,
+        "test": 19
+      },
+      "4": {
+        "train": 57,
+        "val": 19,
+        "test": 19
+      }
+    }
+  },
+  "learned_method_seed": 42,
+  "deterministic_method_seed": null,
+  "aggregation": "unweighted mean and sample SD over exactly five fold-level values",
+  "publication_gate": "all five artifact audit cells must be PASS; REVIEW/MISSING/FAIL cells are excluded",
+  "legacy_exclusion": "runs/fair_identity_medoid_template_v1/cv5x3_summary/cells.csv is forbidden as a formal-table source",
+  "reference_rule": "single-specimen references are selected from outer train only; CPD/fDNC/NuCLR use the separately frozen canonical medoid UIDs, while methods with locked native preprocessing record their method-native train medoid",
+  "method_specific": {
+    "StatAtlas": "official geometry-only adaptation; deterministic/no model seed; statistical atlas fit on outer train only; validation and test labels excluded from atlas construction",
+    "CRF_ID": "official MATLAB relational-atlas method; seed 42 fixes RNG; relational atlas fit on outer train only; validation may tune fixed hyperparameters; test labels are evaluation-only",
+    "GWOT-MD": "seed 42 fixes stochastic initialization/teacher sampling; all fitting and hyperparameter selection use outer train/validation only; formal metrics are from held-out test subjects",
+    "GWOT-MD (our adaptation)": "same canonical folds and seed 42; any Appendix-F teacher/hyperparameter selection is confined to outer train/validation; formal metrics are from held-out test subjects"
+  }
+}

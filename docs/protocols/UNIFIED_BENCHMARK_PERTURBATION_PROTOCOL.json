@@ -1,0 +1,72 @@
+{
+  "protocol_id": "unified_benchmark_perturbation_cv5_seed42_v1",
+  "status": "contract_locked_results_blocked",
+  "main_benchmark": {
+    "publication_status": "blocked_not_publishable",
+    "publication_allowed": false,
+    "blocking_reason": "Kato fDNC/NuCLR/GeoTransformer seed42 cells use old official folds, not the shared cv5_grouped_v1 membership",
+    "folds": 5,
+    "model_seed": 42,
+    "dataset_display_names": {
+      "atanas": "Atanas",
+      "rld": "Kato"
+    },
+    "reporting_unit": "one held-out biological fold",
+    "aggregation": "unweighted mean and sample standard deviation across five folds",
+    "ours_top1_percent": {
+      "atanas": {
+        "mean": 74.92,
+        "sample_sd": 8.26
+      },
+      "rld": {
+        "mean": 63.93,
+        "sample_sd": 4.61
+      }
+    }
+  },
+  "component_ablation": {
+    "same_cv5": true,
+    "model_seed": 42,
+    "required_gate": "Full arm reproduces the main Benchmark fold by fold"
+  },
+  "top1_mechanism": {
+    "source": "saved held-out predictions from the same CV5 x seed42 Benchmark runs",
+    "must_match": [
+      "fold membership",
+      "query cohort",
+      "candidate universe",
+      "evaluator"
+    ]
+  },
+  "robustness": {
+    "same_cv5_checkpoints": true,
+    "model_seed": 42,
+    "required_gate": "severity=0 reproduces the native Benchmark in every fold"
+  },
+  "scaling": {
+    "direct_benchmark_comparison_seed": 42,
+    "fixed_test_split_study": "separate protocol; no direct Benchmark-accuracy claim"
+  },
+  "deterministic_methods": {
+    "model_seed": null,
+    "required_folds": "exactly the same five fold memberships",
+    "artificial_seed_replication": false
+  },
+  "historical_cv5x3": {
+    "main_table_allowed": false,
+    "allowed_uses": [
+      "historical provenance",
+      "explicitly labelled supplementary stability check"
+    ],
+    "ours_top1_percent": {
+      "atanas": {
+        "mean": 74.24,
+        "sample_sd": 6.95
+      },
+      "rld": {
+        "mean": 63.14,
+        "sample_sd": 4.45
+      }
+    }
+  }
+}

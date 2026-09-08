@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "atanas",
+    "method": "CRF_ID",
+    "reason": "requires exactly five PASS cells",
+    "statuses": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ]
+  },
+  {
+    "dataset": "atanas",
+    "method": "GWOT-MD",
+    "reason": "requires exactly five PASS cells",
+    "statuses": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ]
+  },
+  {
+    "dataset": "atanas",
+    "method": "GWOT-MD (our adaptation)",
+    "reason": "requires exactly five PASS cells",
+    "statuses": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ]
+  },
+  {
+    "dataset": "rld",
+    "method": "CRF_ID",
+    "reason": "requires exactly five PASS cells",
+    "statuses": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ]
+  },
+  {
+    "dataset": "rld",
+    "method": "GWOT-MD",
+    "reason": "requires exactly five PASS cells",
+    "statuses": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ]
+  },
+  {
+    "dataset": "rld",
+    "method": "GWOT-MD (our adaptation)",
+    "reason": "requires exactly five PASS cells",
+    "statuses": [
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING",
+      "MISSING"
+    ]
+  }
+]

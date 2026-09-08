@@ -1,0 +1,29 @@
+{
+  "epsilon": 0.1,
+  "initial_plan_max_abs_delta": 0.0,
+  "initial_plans_elementwise_equal": true,
+  "objective_abs_delta": 1.1102230246251565e-16,
+  "official_gwtune": {
+    "iterations": 71,
+    "objective": 0.08798642395299489
+  },
+  "official_source_scope": "GWTune accepts one source and one target distance matrix; it is not GWOT-MD",
+  "paper_reimplementation": {
+    "converged": true,
+    "marginal_error": 1.3877787807814457e-17,
+    "objective": 0.087986423952995,
+    "outer_error": 3.0172086925136036e-10,
+    "outer_iterations": 71,
+    "sinkhorn_iterations_total": 781
+  },
+  "pass": true,
+  "pot_version": "0.9.4",
+  "scope": "Atanas h=0 single-relation boundary only",
+  "seed": 0,
+  "source": "2022-06-14-01",
+  "source_neurons": 109,
+  "target": "2022-06-14-07",
+  "target_neurons": 130,
+  "transport_frobenius_delta": 5.149533664511448e-17,
+  "transport_max_abs_delta": 2.927345865710862e-18
+}

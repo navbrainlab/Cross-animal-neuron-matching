@@ -1,0 +1,4 @@
+numpy>=1.24
+scipy>=1.10
+h5py>=3.8; python_version >= "3.8"
+# Install the CUDA-specific PyTorch build separately for --device cuda.

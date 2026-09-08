@@ -1,0 +1,73 @@
+{
+  "protocol_id": "canonical_annotation_cv5_test_v1",
+  "split": "test",
+  "missing_gt_policy": "incorrect",
+  "datasets": ["atanas", "rld"],
+  "folds": [0, 1, 2, 3, 4],
+  "reference_method": "Ours (Static)",
+  "methods": [
+    {
+      "name": "CPD",
+      "stochastic": false,
+      "seeds": [42],
+      "reference_reducer": "mean",
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/cpd/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
+    },
+    {
+      "name": "fDNC",
+      "stochastic": true,
+      "seeds": [1, 42, 123],
+      "reference_reducer": "mean",
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/fdnc/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
+    },
+    {
+      "name": "NuCLR",
+      "stochastic": true,
+      "seeds": [1, 42, 123],
+      "reference_reducer": "mean",
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/nuclr/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
+    },
+    {
+      "name": "GeoTransformer",
+      "stochastic": true,
+      "seeds": [1, 42, 123],
+      "reference_reducer": "mean",
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/geotransformer/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
+    },
+    {
+      "name": "RGM",
+      "stochastic": true,
+      "seeds": [1, 42, 123],
+      "reference_reducer": "mean",
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/rgm/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
+    },
+    {
+      "name": "Multi-modal Graph Transformer",
+      "stochastic": true,
+      "seeds": [1, 42, 123],
+      "reference_reducer": "mean",
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/multimodal_graph_transformer/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
+    },
+    {
+      "name": "Vanilla FGW",
+      "stochastic": false,
+      "seeds": [42],
+      "reference_reducer": "mean",
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/vanilla_fgw/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
+    },
+    {
+      "name": "Ours (Static)",
+      "stochastic": true,
+      "seeds": [1, 42, 123],
+      "reference_reducer": "mean",
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/ours_static/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
+    },
+    {
+      "name": "Ours (Dynamic)",
+      "stochastic": true,
+      "seeds": [1, 42, 123],
+      "reference_reducer": "mean",
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/ours_dynamic/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
+    }
+  ]
+}

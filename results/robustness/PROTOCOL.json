@@ -1,0 +1,48 @@
+{
+  "name": "RLD paired controlled robustness v2",
+  "publication_status": "audit_passed_ready_for_figure",
+  "dataset": "Data/Dunn_001623/cv5_grouped_v1",
+  "biological_folds": [0, 1, 2, 3, 4],
+  "model_seed": 42,
+  "test_worms_per_fold": 19,
+  "manifest": "corruptions/MANIFEST.json",
+  "manifest_sha256": "313f9b4fee0be98af9e8a4303c81ea32941ddfda570675ad7987bc87feec8271",
+  "methods": ["CPD", "fDNC", "NuCLR", "GeoTransformer", "Ours static Atlas"],
+  "corruption_draws": {
+    "severity_zero": [0],
+    "nonzero": [0, 1, 2]
+  },
+  "coordinate_noise": {
+    "levels": [0.0, 0.02, 0.05, 0.1, 0.2],
+    "definition": "independent zero-mean Gaussian XYZ noise with per-coordinate SD equal to level times the within-worm median pairwise Euclidean distance"
+  },
+  "missing_neurons": {
+    "levels": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
+    "definition": "retain max(2, round(N*(1-level))) rows using the manifest's deterministic source indices; slice every neuron-axis array identically"
+  },
+  "distractor_neurons": {
+    "levels": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
+    "definition": "append max(1, round(N*level)) valid population rows; XYZ sampled within the padded worm bounding box and activity sampled from a real row plus noise",
+    "input_contract": "valid_xyz_mask=true; supervision masks=false; rows enter inference and are excluded only from GT scoring"
+  },
+  "frozen_components": {
+    "train_and_validation_data": "unchanged clean split",
+    "checkpoint": "selected using clean validation only",
+    "template_or_atlas": "selected or constructed from clean outer training only",
+    "corruption_scope": "held-out test inputs only"
+  },
+  "metrics": {
+    "common_query_cohort": "the exact annotated/evaluable query rows stored in the corruption manifest; identical for every method; a query whose label is not representable by a method is retained and scored incorrect",
+    "top1": "correct predictions divided by surviving queries in the common manifest cohort",
+    "top5": "queries with the correct identity ranked at most five divided by surviving common-cohort queries; unrepresentable labels contribute zero",
+    "mrr": "sum of reciprocal correct-label ranks divided by surviving common-cohort queries; unrepresentable labels contribute zero",
+    "coverage": "surviving common-cohort queries divided by severity-zero common-cohort queries; therefore identical across methods for a fixed fold and draw",
+    "effective_top1": "correct predictions divided by severity-zero common-cohort queries; equivalently top1 times coverage",
+    "retention": "effective_top1 at severity divided by severity-zero top1",
+    "hungarian": "correct assignments divided by surviving eligible queries under the same candidate vocabulary"
+  },
+  "aggregation": "average corruption draws within each biological fold, then unweighted mean across five folds",
+  "uncertainty": "95% paired hierarchical bootstrap; resample biological folds, test animals within each sampled fold, and shared corruption-draw IDs; use the same resampling indices for every method",
+  "clean_gate": "before common-cohort rescoring, each method/fold native severity-zero replay must match its saved current-grouped seed42 clean result: query counts and discrete hit-rate metrics use atol=1e-12; MRR alone uses atol=5e-8 to permit CPU/GPU floating-point reduction differences",
+  "old_main_table_note": "The earlier 27.35% fDNC and 25.19% GeoTransformer summary used different fold families across methods. It is not the clean reference for this strictly paired experiment."
+}

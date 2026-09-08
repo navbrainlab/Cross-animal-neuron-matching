@@ -1,0 +1,133 @@
+{
+  "workspace": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official",
+  "policy": {
+    "third_party_source_editing_allowed": false,
+    "adapter_location": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/adapters",
+    "primary_metric": "direct per-query ranking Top-1 before Hungarian assignment",
+    "split_policy": "same locked worm-level outer folds as Ours; validation only for selection",
+    "detached_submodule_head_is_valid": true
+  },
+  "repositories": {
+    "fDNC": {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/third_party/fdnc_official",
+      "url": "https://github.com/XinweiYu/fDNC_Neuron_ID.git",
+      "role": "Position-only cross-animal correspondence; use official inference/model code.",
+      "exists": true,
+      "expected_files": {
+        "src/DNC_predict.py": true,
+        "requirements.txt": true,
+        "model": true
+      },
+      "commit": "cbd2b1b2e623c22fe1921562afed1967fe58e139",
+      "branch": "master",
+      "detached_head": false,
+      "dirty": false,
+      "is_submodule": false,
+      "superproject_worktree": ""
+    },
+    "WormID_NWBelegans": {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/third_party/wormid_official",
+      "url": "https://github.com/focolab/NWBelegans.git",
+      "role": "Official WormID analysis repository; use its pinned stat-atlas submodule.",
+      "exists": true,
+      "expected_files": {
+        "NWB_atlas.ipynb": true,
+        "stat-atlas": true,
+        ".gitmodules": true
+      },
+      "commit": "74e976ac80c38facd396dadbf2f35d913dd0ed6d",
+      "branch": "main",
+      "detached_head": false,
+      "dirty": false,
+      "is_submodule": false,
+      "superproject_worktree": ""
+    },
+    "Statistical_Atlas": {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/third_party/wormid_official/stat-atlas",
+      "url": "https://github.com/amin-nejat/stat-atlas.git",
+      "role": "Position-only statistical atlas implementation pinned by WormID repository.",
+      "exists": true,
+      "expected_files": {
+        "models.py": true,
+        "utils.py": true,
+        "demo.py": true
+      },
+      "commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+      "branch": "DETACHED",
+      "detached_head": true,
+      "dirty": false,
+      "is_submodule": true,
+      "superproject_worktree": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/third_party/wormid_official"
+    },
+    "NeurPIR": {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/third_party/neurpir_official",
+      "url": "https://github.com/ww20hust/NeurPIR.git",
+      "role": "Activity representation; use official encoder/VICReg implementation.",
+      "exists": true,
+      "expected_files": {
+        "src": true,
+        "configs": true,
+        "requirements.txt": true
+      },
+      "commit": "2653d97f79c3ec573973c3c226071156757af235",
+      "branch": "main",
+      "detached_head": false,
+      "dirty": false,
+      "is_submodule": false,
+      "superproject_worktree": ""
+    },
+    "NuCLR": {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/third_party/nuclr_official",
+      "url": "https://github.com/nerdslab/NuCLR.git",
+      "role": "Activity representation; use official NuCLR model/training/evaluation modules.",
+      "exists": true,
+      "expected_files": {
+        "src": true,
+        "configs": true,
+        "train.py": true,
+        "eval_scripts": true
+      },
+      "commit": "0fa409b304147ace00507063d44f03155691af62",
+      "branch": "main",
+      "detached_head": false,
+      "dirty": false,
+      "is_submodule": false,
+      "superproject_worktree": ""
+    },
+    "NeuPRINT": {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/third_party/neuprint_official",
+      "url": "https://github.com/lumimim/NeuPRINT.git",
+      "role": "Time-invariant neuron representation; use official dynamics model and embedding parameterization.",
+      "exists": true,
+      "expected_files": {
+        "neuprint.py": true,
+        "dynamical_models.py": true,
+        "loss_function.py": true,
+        "main.py": true
+      },
+      "commit": "c3cfddfb87b65d5d1f3aa3b3b75197e4dfccb018",
+      "branch": "main",
+      "detached_head": false,
+      "dirty": false,
+      "is_submodule": false,
+      "superproject_worktree": ""
+    },
+    "MulT": {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/third_party/mult_official",
+      "url": "https://github.com/yaohungt/Multimodal-Transformer.git",
+      "role": "Multimodal cross-modal Transformer; adapter may alter I/O/task head only.",
+      "exists": true,
+      "expected_files": {
+        "modules": true,
+        "src": true,
+        "main.py": true
+      },
+      "commit": "a670936824ee722c8494fd98d204977a1d663c7a",
+      "branch": "master",
+      "detached_head": false,
+      "dirty": false,
+      "is_submodule": false,
+      "superproject_worktree": ""
+    }
+  }
+}

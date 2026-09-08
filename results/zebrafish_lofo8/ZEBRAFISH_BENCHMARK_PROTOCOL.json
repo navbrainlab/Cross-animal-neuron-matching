@@ -1,0 +1,63 @@
+{
+  "dataset": "Zebrafish-Longitudinal",
+  "protocol": "8-fold leave-one-fish-out, one run per fold",
+  "folds": 8,
+  "random_seed_replicates": 1,
+  "learned_method_seed": 42,
+  "aggregation": "unweighted mean and sample standard deviation across 8 held-out-fish folds",
+  "sample_sd_ddof": 1,
+  "uncertainty_unit": "held-out fish (biological fold)",
+  "not_used_for_main_table": [
+    "standard deviation across random seeds",
+    "bootstrap confidence interval",
+    "query-weighted pooled mean"
+  ],
+  "methods": {
+    "CPD": {
+      "seed": null,
+      "deterministic": true,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "Euclidean": {
+      "seed": null,
+      "deterministic": true,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "fDNC": {
+      "seed": 42,
+      "deterministic": false,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "NuCLR": {
+      "seed": 42,
+      "deterministic": false,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "GeoTransformer": {
+      "seed": 42,
+      "deterministic": false,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "RGM": {
+      "seed": 42,
+      "deterministic": false,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "NGM-v2": {
+      "seed": 42,
+      "deterministic": false,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "Vanilla FGW": {
+      "seed": null,
+      "deterministic": true,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "Ours": {
+      "seed": 42,
+      "deterministic": false,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    }
+  },
+  "audit_status": "PASS"
+}

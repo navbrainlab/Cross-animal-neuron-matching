@@ -1,0 +1,1172 @@
+{
+  "method": "Vanilla FGW (POT)",
+  "protocol": "Zebrafish LOFO8",
+  "deterministic": true,
+  "folds": 8,
+  "selected_alpha": [
+    0.0,
+    0.5,
+    0.75,
+    0.0,
+    0.0,
+    0.0,
+    0.5,
+    0.25
+  ],
+  "top1": {
+    "mean": 0.8814393248741773,
+    "sd": 0.11136876984049798
+  },
+  "top5": {
+    "mean": 0.9999292986425339,
+    "sd": 0.00019997363721338944
+  },
+  "mrr": {
+    "mean": 0.9360380424118785,
+    "sd": 0.06433871976258045
+  },
+  "hungarian": {
+    "mean": 0.8783853681508755,
+    "sd": 0.11528136106643018
+  },
+  "fold_results": [
+    {
+      "fold": 1,
+      "selected_alpha": 0.0,
+      "expected_queries": 3536,
+      "query_audit_passed": true,
+      "test": {
+        "pairs": 16,
+        "queries": 3536,
+        "top1": 0.6620475113122172,
+        "top5": 0.9994343891402715,
+        "mrr": 0.8045343137254901,
+        "hungarian": 0.6532805429864253,
+        "pair_results": [
+          {
+            "pair_id": "func_20150410__gap60m__p000",
+            "q_candidates": 99,
+            "r_candidates": 105,
+            "queries": 198,
+            "top1": 0.51010101010101,
+            "top5": 1.0,
+            "mrr": 0.7015993265993267,
+            "hungarian": 0.5050505050505051
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p001",
+            "q_candidates": 100,
+            "r_candidates": 106,
+            "queries": 200,
+            "top1": 0.57,
+            "top5": 1.0,
+            "mrr": 0.7437500000000001,
+            "hungarian": 0.56
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p002",
+            "q_candidates": 101,
+            "r_candidates": 109,
+            "queries": 202,
+            "top1": 0.5198019801980198,
+            "top5": 1.0,
+            "mrr": 0.7175742574257428,
+            "hungarian": 0.504950495049505
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p003",
+            "q_candidates": 103,
+            "r_candidates": 111,
+            "queries": 206,
+            "top1": 0.6456310679611651,
+            "top5": 1.0,
+            "mrr": 0.7989482200647249,
+            "hungarian": 0.6310679611650486
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p004",
+            "q_candidates": 105,
+            "r_candidates": 112,
+            "queries": 210,
+            "top1": 0.7285714285714285,
+            "top5": 1.0,
+            "mrr": 0.8476190476190476,
+            "hungarian": 0.7142857142857143
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p005",
+            "q_candidates": 106,
+            "r_candidates": 115,
+            "queries": 212,
+            "top1": 0.7264150943396226,
+            "top5": 1.0,
+            "mrr": 0.8506289308176099,
+            "hungarian": 0.7169811320754716
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p006",
+            "q_candidates": 109,
+            "r_candidates": 115,
+            "queries": 218,
+            "top1": 0.8165137614678899,
+            "top5": 1.0,
+            "mrr": 0.9013761467889908,
+            "hungarian": 0.8073394495412844
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p007",
+            "q_candidates": 111,
+            "r_candidates": 116,
+            "queries": 222,
+            "top1": 0.7387387387387387,
+            "top5": 1.0,
+            "mrr": 0.8513513513513512,
+            "hungarian": 0.7207207207207207
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p008",
+            "q_candidates": 112,
+            "r_candidates": 116,
+            "queries": 224,
+            "top1": 0.7053571428571429,
+            "top5": 0.9955357142857143,
+            "mrr": 0.8364583333333331,
+            "hungarian": 0.6875
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p009",
+            "q_candidates": 115,
+            "r_candidates": 118,
+            "queries": 230,
+            "top1": 0.6695652173913044,
+            "top5": 1.0,
+            "mrr": 0.8157246376811592,
+            "hungarian": 0.6608695652173913
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p010",
+            "q_candidates": 115,
+            "r_candidates": 120,
+            "queries": 230,
+            "top1": 0.5217391304347826,
+            "top5": 1.0,
+            "mrr": 0.72463768115942,
+            "hungarian": 0.5217391304347826
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p011",
+            "q_candidates": 116,
+            "r_candidates": 122,
+            "queries": 232,
+            "top1": 0.49137931034482757,
+            "top5": 0.9956896551724138,
+            "mrr": 0.6890804597701148,
+            "hungarian": 0.49137931034482757
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p012",
+            "q_candidates": 116,
+            "r_candidates": 122,
+            "queries": 232,
+            "top1": 0.5,
+            "top5": 1.0,
+            "mrr": 0.6937499999999999,
+            "hungarian": 0.49137931034482757
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p013",
+            "q_candidates": 118,
+            "r_candidates": 122,
+            "queries": 236,
+            "top1": 0.614406779661017,
+            "top5": 1.0,
+            "mrr": 0.7842514124293782,
+            "hungarian": 0.6016949152542372
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p014",
+            "q_candidates": 120,
+            "r_candidates": 122,
+            "queries": 240,
+            "top1": 0.8,
+            "top5": 1.0,
+            "mrr": 0.8927083333333331,
+            "hungarian": 0.8
+          },
+          {
+            "pair_id": "func_20150410__gap60m__p015",
+            "q_candidates": 122,
+            "r_candidates": 122,
+            "queries": 244,
+            "top1": 0.9836065573770492,
+            "top5": 1.0,
+            "mrr": 0.9918032786885246,
+            "hungarian": 0.9836065573770492
+          }
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "selected_alpha": 0.5,
+      "expected_queries": 3954,
+      "query_audit_passed": true,
+      "test": {
+        "pairs": 18,
+        "queries": 3954,
+        "top1": 0.8457258472432979,
+        "top5": 1.0,
+        "mrr": 0.9199839824650142,
+        "hungarian": 0.8396560445118867,
+        "pair_results": [
+          {
+            "pair_id": "func_20150417__gap60m__p000",
+            "q_candidates": 106,
+            "r_candidates": 108,
+            "queries": 212,
+            "top1": 0.660377358490566,
+            "top5": 1.0,
+            "mrr": 0.8224842767295598,
+            "hungarian": 0.660377358490566
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p001",
+            "q_candidates": 107,
+            "r_candidates": 108,
+            "queries": 214,
+            "top1": 0.8457943925233645,
+            "top5": 1.0,
+            "mrr": 0.9190031152647973,
+            "hungarian": 0.8411214953271028
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p002",
+            "q_candidates": 108,
+            "r_candidates": 108,
+            "queries": 216,
+            "top1": 0.9629629629629629,
+            "top5": 1.0,
+            "mrr": 0.9814814814814815,
+            "hungarian": 0.9629629629629629
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p003",
+            "q_candidates": 108,
+            "r_candidates": 108,
+            "queries": 216,
+            "top1": 0.9537037037037037,
+            "top5": 1.0,
+            "mrr": 0.9768518518518519,
+            "hungarian": 0.9537037037037037
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p004",
+            "q_candidates": 108,
+            "r_candidates": 109,
+            "queries": 216,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p005",
+            "q_candidates": 108,
+            "r_candidates": 110,
+            "queries": 216,
+            "top1": 0.8240740740740741,
+            "top5": 1.0,
+            "mrr": 0.9043209876543209,
+            "hungarian": 0.8055555555555556
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p006",
+            "q_candidates": 108,
+            "r_candidates": 110,
+            "queries": 216,
+            "top1": 0.9120370370370371,
+            "top5": 1.0,
+            "mrr": 0.9560185185185185,
+            "hungarian": 0.8981481481481481
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p007",
+            "q_candidates": 108,
+            "r_candidates": 111,
+            "queries": 216,
+            "top1": 0.8425925925925926,
+            "top5": 1.0,
+            "mrr": 0.9185956790123457,
+            "hungarian": 0.8333333333333334
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p008",
+            "q_candidates": 109,
+            "r_candidates": 112,
+            "queries": 218,
+            "top1": 0.8348623853211009,
+            "top5": 1.0,
+            "mrr": 0.9132262996941896,
+            "hungarian": 0.8348623853211009
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p009",
+            "q_candidates": 110,
+            "r_candidates": 112,
+            "queries": 220,
+            "top1": 0.7727272727272727,
+            "top5": 1.0,
+            "mrr": 0.8837121212121213,
+            "hungarian": 0.7636363636363637
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p010",
+            "q_candidates": 110,
+            "r_candidates": 113,
+            "queries": 220,
+            "top1": 0.7227272727272728,
+            "top5": 1.0,
+            "mrr": 0.8587121212121211,
+            "hungarian": 0.7090909090909091
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p011",
+            "q_candidates": 111,
+            "r_candidates": 113,
+            "queries": 222,
+            "top1": 0.8738738738738738,
+            "top5": 1.0,
+            "mrr": 0.9369369369369369,
+            "hungarian": 0.8648648648648649
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p012",
+            "q_candidates": 112,
+            "r_candidates": 113,
+            "queries": 224,
+            "top1": 0.9955357142857143,
+            "top5": 1.0,
+            "mrr": 0.9977678571428571,
+            "hungarian": 0.9910714285714286
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p013",
+            "q_candidates": 112,
+            "r_candidates": 113,
+            "queries": 224,
+            "top1": 0.9910714285714286,
+            "top5": 1.0,
+            "mrr": 0.9944196428571429,
+            "hungarian": 0.9910714285714286
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p014",
+            "q_candidates": 113,
+            "r_candidates": 115,
+            "queries": 226,
+            "top1": 0.8185840707964602,
+            "top5": 1.0,
+            "mrr": 0.9078171091445428,
+            "hungarian": 0.8141592920353983
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p015",
+            "q_candidates": 113,
+            "r_candidates": 115,
+            "queries": 226,
+            "top1": 0.8097345132743363,
+            "top5": 1.0,
+            "mrr": 0.9033923303834809,
+            "hungarian": 0.8053097345132744
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p016",
+            "q_candidates": 113,
+            "r_candidates": 116,
+            "queries": 226,
+            "top1": 0.7123893805309734,
+            "top5": 1.0,
+            "mrr": 0.8543510324483775,
+            "hungarian": 0.7079646017699115
+          },
+          {
+            "pair_id": "func_20150417__gap60m__p017",
+            "q_candidates": 113,
+            "r_candidates": 117,
+            "queries": 226,
+            "top1": 0.6946902654867256,
+            "top5": 1.0,
+            "mrr": 0.8329646017699114,
+            "hungarian": 0.6814159292035398
+          }
+        ]
+      }
+    },
+    {
+      "fold": 3,
+      "selected_alpha": 0.75,
+      "expected_queries": 768,
+      "query_audit_passed": true,
+      "test": {
+        "pairs": 6,
+        "queries": 768,
+        "top1": 0.984375,
+        "top5": 1.0,
+        "mrr": 0.9921875,
+        "hungarian": 0.984375,
+        "pair_results": [
+          {
+            "pair_id": "func_20161004__gap60m__p000",
+            "q_candidates": 64,
+            "r_candidates": 64,
+            "queries": 128,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "func_20161004__gap60m__p001",
+            "q_candidates": 64,
+            "r_candidates": 64,
+            "queries": 128,
+            "top1": 0.96875,
+            "top5": 1.0,
+            "mrr": 0.984375,
+            "hungarian": 0.96875
+          },
+          {
+            "pair_id": "func_20161004__gap60m__p002",
+            "q_candidates": 64,
+            "r_candidates": 64,
+            "queries": 128,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "func_20161004__gap60m__p003",
+            "q_candidates": 64,
+            "r_candidates": 64,
+            "queries": 128,
+            "top1": 0.96875,
+            "top5": 1.0,
+            "mrr": 0.984375,
+            "hungarian": 0.96875
+          },
+          {
+            "pair_id": "func_20161004__gap60m__p004",
+            "q_candidates": 64,
+            "r_candidates": 64,
+            "queries": 128,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "func_20161004__gap60m__p005",
+            "q_candidates": 64,
+            "r_candidates": 64,
+            "queries": 128,
+            "top1": 0.96875,
+            "top5": 1.0,
+            "mrr": 0.984375,
+            "hungarian": 0.96875
+          }
+        ]
+      }
+    },
+    {
+      "fold": 4,
+      "selected_alpha": 0.0,
+      "expected_queries": 1820,
+      "query_audit_passed": true,
+      "test": {
+        "pairs": 13,
+        "queries": 1820,
+        "top1": 0.9,
+        "top5": 1.0,
+        "mrr": 0.95,
+        "hungarian": 0.9,
+        "pair_results": [
+          {
+            "pair_id": "islet_20170202__gap60m__p000",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.9428571428571428,
+            "top5": 1.0,
+            "mrr": 0.9714285714285714,
+            "hungarian": 0.9428571428571428
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p001",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.9142857142857143,
+            "top5": 1.0,
+            "mrr": 0.9571428571428572,
+            "hungarian": 0.9142857142857143
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p002",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.9714285714285714,
+            "top5": 1.0,
+            "mrr": 0.9857142857142858,
+            "hungarian": 0.9714285714285714
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p003",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.8,
+            "top5": 1.0,
+            "mrr": 0.9,
+            "hungarian": 0.8
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p004",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.8428571428571429,
+            "top5": 1.0,
+            "mrr": 0.9214285714285714,
+            "hungarian": 0.8428571428571429
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p005",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.7714285714285715,
+            "top5": 1.0,
+            "mrr": 0.8857142857142857,
+            "hungarian": 0.7714285714285715
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p006",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.8285714285714286,
+            "top5": 1.0,
+            "mrr": 0.9142857142857143,
+            "hungarian": 0.8285714285714286
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p007",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.8857142857142857,
+            "top5": 1.0,
+            "mrr": 0.9428571428571428,
+            "hungarian": 0.8857142857142857
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p008",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.9428571428571428,
+            "top5": 1.0,
+            "mrr": 0.9714285714285714,
+            "hungarian": 0.9428571428571428
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p009",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.9714285714285714,
+            "top5": 1.0,
+            "mrr": 0.9857142857142858,
+            "hungarian": 0.9714285714285714
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p010",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.9428571428571428,
+            "top5": 1.0,
+            "mrr": 0.9714285714285714,
+            "hungarian": 0.9428571428571428
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p011",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.9428571428571428,
+            "top5": 1.0,
+            "mrr": 0.9714285714285714,
+            "hungarian": 0.9428571428571428
+          },
+          {
+            "pair_id": "islet_20170202__gap60m__p012",
+            "q_candidates": 70,
+            "r_candidates": 70,
+            "queries": 140,
+            "top1": 0.9428571428571428,
+            "top5": 1.0,
+            "mrr": 0.9714285714285714,
+            "hungarian": 0.9428571428571428
+          }
+        ]
+      }
+    },
+    {
+      "fold": 5,
+      "selected_alpha": 0.0,
+      "expected_queries": 1464,
+      "query_audit_passed": true,
+      "test": {
+        "pairs": 12,
+        "queries": 1464,
+        "top1": 0.9508196721311475,
+        "top5": 1.0,
+        "mrr": 0.9754098360655737,
+        "hungarian": 0.9508196721311475,
+        "pair_results": [
+          {
+            "pair_id": "islet_20170216__gap60m__p000",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p001",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9672131147540983,
+            "top5": 1.0,
+            "mrr": 0.9836065573770492,
+            "hungarian": 0.9672131147540983
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p002",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9016393442622951,
+            "top5": 1.0,
+            "mrr": 0.9508196721311475,
+            "hungarian": 0.9016393442622951
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p003",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9016393442622951,
+            "top5": 1.0,
+            "mrr": 0.9508196721311475,
+            "hungarian": 0.9016393442622951
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p004",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9016393442622951,
+            "top5": 1.0,
+            "mrr": 0.9508196721311475,
+            "hungarian": 0.9016393442622951
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p005",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9344262295081968,
+            "top5": 1.0,
+            "mrr": 0.9672131147540983,
+            "hungarian": 0.9344262295081968
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p006",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9672131147540983,
+            "top5": 1.0,
+            "mrr": 0.9836065573770492,
+            "hungarian": 0.9672131147540983
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p007",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9344262295081968,
+            "top5": 1.0,
+            "mrr": 0.9672131147540983,
+            "hungarian": 0.9344262295081968
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p008",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9672131147540983,
+            "top5": 1.0,
+            "mrr": 0.9836065573770492,
+            "hungarian": 0.9672131147540983
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p009",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9672131147540983,
+            "top5": 1.0,
+            "mrr": 0.9836065573770492,
+            "hungarian": 0.9672131147540983
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p010",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9672131147540983,
+            "top5": 1.0,
+            "mrr": 0.9836065573770492,
+            "hungarian": 0.9672131147540983
+          },
+          {
+            "pair_id": "islet_20170216__gap60m__p011",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "fold": 6,
+      "selected_alpha": 0.0,
+      "expected_queries": 938,
+      "query_audit_passed": true,
+      "test": {
+        "pairs": 8,
+        "queries": 938,
+        "top1": 0.7878464818763327,
+        "top5": 1.0,
+        "mrr": 0.8858386638237384,
+        "hungarian": 0.7782515991471215,
+        "pair_results": [
+          {
+            "pair_id": "lineage_20160328__gap60m__p000",
+            "q_candidates": 57,
+            "r_candidates": 59,
+            "queries": 114,
+            "top1": 0.6666666666666666,
+            "top5": 1.0,
+            "mrr": 0.8230994152046784,
+            "hungarian": 0.6140350877192983
+          },
+          {
+            "pair_id": "lineage_20160328__gap60m__p001",
+            "q_candidates": 57,
+            "r_candidates": 60,
+            "queries": 114,
+            "top1": 0.5263157894736842,
+            "top5": 1.0,
+            "mrr": 0.7397660818713451,
+            "hungarian": 0.5263157894736842
+          },
+          {
+            "pair_id": "lineage_20160328__gap60m__p002",
+            "q_candidates": 57,
+            "r_candidates": 60,
+            "queries": 114,
+            "top1": 0.6228070175438597,
+            "top5": 1.0,
+            "mrr": 0.7953216374269007,
+            "hungarian": 0.6140350877192983
+          },
+          {
+            "pair_id": "lineage_20160328__gap60m__p003",
+            "q_candidates": 58,
+            "r_candidates": 61,
+            "queries": 116,
+            "top1": 0.8620689655172413,
+            "top5": 1.0,
+            "mrr": 0.9173850574712644,
+            "hungarian": 0.8620689655172413
+          },
+          {
+            "pair_id": "lineage_20160328__gap60m__p004",
+            "q_candidates": 59,
+            "r_candidates": 61,
+            "queries": 118,
+            "top1": 0.8559322033898306,
+            "top5": 1.0,
+            "mrr": 0.9279661016949152,
+            "hungarian": 0.847457627118644
+          },
+          {
+            "pair_id": "lineage_20160328__gap60m__p005",
+            "q_candidates": 60,
+            "r_candidates": 61,
+            "queries": 120,
+            "top1": 0.9166666666666666,
+            "top5": 1.0,
+            "mrr": 0.9583333333333334,
+            "hungarian": 0.9166666666666666
+          },
+          {
+            "pair_id": "lineage_20160328__gap60m__p006",
+            "q_candidates": 60,
+            "r_candidates": 61,
+            "queries": 120,
+            "top1": 0.8916666666666667,
+            "top5": 1.0,
+            "mrr": 0.9430555555555554,
+            "hungarian": 0.8833333333333333
+          },
+          {
+            "pair_id": "lineage_20160328__gap60m__p007",
+            "q_candidates": 61,
+            "r_candidates": 61,
+            "queries": 122,
+            "top1": 0.9344262295081968,
+            "top5": 1.0,
+            "mrr": 0.9672131147540983,
+            "hungarian": 0.9344262295081968
+          }
+        ]
+      }
+    },
+    {
+      "fold": 7,
+      "selected_alpha": 0.5,
+      "expected_queries": 2492,
+      "query_audit_passed": true,
+      "test": {
+        "pairs": 14,
+        "queries": 2492,
+        "top1": 0.9454253611556982,
+        "top5": 1.0,
+        "mrr": 0.9727126805778491,
+        "hungarian": 0.9454253611556982,
+        "pair_results": [
+          {
+            "pair_id": "lineage_20170111__gap60m__p000",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.8089887640449438,
+            "top5": 1.0,
+            "mrr": 0.9044943820224719,
+            "hungarian": 0.8089887640449438
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p001",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9213483146067416,
+            "top5": 1.0,
+            "mrr": 0.9606741573033708,
+            "hungarian": 0.9213483146067416
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p002",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9325842696629213,
+            "top5": 1.0,
+            "mrr": 0.9662921348314607,
+            "hungarian": 0.9325842696629213
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p003",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.8876404494382022,
+            "top5": 1.0,
+            "mrr": 0.9438202247191011,
+            "hungarian": 0.8876404494382022
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p004",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9325842696629213,
+            "top5": 1.0,
+            "mrr": 0.9662921348314607,
+            "hungarian": 0.9325842696629213
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p005",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9550561797752809,
+            "top5": 1.0,
+            "mrr": 0.9775280898876404,
+            "hungarian": 0.9550561797752809
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p006",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9550561797752809,
+            "top5": 1.0,
+            "mrr": 0.9775280898876404,
+            "hungarian": 0.9550561797752809
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p007",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9775280898876404,
+            "top5": 1.0,
+            "mrr": 0.9887640449438202,
+            "hungarian": 0.9775280898876404
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p008",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9775280898876404,
+            "top5": 1.0,
+            "mrr": 0.9887640449438202,
+            "hungarian": 0.9775280898876404
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p009",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p010",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p011",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9775280898876404,
+            "top5": 1.0,
+            "mrr": 0.9887640449438202,
+            "hungarian": 0.9775280898876404
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p012",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9550561797752809,
+            "top5": 1.0,
+            "mrr": 0.9775280898876404,
+            "hungarian": 0.9550561797752809
+          },
+          {
+            "pair_id": "lineage_20170111__gap60m__p013",
+            "q_candidates": 89,
+            "r_candidates": 89,
+            "queries": 178,
+            "top1": 0.9550561797752809,
+            "top5": 1.0,
+            "mrr": 0.9775280898876404,
+            "hungarian": 0.9550561797752809
+          }
+        ]
+      }
+    },
+    {
+      "fold": 8,
+      "selected_alpha": 0.25,
+      "expected_queries": 2184,
+      "query_audit_passed": true,
+      "test": {
+        "pairs": 14,
+        "queries": 2184,
+        "top1": 0.9752747252747253,
+        "top5": 1.0,
+        "mrr": 0.9876373626373627,
+        "hungarian": 0.9752747252747253,
+        "pair_results": [
+          {
+            "pair_id": "lineage_20170925__gap60m__p000",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 0.9102564102564102,
+            "top5": 1.0,
+            "mrr": 0.9551282051282052,
+            "hungarian": 0.9102564102564102
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p001",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 0.9487179487179487,
+            "top5": 1.0,
+            "mrr": 0.9743589743589743,
+            "hungarian": 0.9487179487179487
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p002",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 0.9487179487179487,
+            "top5": 1.0,
+            "mrr": 0.9743589743589743,
+            "hungarian": 0.9487179487179487
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p003",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p004",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 0.9743589743589743,
+            "top5": 1.0,
+            "mrr": 0.9871794871794872,
+            "hungarian": 0.9743589743589743
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p005",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p006",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p007",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 0.9743589743589743,
+            "top5": 1.0,
+            "mrr": 0.9871794871794872,
+            "hungarian": 0.9743589743589743
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p008",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 0.9743589743589743,
+            "top5": 1.0,
+            "mrr": 0.9871794871794872,
+            "hungarian": 0.9743589743589743
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p009",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 0.9743589743589743,
+            "top5": 1.0,
+            "mrr": 0.9871794871794872,
+            "hungarian": 0.9743589743589743
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p010",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 0.9743589743589743,
+            "top5": 1.0,
+            "mrr": 0.9871794871794872,
+            "hungarian": 0.9743589743589743
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p011",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 0.9743589743589743,
+            "top5": 1.0,
+            "mrr": 0.9871794871794872,
+            "hungarian": 0.9743589743589743
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p012",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          },
+          {
+            "pair_id": "lineage_20170925__gap60m__p013",
+            "q_candidates": 78,
+            "r_candidates": 78,
+            "queries": 156,
+            "top1": 1.0,
+            "top5": 1.0,
+            "mrr": 1.0,
+            "hungarian": 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

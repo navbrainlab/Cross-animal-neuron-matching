@@ -1,0 +1,153 @@
+{
+  "date_intersections": {
+    "train_test": [],
+    "train_val": [],
+    "val_test": []
+  },
+  "dates": {
+    "test": [
+      "2022-07-26",
+      "2022-08-02",
+      "2023-01-09",
+      "2023-01-18"
+    ],
+    "train": [
+      "2022-06-14",
+      "2022-06-28",
+      "2022-07-15",
+      "2022-07-20",
+      "2022-12-21",
+      "2023-01-13",
+      "2023-01-16",
+      "2023-01-17",
+      "2023-01-19",
+      "2023-01-23",
+      "2023-03-07"
+    ],
+    "val": [
+      "2023-01-05",
+      "2023-01-06",
+      "2023-01-10"
+    ]
+  },
+  "fold": 5,
+  "statistics": {
+    "test": {
+      "all_directed_worm_pairs": 42,
+      "all_unordered_worm_pairs": 21,
+      "clean_identity_per_worm": {
+        "max": 111,
+        "mean": 85.0,
+        "min": 51,
+        "sum": 595
+      },
+      "date_group_count": 4,
+      "directed_scorable_queries": 2472,
+      "shared_clean_identities_per_usable_pair": {
+        "max": 82,
+        "mean": 58.857142857142854,
+        "min": 32
+      },
+      "unique_clean_identity_union": 143,
+      "usable_directed_worm_pairs": 42,
+      "usable_pair_fraction": 1.0,
+      "usable_unordered_worm_pairs": 21,
+      "worm_count": 7
+    },
+    "train": {
+      "all_directed_worm_pairs": 600,
+      "all_unordered_worm_pairs": 300,
+      "clean_identity_per_worm": {
+        "max": 105,
+        "mean": 84.96,
+        "min": 60,
+        "sum": 2124
+      },
+      "date_group_count": 11,
+      "directed_scorable_queries": 35820,
+      "shared_clean_identities_per_usable_pair": {
+        "max": 79,
+        "mean": 59.7,
+        "min": 29
+      },
+      "unique_clean_identity_union": 157,
+      "usable_directed_worm_pairs": 600,
+      "usable_pair_fraction": 1.0,
+      "usable_unordered_worm_pairs": 300,
+      "worm_count": 25
+    },
+    "val": {
+      "all_directed_worm_pairs": 30,
+      "all_unordered_worm_pairs": 15,
+      "clean_identity_per_worm": {
+        "max": 95,
+        "mean": 85.0,
+        "min": 74,
+        "sum": 510
+      },
+      "date_group_count": 3,
+      "directed_scorable_queries": 1848,
+      "shared_clean_identities_per_usable_pair": {
+        "max": 75,
+        "mean": 61.6,
+        "min": 52
+      },
+      "unique_clean_identity_union": 133,
+      "usable_directed_worm_pairs": 30,
+      "usable_pair_fraction": 1.0,
+      "usable_unordered_worm_pairs": 15,
+      "worm_count": 6
+    }
+  },
+  "worm_ids": {
+    "test": [
+      "2022-07-26-01",
+      "2022-08-02-01",
+      "2023-01-09-08",
+      "2023-01-09-15",
+      "2023-01-09-22",
+      "2023-01-09-28",
+      "2023-01-18-01"
+    ],
+    "train": [
+      "2022-06-14-01",
+      "2022-06-14-07",
+      "2022-06-14-13",
+      "2022-06-28-01",
+      "2022-06-28-07",
+      "2022-07-15-06",
+      "2022-07-15-12",
+      "2022-07-20-01",
+      "2022-12-21-06",
+      "2023-01-13-07",
+      "2023-01-16-01",
+      "2023-01-16-08",
+      "2023-01-16-15",
+      "2023-01-16-22",
+      "2023-01-17-01",
+      "2023-01-17-07",
+      "2023-01-17-14",
+      "2023-01-19-08",
+      "2023-01-19-15",
+      "2023-01-19-22",
+      "2023-01-23-01",
+      "2023-01-23-08",
+      "2023-01-23-15",
+      "2023-01-23-21",
+      "2023-03-07-01"
+    ],
+    "val": [
+      "2023-01-05-01",
+      "2023-01-05-18",
+      "2023-01-06-01",
+      "2023-01-06-08",
+      "2023-01-10-07",
+      "2023-01-10-14"
+    ]
+  },
+  "worm_intersections": {
+    "train_test": [],
+    "train_val": [],
+    "val_test": []
+  }
+}

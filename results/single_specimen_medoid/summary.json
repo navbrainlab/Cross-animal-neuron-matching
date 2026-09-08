@@ -1,0 +1,321 @@
+{
+  "protocol": "outer_training_geometry_medoid_template_v1",
+  "aggregation": "3 seeds averaged within fold; mean and sample SD across 5 biological outer folds",
+  "cpd_seed_handling": "deterministic fold result replicated across seed labels and marked seed_invariant",
+  "split_families": {
+    "CPD": "Data/*/cv5_grouped_v1",
+    "GeoTransformer": "geotransformer_official/data_cv5",
+    "fDNC_and_NuCLR": "benchmark_official/protocols"
+  },
+  "cross_method_split_warning": "The split families have different fold membership; do not treat cross-method ranking as a strictly paired comparison.",
+  "audit": {
+    "status": "passed",
+    "directed_test_test_pairs": 0,
+    "checks": [
+      "single fixed reference per fold",
+      "reference belongs to outer train",
+      "reference identical across seeds",
+      "template never appears as test query"
+    ]
+  },
+  "summary": [
+    {
+      "dataset": "atanas",
+      "method": "CPD",
+      "folds": 5,
+      "seeds": 3,
+      "aggregation": "3 seeds averaged within fold; mean and sample SD across 5 folds",
+      "top1_mean": 0.485659137928858,
+      "top1_sd": 0.05348072879498077,
+      "top5_mean": 0.8266302221779208,
+      "top5_sd": 0.04480100639175161,
+      "mrr_mean": 0.6319291970609806,
+      "mrr_sd": 0.0427483116532166,
+      "hungarian_mean": 0.5190242490426853,
+      "hungarian_sd": 0.0469438893574564
+    },
+    {
+      "dataset": "atanas",
+      "method": "fDNC",
+      "folds": 5,
+      "seeds": 3,
+      "aggregation": "3 seeds averaged within fold; mean and sample SD across 5 folds",
+      "top1_mean": 0.4022662638229811,
+      "top1_sd": 0.033081530463687114,
+      "top5_mean": 0.8037548962231581,
+      "top5_sd": 0.06933052635512037,
+      "mrr_mean": 0.5740762222682829,
+      "mrr_sd": 0.03806459255213483,
+      "hungarian_mean": 0.33944739061943857,
+      "hungarian_sd": 0.05490559008132348
+    },
+    {
+      "dataset": "atanas",
+      "method": "NuCLR",
+      "folds": 5,
+      "seeds": 3,
+      "aggregation": "3 seeds averaged within fold; mean and sample SD across 5 folds",
+      "top1_mean": 0.19100332741575932,
+      "top1_sd": 0.018742760833457786,
+      "top5_mean": 0.4440930056223319,
+      "top5_sd": 0.02308713344953711,
+      "mrr_mean": 0.3183440542291453,
+      "mrr_sd": 0.016581541766843077,
+      "hungarian_mean": 0.1983506372348657,
+      "hungarian_sd": 0.015465688148094228
+    },
+    {
+      "dataset": "atanas",
+      "method": "GeoTransformer",
+      "folds": 5,
+      "seeds": 3,
+      "aggregation": "3 seeds averaged within fold; mean and sample SD across 5 folds",
+      "top1_mean": 0.4545699253894237,
+      "top1_sd": 0.05212174355758536,
+      "top5_mean": 0.7308565463641212,
+      "top5_sd": 0.05250497607320207,
+      "mrr_mean": 0.5696921856029346,
+      "mrr_sd": 0.052665968171113166,
+      "hungarian_mean": 0.4140346930868275,
+      "hungarian_sd": 0.04813023442621543
+    },
+    {
+      "dataset": "rld",
+      "method": "CPD",
+      "folds": 5,
+      "seeds": 3,
+      "aggregation": "3 seeds averaged within fold; mean and sample SD across 5 folds",
+      "top1_mean": 0.26508182940475916,
+      "top1_sd": 0.10684394078672822,
+      "top5_mean": 0.6512029085940487,
+      "top5_sd": 0.27019713380099175,
+      "mrr_mean": 0.42783083736444266,
+      "mrr_sd": 0.129675002216838,
+      "hungarian_mean": 0.3041994120486443,
+      "hungarian_sd": 0.11378817625864995
+    },
+    {
+      "dataset": "rld",
+      "method": "fDNC",
+      "folds": 5,
+      "seeds": 3,
+      "aggregation": "3 seeds averaged within fold; mean and sample SD across 5 folds",
+      "top1_mean": 0.27353328576916747,
+      "top1_sd": 0.08659037444516349,
+      "top5_mean": 0.7387565629401972,
+      "top5_sd": 0.06253251127368756,
+      "mrr_mean": 0.4768728139456714,
+      "mrr_sd": 0.061039493552983506,
+      "hungarian_mean": 0.15998938953222472,
+      "hungarian_sd": 0.1391228974534587
+    },
+    {
+      "dataset": "rld",
+      "method": "NuCLR",
+      "folds": 5,
+      "seeds": 3,
+      "aggregation": "3 seeds averaged within fold; mean and sample SD across 5 folds",
+      "top1_mean": 0.1518356389809273,
+      "top1_sd": 0.019390961416989698,
+      "top5_mean": 0.38334440594892316,
+      "top5_sd": 0.14783022214389463,
+      "mrr_mean": 0.2651744052162971,
+      "mrr_sd": 0.06480045187498247,
+      "hungarian_mean": 0.11952556778560366,
+      "hungarian_sd": 0.07457633097291269
+    },
+    {
+      "dataset": "rld",
+      "method": "GeoTransformer",
+      "folds": 5,
+      "seeds": 3,
+      "aggregation": "3 seeds averaged within fold; mean and sample SD across 5 folds",
+      "top1_mean": 0.25193380476850413,
+      "top1_sd": 0.11260992125028374,
+      "top5_mean": 0.48290253800655325,
+      "top5_sd": 0.19604707475368055,
+      "mrr_mean": 0.3494373096205732,
+      "mrr_sd": 0.1421288784539604,
+      "hungarian_mean": 0.13658199970553386,
+      "hungarian_sd": 0.06637546780612744
+    }
+  ],
+  "old_pairwise_vs_medoid": [
+    {
+      "dataset": "atanas",
+      "method": "CPD",
+      "metric": "top1",
+      "old_pairwise_mean": 0.3924,
+      "medoid_template_mean": 0.485659137928858,
+      "delta_percentage_points": 9.325913792885798
+    },
+    {
+      "dataset": "atanas",
+      "method": "CPD",
+      "metric": "top5",
+      "old_pairwise_mean": 0.7429,
+      "medoid_template_mean": 0.8266302221779208,
+      "delta_percentage_points": 8.37302221779208
+    },
+    {
+      "dataset": "atanas",
+      "method": "fDNC",
+      "metric": "top1",
+      "old_pairwise_mean": 0.3206,
+      "medoid_template_mean": 0.4022662638229811,
+      "delta_percentage_points": 8.166626382298109
+    },
+    {
+      "dataset": "atanas",
+      "method": "fDNC",
+      "metric": "top5",
+      "old_pairwise_mean": 0.7223,
+      "medoid_template_mean": 0.8037548962231581,
+      "delta_percentage_points": 8.145489622315804
+    },
+    {
+      "dataset": "atanas",
+      "method": "fDNC",
+      "metric": "hungarian",
+      "old_pairwise_mean": 0.2802,
+      "medoid_template_mean": 0.33944739061943857,
+      "delta_percentage_points": 5.924739061943857
+    },
+    {
+      "dataset": "atanas",
+      "method": "NuCLR",
+      "metric": "top1",
+      "old_pairwise_mean": 0.1951,
+      "medoid_template_mean": 0.19100332741575932,
+      "delta_percentage_points": -0.4096672584240679
+    },
+    {
+      "dataset": "atanas",
+      "method": "NuCLR",
+      "metric": "top5",
+      "old_pairwise_mean": 0.4394,
+      "medoid_template_mean": 0.4440930056223319,
+      "delta_percentage_points": 0.46930056223318806
+    },
+    {
+      "dataset": "atanas",
+      "method": "NuCLR",
+      "metric": "hungarian",
+      "old_pairwise_mean": 0.1979,
+      "medoid_template_mean": 0.1983506372348657,
+      "delta_percentage_points": 0.045063723486571394
+    },
+    {
+      "dataset": "atanas",
+      "method": "GeoTransformer",
+      "metric": "top1",
+      "old_pairwise_mean": 0.3142,
+      "medoid_template_mean": 0.4545699253894237,
+      "delta_percentage_points": 14.036992538942371
+    },
+    {
+      "dataset": "atanas",
+      "method": "GeoTransformer",
+      "metric": "top5",
+      "old_pairwise_mean": 0.5838,
+      "medoid_template_mean": 0.7308565463641212,
+      "delta_percentage_points": 14.705654636412124
+    },
+    {
+      "dataset": "atanas",
+      "method": "GeoTransformer",
+      "metric": "hungarian",
+      "old_pairwise_mean": 0.2839,
+      "medoid_template_mean": 0.4140346930868275,
+      "delta_percentage_points": 13.013469308682751
+    },
+    {
+      "dataset": "rld",
+      "method": "CPD",
+      "metric": "top1",
+      "old_pairwise_mean": 0.0912,
+      "medoid_template_mean": 0.26508182940475916,
+      "delta_percentage_points": 17.388182940475915
+    },
+    {
+      "dataset": "rld",
+      "method": "CPD",
+      "metric": "top5",
+      "old_pairwise_mean": 0.2243,
+      "medoid_template_mean": 0.6512029085940487,
+      "delta_percentage_points": 42.690290859404875
+    },
+    {
+      "dataset": "rld",
+      "method": "fDNC",
+      "metric": "top1",
+      "old_pairwise_mean": 0.1895,
+      "medoid_template_mean": 0.27353328576916747,
+      "delta_percentage_points": 8.403328576916746
+    },
+    {
+      "dataset": "rld",
+      "method": "fDNC",
+      "metric": "top5",
+      "old_pairwise_mean": 0.5235,
+      "medoid_template_mean": 0.7387565629401972,
+      "delta_percentage_points": 21.525656294019726
+    },
+    {
+      "dataset": "rld",
+      "method": "fDNC",
+      "metric": "hungarian",
+      "old_pairwise_mean": 0.157,
+      "medoid_template_mean": 0.15998938953222472,
+      "delta_percentage_points": 0.29893895322247177
+    },
+    {
+      "dataset": "rld",
+      "method": "NuCLR",
+      "metric": "top1",
+      "old_pairwise_mean": 0.1321,
+      "medoid_template_mean": 0.1518356389809273,
+      "delta_percentage_points": 1.9735638980927313
+    },
+    {
+      "dataset": "rld",
+      "method": "NuCLR",
+      "metric": "top5",
+      "old_pairwise_mean": 0.3968,
+      "medoid_template_mean": 0.38334440594892316,
+      "delta_percentage_points": -1.3455594051076825
+    },
+    {
+      "dataset": "rld",
+      "method": "NuCLR",
+      "metric": "hungarian",
+      "old_pairwise_mean": 0.1184,
+      "medoid_template_mean": 0.11952556778560366,
+      "delta_percentage_points": 0.11255677856036594
+    },
+    {
+      "dataset": "rld",
+      "method": "GeoTransformer",
+      "metric": "top1",
+      "old_pairwise_mean": 0.0951,
+      "medoid_template_mean": 0.25193380476850413,
+      "delta_percentage_points": 15.683380476850411
+    },
+    {
+      "dataset": "rld",
+      "method": "GeoTransformer",
+      "metric": "top5",
+      "old_pairwise_mean": 0.2805,
+      "medoid_template_mean": 0.48290253800655325,
+      "delta_percentage_points": 20.24025380065532
+    },
+    {
+      "dataset": "rld",
+      "method": "GeoTransformer",
+      "metric": "hungarian",
+      "old_pairwise_mean": 0.0738,
+      "medoid_template_mean": 0.13658199970553386,
+      "delta_percentage_points": 6.278199970553386
+    }
+  ]
+}

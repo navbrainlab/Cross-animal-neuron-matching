@@ -1,0 +1,12 @@
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230317-12-27-51.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230317-12-51-42.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-15-10-44.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-15-50-12.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-16-22-56.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-17-09-01.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-14-26-56.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-15-40-07.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-16-14-25.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-16-48-09.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240426-22-49-55.npz
+/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240426-23-12-40.npz

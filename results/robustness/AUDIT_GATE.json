@@ -1,0 +1,29 @@
+{
+  "status": "passed_ready_for_final_figure",
+  "date": "2026-08-26",
+  "manifest_audit": "passed",
+  "manifest_sha256": "313f9b4fee0be98af9e8a4303c81ea32941ddfda570675ad7987bc87feec8271",
+  "conditions": 225,
+  "files_checked": 4275,
+  "completed_methods": {
+    "cpd": 225,
+    "fdnc": 225,
+    "nuclr": 225,
+    "geotransformer": 225,
+    "ours_static_seed42": 225
+  },
+  "pending_methods": [],
+  "common_query_cohort": true,
+  "maximum_cross_method_coverage_spread": 0.0,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260826,
+  "nonzero_outlier_cells_bitwise_identical_to_clean": {
+    "cpd": "0/75",
+    "fdnc": "0/75",
+    "nuclr": "0/75",
+    "geotransformer": "0/75",
+    "ours_static_seed42": "0/75"
+  },
+  "blocker": null,
+  "final_figure_allowed": true
+}

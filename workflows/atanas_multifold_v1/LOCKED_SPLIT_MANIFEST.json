@@ -1,0 +1,1087 @@
+{
+  "dataset": {
+    "clean_identity_per_worm": {
+      "max": 111,
+      "mean": 84.97368421052632,
+      "min": 51,
+      "sum": 3229
+    },
+    "date_groups": 18,
+    "worms": 38,
+    "worms_metadata": [
+      {
+        "clean_identity_count": 78,
+        "date_group": "2022-06-14",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2022-06-14-01.npz",
+        "worm_id": "2022-06-14-01"
+      },
+      {
+        "clean_identity_count": 87,
+        "date_group": "2022-06-14",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-07.npz",
+        "worm_id": "2022-06-14-07"
+      },
+      {
+        "clean_identity_count": 95,
+        "date_group": "2022-06-14",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-13.npz",
+        "worm_id": "2022-06-14-13"
+      },
+      {
+        "clean_identity_count": 74,
+        "date_group": "2022-06-28",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-28-01.npz",
+        "worm_id": "2022-06-28-01"
+      },
+      {
+        "clean_identity_count": 84,
+        "date_group": "2022-06-28",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-28-07.npz",
+        "worm_id": "2022-06-28-07"
+      },
+      {
+        "clean_identity_count": 69,
+        "date_group": "2022-07-15",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-15-06.npz",
+        "worm_id": "2022-07-15-06"
+      },
+      {
+        "clean_identity_count": 91,
+        "date_group": "2022-07-15",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-15-12.npz",
+        "worm_id": "2022-07-15-12"
+      },
+      {
+        "clean_identity_count": 95,
+        "date_group": "2022-07-20",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-20-01.npz",
+        "worm_id": "2022-07-20-01"
+      },
+      {
+        "clean_identity_count": 67,
+        "date_group": "2022-07-26",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-26-01.npz",
+        "worm_id": "2022-07-26-01"
+      },
+      {
+        "clean_identity_count": 111,
+        "date_group": "2022-08-02",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-08-02-01.npz",
+        "worm_id": "2022-08-02-01"
+      },
+      {
+        "clean_identity_count": 65,
+        "date_group": "2022-12-21",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-12-21-06.npz",
+        "worm_id": "2022-12-21-06"
+      },
+      {
+        "clean_identity_count": 83,
+        "date_group": "2023-01-05",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-01.npz",
+        "worm_id": "2023-01-05-01"
+      },
+      {
+        "clean_identity_count": 85,
+        "date_group": "2023-01-05",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-18.npz",
+        "worm_id": "2023-01-05-18"
+      },
+      {
+        "clean_identity_count": 74,
+        "date_group": "2023-01-06",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-06-01.npz",
+        "worm_id": "2023-01-06-01"
+      },
+      {
+        "clean_identity_count": 82,
+        "date_group": "2023-01-06",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-06-08.npz",
+        "worm_id": "2023-01-06-08"
+      },
+      {
+        "clean_identity_count": 51,
+        "date_group": "2023-01-09",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-09-08.npz",
+        "worm_id": "2023-01-09-08"
+      },
+      {
+        "clean_identity_count": 99,
+        "date_group": "2023-01-09",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-09-15.npz",
+        "worm_id": "2023-01-09-15"
+      },
+      {
+        "clean_identity_count": 93,
+        "date_group": "2023-01-09",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-09-22.npz",
+        "worm_id": "2023-01-09-22"
+      },
+      {
+        "clean_identity_count": 91,
+        "date_group": "2023-01-09",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-09-28.npz",
+        "worm_id": "2023-01-09-28"
+      },
+      {
+        "clean_identity_count": 95,
+        "date_group": "2023-01-10",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-07.npz",
+        "worm_id": "2023-01-10-07"
+      },
+      {
+        "clean_identity_count": 91,
+        "date_group": "2023-01-10",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-14.npz",
+        "worm_id": "2023-01-10-14"
+      },
+      {
+        "clean_identity_count": 80,
+        "date_group": "2023-01-13",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-13-07.npz",
+        "worm_id": "2023-01-13-07"
+      },
+      {
+        "clean_identity_count": 82,
+        "date_group": "2023-01-16",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-16-01.npz",
+        "worm_id": "2023-01-16-01"
+      },
+      {
+        "clean_identity_count": 89,
+        "date_group": "2023-01-16",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-08.npz",
+        "worm_id": "2023-01-16-08"
+      },
+      {
+        "clean_identity_count": 87,
+        "date_group": "2023-01-16",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-15.npz",
+        "worm_id": "2023-01-16-15"
+      },
+      {
+        "clean_identity_count": 90,
+        "date_group": "2023-01-16",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-22.npz",
+        "worm_id": "2023-01-16-22"
+      },
+      {
+        "clean_identity_count": 90,
+        "date_group": "2023-01-17",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-17-01.npz",
+        "worm_id": "2023-01-17-01"
+      },
+      {
+        "clean_identity_count": 80,
+        "date_group": "2023-01-17",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-17-07.npz",
+        "worm_id": "2023-01-17-07"
+      },
+      {
+        "clean_identity_count": 105,
+        "date_group": "2023-01-17",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-17-14.npz",
+        "worm_id": "2023-01-17-14"
+      },
+      {
+        "clean_identity_count": 83,
+        "date_group": "2023-01-18",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-18-01.npz",
+        "worm_id": "2023-01-18-01"
+      },
+      {
+        "clean_identity_count": 85,
+        "date_group": "2023-01-19",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-19-08.npz",
+        "worm_id": "2023-01-19-08"
+      },
+      {
+        "clean_identity_count": 60,
+        "date_group": "2023-01-19",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-19-15.npz",
+        "worm_id": "2023-01-19-15"
+      },
+      {
+        "clean_identity_count": 92,
+        "date_group": "2023-01-19",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-19-22.npz",
+        "worm_id": "2023-01-19-22"
+      },
+      {
+        "clean_identity_count": 87,
+        "date_group": "2023-01-23",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-23-01.npz",
+        "worm_id": "2023-01-23-01"
+      },
+      {
+        "clean_identity_count": 87,
+        "date_group": "2023-01-23",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-23-08.npz",
+        "worm_id": "2023-01-23-08"
+      },
+      {
+        "clean_identity_count": 96,
+        "date_group": "2023-01-23",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-23-15.npz",
+        "worm_id": "2023-01-23-15"
+      },
+      {
+        "clean_identity_count": 94,
+        "date_group": "2023-01-23",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-23-21.npz",
+        "worm_id": "2023-01-23-21"
+      },
+      {
+        "clean_identity_count": 82,
+        "date_group": "2023-03-07",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-03-07-01.npz",
+        "worm_id": "2023-03-07-01"
+      }
+    ]
+  },
+  "folds": [
+    {
+      "date_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      },
+      "dates": {
+        "test": [
+          "2022-06-14",
+          "2022-12-21",
+          "2023-01-05",
+          "2023-01-10"
+        ],
+        "train": [
+          "2022-06-28",
+          "2022-07-20",
+          "2022-07-26",
+          "2023-01-09",
+          "2023-01-13",
+          "2023-01-16",
+          "2023-01-17",
+          "2023-01-19",
+          "2023-01-23",
+          "2023-03-07"
+        ],
+        "val": [
+          "2022-07-15",
+          "2022-08-02",
+          "2023-01-06",
+          "2023-01-18"
+        ]
+      },
+      "fold": 1,
+      "statistics": {
+        "test": {
+          "all_directed_worm_pairs": 56,
+          "all_unordered_worm_pairs": 28,
+          "clean_identity_per_worm": {
+            "max": 95,
+            "mean": 84.875,
+            "min": 65,
+            "sum": 679
+          },
+          "date_group_count": 4,
+          "directed_scorable_queries": 3474,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 78,
+            "mean": 62.035714285714285,
+            "min": 46
+          },
+          "unique_clean_identity_union": 138,
+          "usable_directed_worm_pairs": 56,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 28,
+          "worm_count": 8
+        },
+        "train": {
+          "all_directed_worm_pairs": 552,
+          "all_unordered_worm_pairs": 276,
+          "clean_identity_per_worm": {
+            "max": 105,
+            "mean": 85.0,
+            "min": 51,
+            "sum": 2040
+          },
+          "date_group_count": 10,
+          "directed_scorable_queries": 32848,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 80,
+            "mean": 59.507246376811594,
+            "min": 25
+          },
+          "unique_clean_identity_union": 156,
+          "usable_directed_worm_pairs": 552,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 276,
+          "worm_count": 24
+        },
+        "val": {
+          "all_directed_worm_pairs": 30,
+          "all_unordered_worm_pairs": 15,
+          "clean_identity_per_worm": {
+            "max": 111,
+            "mean": 85.0,
+            "min": 69,
+            "sum": 510
+          },
+          "date_group_count": 4,
+          "directed_scorable_queries": 1800,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 78,
+            "mean": 60.0,
+            "min": 49
+          },
+          "unique_clean_identity_union": 141,
+          "usable_directed_worm_pairs": 30,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 15,
+          "worm_count": 6
+        }
+      },
+      "worm_ids": {
+        "test": [
+          "2022-06-14-01",
+          "2022-06-14-07",
+          "2022-06-14-13",
+          "2022-12-21-06",
+          "2023-01-05-01",
+          "2023-01-05-18",
+          "2023-01-10-07",
+          "2023-01-10-14"
+        ],
+        "train": [
+          "2022-06-28-01",
+          "2022-06-28-07",
+          "2022-07-20-01",
+          "2022-07-26-01",
+          "2023-01-09-08",
+          "2023-01-09-15",
+          "2023-01-09-22",
+          "2023-01-09-28",
+          "2023-01-13-07",
+          "2023-01-16-01",
+          "2023-01-16-08",
+          "2023-01-16-15",
+          "2023-01-16-22",
+          "2023-01-17-01",
+          "2023-01-17-07",
+          "2023-01-17-14",
+          "2023-01-19-08",
+          "2023-01-19-15",
+          "2023-01-19-22",
+          "2023-01-23-01",
+          "2023-01-23-08",
+          "2023-01-23-15",
+          "2023-01-23-21",
+          "2023-03-07-01"
+        ],
+        "val": [
+          "2022-07-15-06",
+          "2022-07-15-12",
+          "2022-08-02-01",
+          "2023-01-06-01",
+          "2023-01-06-08",
+          "2023-01-18-01"
+        ]
+      },
+      "worm_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      }
+    },
+    {
+      "date_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      },
+      "dates": {
+        "test": [
+          "2022-06-28",
+          "2023-01-13",
+          "2023-01-17",
+          "2023-03-07"
+        ],
+        "train": [
+          "2022-06-14",
+          "2022-07-15",
+          "2022-07-20",
+          "2022-07-26",
+          "2022-08-02",
+          "2022-12-21",
+          "2023-01-09",
+          "2023-01-16",
+          "2023-01-18",
+          "2023-01-19",
+          "2023-01-23"
+        ],
+        "val": [
+          "2023-01-05",
+          "2023-01-06",
+          "2023-01-10"
+        ]
+      },
+      "fold": 2,
+      "statistics": {
+        "test": {
+          "all_directed_worm_pairs": 42,
+          "all_unordered_worm_pairs": 21,
+          "clean_identity_per_worm": {
+            "max": 105,
+            "mean": 85.0,
+            "min": 74,
+            "sum": 595
+          },
+          "date_group_count": 4,
+          "directed_scorable_queries": 2532,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 76,
+            "mean": 60.285714285714285,
+            "min": 47
+          },
+          "unique_clean_identity_union": 139,
+          "usable_directed_worm_pairs": 42,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 21,
+          "worm_count": 7
+        },
+        "train": {
+          "all_directed_worm_pairs": 600,
+          "all_unordered_worm_pairs": 300,
+          "clean_identity_per_worm": {
+            "max": 111,
+            "mean": 84.96,
+            "min": 51,
+            "sum": 2124
+          },
+          "date_group_count": 11,
+          "directed_scorable_queries": 35590,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 84,
+            "mean": 59.31666666666667,
+            "min": 25
+          },
+          "unique_clean_identity_union": 156,
+          "usable_directed_worm_pairs": 600,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 300,
+          "worm_count": 25
+        },
+        "val": {
+          "all_directed_worm_pairs": 30,
+          "all_unordered_worm_pairs": 15,
+          "clean_identity_per_worm": {
+            "max": 95,
+            "mean": 85.0,
+            "min": 74,
+            "sum": 510
+          },
+          "date_group_count": 3,
+          "directed_scorable_queries": 1848,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 75,
+            "mean": 61.6,
+            "min": 52
+          },
+          "unique_clean_identity_union": 133,
+          "usable_directed_worm_pairs": 30,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 15,
+          "worm_count": 6
+        }
+      },
+      "worm_ids": {
+        "test": [
+          "2022-06-28-01",
+          "2022-06-28-07",
+          "2023-01-13-07",
+          "2023-01-17-01",
+          "2023-01-17-07",
+          "2023-01-17-14",
+          "2023-03-07-01"
+        ],
+        "train": [
+          "2022-06-14-01",
+          "2022-06-14-07",
+          "2022-06-14-13",
+          "2022-07-15-06",
+          "2022-07-15-12",
+          "2022-07-20-01",
+          "2022-07-26-01",
+          "2022-08-02-01",
+          "2022-12-21-06",
+          "2023-01-09-08",
+          "2023-01-09-15",
+          "2023-01-09-22",
+          "2023-01-09-28",
+          "2023-01-16-01",
+          "2023-01-16-08",
+          "2023-01-16-15",
+          "2023-01-16-22",
+          "2023-01-18-01",
+          "2023-01-19-08",
+          "2023-01-19-15",
+          "2023-01-19-22",
+          "2023-01-23-01",
+          "2023-01-23-08",
+          "2023-01-23-15",
+          "2023-01-23-21"
+        ],
+        "val": [
+          "2023-01-05-01",
+          "2023-01-05-18",
+          "2023-01-06-01",
+          "2023-01-06-08",
+          "2023-01-10-07",
+          "2023-01-10-14"
+        ]
+      },
+      "worm_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      }
+    },
+    {
+      "date_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      },
+      "dates": {
+        "test": [
+          "2022-07-15",
+          "2023-01-06",
+          "2023-01-23"
+        ],
+        "train": [
+          "2022-06-28",
+          "2022-07-20",
+          "2022-07-26",
+          "2022-08-02",
+          "2022-12-21",
+          "2023-01-09",
+          "2023-01-10",
+          "2023-01-13",
+          "2023-01-16",
+          "2023-01-17",
+          "2023-01-18",
+          "2023-01-19"
+        ],
+        "val": [
+          "2022-06-14",
+          "2023-01-05",
+          "2023-03-07"
+        ]
+      },
+      "fold": 3,
+      "statistics": {
+        "test": {
+          "all_directed_worm_pairs": 56,
+          "all_unordered_worm_pairs": 28,
+          "clean_identity_per_worm": {
+            "max": 96,
+            "mean": 85.0,
+            "min": 69,
+            "sum": 680
+          },
+          "date_group_count": 3,
+          "directed_scorable_queries": 3380,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 79,
+            "mean": 60.357142857142854,
+            "min": 49
+          },
+          "unique_clean_identity_union": 141,
+          "usable_directed_worm_pairs": 56,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 28,
+          "worm_count": 8
+        },
+        "train": {
+          "all_directed_worm_pairs": 552,
+          "all_unordered_worm_pairs": 276,
+          "clean_identity_per_worm": {
+            "max": 111,
+            "mean": 84.95833333333333,
+            "min": 51,
+            "sum": 2039
+          },
+          "date_group_count": 12,
+          "directed_scorable_queries": 32920,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 86,
+            "mean": 59.63768115942029,
+            "min": 25
+          },
+          "unique_clean_identity_union": 156,
+          "usable_directed_worm_pairs": 552,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 276,
+          "worm_count": 24
+        },
+        "val": {
+          "all_directed_worm_pairs": 30,
+          "all_unordered_worm_pairs": 15,
+          "clean_identity_per_worm": {
+            "max": 95,
+            "mean": 85.0,
+            "min": 78,
+            "sum": 510
+          },
+          "date_group_count": 3,
+          "directed_scorable_queries": 1846,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 71,
+            "mean": 61.53333333333333,
+            "min": 52
+          },
+          "unique_clean_identity_union": 136,
+          "usable_directed_worm_pairs": 30,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 15,
+          "worm_count": 6
+        }
+      },
+      "worm_ids": {
+        "test": [
+          "2022-07-15-06",
+          "2022-07-15-12",
+          "2023-01-06-01",
+          "2023-01-06-08",
+          "2023-01-23-01",
+          "2023-01-23-08",
+          "2023-01-23-15",
+          "2023-01-23-21"
+        ],
+        "train": [
+          "2022-06-28-01",
+          "2022-06-28-07",
+          "2022-07-20-01",
+          "2022-07-26-01",
+          "2022-08-02-01",
+          "2022-12-21-06",
+          "2023-01-09-08",
+          "2023-01-09-15",
+          "2023-01-09-22",
+          "2023-01-09-28",
+          "2023-01-10-07",
+          "2023-01-10-14",
+          "2023-01-13-07",
+          "2023-01-16-01",
+          "2023-01-16-08",
+          "2023-01-16-15",
+          "2023-01-16-22",
+          "2023-01-17-01",
+          "2023-01-17-07",
+          "2023-01-17-14",
+          "2023-01-18-01",
+          "2023-01-19-08",
+          "2023-01-19-15",
+          "2023-01-19-22"
+        ],
+        "val": [
+          "2022-06-14-01",
+          "2022-06-14-07",
+          "2022-06-14-13",
+          "2023-01-05-01",
+          "2023-01-05-18",
+          "2023-03-07-01"
+        ]
+      },
+      "worm_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      }
+    },
+    {
+      "date_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      },
+      "dates": {
+        "test": [
+          "2022-07-20",
+          "2023-01-16",
+          "2023-01-19"
+        ],
+        "train": [
+          "2022-06-14",
+          "2022-06-28",
+          "2022-07-15",
+          "2022-07-26",
+          "2022-08-02",
+          "2022-12-21",
+          "2023-01-09",
+          "2023-01-13",
+          "2023-01-17",
+          "2023-01-18",
+          "2023-01-23",
+          "2023-03-07"
+        ],
+        "val": [
+          "2023-01-05",
+          "2023-01-06",
+          "2023-01-10"
+        ]
+      },
+      "fold": 4,
+      "statistics": {
+        "test": {
+          "all_directed_worm_pairs": 56,
+          "all_unordered_worm_pairs": 28,
+          "clean_identity_per_worm": {
+            "max": 95,
+            "mean": 85.0,
+            "min": 60,
+            "sum": 680
+          },
+          "date_group_count": 3,
+          "directed_scorable_queries": 3248,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 73,
+            "mean": 58.0,
+            "min": 35
+          },
+          "unique_clean_identity_union": 139,
+          "usable_directed_worm_pairs": 56,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 28,
+          "worm_count": 8
+        },
+        "train": {
+          "all_directed_worm_pairs": 552,
+          "all_unordered_worm_pairs": 276,
+          "clean_identity_per_worm": {
+            "max": 111,
+            "mean": 84.95833333333333,
+            "min": 51,
+            "sum": 2039
+          },
+          "date_group_count": 12,
+          "directed_scorable_queries": 33202,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 86,
+            "mean": 60.14855072463768,
+            "min": 31
+          },
+          "unique_clean_identity_union": 156,
+          "usable_directed_worm_pairs": 552,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 276,
+          "worm_count": 24
+        },
+        "val": {
+          "all_directed_worm_pairs": 30,
+          "all_unordered_worm_pairs": 15,
+          "clean_identity_per_worm": {
+            "max": 95,
+            "mean": 85.0,
+            "min": 74,
+            "sum": 510
+          },
+          "date_group_count": 3,
+          "directed_scorable_queries": 1848,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 75,
+            "mean": 61.6,
+            "min": 52
+          },
+          "unique_clean_identity_union": 133,
+          "usable_directed_worm_pairs": 30,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 15,
+          "worm_count": 6
+        }
+      },
+      "worm_ids": {
+        "test": [
+          "2022-07-20-01",
+          "2023-01-16-01",
+          "2023-01-16-08",
+          "2023-01-16-15",
+          "2023-01-16-22",
+          "2023-01-19-08",
+          "2023-01-19-15",
+          "2023-01-19-22"
+        ],
+        "train": [
+          "2022-06-14-01",
+          "2022-06-14-07",
+          "2022-06-14-13",
+          "2022-06-28-01",
+          "2022-06-28-07",
+          "2022-07-15-06",
+          "2022-07-15-12",
+          "2022-07-26-01",
+          "2022-08-02-01",
+          "2022-12-21-06",
+          "2023-01-09-08",
+          "2023-01-09-15",
+          "2023-01-09-22",
+          "2023-01-09-28",
+          "2023-01-13-07",
+          "2023-01-17-01",
+          "2023-01-17-07",
+          "2023-01-17-14",
+          "2023-01-18-01",
+          "2023-01-23-01",
+          "2023-01-23-08",
+          "2023-01-23-15",
+          "2023-01-23-21",
+          "2023-03-07-01"
+        ],
+        "val": [
+          "2023-01-05-01",
+          "2023-01-05-18",
+          "2023-01-06-01",
+          "2023-01-06-08",
+          "2023-01-10-07",
+          "2023-01-10-14"
+        ]
+      },
+      "worm_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      }
+    },
+    {
+      "date_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      },
+      "dates": {
+        "test": [
+          "2022-07-26",
+          "2022-08-02",
+          "2023-01-09",
+          "2023-01-18"
+        ],
+        "train": [
+          "2022-06-14",
+          "2022-06-28",
+          "2022-07-15",
+          "2022-07-20",
+          "2022-12-21",
+          "2023-01-13",
+          "2023-01-16",
+          "2023-01-17",
+          "2023-01-19",
+          "2023-01-23",
+          "2023-03-07"
+        ],
+        "val": [
+          "2023-01-05",
+          "2023-01-06",
+          "2023-01-10"
+        ]
+      },
+      "fold": 5,
+      "statistics": {
+        "test": {
+          "all_directed_worm_pairs": 42,
+          "all_unordered_worm_pairs": 21,
+          "clean_identity_per_worm": {
+            "max": 111,
+            "mean": 85.0,
+            "min": 51,
+            "sum": 595
+          },
+          "date_group_count": 4,
+          "directed_scorable_queries": 2472,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 82,
+            "mean": 58.857142857142854,
+            "min": 32
+          },
+          "unique_clean_identity_union": 143,
+          "usable_directed_worm_pairs": 42,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 21,
+          "worm_count": 7
+        },
+        "train": {
+          "all_directed_worm_pairs": 600,
+          "all_unordered_worm_pairs": 300,
+          "clean_identity_per_worm": {
+            "max": 105,
+            "mean": 84.96,
+            "min": 60,
+            "sum": 2124
+          },
+          "date_group_count": 11,
+          "directed_scorable_queries": 35820,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 79,
+            "mean": 59.7,
+            "min": 29
+          },
+          "unique_clean_identity_union": 157,
+          "usable_directed_worm_pairs": 600,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 300,
+          "worm_count": 25
+        },
+        "val": {
+          "all_directed_worm_pairs": 30,
+          "all_unordered_worm_pairs": 15,
+          "clean_identity_per_worm": {
+            "max": 95,
+            "mean": 85.0,
+            "min": 74,
+            "sum": 510
+          },
+          "date_group_count": 3,
+          "directed_scorable_queries": 1848,
+          "shared_clean_identities_per_usable_pair": {
+            "max": 75,
+            "mean": 61.6,
+            "min": 52
+          },
+          "unique_clean_identity_union": 133,
+          "usable_directed_worm_pairs": 30,
+          "usable_pair_fraction": 1.0,
+          "usable_unordered_worm_pairs": 15,
+          "worm_count": 6
+        }
+      },
+      "worm_ids": {
+        "test": [
+          "2022-07-26-01",
+          "2022-08-02-01",
+          "2023-01-09-08",
+          "2023-01-09-15",
+          "2023-01-09-22",
+          "2023-01-09-28",
+          "2023-01-18-01"
+        ],
+        "train": [
+          "2022-06-14-01",
+          "2022-06-14-07",
+          "2022-06-14-13",
+          "2022-06-28-01",
+          "2022-06-28-07",
+          "2022-07-15-06",
+          "2022-07-15-12",
+          "2022-07-20-01",
+          "2022-12-21-06",
+          "2023-01-13-07",
+          "2023-01-16-01",
+          "2023-01-16-08",
+          "2023-01-16-15",
+          "2023-01-16-22",
+          "2023-01-17-01",
+          "2023-01-17-07",
+          "2023-01-17-14",
+          "2023-01-19-08",
+          "2023-01-19-15",
+          "2023-01-19-22",
+          "2023-01-23-01",
+          "2023-01-23-08",
+          "2023-01-23-15",
+          "2023-01-23-21",
+          "2023-03-07-01"
+        ],
+        "val": [
+          "2023-01-05-01",
+          "2023-01-05-18",
+          "2023-01-06-01",
+          "2023-01-06-08",
+          "2023-01-10-07",
+          "2023-01-10-14"
+        ]
+      },
+      "worm_intersections": {
+        "train_test": [],
+        "train_val": [],
+        "val_test": []
+      }
+    }
+  ],
+  "format": "atanas_locked_multifold_split_manifest",
+  "future_use_policy": {
+    "development_reads": [
+      "outer-train",
+      "inner-validation"
+    ],
+    "historical_single_split_test_results": "historical only",
+    "outer_test_access": "Exactly once after NuCLR, fDNC, FINDA, checkpoint epoch, windows, and all hyperparameters are locked for that fold.",
+    "outer_test_must_not_drive_model_selection": true
+  },
+  "global_assertions": {
+    "date_groups_never_split_within_any_fold": true,
+    "every_worm_outer_test_exactly_once": true,
+    "models_trained": false,
+    "outer_folds": 5,
+    "outer_test_metrics_computed": false,
+    "outer_test_sets_pairwise_disjoint": true,
+    "outer_test_union_equals_all_worms": true,
+    "train_val_test_worm_intersections_empty": true
+  },
+  "inner_validation_rule": "Within each outer fold, select an intact-date 6-worm validation set from the non-test worms. Deterministically minimize clean-count mean imbalance, then prefer more usable pairs/scorable queries; SHA256 is the final tie-break.",
+  "locked": true,
+  "outer_partition_rule": "Five mutually exclusive intact-date test folds. MILP constrains each fold to 7-8 worms and 3-4 date groups and minimizes absolute deviation of clean identities per worm from the dataset-wide mean.",
+  "outer_test_balance": {
+    "clean_identity_means": [
+      84.875,
+      85.0,
+      85.0,
+      85.0,
+      85.0
+    ],
+    "clean_identity_ranges": [
+      [
+        65,
+        95
+      ],
+      [
+        74,
+        105
+      ],
+      [
+        69,
+        96
+      ],
+      [
+        60,
+        95
+      ],
+      [
+        51,
+        111
+      ]
+    ],
+    "directed_scorable_queries": [
+      3474,
+      2532,
+      3380,
+      3248,
+      2472
+    ],
+    "usable_unordered_pair_counts": [
+      28,
+      21,
+      28,
+      28,
+      21
+    ],
+    "worm_counts": [
+      8,
+      7,
+      8,
+      8,
+      7
+    ]
+  },
+  "seed": 42,
+  "selection_basis": "Worm IDs, filename-derived date groups, and per-worm clean identity counts only. No activity values, coordinates, checkpoints, model predictions, validation metrics, or historical test metrics used.",
+  "version": "atanas_multifold_v1_2026-07-31"
+}

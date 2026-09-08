@@ -1,0 +1,181 @@
+{
+  "protocol_id": "main_clean_benchmark_component_ablation_cv5_seed42_v1",
+  "status": "passed",
+  "dataset_split": "exact Data/*/cv5_grouped_v1 folds used by the main benchmark",
+  "fit_and_atlas": "fold train only; checkpoint selection by fold validation only",
+  "evaluation": "complete fold test cohort; no robustness common-cohort filtering",
+  "model_seed": 42,
+  "reporting_unit": "one result per biological fold",
+  "aggregation": "unweighted mean and sample SD across five folds",
+  "clean_reproduction_gate": {
+    "reference": "/home/ubuntu/klb/nuclr/nuclr/runs/fair_identity_seed42_benchmark_v1/benchmark_seed42_fold_cells.csv",
+    "reference_sha256": "aeef09d2602b8729620956e62f4a6037fe0a8a8954db30c41b00bfc1fadebe21",
+    "method": "Ours",
+    "mode": "static",
+    "queries_top1_top5_hungarian_atol": 1e-12,
+    "mrr_atol": 5e-08,
+    "folds_passed": 10
+  },
+  "source_metrics": [
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold0/seed42/metrics/test/full.json",
+      "sha256": "193d07ae2679c09f99d0d954a7f0e389debe0882e634915759e3e539ac366d81"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold0/seed42/metrics/test/geometry_only.json",
+      "sha256": "ec1ffb6193192bb4a3f528835877ea90a26a252bb8d99fc6e171d3a9d1b07822"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold0/seed42/metrics/test/node_only.json",
+      "sha256": "8d42242a3e58bebcd1c217ce7232b32bf488d00696261e69e2689aee9e772fa7"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold0/seed42/metrics/test/no_transport.json",
+      "sha256": "6bac768ad686b7215e0364398f336da6007f367178f5170b706c3949fd3d5cd9"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold1/seed42/metrics/test/full.json",
+      "sha256": "b625a7511601be185d88e81ef8a95142eb9ac5464ea55221287ba5036cb5f028"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold1/seed42/metrics/test/geometry_only.json",
+      "sha256": "c1fad3251cdfe3e67167075d5ee9a6219f3976ef144607daed94ae2031eafc34"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold1/seed42/metrics/test/node_only.json",
+      "sha256": "39ac09c813720b49309a892c0ca094be621d353465c1ef99069023ceac404dd4"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold1/seed42/metrics/test/no_transport.json",
+      "sha256": "8df34343e33d1b0e1345d2099d241e8dc48bd939a15a4b4b4f28783304de0a1c"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold2/seed42/metrics/test/full.json",
+      "sha256": "6d12b4a44328ac09070a4225f74f13fff307a63f7232f9d4db90cfc5898f68ed"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold2/seed42/metrics/test/geometry_only.json",
+      "sha256": "6451c44ce29f5eb4d600ea55bb90aaf8b3894dee52ab94ea18cc038749041889"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold2/seed42/metrics/test/node_only.json",
+      "sha256": "2659a9b27efba9fa3106071ee1e3e0c71d27e68d1358656d7afb514bc55b8c45"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold2/seed42/metrics/test/no_transport.json",
+      "sha256": "fa288cfb31a01e61555f877a5b51a4c73a1c559122867e5d4978a9e8313a56e7"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold3/seed42/metrics/test/full.json",
+      "sha256": "afb32d155f9143324a87e9320bc1fc9dc87594512f5dbd911b31b77bff6dfa59"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold3/seed42/metrics/test/geometry_only.json",
+      "sha256": "16dc8d47b4498d3f0f82baf66ce4285d2f6a0b810ac8daf11038f79da6caf9a2"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold3/seed42/metrics/test/node_only.json",
+      "sha256": "52ea8f447103dfd7d83549fa9bc26931bd37bb3a0c12e7fdce56fcea4e748b42"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold3/seed42/metrics/test/no_transport.json",
+      "sha256": "0c3f6652c4cb1d2b2b775eed3b48a01e1a4ee4fc2af540c2b99a1e0c7a2e8c85"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold4/seed42/metrics/test/full.json",
+      "sha256": "9a4b4447a3f0d574e3a371de814fbe6358c978bffe6effebe9e65a04ff3322fa"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold4/seed42/metrics/test/geometry_only.json",
+      "sha256": "709b16315691960fdebdf64ebc96f3226b23b8028aa4d45d62668f1ff77c9bb3"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold4/seed42/metrics/test/node_only.json",
+      "sha256": "cf9fd9a975857bd045a5412bbb2034434caf6b73aa58bfac190474ddbd41a041"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold4/seed42/metrics/test/no_transport.json",
+      "sha256": "6161b919de4a83d9f5c7f195ab96f14ba39e2b8f78b578145ee5686223819557"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold0/seed42/metrics/test/full.json",
+      "sha256": "c670a3941bfdd5e4f7b05d789191dce571b275bfd73a6f1a9c714512d3326908"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold0/seed42/metrics/test/geometry_only.json",
+      "sha256": "186a0d588307fb0e07695f027728f8343d5de911c2988746d77ffe549af83581"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold0/seed42/metrics/test/node_only.json",
+      "sha256": "aff15e5829d8dbca12c9ab5281a62137293a4a900d58800132d00e5de90f787f"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold0/seed42/metrics/test/no_transport.json",
+      "sha256": "91d5689ccd15cf27727a382d3a61be76d264913b2ca16c6d02892f40bee3f60c"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold1/seed42/metrics/test/full.json",
+      "sha256": "b13f97e837109056dcfee3afee3e01c8489b4d2e86e590f76a75d6991a0b9204"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold1/seed42/metrics/test/geometry_only.json",
+      "sha256": "f8c05e231d51f3c20e56d041d7034dc43694a5338ff104ace5051892c9856268"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold1/seed42/metrics/test/node_only.json",
+      "sha256": "870ea48cb17ebefcc9d2cd63a0782fa1ec157e1aa1d1658dfda1646fa55b3b06"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold1/seed42/metrics/test/no_transport.json",
+      "sha256": "9cf6af03d0e13227df92855fbea6090c135e79244ff4383dd30aef2f3bd60223"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold2/seed42/metrics/test/full.json",
+      "sha256": "27413d4d8ba2b0128612ec4298f8a2f13bfeb081d26c5f3ad74fc33d201da90a"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold2/seed42/metrics/test/geometry_only.json",
+      "sha256": "7f1932a9af8b925839bcdaeea9ab355c7fd68f951141ece6a3e177a9bc762f68"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold2/seed42/metrics/test/node_only.json",
+      "sha256": "bd7a601bff20d05303e0f2ef4516984bd9809f2d3cd35fa65de29eeae06507e4"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold2/seed42/metrics/test/no_transport.json",
+      "sha256": "9b659175c9702d491e0e7eaec5200a13702d055e2dcd155d3ba3d76bebecd355"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold3/seed42/metrics/test/full.json",
+      "sha256": "36fa8c4b3a7d9d2b5e282b25b018fde2f887f1c3f81cd7be10e5616bc8a78a97"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold3/seed42/metrics/test/geometry_only.json",
+      "sha256": "b4d61913bae9eec7adb384237daffe8a59e1fdae6796eaaed0f0d0c0b3a89d66"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold3/seed42/metrics/test/node_only.json",
+      "sha256": "671cbde5071f471980aec3a26d0ec1e57e652a8d66112566bd0f6eaf51b4fdd7"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold3/seed42/metrics/test/no_transport.json",
+      "sha256": "3c6bb476445977b7b9c7a9ff09609d3a2c519ed8285e6c36cd8f40ba26d272a3"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold4/seed42/metrics/test/full.json",
+      "sha256": "51042b6207e25ecaca97a59e416bd656870341ddd1fa15d31bc9d7b03cf6e7fd"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold4/seed42/metrics/test/geometry_only.json",
+      "sha256": "e284f6ee6ce95b032ac789547c036e1f5928d4c7b909dfb40b880e20d09217be"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold4/seed42/metrics/test/node_only.json",
+      "sha256": "2c791d4f8e81de7afb833a364a116dcdaad2ae4462005cb4618f61cdc63cdaa0"
+    },
+    {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold4/seed42/metrics/test/no_transport.json",
+      "sha256": "19a082c42b0996adafab6f598ebcf29e67db429860592f7258a4b5ba2d5cc84f"
+    }
+  ]
+}

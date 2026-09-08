@@ -1,0 +1,62 @@
+{
+  "protocol_id": "rld_robustness_benchmark_locked_v3",
+  "status": "blocked_pending_shared_benchmark",
+  "dataset": "rld",
+  "cv_root": "Data/Dunn_001623/cv5_grouped_v1",
+  "folds": [0, 1, 2, 3, 4],
+  "model_seeds": [1, 42, 123],
+  "minimum_publishable_model_seed_subset": [42],
+  "corruption_seeds": [0, 1, 2],
+  "frozen_artifacts": [
+    "train_val_test_membership",
+    "validation_selected_checkpoint",
+    "training_only_atlas",
+    "training_only_single_template",
+    "candidate_identity_vocabulary",
+    "preprocessing_code_and_parameters",
+    "native_evaluator_and_tie_policy",
+    "all_clean_validation_selected_hyperparameters"
+  ],
+  "only_mutable_input": "held_out_test_input_corruption",
+  "severity_zero_gate": {
+    "equation": "robustness_clean(method,fold,model_seed) == benchmark(method,fold,model_seed)",
+    "must_pass_before_nonzero_evaluation": true,
+    "metrics": {
+      "queries": {"atol": 0},
+      "top1": {"atol": 1e-12},
+      "top5": {"atol": 1e-12},
+      "mrr": {"atol": 5e-8},
+      "hungarian": {"atol": 1e-12},
+      "coverage_denominator": {"atol": 0}
+    }
+  },
+  "shared_corruption_instances": true,
+  "corruptions": {
+    "coordinate_noise": {
+      "scope": "test xyz only",
+      "levels": [0.0, 0.1, 0.2, 0.5, 1.0, 2.0],
+      "forbidden": ["template_reselection", "atlas_rebuild", "checkpoint_reselection"]
+    },
+    "missing_neurons": {
+      "scope": "identical test neuron masks for every method",
+      "levels": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
+      "required_metrics": ["conditional_top1", "coverage", "effective_top1"]
+    },
+    "inserted_distractors": {
+      "scope": "identical test distractor rows for every method",
+      "levels": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
+      "required_metrics": [
+        "known_neuron_top1",
+        "dustbin_precision",
+        "dustbin_recall",
+        "dustbin_f1"
+      ]
+    },
+    "activity_noise": {
+      "scope": "test activity only; geometry and atlas unchanged",
+      "levels": [0.0, 0.02, 0.05, 0.1, 0.2]
+    }
+  },
+  "aggregation": "average corruption seeds within each fold/model seed; average model seeds within fold; unweighted mean and sample SD across five biological folds",
+  "current_blocking_audit": "runs/rld_robustness_benchmark_alignment_audit_v1/AUDIT.json"
+}

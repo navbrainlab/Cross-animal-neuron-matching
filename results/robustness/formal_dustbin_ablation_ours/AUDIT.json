@@ -1,0 +1,16 @@
+{
+  "protocol": "RLD grouped CV5 x seed42 held-out distractor dustbin audit",
+  "positive_class": "materialized __OUTLIER_* synthetic distractors",
+  "negative_class": "atlas-eligible labeled held-out neurons",
+  "excluded_binary_targets": "native unlabeled neurons",
+  "fold_first_aggregation": true,
+  "evaluation_devices": [
+    "cuda:0"
+  ],
+  "modes": {
+    "capacity_dustbin": "production inference",
+    "ordinary": "inference-time no-dustbin transport; no retraining"
+  },
+  "cells": 160,
+  "summary_rows": 12
+}

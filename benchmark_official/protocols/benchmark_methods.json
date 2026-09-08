@@ -1,0 +1,108 @@
+{
+  "benchmark": "official published baselines + proposed model",
+  "workspace": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official",
+  "methods": [
+    {
+      "category": "Position-only",
+      "method": "CPD",
+      "official_source": "pycpd / existing audited implementation",
+      "adapter_policy": "Use existing audited CPD implementation/results only after split/query audit.",
+      "important_note": "CPD is an algorithmic baseline rather than a single author-official repository. Prefer the CPD implementation/evaluation path distributed with the official fDNC benchmark or the already audited project implementation, and record provenance."
+    },
+    {
+      "category": "Position-only",
+      "method": "fDNC",
+      "official_source": "https://github.com/XinweiYu/fDNC_Neuron_ID",
+      "third_party_dir": "third_party/fdnc_official",
+      "adapter_dir": "adapters/fdnc",
+      "allowed_changes": "input conversion + evaluation wrapper only",
+      "forbidden_changes": "official model architecture/weights/source"
+    },
+    {
+      "category": "Position-only",
+      "method": "Statistical Atlas",
+      "official_source": "https://github.com/focolab/NWBelegans -> pinned stat-atlas submodule",
+      "third_party_dir": "third_party/wormid_official/stat-atlas",
+      "adapter_dir": "adapters/stat_atlas",
+      "allowed_changes": "data conversion + pairwise scoring wrapper",
+      "forbidden_changes": "official atlas source"
+    },
+    {
+      "category": "Activity-only",
+      "method": "NeurPIR",
+      "official_source": "https://github.com/ww20hust/NeurPIR",
+      "third_party_dir": "third_party/neurpir_official",
+      "adapter_dir": "adapters/neurpir",
+      "allowed_changes": "Atanas/RLD data loader + retrieval evaluation wrapper",
+      "forbidden_changes": "official encoder/VICReg modules",
+      "category_requested_by_user": "Activity-only",
+      "category_recommended_for_official_code": "Contextual / activity + spatial context",
+      "important_note": "Official NeurPIR uses population activity together with neuron coordinates: coordinates determine nearest-neighbor ordering and distance-bin embeddings. Do not call the untouched official implementation purely activity-only."
+    },
+    {
+      "category": "Activity-only",
+      "method": "NuCLR",
+      "official_source": "https://github.com/nerdslab/NuCLR",
+      "third_party_dir": "third_party/nuclr_official",
+      "adapter_dir": "adapters/nuclr",
+      "allowed_changes": "calcium-data preprocessing/config + retrieval wrapper",
+      "forbidden_changes": "official NuCLR source"
+    },
+    {
+      "category": "Contextual activity representation",
+      "method": "NeuPRINT",
+      "official_source": "https://github.com/lumimim/NeuPRINT",
+      "third_party_dir": "third_party/neuprint_official",
+      "adapter_dir": "adapters/neuprint_official",
+      "allowed_changes": "locked Atanas/RLD data plumbing, unavailable-covariate substitution, cross-animal embedding optimization, retrieval evaluation wrapper",
+      "forbidden_changes": "official dynamics architecture, embedding parameterization, masking objective, or published hyperparameters",
+      "important_note": "Use the paper's cross-animal path: fit shared dynamics on outer train, freeze it, then optimize fresh label-free embeddings for unseen validation/test worms."
+    },
+    {
+      "category": "Multimodal",
+      "method": "fDNC + NuCLR Score Fusion",
+      "official_source": "outputs from official fDNC + official NuCLR adapters",
+      "adapter_dir": "adapters/score_fusion",
+      "allowed_changes": "validation-only scalar score normalization/fusion",
+      "forbidden_changes": "test-set weight selection"
+    },
+    {
+      "category": "Multimodal",
+      "method": "MulT (adapted)",
+      "official_source": "https://github.com/yaohungt/Multimodal-Transformer",
+      "third_party_dir": "third_party/mult_official",
+      "adapter_dir": "adapters/mult",
+      "allowed_changes": "input projection, set-safe data plumbing, matching head, training/evaluation loop",
+      "forbidden_changes": "cross-modal Transformer internals unless compatibility patch is documented"
+    },
+    {
+      "category": "Proposed",
+      "method": "Ours",
+      "official_source": "locked Candidate-B implementation/checkpoints in current repository",
+      "adapter_dir": "adapters/ours",
+      "allowed_changes": "evaluation wrapper only",
+      "forbidden_changes": "retraining/reselection on outer test"
+    }
+  ],
+  "metrics": [
+    "direct_top1_pre_hungarian",
+    "top3",
+    "top5",
+    "mrr",
+    "hungarian_top1"
+  ],
+  "protocol": {
+    "datasets": [
+      "atanas",
+      "rld"
+    ],
+    "outer_folds": 5,
+    "seeds": [
+      1,
+      42,
+      123
+    ],
+    "selection": "validation only",
+    "test_access": "after checkpoint/hyperparameter selection"
+  }
+}

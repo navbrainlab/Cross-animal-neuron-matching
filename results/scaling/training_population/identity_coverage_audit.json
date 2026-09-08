@@ -1,0 +1,259 @@
+{
+  "definition": "Fraction of per-worm unique labeled test identities present in the union of identities from the selected training worms. This is descriptive only and is computed after the validation lock.",
+  "rows": [
+    {
+      "atlas_identity_count": 42,
+      "covered_test_query_identities": 245,
+      "identity_coverage": 0.7142857142857143,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AFDL",
+        "AVEL",
+        "AWAL",
+        "AWBL",
+        "REMV",
+        "RIAL",
+        "RMDDR",
+        "RMDL",
+        "RMDVL",
+        "SAAVL",
+        "SMDDL",
+        "URXL"
+      ],
+      "subset_seed": 20260825,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 5
+    },
+    {
+      "atlas_identity_count": 19,
+      "covered_test_query_identities": 216,
+      "identity_coverage": 0.6297376093294461,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AFDL",
+        "AFDR",
+        "ALA",
+        "AVEL",
+        "AVER",
+        "AWAL",
+        "AWBL",
+        "CEPDL",
+        "CEPDR",
+        "REMV",
+        "RIAL",
+        "RID",
+        "RMDDL",
+        "RMDDR",
+        "SAAVL",
+        "URXL",
+        "URXR"
+      ],
+      "subset_seed": 20260826,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 5
+    },
+    {
+      "atlas_identity_count": 41,
+      "covered_test_query_identities": 247,
+      "identity_coverage": 0.7201166180758017,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AFDR",
+        "AVEL",
+        "AVER",
+        "AWAL",
+        "AWAR",
+        "AWBL",
+        "REMV",
+        "RIAL",
+        "RMDDL",
+        "RMDDR",
+        "SAAVL",
+        "URXL"
+      ],
+      "subset_seed": 20260827,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 5
+    },
+    {
+      "atlas_identity_count": 74,
+      "covered_test_query_identities": 290,
+      "identity_coverage": 0.8454810495626822,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AWAL",
+        "AWBL",
+        "REMV",
+        "RIAL",
+        "RMDDR",
+        "SAAVL",
+        "URXL"
+      ],
+      "subset_seed": 20260825,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 10
+    },
+    {
+      "atlas_identity_count": 26,
+      "covered_test_query_identities": 261,
+      "identity_coverage": 0.760932944606414,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AFDR",
+        "ALA",
+        "AVER",
+        "AWAL",
+        "AWBL",
+        "CEPDL",
+        "CEPDR",
+        "REMV",
+        "RMDDL",
+        "RMDDR",
+        "URXL",
+        "URXR"
+      ],
+      "subset_seed": 20260826,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 10
+    },
+    {
+      "atlas_identity_count": 55,
+      "covered_test_query_identities": 307,
+      "identity_coverage": 0.8950437317784257,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AWAL",
+        "AWBL",
+        "REMV",
+        "RMDDR",
+        "URXL"
+      ],
+      "subset_seed": 20260827,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 10
+    },
+    {
+      "atlas_identity_count": 106,
+      "covered_test_query_identities": 313,
+      "identity_coverage": 0.9125364431486881,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AWAL",
+        "AWBL",
+        "REMV",
+        "URXL"
+      ],
+      "subset_seed": 20260825,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 20
+    },
+    {
+      "atlas_identity_count": 76,
+      "covered_test_query_identities": 307,
+      "identity_coverage": 0.8950437317784257,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AFDR",
+        "AVER",
+        "AWBL",
+        "REMV"
+      ],
+      "subset_seed": 20260826,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 20
+    },
+    {
+      "atlas_identity_count": 98,
+      "covered_test_query_identities": 313,
+      "identity_coverage": 0.9125364431486881,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AWAL",
+        "AWBL",
+        "REMV",
+        "URXL"
+      ],
+      "subset_seed": 20260827,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 20
+    },
+    {
+      "atlas_identity_count": 141,
+      "covered_test_query_identities": 327,
+      "identity_coverage": 0.9533527696793003,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AWBL",
+        "REMV"
+      ],
+      "subset_seed": 20260825,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 40
+    },
+    {
+      "atlas_identity_count": 139,
+      "covered_test_query_identities": 327,
+      "identity_coverage": 0.9533527696793003,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AWBL",
+        "REMV"
+      ],
+      "subset_seed": 20260826,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 40
+    },
+    {
+      "atlas_identity_count": 143,
+      "covered_test_query_identities": 327,
+      "identity_coverage": 0.9533527696793003,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AWBL",
+        "REMV"
+      ],
+      "subset_seed": 20260827,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 40
+    },
+    {
+      "atlas_identity_count": 153,
+      "covered_test_query_identities": 327,
+      "identity_coverage": 0.9533527696793003,
+      "missing_test_identities": [
+        "ADFL",
+        "ADFR",
+        "AWBL",
+        "REMV"
+      ],
+      "subset_seed": null,
+      "test_identity_count": 36,
+      "test_query_identities": 343,
+      "train_worms": 67
+    }
+  ]
+}

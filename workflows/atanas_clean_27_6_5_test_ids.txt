@@ -1,0 +1,7 @@
+# ID-only manifest for split-disjointness assertions.
+# No test NPZ path or test data is passed to the NuCLR dataloader.
+2022-07-20-01
+2022-12-21-06
+2023-01-10-07
+2023-01-10-14
+2023-03-07-01

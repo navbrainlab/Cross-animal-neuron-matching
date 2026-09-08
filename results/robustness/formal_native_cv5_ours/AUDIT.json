@@ -1,0 +1,55 @@
+{
+  "protocol": "RLD grouped CV5 x seed42; native held-out evaluation",
+  "aggregation": "mean perturbation replicates within fold, then unweighted mean and sample SD across 5 folds",
+  "shared_cohort_rescoring": false,
+  "severity_zero_benchmark_gate": [
+    {
+      "fold": 0,
+      "queries": 270,
+      "top1": 0.5814814814814815,
+      "top5": 0.7148148148148148,
+      "hungarian": 0.5444444444444444,
+      "passed": true
+    },
+    {
+      "fold": 1,
+      "queries": 298,
+      "top1": 0.697986577181208,
+      "top5": 0.8288590604026845,
+      "hungarian": 0.6812080536912751,
+      "passed": true
+    },
+    {
+      "fold": 2,
+      "queries": 299,
+      "top1": 0.6120401337792643,
+      "top5": 0.7959866220735786,
+      "hungarian": 0.5953177257525084,
+      "passed": true
+    },
+    {
+      "fold": 3,
+      "queries": 296,
+      "top1": 0.6351351351351351,
+      "top5": 0.8074324324324325,
+      "hungarian": 0.6216216216216216,
+      "passed": true
+    },
+    {
+      "fold": 4,
+      "queries": 294,
+      "top1": 0.6700680272108843,
+      "top5": 0.8435374149659864,
+      "hungarian": 0.6462585034013606,
+      "passed": true
+    }
+  ],
+  "present_kinds": [
+    "activity_noise",
+    "coord_noise",
+    "missing",
+    "outlier"
+  ],
+  "missing_kinds": [],
+  "complete": true
+}

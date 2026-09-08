@@ -1,0 +1,14 @@
+diff --git a/models/NGM/gnn.py b/models/NGM/gnn.py
+index cbbd8bb..86c7ab3 100644
+--- a/models/NGM/gnn.py
++++ b/models/NGM/gnn.py
+@@ -9 +9 @@ from src.lap_solvers.sinkhorn import Sinkhorn
+-from collections import Iterable
++from collections.abc import Iterable
+diff --git a/src/lap_solvers/ILP.py b/src/lap_solvers/ILP.py
+index 032ff1c..d28bfae 100644
+--- a/src/lap_solvers/ILP.py
++++ b/src/lap_solvers/ILP.py
+@@ -9 +9 @@ from ortools.linear_solver import pywraplp
+-from ortools.linear_solver.linear_solver_natural_api import LinearExpr
++from ortools.linear_solver.python.linear_solver_natural_api import LinearExpr

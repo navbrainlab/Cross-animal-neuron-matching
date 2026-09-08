@@ -1,0 +1,106 @@
+{
+  "protocol": "RLD grouped CV5; CPD deterministic; fDNC seed42; native held-out evaluation",
+  "aggregation": "mean perturbation replicates within fold, then unweighted mean and sample SD across five folds",
+  "shared_cohort_rescoring": false,
+  "clean_gate": [
+    {
+      "method": "CPD",
+      "fold": 0,
+      "passed": true,
+      "queries": 77,
+      "top1": 0.3246753246753247,
+      "top5": 0.7532467532467533,
+      "hungarian": 0.36363636363636365
+    },
+    {
+      "method": "CPD",
+      "fold": 1,
+      "passed": true,
+      "queries": 137,
+      "top1": 0.19708029197080293,
+      "top5": 0.44525547445255476,
+      "hungarian": 0.21897810218978103
+    },
+    {
+      "method": "CPD",
+      "fold": 2,
+      "passed": true,
+      "queries": 145,
+      "top1": 0.1310344827586207,
+      "top5": 0.2896551724137931,
+      "hungarian": 0.15862068965517243
+    },
+    {
+      "method": "CPD",
+      "fold": 3,
+      "passed": true,
+      "queries": 84,
+      "top1": 0.40476190476190477,
+      "top5": 0.8928571428571429,
+      "hungarian": 0.44047619047619047
+    },
+    {
+      "method": "CPD",
+      "fold": 4,
+      "passed": true,
+      "queries": 56,
+      "top1": 0.26785714285714285,
+      "top5": 0.875,
+      "hungarian": 0.3392857142857143
+    },
+    {
+      "method": "fDNC",
+      "fold": 0,
+      "passed": true,
+      "queries": 77,
+      "top1": 0.2857142857142857,
+      "top5": 0.9090909090909091,
+      "hungarian": 0.42857142857142855
+    },
+    {
+      "method": "fDNC",
+      "fold": 1,
+      "passed": true,
+      "queries": 137,
+      "top1": 0.40145985401459855,
+      "top5": 0.8102189781021898,
+      "hungarian": 0.3795620437956204
+    },
+    {
+      "method": "fDNC",
+      "fold": 2,
+      "passed": true,
+      "queries": 145,
+      "top1": 0.32413793103448274,
+      "top5": 0.7724137931034483,
+      "hungarian": 0.33793103448275863
+    },
+    {
+      "method": "fDNC",
+      "fold": 3,
+      "passed": true,
+      "queries": 84,
+      "top1": 0.5476190476190477,
+      "top5": 0.9761904761904762,
+      "hungarian": 0.6785714285714286
+    },
+    {
+      "method": "fDNC",
+      "fold": 4,
+      "passed": true,
+      "queries": 56,
+      "top1": 0.6964285714285714,
+      "top5": 0.9642857142857143,
+      "hungarian": 0.75
+    }
+  ],
+  "missing_kinds": {
+    "CPD": [
+      "activity_noise"
+    ],
+    "fDNC": [
+      "activity_noise"
+    ]
+  },
+  "complete": false
+}

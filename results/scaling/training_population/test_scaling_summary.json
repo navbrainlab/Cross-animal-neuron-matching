@@ -1,0 +1,528 @@
+{
+  "bootstrap_iterations": 20000,
+  "ci_definition": "95% percentile hierarchical bootstrap: resample subset realizations, then model seeds within each sampled subset. For n=67, resample the three model seeds. The fixed test cohort is not bootstrapped.",
+  "rows": [
+    {
+      "hungarian": 0.14868804664723032,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260825/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260825/seed1.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.20116618075801748,
+      "train_worms": 5
+    },
+    {
+      "hungarian": 0.12244897959183673,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260825/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260825/seed42.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.1661807580174927,
+      "train_worms": 5
+    },
+    {
+      "hungarian": 0.09912536443148688,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260825/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260825/seed123.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.17201166180758018,
+      "train_worms": 5
+    },
+    {
+      "hungarian": 0.04664723032069971,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260826/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260826/seed1.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.11078717201166181,
+      "train_worms": 5
+    },
+    {
+      "hungarian": 0.052478134110787174,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260826/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260826/seed42.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.13702623906705538,
+      "train_worms": 5
+    },
+    {
+      "hungarian": 0.04664723032069971,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260826/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260826/seed123.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.09329446064139942,
+      "train_worms": 5
+    },
+    {
+      "hungarian": 0.119533527696793,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260827/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260827/seed1.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.14868804664723032,
+      "train_worms": 5
+    },
+    {
+      "hungarian": 0.1457725947521866,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260827/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260827/seed42.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.18950437317784258,
+      "train_worms": 5
+    },
+    {
+      "hungarian": 0.12536443148688048,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260827/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n5/subset20260827/seed123.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.16909620991253643,
+      "train_worms": 5
+    },
+    {
+      "hungarian": 0.1749271137026239,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260825/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260825/seed1.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.21574344023323616,
+      "train_worms": 10
+    },
+    {
+      "hungarian": 0.22740524781341107,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260825/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260825/seed42.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.2536443148688047,
+      "train_worms": 10
+    },
+    {
+      "hungarian": 0.2653061224489796,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260825/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260825/seed123.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.30612244897959184,
+      "train_worms": 10
+    },
+    {
+      "hungarian": 0.11661807580174927,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260826/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260826/seed1.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.18658892128279883,
+      "train_worms": 10
+    },
+    {
+      "hungarian": 0.08454810495626822,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260826/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260826/seed42.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.14285714285714285,
+      "train_worms": 10
+    },
+    {
+      "hungarian": 0.10204081632653061,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260826/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260826/seed123.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.13994169096209913,
+      "train_worms": 10
+    },
+    {
+      "hungarian": 0.26822157434402333,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260827/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260827/seed1.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.3032069970845481,
+      "train_worms": 10
+    },
+    {
+      "hungarian": 0.23323615160349853,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260827/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260827/seed42.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.2653061224489796,
+      "train_worms": 10
+    },
+    {
+      "hungarian": 0.282798833819242,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260827/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n10/subset20260827/seed123.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.2915451895043732,
+      "train_worms": 10
+    },
+    {
+      "hungarian": 0.30612244897959184,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260825/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260825/seed1.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.32653061224489793,
+      "train_worms": 20
+    },
+    {
+      "hungarian": 0.3498542274052478,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260825/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260825/seed42.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.3819241982507289,
+      "train_worms": 20
+    },
+    {
+      "hungarian": 0.3760932944606414,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260825/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260825/seed123.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.37900874635568516,
+      "train_worms": 20
+    },
+    {
+      "hungarian": 0.22740524781341107,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260826/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260826/seed1.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.2653061224489796,
+      "train_worms": 20
+    },
+    {
+      "hungarian": 0.2303206997084548,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260826/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260826/seed42.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.22448979591836735,
+      "train_worms": 20
+    },
+    {
+      "hungarian": 0.3206997084548105,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260826/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260826/seed123.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.32653061224489793,
+      "train_worms": 20
+    },
+    {
+      "hungarian": 0.40816326530612246,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260827/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260827/seed1.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.3935860058309038,
+      "train_worms": 20
+    },
+    {
+      "hungarian": 0.3760932944606414,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260827/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260827/seed42.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.3760932944606414,
+      "train_worms": 20
+    },
+    {
+      "hungarian": 0.43731778425655976,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260827/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n20/subset20260827/seed123.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.45481049562682213,
+      "train_worms": 20
+    },
+    {
+      "hungarian": 0.5189504373177842,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260825/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260825/seed1.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.5393586005830904,
+      "train_worms": 40
+    },
+    {
+      "hungarian": 0.42565597667638483,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260825/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260825/seed42.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.46355685131195334,
+      "train_worms": 40
+    },
+    {
+      "hungarian": 0.5626822157434402,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260825/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260825/seed123.queries.csv",
+      "subset_seed": 20260825,
+      "subset_tag": "subset20260825",
+      "top1": 0.5918367346938775,
+      "train_worms": 40
+    },
+    {
+      "hungarian": 0.5160349854227405,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260826/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260826/seed1.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.5335276967930029,
+      "train_worms": 40
+    },
+    {
+      "hungarian": 0.5568513119533528,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260826/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260826/seed42.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.5568513119533528,
+      "train_worms": 40
+    },
+    {
+      "hungarian": 0.5335276967930029,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260826/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260826/seed123.queries.csv",
+      "subset_seed": 20260826,
+      "subset_tag": "subset20260826",
+      "top1": 0.5568513119533528,
+      "train_worms": 40
+    },
+    {
+      "hungarian": 0.5539358600583091,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260827/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260827/seed1.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.5539358600583091,
+      "train_worms": 40
+    },
+    {
+      "hungarian": 0.5247813411078717,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260827/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260827/seed42.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.5276967930029155,
+      "train_worms": 40
+    },
+    {
+      "hungarian": 0.5160349854227405,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260827/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n40/subset20260827/seed123.queries.csv",
+      "subset_seed": 20260827,
+      "subset_tag": "subset20260827",
+      "top1": 0.5364431486880467,
+      "train_worms": 40
+    },
+    {
+      "hungarian": 0.6793002915451894,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n67/all/seed1.json",
+      "model_seed": 1,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n67/all/seed1.queries.csv",
+      "subset_seed": null,
+      "subset_tag": "all",
+      "top1": 0.6997084548104956,
+      "train_worms": 67
+    },
+    {
+      "hungarian": 0.6501457725947521,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n67/all/seed42.json",
+      "model_seed": 42,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n67/all/seed42.queries.csv",
+      "subset_seed": null,
+      "subset_tag": "all",
+      "top1": 0.6559766763848397,
+      "train_worms": 67
+    },
+    {
+      "hungarian": 0.6384839650145773,
+      "metrics_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n67/all/seed123.json",
+      "model_seed": 123,
+      "queries": 343,
+      "query_path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_rld_training_population_scaling_v2/metrics/test/n67/all/seed123.queries.csv",
+      "subset_seed": null,
+      "subset_tag": "all",
+      "top1": 0.6443148688046647,
+      "train_worms": 67
+    }
+  ],
+  "split": "test",
+  "summary": [
+    {
+      "cells": 9,
+      "hungarian_ci95_high": 0.13475866537091027,
+      "hungarian_ci95_low": 0.04923874311629414,
+      "hungarian_mean": 0.1007450599287334,
+      "hungarian_sd_cells": 0.04174574656704237,
+      "model_seeds": [
+        1,
+        42,
+        123
+      ],
+      "subset_realizations": 3,
+      "top1_ci95_high": 0.1830255911888565,
+      "top1_ci95_low": 0.11661807580174927,
+      "top1_mean": 0.15419501133786845,
+      "top1_sd_cells": 0.03545135691713047,
+      "train_worms": 5
+    },
+    {
+      "cells": 9,
+      "hungarian_ci95_high": 0.2617427923550372,
+      "hungarian_ci95_low": 0.1030126336248785,
+      "hungarian_mean": 0.1950113378684807,
+      "hungarian_sd_cells": 0.0773892474725439,
+      "model_seeds": [
+        1,
+        42,
+        123
+      ],
+      "subset_realizations": 3,
+      "top1_ci95_high": 0.2886297376093295,
+      "top1_ci95_low": 0.16099773242630386,
+      "top1_mean": 0.23388402980239714,
+      "top1_sd_cells": 0.06557786837218975,
+      "train_worms": 10
+    },
+    {
+      "cells": 9,
+      "hungarian_ci95_high": 0.4039520570132815,
+      "hungarian_ci95_low": 0.26044703595724,
+      "hungarian_mean": 0.33689666342727564,
+      "hungarian_sd_cells": 0.07328043740139496,
+      "model_seeds": [
+        1,
+        42,
+        123
+      ],
+      "subset_realizations": 3,
+      "top1_ci95_high": 0.40816326530612246,
+      "top1_ci95_low": 0.27662779397473275,
+      "top1_mean": 0.34758665370910263,
+      "top1_sd_cells": 0.07017974431440549,
+      "train_worms": 20
+    },
+    {
+      "cells": 9,
+      "hungarian_ci95_high": 0.54421768707483,
+      "hungarian_ci95_low": 0.4881762228701004,
+      "hungarian_mean": 0.5231616456106251,
+      "hungarian_sd_cells": 0.04089723112245057,
+      "model_seeds": [
+        1,
+        42,
+        123
+      ],
+      "subset_realizations": 3,
+      "top1_ci95_high": 0.5600907029478458,
+      "top1_ci95_low": 0.5140913508260447,
+      "top1_mean": 0.540006478781989,
+      "top1_sd_cells": 0.0344584269222379,
+      "train_worms": 40
+    },
+    {
+      "cells": 3,
+      "hungarian_ci95_high": 0.6793002915451894,
+      "hungarian_ci95_low": 0.6384839650145773,
+      "hungarian_mean": 0.6559766763848397,
+      "hungarian_sd_cells": 0.021023622597457638,
+      "model_seeds": [
+        1,
+        42,
+        123
+      ],
+      "subset_realizations": 1,
+      "top1_ci95_high": 0.6997084548104956,
+      "top1_ci95_low": 0.6443148688046647,
+      "top1_mean": 0.6666666666666666,
+      "top1_sd_cells": 0.0292030693903143,
+      "train_worms": 67
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "target_metric": {
+    "name": "median per-individual majority-vote identification accuracy",
+    "paper_value": 0.46,
+    "v": 5,
+    "k": 5,
+    "teachers": 9,
+    "teacher_sets": 1000
+  },
+  "paper_cohort": {
+    "num_recordings": 21,
+    "manifest_rule": "label=true AND type contains both baseline and neuropal",
+    "figure_c1_diagonal": [78, 87, 95, 74, 84, 69, 91, 95, 67, 111, 91, 90, 71, 85, 60, 92, 87, 87, 96, 95, 82]
+  },
+  "checked_current_label_release": {
+    "source": "Zenodo 19388374 v4 neuropal_label.json.bz2",
+    "published": "2026-04-02",
+    "md5": "1b8b0edf02badd6d8d028e2f6c30d24d",
+    "rule_checked": "exclude labels containing '?'",
+    "observed_diagonal": [77, 87, 94, 74, 82, 69, 90, 94, 67, 111, 91, 89, 71, 85, 60, 92, 87, 85, 96, 94, 81],
+    "figure_c1_mismatched_cells": 137,
+    "figure_c1_max_absolute_delta": 3,
+    "strict_label_audit_passed": false
+  },
+  "figure_c1_equivalent_reconstruction": {
+    "activity_source": "official Zenodo 19388374 v4 processed_h5.tar.bz2",
+    "label_sources": "20 older DANDI clean-mask label vectors plus v4 labels for the missing 2023-01-19-01 record and v4 restoration of 2023-01-23-21/AVJL",
+    "num_recordings": 21,
+    "figure_c1_mismatched_cells": 0,
+    "figure_c1_max_absolute_delta": 0,
+    "strict_label_audit_passed": true,
+    "caveat": "paper-denominator-equivalent reconstruction, not an author-published historical label snapshot"
+  },
+  "official_gwtune_h0_audit": {
+    "commit": "8ad4fd949a477f7b7fb6a67205348a3a747026ec",
+    "scope": "Atanas h=0 single-relation boundary",
+    "source": "2022-06-14-01",
+    "target": "2022-06-14-07",
+    "epsilon": 0.1,
+    "seed": 0,
+    "pot_version": "0.9.4",
+    "initial_plans_elementwise_equal": true,
+    "objective_absolute_delta": 1.1102230246251565e-16,
+    "transport_max_absolute_delta": 2.927345865710862e-18,
+    "passed": true
+  },
+  "compute_preflight": {
+    "device": "cpu (torch 2.1.2+cu118; torch.cuda.is_available=false)",
+    "task": "one h=0 directed pair with the full 21 epsilon x 50 initialization search",
+    "started": "2026-08-30 09:21:37 CST",
+    "stopped_after_seconds_greater_than": 430,
+    "completed_pair_caches": 0,
+    "conclusion": "current interactive CPU is not suitable for the 4620-cache formal run; use CUDA or a distributed job array",
+    "cache_safety": "pair output is atomic; interruption left no partial matching.npz"
+  },
+  "paper_unpublished_or_unspecified": [
+    "GWOT-MD source code or pairwise matching caches",
+    "random seeds for the 50 initial couplings and 1000 teacher sets",
+    "exact random feasible-plan construction",
+    "outer and Sinkhorn stopping rules",
+    "causal versus zero-phase Butterworth filtering",
+    "factor-of-two convention in the entropic linearization",
+    "tie resolution for equal vote counts and equal h validation scores",
+    "the author-published historical label snapshot (a Figure-C.1-equivalent reconstruction is available)"
+  ],
+  "status": "paper-disclosed protocol, Figure-C.1-equivalent inputs, and official GWTune h=0 boundary validated; full 4620-cache computation and Appendix-F evaluation have not completed, and bit-for-bit 46% remains unverifiable without author GWOT-MD code/caches and unspecified choices",
+  "anti_leakage_policy": "46% is a validation target only; do not tune seeds, denominators, coverage conditioning, or label rules to force agreement"
+}

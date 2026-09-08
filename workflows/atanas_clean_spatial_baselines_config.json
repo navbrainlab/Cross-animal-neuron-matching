@@ -1,0 +1,63 @@
+{
+  "protocol": "Atanas clean spatial baselines; validation only; no test access",
+  "validation_root": "Data/Atanas_SF_unified_000776/date_disjoint_v1/full/val",
+  "expected_validation_worms": [
+    "2022-06-28-01",
+    "2022-06-28-07",
+    "2023-01-17-01",
+    "2023-01-17-07",
+    "2023-01-17-14",
+    "2023-01-18-01"
+  ],
+  "expected_directed_pairs": 30,
+  "expected_common_queries": 1898,
+  "supervision_mask_key": "clean_mask",
+  "coordinate_normalization": {
+    "type": "per-worm median center and fixed scale",
+    "mode": "median_scale",
+    "scale": 200.0
+  },
+  "fdnc_checkpoint": "runs/atanas_sf_date_disjoint_v1_fdnc_finetune/selected/best.pt",
+  "fdnc_checkpoint_sha256": "62fa407fa28d3f4718080ad45e3172f607f34a26d54b59df82bcce9651cdecad",
+  "methods": {
+    "Euclidean": {
+      "score": "negative Euclidean distance on normalized xyz"
+    },
+    "CPD": {
+      "type": "rigid_then_nonrigid",
+      "identity_used_for_registration": false,
+      "reflection_branch": "disabled",
+      "score": "negative Euclidean distance after registration",
+      "rigid": {
+        "implementation": "/home/ubuntu/klb/fDNC_Neuron_ID/src/cpd_rigid_sep.py",
+        "w": 0.1,
+        "fix_scale": true,
+        "max_iterations": 250,
+        "convergence_sigma2": 1e-7,
+        "geometry": "XY rigid rotation and translation; Z translation"
+      },
+      "nonrigid": {
+        "implementation": "/home/ubuntu/klb/fDNC_Neuron_ID/src/cpd_nonrigid_sep.py",
+        "w": 0.1,
+        "lambda": 4000.0,
+        "beta": 0.25,
+        "max_iterations": 150,
+        "convergence_sigma2": 1e-5
+      },
+      "failure_policy": "abort; do not tune or fall back"
+    },
+    "PointTransFeat": {
+      "score": "cosine similarity of point_f spatial embeddings"
+    },
+    "Full fDNC": {
+      "score": "complete pair-conditioned fDNC matching-head similarity"
+    }
+  },
+  "evaluation_rules": {
+    "query_definition": "unique clean identity present in both directed-pair worms",
+    "candidate_definition": "all neurons in the reference worm, without GT filtering",
+    "hungarian_input": "complete target-by-reference score matrix",
+    "test_data_accessed": false,
+    "cpd_configuration_selected_before_validation_evaluation": true
+  }
+}

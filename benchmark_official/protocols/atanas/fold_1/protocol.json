@@ -1,0 +1,191 @@
+{
+  "dataset": "atanas",
+  "fold": 1,
+  "candidate_a_b_biology_identical_within_seed": true,
+  "outer_test_biology_identical_across_seeds": true,
+  "train_biology_identical_across_seeds": true,
+  "val_biology_identical_across_seeds": true,
+  "seeds": {
+    "1": {
+      "train_worms": 24,
+      "val_worms": 6,
+      "test_worms": 8,
+      "train_sha256": "934a3362654c2a553b7385118afdf303d5d3334541579e6727ab37dac26baa86",
+      "val_sha256": "e219af7e0b8ac279e0c52eabdd397caec734d7097c6261f6d160c70facd0ebfa",
+      "test_sha256": "cd7d180869f42083f4b9cc83d6e7f099c05a7dbc8f2f37ccfe1b66550de3dab4",
+      "source_embedding_lists": {
+        "train": "/home/ubuntu/klb/nuclr/nuclr/runs/fold_pure_table1init_candidates_ab_20260817/folds/atanas/fold_1/pipeline/seed_1/lists/train.txt",
+        "val": "/home/ubuntu/klb/nuclr/nuclr/runs/fold_pure_table1init_candidates_ab_20260817/folds/atanas/fold_1/pipeline/seed_1/lists/val.txt",
+        "test": "/home/ubuntu/klb/nuclr/nuclr/runs/fold_pure_table1init_candidates_ab_20260817/folds/atanas/fold_1/pipeline/seed_1/lists/test.txt"
+      },
+      "worm_ids": {
+        "train": [
+          "2022-06-28-01",
+          "2022-06-28-07",
+          "2022-07-20-01",
+          "2022-07-26-01",
+          "2023-01-09-08",
+          "2023-01-09-15",
+          "2023-01-09-22",
+          "2023-01-09-28",
+          "2023-01-13-07",
+          "2023-01-16-01",
+          "2023-01-16-08",
+          "2023-01-16-15",
+          "2023-01-16-22",
+          "2023-01-17-01",
+          "2023-01-17-07",
+          "2023-01-17-14",
+          "2023-01-19-08",
+          "2023-01-19-15",
+          "2023-01-19-22",
+          "2023-01-23-01",
+          "2023-01-23-08",
+          "2023-01-23-15",
+          "2023-01-23-21",
+          "2023-03-07-01"
+        ],
+        "val": [
+          "2022-07-15-06",
+          "2022-07-15-12",
+          "2022-08-02-01",
+          "2023-01-06-01",
+          "2023-01-06-08",
+          "2023-01-18-01"
+        ],
+        "test": [
+          "2022-06-14-01",
+          "2022-06-14-07",
+          "2022-06-14-13",
+          "2022-12-21-06",
+          "2023-01-05-01",
+          "2023-01-05-18",
+          "2023-01-10-07",
+          "2023-01-10-14"
+        ]
+      }
+    },
+    "42": {
+      "train_worms": 24,
+      "val_worms": 6,
+      "test_worms": 8,
+      "train_sha256": "934a3362654c2a553b7385118afdf303d5d3334541579e6727ab37dac26baa86",
+      "val_sha256": "e219af7e0b8ac279e0c52eabdd397caec734d7097c6261f6d160c70facd0ebfa",
+      "test_sha256": "cd7d180869f42083f4b9cc83d6e7f099c05a7dbc8f2f37ccfe1b66550de3dab4",
+      "source_embedding_lists": {
+        "train": "/home/ubuntu/klb/nuclr/nuclr/runs/fold_pure_table1init_candidates_ab_20260817/folds/atanas/fold_1/pipeline/seed_42/lists/train.txt",
+        "val": "/home/ubuntu/klb/nuclr/nuclr/runs/fold_pure_table1init_candidates_ab_20260817/folds/atanas/fold_1/pipeline/seed_42/lists/val.txt",
+        "test": "/home/ubuntu/klb/nuclr/nuclr/runs/fold_pure_table1init_candidates_ab_20260817/folds/atanas/fold_1/pipeline/seed_42/lists/test.txt"
+      },
+      "worm_ids": {
+        "train": [
+          "2022-06-28-01",
+          "2022-06-28-07",
+          "2022-07-20-01",
+          "2022-07-26-01",
+          "2023-01-09-08",
+          "2023-01-09-15",
+          "2023-01-09-22",
+          "2023-01-09-28",
+          "2023-01-13-07",
+          "2023-01-16-01",
+          "2023-01-16-08",
+          "2023-01-16-15",
+          "2023-01-16-22",
+          "2023-01-17-01",
+          "2023-01-17-07",
+          "2023-01-17-14",
+          "2023-01-19-08",
+          "2023-01-19-15",
+          "2023-01-19-22",
+          "2023-01-23-01",
+          "2023-01-23-08",
+          "2023-01-23-15",
+          "2023-01-23-21",
+          "2023-03-07-01"
+        ],
+        "val": [
+          "2022-07-15-06",
+          "2022-07-15-12",
+          "2022-08-02-01",
+          "2023-01-06-01",
+          "2023-01-06-08",
+          "2023-01-18-01"
+        ],
+        "test": [
+          "2022-06-14-01",
+          "2022-06-14-07",
+          "2022-06-14-13",
+          "2022-12-21-06",
+          "2023-01-05-01",
+          "2023-01-05-18",
+          "2023-01-10-07",
+          "2023-01-10-14"
+        ]
+      }
+    },
+    "123": {
+      "train_worms": 24,
+      "val_worms": 6,
+      "test_worms": 8,
+      "train_sha256": "934a3362654c2a553b7385118afdf303d5d3334541579e6727ab37dac26baa86",
+      "val_sha256": "e219af7e0b8ac279e0c52eabdd397caec734d7097c6261f6d160c70facd0ebfa",
+      "test_sha256": "cd7d180869f42083f4b9cc83d6e7f099c05a7dbc8f2f37ccfe1b66550de3dab4",
+      "source_embedding_lists": {
+        "train": "/home/ubuntu/klb/nuclr/nuclr/runs/fold_pure_table1init_candidates_ab_20260817/folds/atanas/fold_1/pipeline/seed_123/lists/train.txt",
+        "val": "/home/ubuntu/klb/nuclr/nuclr/runs/fold_pure_table1init_candidates_ab_20260817/folds/atanas/fold_1/pipeline/seed_123/lists/val.txt",
+        "test": "/home/ubuntu/klb/nuclr/nuclr/runs/fold_pure_table1init_candidates_ab_20260817/folds/atanas/fold_1/pipeline/seed_123/lists/test.txt"
+      },
+      "worm_ids": {
+        "train": [
+          "2022-06-28-01",
+          "2022-06-28-07",
+          "2022-07-20-01",
+          "2022-07-26-01",
+          "2023-01-09-08",
+          "2023-01-09-15",
+          "2023-01-09-22",
+          "2023-01-09-28",
+          "2023-01-13-07",
+          "2023-01-16-01",
+          "2023-01-16-08",
+          "2023-01-16-15",
+          "2023-01-16-22",
+          "2023-01-17-01",
+          "2023-01-17-07",
+          "2023-01-17-14",
+          "2023-01-19-08",
+          "2023-01-19-15",
+          "2023-01-19-22",
+          "2023-01-23-01",
+          "2023-01-23-08",
+          "2023-01-23-15",
+          "2023-01-23-21",
+          "2023-03-07-01"
+        ],
+        "val": [
+          "2022-07-15-06",
+          "2022-07-15-12",
+          "2022-08-02-01",
+          "2023-01-06-01",
+          "2023-01-06-08",
+          "2023-01-18-01"
+        ],
+        "test": [
+          "2022-06-14-01",
+          "2022-06-14-07",
+          "2022-06-14-13",
+          "2022-12-21-06",
+          "2023-01-05-01",
+          "2023-01-05-18",
+          "2023-01-10-07",
+          "2023-01-10-14"
+        ]
+      }
+    }
+  },
+  "shared_test_worms": 8,
+  "shared_test_sha256": "cd7d180869f42083f4b9cc83d6e7f099c05a7dbc8f2f37ccfe1b66550de3dab4",
+  "primary_metric": "direct per-query ranking Top-1 before Hungarian",
+  "policy": "deterministic pretrained baselines may use fold/test.txt; learned baselines use fold/seed_<seed>/train|val|test.txt"
+}

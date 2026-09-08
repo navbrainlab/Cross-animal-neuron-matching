@@ -24,7 +24,7 @@ import numpy as np
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "mprt_net_v1_1"))
+sys.path.insert(0, str(ROOT / "neurid"))
 
 from baselines.atanas_locked import cpd_scores, normalize_xyz
 from scripts.lib.fair_identity_protocol import (

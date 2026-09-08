@@ -1,7 +1,7 @@
-# NeuRID / MPRT-Net
+# NeuRID
 
 Code release for multimodal cross-animal neuron identity matching with
-population-relational transport. The repository contains the primary MPRT-Net
+population-relational transport. The repository contains the primary NeuRID
 implementation and the audited experiment entry points used for Atanas,
 Kato/RLD, and zebrafish evaluation.
 
@@ -15,16 +15,15 @@ protocol.
 
 ## Repository layout
 
-- `mprt_net_v1_1/`: standalone primary model, training/evaluation code, and tests.
+- `neurid/`: standalone primary model, training/evaluation code, and tests.
 - `MODEL_CODE_GUIDE.md`: file-by-file guide to the complete NeuRID model implementation.
-- `RUN_MODEL.md`: copy-and-run commands for one fold and formal CV5 × seed42.
 - `RUN_DATASETS.md`: ready-to-copy commands for every included dataset.
-- `RUN_ZM9624.md`: one-command two-worm leakage-controlled ZM9624 run.
+- `baselines/`: all comparison methods, official adapters, and overlays.
 - `results/`: compact protocols, audits, fold-level metrics, tables, and figures for the reported experiments.
 - `scripts/benchmarks/`: clean CPD, fDNC, NuCLR, NGM-v2, FGW, and audit entry points.
 - `scripts/benchmarks/crfid/`: CRF-ID preparation, audit, and aggregation tools.
 - `scripts/fair_identity/`: train-set medoid/single-specimen reference protocol.
-- `scripts/mprt/`: MPRT evaluation and component-ablation launchers.
+- `scripts/neurid/`: NeuRID evaluation and component-ablation launchers.
 - `scripts/mechanisms/`: cross-animal population-relation analyses and figures.
 - `scripts/robustness/`: coordinate-noise, missing-neuron, and distractor experiments.
 - `scripts/scaling/`: runtime and training-population scaling experiments.
@@ -32,7 +31,7 @@ protocol.
 - `scripts/zm9624/`: ZM9624 preparation and two-direction held-out matching.
 - `workflows/`: locked Atanas and Kato/RLD split preparation and manifests.
 - `docs/protocols/`: evaluation and reporting contracts.
-- `paper_submission_data/5fold_cross_validation/`: historical/supplementary
+- `results/supplementary/model_development_cv5x3/`: historical/supplementary
   CV5 × 3-seed provenance package; excluded from formal-result aggregation.
 
 Raw datasets, checkpoints, large generated run directories, logs, caches,
@@ -42,8 +41,8 @@ included under `results/`.
 
 ## Where is the complete model?
 
-The complete NeuRID/MPRT-Net forward model is
-[`mprt_net_v1_1/mprt_net/model.py`](mprt_net_v1_1/mprt_net/model.py). Its
+The complete NeuRID forward model is
+[`neurid/mprt_net/model.py`](neurid/mprt_net/model.py). Its
 geometry/activity encoders, population relations, relational transport,
 Sinkhorn dustbin, losses, training and evaluation code are all in the same
 package. See [`MODEL_CODE_GUIDE.md`](MODEL_CODE_GUIDE.md) for the module map.
@@ -56,22 +55,22 @@ Python 3.10 or newer is required.
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -U pip
-python -m pip install -e './mprt_net_v1_1[eval,test]'
+python -m pip install -e './neurid[eval,test]'
 ```
 
 Run the unit tests with:
 
 ```bash
-python -m pytest -q mprt_net_v1_1/tests
+python -m pytest -q neurid/tests
 ```
 
-For an end-to-end train → train-only atlas → held-out test example, use
-[`RUN_MODEL.md`](RUN_MODEL.md).
+Copy-and-run commands for every included dataset are in
+[`RUN_DATASETS.md`](RUN_DATASETS.md).
 
 ## Data contract
 
 Each animal is stored as an NPZ file. The required arrays and validation rules
-are documented in [`mprt_net_v1_1/DATA_CONTRACT.md`](mprt_net_v1_1/DATA_CONTRACT.md).
+are documented in [`neurid/DATA_CONTRACT.md`](neurid/DATA_CONTRACT.md).
 Dataset files are not included in this repository.
 
 After preparing a dataset, run the numerical/data self-check before training:
@@ -100,7 +99,7 @@ python -m scripts.robustness.plot_rld_robustness_conditional_top1
 
 Baseline repositories are not vendored in this release. Their URLs and frozen
 revisions are recorded in [`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md), with
-project-specific overlays under `third_party_adapters/`.
+project-specific overlays under `baselines/adapters/`.
 
 ## Release boundary
 

@@ -15,7 +15,7 @@
   },
   "learned_variants": {
     "full": {
-      "label": "Full MPRT",
+      "label": "Full NeuRID",
       "metrics": {
         "top1_real": {
           "mean": 0.9768532770311142,

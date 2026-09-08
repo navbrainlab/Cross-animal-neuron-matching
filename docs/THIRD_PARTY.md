@@ -17,4 +17,4 @@ revision below. Each project remains governed by its own license.
 | ThinkMatch/NGM-v2 | <https://github.com/Thinklab-SJTU/ThinkMatch.git> | `9f669cb22916f3e06c214f058daa5ac349bd7e15` |
 
 Project-specific overlays for GeoTransformer, RGM, and NGM-v2 are stored in
-`third_party_adapters/`.
+`baselines/adapters/`.

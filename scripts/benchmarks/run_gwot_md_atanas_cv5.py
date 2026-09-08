@@ -3,7 +3,7 @@
 
 The experiment is intentionally leakage-safe:
 
-* every neuron in the same coordinate-valid cohort as MPRT-Net is retained;
+* every neuron in the same coordinate-valid cohort as NeuRID is retained;
 * xyz is used only to define that cohort and never enters the matching cost;
 * labels and quality masks are used only for train-fold h selection and scoring;
 * validation is evaluated after h is selected; test is never opened by this file.

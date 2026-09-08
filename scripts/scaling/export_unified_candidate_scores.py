@@ -254,7 +254,7 @@ def export_ours(args: argparse.Namespace) -> Path:
     if path.is_file():
         print(f"[REUSE] {path}")
         return path
-    package = repo / "mprt_net_v1_1"
+    package = repo / "neurid"
     sys.path.insert(0, str(package))
     from mprt_net.data import WormCache, split_files
     from mprt_net.evaluate import load_checkpoint

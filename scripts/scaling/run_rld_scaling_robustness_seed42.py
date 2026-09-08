@@ -15,7 +15,7 @@ import torch
 from scipy.optimize import linear_sum_assignment
 
 REPO = Path("/home/ubuntu/klb/nuclr/nuclr")
-PACKAGE = REPO / "mprt_net_v1_1"
+PACKAGE = REPO / "neurid"
 DATA = REPO / "Data/Dunn_001623/date_disjoint_full95_v1"
 SOURCE_RUN = REPO / "runs/mprt_v1_1/rld/seed42/full"
 FULL_STATIC = REPO / "runs/mprt_v1_1_anchored_atlas/rld/seed42/anchored_pure.pt"

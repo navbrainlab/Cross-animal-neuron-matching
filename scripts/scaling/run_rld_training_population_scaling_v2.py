@@ -38,9 +38,9 @@ import numpy as np
 
 DEFAULT_REPO = Path("/home/ubuntu/klb/nuclr/nuclr")
 DEFAULT_DATA = DEFAULT_REPO / "Data/Dunn_001623/date_disjoint_full95_v1"
-DEFAULT_PACKAGE = DEFAULT_REPO / "mprt_net_v1_1"
+DEFAULT_PACKAGE = DEFAULT_REPO / "neurid"
 DEFAULT_SOURCE_RUN = DEFAULT_REPO / "runs/mprt_v1_1/rld/seed42/full"
-DEFAULT_EVALUATOR = DEFAULT_REPO / "scripts/mprt/evaluate_mprt_static_atlas.py"
+DEFAULT_EVALUATOR = DEFAULT_REPO / "scripts/neurid/evaluate_mprt_static_atlas.py"
 DEFAULT_RUN_ROOT = (
     DEFAULT_REPO / "runs/mprt_v1_1_rld_training_population_scaling_v2"
 )

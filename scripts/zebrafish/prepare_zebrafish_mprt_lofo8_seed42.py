@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare leakage-safe zebrafish LOFO8 inputs for MPRT-Net.
+"""Prepare leakage-safe zebrafish LOFO8 inputs for NeuRID.
 
 ``prepare`` converts train/validation only. ``unlock-test`` is accepted only
 after a complete pre-test checkpoint manifest exists.  Pair-local identity

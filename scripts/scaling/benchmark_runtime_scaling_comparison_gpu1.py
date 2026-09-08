@@ -47,7 +47,7 @@ import torch
 
 
 ROOT = Path("/home/ubuntu/klb/nuclr/nuclr")
-MPRT_PACKAGE = ROOT / "mprt_net_v1_1"
+MPRT_PACKAGE = ROOT / "neurid"
 MPRT_CHECKPOINT = (
     ROOT
     / "runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1"

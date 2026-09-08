@@ -8,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 ROOT = Path("/home/ubuntu/klb/nuclr/nuclr")
-PKG = ROOT / "mprt_net_v1_1"
+PKG = ROOT / "neurid"
 
 DATA_ROOT = (
     ROOT

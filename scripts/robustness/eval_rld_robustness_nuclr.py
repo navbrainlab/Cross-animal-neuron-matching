@@ -16,9 +16,9 @@ import torch
 
 
 ROOT = Path("/home/ubuntu/klb/nuclr/nuclr")
-RUN_ONE = ROOT / "benchmark_official/adapters/nuclr_official_scratch50k/run_one.py"
+RUN_ONE = ROOT / "baselines/official/adapters/nuclr_official_scratch50k/run_one.py"
 DEFAULT_MANIFEST = ROOT / "runs/rld_robustness_cv5_seed42_v1/corruptions/MANIFEST.json"
-DEFAULT_CLEAN_ROOT = ROOT / "benchmark_official/runs/nuclr_official_scratch50k_cv5x3"
+DEFAULT_CLEAN_ROOT = ROOT / "baselines/official/runs/nuclr_official_scratch50k_cv5x3"
 DEFAULT_OUT = ROOT / "runs/rld_robustness_cv5_seed42_v1/results/nuclr_official_scratch50k_seed42"
 
 METRIC_KEYS = (

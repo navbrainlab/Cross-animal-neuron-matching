@@ -22,14 +22,13 @@ DETERMINISTIC_METHODS = {"CPD", "StatAtlas", "Vanilla FGW"}
 
 def require_paths() -> None:
     required = [
-        ROOT / "mprt_net_v1_1" / "mprt_net" / "model.py",
-        ROOT / "mprt_net_v1_1" / "mprt_net" / "train.py",
-        ROOT / "mprt_net_v1_1" / "mprt_net" / "evaluate.py",
+        ROOT / "neurid" / "mprt_net" / "model.py",
+        ROOT / "neurid" / "mprt_net" / "train.py",
+        ROOT / "neurid" / "mprt_net" / "evaluate.py",
         ROOT / "MODEL_CODE_GUIDE.md",
-        ROOT / "RUN_MODEL.md",
         ROOT / "RUN_DATASETS.md",
-        ROOT / "RUN_ZM9624.md",
         ROOT / "scripts" / "zm9624" / "run_strict_loso.sh",
+        ROOT / "baselines" / "README.md",
         ROOT / "results" / "README.md",
         MAIN / "VERIFIED_RESULTS.md",
         MAIN / "verified_fold_cells.csv",

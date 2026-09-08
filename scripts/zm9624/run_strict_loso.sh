@@ -6,7 +6,7 @@ ZM_DATA_ROOT="${ZM_DATA_ROOT:-/home/ubuntu/klb/zm9624}"
 ZM_OUTPUT_ROOT="${ZM_OUTPUT_ROOT:-${ZM_REPO_ROOT}/outputs/zm9624_strict_loso_seed42}"
 ZM_PYTHON_BIN="${ZM_PYTHON_BIN:-python}"
 ZM_DEVICE="${ZM_DEVICE:-cuda}"
-ZM_MODEL_ROOT="${ZM_REPO_ROOT}/mprt_net_v1_1"
+ZM_MODEL_ROOT="${ZM_REPO_ROOT}/neurid"
 ZM_SCRIPT_ROOT="${ZM_REPO_ROOT}/scripts/zm9624"
 
 if ! command -v "${ZM_PYTHON_BIN}" >/dev/null 2>&1; then

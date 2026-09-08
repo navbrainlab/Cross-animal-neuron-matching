@@ -14,7 +14,7 @@ import numpy as np
 
 SEEDS = (42,)
 VARIANTS = (
-    ("full", "Full MPRT"),
+    ("full", "Full NeuRID"),
     ("no_transport", "No relation transport"),
     ("geometry_only", "Geometry-only"),
     ("activity_only", "Activity-only"),
@@ -232,7 +232,7 @@ def main() -> None:
     json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     lines = [
-        "# Zebrafish MPRT-Net: 8-fold LOFO, seed42",
+        "# Zebrafish NeuRID: 8-fold LOFO, seed42",
         "",
         "Primary point estimate averages the 8 held-out fish. The ± term below "
         "is the SD across held-out fish; 95% CIs bootstrap held-out fish.",

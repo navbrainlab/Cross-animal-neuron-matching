@@ -15,11 +15,11 @@ historical. Zebrafish remains a separately defined LOFO8 × seed-42 experiment.
 
 | Experiment | Result records | Reproduction code | Status |
 |---|---|---|---|
-| Atanas and Kato/RLD main benchmark, CV5 × seed42 | `main_benchmark_seed42/` | `../scripts/benchmarks/`, `../scripts/fair_identity/`, `../third_party_adapters/` | Canonical; 5/5 PASS for every populated row |
+| Atanas and Kato/RLD main benchmark, CV5 × seed42 | `main_benchmark_seed42/` | `../scripts/benchmarks/`, `../scripts/fair_identity/`, `../baselines/adapters/` | Canonical; 5/5 PASS for every populated row |
 | Single-specimen train-medoid protocol, historical CV5 × 3 seeds | `single_specimen_medoid/` | `../scripts/lib/fair_identity_protocol.py`, `../scripts/fair_identity/` | Audited medoid selection; cross-method fold families differ, supplementary only |
-| NeuRID component ablation, CV5 × seed42 | `component_ablation/seed42/` | `../scripts/mprt/run_mprt_component_ablation_cv5x3.py`, `../scripts/mprt/summarize_component_ablation_seed42.py` | Main-protocol aligned |
+| NeuRID component ablation, CV5 × seed42 | `component_ablation/seed42/` | `../scripts/neurid/run_mprt_component_ablation_cv5x3.py`, `../scripts/neurid/summarize_component_ablation_seed42.py` | Main-protocol aligned |
 | NeuRID component ablation, CV5 × 3 seeds | `component_ablation/cv5x3/` | same runner and merge scripts | Historical/supplementary stability |
-| Zebrafish LOFO8 | `zebrafish_lofo8/` | `../scripts/zebrafish/`, baseline overlays under `../third_party_adapters/` | Complete eight-fold table |
+| Zebrafish LOFO8 | `zebrafish_lofo8/` | `../scripts/zebrafish/`, baseline overlays under `../baselines/adapters/` | Complete eight-fold table |
 | Cross-animal population relations | `mechanisms/` | `../scripts/mechanisms/` | Compact tables and figures retained |
 | Coordinate noise, missing neurons and distractors | `robustness/formal_native_cv5_*` | `../scripts/robustness/` | Use only the `formal_*` outputs |
 | Activity noise | `robustness/formal_activity_noise_v1/` | robustness preparation/evaluation/summarization scripts | Main-protocol severity-zero gate passed |
@@ -30,12 +30,12 @@ historical. Zebrafish remains a separately defined LOFO8 × seed-42 experiment.
 ## Primary code entry points
 
 - Complete model, training, atlas building, and evaluation:
-  `../mprt_net_v1_1/mprt_net/model.py`, `train.py`,
+  `../neurid/mprt_net/model.py`, `train.py`,
   `build_anchored_atlas.py`, and `evaluate.py`.
 - Copy-and-run single-fold and formal CV5 × seed42 instructions:
   `../RUN_MODEL.md`; the one-command runner is
-  `../scripts/mprt/run_model.py`, and generic five-fold aggregation is
-  implemented by `../scripts/mprt/summarize_cv5_seed42.py`.
+  `../scripts/neurid/run_model.py`, and generic five-fold aggregation is
+  implemented by `../scripts/neurid/summarize_cv5_seed42.py`.
 - Formal result admission and aggregation:
   `../scripts/benchmarks/audit_unified_cv5_seed42.py` and
   `summarize_unified_cv5_seed42.py`.
@@ -43,7 +43,7 @@ historical. Zebrafish remains a separately defined LOFO8 × seed-42 experiment.
   `../scripts/fair_identity/evaluate_train_reference_ensemble.py` and
   `summarize_medoid_template_cv5x3.py`.
 - Full model and component ablation runs:
-  `../scripts/mprt/run_final_cv5x3_s1_42_123.py`,
+  `../scripts/neurid/run_final_cv5x3_s1_42_123.py`,
   `run_mprt_component_ablation_cv5x3.py`, and the two ablation summarizers.
 - Population-relation mechanism analysis:
   `../scripts/mechanisms/analyze_cross_animal_population_relation_mechanism.py`
@@ -106,14 +106,14 @@ The canonical seed-42 table in `main_benchmark_seed42/` supersedes it.
   Same similarities 0.8638/0.3603/0.6120 for geometry/activity/multimodal,
   while the draft says 0.8638/0.3633/0.6136. Use the CSV files in
   `mechanisms/` as the source of truth or explicitly label the older numbers.
-- `../paper_submission_data/5fold_cross_validation/` is a separate fold-pure
-  Candidate A/B development study. It is not the source of the final MPRT-Net
+- `../results/supplementary/model_development_cv5x3/` is a separate fold-pure
+  Candidate A/B development study. It is not the source of the final NeuRID
   benchmark table.
 
 ## Third-party methods
 
 Official third-party repositories are not vendored. Their URLs and frozen
 commits are recorded in `../docs/THIRD_PARTY.md` and
-`../benchmark_official/manifests/official_repo_revisions.tsv`. Project-written
+`../baselines/official/manifests/official_repo_revisions.tsv`. Project-written
 adapters and overlays are included. This keeps the GitHub package reviewable
 without silently redistributing external repositories or weights.

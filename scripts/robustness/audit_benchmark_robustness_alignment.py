@@ -56,7 +56,7 @@ def benchmark_membership(repo: Path, method: str, fold: int) -> dict[str, set[st
         root = repo / f"Data/Dunn_001623/cv5_grouped_v1/fold_{fold}"
         return {split: path_uids(root, split) for split in ("train", "val", "test")}
     if method in {"fDNC", "NuCLR"}:
-        root = repo / f"benchmark_official/protocols/rld/fold_{fold + 1}"
+        root = repo / f"baselines/official/protocols/rld/fold_{fold + 1}"
         return {split: listed_uids(root / f"{split}.txt") for split in ("train", "val", "test")}
     if method == "GeoTransformer":
         root = repo.parent / f"geotransformer_official/data_cv5/rld/fold_{fold + 1}"
@@ -138,7 +138,7 @@ def native_clean(repo: Path, method: str) -> dict[int, dict[str, Any]]:
 def checkpoint_availability(repo: Path) -> dict[str, dict[str, Any]]:
     roots = {
         "fDNC": repo / "runs/fdnc_current_grouped_cv_v2/rld",
-        "NuCLR": repo / "benchmark_official/runs/nuclr_official_scratch50k_current_cv_seed42/rld",
+        "NuCLR": repo / "baselines/official/runs/nuclr_official_scratch50k_current_cv_seed42/rld",
         "GeoTransformer": repo.parent / "geotransformer_official/current_grouped_selection/rld",
         "Ours": repo / "runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/rld",
     }

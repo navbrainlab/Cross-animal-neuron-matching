@@ -310,7 +310,7 @@ def main() -> None:
     args = p.parse_args()
 
     repo = args.repo_root.resolve()
-    package_root = repo / "mprt_net_v1_1"
+    package_root = repo / "neurid"
     data_root = repo / "Data/Atanas_SF_unified_000776/cv5_grouped_v1"
     final_root = repo / "runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/atanas"
     component_root = repo / "runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas"

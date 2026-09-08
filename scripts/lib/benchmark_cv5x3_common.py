@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-SNAPSHOT_CODE = ROOT / "paper_submission_data/5fold_cross_validation/code"
+SNAPSHOT_CODE = ROOT / "results/supplementary/model_development_cv5x3/code"
 if str(SNAPSHOT_CODE) not in sys.path:
     sys.path.insert(0, str(SNAPSHOT_CODE))
 
@@ -26,7 +26,7 @@ legacy = candidate_b_trainer.legacy
 FOLDS = (1, 2, 3, 4, 5)
 SEEDS = (1, 42, 123)
 RUN_ROOT = ROOT / 'runs' / 'fold_pure_table1init_candidates_ab_20260817'
-DEFAULT_OUT = ROOT / 'paper_submission_data' / 'benchmark_cv5x3_20260818'
+DEFAULT_OUT = ROOT / 'outputs' / 'benchmark_cv5x3_20260818'
 
 METHODS = (
     'CPD',

@@ -29,7 +29,7 @@ import torch
 
 
 ROOT = Path(__file__).resolve().parents[2]
-PACKAGE = ROOT / "mprt_net_v1_1"
+PACKAGE = ROOT / "neurid"
 RUNS = ROOT / "runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/rld"
 CORR = ROOT / "runs/rld_robustness_cv5_seed42_v2/corruptions"
 OUT = ROOT / "runs/rld_robustness_cv5_seed42_v2/formal_dustbin_ablation_ours"

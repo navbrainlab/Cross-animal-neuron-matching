@@ -14,7 +14,7 @@ import torch
 
 ROOT = Path("/home/ubuntu/klb/nuclr/nuclr")
 CURRENT_RUNNER = ROOT / "scripts/benchmarks/run_nuclr_official_scratch50k_current_rld.py"
-CLEAN_ROOT = ROOT / "benchmark_official/runs/nuclr_official_scratch50k_current_cv_seed42"
+CLEAN_ROOT = ROOT / "baselines/official/runs/nuclr_official_scratch50k_current_cv_seed42"
 CORR_ROOT = ROOT / "runs/rld_robustness_cv5_seed42_v2/corruptions"
 MANIFEST = CORR_ROOT / "MANIFEST.json"
 OUT_ROOT = ROOT / "runs/rld_robustness_cv5_seed42_v2/results/nuclr"

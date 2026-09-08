@@ -5,7 +5,7 @@ action="${1:-all}"  # prepare | audit | train | lock | unlock | test | aggregate
 
 repo_root="${REPO_ROOT:-/home/ubuntu/klb/nuclr/nuclr}"
 python_bin="${PYTHON_BIN:-/home/ubuntu/anaconda3/envs/nuclr310/bin/python}"
-mprt_root="${MPRT_ROOT:-$repo_root/mprt_net_v1_1}"
+mprt_root="${MPRT_ROOT:-$repo_root/neurid}"
 source_root="${SOURCE_ROOT:-$repo_root/Data/Zebrafish_LOFO8_joint_from_scratch}"
 data_root="${DATA_ROOT:-$repo_root/Data/Zebrafish_MPRT_LOFO8_60m}"
 run_root="${RUN_ROOT:-$repo_root/runs/mprt_v1_1/zebrafish_lofo8_seed42}"

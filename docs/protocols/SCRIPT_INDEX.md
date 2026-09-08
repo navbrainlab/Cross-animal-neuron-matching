@@ -6,7 +6,7 @@ Executable research tools are grouped under `scripts/`; the repository root cont
 |---|---|
 | `scripts/lib/` | Shared locked-CV and fair-identity protocol helpers |
 | `scripts/fair_identity/` | Train-medoid benchmark evaluation and summaries |
-| `scripts/mprt/` | Primary MPRT training, evaluation, and ablations |
+| `scripts/neurid/` | Primary NeuRID training, evaluation, and ablations |
 | `scripts/benchmarks/` | Official CPD/fDNC/NuCLR/NGM-v2/FGW benchmark runners |
 | `scripts/robustness/` | Shared-manifest RLD corruption experiments and figure generation |
 | `scripts/scaling/` | Full-pipeline GPU runtime and training-population scaling analyses |
@@ -17,11 +17,11 @@ Executable research tools are grouped under `scripts/`; the repository root cont
 Primary commands:
 
 ```bash
-python -m scripts.mprt.run_model --help
+python -m scripts.neurid.run_model --help
 bash scripts/zm9624/run_strict_loso.sh
 python -m scripts.fair_identity.evaluate_train_reference_ensemble --help
 python -m scripts.mechanisms.summarize_component_ablation_benchmark_seed42 --help
-python -m scripts.mprt.summarize_cv5_seed42 --help
+python -m scripts.neurid.summarize_cv5_seed42 --help
 bash scripts/zebrafish/run_zebrafish_mprt_lofo8_seed42.sh all
 python -m scripts.robustness.plot_rld_robustness_conditional_top1
 python -m scripts.scaling.benchmark_full_wallclock_runtime_gpu1 --help

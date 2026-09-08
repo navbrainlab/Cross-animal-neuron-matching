@@ -2,7 +2,8 @@
 
 This directory is restricted to downloading source datasets, extracting the
 unified NPZ representation, and creating leakage-safe worm-level splits.
-Production model launchers live in `../engines/`.
+NeuRID launchers live in `../scripts/neurid/`; baseline launchers live in
+`../scripts/benchmarks/` and `../baselines/`.
 
 | Directory | Retained responsibility |
 |---|---|
@@ -14,5 +15,5 @@ Production model launchers live in `../engines/`.
 | `dag_nwabudike_kang/` | Dag/WormWideWeb split preparation |
 | `cross_domain/` | Cross-domain protocol-list preparation |
 
-Historical training, baseline, GAT, zero-shot, and result-summary workflows were
-moved to `../archive/legacy_workflows/`. They are not active entry points.
+The protocol-lock files retain some historical launcher paths as immutable
+provenance. Those paths are not active entry points in this source release.

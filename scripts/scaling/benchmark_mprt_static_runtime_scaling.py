@@ -37,7 +37,7 @@ import torch
 
 
 DEFAULT_REPO = Path("/home/ubuntu/klb/nuclr/nuclr")
-DEFAULT_PACKAGE = DEFAULT_REPO / "mprt_net_v1_1"
+DEFAULT_PACKAGE = DEFAULT_REPO / "neurid"
 DEFAULT_CHECKPOINT = (
     DEFAULT_REPO
     / "runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1"

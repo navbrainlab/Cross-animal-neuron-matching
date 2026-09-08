@@ -4,14 +4,14 @@
 
 ```bash
 cd /home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility
-/home/ubuntu/anaconda3/envs/nuclr310/bin/python -m pip install -e './mprt_net_v1_1[eval,test]'
+/home/ubuntu/anaconda3/envs/nuclr310/bin/python -m pip install -e './neurid[eval,test]'
 ```
 
 ## Atanas（正式 5-fold、seed=42）
 
 ```bash
 cd /home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility
-/home/ubuntu/anaconda3/envs/nuclr310/bin/python -m scripts.mprt.run_model \
+/home/ubuntu/anaconda3/envs/nuclr310/bin/python -m scripts.neurid.run_model \
   --dataset-root /home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1 \
   --output-root /home/ubuntu/klb/nuclr/nuclr/runs/atanas_github_release_cv5_seed42_v1 \
   --dataset-name atanas \
@@ -24,7 +24,7 @@ cd /home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility
 
 ```bash
 cd /home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility
-/home/ubuntu/anaconda3/envs/nuclr310/bin/python -m scripts.mprt.run_model \
+/home/ubuntu/anaconda3/envs/nuclr310/bin/python -m scripts.neurid.run_model \
   --dataset-root /home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1 \
   --output-root /home/ubuntu/klb/nuclr/nuclr/runs/rld_github_release_cv5_seed42_v1 \
   --dataset-name rld \
@@ -39,7 +39,7 @@ cd /home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility
 cd /home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility
 REPO_ROOT=/home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility \
 PYTHON_BIN=/home/ubuntu/anaconda3/envs/nuclr310/bin/python \
-MPRT_ROOT=/home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility/mprt_net_v1_1 \
+MPRT_ROOT=/home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility/neurid \
 SOURCE_ROOT=/home/ubuntu/klb/nuclr/nuclr/Data/Zebrafish_LOFO8_joint_from_scratch \
 DATA_ROOT=/home/ubuntu/klb/nuclr/nuclr/Data/Zebrafish_MPRT_LOFO8_60m_github_v1 \
 RUN_ROOT=/home/ubuntu/klb/nuclr/nuclr/runs/zebrafish_github_release_lofo8_seed42_v1 \

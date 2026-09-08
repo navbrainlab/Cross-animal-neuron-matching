@@ -20,4 +20,4 @@ python -m scripts.scaling.run_rld_training_population_scaling_v2 --help
 Some baseline and scaling scripts preserve the absolute paths used for the
 original run as provenance. Replace their dataset, checkpoint, and upstream
 repository paths before rerunning on another machine. The primary model
-package itself is portable and installed from `mprt_net_v1_1/`.
+package itself is portable and installed from `neurid/`.

@@ -1,6 +1,6 @@
 # Complete NeuRID model code
 
-The complete model implementation is in `mprt_net_v1_1/mprt_net/`. The old
+The complete model implementation is in `neurid/mprt_net/`. The old
 NuCLR files under `src/` are baseline dependencies and are not the NeuRID
 model.
 
@@ -8,22 +8,22 @@ model.
 
 | File | Role |
 |---|---|
-| `mprt_net_v1_1/mprt_net/model.py` | `MPRTNet`, the complete forward model |
-| `mprt_net_v1_1/mprt_net/config.py` | Architecture configuration and ablation switches |
-| `mprt_net_v1_1/mprt_net/layers.py` | Geometry/activity encoders and relation-conditioned population layers |
-| `mprt_net_v1_1/mprt_net/relations.py` | Multimodal within-animal relation construction and normalization |
-| `mprt_net_v1_1/mprt_net/sinkhorn.py` | Capacity-aware dustbin and log-domain relational transport |
-| `mprt_net_v1_1/mprt_net/losses.py` | Symmetric focal matching and optional cycle losses |
-| `mprt_net_v1_1/mprt_net/data.py` | NPZ contract, caching, pair construction, target masks, activity resampling |
-| `mprt_net_v1_1/mprt_net/metrics.py` | Top-k, MRR, Hungarian and dustbin metrics |
-| `mprt_net_v1_1/mprt_net/train.py` | Pairwise training entry point |
-| `mprt_net_v1_1/mprt_net/build_anchored_atlas.py` | Learned identity-anchored atlas construction |
-| `mprt_net_v1_1/mprt_net/evaluate.py` | Pairwise and learned-atlas evaluation |
-| `mprt_net_v1_1/mprt_net/self_check.py` | Numerical, gradient, data-contract and permutation checks |
-| `mprt_net_v1_1/mprt_net/experiments/` | Paired evaluation, complexity and robustness utilities |
+| `neurid/mprt_net/model.py` | `NeuRID` public alias and checkpoint-compatible `MPRTNet` implementation |
+| `neurid/mprt_net/config.py` | Architecture configuration and ablation switches |
+| `neurid/mprt_net/layers.py` | Geometry/activity encoders and relation-conditioned population layers |
+| `neurid/mprt_net/relations.py` | Multimodal within-animal relation construction and normalization |
+| `neurid/mprt_net/sinkhorn.py` | Capacity-aware dustbin and log-domain relational transport |
+| `neurid/mprt_net/losses.py` | Symmetric focal matching and optional cycle losses |
+| `neurid/mprt_net/data.py` | NPZ contract, caching, pair construction, target masks, activity resampling |
+| `neurid/mprt_net/metrics.py` | Top-k, MRR, Hungarian and dustbin metrics |
+| `neurid/mprt_net/train.py` | Pairwise training entry point |
+| `neurid/mprt_net/build_anchored_atlas.py` | Learned identity-anchored atlas construction |
+| `neurid/mprt_net/evaluate.py` | Pairwise and learned-atlas evaluation |
+| `neurid/mprt_net/self_check.py` | Numerical, gradient, data-contract and permutation checks |
+| `neurid/mprt_net/experiments/` | Paired evaluation, complexity and robustness utilities |
 
-`mprt_net_v1_1/ARCHITECTURE.md` gives the equations and
-`mprt_net_v1_1/DATA_CONTRACT.md` specifies the input files.
+`neurid/ARCHITECTURE.md` gives the equations and
+`neurid/DATA_CONTRACT.md` specifies the input files.
 
 ## Model used for the formal Ours result
 
@@ -38,11 +38,11 @@ single model seed `42`. Its fold membership and admission gate are recorded in
 `results/main_benchmark_seed42/PROTOCOL.json`, `artifact_audit.csv`, and
 `readiness.json`. Training uses `mprt_net.train`, the train-only identity atlas
 uses `mprt_net.build_anchored_atlas`, and evaluation uses the static-atlas
-evaluator under `scripts/mprt/`; the formal aggregator is
+evaluator under `scripts/neurid/`; the formal aggregator is
 `scripts/benchmarks/summarize_unified_cv5_seed42.py`.
 
 Files whose names contain `cv5x3`, including
-`scripts/mprt/run_final_cv5x3_s1_42_123.py` and the CV5 × 3-seed component
+`scripts/neurid/run_final_cv5x3_s1_42_123.py` and the CV5 × 3-seed component
 ablation runner, are retained only to reproduce historical/supplementary
 stability analyses. Their three-seed aggregates are not formal results. The
 seed-42 component-ablation fold cells are separately admitted by the formal
@@ -51,8 +51,8 @@ protocol under `results/component_ablation/seed42/`.
 ## Minimal installation and checks
 
 ```bash
-python -m pip install -e './mprt_net_v1_1[eval,test]'
-python -m pytest -q mprt_net_v1_1/tests
+python -m pip install -e './neurid[eval,test]'
+python -m pytest -q neurid/tests
 python -m mprt_net.self_check \
   --dataset-root /path/to/fold_or_dataset \
   --split train \

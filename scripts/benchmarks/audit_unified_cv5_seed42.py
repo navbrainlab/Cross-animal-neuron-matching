@@ -143,10 +143,10 @@ def candidates() -> list[Candidate]:
         found.extend(
             [
                 Candidate("fDNC", "rld", fold, "42", REPO / f"runs/fdnc_current_grouped_cv_v2/rld/fold{fold}/seed42/outer_test_medoid_template_v1/metrics.json", REPO / f"runs/fdnc_current_grouped_cv_v2/rld/fold{fold}/seed42/locked_lists/split_manifest.json", "fdnc_manifest"),
-                Candidate("NuCLR", "rld", fold, "42", REPO / f"benchmark_official/runs/nuclr_official_scratch50k_current_cv_seed42/rld/fold_{fold}/seed_42/outer_test_medoid_template_v1/result.json", REPO / f"benchmark_official/runs/nuclr_official_scratch50k_current_cv_seed42/rld/fold_{fold}/seed_42/current_cv_protocol.json", "nuclr_manifest"),
+                Candidate("NuCLR", "rld", fold, "42", REPO / f"baselines/official/runs/nuclr_official_scratch50k_current_cv_seed42/rld/fold_{fold}/seed_42/outer_test_medoid_template_v1/result.json", REPO / f"baselines/official/runs/nuclr_official_scratch50k_current_cv_seed42/rld/fold_{fold}/seed_42/current_cv_protocol.json", "nuclr_manifest"),
                 Candidate("GeoTransformer", "rld", fold, "42", REPO / f"runs/rld_robustness_cv5_seed42_v2/results/geotransformer/fold{fold}/clean_reference/result.json", kind="geotransformer_grouped_checkpoint"),
                 Candidate("fDNC", "atanas", fold, "42", REPO / f"runs/fdnc_current_grouped_cv_v2/atanas/fold{fold}/seed42/outer_test_medoid_template_v1/metrics.json", REPO / f"runs/fdnc_current_grouped_cv_v2/atanas/fold{fold}/seed42/locked_lists/split_manifest.json", "fdnc_manifest"),
-                Candidate("NuCLR", "atanas", fold, "42", REPO / f"benchmark_official/runs/nuclr_official_scratch50k_current_cv_seed42/atanas/fold_{fold}/seed_42/outer_test_medoid_template_v1/result.json", REPO / f"benchmark_official/runs/nuclr_official_scratch50k_current_cv_seed42/atanas/fold_{fold}/seed_42/current_cv_protocol.json", "nuclr_manifest"),
+                Candidate("NuCLR", "atanas", fold, "42", REPO / f"baselines/official/runs/nuclr_official_scratch50k_current_cv_seed42/atanas/fold_{fold}/seed_42/outer_test_medoid_template_v1/result.json", REPO / f"baselines/official/runs/nuclr_official_scratch50k_current_cv_seed42/atanas/fold_{fold}/seed_42/current_cv_protocol.json", "nuclr_manifest"),
                 Candidate("GeoTransformer", "atanas", fold, "42", REPO / f"runs/atanas_geotransformer_current_grouped_seed42_v1/fold{fold}/clean_reference/result.json", kind="geotransformer_grouped_checkpoint"),
             ]
         )

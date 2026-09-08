@@ -15,8 +15,8 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CORR = ROOT / "runs/rld_robustness_cv5_seed42_v2/corruptions"
 DEFAULT_OUT = ROOT / "runs/rld_robustness_cv5_seed42_v2/results/ours_static_seed42"
 RUNS = ROOT / "runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/rld"
-EVALUATOR = ROOT / "scripts/mprt/evaluate_mprt_static_atlas.py"
-PACKAGE = ROOT / "mprt_net_v1_1"
+EVALUATOR = ROOT / "scripts/neurid/evaluate_mprt_static_atlas.py"
+PACKAGE = ROOT / "neurid"
 KINDS = {"coord_noise", "activity_noise", "missing", "outlier"}
 
 

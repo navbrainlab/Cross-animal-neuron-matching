@@ -91,7 +91,7 @@ def collect_cpd(rows: list[dict], audit: list[dict]) -> None:
 
 
 def collect_fdnc(rows: list[dict], audit: list[dict]) -> None:
-    root = ROOT / "benchmark_official/runs/fdnc_official_finetuned"
+    root = ROOT / "baselines/official/runs/fdnc_official_finetuned"
     for dataset in DATASETS:
         for fold in range(1, 6):
             refs = set()
@@ -113,7 +113,7 @@ def collect_fdnc(rows: list[dict], audit: list[dict]) -> None:
                 m = result["metrics"]
                 rows.append({"dataset": dataset, "method": "fDNC", "fold": fold,
                              "seed": seed, "seed_invariant": False,
-                             "split_family": "benchmark_official/protocols",
+                             "split_family": "baselines/official/protocols",
                              "top1": m["ranking_top1"], "top5": m["top5"],
                              "mrr": m["mrr"], "hungarian": m["assignment_top1"],
                              "queries": m["queries"], "template": ref})
@@ -125,7 +125,7 @@ def collect_fdnc(rows: list[dict], audit: list[dict]) -> None:
 
 
 def collect_nuclr(rows: list[dict], audit: list[dict]) -> None:
-    root = ROOT / "benchmark_official/runs/nuclr_official_scratch50k_cv5x3"
+    root = ROOT / "baselines/official/runs/nuclr_official_scratch50k_cv5x3"
     for dataset in DATASETS:
         for fold in range(1, 6):
             refs = set()
@@ -148,7 +148,7 @@ def collect_nuclr(rows: list[dict], audit: list[dict]) -> None:
                 m = result["metrics"]
                 rows.append({"dataset": dataset, "method": "NuCLR", "fold": fold,
                              "seed": seed, "seed_invariant": False,
-                             "split_family": "benchmark_official/protocols",
+                             "split_family": "baselines/official/protocols",
                              "top1": m["ranking_top1"], "top5": m["top5"],
                              "mrr": m["mrr"], "hungarian": m["assignment_top1"],
                              "queries": m["queries"], "template": ref})
@@ -267,7 +267,7 @@ def main() -> None:
         "split_families": {
             "CPD": "Data/*/cv5_grouped_v1",
             "GeoTransformer": "geotransformer_official/data_cv5",
-            "fDNC_and_NuCLR": "benchmark_official/protocols",
+            "fDNC_and_NuCLR": "baselines/official/protocols",
         },
         "cross_method_split_warning": "The split families have different fold membership; do not treat cross-method ranking as a strictly paired comparison.",
         "audit": {"status": "passed", "directed_test_test_pairs": 0,

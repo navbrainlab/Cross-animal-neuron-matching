@@ -62,7 +62,7 @@ FDNC_ROOT = ROOT / "runs/fdnc_current_grouped_cv_v2/rld"
 DEFAULT_OUT = ROOT / "runs/rld_natural_accuracy_scaling_direct_current_v1"
 
 sys.path.insert(0, str(ROOT))
-sys.path.insert(0, str(ROOT / "mprt_net_v1_1"))
+sys.path.insert(0, str(ROOT / "neurid"))
 
 from mprt_net.data import WormCache, split_files
 from mprt_net.evaluate import load_checkpoint

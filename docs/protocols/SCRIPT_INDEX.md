@@ -23,6 +23,7 @@ python -m scripts.fair_identity.evaluate_train_reference_ensemble --help
 python -m scripts.mechanisms.summarize_component_ablation_benchmark_seed42 --help
 python -m scripts.neurid.summarize_cv5_seed42 --help
 bash scripts/zebrafish/run_zebrafish_mprt_lofo8_seed42.sh all
+python scripts/zebrafish/evaluate_zebrafish_statatlas_crfid_lofo8.py --help
 python -m scripts.robustness.plot_rld_robustness_conditional_top1
 python -m scripts.scaling.benchmark_full_wallclock_runtime_gpu1 --help
 python -m scripts.scaling.run_rld_training_population_scaling_v2 --help
@@ -31,6 +32,12 @@ python -m scripts.scaling.run_rld_training_population_scaling_v2 --help
 Scripts whose names contain `cv5x3` are retained for provenance or supplementary stability
 checks; they are not launchers for the formal main protocol. Formal learned-method runs use the
 five locked folds with `seed=42` only.
+
+The zebrafish StatAtlas/CRF-ID entry point is self-contained in
+`scripts/zebrafish/evaluate_zebrafish_statatlas_crfid_lofo8.py`. Its `select`,
+`test`, and `aggregate` stages enforce validation-first parameter locking.
+Because zebrafish IDs are local to longitudinal pairs, these are explicitly
+pairwise adaptations rather than canonical global named-identity atlas runs.
 
 Historical smoke/pilot entry points are stored under `archive/workspace_cleanup_20260827/root_entrypoints/`. Non-primary model implementations remain under `archive/non_primary_models_20260825/`.
 

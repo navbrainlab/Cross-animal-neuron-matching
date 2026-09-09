@@ -51,6 +51,19 @@ bash scripts/zebrafish/run_zebrafish_mprt_lofo8_seed42.sh all
 
 结果：`/home/ubuntu/klb/nuclr/nuclr/runs/zebrafish_github_release_lofo8_seed42_v1/aggregate/`
 
+### Zebrafish 的 StatAtlas / CRF-ID 对照实验
+
+从仓库目录运行下面三条命令：
+
+```bash
+cd /home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility
+PYTHONPATH=neurid:. /home/ubuntu/anaconda3/envs/nuclr310/bin/python scripts/zebrafish/evaluate_zebrafish_statatlas_crfid_lofo8.py select --data-root ../Data/Zebrafish_MPRT_LOFO8_60m --run-root ../runs/zebrafish_statatlas_crfid_pairwise_lofo8_v1
+PYTHONPATH=neurid:. /home/ubuntu/anaconda3/envs/nuclr310/bin/python scripts/zebrafish/evaluate_zebrafish_statatlas_crfid_lofo8.py test --data-root ../Data/Zebrafish_MPRT_LOFO8_60m --run-root ../runs/zebrafish_statatlas_crfid_pairwise_lofo8_v1
+PYTHONPATH=neurid:. /home/ubuntu/anaconda3/envs/nuclr310/bin/python scripts/zebrafish/evaluate_zebrafish_statatlas_crfid_lofo8.py aggregate --run-root ../runs/zebrafish_statatlas_crfid_pairwise_lofo8_v1
+```
+
+结果：`/home/ubuntu/klb/nuclr/nuclr/runs/zebrafish_statatlas_crfid_pairwise_lofo8_v1/summary.md`
+
 ## ZM9624（两只虫双向留一、seed=42）
 
 ```bash

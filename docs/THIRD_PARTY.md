@@ -11,6 +11,7 @@ revision below. Each project remains governed by its own license.
 | GWOT-MD/GWTune | <https://github.com/oizumi-lab/GWTune.git> | `8ad4fd949a477f7b7fb6a67205348a3a747026ec` |
 | Multimodal Transformer | <https://github.com/yaohungt/Multimodal-Transformer.git> | `a670936824ee722c8494fd98d204977a1d663c7a` |
 | NuCLR | <https://github.com/nerdslab/NuCLR.git> | `0fa409b304147ace00507063d44f03155691af62` |
+| StatAtlas | <https://github.com/amin-nejat/stat-atlas.git> | `29652ab83b6ff870b71a5969e25328fa8e488c90` |
 | Statistical atlas/NWBelegans | <https://github.com/focolab/NWBelegans.git> | `74e976ac80c38facd396dadbf2f35d913dd0ed6d` |
 | GeoTransformer | <https://github.com/qinzheng93/GeoTransformer.git> | `e7a135af4c318ff3b8d7f6c963df094d7e4ea540` |
 | RGM | <https://github.com/fukexue/RGM.git> | `b0e2f742ab58e1b87cabb779d1c24f1441f827c9` |

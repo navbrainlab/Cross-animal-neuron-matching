@@ -53,6 +53,20 @@
       "deterministic": true,
       "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
     },
+    "StatAtlas (pairwise adaptation)": {
+      "seed": null,
+      "deterministic": true,
+      "activity_used": false,
+      "canonical_global_atlas": false,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "CRF-ID (pairwise Python adaptation)": {
+      "seed": null,
+      "deterministic": true,
+      "activity_used": false,
+      "canonical_global_atlas": false,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
     "Ours": {
       "seed": 42,
       "deterministic": false,

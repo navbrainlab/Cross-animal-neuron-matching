@@ -20,6 +20,7 @@ historical. Zebrafish remains a separately defined LOFO8 × seed-42 experiment.
 | NeuRID component ablation, CV5 × seed42 | `component_ablation/seed42/` | `../scripts/neurid/run_mprt_component_ablation_cv5x3.py`, `../scripts/neurid/summarize_component_ablation_seed42.py` | Main-protocol aligned |
 | NeuRID component ablation, CV5 × 3 seeds | `component_ablation/cv5x3/` | same runner and merge scripts | Historical/supplementary stability |
 | Zebrafish LOFO8 | `zebrafish_lofo8/` | `../scripts/zebrafish/`, baseline overlays under `../baselines/adapters/` | Complete eight-fold table |
+| Zebrafish StatAtlas/CRF-ID pairwise adaptations | `zebrafish_lofo8/statatlas_crfid_pairwise_lofo8_v1/` | `../scripts/zebrafish/evaluate_zebrafish_statatlas_crfid_lofo8.py` | Complete: 16 validation locks and 16 held-out fold-method results |
 | Cross-animal population relations | `mechanisms/` | `../scripts/mechanisms/` | Compact tables and figures retained |
 | Coordinate noise, missing neurons and distractors | `robustness/formal_native_cv5_*` | `../scripts/robustness/` | Use only the `formal_*` outputs |
 | Activity noise | `robustness/formal_activity_noise_v1/` | robustness preparation/evaluation/summarization scripts | Main-protocol severity-zero gate passed |
@@ -58,6 +59,10 @@ historical. Zebrafish remains a separately defined LOFO8 × seed-42 experiment.
   `../scripts/zebrafish/prepare_zebrafish_mprt_lofo8_seed42.py` and
   `run_zebrafish_mprt_lofo8_seed42.sh`; baseline evaluators and the aggregator
   are in the same directory.
+- Zebrafish position-only StatAtlas/CRF-ID pairwise adaptations:
+  `../scripts/zebrafish/evaluate_zebrafish_statatlas_crfid_lofo8.py`. The
+  archived `select` locks, fold results, pair sufficient statistics and
+  aggregate are under `zebrafish_lofo8/statatlas_crfid_pairwise_lofo8_v1/`.
 
 Run `python scripts/check_release.py` from the repository root before a GitHub
 push. It parses every Python and JSON file, checks the canonical fold-manifest

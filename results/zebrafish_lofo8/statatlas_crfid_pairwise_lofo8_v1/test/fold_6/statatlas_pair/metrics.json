@@ -1,0 +1,131 @@
+{
+  "activity_used": false,
+  "display_name": "StatAtlas (pairwise adaptation)",
+  "fold": 6,
+  "lock_sha256": "81bcc831d7de53e884ebc2793e83ee48bdad40c5c0e2b130e4b4f84f13e2ea47",
+  "method": "statatlas_pair",
+  "metrics": {
+    "hungarian_accuracy": 0.9872068230277186,
+    "hungarian_queries": 938,
+    "mrr_real": 0.9763681592039801,
+    "pairs": 8,
+    "queries": 938,
+    "top1_real": 0.9562899786780383,
+    "top5_real": 1.0
+  },
+  "official_references": {
+    "crfid": {
+      "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+      "principles_used": [
+        "CPD registration unary",
+        "relative-angle and distance edge consistency"
+      ],
+      "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+      "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+    },
+    "statatlas": {
+      "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+      "principles_used": [
+        "affine/similarity atlas alignment",
+        "Gaussian spatial likelihood"
+      ],
+      "repository": "https://github.com/amin-nejat/stat-atlas"
+    }
+  },
+  "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+  "schema": "zebrafish-pairwise-adaptation-result-v1",
+  "selected_config": {
+    "covariance": "train",
+    "transform": "affine",
+    "trim": 0.8
+  },
+  "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+  "test_labels_usage": "metrics only, after both directional score matrices are complete",
+  "test_manifest": {
+    "entries": [
+      {
+        "bytes": 27476,
+        "name": "lineage_20160328__gap60m__p000__q.npz",
+        "sha256": "05bdcd850a56e82b017ab3e026298bdd9c7dbdf9c0f533ba9b53a34124ced5c3"
+      },
+      {
+        "bytes": 28358,
+        "name": "lineage_20160328__gap60m__p000__r.npz",
+        "sha256": "4b99152d562f22c977ac2c16ad43e5d379b2e9c5d51db30e1cb4681427b1a3f0"
+      },
+      {
+        "bytes": 27478,
+        "name": "lineage_20160328__gap60m__p001__q.npz",
+        "sha256": "59b4c2308e0d9eb20f38c82c65a71d47dc09749f599c570d0f30b3f8e358cb8a"
+      },
+      {
+        "bytes": 28767,
+        "name": "lineage_20160328__gap60m__p001__r.npz",
+        "sha256": "8acb2573a56227156ff505dc2fe62e1cacac9face1d2736e5f11a1d8129131bb"
+      },
+      {
+        "bytes": 27503,
+        "name": "lineage_20160328__gap60m__p002__q.npz",
+        "sha256": "17b93942a95deeea9addd06ac4ee90301c3897de64ac3262d3b1182fb5d46d2e"
+      },
+      {
+        "bytes": 28760,
+        "name": "lineage_20160328__gap60m__p002__r.npz",
+        "sha256": "ebd1d27ae0745c7b96dcd2c9d0073437254d755636d383ab67d3a7e1d51b72ed"
+      },
+      {
+        "bytes": 27919,
+        "name": "lineage_20160328__gap60m__p003__q.npz",
+        "sha256": "41f6a5ed8631cfa44c4cd8cce9429c1477f2204538464697b74f2cbd1d8dc27d"
+      },
+      {
+        "bytes": 29071,
+        "name": "lineage_20160328__gap60m__p003__r.npz",
+        "sha256": "7423d3da73d99b4f96ae75b5fd6e3e186768beb0afb5204d5face5ffa736ff0e"
+      },
+      {
+        "bytes": 28364,
+        "name": "lineage_20160328__gap60m__p004__q.npz",
+        "sha256": "d1248c95e5399934c481c1df0d856e6e394e21071478440365aa7cc430af65e8"
+      },
+      {
+        "bytes": 29218,
+        "name": "lineage_20160328__gap60m__p004__r.npz",
+        "sha256": "ffa33177e234e2a6781bed8af3a563e2f767a8c41dfd7cf7d56c4714917ed9c8"
+      },
+      {
+        "bytes": 28769,
+        "name": "lineage_20160328__gap60m__p005__q.npz",
+        "sha256": "68bc984f7118b277b3bc283cee723628fedc5a294104d89151ac37d5840a1d0e"
+      },
+      {
+        "bytes": 29113,
+        "name": "lineage_20160328__gap60m__p005__r.npz",
+        "sha256": "96b3cc15b3069597091830f6459598232979febd0439f2886b1e329594e651f9"
+      },
+      {
+        "bytes": 28758,
+        "name": "lineage_20160328__gap60m__p006__q.npz",
+        "sha256": "5d01440aa1799978d422bcf11269c910d5d7636803c244b5b1fde1097b7bbd1b"
+      },
+      {
+        "bytes": 29196,
+        "name": "lineage_20160328__gap60m__p006__r.npz",
+        "sha256": "decdff9dd50fb6f661f928f08b774b90e7d76e94eff9c375bcdc2ce79545fa75"
+      },
+      {
+        "bytes": 29074,
+        "name": "lineage_20160328__gap60m__p007__q.npz",
+        "sha256": "76769403dc6e94456ee5219c9f994908deedf5d8890f5cf127254a7d35794f78"
+      },
+      {
+        "bytes": 29061,
+        "name": "lineage_20160328__gap60m__p007__r.npz",
+        "sha256": "4025a6d67ebcce1799c14a0fc569d5a87f06f4dfbb29e2f32dc7c60254c2a93e"
+      }
+    ],
+    "files": 16,
+    "sha256": "f58633d54e925760bf0c76b8f705de46440257d13cf2609584392e686015c4f6",
+    "split": "test"
+  }
+}

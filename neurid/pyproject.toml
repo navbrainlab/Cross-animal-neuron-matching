@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-eval = ["scipy>=1.10"]
+eval = ["scipy>=1.10", "pycpd>=2.0"]
 test = ["pytest>=7"]
 
 [tool.setuptools.packages.find]

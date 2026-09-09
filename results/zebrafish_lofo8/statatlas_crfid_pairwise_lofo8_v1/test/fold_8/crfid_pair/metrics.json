@@ -1,0 +1,189 @@
+{
+  "activity_used": false,
+  "display_name": "CRF-ID (pairwise Python adaptation)",
+  "fold": 8,
+  "lock_sha256": "cfc74fb2f0d79ceba265f0ea2092a57894144dffec82a646202195c4cdd5d27f",
+  "method": "crfid_pair",
+  "metrics": {
+    "hungarian_accuracy": 0.9789377289377289,
+    "hungarian_queries": 2184,
+    "mrr_real": 0.9657432844932845,
+    "pairs": 14,
+    "queries": 2184,
+    "top1_real": 0.9363553113553114,
+    "top5_real": 1.0
+  },
+  "official_references": {
+    "crfid": {
+      "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+      "principles_used": [
+        "CPD registration unary",
+        "relative-angle and distance edge consistency"
+      ],
+      "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+      "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+    },
+    "statatlas": {
+      "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+      "principles_used": [
+        "affine/similarity atlas alignment",
+        "Gaussian spatial likelihood"
+      ],
+      "repository": "https://github.com/amin-nejat/stat-atlas"
+    }
+  },
+  "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+  "schema": "zebrafish-pairwise-adaptation-result-v1",
+  "selected_config": {
+    "edge_weight": 0.01
+  },
+  "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+  "test_labels_usage": "metrics only, after both directional score matrices are complete",
+  "test_manifest": {
+    "entries": [
+      {
+        "bytes": 37076,
+        "name": "lineage_20170925__gap60m__p000__q.npz",
+        "sha256": "f659b6b2cca000512ef75840e4600fb94ec606fd39f12bbda750f56ab80d66a3"
+      },
+      {
+        "bytes": 36838,
+        "name": "lineage_20170925__gap60m__p000__r.npz",
+        "sha256": "7806ef829e343b01703fbfd4cf1608b79c6f7d4afb73b96d36cc8712232f9cb5"
+      },
+      {
+        "bytes": 36924,
+        "name": "lineage_20170925__gap60m__p001__q.npz",
+        "sha256": "bf01a3270517a4c4667c93593fd6f7cea4a03b5fc77aba8f1ad78e2f57b63f66"
+      },
+      {
+        "bytes": 36749,
+        "name": "lineage_20170925__gap60m__p001__r.npz",
+        "sha256": "0a5834f70be8abdc3bdc10e4425ce409b74fc54f43c170c223b6b4526df076bf"
+      },
+      {
+        "bytes": 37006,
+        "name": "lineage_20170925__gap60m__p002__q.npz",
+        "sha256": "ac813b03a09437dbd469fc7d0e3b2cea4504e375b62626f06d2225615141eced"
+      },
+      {
+        "bytes": 36767,
+        "name": "lineage_20170925__gap60m__p002__r.npz",
+        "sha256": "82ff0b78242526e45807d0458fe7799cf58318635e38ed35452f946889d33a1f"
+      },
+      {
+        "bytes": 36990,
+        "name": "lineage_20170925__gap60m__p003__q.npz",
+        "sha256": "dadbe77ae92c83777bd5bb125bcadfffceff652bad1b1f1a89c6ecfdbfc31290"
+      },
+      {
+        "bytes": 36699,
+        "name": "lineage_20170925__gap60m__p003__r.npz",
+        "sha256": "b71c9113ae2afe7913712e4c93b83f983821df3296b55d97660eff0224374132"
+      },
+      {
+        "bytes": 36838,
+        "name": "lineage_20170925__gap60m__p004__q.npz",
+        "sha256": "9e8e792cf8f69c61380c6801695a780b73a2809e164cf1552b5ada6ec6f7e774"
+      },
+      {
+        "bytes": 36589,
+        "name": "lineage_20170925__gap60m__p004__r.npz",
+        "sha256": "658b2f92166d889957f2f83923adaa67a412e42105f2c2bffbf8aed644c06736"
+      },
+      {
+        "bytes": 36748,
+        "name": "lineage_20170925__gap60m__p005__q.npz",
+        "sha256": "29ff1c2f30bb5a957e94ebf9d83027a57aaf6592ea11bb229f15b98140faafa3"
+      },
+      {
+        "bytes": 36506,
+        "name": "lineage_20170925__gap60m__p005__r.npz",
+        "sha256": "310e2929e3410f6512d2e2772beb417faa7b6eda73308b026b41c64aac59b4da"
+      },
+      {
+        "bytes": 36768,
+        "name": "lineage_20170925__gap60m__p006__q.npz",
+        "sha256": "90f45d8c9db798113a0aff2d2400a0e259759053b191711161a055e320c6ef06"
+      },
+      {
+        "bytes": 36322,
+        "name": "lineage_20170925__gap60m__p006__r.npz",
+        "sha256": "d8c814727bfa7de668a62f23474deb5aabf1f36de2cb1bef195a3b13089ef653"
+      },
+      {
+        "bytes": 36704,
+        "name": "lineage_20170925__gap60m__p007__q.npz",
+        "sha256": "3262dd9ae7b562e02c6139a0af523682b44266771c65a5e6fb787fd52dbdb211"
+      },
+      {
+        "bytes": 36463,
+        "name": "lineage_20170925__gap60m__p007__r.npz",
+        "sha256": "8ca7fea9175729b207586069ec046df442678f9e4352adee9121256a3c78c088"
+      },
+      {
+        "bytes": 36593,
+        "name": "lineage_20170925__gap60m__p008__q.npz",
+        "sha256": "82f68678b1be9cf8df3084ade43d27aaa9cf8050738b93972832b53ebadad4da"
+      },
+      {
+        "bytes": 36357,
+        "name": "lineage_20170925__gap60m__p008__r.npz",
+        "sha256": "f03f78b54fdadc49649a2cb505bb0294ed52b0c4eef62d377b9e168e12964fcc"
+      },
+      {
+        "bytes": 36505,
+        "name": "lineage_20170925__gap60m__p009__q.npz",
+        "sha256": "467ba7cf1a51d589ad9bdb233dc5ec30c248306d110cf780937fe2541a2134cb"
+      },
+      {
+        "bytes": 36303,
+        "name": "lineage_20170925__gap60m__p009__r.npz",
+        "sha256": "235905ddebc658b2b2e71c0d8e98d68e639ba13b1a2be467c6a05af0528dbbea"
+      },
+      {
+        "bytes": 36320,
+        "name": "lineage_20170925__gap60m__p010__q.npz",
+        "sha256": "16d65a51ad193db1578b68a019aff306ed7f1d96f8749e239e092c107c38e9bf"
+      },
+      {
+        "bytes": 36174,
+        "name": "lineage_20170925__gap60m__p010__r.npz",
+        "sha256": "f083ea280b4fcdf4718a344650057b750d7e3d8da3caea9df284938d0ff046f0"
+      },
+      {
+        "bytes": 36459,
+        "name": "lineage_20170925__gap60m__p011__q.npz",
+        "sha256": "803c8e59ac1deed98e5e9713bf040b1dc4765acecbc3d0924175bc21b68a5781"
+      },
+      {
+        "bytes": 36022,
+        "name": "lineage_20170925__gap60m__p011__r.npz",
+        "sha256": "9a679c7fe28ad51b0702e7305d38833356676c27d4d87935360ba0bd1374f918"
+      },
+      {
+        "bytes": 36357,
+        "name": "lineage_20170925__gap60m__p012__q.npz",
+        "sha256": "6a3fa51673b92509369c45cb2dcde1b8f180674cbc23cc66d9d64ec5da2f46eb"
+      },
+      {
+        "bytes": 35988,
+        "name": "lineage_20170925__gap60m__p012__r.npz",
+        "sha256": "0593a0e078f393d92f7a6d9ed10786ab93187563191dd6e7133518952c757123"
+      },
+      {
+        "bytes": 36302,
+        "name": "lineage_20170925__gap60m__p013__q.npz",
+        "sha256": "edcd4d6714661328344508c7e17f6b16f12a4db91c7e268cfa7bbba3fc310095"
+      },
+      {
+        "bytes": 35830,
+        "name": "lineage_20170925__gap60m__p013__r.npz",
+        "sha256": "50afe3f3df3d3354b09a96ddd7cbb5a5ceb3709210993e579452a08c5639037e"
+      }
+    ],
+    "files": 28,
+    "sha256": "b963f810d986e72a88aab661dbe8d47e73da23b0624e4bed2d8d275b9e34a5ae",
+    "split": "test"
+  }
+}

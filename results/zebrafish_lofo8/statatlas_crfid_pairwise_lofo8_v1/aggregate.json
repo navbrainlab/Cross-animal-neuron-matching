@@ -1,0 +1,2963 @@
+{
+  "aggregation": "unweighted mean and sample SD across held-out fish",
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "methods": {
+    "crfid_pair": {
+      "display_name": "CRF-ID (pairwise Python adaptation)",
+      "fold_results": [
+        {
+          "activity_used": false,
+          "display_name": "CRF-ID (pairwise Python adaptation)",
+          "fold": 1,
+          "lock_sha256": "dd0e75c8378dd7d09161f39881d18b2aa09ed407b4cdf19acc8bf1b5b6858f6f",
+          "method": "crfid_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.8699095022624435,
+            "hungarian_queries": 3536,
+            "mrr_real": 0.8931383923235843,
+            "pairs": 16,
+            "queries": 3536,
+            "top1_real": 0.8289027149321267,
+            "top5_real": 0.9768099547511312
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "edge_weight": 0.01
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 48275,
+                "name": "func_20150410__gap60m__p000__q.npz",
+                "sha256": "188fcd2039cdfa6ad2594aafceb7bc89beb1ea4e8629c2875c19061146ef8d0a"
+              },
+              {
+                "bytes": 50808,
+                "name": "func_20150410__gap60m__p000__r.npz",
+                "sha256": "c045ae6f1f10c6736d1a63079d9a5963512bba2ad47d62d2ddb5c7f4e35b1929"
+              },
+              {
+                "bytes": 48659,
+                "name": "func_20150410__gap60m__p001__q.npz",
+                "sha256": "311008594eb8122cc051632fd92ed4c649b816923963bab65dcd72dd47cb9369"
+              },
+              {
+                "bytes": 51185,
+                "name": "func_20150410__gap60m__p001__r.npz",
+                "sha256": "dac7dae51c659a3781e4e2bdbf4427ae1271837538d80b0a9bdc4ea7e635cd01"
+              },
+              {
+                "bytes": 49066,
+                "name": "func_20150410__gap60m__p002__q.npz",
+                "sha256": "007d24c07bb19663ad9c13d04b04ac8508e325f3a9b86f1bcfb630bb8bed49f6"
+              },
+              {
+                "bytes": 52474,
+                "name": "func_20150410__gap60m__p002__r.npz",
+                "sha256": "214af9c3c8fd0cb1e546e0be70b3fbaf5b03ce46587fa85faf0fc71c6a4c4aec"
+              },
+              {
+                "bytes": 49965,
+                "name": "func_20150410__gap60m__p003__q.npz",
+                "sha256": "b17dbbbd5436af040a10284c6187615c424adfd39b2872ed15dd63a17dfa82ac"
+              },
+              {
+                "bytes": 53263,
+                "name": "func_20150410__gap60m__p003__r.npz",
+                "sha256": "e905869662c6e68f38e2ca838e69bc4c1ed909ebdc9d4b8c3af1221b576dd283"
+              },
+              {
+                "bytes": 50804,
+                "name": "func_20150410__gap60m__p004__q.npz",
+                "sha256": "7a6d54f574cfe0d2eb07d00ff815a738f28ff3341f5cb689c5f940a96de1cb8c"
+              },
+              {
+                "bytes": 54146,
+                "name": "func_20150410__gap60m__p004__r.npz",
+                "sha256": "609597b74ccdd28940729e85b6b3533c3a0d90545f188f7133a8861e2690c491"
+              },
+              {
+                "bytes": 51184,
+                "name": "func_20150410__gap60m__p005__q.npz",
+                "sha256": "761b8554ed3858a8178963a2aaf9711fbfa94d2ad0d031c8e2e25bd83a48ecc5"
+              },
+              {
+                "bytes": 55211,
+                "name": "func_20150410__gap60m__p005__r.npz",
+                "sha256": "b360869e0591180787788f1d3d27748771e64ea6f5f51829adb7bbfe34408519"
+              },
+              {
+                "bytes": 52467,
+                "name": "func_20150410__gap60m__p006__q.npz",
+                "sha256": "7ca72b2053fb9e6a6adb894736ab56fbed3dbf01c5fa2c274d5d1d428b40f034"
+              },
+              {
+                "bytes": 55224,
+                "name": "func_20150410__gap60m__p006__r.npz",
+                "sha256": "78c0bb038cc99e88899cd9bbf0b1cc66267f4db27978aa4d2ca7b1b4d0abcdaf"
+              },
+              {
+                "bytes": 53265,
+                "name": "func_20150410__gap60m__p007__q.npz",
+                "sha256": "5baaec281714ebc208663a4bfd9e25eebca1a466057f09a15215ed1859871c83"
+              },
+              {
+                "bytes": 55558,
+                "name": "func_20150410__gap60m__p007__r.npz",
+                "sha256": "ad84be685cb82b6c37fca2a66bbc54912e5e5e1211805027440e9b185682c37e"
+              },
+              {
+                "bytes": 54148,
+                "name": "func_20150410__gap60m__p008__q.npz",
+                "sha256": "867d434ae404e1f85b4fe86b993e98c8050038650bba45b494c2da82a48d6704"
+              },
+              {
+                "bytes": 55633,
+                "name": "func_20150410__gap60m__p008__r.npz",
+                "sha256": "f39f022b988101c84d9cb1e5e6c75319a5abb657893ba35157d56cad08c36882"
+              },
+              {
+                "bytes": 55209,
+                "name": "func_20150410__gap60m__p009__q.npz",
+                "sha256": "69ae2e9bcb6740647656917a105aaa881d68c932e45adcd13b1e711629a1b839"
+              },
+              {
+                "bytes": 56372,
+                "name": "func_20150410__gap60m__p009__r.npz",
+                "sha256": "05adc0e6ebcd35cf17b73f23298878f904c394b8a5affaeefc493186046ab2de"
+              },
+              {
+                "bytes": 55218,
+                "name": "func_20150410__gap60m__p010__q.npz",
+                "sha256": "c74ca6952252092a1fbf390640f7456bb06f63f2522e61a76f98fe0ba5244be1"
+              },
+              {
+                "bytes": 57175,
+                "name": "func_20150410__gap60m__p010__r.npz",
+                "sha256": "cf1b65d17115abf37e1d158f79e19a0a1081b68ea81dae9e2810518fcf1ccf7d"
+              },
+              {
+                "bytes": 55560,
+                "name": "func_20150410__gap60m__p011__q.npz",
+                "sha256": "4b3b161a5696041b74ee57bae64d7ea0af7ed5cf075b8d5b79d1311914333c86"
+              },
+              {
+                "bytes": 58225,
+                "name": "func_20150410__gap60m__p011__r.npz",
+                "sha256": "693f50d387b626ddd899af1293eaf162f0b2225713425ec55ca872603e636868"
+              },
+              {
+                "bytes": 55638,
+                "name": "func_20150410__gap60m__p012__q.npz",
+                "sha256": "f51d7e62e30101ec4e3b41a69612fb19dfeb8ddfd7df3aaf45ea46f706809b14"
+              },
+              {
+                "bytes": 58417,
+                "name": "func_20150410__gap60m__p012__r.npz",
+                "sha256": "b9d1b35ef2d36cbc2a510bf700ed6f327c68210ddaaeb2c215599816ac7f6fa5"
+              },
+              {
+                "bytes": 56368,
+                "name": "func_20150410__gap60m__p013__q.npz",
+                "sha256": "938daef55d16e989e09b186d6a04fe59c2562f92111da8ce8385678f2f812801"
+              },
+              {
+                "bytes": 58347,
+                "name": "func_20150410__gap60m__p013__r.npz",
+                "sha256": "ab183b297b15de3c38529f53f3b52b1fe434a7dfc0655fbcf38b556c87da9d95"
+              },
+              {
+                "bytes": 57172,
+                "name": "func_20150410__gap60m__p014__q.npz",
+                "sha256": "26cf8f46469fe91479f902051393c702b9ac5111cf7bb51baf859c454effc974"
+              },
+              {
+                "bytes": 58237,
+                "name": "func_20150410__gap60m__p014__r.npz",
+                "sha256": "c40ed7ffd53d56c016ea6cd2776ab9c3618f8376818d3eaefd01127664e2a00c"
+              },
+              {
+                "bytes": 58218,
+                "name": "func_20150410__gap60m__p015__q.npz",
+                "sha256": "2924f2e0b19f25cf788d9748089d5760942fe9d90b6eb7c871be0b3d925faa4a"
+              },
+              {
+                "bytes": 58238,
+                "name": "func_20150410__gap60m__p015__r.npz",
+                "sha256": "8f04fd0277eb6be1d566941d9513e3e4079d872fe601d0cd2fc9e2193e6a347d"
+              }
+            ],
+            "files": 32,
+            "sha256": "a29fb4d4ea9dc48bc1a5b4cc6dcd752ac00d56eeceff3e436eed1b0eab518f79",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "CRF-ID (pairwise Python adaptation)",
+          "fold": 2,
+          "lock_sha256": "d633fbc0b69a77a958b265a252b9ca94db44ce547a36a9a2932dca57b5d56077",
+          "method": "crfid_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.947395042994436,
+            "hungarian_queries": 3954,
+            "mrr_real": 0.9286930654912446,
+            "pairs": 18,
+            "queries": 3954,
+            "top1_real": 0.8712696004046535,
+            "top5_real": 0.9979767324228629
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "edge_weight": 0.1
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 50747,
+                "name": "func_20150417__gap60m__p000__q.npz",
+                "sha256": "82715ca4b50c935055dccb6f0d24dffe3437f7699d1de3e4dd626fb3ccf01675"
+              },
+              {
+                "bytes": 52132,
+                "name": "func_20150417__gap60m__p000__r.npz",
+                "sha256": "eb086358449ea116738e60a3b9043a69592df34c99630030bc68bed62001b102"
+              },
+              {
+                "bytes": 51318,
+                "name": "func_20150417__gap60m__p001__q.npz",
+                "sha256": "b8e15a25909ad038d1a5c3e24df94c318cb02c94b46f6924f7dcd101f9d94da2"
+              },
+              {
+                "bytes": 52097,
+                "name": "func_20150417__gap60m__p001__r.npz",
+                "sha256": "23082a9ebf90b80b578a90ea7181f32b309a713a644ff4306224cb2ff3758b9a"
+              },
+              {
+                "bytes": 52030,
+                "name": "func_20150417__gap60m__p002__q.npz",
+                "sha256": "e544522a2d5e522e87c0a3da6290e1e88dd5dc5e89d034850c9e4a4e9237d6a9"
+              },
+              {
+                "bytes": 52097,
+                "name": "func_20150417__gap60m__p002__r.npz",
+                "sha256": "534881a25810867e72f81f955fc520f81ef8cd9a89747cb67097bed095abf742"
+              },
+              {
+                "bytes": 52032,
+                "name": "func_20150417__gap60m__p003__q.npz",
+                "sha256": "182788650dc2fd7d1d6be9836106ca9f38cdf93045d759bdf45ca2873f8365c9"
+              },
+              {
+                "bytes": 52114,
+                "name": "func_20150417__gap60m__p003__r.npz",
+                "sha256": "81efcf0b42269526842113ff3d485f1f1b011a4b4c26fdf2e2defe744efb199e"
+              },
+              {
+                "bytes": 52130,
+                "name": "func_20150417__gap60m__p004__q.npz",
+                "sha256": "01038d045c8291267a9504392d1ae763012537f81bd50ca5391a1574ac56f195"
+              },
+              {
+                "bytes": 52465,
+                "name": "func_20150417__gap60m__p004__r.npz",
+                "sha256": "1c2afd53dafbc5767cf6572fc045764b0aa3564ee5a560de4c3e921c6b410b86"
+              },
+              {
+                "bytes": 52097,
+                "name": "func_20150417__gap60m__p005__q.npz",
+                "sha256": "14b450778bddaef4c6cf71a18516eebc015ee3ab556e306b0619962569f65d31"
+              },
+              {
+                "bytes": 53020,
+                "name": "func_20150417__gap60m__p005__r.npz",
+                "sha256": "2bf5a0f87dd629cfbc1c765a305f65370099ba5a7f31d4dc01702aefa5d9fa38"
+              },
+              {
+                "bytes": 52090,
+                "name": "func_20150417__gap60m__p006__q.npz",
+                "sha256": "940549a454239c09514cdcf26f6659743d76ef7b3010e3fa1f51e3110e3e4444"
+              },
+              {
+                "bytes": 52935,
+                "name": "func_20150417__gap60m__p006__r.npz",
+                "sha256": "c4321faf2c2746551a3a1edbfe0cae5e259d7a89661aa81eac0b8ecf5e50ee4a"
+              },
+              {
+                "bytes": 52112,
+                "name": "func_20150417__gap60m__p007__q.npz",
+                "sha256": "b8372f65b2d3e40d25ec3bb19fe44038e2aa6a3ab6ad35ece55ec0c372ebf71c"
+              },
+              {
+                "bytes": 53254,
+                "name": "func_20150417__gap60m__p007__r.npz",
+                "sha256": "44d5705d2c9328845694f198557ad422ae75ef05722819c2841a51d75a9d6588"
+              },
+              {
+                "bytes": 52467,
+                "name": "func_20150417__gap60m__p008__q.npz",
+                "sha256": "af1fd93ef80dfdd093f8ba5b91a6dc15a9d6d64f52305c43cd0659a655e8c0ea"
+              },
+              {
+                "bytes": 53742,
+                "name": "func_20150417__gap60m__p008__r.npz",
+                "sha256": "b3800447faaeadc7884cc2b5db5066f594e032cebd75e2ec912ad914625cc86a"
+              },
+              {
+                "bytes": 53014,
+                "name": "func_20150417__gap60m__p009__q.npz",
+                "sha256": "938946de6510b381e6daa5232af67a30c54c3251b9b5b05d6aa649f42df42212"
+              },
+              {
+                "bytes": 53706,
+                "name": "func_20150417__gap60m__p009__r.npz",
+                "sha256": "35e6757b536f37db2251d9fcb0573ecd99b36dd869ada7c0f5c0c94ebdc028be"
+              },
+              {
+                "bytes": 52933,
+                "name": "func_20150417__gap60m__p010__q.npz",
+                "sha256": "ccc22fc4d60b2f82c093d818935952ba1b53e09ab35f53fe52c65ee8684dcef9"
+              },
+              {
+                "bytes": 54078,
+                "name": "func_20150417__gap60m__p010__r.npz",
+                "sha256": "675c4f453c6f117d30b8a2eac156632aaaf12ab3f34a6d6935854384a1d204c8"
+              },
+              {
+                "bytes": 53251,
+                "name": "func_20150417__gap60m__p011__q.npz",
+                "sha256": "00c89478ab4e11a61731e538b6155115470aefcf9a1153b060d41a32a7a5acd5"
+              },
+              {
+                "bytes": 54131,
+                "name": "func_20150417__gap60m__p011__r.npz",
+                "sha256": "923c733be2f47f3797fa3dfecfa59167b989b0926e1c3e552cb5a19473f1aef3"
+              },
+              {
+                "bytes": 53742,
+                "name": "func_20150417__gap60m__p012__q.npz",
+                "sha256": "87b2f83b716e90d998f67667d6af9b3f03b60136b6064dd2f189743ac383af24"
+              },
+              {
+                "bytes": 53950,
+                "name": "func_20150417__gap60m__p012__r.npz",
+                "sha256": "5d3902d22a23dd51da01a6ac76ae0be98726882381173f649d600fe29369446f"
+              },
+              {
+                "bytes": 53707,
+                "name": "func_20150417__gap60m__p013__q.npz",
+                "sha256": "358164dfb8205c4da53307181cdb57b4e8a4100fab537f9c4a75d6f8b55983fe"
+              },
+              {
+                "bytes": 53896,
+                "name": "func_20150417__gap60m__p013__r.npz",
+                "sha256": "9f099294ee699aece5827c639d3b20f571501b8b666bd0628f45a2fd0654b527"
+              },
+              {
+                "bytes": 54079,
+                "name": "func_20150417__gap60m__p014__q.npz",
+                "sha256": "53ed870defdc6023a33e6aabd3f41e0f5c35e43c664b4ff70ebaacecca1f6413"
+              },
+              {
+                "bytes": 54809,
+                "name": "func_20150417__gap60m__p014__r.npz",
+                "sha256": "4635ce5f87e38b0b47834958a0b10925948702ccd787becb430048b4604c690b"
+              },
+              {
+                "bytes": 54127,
+                "name": "func_20150417__gap60m__p015__q.npz",
+                "sha256": "621e906493f9919b72273fc3c73d3897aee96e11fb40d38764c85b11b90068d9"
+              },
+              {
+                "bytes": 54740,
+                "name": "func_20150417__gap60m__p015__r.npz",
+                "sha256": "99895db65874d3e5e5e647160afef320a7ed3705fd4abaf29bc5320826195e14"
+              },
+              {
+                "bytes": 53947,
+                "name": "func_20150417__gap60m__p016__q.npz",
+                "sha256": "f8f8ee6d4b126f328ba6086ccbd3b2ae9a89490dfd30119cc94a45a5f0d5c72b"
+              },
+              {
+                "bytes": 55238,
+                "name": "func_20150417__gap60m__p016__r.npz",
+                "sha256": "6328dffaa54aba7c726dbef20a52e24944ca0481b876df9d94c1cc1a7c67f914"
+              },
+              {
+                "bytes": 53897,
+                "name": "func_20150417__gap60m__p017__q.npz",
+                "sha256": "6231bdd9ba2a82a8447703b11dc7d0fd95c4b1ed16758fe0f4045fc8ac9896e6"
+              },
+              {
+                "bytes": 55447,
+                "name": "func_20150417__gap60m__p017__r.npz",
+                "sha256": "f7416b18816414a575408d0f872bc8a7635e937a0f53a00613f22708be1669d0"
+              }
+            ],
+            "files": 36,
+            "sha256": "7e4cc993c4d86bedfbe2def2c7e83b32ec10f1925926f8bbc947e1f770fa102d",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "CRF-ID (pairwise Python adaptation)",
+          "fold": 3,
+          "lock_sha256": "fc9840ae3c08f6831aaeeb34f957408818cb13a06748d06b42469586a200080f",
+          "method": "crfid_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9453125,
+            "hungarian_queries": 768,
+            "mrr_real": 0.9363498263888889,
+            "pairs": 6,
+            "queries": 768,
+            "top1_real": 0.8815104166666666,
+            "top5_real": 1.0
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "edge_weight": 0.0
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 32233,
+                "name": "func_20161004__gap60m__p000__q.npz",
+                "sha256": "cb347ddcee55ff3dbcc0150aaeacaff91421c4feddc9ed73e8876e9e529feece"
+              },
+              {
+                "bytes": 31744,
+                "name": "func_20161004__gap60m__p000__r.npz",
+                "sha256": "750a44ae303630147a54563da45edecdffcd855241647562de12da34bb0b8128"
+              },
+              {
+                "bytes": 32185,
+                "name": "func_20161004__gap60m__p001__q.npz",
+                "sha256": "94de4d210e8167eb7cb7a4dfc014e6784b62bb583d6826c09988e30fdf194eba"
+              },
+              {
+                "bytes": 31974,
+                "name": "func_20161004__gap60m__p001__r.npz",
+                "sha256": "d51c66bbc0cb414de9c0ce46837e6292593a602a8c6d374f3620026152accc07"
+              },
+              {
+                "bytes": 32034,
+                "name": "func_20161004__gap60m__p002__q.npz",
+                "sha256": "893e1f8a1270a1ad41619a3f201a82dcac9e32eb250d55661180563bd531d8b4"
+              },
+              {
+                "bytes": 31974,
+                "name": "func_20161004__gap60m__p002__r.npz",
+                "sha256": "d9b5ab577766e0cd798ed429b30cb521dd6ae4a40cfcae616f9399ea61604aca"
+              },
+              {
+                "bytes": 31956,
+                "name": "func_20161004__gap60m__p003__q.npz",
+                "sha256": "5efdb4cc0fb4de5044568707cfa8bef11ebb47acdfef3293637f187665dc99c2"
+              },
+              {
+                "bytes": 32089,
+                "name": "func_20161004__gap60m__p003__r.npz",
+                "sha256": "451df24de7507779b7f8393790ecab89b1d3d9125acdb7d5b84323f1c172856f"
+              },
+              {
+                "bytes": 31737,
+                "name": "func_20161004__gap60m__p004__q.npz",
+                "sha256": "4492180f2d5636cffff1229e7d3718ae5ee2d85e898a82cc5001b92cd9ea59e3"
+              },
+              {
+                "bytes": 32035,
+                "name": "func_20161004__gap60m__p004__r.npz",
+                "sha256": "86913734da317fd1f0dbd7e4fed4d68beb92577d3197bcb8f3bb31c47a673b6c"
+              },
+              {
+                "bytes": 31970,
+                "name": "func_20161004__gap60m__p005__q.npz",
+                "sha256": "297a0fb0ec73d0275a200efe5abb817794d46e3aabfcd2598f3c3db18ad5836d"
+              },
+              {
+                "bytes": 32203,
+                "name": "func_20161004__gap60m__p005__r.npz",
+                "sha256": "8bdeb57ff6a0a889ba856c44c40bb4c43a73170cb81a5f9a240238b1a0428e84"
+              }
+            ],
+            "files": 12,
+            "sha256": "a2b00a9f3d71a39861bc0ea9114c07d79837e4996901a67f9a4a2cc53f94b69d",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "CRF-ID (pairwise Python adaptation)",
+          "fold": 4,
+          "lock_sha256": "01ec2d23d343b9a48bd5f31235ab8c248208e358592de9841bf608521be52223",
+          "method": "crfid_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9054945054945055,
+            "hungarian_queries": 1820,
+            "mrr_real": 0.9134990406418976,
+            "pairs": 13,
+            "queries": 1820,
+            "top1_real": 0.8478021978021978,
+            "top5_real": 0.993956043956044
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "edge_weight": 0.025
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 33945,
+                "name": "islet_20170202__gap60m__p000__q.npz",
+                "sha256": "04d2b70ca9d5ad24f9460bde0fe86d1a8e5a02645e9c78eb7a27bb7a3e41e62b"
+              },
+              {
+                "bytes": 33987,
+                "name": "islet_20170202__gap60m__p000__r.npz",
+                "sha256": "d1f6baa58325c62411bf56805fc2eb9f0bf7cf263e6152d9ad19090fa9841b17"
+              },
+              {
+                "bytes": 34119,
+                "name": "islet_20170202__gap60m__p001__q.npz",
+                "sha256": "f446699ee643850921d5ce3b1bcfcebf86458e554cd4c28ef915bfc5bfbe9501"
+              },
+              {
+                "bytes": 33816,
+                "name": "islet_20170202__gap60m__p001__r.npz",
+                "sha256": "164ad0c782023f2a0fee524ac48adca1aca9585c1cdde2ba4268ac0964434b42"
+              },
+              {
+                "bytes": 34351,
+                "name": "islet_20170202__gap60m__p002__q.npz",
+                "sha256": "897b37554840c4c32d61d70898ba5836cb785bcd2f6c83ff946049142212b172"
+              },
+              {
+                "bytes": 33715,
+                "name": "islet_20170202__gap60m__p002__r.npz",
+                "sha256": "eafa4a0f9530455f6ab1962bc95883f26859851188b7b564fecc756694547da4"
+              },
+              {
+                "bytes": 34184,
+                "name": "islet_20170202__gap60m__p003__q.npz",
+                "sha256": "f5f878dd49746cf370d071199fc14f6086de9f145599e82df3d5666c70dae76b"
+              },
+              {
+                "bytes": 33707,
+                "name": "islet_20170202__gap60m__p003__r.npz",
+                "sha256": "28726cfb189eac82e48c5978bd38af63edb47e89d217da6f3e749e462a6296e1"
+              },
+              {
+                "bytes": 33992,
+                "name": "islet_20170202__gap60m__p004__q.npz",
+                "sha256": "b7740bd24d8367c4302a0d2eed1f041ed5d8629df96c2e795decda6b60983ee3"
+              },
+              {
+                "bytes": 33669,
+                "name": "islet_20170202__gap60m__p004__r.npz",
+                "sha256": "3f33fb3034dc7f68d6d46eecbc8d279de679be6cedc50d2f78096d1343c36e02"
+              },
+              {
+                "bytes": 33815,
+                "name": "islet_20170202__gap60m__p005__q.npz",
+                "sha256": "dd8f6dd7c66c6ad5557ab092ea06ba274def12cc32076d688b310c409cd92936"
+              },
+              {
+                "bytes": 33748,
+                "name": "islet_20170202__gap60m__p005__r.npz",
+                "sha256": "3713cf3c5f03d9555f720e241ce037f4b61dbf8d18ccf362ae0321b5566d9f5c"
+              },
+              {
+                "bytes": 33720,
+                "name": "islet_20170202__gap60m__p006__q.npz",
+                "sha256": "76f7c39ea7856a2886a67801ae45b3e3d422f409d45fff37e08616d9a6b6a710"
+              },
+              {
+                "bytes": 33754,
+                "name": "islet_20170202__gap60m__p006__r.npz",
+                "sha256": "139d329dd3f0695f1d62ddb466f0619ed691c5c18cb74429e2dc43539681d7c1"
+              },
+              {
+                "bytes": 33711,
+                "name": "islet_20170202__gap60m__p007__q.npz",
+                "sha256": "1ce792d1931956ebe361796bc08848bff3f1c589dbf2b00c6b5d8a17d3d875f0"
+              },
+              {
+                "bytes": 33887,
+                "name": "islet_20170202__gap60m__p007__r.npz",
+                "sha256": "ccdde563b8a9e85f35c499eda41d1a85b980ec3586044971bd23763bea418a7c"
+              },
+              {
+                "bytes": 33668,
+                "name": "islet_20170202__gap60m__p008__q.npz",
+                "sha256": "6c5f4e01c4051863cb4ccfc55fc6c93c18dde983dc775e12cc80711fa58ef9c2"
+              },
+              {
+                "bytes": 33738,
+                "name": "islet_20170202__gap60m__p008__r.npz",
+                "sha256": "9903eb373f61b4bca2ce4667982e653221d5a48b52c53dfeac87341a690218e0"
+              },
+              {
+                "bytes": 33746,
+                "name": "islet_20170202__gap60m__p009__q.npz",
+                "sha256": "b7b22e81748c8bd7d0ae090e04685740d97bad016c0b97d97cbd0584feda54b9"
+              },
+              {
+                "bytes": 33745,
+                "name": "islet_20170202__gap60m__p009__r.npz",
+                "sha256": "4d4f1d54f3b0e8007c4429bffc653f6caafc0fa0b96047a23debd0d69da80ffb"
+              },
+              {
+                "bytes": 33751,
+                "name": "islet_20170202__gap60m__p010__q.npz",
+                "sha256": "34ebba29711c20a66e1267ad4cba6af3468ea96b3f35fb3499ea47198871f4d1"
+              },
+              {
+                "bytes": 33777,
+                "name": "islet_20170202__gap60m__p010__r.npz",
+                "sha256": "a0f54e35f1f0df22098be0c58d5175355dad23787565159569303c01f6eb23f3"
+              },
+              {
+                "bytes": 33880,
+                "name": "islet_20170202__gap60m__p011__q.npz",
+                "sha256": "fb9b11ff26ce2f80bccc12addb57c4b0c9f5cf6788a602bd18fcd78e41ad6ac5"
+              },
+              {
+                "bytes": 33402,
+                "name": "islet_20170202__gap60m__p011__r.npz",
+                "sha256": "dd02cf49ccdd4369d5d107b3d30b3bf8eef1c26f6e4e1d151b8f385124b66926"
+              },
+              {
+                "bytes": 33736,
+                "name": "islet_20170202__gap60m__p012__q.npz",
+                "sha256": "2b2d1ed734849d6efeec417d943560c3a484d8cba2d03225090044135cf89440"
+              },
+              {
+                "bytes": 33279,
+                "name": "islet_20170202__gap60m__p012__r.npz",
+                "sha256": "cf00f2ae1df933df64b562515b1a3230e0407b18208bddd47bc0c2c1119a7b36"
+              }
+            ],
+            "files": 26,
+            "sha256": "71be7cff17092aba50d0fc2c5840aa9eb4c8f6d76300c3f1f25967bbaa217508",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "CRF-ID (pairwise Python adaptation)",
+          "fold": 5,
+          "lock_sha256": "361a3de4441c58a42e87b2f2b477f1906ab11421a9d0d2ded835834e6c213759",
+          "method": "crfid_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9426229508196722,
+            "hungarian_queries": 1464,
+            "mrr_real": 0.9509790528233151,
+            "pairs": 12,
+            "queries": 1464,
+            "top1_real": 0.9105191256830601,
+            "top5_real": 1.0
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "edge_weight": 0.025
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 31177,
+                "name": "islet_20170216__gap60m__p000__q.npz",
+                "sha256": "3b511be248d9beb789a370150718f49ecc21ab1c8bd8daa5c8d4d50434c82c34"
+              },
+              {
+                "bytes": 30837,
+                "name": "islet_20170216__gap60m__p000__r.npz",
+                "sha256": "28309cd43294a56eefb4d953f51d261d6d0ae6add15a84219737e61bb983b706"
+              },
+              {
+                "bytes": 30964,
+                "name": "islet_20170216__gap60m__p001__q.npz",
+                "sha256": "cc98c2a8b11817f69197b0ec22c67450557f8acfda94713a84bb9a8890a52182"
+              },
+              {
+                "bytes": 30876,
+                "name": "islet_20170216__gap60m__p001__r.npz",
+                "sha256": "2563d838d23f564e07a4b4527473355d996f39b151b30863d69d3c7d331ba1a6"
+              },
+              {
+                "bytes": 30826,
+                "name": "islet_20170216__gap60m__p002__q.npz",
+                "sha256": "74020eb130431f279e188af2deb114c41a550bbbffe0354b2171f700b1c14425"
+              },
+              {
+                "bytes": 30956,
+                "name": "islet_20170216__gap60m__p002__r.npz",
+                "sha256": "2a195713e6c0b20e32a8fbba611e460ed1a5b7892e85f385ab166a555e005573"
+              },
+              {
+                "bytes": 30835,
+                "name": "islet_20170216__gap60m__p003__q.npz",
+                "sha256": "06e54083db75fa44a3b4a3beb7feb34d33da0c6ad088cccaf5386d2b5784df80"
+              },
+              {
+                "bytes": 30803,
+                "name": "islet_20170216__gap60m__p003__r.npz",
+                "sha256": "9a91f6caf72cf55a82077b560a88ab2d76a2908397a91a1df78c259a623956b1"
+              },
+              {
+                "bytes": 30840,
+                "name": "islet_20170216__gap60m__p004__q.npz",
+                "sha256": "552d631f954866af901aed033f9cbaa89eb1e9e32d5ab247ea6867b3233fcedf"
+              },
+              {
+                "bytes": 30741,
+                "name": "islet_20170216__gap60m__p004__r.npz",
+                "sha256": "b640c4abafc25fa60347294ad49b30d737499a23797b0f27d9077484102ff76f"
+              },
+              {
+                "bytes": 30877,
+                "name": "islet_20170216__gap60m__p005__q.npz",
+                "sha256": "387012718b13165b3aaab554720f46435c340e2845661f39b6b7741401d65332"
+              },
+              {
+                "bytes": 30815,
+                "name": "islet_20170216__gap60m__p005__r.npz",
+                "sha256": "616bdfd1c7bd4088b4d08aa39f381dae7baed14d82b4f33bfffb20718b47d71d"
+              },
+              {
+                "bytes": 30958,
+                "name": "islet_20170216__gap60m__p006__q.npz",
+                "sha256": "20e58956318f285cfdf80bf0688b5a061c159e5b109ed13e57d83c338602f17e"
+              },
+              {
+                "bytes": 30853,
+                "name": "islet_20170216__gap60m__p006__r.npz",
+                "sha256": "ed4d3ca151a104227535067fc6ac171e99d108bb3406945b486d6194be22ba63"
+              },
+              {
+                "bytes": 30805,
+                "name": "islet_20170216__gap60m__p007__q.npz",
+                "sha256": "1be6a0f8927994f5b210a9043774c7170c41c375cbb4ad907ea37f7427a5e935"
+              },
+              {
+                "bytes": 30730,
+                "name": "islet_20170216__gap60m__p007__r.npz",
+                "sha256": "c9f0287f49ba268f5816853090889a670f9fbf63c02d4671b4e0563cd7615a82"
+              },
+              {
+                "bytes": 30741,
+                "name": "islet_20170216__gap60m__p008__q.npz",
+                "sha256": "1e95277aa10fbd5a9704bd3161d794f10a3e5e05cfb7b64762acf4f38304cb0c"
+              },
+              {
+                "bytes": 30713,
+                "name": "islet_20170216__gap60m__p008__r.npz",
+                "sha256": "0673649a32155eed5430df91dc556f8b287cdcad958d26ea6af6419358b47ea5"
+              },
+              {
+                "bytes": 30814,
+                "name": "islet_20170216__gap60m__p009__q.npz",
+                "sha256": "35435c755963393b2ac248c88ab3cec9d11719a1f68ea3774f6cd7a1aa69519b"
+              },
+              {
+                "bytes": 30635,
+                "name": "islet_20170216__gap60m__p009__r.npz",
+                "sha256": "86e2af4f2a28cba4e43a30de8af0a5920aeb3d8ab55824bf91f131b9b8ae262d"
+              },
+              {
+                "bytes": 30850,
+                "name": "islet_20170216__gap60m__p010__q.npz",
+                "sha256": "39973827f916477530548ea15546bf0924ec0ed8bdfb5f1d237dad9855568a68"
+              },
+              {
+                "bytes": 30546,
+                "name": "islet_20170216__gap60m__p010__r.npz",
+                "sha256": "3b301bd6d2f6916c11be5fdab101b8cb2c14822be0b67dc900bed0191ebfe9c8"
+              },
+              {
+                "bytes": 30728,
+                "name": "islet_20170216__gap60m__p011__q.npz",
+                "sha256": "2200ea2373e70006834c2277c1de50f9d8fef0ee4c3bef867a95eb33857929f0"
+              },
+              {
+                "bytes": 30579,
+                "name": "islet_20170216__gap60m__p011__r.npz",
+                "sha256": "b478282e5713ce092e07089d237abe1631030251eea0eb3ebc1c52c41b638174"
+              }
+            ],
+            "files": 24,
+            "sha256": "7be6c35fb9a38b2ac50e0443a3c95e7b594db37d546b3eb1fee775ca2b3758b8",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "CRF-ID (pairwise Python adaptation)",
+          "fold": 6,
+          "lock_sha256": "f3da3dfc5b450eff1ca5ca29733e89fab7abae65869077caf76db0ffae229823",
+          "method": "crfid_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9616204690831557,
+            "hungarian_queries": 938,
+            "mrr_real": 0.9679459843638949,
+            "pairs": 8,
+            "queries": 938,
+            "top1_real": 0.9477611940298507,
+            "top5_real": 1.0
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "edge_weight": 0.025
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 27476,
+                "name": "lineage_20160328__gap60m__p000__q.npz",
+                "sha256": "05bdcd850a56e82b017ab3e026298bdd9c7dbdf9c0f533ba9b53a34124ced5c3"
+              },
+              {
+                "bytes": 28358,
+                "name": "lineage_20160328__gap60m__p000__r.npz",
+                "sha256": "4b99152d562f22c977ac2c16ad43e5d379b2e9c5d51db30e1cb4681427b1a3f0"
+              },
+              {
+                "bytes": 27478,
+                "name": "lineage_20160328__gap60m__p001__q.npz",
+                "sha256": "59b4c2308e0d9eb20f38c82c65a71d47dc09749f599c570d0f30b3f8e358cb8a"
+              },
+              {
+                "bytes": 28767,
+                "name": "lineage_20160328__gap60m__p001__r.npz",
+                "sha256": "8acb2573a56227156ff505dc2fe62e1cacac9face1d2736e5f11a1d8129131bb"
+              },
+              {
+                "bytes": 27503,
+                "name": "lineage_20160328__gap60m__p002__q.npz",
+                "sha256": "17b93942a95deeea9addd06ac4ee90301c3897de64ac3262d3b1182fb5d46d2e"
+              },
+              {
+                "bytes": 28760,
+                "name": "lineage_20160328__gap60m__p002__r.npz",
+                "sha256": "ebd1d27ae0745c7b96dcd2c9d0073437254d755636d383ab67d3a7e1d51b72ed"
+              },
+              {
+                "bytes": 27919,
+                "name": "lineage_20160328__gap60m__p003__q.npz",
+                "sha256": "41f6a5ed8631cfa44c4cd8cce9429c1477f2204538464697b74f2cbd1d8dc27d"
+              },
+              {
+                "bytes": 29071,
+                "name": "lineage_20160328__gap60m__p003__r.npz",
+                "sha256": "7423d3da73d99b4f96ae75b5fd6e3e186768beb0afb5204d5face5ffa736ff0e"
+              },
+              {
+                "bytes": 28364,
+                "name": "lineage_20160328__gap60m__p004__q.npz",
+                "sha256": "d1248c95e5399934c481c1df0d856e6e394e21071478440365aa7cc430af65e8"
+              },
+              {
+                "bytes": 29218,
+                "name": "lineage_20160328__gap60m__p004__r.npz",
+                "sha256": "ffa33177e234e2a6781bed8af3a563e2f767a8c41dfd7cf7d56c4714917ed9c8"
+              },
+              {
+                "bytes": 28769,
+                "name": "lineage_20160328__gap60m__p005__q.npz",
+                "sha256": "68bc984f7118b277b3bc283cee723628fedc5a294104d89151ac37d5840a1d0e"
+              },
+              {
+                "bytes": 29113,
+                "name": "lineage_20160328__gap60m__p005__r.npz",
+                "sha256": "96b3cc15b3069597091830f6459598232979febd0439f2886b1e329594e651f9"
+              },
+              {
+                "bytes": 28758,
+                "name": "lineage_20160328__gap60m__p006__q.npz",
+                "sha256": "5d01440aa1799978d422bcf11269c910d5d7636803c244b5b1fde1097b7bbd1b"
+              },
+              {
+                "bytes": 29196,
+                "name": "lineage_20160328__gap60m__p006__r.npz",
+                "sha256": "decdff9dd50fb6f661f928f08b774b90e7d76e94eff9c375bcdc2ce79545fa75"
+              },
+              {
+                "bytes": 29074,
+                "name": "lineage_20160328__gap60m__p007__q.npz",
+                "sha256": "76769403dc6e94456ee5219c9f994908deedf5d8890f5cf127254a7d35794f78"
+              },
+              {
+                "bytes": 29061,
+                "name": "lineage_20160328__gap60m__p007__r.npz",
+                "sha256": "4025a6d67ebcce1799c14a0fc569d5a87f06f4dfbb29e2f32dc7c60254c2a93e"
+              }
+            ],
+            "files": 16,
+            "sha256": "f58633d54e925760bf0c76b8f705de46440257d13cf2609584392e686015c4f6",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "CRF-ID (pairwise Python adaptation)",
+          "fold": 7,
+          "lock_sha256": "14a59c32f41f16c7f34a7c74e58e8ca6dce1f7c018f509e982e2fff3de7e0d7a",
+          "method": "crfid_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9654895666131621,
+            "hungarian_queries": 2492,
+            "mrr_real": 0.9593203011541696,
+            "pairs": 14,
+            "queries": 2492,
+            "top1_real": 0.9249598715890851,
+            "top5_real": 0.9995987158908507
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "edge_weight": 0.025
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 43228,
+                "name": "lineage_20170111__gap60m__p000__q.npz",
+                "sha256": "90d16868f5d3ef4dfea606909c9a6453a1d1878374b802c207b825ce8a457f5c"
+              },
+              {
+                "bytes": 43402,
+                "name": "lineage_20170111__gap60m__p000__r.npz",
+                "sha256": "7705c89ad9409fc3ab65eb5ad0a304c617bf1ba99607e9982173d8f958e75418"
+              },
+              {
+                "bytes": 43270,
+                "name": "lineage_20170111__gap60m__p001__q.npz",
+                "sha256": "a63f48a22ceb017bfa485b12a4e54f547123a6781612c2334715db0bb09082e3"
+              },
+              {
+                "bytes": 43502,
+                "name": "lineage_20170111__gap60m__p001__r.npz",
+                "sha256": "bb935a457b80c42efd7ff25e6093f4183a440bd335bac91955d75108b2f55098"
+              },
+              {
+                "bytes": 43460,
+                "name": "lineage_20170111__gap60m__p002__q.npz",
+                "sha256": "73d07fa504ca9dea2b9a1bb267a96bc9f625eb2c7749d08669cd309c792beb89"
+              },
+              {
+                "bytes": 43407,
+                "name": "lineage_20170111__gap60m__p002__r.npz",
+                "sha256": "6d3e0839411d8d810b9b703b2ed8a6a9cb7f294a261f1688572b972e36d770e1"
+              },
+              {
+                "bytes": 43475,
+                "name": "lineage_20170111__gap60m__p003__q.npz",
+                "sha256": "1fa472bfd996aaea0646af8bf0241de6b886205773e5c2dde872f3167a82a146"
+              },
+              {
+                "bytes": 43277,
+                "name": "lineage_20170111__gap60m__p003__r.npz",
+                "sha256": "5e481fdf9bd6e5d6112c2980fd9530017a9877c49713fea16429a2366cb4650a"
+              },
+              {
+                "bytes": 43406,
+                "name": "lineage_20170111__gap60m__p004__q.npz",
+                "sha256": "ff2e4686a73fb18c05093468940b027b5535591dc036d09a9e325d0996327161"
+              },
+              {
+                "bytes": 43151,
+                "name": "lineage_20170111__gap60m__p004__r.npz",
+                "sha256": "c97ec994c475c7679e15f890cbb8b1ca05ac2f2e9e86673525c3e75b018ad167"
+              },
+              {
+                "bytes": 43503,
+                "name": "lineage_20170111__gap60m__p005__q.npz",
+                "sha256": "94d7d791f92c8c3bd4d4b59c12f140ef362d5492f7afd000fee26085a7def7cf"
+              },
+              {
+                "bytes": 43122,
+                "name": "lineage_20170111__gap60m__p005__r.npz",
+                "sha256": "b39d15fa926ec4c5bd80bcf8c3d8d5620d03bc7dfeb3edf72a784433c6795129"
+              },
+              {
+                "bytes": 43404,
+                "name": "lineage_20170111__gap60m__p006__q.npz",
+                "sha256": "ce81b9246fc2ea4ae078f3b7afd44c546bdb45128abdc1efdf089ac38554fec1"
+              },
+              {
+                "bytes": 43073,
+                "name": "lineage_20170111__gap60m__p006__r.npz",
+                "sha256": "c7d8d259ced7a6bca95ef650df95d9a1c6d692f0e33368794cd9935d68ee4b11"
+              },
+              {
+                "bytes": 43281,
+                "name": "lineage_20170111__gap60m__p007__q.npz",
+                "sha256": "c979422eafbdfc3da72503dca613e88311adc6ef2c30fdf12e47cfb57ee3281e"
+              },
+              {
+                "bytes": 43018,
+                "name": "lineage_20170111__gap60m__p007__r.npz",
+                "sha256": "b35034b2f37377eb6334fad3a0bd5b81745987a1e316c0258edfff5221d94645"
+              },
+              {
+                "bytes": 43151,
+                "name": "lineage_20170111__gap60m__p008__q.npz",
+                "sha256": "e9af77e1e6023986bde07b800f6776923bff03aaf32573a46f34a04c50f60a4c"
+              },
+              {
+                "bytes": 42880,
+                "name": "lineage_20170111__gap60m__p008__r.npz",
+                "sha256": "d962311649ce42cb0805efc1ba517653b857700a6241da3365c532f26397ff76"
+              },
+              {
+                "bytes": 43121,
+                "name": "lineage_20170111__gap60m__p009__q.npz",
+                "sha256": "ac70f28150730da73f3c050e0d5a65e3c871ba3170cb006ce4fa5ac496fc6aef"
+              },
+              {
+                "bytes": 42997,
+                "name": "lineage_20170111__gap60m__p009__r.npz",
+                "sha256": "b2a4306452ed92011598f997000c1eaf1d2757d06dfce77796c3ad443061bb52"
+              },
+              {
+                "bytes": 43070,
+                "name": "lineage_20170111__gap60m__p010__q.npz",
+                "sha256": "5330a261bab8c356ec5c9ef744071716acfc0e28646223980e97947e2468f7e1"
+              },
+              {
+                "bytes": 42878,
+                "name": "lineage_20170111__gap60m__p010__r.npz",
+                "sha256": "2115278c4397621147786861884082cbe743c6dca598f0ce2e04e9cbd9f30a54"
+              },
+              {
+                "bytes": 43009,
+                "name": "lineage_20170111__gap60m__p011__q.npz",
+                "sha256": "ec4c481501259a633e293a4a9021e0dd04fc763e5d32b505f9981d442e400008"
+              },
+              {
+                "bytes": 42889,
+                "name": "lineage_20170111__gap60m__p011__r.npz",
+                "sha256": "634db4ff18e2f6095460363f166f42371fe45c167d8684898c8759703b1e3200"
+              },
+              {
+                "bytes": 42882,
+                "name": "lineage_20170111__gap60m__p012__q.npz",
+                "sha256": "d0b20d6e496ab4a38683a408f5fb00f10e4949c5db2b45ca25c96443bb28ec8d"
+              },
+              {
+                "bytes": 42867,
+                "name": "lineage_20170111__gap60m__p012__r.npz",
+                "sha256": "5f8354aa577e8addd7239044f5d6b0358cb2ae7998d2f5ce09b1f7969435c589"
+              },
+              {
+                "bytes": 42995,
+                "name": "lineage_20170111__gap60m__p013__q.npz",
+                "sha256": "54bc270f605bf4fa3693d2623ed45d5fbd2179209c89a26511825d2c0deda297"
+              },
+              {
+                "bytes": 42912,
+                "name": "lineage_20170111__gap60m__p013__r.npz",
+                "sha256": "c8f10be30dd88c3f9770ba2a3700e329721329fa9485fa533323c328fc9500e3"
+              }
+            ],
+            "files": 28,
+            "sha256": "6c7cd138b13b92bd2b448423541378016a94783b6998522bb06e99e5d38d0451",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "CRF-ID (pairwise Python adaptation)",
+          "fold": 8,
+          "lock_sha256": "cfc74fb2f0d79ceba265f0ea2092a57894144dffec82a646202195c4cdd5d27f",
+          "method": "crfid_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9789377289377289,
+            "hungarian_queries": 2184,
+            "mrr_real": 0.9657432844932845,
+            "pairs": 14,
+            "queries": 2184,
+            "top1_real": 0.9363553113553114,
+            "top5_real": 1.0
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "edge_weight": 0.01
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 37076,
+                "name": "lineage_20170925__gap60m__p000__q.npz",
+                "sha256": "f659b6b2cca000512ef75840e4600fb94ec606fd39f12bbda750f56ab80d66a3"
+              },
+              {
+                "bytes": 36838,
+                "name": "lineage_20170925__gap60m__p000__r.npz",
+                "sha256": "7806ef829e343b01703fbfd4cf1608b79c6f7d4afb73b96d36cc8712232f9cb5"
+              },
+              {
+                "bytes": 36924,
+                "name": "lineage_20170925__gap60m__p001__q.npz",
+                "sha256": "bf01a3270517a4c4667c93593fd6f7cea4a03b5fc77aba8f1ad78e2f57b63f66"
+              },
+              {
+                "bytes": 36749,
+                "name": "lineage_20170925__gap60m__p001__r.npz",
+                "sha256": "0a5834f70be8abdc3bdc10e4425ce409b74fc54f43c170c223b6b4526df076bf"
+              },
+              {
+                "bytes": 37006,
+                "name": "lineage_20170925__gap60m__p002__q.npz",
+                "sha256": "ac813b03a09437dbd469fc7d0e3b2cea4504e375b62626f06d2225615141eced"
+              },
+              {
+                "bytes": 36767,
+                "name": "lineage_20170925__gap60m__p002__r.npz",
+                "sha256": "82ff0b78242526e45807d0458fe7799cf58318635e38ed35452f946889d33a1f"
+              },
+              {
+                "bytes": 36990,
+                "name": "lineage_20170925__gap60m__p003__q.npz",
+                "sha256": "dadbe77ae92c83777bd5bb125bcadfffceff652bad1b1f1a89c6ecfdbfc31290"
+              },
+              {
+                "bytes": 36699,
+                "name": "lineage_20170925__gap60m__p003__r.npz",
+                "sha256": "b71c9113ae2afe7913712e4c93b83f983821df3296b55d97660eff0224374132"
+              },
+              {
+                "bytes": 36838,
+                "name": "lineage_20170925__gap60m__p004__q.npz",
+                "sha256": "9e8e792cf8f69c61380c6801695a780b73a2809e164cf1552b5ada6ec6f7e774"
+              },
+              {
+                "bytes": 36589,
+                "name": "lineage_20170925__gap60m__p004__r.npz",
+                "sha256": "658b2f92166d889957f2f83923adaa67a412e42105f2c2bffbf8aed644c06736"
+              },
+              {
+                "bytes": 36748,
+                "name": "lineage_20170925__gap60m__p005__q.npz",
+                "sha256": "29ff1c2f30bb5a957e94ebf9d83027a57aaf6592ea11bb229f15b98140faafa3"
+              },
+              {
+                "bytes": 36506,
+                "name": "lineage_20170925__gap60m__p005__r.npz",
+                "sha256": "310e2929e3410f6512d2e2772beb417faa7b6eda73308b026b41c64aac59b4da"
+              },
+              {
+                "bytes": 36768,
+                "name": "lineage_20170925__gap60m__p006__q.npz",
+                "sha256": "90f45d8c9db798113a0aff2d2400a0e259759053b191711161a055e320c6ef06"
+              },
+              {
+                "bytes": 36322,
+                "name": "lineage_20170925__gap60m__p006__r.npz",
+                "sha256": "d8c814727bfa7de668a62f23474deb5aabf1f36de2cb1bef195a3b13089ef653"
+              },
+              {
+                "bytes": 36704,
+                "name": "lineage_20170925__gap60m__p007__q.npz",
+                "sha256": "3262dd9ae7b562e02c6139a0af523682b44266771c65a5e6fb787fd52dbdb211"
+              },
+              {
+                "bytes": 36463,
+                "name": "lineage_20170925__gap60m__p007__r.npz",
+                "sha256": "8ca7fea9175729b207586069ec046df442678f9e4352adee9121256a3c78c088"
+              },
+              {
+                "bytes": 36593,
+                "name": "lineage_20170925__gap60m__p008__q.npz",
+                "sha256": "82f68678b1be9cf8df3084ade43d27aaa9cf8050738b93972832b53ebadad4da"
+              },
+              {
+                "bytes": 36357,
+                "name": "lineage_20170925__gap60m__p008__r.npz",
+                "sha256": "f03f78b54fdadc49649a2cb505bb0294ed52b0c4eef62d377b9e168e12964fcc"
+              },
+              {
+                "bytes": 36505,
+                "name": "lineage_20170925__gap60m__p009__q.npz",
+                "sha256": "467ba7cf1a51d589ad9bdb233dc5ec30c248306d110cf780937fe2541a2134cb"
+              },
+              {
+                "bytes": 36303,
+                "name": "lineage_20170925__gap60m__p009__r.npz",
+                "sha256": "235905ddebc658b2b2e71c0d8e98d68e639ba13b1a2be467c6a05af0528dbbea"
+              },
+              {
+                "bytes": 36320,
+                "name": "lineage_20170925__gap60m__p010__q.npz",
+                "sha256": "16d65a51ad193db1578b68a019aff306ed7f1d96f8749e239e092c107c38e9bf"
+              },
+              {
+                "bytes": 36174,
+                "name": "lineage_20170925__gap60m__p010__r.npz",
+                "sha256": "f083ea280b4fcdf4718a344650057b750d7e3d8da3caea9df284938d0ff046f0"
+              },
+              {
+                "bytes": 36459,
+                "name": "lineage_20170925__gap60m__p011__q.npz",
+                "sha256": "803c8e59ac1deed98e5e9713bf040b1dc4765acecbc3d0924175bc21b68a5781"
+              },
+              {
+                "bytes": 36022,
+                "name": "lineage_20170925__gap60m__p011__r.npz",
+                "sha256": "9a679c7fe28ad51b0702e7305d38833356676c27d4d87935360ba0bd1374f918"
+              },
+              {
+                "bytes": 36357,
+                "name": "lineage_20170925__gap60m__p012__q.npz",
+                "sha256": "6a3fa51673b92509369c45cb2dcde1b8f180674cbc23cc66d9d64ec5da2f46eb"
+              },
+              {
+                "bytes": 35988,
+                "name": "lineage_20170925__gap60m__p012__r.npz",
+                "sha256": "0593a0e078f393d92f7a6d9ed10786ab93187563191dd6e7133518952c757123"
+              },
+              {
+                "bytes": 36302,
+                "name": "lineage_20170925__gap60m__p013__q.npz",
+                "sha256": "edcd4d6714661328344508c7e17f6b16f12a4db91c7e268cfa7bbba3fc310095"
+              },
+              {
+                "bytes": 35830,
+                "name": "lineage_20170925__gap60m__p013__r.npz",
+                "sha256": "50afe3f3df3d3354b09a96ddd7cbb5a5ceb3709210993e579452a08c5639037e"
+              }
+            ],
+            "files": 28,
+            "sha256": "b963f810d986e72a88aab661dbe8d47e73da23b0624e4bed2d8d275b9e34a5ae",
+            "split": "test"
+          }
+        }
+      ],
+      "summary": {
+        "hungarian_accuracy": {
+          "fold_values": [
+            0.8699095022624435,
+            0.947395042994436,
+            0.9453125,
+            0.9054945054945055,
+            0.9426229508196722,
+            0.9616204690831557,
+            0.9654895666131621,
+            0.9789377289377289
+          ],
+          "mean": 0.9395977832756379,
+          "sd": 0.03550676275683835
+        },
+        "mrr_real": {
+          "fold_values": [
+            0.8931383923235843,
+            0.9286930654912446,
+            0.9363498263888889,
+            0.9134990406418976,
+            0.9509790528233151,
+            0.9679459843638949,
+            0.9593203011541696,
+            0.9657432844932845
+          ],
+          "mean": 0.939458618460035,
+          "sd": 0.026658274728963628
+        },
+        "top1_real": {
+          "fold_values": [
+            0.8289027149321267,
+            0.8712696004046535,
+            0.8815104166666666,
+            0.8478021978021978,
+            0.9105191256830601,
+            0.9477611940298507,
+            0.9249598715890851,
+            0.9363553113553114
+          ],
+          "mean": 0.893635054057869,
+          "sd": 0.043026772844790145
+        },
+        "top5_real": {
+          "fold_values": [
+            0.9768099547511312,
+            0.9979767324228629,
+            1.0,
+            0.993956043956044,
+            1.0,
+            1.0,
+            0.9995987158908507,
+            1.0
+          ],
+          "mean": 0.996042680877611,
+          "sd": 0.008046998081267024
+        }
+      }
+    },
+    "statatlas_pair": {
+      "display_name": "StatAtlas (pairwise adaptation)",
+      "fold_results": [
+        {
+          "activity_used": false,
+          "display_name": "StatAtlas (pairwise adaptation)",
+          "fold": 1,
+          "lock_sha256": "6a6c5a615d8da88d98204c92af7e00ff2d80cada6c7068ee266fca82a0111efd",
+          "method": "statatlas_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9626696832579186,
+            "hungarian_queries": 3536,
+            "mrr_real": 0.9327630090497737,
+            "pairs": 16,
+            "queries": 3536,
+            "top1_real": 0.8775452488687783,
+            "top5_real": 0.9997171945701357
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "covariance": "train",
+            "transform": "affine",
+            "trim": 0.8
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 48275,
+                "name": "func_20150410__gap60m__p000__q.npz",
+                "sha256": "188fcd2039cdfa6ad2594aafceb7bc89beb1ea4e8629c2875c19061146ef8d0a"
+              },
+              {
+                "bytes": 50808,
+                "name": "func_20150410__gap60m__p000__r.npz",
+                "sha256": "c045ae6f1f10c6736d1a63079d9a5963512bba2ad47d62d2ddb5c7f4e35b1929"
+              },
+              {
+                "bytes": 48659,
+                "name": "func_20150410__gap60m__p001__q.npz",
+                "sha256": "311008594eb8122cc051632fd92ed4c649b816923963bab65dcd72dd47cb9369"
+              },
+              {
+                "bytes": 51185,
+                "name": "func_20150410__gap60m__p001__r.npz",
+                "sha256": "dac7dae51c659a3781e4e2bdbf4427ae1271837538d80b0a9bdc4ea7e635cd01"
+              },
+              {
+                "bytes": 49066,
+                "name": "func_20150410__gap60m__p002__q.npz",
+                "sha256": "007d24c07bb19663ad9c13d04b04ac8508e325f3a9b86f1bcfb630bb8bed49f6"
+              },
+              {
+                "bytes": 52474,
+                "name": "func_20150410__gap60m__p002__r.npz",
+                "sha256": "214af9c3c8fd0cb1e546e0be70b3fbaf5b03ce46587fa85faf0fc71c6a4c4aec"
+              },
+              {
+                "bytes": 49965,
+                "name": "func_20150410__gap60m__p003__q.npz",
+                "sha256": "b17dbbbd5436af040a10284c6187615c424adfd39b2872ed15dd63a17dfa82ac"
+              },
+              {
+                "bytes": 53263,
+                "name": "func_20150410__gap60m__p003__r.npz",
+                "sha256": "e905869662c6e68f38e2ca838e69bc4c1ed909ebdc9d4b8c3af1221b576dd283"
+              },
+              {
+                "bytes": 50804,
+                "name": "func_20150410__gap60m__p004__q.npz",
+                "sha256": "7a6d54f574cfe0d2eb07d00ff815a738f28ff3341f5cb689c5f940a96de1cb8c"
+              },
+              {
+                "bytes": 54146,
+                "name": "func_20150410__gap60m__p004__r.npz",
+                "sha256": "609597b74ccdd28940729e85b6b3533c3a0d90545f188f7133a8861e2690c491"
+              },
+              {
+                "bytes": 51184,
+                "name": "func_20150410__gap60m__p005__q.npz",
+                "sha256": "761b8554ed3858a8178963a2aaf9711fbfa94d2ad0d031c8e2e25bd83a48ecc5"
+              },
+              {
+                "bytes": 55211,
+                "name": "func_20150410__gap60m__p005__r.npz",
+                "sha256": "b360869e0591180787788f1d3d27748771e64ea6f5f51829adb7bbfe34408519"
+              },
+              {
+                "bytes": 52467,
+                "name": "func_20150410__gap60m__p006__q.npz",
+                "sha256": "7ca72b2053fb9e6a6adb894736ab56fbed3dbf01c5fa2c274d5d1d428b40f034"
+              },
+              {
+                "bytes": 55224,
+                "name": "func_20150410__gap60m__p006__r.npz",
+                "sha256": "78c0bb038cc99e88899cd9bbf0b1cc66267f4db27978aa4d2ca7b1b4d0abcdaf"
+              },
+              {
+                "bytes": 53265,
+                "name": "func_20150410__gap60m__p007__q.npz",
+                "sha256": "5baaec281714ebc208663a4bfd9e25eebca1a466057f09a15215ed1859871c83"
+              },
+              {
+                "bytes": 55558,
+                "name": "func_20150410__gap60m__p007__r.npz",
+                "sha256": "ad84be685cb82b6c37fca2a66bbc54912e5e5e1211805027440e9b185682c37e"
+              },
+              {
+                "bytes": 54148,
+                "name": "func_20150410__gap60m__p008__q.npz",
+                "sha256": "867d434ae404e1f85b4fe86b993e98c8050038650bba45b494c2da82a48d6704"
+              },
+              {
+                "bytes": 55633,
+                "name": "func_20150410__gap60m__p008__r.npz",
+                "sha256": "f39f022b988101c84d9cb1e5e6c75319a5abb657893ba35157d56cad08c36882"
+              },
+              {
+                "bytes": 55209,
+                "name": "func_20150410__gap60m__p009__q.npz",
+                "sha256": "69ae2e9bcb6740647656917a105aaa881d68c932e45adcd13b1e711629a1b839"
+              },
+              {
+                "bytes": 56372,
+                "name": "func_20150410__gap60m__p009__r.npz",
+                "sha256": "05adc0e6ebcd35cf17b73f23298878f904c394b8a5affaeefc493186046ab2de"
+              },
+              {
+                "bytes": 55218,
+                "name": "func_20150410__gap60m__p010__q.npz",
+                "sha256": "c74ca6952252092a1fbf390640f7456bb06f63f2522e61a76f98fe0ba5244be1"
+              },
+              {
+                "bytes": 57175,
+                "name": "func_20150410__gap60m__p010__r.npz",
+                "sha256": "cf1b65d17115abf37e1d158f79e19a0a1081b68ea81dae9e2810518fcf1ccf7d"
+              },
+              {
+                "bytes": 55560,
+                "name": "func_20150410__gap60m__p011__q.npz",
+                "sha256": "4b3b161a5696041b74ee57bae64d7ea0af7ed5cf075b8d5b79d1311914333c86"
+              },
+              {
+                "bytes": 58225,
+                "name": "func_20150410__gap60m__p011__r.npz",
+                "sha256": "693f50d387b626ddd899af1293eaf162f0b2225713425ec55ca872603e636868"
+              },
+              {
+                "bytes": 55638,
+                "name": "func_20150410__gap60m__p012__q.npz",
+                "sha256": "f51d7e62e30101ec4e3b41a69612fb19dfeb8ddfd7df3aaf45ea46f706809b14"
+              },
+              {
+                "bytes": 58417,
+                "name": "func_20150410__gap60m__p012__r.npz",
+                "sha256": "b9d1b35ef2d36cbc2a510bf700ed6f327c68210ddaaeb2c215599816ac7f6fa5"
+              },
+              {
+                "bytes": 56368,
+                "name": "func_20150410__gap60m__p013__q.npz",
+                "sha256": "938daef55d16e989e09b186d6a04fe59c2562f92111da8ce8385678f2f812801"
+              },
+              {
+                "bytes": 58347,
+                "name": "func_20150410__gap60m__p013__r.npz",
+                "sha256": "ab183b297b15de3c38529f53f3b52b1fe434a7dfc0655fbcf38b556c87da9d95"
+              },
+              {
+                "bytes": 57172,
+                "name": "func_20150410__gap60m__p014__q.npz",
+                "sha256": "26cf8f46469fe91479f902051393c702b9ac5111cf7bb51baf859c454effc974"
+              },
+              {
+                "bytes": 58237,
+                "name": "func_20150410__gap60m__p014__r.npz",
+                "sha256": "c40ed7ffd53d56c016ea6cd2776ab9c3618f8376818d3eaefd01127664e2a00c"
+              },
+              {
+                "bytes": 58218,
+                "name": "func_20150410__gap60m__p015__q.npz",
+                "sha256": "2924f2e0b19f25cf788d9748089d5760942fe9d90b6eb7c871be0b3d925faa4a"
+              },
+              {
+                "bytes": 58238,
+                "name": "func_20150410__gap60m__p015__r.npz",
+                "sha256": "8f04fd0277eb6be1d566941d9513e3e4079d872fe601d0cd2fc9e2193e6a347d"
+              }
+            ],
+            "files": 32,
+            "sha256": "a29fb4d4ea9dc48bc1a5b4cc6dcd752ac00d56eeceff3e436eed1b0eab518f79",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "StatAtlas (pairwise adaptation)",
+          "fold": 2,
+          "lock_sha256": "905c7f9354a154070e2c5c35c433244298b9494a74175bbdb91e714e4d649b88",
+          "method": "statatlas_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9878603945371776,
+            "hungarian_queries": 3954,
+            "mrr_real": 0.9592227280391166,
+            "pairs": 18,
+            "queries": 3954,
+            "top1_real": 0.9236216489630754,
+            "top5_real": 1.0
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "covariance": "train",
+            "transform": "affine",
+            "trim": 0.8
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 50747,
+                "name": "func_20150417__gap60m__p000__q.npz",
+                "sha256": "82715ca4b50c935055dccb6f0d24dffe3437f7699d1de3e4dd626fb3ccf01675"
+              },
+              {
+                "bytes": 52132,
+                "name": "func_20150417__gap60m__p000__r.npz",
+                "sha256": "eb086358449ea116738e60a3b9043a69592df34c99630030bc68bed62001b102"
+              },
+              {
+                "bytes": 51318,
+                "name": "func_20150417__gap60m__p001__q.npz",
+                "sha256": "b8e15a25909ad038d1a5c3e24df94c318cb02c94b46f6924f7dcd101f9d94da2"
+              },
+              {
+                "bytes": 52097,
+                "name": "func_20150417__gap60m__p001__r.npz",
+                "sha256": "23082a9ebf90b80b578a90ea7181f32b309a713a644ff4306224cb2ff3758b9a"
+              },
+              {
+                "bytes": 52030,
+                "name": "func_20150417__gap60m__p002__q.npz",
+                "sha256": "e544522a2d5e522e87c0a3da6290e1e88dd5dc5e89d034850c9e4a4e9237d6a9"
+              },
+              {
+                "bytes": 52097,
+                "name": "func_20150417__gap60m__p002__r.npz",
+                "sha256": "534881a25810867e72f81f955fc520f81ef8cd9a89747cb67097bed095abf742"
+              },
+              {
+                "bytes": 52032,
+                "name": "func_20150417__gap60m__p003__q.npz",
+                "sha256": "182788650dc2fd7d1d6be9836106ca9f38cdf93045d759bdf45ca2873f8365c9"
+              },
+              {
+                "bytes": 52114,
+                "name": "func_20150417__gap60m__p003__r.npz",
+                "sha256": "81efcf0b42269526842113ff3d485f1f1b011a4b4c26fdf2e2defe744efb199e"
+              },
+              {
+                "bytes": 52130,
+                "name": "func_20150417__gap60m__p004__q.npz",
+                "sha256": "01038d045c8291267a9504392d1ae763012537f81bd50ca5391a1574ac56f195"
+              },
+              {
+                "bytes": 52465,
+                "name": "func_20150417__gap60m__p004__r.npz",
+                "sha256": "1c2afd53dafbc5767cf6572fc045764b0aa3564ee5a560de4c3e921c6b410b86"
+              },
+              {
+                "bytes": 52097,
+                "name": "func_20150417__gap60m__p005__q.npz",
+                "sha256": "14b450778bddaef4c6cf71a18516eebc015ee3ab556e306b0619962569f65d31"
+              },
+              {
+                "bytes": 53020,
+                "name": "func_20150417__gap60m__p005__r.npz",
+                "sha256": "2bf5a0f87dd629cfbc1c765a305f65370099ba5a7f31d4dc01702aefa5d9fa38"
+              },
+              {
+                "bytes": 52090,
+                "name": "func_20150417__gap60m__p006__q.npz",
+                "sha256": "940549a454239c09514cdcf26f6659743d76ef7b3010e3fa1f51e3110e3e4444"
+              },
+              {
+                "bytes": 52935,
+                "name": "func_20150417__gap60m__p006__r.npz",
+                "sha256": "c4321faf2c2746551a3a1edbfe0cae5e259d7a89661aa81eac0b8ecf5e50ee4a"
+              },
+              {
+                "bytes": 52112,
+                "name": "func_20150417__gap60m__p007__q.npz",
+                "sha256": "b8372f65b2d3e40d25ec3bb19fe44038e2aa6a3ab6ad35ece55ec0c372ebf71c"
+              },
+              {
+                "bytes": 53254,
+                "name": "func_20150417__gap60m__p007__r.npz",
+                "sha256": "44d5705d2c9328845694f198557ad422ae75ef05722819c2841a51d75a9d6588"
+              },
+              {
+                "bytes": 52467,
+                "name": "func_20150417__gap60m__p008__q.npz",
+                "sha256": "af1fd93ef80dfdd093f8ba5b91a6dc15a9d6d64f52305c43cd0659a655e8c0ea"
+              },
+              {
+                "bytes": 53742,
+                "name": "func_20150417__gap60m__p008__r.npz",
+                "sha256": "b3800447faaeadc7884cc2b5db5066f594e032cebd75e2ec912ad914625cc86a"
+              },
+              {
+                "bytes": 53014,
+                "name": "func_20150417__gap60m__p009__q.npz",
+                "sha256": "938946de6510b381e6daa5232af67a30c54c3251b9b5b05d6aa649f42df42212"
+              },
+              {
+                "bytes": 53706,
+                "name": "func_20150417__gap60m__p009__r.npz",
+                "sha256": "35e6757b536f37db2251d9fcb0573ecd99b36dd869ada7c0f5c0c94ebdc028be"
+              },
+              {
+                "bytes": 52933,
+                "name": "func_20150417__gap60m__p010__q.npz",
+                "sha256": "ccc22fc4d60b2f82c093d818935952ba1b53e09ab35f53fe52c65ee8684dcef9"
+              },
+              {
+                "bytes": 54078,
+                "name": "func_20150417__gap60m__p010__r.npz",
+                "sha256": "675c4f453c6f117d30b8a2eac156632aaaf12ab3f34a6d6935854384a1d204c8"
+              },
+              {
+                "bytes": 53251,
+                "name": "func_20150417__gap60m__p011__q.npz",
+                "sha256": "00c89478ab4e11a61731e538b6155115470aefcf9a1153b060d41a32a7a5acd5"
+              },
+              {
+                "bytes": 54131,
+                "name": "func_20150417__gap60m__p011__r.npz",
+                "sha256": "923c733be2f47f3797fa3dfecfa59167b989b0926e1c3e552cb5a19473f1aef3"
+              },
+              {
+                "bytes": 53742,
+                "name": "func_20150417__gap60m__p012__q.npz",
+                "sha256": "87b2f83b716e90d998f67667d6af9b3f03b60136b6064dd2f189743ac383af24"
+              },
+              {
+                "bytes": 53950,
+                "name": "func_20150417__gap60m__p012__r.npz",
+                "sha256": "5d3902d22a23dd51da01a6ac76ae0be98726882381173f649d600fe29369446f"
+              },
+              {
+                "bytes": 53707,
+                "name": "func_20150417__gap60m__p013__q.npz",
+                "sha256": "358164dfb8205c4da53307181cdb57b4e8a4100fab537f9c4a75d6f8b55983fe"
+              },
+              {
+                "bytes": 53896,
+                "name": "func_20150417__gap60m__p013__r.npz",
+                "sha256": "9f099294ee699aece5827c639d3b20f571501b8b666bd0628f45a2fd0654b527"
+              },
+              {
+                "bytes": 54079,
+                "name": "func_20150417__gap60m__p014__q.npz",
+                "sha256": "53ed870defdc6023a33e6aabd3f41e0f5c35e43c664b4ff70ebaacecca1f6413"
+              },
+              {
+                "bytes": 54809,
+                "name": "func_20150417__gap60m__p014__r.npz",
+                "sha256": "4635ce5f87e38b0b47834958a0b10925948702ccd787becb430048b4604c690b"
+              },
+              {
+                "bytes": 54127,
+                "name": "func_20150417__gap60m__p015__q.npz",
+                "sha256": "621e906493f9919b72273fc3c73d3897aee96e11fb40d38764c85b11b90068d9"
+              },
+              {
+                "bytes": 54740,
+                "name": "func_20150417__gap60m__p015__r.npz",
+                "sha256": "99895db65874d3e5e5e647160afef320a7ed3705fd4abaf29bc5320826195e14"
+              },
+              {
+                "bytes": 53947,
+                "name": "func_20150417__gap60m__p016__q.npz",
+                "sha256": "f8f8ee6d4b126f328ba6086ccbd3b2ae9a89490dfd30119cc94a45a5f0d5c72b"
+              },
+              {
+                "bytes": 55238,
+                "name": "func_20150417__gap60m__p016__r.npz",
+                "sha256": "6328dffaa54aba7c726dbef20a52e24944ca0481b876df9d94c1cc1a7c67f914"
+              },
+              {
+                "bytes": 53897,
+                "name": "func_20150417__gap60m__p017__q.npz",
+                "sha256": "6231bdd9ba2a82a8447703b11dc7d0fd95c4b1ed16758fe0f4045fc8ac9896e6"
+              },
+              {
+                "bytes": 55447,
+                "name": "func_20150417__gap60m__p017__r.npz",
+                "sha256": "f7416b18816414a575408d0f872bc8a7635e937a0f53a00613f22708be1669d0"
+              }
+            ],
+            "files": 36,
+            "sha256": "7e4cc993c4d86bedfbe2def2c7e83b32ec10f1925926f8bbc947e1f770fa102d",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "StatAtlas (pairwise adaptation)",
+          "fold": 3,
+          "lock_sha256": "de92d87d11198a40e6f9a9fb761f23c048b90d775b835d5e6616b3972ccf5bc7",
+          "method": "statatlas_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.984375,
+            "hungarian_queries": 768,
+            "mrr_real": 0.9558376736111112,
+            "pairs": 6,
+            "queries": 768,
+            "top1_real": 0.9153645833333334,
+            "top5_real": 1.0
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "covariance": "train",
+            "transform": "affine",
+            "trim": 1.0
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 32233,
+                "name": "func_20161004__gap60m__p000__q.npz",
+                "sha256": "cb347ddcee55ff3dbcc0150aaeacaff91421c4feddc9ed73e8876e9e529feece"
+              },
+              {
+                "bytes": 31744,
+                "name": "func_20161004__gap60m__p000__r.npz",
+                "sha256": "750a44ae303630147a54563da45edecdffcd855241647562de12da34bb0b8128"
+              },
+              {
+                "bytes": 32185,
+                "name": "func_20161004__gap60m__p001__q.npz",
+                "sha256": "94de4d210e8167eb7cb7a4dfc014e6784b62bb583d6826c09988e30fdf194eba"
+              },
+              {
+                "bytes": 31974,
+                "name": "func_20161004__gap60m__p001__r.npz",
+                "sha256": "d51c66bbc0cb414de9c0ce46837e6292593a602a8c6d374f3620026152accc07"
+              },
+              {
+                "bytes": 32034,
+                "name": "func_20161004__gap60m__p002__q.npz",
+                "sha256": "893e1f8a1270a1ad41619a3f201a82dcac9e32eb250d55661180563bd531d8b4"
+              },
+              {
+                "bytes": 31974,
+                "name": "func_20161004__gap60m__p002__r.npz",
+                "sha256": "d9b5ab577766e0cd798ed429b30cb521dd6ae4a40cfcae616f9399ea61604aca"
+              },
+              {
+                "bytes": 31956,
+                "name": "func_20161004__gap60m__p003__q.npz",
+                "sha256": "5efdb4cc0fb4de5044568707cfa8bef11ebb47acdfef3293637f187665dc99c2"
+              },
+              {
+                "bytes": 32089,
+                "name": "func_20161004__gap60m__p003__r.npz",
+                "sha256": "451df24de7507779b7f8393790ecab89b1d3d9125acdb7d5b84323f1c172856f"
+              },
+              {
+                "bytes": 31737,
+                "name": "func_20161004__gap60m__p004__q.npz",
+                "sha256": "4492180f2d5636cffff1229e7d3718ae5ee2d85e898a82cc5001b92cd9ea59e3"
+              },
+              {
+                "bytes": 32035,
+                "name": "func_20161004__gap60m__p004__r.npz",
+                "sha256": "86913734da317fd1f0dbd7e4fed4d68beb92577d3197bcb8f3bb31c47a673b6c"
+              },
+              {
+                "bytes": 31970,
+                "name": "func_20161004__gap60m__p005__q.npz",
+                "sha256": "297a0fb0ec73d0275a200efe5abb817794d46e3aabfcd2598f3c3db18ad5836d"
+              },
+              {
+                "bytes": 32203,
+                "name": "func_20161004__gap60m__p005__r.npz",
+                "sha256": "8bdeb57ff6a0a889ba856c44c40bb4c43a73170cb81a5f9a240238b1a0428e84"
+              }
+            ],
+            "files": 12,
+            "sha256": "a2b00a9f3d71a39861bc0ea9114c07d79837e4996901a67f9a4a2cc53f94b69d",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "StatAtlas (pairwise adaptation)",
+          "fold": 4,
+          "lock_sha256": "2a331355e655815fefea5b50b7f70a0a43db5219fd442198a3a27677c6e0fec0",
+          "method": "statatlas_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.8912087912087913,
+            "hungarian_queries": 1820,
+            "mrr_real": 0.8820195604805688,
+            "pairs": 13,
+            "queries": 1820,
+            "top1_real": 0.8137362637362637,
+            "top5_real": 0.9620879120879121
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "covariance": "train",
+            "transform": "affine",
+            "trim": 0.8
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 33945,
+                "name": "islet_20170202__gap60m__p000__q.npz",
+                "sha256": "04d2b70ca9d5ad24f9460bde0fe86d1a8e5a02645e9c78eb7a27bb7a3e41e62b"
+              },
+              {
+                "bytes": 33987,
+                "name": "islet_20170202__gap60m__p000__r.npz",
+                "sha256": "d1f6baa58325c62411bf56805fc2eb9f0bf7cf263e6152d9ad19090fa9841b17"
+              },
+              {
+                "bytes": 34119,
+                "name": "islet_20170202__gap60m__p001__q.npz",
+                "sha256": "f446699ee643850921d5ce3b1bcfcebf86458e554cd4c28ef915bfc5bfbe9501"
+              },
+              {
+                "bytes": 33816,
+                "name": "islet_20170202__gap60m__p001__r.npz",
+                "sha256": "164ad0c782023f2a0fee524ac48adca1aca9585c1cdde2ba4268ac0964434b42"
+              },
+              {
+                "bytes": 34351,
+                "name": "islet_20170202__gap60m__p002__q.npz",
+                "sha256": "897b37554840c4c32d61d70898ba5836cb785bcd2f6c83ff946049142212b172"
+              },
+              {
+                "bytes": 33715,
+                "name": "islet_20170202__gap60m__p002__r.npz",
+                "sha256": "eafa4a0f9530455f6ab1962bc95883f26859851188b7b564fecc756694547da4"
+              },
+              {
+                "bytes": 34184,
+                "name": "islet_20170202__gap60m__p003__q.npz",
+                "sha256": "f5f878dd49746cf370d071199fc14f6086de9f145599e82df3d5666c70dae76b"
+              },
+              {
+                "bytes": 33707,
+                "name": "islet_20170202__gap60m__p003__r.npz",
+                "sha256": "28726cfb189eac82e48c5978bd38af63edb47e89d217da6f3e749e462a6296e1"
+              },
+              {
+                "bytes": 33992,
+                "name": "islet_20170202__gap60m__p004__q.npz",
+                "sha256": "b7740bd24d8367c4302a0d2eed1f041ed5d8629df96c2e795decda6b60983ee3"
+              },
+              {
+                "bytes": 33669,
+                "name": "islet_20170202__gap60m__p004__r.npz",
+                "sha256": "3f33fb3034dc7f68d6d46eecbc8d279de679be6cedc50d2f78096d1343c36e02"
+              },
+              {
+                "bytes": 33815,
+                "name": "islet_20170202__gap60m__p005__q.npz",
+                "sha256": "dd8f6dd7c66c6ad5557ab092ea06ba274def12cc32076d688b310c409cd92936"
+              },
+              {
+                "bytes": 33748,
+                "name": "islet_20170202__gap60m__p005__r.npz",
+                "sha256": "3713cf3c5f03d9555f720e241ce037f4b61dbf8d18ccf362ae0321b5566d9f5c"
+              },
+              {
+                "bytes": 33720,
+                "name": "islet_20170202__gap60m__p006__q.npz",
+                "sha256": "76f7c39ea7856a2886a67801ae45b3e3d422f409d45fff37e08616d9a6b6a710"
+              },
+              {
+                "bytes": 33754,
+                "name": "islet_20170202__gap60m__p006__r.npz",
+                "sha256": "139d329dd3f0695f1d62ddb466f0619ed691c5c18cb74429e2dc43539681d7c1"
+              },
+              {
+                "bytes": 33711,
+                "name": "islet_20170202__gap60m__p007__q.npz",
+                "sha256": "1ce792d1931956ebe361796bc08848bff3f1c589dbf2b00c6b5d8a17d3d875f0"
+              },
+              {
+                "bytes": 33887,
+                "name": "islet_20170202__gap60m__p007__r.npz",
+                "sha256": "ccdde563b8a9e85f35c499eda41d1a85b980ec3586044971bd23763bea418a7c"
+              },
+              {
+                "bytes": 33668,
+                "name": "islet_20170202__gap60m__p008__q.npz",
+                "sha256": "6c5f4e01c4051863cb4ccfc55fc6c93c18dde983dc775e12cc80711fa58ef9c2"
+              },
+              {
+                "bytes": 33738,
+                "name": "islet_20170202__gap60m__p008__r.npz",
+                "sha256": "9903eb373f61b4bca2ce4667982e653221d5a48b52c53dfeac87341a690218e0"
+              },
+              {
+                "bytes": 33746,
+                "name": "islet_20170202__gap60m__p009__q.npz",
+                "sha256": "b7b22e81748c8bd7d0ae090e04685740d97bad016c0b97d97cbd0584feda54b9"
+              },
+              {
+                "bytes": 33745,
+                "name": "islet_20170202__gap60m__p009__r.npz",
+                "sha256": "4d4f1d54f3b0e8007c4429bffc653f6caafc0fa0b96047a23debd0d69da80ffb"
+              },
+              {
+                "bytes": 33751,
+                "name": "islet_20170202__gap60m__p010__q.npz",
+                "sha256": "34ebba29711c20a66e1267ad4cba6af3468ea96b3f35fb3499ea47198871f4d1"
+              },
+              {
+                "bytes": 33777,
+                "name": "islet_20170202__gap60m__p010__r.npz",
+                "sha256": "a0f54e35f1f0df22098be0c58d5175355dad23787565159569303c01f6eb23f3"
+              },
+              {
+                "bytes": 33880,
+                "name": "islet_20170202__gap60m__p011__q.npz",
+                "sha256": "fb9b11ff26ce2f80bccc12addb57c4b0c9f5cf6788a602bd18fcd78e41ad6ac5"
+              },
+              {
+                "bytes": 33402,
+                "name": "islet_20170202__gap60m__p011__r.npz",
+                "sha256": "dd02cf49ccdd4369d5d107b3d30b3bf8eef1c26f6e4e1d151b8f385124b66926"
+              },
+              {
+                "bytes": 33736,
+                "name": "islet_20170202__gap60m__p012__q.npz",
+                "sha256": "2b2d1ed734849d6efeec417d943560c3a484d8cba2d03225090044135cf89440"
+              },
+              {
+                "bytes": 33279,
+                "name": "islet_20170202__gap60m__p012__r.npz",
+                "sha256": "cf00f2ae1df933df64b562515b1a3230e0407b18208bddd47bc0c2c1119a7b36"
+              }
+            ],
+            "files": 26,
+            "sha256": "71be7cff17092aba50d0fc2c5840aa9eb4c8f6d76300c3f1f25967bbaa217508",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "StatAtlas (pairwise adaptation)",
+          "fold": 5,
+          "lock_sha256": "b9a104cc1c8e6c5e9e213e5a3bc83ccd7946c3e10970201ad7dec22d7121f61f",
+          "method": "statatlas_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9754098360655737,
+            "hungarian_queries": 1464,
+            "mrr_real": 0.9393784153005464,
+            "pairs": 12,
+            "queries": 1464,
+            "top1_real": 0.8831967213114754,
+            "top5_real": 1.0
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "covariance": "train",
+            "transform": "similarity",
+            "trim": 0.8
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 31177,
+                "name": "islet_20170216__gap60m__p000__q.npz",
+                "sha256": "3b511be248d9beb789a370150718f49ecc21ab1c8bd8daa5c8d4d50434c82c34"
+              },
+              {
+                "bytes": 30837,
+                "name": "islet_20170216__gap60m__p000__r.npz",
+                "sha256": "28309cd43294a56eefb4d953f51d261d6d0ae6add15a84219737e61bb983b706"
+              },
+              {
+                "bytes": 30964,
+                "name": "islet_20170216__gap60m__p001__q.npz",
+                "sha256": "cc98c2a8b11817f69197b0ec22c67450557f8acfda94713a84bb9a8890a52182"
+              },
+              {
+                "bytes": 30876,
+                "name": "islet_20170216__gap60m__p001__r.npz",
+                "sha256": "2563d838d23f564e07a4b4527473355d996f39b151b30863d69d3c7d331ba1a6"
+              },
+              {
+                "bytes": 30826,
+                "name": "islet_20170216__gap60m__p002__q.npz",
+                "sha256": "74020eb130431f279e188af2deb114c41a550bbbffe0354b2171f700b1c14425"
+              },
+              {
+                "bytes": 30956,
+                "name": "islet_20170216__gap60m__p002__r.npz",
+                "sha256": "2a195713e6c0b20e32a8fbba611e460ed1a5b7892e85f385ab166a555e005573"
+              },
+              {
+                "bytes": 30835,
+                "name": "islet_20170216__gap60m__p003__q.npz",
+                "sha256": "06e54083db75fa44a3b4a3beb7feb34d33da0c6ad088cccaf5386d2b5784df80"
+              },
+              {
+                "bytes": 30803,
+                "name": "islet_20170216__gap60m__p003__r.npz",
+                "sha256": "9a91f6caf72cf55a82077b560a88ab2d76a2908397a91a1df78c259a623956b1"
+              },
+              {
+                "bytes": 30840,
+                "name": "islet_20170216__gap60m__p004__q.npz",
+                "sha256": "552d631f954866af901aed033f9cbaa89eb1e9e32d5ab247ea6867b3233fcedf"
+              },
+              {
+                "bytes": 30741,
+                "name": "islet_20170216__gap60m__p004__r.npz",
+                "sha256": "b640c4abafc25fa60347294ad49b30d737499a23797b0f27d9077484102ff76f"
+              },
+              {
+                "bytes": 30877,
+                "name": "islet_20170216__gap60m__p005__q.npz",
+                "sha256": "387012718b13165b3aaab554720f46435c340e2845661f39b6b7741401d65332"
+              },
+              {
+                "bytes": 30815,
+                "name": "islet_20170216__gap60m__p005__r.npz",
+                "sha256": "616bdfd1c7bd4088b4d08aa39f381dae7baed14d82b4f33bfffb20718b47d71d"
+              },
+              {
+                "bytes": 30958,
+                "name": "islet_20170216__gap60m__p006__q.npz",
+                "sha256": "20e58956318f285cfdf80bf0688b5a061c159e5b109ed13e57d83c338602f17e"
+              },
+              {
+                "bytes": 30853,
+                "name": "islet_20170216__gap60m__p006__r.npz",
+                "sha256": "ed4d3ca151a104227535067fc6ac171e99d108bb3406945b486d6194be22ba63"
+              },
+              {
+                "bytes": 30805,
+                "name": "islet_20170216__gap60m__p007__q.npz",
+                "sha256": "1be6a0f8927994f5b210a9043774c7170c41c375cbb4ad907ea37f7427a5e935"
+              },
+              {
+                "bytes": 30730,
+                "name": "islet_20170216__gap60m__p007__r.npz",
+                "sha256": "c9f0287f49ba268f5816853090889a670f9fbf63c02d4671b4e0563cd7615a82"
+              },
+              {
+                "bytes": 30741,
+                "name": "islet_20170216__gap60m__p008__q.npz",
+                "sha256": "1e95277aa10fbd5a9704bd3161d794f10a3e5e05cfb7b64762acf4f38304cb0c"
+              },
+              {
+                "bytes": 30713,
+                "name": "islet_20170216__gap60m__p008__r.npz",
+                "sha256": "0673649a32155eed5430df91dc556f8b287cdcad958d26ea6af6419358b47ea5"
+              },
+              {
+                "bytes": 30814,
+                "name": "islet_20170216__gap60m__p009__q.npz",
+                "sha256": "35435c755963393b2ac248c88ab3cec9d11719a1f68ea3774f6cd7a1aa69519b"
+              },
+              {
+                "bytes": 30635,
+                "name": "islet_20170216__gap60m__p009__r.npz",
+                "sha256": "86e2af4f2a28cba4e43a30de8af0a5920aeb3d8ab55824bf91f131b9b8ae262d"
+              },
+              {
+                "bytes": 30850,
+                "name": "islet_20170216__gap60m__p010__q.npz",
+                "sha256": "39973827f916477530548ea15546bf0924ec0ed8bdfb5f1d237dad9855568a68"
+              },
+              {
+                "bytes": 30546,
+                "name": "islet_20170216__gap60m__p010__r.npz",
+                "sha256": "3b301bd6d2f6916c11be5fdab101b8cb2c14822be0b67dc900bed0191ebfe9c8"
+              },
+              {
+                "bytes": 30728,
+                "name": "islet_20170216__gap60m__p011__q.npz",
+                "sha256": "2200ea2373e70006834c2277c1de50f9d8fef0ee4c3bef867a95eb33857929f0"
+              },
+              {
+                "bytes": 30579,
+                "name": "islet_20170216__gap60m__p011__r.npz",
+                "sha256": "b478282e5713ce092e07089d237abe1631030251eea0eb3ebc1c52c41b638174"
+              }
+            ],
+            "files": 24,
+            "sha256": "7be6c35fb9a38b2ac50e0443a3c95e7b594db37d546b3eb1fee775ca2b3758b8",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "StatAtlas (pairwise adaptation)",
+          "fold": 6,
+          "lock_sha256": "81bcc831d7de53e884ebc2793e83ee48bdad40c5c0e2b130e4b4f84f13e2ea47",
+          "method": "statatlas_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9872068230277186,
+            "hungarian_queries": 938,
+            "mrr_real": 0.9763681592039801,
+            "pairs": 8,
+            "queries": 938,
+            "top1_real": 0.9562899786780383,
+            "top5_real": 1.0
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "covariance": "train",
+            "transform": "affine",
+            "trim": 0.8
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 27476,
+                "name": "lineage_20160328__gap60m__p000__q.npz",
+                "sha256": "05bdcd850a56e82b017ab3e026298bdd9c7dbdf9c0f533ba9b53a34124ced5c3"
+              },
+              {
+                "bytes": 28358,
+                "name": "lineage_20160328__gap60m__p000__r.npz",
+                "sha256": "4b99152d562f22c977ac2c16ad43e5d379b2e9c5d51db30e1cb4681427b1a3f0"
+              },
+              {
+                "bytes": 27478,
+                "name": "lineage_20160328__gap60m__p001__q.npz",
+                "sha256": "59b4c2308e0d9eb20f38c82c65a71d47dc09749f599c570d0f30b3f8e358cb8a"
+              },
+              {
+                "bytes": 28767,
+                "name": "lineage_20160328__gap60m__p001__r.npz",
+                "sha256": "8acb2573a56227156ff505dc2fe62e1cacac9face1d2736e5f11a1d8129131bb"
+              },
+              {
+                "bytes": 27503,
+                "name": "lineage_20160328__gap60m__p002__q.npz",
+                "sha256": "17b93942a95deeea9addd06ac4ee90301c3897de64ac3262d3b1182fb5d46d2e"
+              },
+              {
+                "bytes": 28760,
+                "name": "lineage_20160328__gap60m__p002__r.npz",
+                "sha256": "ebd1d27ae0745c7b96dcd2c9d0073437254d755636d383ab67d3a7e1d51b72ed"
+              },
+              {
+                "bytes": 27919,
+                "name": "lineage_20160328__gap60m__p003__q.npz",
+                "sha256": "41f6a5ed8631cfa44c4cd8cce9429c1477f2204538464697b74f2cbd1d8dc27d"
+              },
+              {
+                "bytes": 29071,
+                "name": "lineage_20160328__gap60m__p003__r.npz",
+                "sha256": "7423d3da73d99b4f96ae75b5fd6e3e186768beb0afb5204d5face5ffa736ff0e"
+              },
+              {
+                "bytes": 28364,
+                "name": "lineage_20160328__gap60m__p004__q.npz",
+                "sha256": "d1248c95e5399934c481c1df0d856e6e394e21071478440365aa7cc430af65e8"
+              },
+              {
+                "bytes": 29218,
+                "name": "lineage_20160328__gap60m__p004__r.npz",
+                "sha256": "ffa33177e234e2a6781bed8af3a563e2f767a8c41dfd7cf7d56c4714917ed9c8"
+              },
+              {
+                "bytes": 28769,
+                "name": "lineage_20160328__gap60m__p005__q.npz",
+                "sha256": "68bc984f7118b277b3bc283cee723628fedc5a294104d89151ac37d5840a1d0e"
+              },
+              {
+                "bytes": 29113,
+                "name": "lineage_20160328__gap60m__p005__r.npz",
+                "sha256": "96b3cc15b3069597091830f6459598232979febd0439f2886b1e329594e651f9"
+              },
+              {
+                "bytes": 28758,
+                "name": "lineage_20160328__gap60m__p006__q.npz",
+                "sha256": "5d01440aa1799978d422bcf11269c910d5d7636803c244b5b1fde1097b7bbd1b"
+              },
+              {
+                "bytes": 29196,
+                "name": "lineage_20160328__gap60m__p006__r.npz",
+                "sha256": "decdff9dd50fb6f661f928f08b774b90e7d76e94eff9c375bcdc2ce79545fa75"
+              },
+              {
+                "bytes": 29074,
+                "name": "lineage_20160328__gap60m__p007__q.npz",
+                "sha256": "76769403dc6e94456ee5219c9f994908deedf5d8890f5cf127254a7d35794f78"
+              },
+              {
+                "bytes": 29061,
+                "name": "lineage_20160328__gap60m__p007__r.npz",
+                "sha256": "4025a6d67ebcce1799c14a0fc569d5a87f06f4dfbb29e2f32dc7c60254c2a93e"
+              }
+            ],
+            "files": 16,
+            "sha256": "f58633d54e925760bf0c76b8f705de46440257d13cf2609584392e686015c4f6",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "StatAtlas (pairwise adaptation)",
+          "fold": 7,
+          "lock_sha256": "a1345bcae5c5232da4d4c974d0b6ce3c4201e9ff7d9e116a984da24625ad4c3a",
+          "method": "statatlas_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9871589085072231,
+            "hungarian_queries": 2492,
+            "mrr_real": 0.9584987834084946,
+            "pairs": 14,
+            "queries": 2492,
+            "top1_real": 0.923354735152488,
+            "top5_real": 0.9987961476725522
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "covariance": "train",
+            "transform": "affine",
+            "trim": 0.8
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 43228,
+                "name": "lineage_20170111__gap60m__p000__q.npz",
+                "sha256": "90d16868f5d3ef4dfea606909c9a6453a1d1878374b802c207b825ce8a457f5c"
+              },
+              {
+                "bytes": 43402,
+                "name": "lineage_20170111__gap60m__p000__r.npz",
+                "sha256": "7705c89ad9409fc3ab65eb5ad0a304c617bf1ba99607e9982173d8f958e75418"
+              },
+              {
+                "bytes": 43270,
+                "name": "lineage_20170111__gap60m__p001__q.npz",
+                "sha256": "a63f48a22ceb017bfa485b12a4e54f547123a6781612c2334715db0bb09082e3"
+              },
+              {
+                "bytes": 43502,
+                "name": "lineage_20170111__gap60m__p001__r.npz",
+                "sha256": "bb935a457b80c42efd7ff25e6093f4183a440bd335bac91955d75108b2f55098"
+              },
+              {
+                "bytes": 43460,
+                "name": "lineage_20170111__gap60m__p002__q.npz",
+                "sha256": "73d07fa504ca9dea2b9a1bb267a96bc9f625eb2c7749d08669cd309c792beb89"
+              },
+              {
+                "bytes": 43407,
+                "name": "lineage_20170111__gap60m__p002__r.npz",
+                "sha256": "6d3e0839411d8d810b9b703b2ed8a6a9cb7f294a261f1688572b972e36d770e1"
+              },
+              {
+                "bytes": 43475,
+                "name": "lineage_20170111__gap60m__p003__q.npz",
+                "sha256": "1fa472bfd996aaea0646af8bf0241de6b886205773e5c2dde872f3167a82a146"
+              },
+              {
+                "bytes": 43277,
+                "name": "lineage_20170111__gap60m__p003__r.npz",
+                "sha256": "5e481fdf9bd6e5d6112c2980fd9530017a9877c49713fea16429a2366cb4650a"
+              },
+              {
+                "bytes": 43406,
+                "name": "lineage_20170111__gap60m__p004__q.npz",
+                "sha256": "ff2e4686a73fb18c05093468940b027b5535591dc036d09a9e325d0996327161"
+              },
+              {
+                "bytes": 43151,
+                "name": "lineage_20170111__gap60m__p004__r.npz",
+                "sha256": "c97ec994c475c7679e15f890cbb8b1ca05ac2f2e9e86673525c3e75b018ad167"
+              },
+              {
+                "bytes": 43503,
+                "name": "lineage_20170111__gap60m__p005__q.npz",
+                "sha256": "94d7d791f92c8c3bd4d4b59c12f140ef362d5492f7afd000fee26085a7def7cf"
+              },
+              {
+                "bytes": 43122,
+                "name": "lineage_20170111__gap60m__p005__r.npz",
+                "sha256": "b39d15fa926ec4c5bd80bcf8c3d8d5620d03bc7dfeb3edf72a784433c6795129"
+              },
+              {
+                "bytes": 43404,
+                "name": "lineage_20170111__gap60m__p006__q.npz",
+                "sha256": "ce81b9246fc2ea4ae078f3b7afd44c546bdb45128abdc1efdf089ac38554fec1"
+              },
+              {
+                "bytes": 43073,
+                "name": "lineage_20170111__gap60m__p006__r.npz",
+                "sha256": "c7d8d259ced7a6bca95ef650df95d9a1c6d692f0e33368794cd9935d68ee4b11"
+              },
+              {
+                "bytes": 43281,
+                "name": "lineage_20170111__gap60m__p007__q.npz",
+                "sha256": "c979422eafbdfc3da72503dca613e88311adc6ef2c30fdf12e47cfb57ee3281e"
+              },
+              {
+                "bytes": 43018,
+                "name": "lineage_20170111__gap60m__p007__r.npz",
+                "sha256": "b35034b2f37377eb6334fad3a0bd5b81745987a1e316c0258edfff5221d94645"
+              },
+              {
+                "bytes": 43151,
+                "name": "lineage_20170111__gap60m__p008__q.npz",
+                "sha256": "e9af77e1e6023986bde07b800f6776923bff03aaf32573a46f34a04c50f60a4c"
+              },
+              {
+                "bytes": 42880,
+                "name": "lineage_20170111__gap60m__p008__r.npz",
+                "sha256": "d962311649ce42cb0805efc1ba517653b857700a6241da3365c532f26397ff76"
+              },
+              {
+                "bytes": 43121,
+                "name": "lineage_20170111__gap60m__p009__q.npz",
+                "sha256": "ac70f28150730da73f3c050e0d5a65e3c871ba3170cb006ce4fa5ac496fc6aef"
+              },
+              {
+                "bytes": 42997,
+                "name": "lineage_20170111__gap60m__p009__r.npz",
+                "sha256": "b2a4306452ed92011598f997000c1eaf1d2757d06dfce77796c3ad443061bb52"
+              },
+              {
+                "bytes": 43070,
+                "name": "lineage_20170111__gap60m__p010__q.npz",
+                "sha256": "5330a261bab8c356ec5c9ef744071716acfc0e28646223980e97947e2468f7e1"
+              },
+              {
+                "bytes": 42878,
+                "name": "lineage_20170111__gap60m__p010__r.npz",
+                "sha256": "2115278c4397621147786861884082cbe743c6dca598f0ce2e04e9cbd9f30a54"
+              },
+              {
+                "bytes": 43009,
+                "name": "lineage_20170111__gap60m__p011__q.npz",
+                "sha256": "ec4c481501259a633e293a4a9021e0dd04fc763e5d32b505f9981d442e400008"
+              },
+              {
+                "bytes": 42889,
+                "name": "lineage_20170111__gap60m__p011__r.npz",
+                "sha256": "634db4ff18e2f6095460363f166f42371fe45c167d8684898c8759703b1e3200"
+              },
+              {
+                "bytes": 42882,
+                "name": "lineage_20170111__gap60m__p012__q.npz",
+                "sha256": "d0b20d6e496ab4a38683a408f5fb00f10e4949c5db2b45ca25c96443bb28ec8d"
+              },
+              {
+                "bytes": 42867,
+                "name": "lineage_20170111__gap60m__p012__r.npz",
+                "sha256": "5f8354aa577e8addd7239044f5d6b0358cb2ae7998d2f5ce09b1f7969435c589"
+              },
+              {
+                "bytes": 42995,
+                "name": "lineage_20170111__gap60m__p013__q.npz",
+                "sha256": "54bc270f605bf4fa3693d2623ed45d5fbd2179209c89a26511825d2c0deda297"
+              },
+              {
+                "bytes": 42912,
+                "name": "lineage_20170111__gap60m__p013__r.npz",
+                "sha256": "c8f10be30dd88c3f9770ba2a3700e329721329fa9485fa533323c328fc9500e3"
+              }
+            ],
+            "files": 28,
+            "sha256": "6c7cd138b13b92bd2b448423541378016a94783b6998522bb06e99e5d38d0451",
+            "split": "test"
+          }
+        },
+        {
+          "activity_used": false,
+          "display_name": "StatAtlas (pairwise adaptation)",
+          "fold": 8,
+          "lock_sha256": "e912db3ca1adc425310fb7673c0683f3f77b95d9aba79edca47f2ff9f5262f62",
+          "method": "statatlas_pair",
+          "metrics": {
+            "hungarian_accuracy": 0.9862637362637363,
+            "hungarian_queries": 2184,
+            "mrr_real": 0.9595543345543343,
+            "pairs": 14,
+            "queries": 2184,
+            "top1_real": 0.9235347985347986,
+            "top5_real": 1.0
+          },
+          "official_references": {
+            "crfid": {
+              "pinned_commit": "1166cdb8b26ca1851011112b620e41b044012518",
+              "principles_used": [
+                "CPD registration unary",
+                "relative-angle and distance edge consistency"
+              ],
+              "repository": "https://github.com/shiveshc/CRF_Cell_ID",
+              "runtime_note": "Python adaptation because the official implementation requires MATLAB/UGM"
+            },
+            "statatlas": {
+              "pinned_commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+              "principles_used": [
+                "affine/similarity atlas alignment",
+                "Gaussian spatial likelihood"
+              ],
+              "repository": "https://github.com/amin-nejat/stat-atlas"
+            }
+          },
+          "protocol": "LOFO8; train statistics + validation selection + once-only locked test",
+          "schema": "zebrafish-pairwise-adaptation-result-v1",
+          "selected_config": {
+            "covariance": "train",
+            "transform": "affine",
+            "trim": 0.8
+          },
+          "source_sha256": "19f43c615a923d001b419edadb4152a8165442f10126780c1d1d8a8df2f7cd04",
+          "test_labels_usage": "metrics only, after both directional score matrices are complete",
+          "test_manifest": {
+            "entries": [
+              {
+                "bytes": 37076,
+                "name": "lineage_20170925__gap60m__p000__q.npz",
+                "sha256": "f659b6b2cca000512ef75840e4600fb94ec606fd39f12bbda750f56ab80d66a3"
+              },
+              {
+                "bytes": 36838,
+                "name": "lineage_20170925__gap60m__p000__r.npz",
+                "sha256": "7806ef829e343b01703fbfd4cf1608b79c6f7d4afb73b96d36cc8712232f9cb5"
+              },
+              {
+                "bytes": 36924,
+                "name": "lineage_20170925__gap60m__p001__q.npz",
+                "sha256": "bf01a3270517a4c4667c93593fd6f7cea4a03b5fc77aba8f1ad78e2f57b63f66"
+              },
+              {
+                "bytes": 36749,
+                "name": "lineage_20170925__gap60m__p001__r.npz",
+                "sha256": "0a5834f70be8abdc3bdc10e4425ce409b74fc54f43c170c223b6b4526df076bf"
+              },
+              {
+                "bytes": 37006,
+                "name": "lineage_20170925__gap60m__p002__q.npz",
+                "sha256": "ac813b03a09437dbd469fc7d0e3b2cea4504e375b62626f06d2225615141eced"
+              },
+              {
+                "bytes": 36767,
+                "name": "lineage_20170925__gap60m__p002__r.npz",
+                "sha256": "82ff0b78242526e45807d0458fe7799cf58318635e38ed35452f946889d33a1f"
+              },
+              {
+                "bytes": 36990,
+                "name": "lineage_20170925__gap60m__p003__q.npz",
+                "sha256": "dadbe77ae92c83777bd5bb125bcadfffceff652bad1b1f1a89c6ecfdbfc31290"
+              },
+              {
+                "bytes": 36699,
+                "name": "lineage_20170925__gap60m__p003__r.npz",
+                "sha256": "b71c9113ae2afe7913712e4c93b83f983821df3296b55d97660eff0224374132"
+              },
+              {
+                "bytes": 36838,
+                "name": "lineage_20170925__gap60m__p004__q.npz",
+                "sha256": "9e8e792cf8f69c61380c6801695a780b73a2809e164cf1552b5ada6ec6f7e774"
+              },
+              {
+                "bytes": 36589,
+                "name": "lineage_20170925__gap60m__p004__r.npz",
+                "sha256": "658b2f92166d889957f2f83923adaa67a412e42105f2c2bffbf8aed644c06736"
+              },
+              {
+                "bytes": 36748,
+                "name": "lineage_20170925__gap60m__p005__q.npz",
+                "sha256": "29ff1c2f30bb5a957e94ebf9d83027a57aaf6592ea11bb229f15b98140faafa3"
+              },
+              {
+                "bytes": 36506,
+                "name": "lineage_20170925__gap60m__p005__r.npz",
+                "sha256": "310e2929e3410f6512d2e2772beb417faa7b6eda73308b026b41c64aac59b4da"
+              },
+              {
+                "bytes": 36768,
+                "name": "lineage_20170925__gap60m__p006__q.npz",
+                "sha256": "90f45d8c9db798113a0aff2d2400a0e259759053b191711161a055e320c6ef06"
+              },
+              {
+                "bytes": 36322,
+                "name": "lineage_20170925__gap60m__p006__r.npz",
+                "sha256": "d8c814727bfa7de668a62f23474deb5aabf1f36de2cb1bef195a3b13089ef653"
+              },
+              {
+                "bytes": 36704,
+                "name": "lineage_20170925__gap60m__p007__q.npz",
+                "sha256": "3262dd9ae7b562e02c6139a0af523682b44266771c65a5e6fb787fd52dbdb211"
+              },
+              {
+                "bytes": 36463,
+                "name": "lineage_20170925__gap60m__p007__r.npz",
+                "sha256": "8ca7fea9175729b207586069ec046df442678f9e4352adee9121256a3c78c088"
+              },
+              {
+                "bytes": 36593,
+                "name": "lineage_20170925__gap60m__p008__q.npz",
+                "sha256": "82f68678b1be9cf8df3084ade43d27aaa9cf8050738b93972832b53ebadad4da"
+              },
+              {
+                "bytes": 36357,
+                "name": "lineage_20170925__gap60m__p008__r.npz",
+                "sha256": "f03f78b54fdadc49649a2cb505bb0294ed52b0c4eef62d377b9e168e12964fcc"
+              },
+              {
+                "bytes": 36505,
+                "name": "lineage_20170925__gap60m__p009__q.npz",
+                "sha256": "467ba7cf1a51d589ad9bdb233dc5ec30c248306d110cf780937fe2541a2134cb"
+              },
+              {
+                "bytes": 36303,
+                "name": "lineage_20170925__gap60m__p009__r.npz",
+                "sha256": "235905ddebc658b2b2e71c0d8e98d68e639ba13b1a2be467c6a05af0528dbbea"
+              },
+              {
+                "bytes": 36320,
+                "name": "lineage_20170925__gap60m__p010__q.npz",
+                "sha256": "16d65a51ad193db1578b68a019aff306ed7f1d96f8749e239e092c107c38e9bf"
+              },
+              {
+                "bytes": 36174,
+                "name": "lineage_20170925__gap60m__p010__r.npz",
+                "sha256": "f083ea280b4fcdf4718a344650057b750d7e3d8da3caea9df284938d0ff046f0"
+              },
+              {
+                "bytes": 36459,
+                "name": "lineage_20170925__gap60m__p011__q.npz",
+                "sha256": "803c8e59ac1deed98e5e9713bf040b1dc4765acecbc3d0924175bc21b68a5781"
+              },
+              {
+                "bytes": 36022,
+                "name": "lineage_20170925__gap60m__p011__r.npz",
+                "sha256": "9a679c7fe28ad51b0702e7305d38833356676c27d4d87935360ba0bd1374f918"
+              },
+              {
+                "bytes": 36357,
+                "name": "lineage_20170925__gap60m__p012__q.npz",
+                "sha256": "6a3fa51673b92509369c45cb2dcde1b8f180674cbc23cc66d9d64ec5da2f46eb"
+              },
+              {
+                "bytes": 35988,
+                "name": "lineage_20170925__gap60m__p012__r.npz",
+                "sha256": "0593a0e078f393d92f7a6d9ed10786ab93187563191dd6e7133518952c757123"
+              },
+              {
+                "bytes": 36302,
+                "name": "lineage_20170925__gap60m__p013__q.npz",
+                "sha256": "edcd4d6714661328344508c7e17f6b16f12a4db91c7e268cfa7bbba3fc310095"
+              },
+              {
+                "bytes": 35830,
+                "name": "lineage_20170925__gap60m__p013__r.npz",
+                "sha256": "50afe3f3df3d3354b09a96ddd7cbb5a5ceb3709210993e579452a08c5639037e"
+              }
+            ],
+            "files": 28,
+            "sha256": "b963f810d986e72a88aab661dbe8d47e73da23b0624e4bed2d8d275b9e34a5ae",
+            "split": "test"
+          }
+        }
+      ],
+      "summary": {
+        "hungarian_accuracy": {
+          "fold_values": [
+            0.9626696832579186,
+            0.9878603945371776,
+            0.984375,
+            0.8912087912087913,
+            0.9754098360655737,
+            0.9872068230277186,
+            0.9871589085072231,
+            0.9862637362637363
+          ],
+          "mean": 0.9702691466085174,
+          "sd": 0.03310399472775572
+        },
+        "mrr_real": {
+          "fold_values": [
+            0.9327630090497737,
+            0.9592227280391166,
+            0.9558376736111112,
+            0.8820195604805688,
+            0.9393784153005464,
+            0.9763681592039801,
+            0.9584987834084946,
+            0.9595543345543343
+          ],
+          "mean": 0.9454553329559907,
+          "sd": 0.02889382455314164
+        },
+        "top1_real": {
+          "fold_values": [
+            0.8775452488687783,
+            0.9236216489630754,
+            0.9153645833333334,
+            0.8137362637362637,
+            0.8831967213114754,
+            0.9562899786780383,
+            0.923354735152488,
+            0.9235347985347986
+          ],
+          "mean": 0.9020804973222813,
+          "sd": 0.04351570370205737
+        },
+        "top5_real": {
+          "fold_values": [
+            0.9997171945701357,
+            1.0,
+            1.0,
+            0.9620879120879121,
+            1.0,
+            1.0,
+            0.9987961476725522,
+            1.0
+          ],
+          "mean": 0.995075156791325,
+          "sd": 0.013335361177556059
+        }
+      }
+    }
+  },
+  "sample_sd_ddof": 1,
+  "schema": "zebrafish-pairwise-adaptation-aggregate-v1"
+}

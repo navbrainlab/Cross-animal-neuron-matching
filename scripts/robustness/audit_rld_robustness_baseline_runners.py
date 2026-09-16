@@ -11,14 +11,13 @@ from typing import Any
 ROOT = Path("/home/ubuntu/klb/nuclr/nuclr")
 KLB = Path("/home/ubuntu/klb")
 OUT = ROOT / "runs/rld_robustness_cv5_seed42_v1"
-METHODS = ("cpd", "fdnc", "nuclr", "geotransformer", "rgm", "ngm_v2")
+METHODS = ("cpd", "fdnc", "nuclr", "geotransformer", "ngm_v2")
 
 ALIASES = {
     "cpd": ("cpd",),
     "fdnc": ("fdnc",),
     "nuclr": ("nuclr",),
     "geotransformer": ("geotransformer", "geo_transformer"),
-    "rgm": ("rgm",),
     "ngm_v2": ("ngm_v2", "ngmv2", "ngm-v2", "ngm"),
 }
 
@@ -153,7 +152,7 @@ def main():
         search_roots = [ROOT]
         if method == "geotransformer":
             search_roots.append(KLB / "nuclr/geotransformer_official")
-        elif method in ("rgm", "ngm_v2"):
+        elif method == "ngm_v2":
             search_roots.append(KLB)
 
         sources, ckpts = [], []

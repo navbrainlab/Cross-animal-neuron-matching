@@ -1,0 +1,51 @@
+[
+  {
+    "worm": 0,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-07.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_atanas_cv5_v1/fold4/test/worm_000_input.mat",
+    "n_nodes": 104,
+    "n_queries": 104
+  },
+  {
+    "worm": 1,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-14.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_atanas_cv5_v1/fold4/test/worm_001_input.mat",
+    "n_nodes": 97,
+    "n_queries": 97
+  },
+  {
+    "worm": 2,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-03-07-01.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_atanas_cv5_v1/fold4/test/worm_002_input.mat",
+    "n_nodes": 88,
+    "n_queries": 88
+  },
+  {
+    "worm": 3,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-13.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_atanas_cv5_v1/fold4/test/worm_003_input.mat",
+    "n_nodes": 98,
+    "n_queries": 98
+  },
+  {
+    "worm": 4,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-18.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_atanas_cv5_v1/fold4/test/worm_004_input.mat",
+    "n_nodes": 89,
+    "n_queries": 89
+  },
+  {
+    "worm": 5,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-08.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_atanas_cv5_v1/fold4/test/worm_005_input.mat",
+    "n_nodes": 96,
+    "n_queries": 96
+  },
+  {
+    "worm": 6,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-28-01.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_atanas_cv5_v1/fold4/test/worm_006_input.mat",
+    "n_nodes": 78,
+    "n_queries": 78
+  }
+]

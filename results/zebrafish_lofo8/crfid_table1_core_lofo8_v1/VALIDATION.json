@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "method": "crf_id_dagger",
+  "folds": 8,
+  "query_records": 17156,
+  "expected_query_records": 17156,
+  "aggregation": "unweighted mean and sample SD across held-out fish",
+  "sample_sd_ddof": 1,
+  "replay": {
+    "top1": {
+      "mean": 0.9663896092863755,
+      "sd": 0.020505657210645994
+    },
+    "top5": {
+      "mean": 0.9992916586470371,
+      "sd": 0.0011946958838723537
+    },
+    "mrr": {
+      "mean": 0.9818885502783676,
+      "sd": 0.011770054254178828
+    },
+    "hungarian": {
+      "mean": 0.9675600679334667,
+      "sd": 0.01892788809333087
+    }
+  }
+}

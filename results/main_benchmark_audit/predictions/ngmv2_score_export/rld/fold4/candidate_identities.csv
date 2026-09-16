@@ -1,0 +1,7 @@
+dataset,fold,reference_uid,candidate_col,reference_node_index,identity
+rld,4,20230909-16-14-25,0,15,RMEV
+rld,4,20230909-16-14-25,1,30,AVAR
+rld,4,20230909-16-14-25,2,43,SMDVR
+rld,4,20230909-16-14-25,3,58,RMED
+rld,4,20230909-16-14-25,4,88,SMDDR
+rld,4,20230909-16-14-25,5,92,RIVR

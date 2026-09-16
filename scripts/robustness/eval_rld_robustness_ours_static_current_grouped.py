@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Paired RLD corruption replay for the seed-42 static identity Atlas."""
+"""Query-only RLD corruption replay for the seed-42 main-table static Atlas."""
 from __future__ import annotations
 
 import argparse
@@ -13,10 +13,13 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_CORR = ROOT / "runs/rld_robustness_cv5_seed42_v2/corruptions"
-DEFAULT_OUT = ROOT / "runs/rld_robustness_cv5_seed42_v2/results/ours_static_seed42"
+DEFAULT_OUT = (
+    ROOT / "runs/rld_robustness_cv5_seed42_v2/results/ours_static_main_reference_seed42"
+)
 RUNS = ROOT / "runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/rld"
-EVALUATOR = ROOT / "scripts/neurid/evaluate_mprt_static_atlas.py"
-PACKAGE = ROOT / "neurid"
+MAIN_RUNS = ROOT / "runs/mprt_v1_1_atlas_medoid_rld_cv5_test_seeds_42_v1"
+EVALUATOR = ROOT / "scripts/mprt/evaluate_mprt_static_atlas.py"
+PACKAGE = ROOT / "mprt_net_v1_1"
 KINDS = {"coord_noise", "activity_noise", "missing", "outlier"}
 
 
@@ -25,16 +28,20 @@ def read_json(path: Path):
 
 
 def checkpoint(fold: int) -> Path:
-    path = RUNS / f"fold{fold}/seed42/dynamic/low_rank_r8/best.pt"
+    # This is the exact checkpoint/reference recorded by the canonical main
+    # table.  The former dynamic/low_rank_r8 checkpoint happened to reproduce
+    # clean predictions, but its atlas_nodes tensor is different and is not an
+    # acceptable reference for nonzero query perturbations.
+    path = RUNS / f"fold{fold}/seed42/static_atlas/anchored_pure.pt"
     if not path.is_file():
         raise FileNotFoundError(path)
     return path
 
 
 def saved_clean(fold: int):
-    path = RUNS / f"fold{fold}/seed42/atlas_identity_test/metrics.json"
+    path = MAIN_RUNS / f"fold{fold}/seed42/metrics.json"
     report = read_json(path)
-    return path, report["modes"]["static"]
+    return path, report["full_atlas"]
 
 
 def conditions(manifest: dict, fold: int, kinds: set[str], only_clean: bool = False):
@@ -68,7 +75,7 @@ def evaluate(row: dict, fold: int, ckpt: Path, out_root: Path, device: str, forc
         "--dataset", "rld",
         "--fold", str(fold),
         "--seed", "42",
-        "--variant", "static_identity_atlas_paired_robustness",
+        "--variant", "static_identity_atlas_query_only_main_reference_robustness",
         "--output", str(metrics),
         "--query-output", str(queries),
     ]

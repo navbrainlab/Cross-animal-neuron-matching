@@ -3,9 +3,11 @@
 
 Arms
 ----
-full            Existing locked full NeuRID checkpoint (reused, not retrained)
+full            Existing locked Full MPRT static-atlas checkpoint (reused, not retrained)
 geometry_only   w/o Activity: removes activity node AND activity relation inputs
 activity_only   w/o Geometry: removes geometry node AND geometry relation inputs
+no_population   w/o Relation-conditioned Population Encoder: disables within-population
+                relation-conditioned attention, retains relation field and transport
 node_only       w/o Population Relations: disables population encoder AND relation transport
 no_transport    w/o Relation Transport: keeps relation-conditioned population formation,
                 disables cross-population relation transport only
@@ -40,12 +42,19 @@ from typing import Any, Iterable
 DATASETS = ("atanas", "rld")
 FOLDS = (0, 1, 2, 3, 4)
 SEEDS = (1, 42, 123)
-ALL_ABLATIONS = ("geometry_only", "activity_only", "node_only", "no_transport")
+ALL_ABLATIONS = (
+    "geometry_only",
+    "activity_only",
+    "no_population",
+    "node_only",
+    "no_transport",
+)
 DEFAULT_ABLATIONS = ("geometry_only", "node_only", "no_transport")
 DISPLAY = {
-    "full": "Full NeuRID",
+    "full": "Full MPRT-Net",
     "geometry_only": "w/o Activity",
     "activity_only": "w/o Geometry (Activity-only)",
+    "no_population": "w/o Relation-conditioned Population Encoder",
     "node_only": "Node-only",
     "no_transport": "w/o Relation Transport",
 }
@@ -226,6 +235,7 @@ def _validate_variant_semantics(package_root: Path) -> None:
     full = cfg("full")
     geometry = cfg("geometry_only")
     activity = cfg("activity_only")
+    no_population = cfg("no_population")
     node = cfg("node_only")
     no_transport = cfg("no_transport")
 
@@ -247,6 +257,12 @@ def _validate_variant_semantics(package_root: Path) -> None:
             and activity.use_activity
             and activity.use_population_encoder
             and activity.use_relation_transport
+        ),
+        "no_population": (
+            no_population.use_geometry
+            and no_population.use_activity
+            and not no_population.use_population_encoder
+            and no_population.use_relation_transport
         ),
         "node_only": (
             node.use_geometry
@@ -444,6 +460,7 @@ def _ensure_pairwise(
         definition={
             "geometry_only": "remove activity node and activity edge inputs",
             "activity_only": "remove geometry node and geometry edge inputs",
+            "no_population": "disable relation-conditioned population attention; retain relation field and relation transport",
             "node_only": "disable native population encoder and relation transport",
             "no_transport": "disable relation transport; retain native population encoder",
         }[variant],
@@ -791,6 +808,7 @@ def _lock_payload(tasks: list[dict[str, Any]], args, util) -> dict[str, Any]:
             variant: {
                 "geometry_only": "w/o Activity: no activity node or activity relation inputs",
                 "activity_only": "w/o Geometry: no geometry node or geometry relation inputs",
+                "no_population": "w/o Relation-conditioned Population Encoder: relation-conditioned population attention disabled; relation field and relation transport retained",
                 "node_only": "w/o Population Relations: node matching only; population encoder and relation transport disabled",
                 "no_transport": "w/o Relation Transport: native relation-conditioned population formation retained",
             }[variant]
@@ -950,7 +968,7 @@ def main() -> None:
         "--static-evaluator",
         type=Path,
         default=None,
-        help="Production-path static-atlas evaluator; defaults to scripts/neurid/evaluate_mprt_static_atlas.py",
+        help="Production-path static-atlas evaluator; defaults to scripts/mprt/evaluate_mprt_static_atlas.py",
     )
     parser.add_argument(
         "--atanas-cv-root",
@@ -984,10 +1002,10 @@ def main() -> None:
     args = parser.parse_args()
 
     args.repo_root = args.repo_root.resolve()
-    args.package_root = (args.package_root or args.repo_root / "neurid").resolve()
+    args.package_root = (args.package_root or args.repo_root / "mprt_net_v1_1").resolve()
     args.static_evaluator = (
         args.static_evaluator
-        or args.repo_root / "scripts/neurid/evaluate_mprt_static_atlas.py"
+        or args.repo_root / "scripts/mprt/evaluate_mprt_static_atlas.py"
     ).resolve()
     args.cv_roots = {
         "atanas": args.atanas_cv_root.resolve(),
@@ -1013,7 +1031,7 @@ def main() -> None:
     if not args.static_evaluator.is_file():
         raise FileNotFoundError(
             f"Static evaluator not found: {args.static_evaluator}. "
-            "Keep scripts/neurid/evaluate_mprt_static_atlas.py available or pass --static-evaluator."
+            "Keep scripts/mprt/evaluate_mprt_static_atlas.py available or pass --static-evaluator."
         )
 
     util = _utilities(args.package_root)

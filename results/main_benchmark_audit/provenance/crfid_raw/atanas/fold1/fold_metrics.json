@@ -1,0 +1,181 @@
+{
+  "fold_metrics": {
+    "Q": 703,
+    "top1": 0.2361308677098151,
+    "top5": 0.6216216216216216,
+    "mrr": 0.4016501008695755,
+    "hungarian": 0.2361308677098151,
+    "coverage": 0.8975817923186344,
+    "covered_top1": 0.2630744849445325,
+    "covered_top5": 0.6925515055467512,
+    "official_duplicate_accuracy": 0.2361308677098151,
+    "fold": 1,
+    "n_worms": 8
+  },
+  "worms": [
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-12-21-06.npz",
+      "Q": 67,
+      "covered": 61,
+      "top1_correct": 21,
+      "top5_correct": 49,
+      "rr_sum": 33.133571135113904,
+      "hungarian_correct": 21,
+      "official_correct": 21,
+      "missing_gt": [
+        "AIY",
+        "I6",
+        "M4",
+        "MI",
+        "RID",
+        "RMDD"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-15-06.npz",
+      "Q": 71,
+      "covered": 66,
+      "top1_correct": 11,
+      "top5_correct": 36,
+      "rr_sum": 21.64955542700745,
+      "hungarian_correct": 11,
+      "official_correct": 11,
+      "missing_gt": [
+        "AVK",
+        "MCL",
+        "RID",
+        "SMB?L",
+        "VB02"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-09-22.npz",
+      "Q": 96,
+      "covered": 88,
+      "top1_correct": 23,
+      "top5_correct": 66,
+      "rr_sum": 39.60103879292062,
+      "hungarian_correct": 23,
+      "official_correct": 23,
+      "missing_gt": [
+        "M4",
+        "M5",
+        "MI",
+        "RID",
+        "RMF",
+        "SAAD",
+        "SIA?L",
+        "VB02"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-23-01.npz",
+      "Q": 91,
+      "covered": 81,
+      "top1_correct": 23,
+      "top5_correct": 53,
+      "rr_sum": 35.836660162590526,
+      "hungarian_correct": 23,
+      "official_correct": 23,
+      "missing_gt": [
+        "AIY",
+        "M5",
+        "MCL",
+        "MCR",
+        "MI",
+        "RID",
+        "SAAD",
+        "SMBD",
+        "VB02"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-17-01.npz",
+      "Q": 96,
+      "covered": 83,
+      "top1_correct": 31,
+      "top5_correct": 64,
+      "rr_sum": 45.308688813909065,
+      "hungarian_correct": 31,
+      "official_correct": 31,
+      "missing_gt": [
+        "AIA",
+        "I6",
+        "M4",
+        "M5",
+        "MCL",
+        "MCR",
+        "MI",
+        "RID",
+        "RMF",
+        "SMB",
+        "SMB?L",
+        "SMBV"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-17-07.npz",
+      "Q": 86,
+      "covered": 76,
+      "top1_correct": 25,
+      "top5_correct": 62,
+      "rr_sum": 40.541959354938896,
+      "hungarian_correct": 25,
+      "official_correct": 25,
+      "missing_gt": [
+        "AIY",
+        "I4",
+        "M5",
+        "MCL",
+        "RID",
+        "RMF",
+        "SAAD",
+        "SIBV",
+        "SMB?R"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-17-14.npz",
+      "Q": 106,
+      "covered": 100,
+      "top1_correct": 10,
+      "top5_correct": 50,
+      "rr_sum": 28.04367792117073,
+      "hungarian_correct": 10,
+      "official_correct": 10,
+      "missing_gt": [
+        "M5",
+        "MCR",
+        "MI",
+        "RID",
+        "SIA?R",
+        "VB02"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-18-01.npz",
+      "Q": 90,
+      "covered": 76,
+      "top1_correct": 22,
+      "top5_correct": 57,
+      "rr_sum": 38.244869303660344,
+      "hungarian_correct": 22,
+      "official_correct": 22,
+      "missing_gt": [
+        "I4",
+        "M4",
+        "M5",
+        "MCL",
+        "MI",
+        "RID",
+        "SAAD",
+        "SIA",
+        "SIBV",
+        "SMB",
+        "SMBD",
+        "SMDD",
+        "VB02"
+      ]
+    }
+  ]
+}

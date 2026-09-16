@@ -1,0 +1,22 @@
+{
+  "canonical_queries": 4667,
+  "normalized_prediction_rows": 51337,
+  "ngmv2_score_rows": 2823,
+  "fugw_official_score_rows": 4667,
+  "nuclr_decoded_query_rows": 2843,
+  "methods": [
+    "CPD",
+    "CRF_ID",
+    "FUGW (G+A; official)",
+    "GeoTransformer",
+    "NGM-v2",
+    "NeurID (population atlas)",
+    "NeurID (single medoid)",
+    "NuCLR",
+    "StatAtlas",
+    "Vanilla FGW",
+    "fDNC"
+  ],
+  "files": 646,
+  "status": "PASS"
+}

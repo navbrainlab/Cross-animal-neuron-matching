@@ -1,0 +1,53 @@
+{
+  "paired_query_key": [
+    "fold",
+    "animal_id",
+    "neuron_row"
+  ],
+  "n_export_rows": 5213,
+  "n_paired_evaluated_queries": 3210,
+  "n_accuracy_identities": 149,
+  "full_and_wo_activity_query_sets_identical": true,
+  "fold_query_counts": {
+    "0": 664,
+    "1": 669,
+    "2": 656,
+    "3": 610,
+    "4": 611
+  },
+  "pooled_full_top1": 0.7476635514018691,
+  "pooled_wo_activity_top1": 0.4320872274143302,
+  "dataset": "Atanas/SF 000776",
+  "seed": 42,
+  "accuracy_definition": "pooled Top-1 over exactly paired held-out queries per identity",
+  "activity_margin_definition": "mean Same similarity - mean Hard similarity per identity",
+  "n_margin_identities": 167,
+  "n_plotted_identities": 149,
+  "accuracy_identities_without_margin": [],
+  "margin_identities_without_accuracy": [
+    "AIA?",
+    "AIM?",
+    "AIY?",
+    "AVK?",
+    "IL1V?",
+    "RMDD?",
+    "RMF?",
+    "SAAD?",
+    "SIA??",
+    "SIA?L",
+    "SIA?R",
+    "SIBDL",
+    "SIBV?",
+    "SMB??",
+    "SMB?L",
+    "SMBD?",
+    "SMBV?",
+    "SMDD?"
+  ],
+  "spearman_rho": 0.24733270149345998,
+  "spearman_p": 0.002357570628489047,
+  "prediction_source": "/home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility/results/visualization_export_atanas_seed42/neurid_query_neurons_atanas_cv5_seed42.csv",
+  "prediction_source_sha256": "11ea31c52bd72786692416aba668c549fd9ba024309e952c5d70bbcf8d05af74",
+  "margin_source": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1/mechanism_population_relation/atanas_margin_vs_top1/activity_identity_margin.csv",
+  "margin_source_sha256": "9fce463e8ee41a3624ef88fc7e53545addfc8956b63caeba9bb7dda0e3c049fe"
+}

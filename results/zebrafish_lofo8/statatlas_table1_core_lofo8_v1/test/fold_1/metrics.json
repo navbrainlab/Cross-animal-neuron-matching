@@ -1,0 +1,166 @@
+{
+  "deterministic": true,
+  "display_name": "StatAtlas",
+  "endpoint_truth_used_for_metrics_only": true,
+  "endpoint_truth_used_in_scoring": false,
+  "fold": 1,
+  "lock_sha256": "f9429f0c1313335289b08ac936dec87f5794c0c73576bbf25667b025c1985929",
+  "method": "statatlas",
+  "metrics": {
+    "hungarian": 0.4626696832579186,
+    "mrr": 0.5538285069126535,
+    "queries": 3536,
+    "top1": 0.45588235294117646,
+    "top5": 0.6504524886877828
+  },
+  "physical_pairs": 16,
+  "q_and_r_timepoints_used_in_atlas": false,
+  "reference_protocol": "same-fish leave-two-timepoints-out per physical q/r pair",
+  "schema": "zebrafish-statatlas-table1-core-lofo8-v1",
+  "seed": null,
+  "selected_config": {
+    "covariance_ridge_fraction": 0.0001,
+    "icp_trim": 1.0
+  },
+  "source_hashes": {
+    "evaluator": "8284f4f0705cb68fab003826c117e3710179b74b63c24b436d495220c20dd450",
+    "multireference_loader": "59b85e5f39a0ab26259606ea0f9392759b02536a2281689f8bbd2f031b859c89",
+    "query_record_io": "749a4c8d9e32d9a664e86e5705d8394a7fb724a8d914c3423c357d3c1e5ee2b8",
+    "table1_statatlas_adapter": "9821dc56877ba24d819e1305056bc3f5732b697e212e261f6818c1a86bb09d13"
+  },
+  "test_manifest": {
+    "entries": [
+      {
+        "name": "func_20150410__gap60m__p000__q.npz",
+        "sha256": "6d2d1287f3929f1f78553b9a1c9fd702286e03c0b408b3448de40e817b7615e0"
+      },
+      {
+        "name": "func_20150410__gap60m__p000__r.npz",
+        "sha256": "474f9cffe886c050efa8b04e9c1c3329b86b6193fc4ad746d8b07f39fd2c2637"
+      },
+      {
+        "name": "func_20150410__gap60m__p001__q.npz",
+        "sha256": "7ff5b72e8f189d15a6a7b14ceca7761fc8b9b94e22c5371da0e64a00d1f52dd3"
+      },
+      {
+        "name": "func_20150410__gap60m__p001__r.npz",
+        "sha256": "710149f4d0b8dda468a1b143c6fc4259e5facaa3f4928ef7a6b84b67bca1e018"
+      },
+      {
+        "name": "func_20150410__gap60m__p002__q.npz",
+        "sha256": "465259e3db220dd21acc588b30e686ef0539dd26c46916b51c869bbcdf1cd2a4"
+      },
+      {
+        "name": "func_20150410__gap60m__p002__r.npz",
+        "sha256": "b823b2f6549b86a5715eef172af41ad29ef91a4da856585eeebb8fb3dae60ea8"
+      },
+      {
+        "name": "func_20150410__gap60m__p003__q.npz",
+        "sha256": "cac753fd2808c9b2c4a2df25368f2c37cde78ad44ae04cf421c7067ec867f7eb"
+      },
+      {
+        "name": "func_20150410__gap60m__p003__r.npz",
+        "sha256": "95d471e20954ba91a0cb50edcc7b0d33223593e307e6b8f6ffe4c6d51ba67034"
+      },
+      {
+        "name": "func_20150410__gap60m__p004__q.npz",
+        "sha256": "aedca62d149718b41e52b3dcc047cdd5f2c97b0d78408273293375699b124b7d"
+      },
+      {
+        "name": "func_20150410__gap60m__p004__r.npz",
+        "sha256": "f7cb97dbec73ebc8de7716cbe22867619996ab439e7a993f17537b483d823ae3"
+      },
+      {
+        "name": "func_20150410__gap60m__p005__q.npz",
+        "sha256": "ec08d4476883e97c5495f79ce147940d21281a10466e02dccccd4dc726e2a6a2"
+      },
+      {
+        "name": "func_20150410__gap60m__p005__r.npz",
+        "sha256": "b37b4d70032b727669e9bc1d50e1746f0127ca19c32439c69950c92bce8ab4da"
+      },
+      {
+        "name": "func_20150410__gap60m__p006__q.npz",
+        "sha256": "c684ac8310e7ad1242357d5352f2068ed472a8a1f99244390dfc31a1b2402ff7"
+      },
+      {
+        "name": "func_20150410__gap60m__p006__r.npz",
+        "sha256": "41a3990ac5028f90477f7fede1b386815474a3320987b009dd34093db2cd7c5f"
+      },
+      {
+        "name": "func_20150410__gap60m__p007__q.npz",
+        "sha256": "00b9b0fe0988b308528799b706a30da6df69f343515ad186fdb06da3e45eca42"
+      },
+      {
+        "name": "func_20150410__gap60m__p007__r.npz",
+        "sha256": "2995e6ab1f4a954d8c1c491189c7af2c112a0ae94fcf898ee1a9136d84f74774"
+      },
+      {
+        "name": "func_20150410__gap60m__p008__q.npz",
+        "sha256": "3f6a191f86af6804e408e139be7c1faea78ca65335af8616b8e590e4ffb94f6d"
+      },
+      {
+        "name": "func_20150410__gap60m__p008__r.npz",
+        "sha256": "5de64f1849b1f0284b73026b8addb09a47169f0290388aa10e3b6d751fd592ef"
+      },
+      {
+        "name": "func_20150410__gap60m__p009__q.npz",
+        "sha256": "997983d968243eeca470fdc77c63daffe622d5953eb016625cc922ae023d6a27"
+      },
+      {
+        "name": "func_20150410__gap60m__p009__r.npz",
+        "sha256": "4c5318aec266f533a7d238f8eedcab052f4ae75f389ebffdaeab4e8545b9d234"
+      },
+      {
+        "name": "func_20150410__gap60m__p010__q.npz",
+        "sha256": "749044a9f1d7e0b47e14a4486b199bf4da4eed7b3a3198bb86563dcc76bdd8f9"
+      },
+      {
+        "name": "func_20150410__gap60m__p010__r.npz",
+        "sha256": "a31e1f517c1ab5473709a1a656d1097e00ac23e8f2ec3c192a2db7c7a5373f44"
+      },
+      {
+        "name": "func_20150410__gap60m__p011__q.npz",
+        "sha256": "78a3b21036f9d9abe86caf3b1f678522c396ebd9d1a12be5ed9708e2a6fad85d"
+      },
+      {
+        "name": "func_20150410__gap60m__p011__r.npz",
+        "sha256": "d9076c6021eb27d8ea22bb166ad606cc937862c0598ea674ada3514bf21a91f7"
+      },
+      {
+        "name": "func_20150410__gap60m__p012__q.npz",
+        "sha256": "aa5e6b8d5f710c3a030eeb4b4d65b9ff6396431616ad0bc1ec5c26c10e9445d9"
+      },
+      {
+        "name": "func_20150410__gap60m__p012__r.npz",
+        "sha256": "e0c4aa4582319249cfc3ea63dae858cdddd388d886acd3bcb9a8f1128b921089"
+      },
+      {
+        "name": "func_20150410__gap60m__p013__q.npz",
+        "sha256": "d891e14db1cc0d8213ecd6d073c7144d6a9f11b1b72de2b6250110c3aca8b105"
+      },
+      {
+        "name": "func_20150410__gap60m__p013__r.npz",
+        "sha256": "c191f1388e68bcb03b3054cab50917987c7e3f0b7c5f4b3314b2dd805c33db3e"
+      },
+      {
+        "name": "func_20150410__gap60m__p014__q.npz",
+        "sha256": "05ce06f60ec60c23438f3b91c6912d36739731feb91a8351a3ead6a91c12ff81"
+      },
+      {
+        "name": "func_20150410__gap60m__p014__r.npz",
+        "sha256": "09e6f79277a8746101f49a76dd33782a15abc46515e5909eb167db5d332fe1ef"
+      },
+      {
+        "name": "func_20150410__gap60m__p015__q.npz",
+        "sha256": "1d2eed831bfc37fd6470c93769b1367dbbbc869a505a947f1548a9899388555a"
+      },
+      {
+        "name": "func_20150410__gap60m__p015__r.npz",
+        "sha256": "c7494d145268cb2896c1b76c1a12cc4e7697eeb5a6dd48b2fc88004fa8f8154d"
+      }
+    ],
+    "sha256": "b1d234ee1843bfa1f3d05708bf271dbfb293b095e1dcb4f6bc20fac2a59e6834",
+    "source_files": 32,
+    "split": "test"
+  }
+}

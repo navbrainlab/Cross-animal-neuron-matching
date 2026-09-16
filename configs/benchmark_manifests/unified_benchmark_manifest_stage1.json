@@ -26,13 +26,6 @@
       "seeds": [1, 42, 123],
       "reference_reducer": "mean",
       "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/ours_static/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
-    },
-    {
-      "name": "Ours (Dynamic)",
-      "stochastic": true,
-      "seeds": [1, 42, 123],
-      "reference_reducer": "mean",
-      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/ours_dynamic/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
     }
   ]
 }

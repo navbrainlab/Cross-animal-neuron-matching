@@ -23,7 +23,7 @@ CV_ROOT = ROOT / "Data/Dunn_001623/cv5_grouped_v1"
 CORR_ROOT = ROOT / "runs/rld_robustness_cv5_seed42_v1/corruptions"
 OUT_ROOT = ROOT / "runs/rld_robustness_cv5_seed42_v1/results"
 
-FDNC_SOURCE = ROOT / "baselines/official/third_party/fdnc_official"
+FDNC_SOURCE = ROOT / "benchmark_official/third_party/fdnc_official"
 FDNC_EXPECTED_COMMIT = "19c678781cd11a17866af7b6348ac0096a168c06"
 FDNC_MODEL_SHA256 = "ab529eb6a886cb6ab3f199b7aaa4e49b82562dc280b3ac736ed61e25d5138ec9"
 

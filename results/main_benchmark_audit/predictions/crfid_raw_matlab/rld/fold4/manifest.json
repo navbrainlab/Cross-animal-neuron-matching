@@ -1,0 +1,135 @@
+[
+  {
+    "worm": 0,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-16-53-12.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_000_input.mat",
+    "n_nodes": 111,
+    "n_queries": 20
+  },
+  {
+    "worm": 1,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-14-55-14.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_001_input.mat",
+    "n_nodes": 103,
+    "n_queries": 26
+  },
+  {
+    "worm": 2,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-15-32-57.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_002_input.mat",
+    "n_nodes": 98,
+    "n_queries": 17
+  },
+  {
+    "worm": 3,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-16-51-21.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_003_input.mat",
+    "n_nodes": 108,
+    "n_queries": 23
+  },
+  {
+    "worm": 4,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-20-52-20.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_004_input.mat",
+    "n_nodes": 78,
+    "n_queries": 21
+  },
+  {
+    "worm": 5,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20220302-11-45-51.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_005_input.mat",
+    "n_nodes": 137,
+    "n_queries": 0
+  },
+  {
+    "worm": 6,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-20-16-50.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_006_input.mat",
+    "n_nodes": 117,
+    "n_queries": 31
+  },
+  {
+    "worm": 7,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-21-09-13.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_007_input.mat",
+    "n_nodes": 105,
+    "n_queries": 4
+  },
+  {
+    "worm": 8,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-13-32-08.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_008_input.mat",
+    "n_nodes": 92,
+    "n_queries": 16
+  },
+  {
+    "worm": 9,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-14-24-57.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_009_input.mat",
+    "n_nodes": 111,
+    "n_queries": 37
+  },
+  {
+    "worm": 10,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230904-15-59-40.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_010_input.mat",
+    "n_nodes": 114,
+    "n_queries": 37
+  },
+  {
+    "worm": 11,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-19-51-22.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_011_input.mat",
+    "n_nodes": 81,
+    "n_queries": 4
+  },
+  {
+    "worm": 12,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-15-08-33.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_012_input.mat",
+    "n_nodes": 58,
+    "n_queries": 7
+  },
+  {
+    "worm": 13,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-14-48-32.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_013_input.mat",
+    "n_nodes": 62,
+    "n_queries": 8
+  },
+  {
+    "worm": 14,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-20-59-45.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_014_input.mat",
+    "n_nodes": 67,
+    "n_queries": 6
+  },
+  {
+    "worm": 15,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-15-24-26.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_015_input.mat",
+    "n_nodes": 61,
+    "n_queries": 9
+  },
+  {
+    "worm": 16,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-17-28-58.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_016_input.mat",
+    "n_nodes": 60,
+    "n_queries": 6
+  },
+  {
+    "worm": 17,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-14-26-00.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_017_input.mat",
+    "n_nodes": 57,
+    "n_queries": 8
+  },
+  {
+    "worm": 18,
+    "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-14-16-29.npz",
+    "input": "/home/ubuntu/klb/nuclr/runs/crfid_official_singleatlas_rld_cv5_v1/fold4/test/worm_018_input.mat",
+    "n_nodes": 127,
+    "n_queries": 25
+  }
+]

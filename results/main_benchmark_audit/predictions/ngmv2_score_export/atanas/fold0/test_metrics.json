@@ -1,0 +1,60 @@
+{
+  "queries": 471,
+  "top1_correct": 198,
+  "top5_correct": 356,
+  "rr_sum": 269.4399921081626,
+  "hungarian_correct": 181,
+  "top1": 0.42038216560509556,
+  "top5": 0.7558386411889597,
+  "mrr": 0.5720594312275215,
+  "hungarian_accuracy": 0.3842887473460722,
+  "method": "NGM-v2",
+  "dataset": "atanas",
+  "fold": 0,
+  "model_seed": 42,
+  "evaluation_split": "test",
+  "query_protocol": "canonical_medoid_covered_only",
+  "reference_uid": "2023-01-05-18",
+  "reference_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_0/train/train__2023-01-05-18__d7235b22.npz",
+  "reference_selection": "frozen common outer-train geometry medoid",
+  "checkpoint": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/ngmv2/atanas/fold0/seed42/best.pt",
+  "checkpoint_sha256": "cec2a24b898bfeed1847c1219708301489dba004ab43168d70bfd3fdf6d31159",
+  "checkpoint_epoch": 11,
+  "checkpoint_selection": "reused frozen validation-selected checkpoint; no test tuning",
+  "training_reference_uid": "2023-03-07-01",
+  "ranking_tie_policy": {
+    "reported_rank": "competition rank = 1 + number of scores strictly greater than the GT score",
+    "reported_top5": "credit 1 iff competition rank <= min(5, candidate count); all exact boundary ties receive credit",
+    "additional_audit": "tie_diagnostics.csv also provides fractional expected credit under uniform random ordering within exact ties"
+  },
+  "score_matrix_artifact": "score_matrices.npz",
+  "candidate_order_artifact": "candidate_identities.csv",
+  "prediction_replay_guard": {
+    "status": "EXACT_SAVED_PREDICTION_REPLAY",
+    "saved_prediction_csv": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_medoid_covered_only_retest_v1/ngmv2/atanas/fold0/query_level.csv",
+    "saved_prediction_sha256": "ccfd7ade35cc0f9b658df000463ebe01960f0f6264552349278b503f54d17acc",
+    "rows_verified": 471,
+    "exact_fields": [
+      "dataset",
+      "fold",
+      "hungarian_correct",
+      "identity",
+      "method",
+      "predicted_identity",
+      "predicted_index",
+      "query_index",
+      "query_uid",
+      "rank",
+      "reference_uid",
+      "seed",
+      "top1",
+      "top5"
+    ],
+    "numeric_tolerance_fields": {
+      "rr": 1e-12
+    }
+  },
+  "score_matrix_sha256": "92a5b6bd8f5e9dc85c20f571d58bc15dc6c8ae35a241410b828c256c51755c2d",
+  "candidate_order_sha256": "ddc006735deee9b19dcd960f33a0c54bc2bbe1d35fe6693cddb5eef023b5fabf",
+  "tie_diagnostics_sha256": "94a0d87ea9526a85f6a5be7f210af73bbdb22f5c2d5c7092bb29677beb808893"
+}

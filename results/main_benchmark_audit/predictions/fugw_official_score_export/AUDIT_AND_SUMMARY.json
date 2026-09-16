@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "method": "FUGW (G+A; official)",
+  "implementation": "fugw==0.1.1; fugw.mappings.FUGW",
+  "adapter_source": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/adapters/fugw/run_clean_fold.py",
+  "adapter_source_sha256": "64b132539ad521e6e24fbb6330cc3b475ffbc54533178e2d1902ca65ac674dc8",
+  "audit_source": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/adapters/fugw/audit_clean_cv5.py",
+  "audit_source_sha256": "e8f62484aa8a7686b9f3a0158c2907d0f2223ff547f5c6e66c3b20e66d40bc0f",
+  "protocol": "shared frozen outer-train medoid; validation selection; canonical-all test scoring",
+  "folds": [
+    {
+      "dataset": "atanas",
+      "fold": 0,
+      "queries": 664,
+      "covered_queries": 471,
+      "reference_uid": "2023-01-05-18",
+      "alpha_activity": 0.25,
+      "rho": 0.1,
+      "eps": 0.01,
+      "top1": 0.19728915662650603,
+      "top5": 0.4683734939759036,
+      "mrr": 0.31652603070537516,
+      "hungarian_accuracy": 0.24096385542168675,
+      "status": "PASS"
+    },
+    {
+      "dataset": "atanas",
+      "fold": 1,
+      "queries": 669,
+      "covered_queries": 477,
+      "reference_uid": "2023-01-05-18",
+      "alpha_activity": 0.25,
+      "rho": 0.1,
+      "eps": 0.01,
+      "top1": 0.24663677130044842,
+      "top5": 0.5695067264573991,
+      "mrr": 0.38254887835031354,
+      "hungarian_accuracy": 0.3004484304932735,
+      "status": "PASS"
+    },
+    {
+      "dataset": "atanas",
+      "fold": 2,
+      "queries": 656,
+      "covered_queries": 467,
+      "reference_uid": "2023-01-05-18",
+      "alpha_activity": 0.25,
+      "rho": 0.1,
+      "eps": 0.01,
+      "top1": 0.21798780487804878,
+      "top5": 0.5213414634146342,
+      "mrr": 0.3435175972801954,
+      "hungarian_accuracy": 0.24085365853658536,
+      "status": "PASS"
+    },
+    {
+      "dataset": "atanas",
+      "fold": 3,
+      "queries": 610,
+      "covered_queries": 440,
+      "reference_uid": "2023-01-16-15",
+      "alpha_activity": 0.25,
+      "rho": 0.1,
+      "eps": 0.01,
+      "top1": 0.2442622950819672,
+      "top5": 0.5918032786885246,
+      "mrr": 0.38653755634981557,
+      "hungarian_accuracy": 0.26885245901639343,
+      "status": "PASS"
+    },
+    {
+      "dataset": "atanas",
+      "fold": 4,
+      "queries": 611,
+      "covered_queries": 469,
+      "reference_uid": "2023-01-09-22",
+      "alpha_activity": 0.25,
+      "rho": 0.1,
+      "eps": 0.01,
+      "top1": 0.2684124386252046,
+      "top5": 0.5957446808510638,
+      "mrr": 0.4101717296945576,
+      "hungarian_accuracy": 0.2978723404255319,
+      "status": "PASS"
+    },
+    {
+      "dataset": "rld",
+      "fold": 0,
+      "queries": 270,
+      "covered_queries": 77,
+      "reference_uid": "20240426-22-49-55",
+      "alpha_activity": 0.25,
+      "rho": 0.1,
+      "eps": 0.01,
+      "top1": 0.09259259259259259,
+      "top5": 0.21481481481481482,
+      "mrr": 0.14477954144620814,
+      "hungarian_accuracy": 0.02962962962962963,
+      "status": "PASS"
+    },
+    {
+      "dataset": "rld",
+      "fold": 1,
+      "queries": 298,
+      "covered_queries": 137,
+      "reference_uid": "20240828-17-07-39",
+      "alpha_activity": 0.75,
+      "rho": 0.1,
+      "eps": 0.01,
+      "top1": 0.12080536912751678,
+      "top5": 0.28187919463087246,
+      "mrr": 0.1965508419071389,
+      "hungarian_accuracy": 0.053691275167785234,
+      "status": "PASS"
+    },
+    {
+      "dataset": "rld",
+      "fold": 2,
+      "queries": 299,
+      "covered_queries": 145,
+      "reference_uid": "20230322-21-41-10",
+      "alpha_activity": 0.75,
+      "rho": 0.1,
+      "eps": 0.01,
+      "top1": 0.06020066889632107,
+      "top5": 0.1705685618729097,
+      "mrr": 0.12287577346663374,
+      "hungarian_accuracy": 0.03678929765886288,
+      "status": "PASS"
+    },
+    {
+      "dataset": "rld",
+      "fold": 3,
+      "queries": 296,
+      "covered_queries": 84,
+      "reference_uid": "20230909-16-14-25",
+      "alpha_activity": 0.75,
+      "rho": 1.0,
+      "eps": 0.01,
+      "top1": 0.08445945945945946,
+      "top5": 0.2635135135135135,
+      "mrr": 0.142454954954955,
+      "hungarian_accuracy": 0.006756756756756757,
+      "status": "PASS"
+    },
+    {
+      "dataset": "rld",
+      "fold": 4,
+      "queries": 294,
+      "covered_queries": 56,
+      "reference_uid": "20230909-16-14-25",
+      "alpha_activity": 0.5,
+      "rho": 1.0,
+      "eps": 0.01,
+      "top1": 0.047619047619047616,
+      "top5": 0.16326530612244897,
+      "mrr": 0.08928571428571426,
+      "hungarian_accuracy": 0.02040816326530612,
+      "status": "PASS"
+    }
+  ],
+  "summaries": {
+    "atanas": {
+      "top1": {
+        "mean": 0.234917693302435,
+        "sample_sd": 0.02760925673670269
+      },
+      "top5": {
+        "mean": 0.5493539286775051,
+        "sample_sd": 0.054089540293174455
+      },
+      "mrr": {
+        "mean": 0.3678603584760515,
+        "sample_sd": 0.03735848531862697
+      },
+      "hungarian_accuracy": {
+        "mean": 0.2697981487786942,
+        "sample_sd": 0.02914487229216516
+      }
+    },
+    "rld": {
+      "top1": {
+        "mean": 0.0811354275389875,
+        "sample_sd": 0.02862530317427065
+      },
+      "top5": {
+        "mean": 0.2188082781909119,
+        "sample_sd": 0.05339601645301193
+      },
+      "mrr": {
+        "mean": 0.13918936521213002,
+        "sample_sd": 0.039015256012080786
+      },
+      "hungarian_accuracy": {
+        "mean": 0.029455024495668124,
+        "sample_sd": 0.017594565587814276
+      }
+    }
+  },
+  "aggregation": "unweighted mean and sample SD over five fold-level metrics"
+}

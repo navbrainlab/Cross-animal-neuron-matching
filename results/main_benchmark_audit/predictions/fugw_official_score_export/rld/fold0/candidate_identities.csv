@@ -1,0 +1,8 @@
+dataset,fold,reference_uid,candidate_col,reference_node_index,identity
+rld,0,20240426-22-49-55,0,0,RMDVL
+rld,0,20240426-22-49-55,1,12,RIVL
+rld,0,20240426-22-49-55,2,14,RMEV
+rld,0,20240426-22-49-55,3,15,RMDL
+rld,0,20240426-22-49-55,4,17,SMDVL
+rld,0,20240426-22-49-55,5,21,RMED
+rld,0,20240426-22-49-55,6,42,AVAL

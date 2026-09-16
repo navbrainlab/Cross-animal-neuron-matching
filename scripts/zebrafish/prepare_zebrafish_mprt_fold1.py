@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Adapt the locked zebrafish LOFO fold-1 train/val records to NeuRID.
+"""Adapt the locked zebrafish LOFO fold-1 train/val records to MPRT-Net.
 
 The existing LOFO preparation stores pair-local identity strings as NumPy
-object arrays. NeuRID deliberately loads NPZ files with ``allow_pickle=False``.
+object arrays.  MPRT-Net deliberately loads NPZ files with ``allow_pickle=False``.
 This adapter rewrites those labels as fixed-width Unicode and audits that only
 the biologically legal q/r temporal pairs share identities.
 

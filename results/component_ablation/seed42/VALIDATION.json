@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "protocol": "formal grouped CV5 x seed42 held-out test",
+  "aggregation": "unweighted mean and sample SD across five biological folds",
+  "fold_metric_cells": 50,
+  "full_fold_cells_reproduced_against_main_benchmark": 10,
+  "manuscript_top1_rows_checked": 8,
+  "manuscript_table_requires_change": false,
+  "manuscript_top1_checks": [
+    {
+      "dataset": "atanas",
+      "arm": "node_only",
+      "display": "w/o Population Relations",
+      "expected_mean_percent": 62.93,
+      "expected_sample_sd_percent": 7.31,
+      "recomputed_mean_percent": 62.93,
+      "recomputed_sample_sd_percent": 7.31,
+      "status": "PASS"
+    },
+    {
+      "dataset": "rld",
+      "arm": "node_only",
+      "display": "w/o Population Relations",
+      "expected_mean_percent": 33.95,
+      "expected_sample_sd_percent": 3.84,
+      "recomputed_mean_percent": 33.95,
+      "recomputed_sample_sd_percent": 3.84,
+      "status": "PASS"
+    },
+    {
+      "dataset": "atanas",
+      "arm": "no_transport",
+      "display": "w/o Relation Transport",
+      "expected_mean_percent": 73.16,
+      "expected_sample_sd_percent": 6.82,
+      "recomputed_mean_percent": 73.16,
+      "recomputed_sample_sd_percent": 6.82,
+      "status": "PASS"
+    },
+    {
+      "dataset": "rld",
+      "arm": "no_transport",
+      "display": "w/o Relation Transport",
+      "expected_mean_percent": 55.91,
+      "expected_sample_sd_percent": 5.06,
+      "recomputed_mean_percent": 55.91,
+      "recomputed_sample_sd_percent": 5.06,
+      "status": "PASS"
+    },
+    {
+      "dataset": "atanas",
+      "arm": "activity_only",
+      "display": "w/o Geometry",
+      "expected_mean_percent": 41.07,
+      "expected_sample_sd_percent": 4.75,
+      "recomputed_mean_percent": 41.07,
+      "recomputed_sample_sd_percent": 4.75,
+      "status": "PASS"
+    },
+    {
+      "dataset": "rld",
+      "arm": "activity_only",
+      "display": "w/o Geometry",
+      "expected_mean_percent": 20.76,
+      "expected_sample_sd_percent": 3.22,
+      "recomputed_mean_percent": 20.76,
+      "recomputed_sample_sd_percent": 3.22,
+      "status": "PASS"
+    },
+    {
+      "dataset": "atanas",
+      "arm": "geometry_only",
+      "display": "w/o Activity",
+      "expected_mean_percent": 43.24,
+      "expected_sample_sd_percent": 6.23,
+      "recomputed_mean_percent": 43.24,
+      "recomputed_sample_sd_percent": 6.23,
+      "status": "PASS"
+    },
+    {
+      "dataset": "rld",
+      "arm": "geometry_only",
+      "display": "w/o Activity",
+      "expected_mean_percent": 44.76,
+      "expected_sample_sd_percent": 4.07,
+      "recomputed_mean_percent": 44.76,
+      "recomputed_sample_sd_percent": 4.07,
+      "status": "PASS"
+    }
+  ],
+  "query_rows": 18668,
+  "ablation_fold_cells": 40,
+  "maximum_query_to_fold_absolute_error": {
+    "top1": 0.0,
+    "top5": 0.0,
+    "mrr": 4.4052470338229455e-08,
+    "hungarian": 0.0
+  },
+  "cohorts_identical_across_four_ablations_within_each_dataset_fold": true,
+  "inputs": {
+    "fold_cells.csv": "c3781f42bf7818b558e77eab653b992c84392acf7bc5cf6cae832c847723944f",
+    "query_results.csv": "8573edd15133d34e9dfc0626797133620d6457b282d3a7e8dcfc85aaf9613bfe",
+    "main_benchmark_seed42/verified_fold_cells.csv": "c630f97eb4169e26a473fe0cc3c9dbab9bfa120076a4a3fab39c0f6d73cf8065"
+  }
+}

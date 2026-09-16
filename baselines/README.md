@@ -7,9 +7,8 @@ overlay.
 | Directory | Contents |
 |---|---|
 | `official/` | Locked protocols and project adapters for official baseline repositories |
-| `adapters/` | GeoTransformer, RGM, and ThinkMatch/NGM-v2 overlays |
+| `adapters/` | GeoTransformer and ThinkMatch/NGM-v2 overlays |
 | `fdnc/` | Standalone fDNC evaluation entry point |
-| `gwot_md/` | Audited GWOT-MD paper-protocol implementation |
 | `stat_atlas/` | Statistical Atlas evaluation entry point |
 | `atanas_locked.py` | Shared locked-Atanas baseline utilities |
 

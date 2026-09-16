@@ -38,21 +38,6 @@ class ModelConfig:
     atlas_confidence_gating: bool = False
     atlas_gate_temperature: float = 0.05
 
-    # Optional input-conditioned, low-rank deformation of a frozen anchored
-    # atlas.  The static identity slots remain fixed; only this bounded
-    # residual adapter is optimized during stage-two training.
-    dynamic_atlas_enabled: bool = False
-    dynamic_atlas_rank: int = 8
-    dynamic_atlas_hidden_dim: int = 64
-    dynamic_atlas_coordinate_scale: float = 0.15
-    dynamic_atlas_node_scale: float = 0.10
-    dynamic_atlas_relation_scale: float = 0.10
-    dynamic_atlas_smooth_k: int = 8
-    dynamic_atlas_conditioner: str = "global_pool"
-    dynamic_atlas_attention_heads: int = 4
-    dynamic_atlas_geometry_sigma: float = 1.0
-    dynamic_atlas_geometry_weight: float = 1.0
-
     use_geometry: bool = True
     use_activity: bool = True
     use_population_encoder: bool = True
@@ -88,44 +73,6 @@ class ModelConfig:
             raise ValueError("atlas_blend_weight must be in [0, 1]")
         if self.atlas_gate_temperature <= 0.0:
             raise ValueError("atlas_gate_temperature must be positive")
-        if self.dynamic_atlas_enabled and self.atlas_size <= 0:
-            raise ValueError("dynamic_atlas_enabled requires atlas_size > 0")
-        if self.dynamic_atlas_rank < 1:
-            raise ValueError("dynamic_atlas_rank must be positive")
-        if self.dynamic_atlas_hidden_dim < 1:
-            raise ValueError("dynamic_atlas_hidden_dim must be positive")
-        if self.dynamic_atlas_coordinate_scale < 0.0:
-            raise ValueError("dynamic_atlas_coordinate_scale must be non-negative")
-        if self.dynamic_atlas_node_scale < 0.0:
-            raise ValueError("dynamic_atlas_node_scale must be non-negative")
-        if self.dynamic_atlas_relation_scale < 0.0:
-            raise ValueError("dynamic_atlas_relation_scale must be non-negative")
-        if self.dynamic_atlas_smooth_k < 1:
-            raise ValueError("dynamic_atlas_smooth_k must be positive")
-        if self.dynamic_atlas_conditioner not in {
-            "global_pool",
-            "atlas_cross_attention",
-        }:
-            raise ValueError(
-                "dynamic_atlas_conditioner must be 'global_pool' or "
-                "'atlas_cross_attention'"
-            )
-        if self.dynamic_atlas_conditioner == "atlas_cross_attention":
-            if self.dynamic_atlas_attention_heads < 1:
-                raise ValueError("dynamic_atlas_attention_heads must be positive")
-            if (
-                self.dynamic_atlas_hidden_dim
-                % self.dynamic_atlas_attention_heads
-                != 0
-            ):
-                raise ValueError(
-                    "dynamic_atlas_hidden_dim must be divisible by "
-                    "dynamic_atlas_attention_heads"
-                )
-        if self.dynamic_atlas_geometry_sigma <= 0.0:
-            raise ValueError("dynamic_atlas_geometry_sigma must be positive")
-        if self.dynamic_atlas_geometry_weight < 0.0:
-            raise ValueError("dynamic_atlas_geometry_weight must be non-negative")
         if self.relation_graph_mode not in {
             "soft",
             "hard_knn",
@@ -151,6 +98,16 @@ class ModelConfig:
     @classmethod
     def from_dict(cls, values: dict[str, Any]) -> "ModelConfig":
         values = dict(values)
+        # Static paper checkpoints created before the public cleanup contain
+        # disabled dynamic-atlas defaults. Ignore those legacy keys while
+        # loading; the unused model branch itself is intentionally absent.
+        if values.get("dynamic_atlas_enabled", False):
+            raise ValueError(
+                "Dynamic-atlas checkpoints are not part of the public paper model"
+            )
+        for key in tuple(values):
+            if key.startswith("dynamic_atlas_"):
+                values.pop(key)
         if "rbf_scales" in values:
             values["rbf_scales"] = tuple(values["rbf_scales"])
         return cls(**values)

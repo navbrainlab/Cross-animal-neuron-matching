@@ -1,0 +1,19 @@
+{
+  "protocol": "RLD grouped CV5 x seed42 validation-calibrated rejection comparison",
+  "raw_schema_version": 2,
+  "positive_class": "materialized __OUTLIER_* synthetic distractors",
+  "known_class": "unique supervised identity present in current atlas reference",
+  "excluded_targets": "native unlabeled/uncertain/duplicate/reference-absent nodes",
+  "calibration_split": "clean validation known neurons only",
+  "thresholds_frozen_across_test_severities": true,
+  "fold_first_aggregation": true,
+  "settings": {
+    "neurid_original": "capacity dustbin margin > 0",
+    "neurid_calibrated": "capacity dustbin margin > validation threshold",
+    "no_dustbin_confidence": "ordinary max real probability < validation threshold",
+    "no_dustbin_forced": "ordinary transport, never reject"
+  },
+  "cells": 320,
+  "summary_rows": 24
+}
+

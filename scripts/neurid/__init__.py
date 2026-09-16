@@ -1,1 +1,1 @@
-"""Primary NeuRID training, evaluation, and ablation entry points."""
+"""Canonical NeuRID experiment entry points."""

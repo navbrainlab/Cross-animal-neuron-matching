@@ -1,0 +1,38 @@
+{
+  "dataset": "rld",
+  "fold": 2,
+  "seed": 42,
+  "checkpoint": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/rld/fold2/seed42/static_atlas/anchored_pure.pt",
+  "checkpoint_epoch": 73,
+  "atlas_identities": 143,
+  "activity_resample_length": 512,
+  "test_animals": 19,
+  "minimum_available_seconds": 959.9672043323517,
+  "full_record_reproduction": {
+    "status": "exact",
+    "reference": {
+      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_atlas_medoid_rld_cv5_test_seeds_42_v1/fold2/seed42/metrics.json",
+      "queries": 299,
+      "top1_real": 0.6120401337792643,
+      "top5_real": 0.7959866220735786,
+      "mrr_real": 0.69291209261679,
+      "hungarian_queries": 299,
+      "hungarian_accuracy": 0.5953177257525084
+    },
+    "observed": {
+      "dataset": "rld",
+      "fold": 2,
+      "seed": 42,
+      "duration_key": "full",
+      "duration_seconds": "",
+      "position": "full",
+      "recordings": 19,
+      "queries": 299,
+      "top1_real": 0.6120401337792643,
+      "top5_real": 0.7959866220735786,
+      "mrr_real": 0.69291209261679,
+      "hungarian_queries": 299,
+      "hungarian_accuracy": 0.5953177257525084
+    }
+  }
+}

@@ -44,8 +44,6 @@ if str(ROOT) not in sys.path:
 if str(STAT) not in sys.path:
     sys.path.insert(0, str(STAT))
 
-import scripts.lib.benchmark_cv5x3_common as common
-
 # Pinned official source imports. Do not modify files under third_party/.
 from models import Atlas
 import utils as statatlas_utils
@@ -587,6 +585,12 @@ def atlas_identity_posterior(
 
 
 def evaluate_fold(args, dataset: str, fold: int):
+    # The benchmark data stack is unrelated to atlas construction.  Keep it
+    # lazy so other dataset adapters can reuse the exact official StatAtlas
+    # trainer/alignment/posterior implementation without importing NeuRID's
+    # model-development modules.
+    import scripts.lib.benchmark_cv5x3_common as common
+
     # Biological folds are identical across seeds. Seed 42 is used only as a
     # route to the locked loader/config; Statistical Atlas itself is deterministic.
     bundle = common.split_bundle(dataset, fold, 42, "cpu")

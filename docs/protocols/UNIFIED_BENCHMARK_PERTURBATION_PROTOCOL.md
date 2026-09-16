@@ -52,9 +52,9 @@ cells on both datasets. In particular, Kato fDNC, NuCLR, and GeoTransformer have
 values of 45.11 ± 16.99%, 10.14 ± 7.62%, and 16.52 ± 13.33%, respectively. These supersede the
 old-fold seed-42 values 26.41%, 15.17%, and 25.03%.
 
-The only unresolved main-table groups are CRF-ID, GWOT-MD, and GWOT-MD (our adaptation), all
-marked five-fold `MISSING` on both datasets in `results/main_benchmark_seed42/readiness.json`.
-No draft or historical mixed-fold value may fill those cells without a new audited run.
+The frozen public tables contain only the methods reported in the manuscript.
+No draft, historical mixed-fold value, or model-development candidate may fill
+a paper cell without a new audited run under this protocol.
 
 The former CV5 × three-seed values, including **74.24 ± 6.95%** and
 **63.14 ± 4.45%**, are not main-table results. They may be retained only as

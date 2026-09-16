@@ -1,0 +1,60 @@
+{
+  "queries": 84,
+  "top1_correct": 22,
+  "top5_correct": 76,
+  "rr_sum": 41.016666666666666,
+  "hungarian_correct": 20,
+  "top1": 0.2619047619047619,
+  "top5": 0.9047619047619048,
+  "mrr": 0.4882936507936508,
+  "hungarian_accuracy": 0.23809523809523808,
+  "method": "NGM-v2",
+  "dataset": "rld",
+  "fold": 3,
+  "model_seed": 42,
+  "evaluation_split": "test",
+  "query_protocol": "canonical_medoid_covered_only",
+  "reference_uid": "20230909-16-14-25",
+  "reference_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230909-16-14-25__1ce065a5.npz",
+  "reference_selection": "frozen common outer-train geometry medoid",
+  "checkpoint": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/ngmv2/rld/fold3/seed42/best.pt",
+  "checkpoint_sha256": "2235ffd7cf87e0e0aaf7763b968fd9c404649e1946f8de2a598ac58b60c82a4f",
+  "checkpoint_epoch": 4,
+  "checkpoint_selection": "reused frozen validation-selected checkpoint; no test tuning",
+  "training_reference_uid": "20221106-21-00-09",
+  "ranking_tie_policy": {
+    "reported_rank": "competition rank = 1 + number of scores strictly greater than the GT score",
+    "reported_top5": "credit 1 iff competition rank <= min(5, candidate count); all exact boundary ties receive credit",
+    "additional_audit": "tie_diagnostics.csv also provides fractional expected credit under uniform random ordering within exact ties"
+  },
+  "score_matrix_artifact": "score_matrices.npz",
+  "candidate_order_artifact": "candidate_identities.csv",
+  "prediction_replay_guard": {
+    "status": "EXACT_SAVED_PREDICTION_REPLAY",
+    "saved_prediction_csv": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_medoid_covered_only_retest_v1/ngmv2/rld/fold3/query_level.csv",
+    "saved_prediction_sha256": "e2077184419b325febeec461736f18443f721908b7df8a927eab04e0a462d01c",
+    "rows_verified": 84,
+    "exact_fields": [
+      "dataset",
+      "fold",
+      "hungarian_correct",
+      "identity",
+      "method",
+      "predicted_identity",
+      "predicted_index",
+      "query_index",
+      "query_uid",
+      "rank",
+      "reference_uid",
+      "seed",
+      "top1",
+      "top5"
+    ],
+    "numeric_tolerance_fields": {
+      "rr": 1e-12
+    }
+  },
+  "score_matrix_sha256": "8b7de423bcf4f60672815f83f6d2c5df09827be64f8dd3817437db4dea556b3d",
+  "candidate_order_sha256": "25d143da34a5effb6b20c3c135a82d08b42539de0e1ddbdae1b073fc441e5798",
+  "tie_diagnostics_sha256": "039d94a207efcf1bd20c4a9723246ef6d11da51d05d0589624618179e08ce0eb"
+}

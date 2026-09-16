@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import argparse
+import csv
+import gzip
 import json
 from pathlib import Path
 from typing import Any
@@ -21,15 +23,17 @@ def evaluate_model(
     device: torch.device,
     max_pairs: int | None = None,
     collect_pair_records: bool = False,
+    query_metadata: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     model.eval()
     totals = MetricTotals()
     pair_records: list[dict[str, Any]] = []
+    query_records: list[dict[str, Any]] = []
     pairs = pair_index.pairs
     if max_pairs is not None and max_pairs > 0:
         pairs = pairs[:max_pairs]
     evaluated_pairs = 0
-    for path_a, path_b in pairs:
+    for pair_number, (path_a, path_b) in enumerate(pairs):
         sample_a, sample_b, targets = build_pair_targets(cache.get(path_a), cache.get(path_b))
         if targets.num_direct_matches == 0:
             continue
@@ -46,11 +50,33 @@ def evaluate_model(
                 **pair_total.compute(),
             }
             pair_records.append(pair_record)
+        if query_metadata is not None:
+            # Imported lazily so the core package remains usable without the
+            # release-script package on sys.path.
+            from scripts.zebrafish.query_record_io import records_from_score_matrix
+            query_records.extend(records_from_score_matrix(
+                method=str(query_metadata["method"]),
+                fold=int(query_metadata["fold"]),
+                seed=query_metadata.get("seed"),
+                pair_index=pair_number,
+                pair_id=sample_a.uid.rsplit("__q", 1)[0],
+                score=output.row_conditional[:, :-1].detach().cpu().numpy(),
+                reverse_score=output.col_conditional[:, :-1].detach().cpu().numpy(),
+                hungarian_score=output.plan[:-1, :-1].detach().cpu().numpy(),
+                q_uid=sample_a.uid,
+                r_uid=sample_b.uid,
+                q_ids=sample_a.cell_ids,
+                r_ids=sample_b.cell_ids,
+                row_target=targets.row_target.numpy(),
+                col_target=targets.col_target.numpy(),
+            ))
         evaluated_pairs += 1
     result = totals.compute()
     result["pairs"] = evaluated_pairs
     if collect_pair_records:
         result["pair_records"] = pair_records
+    if query_metadata is not None:
+        result["query_records"] = query_records
     return result
 
 
@@ -79,6 +105,10 @@ def main() -> None:
     parser.add_argument("--device", default="auto")
     parser.add_argument("--output", default=None)
     parser.add_argument("--pair-output", default=None)
+    parser.add_argument("--query-output", default=None)
+    parser.add_argument("--fold", type=int, choices=range(1, 9), default=None)
+    parser.add_argument("--method", default="ours")
+    parser.add_argument("--seed", type=int, default=42)
     args = parser.parse_args()
 
     device = _device(args.device)
@@ -94,8 +124,13 @@ def main() -> None:
         device,
         max_pairs=args.max_pairs if args.max_pairs > 0 else None,
         collect_pair_records=bool(args.pair_output),
+        query_metadata=(
+            {"method": args.method, "fold": args.fold, "seed": args.seed}
+            if args.query_output else None
+        ),
     )
     pair_records = result.pop("pair_records", None)
+    query_records = result.pop("query_records", None)
     result.update(
         {
             "dataset_root": str(Path(args.dataset_root).resolve()),
@@ -116,6 +151,17 @@ def main() -> None:
         with pair_output.open("w", encoding="utf-8") as handle:
             for record in pair_records:
                 handle.write(json.dumps(record, ensure_ascii=False) + "\n")
+    if args.query_output and query_records is not None:
+        if args.fold is None:
+            raise ValueError("--fold is required with --query-output")
+        from scripts.zebrafish.query_record_io import QUERY_COLUMNS
+        query_output = Path(args.query_output)
+        query_output.parent.mkdir(parents=True, exist_ok=True)
+        opener = gzip.open if query_output.suffix == ".gz" else open
+        with opener(query_output, "wt", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=QUERY_COLUMNS)
+            writer.writeheader()
+            writer.writerows(query_records)
 
 
 if __name__ == "__main__":

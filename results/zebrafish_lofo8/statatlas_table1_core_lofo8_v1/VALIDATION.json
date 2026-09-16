@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "method": "statatlas",
+  "folds": 8,
+  "query_records": 17156,
+  "expected_query_records": 17156,
+  "aggregation": "unweighted mean and sample SD across held-out fish",
+  "sample_sd_ddof": 1,
+  "replay": {
+    "top1": {
+      "mean": 0.8957042418813501,
+      "sd": 0.1784109660904642
+    },
+    "top5": {
+      "mean": 0.9562117204182945,
+      "sd": 0.12354567165853138
+    },
+    "mrr": {
+      "mean": 0.9250330640236845,
+      "sd": 0.15026508576901676
+    },
+    "hungarian": {
+      "mean": 0.9079645430300093,
+      "sd": 0.18071193121298432
+    }
+  }
+}

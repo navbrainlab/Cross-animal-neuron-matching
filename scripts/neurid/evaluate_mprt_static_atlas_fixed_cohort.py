@@ -92,6 +92,12 @@ def main():
     p.add_argument("--activity-length",type=int,default=512); p.add_argument("--device",default="cuda")
     p.add_argument("--dataset",required=True); p.add_argument("--fold",type=int,required=True)
     p.add_argument("--seed",type=int,required=True); p.add_argument("--variant",required=True)
+    p.add_argument(
+        "--atlas-relation-handling",
+        choices=("zero_fill", "mask_missing"),
+        default="zero_fill",
+        help="Whether never-co-observed atlas relations contribute as zero vectors.",
+    )
     p.add_argument("--output",type=Path,required=True); p.add_argument("--query-output",type=Path,required=True)
     a=p.parse_args()
     import sys
@@ -105,6 +111,15 @@ def main():
     identity_to_slot={str(k):int(v) for k,v in mapping.items()}
     slot_to_identity={v:k for k,v in identity_to_slot.items()}
     atlas=model.atlas_encoding()
+    relation_support=atlas.relation_support
+    if a.atlas_relation_handling == "mask_missing":
+        if relation_support is None:
+            raise RuntimeError(
+                "mask_missing requires a checkpoint with atlas_relation_support"
+            )
+        model.config.atlas_relation_masking=True
+    else:
+        model.config.atlas_relation_masking=False
     files=split_files(a.dataset_root,a.split)
     cache=WormCache(activity_length=a.activity_length,max_items=max(8,len(files)))
     total=Totals(); records=[]
@@ -120,6 +135,18 @@ def main():
         "dataset":a.dataset,"dataset_root":str(a.dataset_root.resolve()),"split":a.split,
         "fold":a.fold,"seed":a.seed,"variant":a.variant,"checkpoint":str(a.checkpoint.resolve()),
         "checkpoint_epoch":ckpt.get("epoch"),"atlas_size":len(identity_to_slot),"recordings":len(files),
+        "atlas_relation_handling":a.atlas_relation_handling,
+        "atlas_relation_masking":bool(model.config.atlas_relation_masking),
+        "atlas_relation_supported_pairs":(
+            None if relation_support is None else int((relation_support>0).sum().item())
+        ),
+        "atlas_relation_total_pairs":(
+            None if relation_support is None else int(relation_support.numel())
+        ),
+        "atlas_relation_unobserved_fraction":(
+            None if relation_support is None
+            else float((relation_support<=0).float().mean().item())
+        ),
         "evaluation_protocol":"fixed_canonical_query_cohort_v1",
         "missing_gt_policy":"retain_as_incorrect",
         "query_definition":"all unique supervised identities in split, independent of atlas vocabulary",

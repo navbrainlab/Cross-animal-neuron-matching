@@ -1,0 +1,26 @@
+[
+  {
+    "identity": "AVAR",
+    "support_templates": 1
+  },
+  {
+    "identity": "RIVR",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMED",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMEV",
+    "support_templates": 1
+  },
+  {
+    "identity": "SMDDR",
+    "support_templates": 1
+  },
+  {
+    "identity": "SMDVR",
+    "support_templates": 1
+  }
+]

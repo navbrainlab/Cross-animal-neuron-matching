@@ -1,0 +1,1888 @@
+{
+  "status": "LOCKED_BEFORE_TEST",
+  "protocol": "frozen_table2_neurid_representation_matcher_control_cv5_seed42_v3",
+  "dataset": "atanas",
+  "fold": 1,
+  "model_seed": 42,
+  "fold_root": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1",
+  "checkpoint": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/atanas/fold1/seed42/pairwise/full/best.pt",
+  "checkpoint_sha256": "0813655475a01a3a4659534e85ceddc7c2c1727a6637a2c25389a2d72137e2fe",
+  "saved_main_atlas": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/atanas/fold1/seed42/static_atlas/anchored_pure.pt",
+  "saved_main_atlas_sha256": "459e61c6342df4c982d6da5e6d17f2246e69c16ff5deb55985a11c41d669bd3e",
+  "encoder_frozen": true,
+  "all_parameters_frozen": true,
+  "activity_length": 512,
+  "parameter_fingerprint": "000d219b369abdd12448101d145908ea1c4bf5e6dd2045998e38818053825e99",
+  "atlas_build_split": "train",
+  "atlas_build": {
+    "recordings": 22,
+    "atlas_size": 152,
+    "node_observations": 1895,
+    "min_identity_observations": 1,
+    "max_identity_observations": 22,
+    "relation_coverage": 0.9241689443588257,
+    "relation_reliability_lambda": 0.0
+  },
+  "atlas_identity_to_slot": {
+    "ADAL": 0,
+    "ADAR": 1,
+    "ADEL": 2,
+    "ADER": 3,
+    "ADLL": 4,
+    "ADLR": 5,
+    "AIAL": 6,
+    "AIAR": 7,
+    "AIBL": 8,
+    "AIBR": 9,
+    "AIML": 10,
+    "AIMR": 11,
+    "AINL": 12,
+    "AINR": 13,
+    "AIYL": 14,
+    "AIYR": 15,
+    "AIZL": 16,
+    "AIZR": 17,
+    "ALA": 18,
+    "AQR": 19,
+    "ASEL": 20,
+    "ASER": 21,
+    "ASGL": 22,
+    "ASGR": 23,
+    "ASHL": 24,
+    "ASHR": 25,
+    "ASIL": 26,
+    "ASIR": 27,
+    "ASKL": 28,
+    "ASKR": 29,
+    "AUAL": 30,
+    "AUAR": 31,
+    "AVAL": 32,
+    "AVAR": 33,
+    "AVBL": 34,
+    "AVBR": 35,
+    "AVDL": 36,
+    "AVDR": 37,
+    "AVEL": 38,
+    "AVER": 39,
+    "AVHL": 40,
+    "AVJL": 41,
+    "AVJR": 42,
+    "AVKL": 43,
+    "AVKR": 44,
+    "AVL": 45,
+    "AWAL": 46,
+    "AWAR": 47,
+    "AWBL": 48,
+    "AWBR": 49,
+    "AWCL": 50,
+    "AWCR": 51,
+    "BAGL": 52,
+    "BAGR": 53,
+    "CEPDL": 54,
+    "CEPDR": 55,
+    "CEPVL": 56,
+    "CEPVR": 57,
+    "FLPL": 58,
+    "FLPR": 59,
+    "I1L": 60,
+    "I1R": 61,
+    "I2L": 62,
+    "I2R": 63,
+    "I3": 64,
+    "I4": 65,
+    "I5": 66,
+    "I6": 67,
+    "IL1DL": 68,
+    "IL1DR": 69,
+    "IL1L": 70,
+    "IL1R": 71,
+    "IL1VL": 72,
+    "IL1VR": 73,
+    "IL2DL": 74,
+    "IL2DR": 75,
+    "IL2L": 76,
+    "IL2R": 77,
+    "IL2VL": 78,
+    "IL2VR": 79,
+    "M1": 80,
+    "M3L": 81,
+    "M3R": 82,
+    "M4": 83,
+    "M5": 84,
+    "MCL": 85,
+    "MCR": 86,
+    "MI": 87,
+    "NSML": 88,
+    "NSMR": 89,
+    "OLLL": 90,
+    "OLLR": 91,
+    "OLQDL": 92,
+    "OLQDR": 93,
+    "OLQVL": 94,
+    "OLQVR": 95,
+    "RIAL": 96,
+    "RIAR": 97,
+    "RIBL": 98,
+    "RIBR": 99,
+    "RICL": 100,
+    "RICR": 101,
+    "RID": 102,
+    "RIH": 103,
+    "RIML": 104,
+    "RIMR": 105,
+    "RIPL": 106,
+    "RIR": 107,
+    "RIS": 108,
+    "RIVL": 109,
+    "RIVR": 110,
+    "RMDDL": 111,
+    "RMDDR": 112,
+    "RMDL": 113,
+    "RMDR": 114,
+    "RMDVL": 115,
+    "RMDVR": 116,
+    "RMED": 117,
+    "RMEL": 118,
+    "RMER": 119,
+    "RMEV": 120,
+    "RMFL": 121,
+    "RMGL": 122,
+    "RMGR": 123,
+    "SAADL": 124,
+    "SAADR": 125,
+    "SAAVL": 126,
+    "SAAVR": 127,
+    "SIBDL": 128,
+    "SIBDR": 129,
+    "SIBVR": 130,
+    "SMBDL": 131,
+    "SMBDR": 132,
+    "SMBVL": 133,
+    "SMBVR": 134,
+    "SMDDL": 135,
+    "SMDDR": 136,
+    "SMDVL": 137,
+    "SMDVR": 138,
+    "URADL": 139,
+    "URADR": 140,
+    "URAVL": 141,
+    "URAVR": 142,
+    "URBL": 143,
+    "URBR": 144,
+    "URXL": 145,
+    "URXR": 146,
+    "URYDL": 147,
+    "URYDR": 148,
+    "URYVL": 149,
+    "URYVR": 150,
+    "VB02": 151
+  },
+  "atlas_fingerprint": "5a23b121f573d1f1582f69f863348ce6f652f20dba8afa57f5c8c3e19fc83a76",
+  "saved_atlas_max_abs_error": 0.007014501839876175,
+  "saved_atlas_verification": {
+    "nodes": {
+      "max_abs": 0.0002464577555656433,
+      "rmse": 3.720399035955779e-05,
+      "relative_l2": 0.00036452317726798356,
+      "max_abs_limit": 0.005,
+      "relative_l2_limit": 0.002
+    },
+    "relations": {
+      "max_abs": 0.007014501839876175,
+      "rmse": 0.00026464590337127447,
+      "relative_l2": 0.00033037460525520146,
+      "max_abs_limit": 0.02,
+      "relative_l2_limit": 0.01
+    },
+    "support": {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_l2": 0.0,
+      "max_abs_limit": 1e-07,
+      "relative_l2_limit": 1e-07
+    }
+  },
+  "train_files": [
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-20-01.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-07.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-14.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-03-07-01.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2022-06-14-01.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-07.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-13.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-26-01.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-08-02-01.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-01.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-18.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-09-28.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-13-07.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-16-01.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-08.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-15.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-22.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-19-08.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-19-15.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-19-22.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-23-15.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-28-01.npz"
+  ],
+  "train_file_sha256": {
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-20-01.npz": "c3856e4b6329aac8759777a13fe8b233e903a80c3d72f91baac5adbc4cec4771",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-07.npz": "6ed57076e1273f30ca26574ceed7b5b0ce3f3b59993eeafce1521510014fe4e2",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-14.npz": "123560a46b3bb0243573e061f265945ece3093ba063122acd95acb21e6fe7066",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-03-07-01.npz": "e5b9515a392b3e62affe2874b1df9825ecee1e94de55d7300adf10a192635676",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2022-06-14-01.npz": "7c1382c6eddc8c2f86a35efcadb2a4211645c3fc3503a6ea0297769d0e8c94d9",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-07.npz": "0b301dd2c9b5a14c2576384da91c5d7483789945cf97ecfe9991e8f12d3d0af5",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-13.npz": "afc7210b8d89a8f8e12c85c42fb0f16bd1114e25dc2dce9784b3976560971a2c",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-26-01.npz": "eb1c7ba02a66f795eab4498ed28b5cef62c076fb6304ca3f47f95ba4f5a7e9f6",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-08-02-01.npz": "6c573d994b79f3ccd96767d9bdee770674ea503d2e6d6adfd42e177b2299e81c",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-01.npz": "e6422a6d7d6fc8ef499801061550bd9ca8cf912af8979b829adf7d8aa8bda4ea",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-18.npz": "57b3222e835095cda41963adaa41f177fc08ea65cadd2fc101822012aa7a5d54",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-09-28.npz": "ee43c5bdbca9a788a4faeb83f21c93ac2eab156e714baedd8c7e8a0331873e69",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-13-07.npz": "8112ba65b351bf163f1c216411c2731f51d06af66db3ea16a6b3e3dbaf8653f9",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-16-01.npz": "b7d952f8d3a3eaf5eef3905afb443a43152186cb4977f8c0be38203b96e6d10c",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-08.npz": "207d2c0311c85e6e2d471aea71a2f2a1032545ca632103e13fc9112fa12c83e3",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-15.npz": "8a2b6f6252cf15396042a26570205981461e7ac2c6ba2eeab1f6de3c094ffc52",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-22.npz": "de8de46bc9be10314d4fc52216521b8cf70e95ae1af9199287b3c5732a457e1b",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-19-08.npz": "ea4b001555cd81eae98326d4c342a930aea8b31b1930cab5b46308a8d8c79b23",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-19-15.npz": "f99850d059110bafb1970874bd7834f2fa9b30f38ee55483fa22323e084767ec",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-19-22.npz": "15e42df013a4096bb05a1f2f77cc4bf86ae7877ea08cf8c2cfc22cf6cbdbcc65",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-23-15.npz": "2615350e5c3649580a8664b5a94154826b48bbcae43aecfbba4ea1f1ed1f118d",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-28-01.npz": "56282d3cd3632a0f922044b937ee919148acdf39e8ff79b11a97b9c3de8082d7"
+  },
+  "validation_files": [
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-15-12.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-06-01.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-06-08.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-09-08.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-09-15.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-23-08.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-23-21.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-28-07.npz"
+  ],
+  "validation_file_sha256": {
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-15-12.npz": "00ad7e4a4ef809a79e961413d486953b1ff2d537c63f53e732bbb688cce4cbe7",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-06-01.npz": "475ed0b4d722a2de5644c5f722bbad1b0a2f785ecc75ab0e903665df9c61fb41",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-06-08.npz": "2916e9600166f15e04b8d7f9bc869e2a6e55714be33c3cb3e9a3afbd605a321a",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-09-08.npz": "ba01d866020dbef86469413443585a88ffb5c041171c0b273a06e1d14f6d0f27",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-09-15.npz": "c47e0eee0ae45b368226e2e28ba1f5b7172005670a62edd443dc44138aaff7c7",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-23-08.npz": "22de5455e8013a92500efca1f68b96bf10627835d7638ec424b0fb18d26d6074",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-23-21.npz": "e4ebbe7616ae64d89785d8efec43f93c9a95c94e76dd90545f56457a1cd6cadb",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-28-07.npz": "a50df00434e21ba78b538b188f08a89b425cf01a1e534466e41f1dc8833e436b"
+  },
+  "test_opened_before_lock": false,
+  "embedding": "L2-normalized Full NeuRID contextualized node embedding z_i",
+  "fgw_ufgw_feature_cost": "squared Euclidean(z_i/2, z_j/2)",
+  "fgw_ufgw_structure_cost": "within-population squared Euclidean(z_i, z_k)/4",
+  "selection_split": "outer validation animals only",
+  "selection_criterion": "lexicographic Top-1 real, partial assignment accuracy, MRR, Hungarian accuracy, then earliest grid index",
+  "ranking_tie_policy": "stable atlas-slot order",
+  "fixed_matcher_validation": {
+    "sinkhorn": {
+      "known_queries": 656,
+      "novel_queries": 6,
+      "partial_queries": 662,
+      "hungarian_queries": 656,
+      "top1_real": 0.5564024390243902,
+      "top5_real": 0.7667682926829268,
+      "mrr_real": 0.6533214013930925,
+      "partial_assignment_accuracy": 0.5513595166163142,
+      "coverage": 1.0,
+      "known_accept_rate": 1.0,
+      "novel_reject_rate": 0.0,
+      "hungarian_accuracy": 0.5670731707317073
+    },
+    "neurid": {
+      "known_queries": 656,
+      "novel_queries": 6,
+      "partial_queries": 662,
+      "hungarian_queries": 656,
+      "top1_real": 0.6707317073170732,
+      "top5_real": 0.823170731707317,
+      "mrr_real": 0.7390210876942482,
+      "partial_assignment_accuracy": 0.6570996978851964,
+      "coverage": 0.9274924471299094,
+      "known_accept_rate": 0.9298780487804879,
+      "novel_reject_rate": 0.3333333333333333,
+      "hungarian_accuracy": 0.6707317073170732
+    }
+  },
+  "selected": {
+    "fgw": {
+      "alpha": 0.0
+    },
+    "ufgw": {
+      "alpha": 0.25,
+      "rho": 0.1,
+      "epsilon": 0.01,
+      "rejection_threshold": 0.0
+    }
+  },
+  "validation_sweeps": {
+    "fgw": [
+      {
+        "grid_index": 0,
+        "parameters": {
+          "alpha": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4344512195121951,
+          "top5_real": 0.5777439024390244,
+          "mrr_real": 0.5118474347929349,
+          "partial_assignment_accuracy": 0.43051359516616317,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4344512195121951
+        }
+      },
+      {
+        "grid_index": 1,
+        "parameters": {
+          "alpha": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.43140243902439024,
+          "top5_real": 0.5670731707317073,
+          "mrr_real": 0.5052374640390159,
+          "partial_assignment_accuracy": 0.42749244712990936,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.43140243902439024
+        }
+      },
+      {
+        "grid_index": 2,
+        "parameters": {
+          "alpha": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4024390243902439,
+          "top5_real": 0.5350609756097561,
+          "mrr_real": 0.47456025360813636,
+          "partial_assignment_accuracy": 0.3987915407854985,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4024390243902439
+        }
+      },
+      {
+        "grid_index": 3,
+        "parameters": {
+          "alpha": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.3719512195121951,
+          "top5_real": 0.48323170731707316,
+          "mrr_real": 0.43510830553345536,
+          "partial_assignment_accuracy": 0.3685800604229607,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.3719512195121951
+        }
+      },
+      {
+        "grid_index": 4,
+        "parameters": {
+          "alpha": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.007621951219512195,
+          "top5_real": 0.03201219512195122,
+          "mrr_real": 0.033746108212520026,
+          "partial_assignment_accuracy": 0.0075528700906344415,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.007621951219512195
+        }
+      }
+    ],
+    "ufgw": [
+      {
+        "grid_index": 0,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.6051829268292683,
+          "top5_real": 0.7774390243902439,
+          "mrr_real": 0.6862097304039261,
+          "partial_assignment_accuracy": 0.5996978851963746,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.600609756097561
+        }
+      },
+      {
+        "grid_index": 1,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.6051829268292683,
+          "top5_real": 0.7774390243902439,
+          "mrr_real": 0.6862097304039261,
+          "partial_assignment_accuracy": 0.5996978851963746,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.600609756097561
+        }
+      },
+      {
+        "grid_index": 2,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.6051829268292683,
+          "top5_real": 0.7774390243902439,
+          "mrr_real": 0.6862097304039261,
+          "partial_assignment_accuracy": 0.5996978851963746,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.600609756097561
+        }
+      },
+      {
+        "grid_index": 3,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.6051829268292683,
+          "top5_real": 0.7774390243902439,
+          "mrr_real": 0.6862097304039261,
+          "partial_assignment_accuracy": 0.5030211480362538,
+          "coverage": 0.8081570996978852,
+          "known_accept_rate": 0.8064024390243902,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.600609756097561
+        }
+      },
+      {
+        "grid_index": 4,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.6051829268292683,
+          "top5_real": 0.7774390243902439,
+          "mrr_real": 0.6862097304039261,
+          "partial_assignment_accuracy": 0.055891238670694864,
+          "coverage": 0.1148036253776435,
+          "known_accept_rate": 0.11280487804878049,
+          "novel_reject_rate": 0.6666666666666666,
+          "hungarian_accuracy": 0.600609756097561
+        }
+      },
+      {
+        "grid_index": 5,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.6051829268292683,
+          "top5_real": 0.7774390243902439,
+          "mrr_real": 0.6862097304039261,
+          "partial_assignment_accuracy": 0.013595166163141994,
+          "coverage": 0.012084592145015106,
+          "known_accept_rate": 0.012195121951219513,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.600609756097561
+        }
+      },
+      {
+        "grid_index": 6,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.6051829268292683,
+          "top5_real": 0.7774390243902439,
+          "mrr_real": 0.6862097304039261,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.600609756097561
+        }
+      },
+      {
+        "grid_index": 7,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4878048780487805,
+          "top5_real": 0.7225609756097561,
+          "mrr_real": 0.5962243118759954,
+          "partial_assignment_accuracy": 0.48338368580060426,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.49085365853658536
+        }
+      },
+      {
+        "grid_index": 8,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4878048780487805,
+          "top5_real": 0.7225609756097561,
+          "mrr_real": 0.5962243118759954,
+          "partial_assignment_accuracy": 0.48338368580060426,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.49085365853658536
+        }
+      },
+      {
+        "grid_index": 9,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4878048780487805,
+          "top5_real": 0.7225609756097561,
+          "mrr_real": 0.5962243118759954,
+          "partial_assignment_accuracy": 0.48338368580060426,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.49085365853658536
+        }
+      },
+      {
+        "grid_index": 10,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4878048780487805,
+          "top5_real": 0.7225609756097561,
+          "mrr_real": 0.5962243118759954,
+          "partial_assignment_accuracy": 0.48338368580060426,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.49085365853658536
+        }
+      },
+      {
+        "grid_index": 11,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4878048780487805,
+          "top5_real": 0.7225609756097561,
+          "mrr_real": 0.5962243118759954,
+          "partial_assignment_accuracy": 0.2190332326283988,
+          "coverage": 0.48489425981873113,
+          "known_accept_rate": 0.4817073170731707,
+          "novel_reject_rate": 0.16666666666666666,
+          "hungarian_accuracy": 0.49085365853658536
+        }
+      },
+      {
+        "grid_index": 12,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4878048780487805,
+          "top5_real": 0.7225609756097561,
+          "mrr_real": 0.5962243118759954,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.49085365853658536
+        }
+      },
+      {
+        "grid_index": 13,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4878048780487805,
+          "top5_real": 0.7225609756097561,
+          "mrr_real": 0.5962243118759954,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.49085365853658536
+        }
+      },
+      {
+        "grid_index": 14,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4725609756097561,
+          "top5_real": 0.7210365853658537,
+          "mrr_real": 0.584305300260279,
+          "partial_assignment_accuracy": 0.46827794561933533,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4740853658536585
+        }
+      },
+      {
+        "grid_index": 15,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4725609756097561,
+          "top5_real": 0.7210365853658537,
+          "mrr_real": 0.584305300260279,
+          "partial_assignment_accuracy": 0.46827794561933533,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4740853658536585
+        }
+      },
+      {
+        "grid_index": 16,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4725609756097561,
+          "top5_real": 0.7210365853658537,
+          "mrr_real": 0.584305300260279,
+          "partial_assignment_accuracy": 0.46827794561933533,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4740853658536585
+        }
+      },
+      {
+        "grid_index": 17,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4725609756097561,
+          "top5_real": 0.7210365853658537,
+          "mrr_real": 0.584305300260279,
+          "partial_assignment_accuracy": 0.46827794561933533,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4740853658536585
+        }
+      },
+      {
+        "grid_index": 18,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4725609756097561,
+          "top5_real": 0.7210365853658537,
+          "mrr_real": 0.584305300260279,
+          "partial_assignment_accuracy": 0.23413897280966767,
+          "coverage": 0.5226586102719033,
+          "known_accept_rate": 0.5198170731707317,
+          "novel_reject_rate": 0.16666666666666666,
+          "hungarian_accuracy": 0.4740853658536585
+        }
+      },
+      {
+        "grid_index": 19,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4725609756097561,
+          "top5_real": 0.7210365853658537,
+          "mrr_real": 0.584305300260279,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.4740853658536585
+        }
+      },
+      {
+        "grid_index": 20,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4725609756097561,
+          "top5_real": 0.7210365853658537,
+          "mrr_real": 0.584305300260279,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.4740853658536585
+        }
+      },
+      {
+        "grid_index": 21,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.5701219512195121,
+          "top5_real": 0.7682926829268293,
+          "mrr_real": 0.6653122296802522,
+          "partial_assignment_accuracy": 0.5649546827794562,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5823170731707317
+        }
+      },
+      {
+        "grid_index": 22,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.5701219512195121,
+          "top5_real": 0.7682926829268293,
+          "mrr_real": 0.6653122296802522,
+          "partial_assignment_accuracy": 0.5649546827794562,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5823170731707317
+        }
+      },
+      {
+        "grid_index": 23,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.5701219512195121,
+          "top5_real": 0.7682926829268293,
+          "mrr_real": 0.6653122296802522,
+          "partial_assignment_accuracy": 0.5649546827794562,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5823170731707317
+        }
+      },
+      {
+        "grid_index": 24,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.5701219512195121,
+          "top5_real": 0.7682926829268293,
+          "mrr_real": 0.6653122296802522,
+          "partial_assignment_accuracy": 0.5196374622356495,
+          "coverage": 0.9033232628398792,
+          "known_accept_rate": 0.9024390243902439,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5823170731707317
+        }
+      },
+      {
+        "grid_index": 25,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.5701219512195121,
+          "top5_real": 0.7682926829268293,
+          "mrr_real": 0.6653122296802522,
+          "partial_assignment_accuracy": 0.052870090634441085,
+          "coverage": 0.1163141993957704,
+          "known_accept_rate": 0.11280487804878049,
+          "novel_reject_rate": 0.5,
+          "hungarian_accuracy": 0.5823170731707317
+        }
+      },
+      {
+        "grid_index": 26,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.5701219512195121,
+          "top5_real": 0.7682926829268293,
+          "mrr_real": 0.6653122296802522,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0030211480362537764,
+          "known_accept_rate": 0.003048780487804878,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5823170731707317
+        }
+      },
+      {
+        "grid_index": 27,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.5701219512195121,
+          "top5_real": 0.7682926829268293,
+          "mrr_real": 0.6653122296802522,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5823170731707317
+        }
+      },
+      {
+        "grid_index": 28,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4740853658536585,
+          "top5_real": 0.7149390243902439,
+          "mrr_real": 0.5849102133042186,
+          "partial_assignment_accuracy": 0.4697885196374622,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.48323170731707316
+        }
+      },
+      {
+        "grid_index": 29,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4740853658536585,
+          "top5_real": 0.7149390243902439,
+          "mrr_real": 0.5849102133042186,
+          "partial_assignment_accuracy": 0.4697885196374622,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.48323170731707316
+        }
+      },
+      {
+        "grid_index": 30,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4740853658536585,
+          "top5_real": 0.7149390243902439,
+          "mrr_real": 0.5849102133042186,
+          "partial_assignment_accuracy": 0.4697885196374622,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.48323170731707316
+        }
+      },
+      {
+        "grid_index": 31,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4740853658536585,
+          "top5_real": 0.7149390243902439,
+          "mrr_real": 0.5849102133042186,
+          "partial_assignment_accuracy": 0.4697885196374622,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.48323170731707316
+        }
+      },
+      {
+        "grid_index": 32,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4740853658536585,
+          "top5_real": 0.7149390243902439,
+          "mrr_real": 0.5849102133042186,
+          "partial_assignment_accuracy": 0.18580060422960726,
+          "coverage": 0.4395770392749245,
+          "known_accept_rate": 0.43597560975609756,
+          "novel_reject_rate": 0.16666666666666666,
+          "hungarian_accuracy": 0.48323170731707316
+        }
+      },
+      {
+        "grid_index": 33,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4740853658536585,
+          "top5_real": 0.7149390243902439,
+          "mrr_real": 0.5849102133042186,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.48323170731707316
+        }
+      },
+      {
+        "grid_index": 34,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4740853658536585,
+          "top5_real": 0.7149390243902439,
+          "mrr_real": 0.5849102133042186,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.48323170731707316
+        }
+      },
+      {
+        "grid_index": 35,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4634146341463415,
+          "top5_real": 0.7073170731707317,
+          "mrr_real": 0.5747720944455588,
+          "partial_assignment_accuracy": 0.459214501510574,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.46646341463414637
+        }
+      },
+      {
+        "grid_index": 36,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4634146341463415,
+          "top5_real": 0.7073170731707317,
+          "mrr_real": 0.5747720944455588,
+          "partial_assignment_accuracy": 0.459214501510574,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.46646341463414637
+        }
+      },
+      {
+        "grid_index": 37,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4634146341463415,
+          "top5_real": 0.7073170731707317,
+          "mrr_real": 0.5747720944455588,
+          "partial_assignment_accuracy": 0.459214501510574,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.46646341463414637
+        }
+      },
+      {
+        "grid_index": 38,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4634146341463415,
+          "top5_real": 0.7073170731707317,
+          "mrr_real": 0.5747720944455588,
+          "partial_assignment_accuracy": 0.459214501510574,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.46646341463414637
+        }
+      },
+      {
+        "grid_index": 39,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4634146341463415,
+          "top5_real": 0.7073170731707317,
+          "mrr_real": 0.5747720944455588,
+          "partial_assignment_accuracy": 0.19637462235649547,
+          "coverage": 0.46827794561933533,
+          "known_accept_rate": 0.4649390243902439,
+          "novel_reject_rate": 0.16666666666666666,
+          "hungarian_accuracy": 0.46646341463414637
+        }
+      },
+      {
+        "grid_index": 40,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4634146341463415,
+          "top5_real": 0.7073170731707317,
+          "mrr_real": 0.5747720944455588,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.46646341463414637
+        }
+      },
+      {
+        "grid_index": 41,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.4634146341463415,
+          "top5_real": 0.7073170731707317,
+          "mrr_real": 0.5747720944455588,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.46646341463414637
+        }
+      },
+      {
+        "grid_index": 42,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.524390243902439,
+          "top5_real": 0.7423780487804879,
+          "mrr_real": 0.6270767050820196,
+          "partial_assignment_accuracy": 0.5196374622356495,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5411585365853658
+        }
+      },
+      {
+        "grid_index": 43,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.524390243902439,
+          "top5_real": 0.7423780487804879,
+          "mrr_real": 0.6270767050820196,
+          "partial_assignment_accuracy": 0.5196374622356495,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5411585365853658
+        }
+      },
+      {
+        "grid_index": 44,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.524390243902439,
+          "top5_real": 0.7423780487804879,
+          "mrr_real": 0.6270767050820196,
+          "partial_assignment_accuracy": 0.5196374622356495,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5411585365853658
+        }
+      },
+      {
+        "grid_index": 45,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.524390243902439,
+          "top5_real": 0.7423780487804879,
+          "mrr_real": 0.6270767050820196,
+          "partial_assignment_accuracy": 0.5181268882175226,
+          "coverage": 0.9984894259818731,
+          "known_accept_rate": 0.9984756097560976,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5411585365853658
+        }
+      },
+      {
+        "grid_index": 46,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.524390243902439,
+          "top5_real": 0.7423780487804879,
+          "mrr_real": 0.6270767050820196,
+          "partial_assignment_accuracy": 0.03172205438066465,
+          "coverage": 0.08157099697885196,
+          "known_accept_rate": 0.07926829268292683,
+          "novel_reject_rate": 0.6666666666666666,
+          "hungarian_accuracy": 0.5411585365853658
+        }
+      },
+      {
+        "grid_index": 47,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.524390243902439,
+          "top5_real": 0.7423780487804879,
+          "mrr_real": 0.6270767050820196,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5411585365853658
+        }
+      },
+      {
+        "grid_index": 48,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.524390243902439,
+          "top5_real": 0.7423780487804879,
+          "mrr_real": 0.6270767050820196,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5411585365853658
+        }
+      },
+      {
+        "grid_index": 49,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.40853658536585363,
+          "top5_real": 0.6707317073170732,
+          "mrr_real": 0.5337046501886695,
+          "partial_assignment_accuracy": 0.40483383685800606,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.43597560975609756
+        }
+      },
+      {
+        "grid_index": 50,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.40853658536585363,
+          "top5_real": 0.6707317073170732,
+          "mrr_real": 0.5337046501886695,
+          "partial_assignment_accuracy": 0.40483383685800606,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.43597560975609756
+        }
+      },
+      {
+        "grid_index": 51,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.40853658536585363,
+          "top5_real": 0.6707317073170732,
+          "mrr_real": 0.5337046501886695,
+          "partial_assignment_accuracy": 0.40483383685800606,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.43597560975609756
+        }
+      },
+      {
+        "grid_index": 52,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.40853658536585363,
+          "top5_real": 0.6707317073170732,
+          "mrr_real": 0.5337046501886695,
+          "partial_assignment_accuracy": 0.40483383685800606,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.43597560975609756
+        }
+      },
+      {
+        "grid_index": 53,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.40853658536585363,
+          "top5_real": 0.6707317073170732,
+          "mrr_real": 0.5337046501886695,
+          "partial_assignment_accuracy": 0.09214501510574018,
+          "coverage": 0.33081570996978854,
+          "known_accept_rate": 0.3277439024390244,
+          "novel_reject_rate": 0.3333333333333333,
+          "hungarian_accuracy": 0.43597560975609756
+        }
+      },
+      {
+        "grid_index": 54,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.40853658536585363,
+          "top5_real": 0.6707317073170732,
+          "mrr_real": 0.5337046501886695,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.43597560975609756
+        }
+      },
+      {
+        "grid_index": 55,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.40853658536585363,
+          "top5_real": 0.6707317073170732,
+          "mrr_real": 0.5337046501886695,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.43597560975609756
+        }
+      },
+      {
+        "grid_index": 56,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.39634146341463417,
+          "top5_real": 0.6661585365853658,
+          "mrr_real": 0.5237432328728697,
+          "partial_assignment_accuracy": 0.39274924471299094,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4253048780487805
+        }
+      },
+      {
+        "grid_index": 57,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.39634146341463417,
+          "top5_real": 0.6661585365853658,
+          "mrr_real": 0.5237432328728697,
+          "partial_assignment_accuracy": 0.39274924471299094,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4253048780487805
+        }
+      },
+      {
+        "grid_index": 58,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.39634146341463417,
+          "top5_real": 0.6661585365853658,
+          "mrr_real": 0.5237432328728697,
+          "partial_assignment_accuracy": 0.39274924471299094,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4253048780487805
+        }
+      },
+      {
+        "grid_index": 59,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.39634146341463417,
+          "top5_real": 0.6661585365853658,
+          "mrr_real": 0.5237432328728697,
+          "partial_assignment_accuracy": 0.39274924471299094,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4253048780487805
+        }
+      },
+      {
+        "grid_index": 60,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.39634146341463417,
+          "top5_real": 0.6661585365853658,
+          "mrr_real": 0.5237432328728697,
+          "partial_assignment_accuracy": 0.10574018126888217,
+          "coverage": 0.38368580060422963,
+          "known_accept_rate": 0.38109756097560976,
+          "novel_reject_rate": 0.3333333333333333,
+          "hungarian_accuracy": 0.4253048780487805
+        }
+      },
+      {
+        "grid_index": 61,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.39634146341463417,
+          "top5_real": 0.6661585365853658,
+          "mrr_real": 0.5237432328728697,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.4253048780487805
+        }
+      },
+      {
+        "grid_index": 62,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 656,
+          "novel_queries": 6,
+          "partial_queries": 662,
+          "hungarian_queries": 656,
+          "top1_real": 0.39634146341463417,
+          "top5_real": 0.6661585365853658,
+          "mrr_real": 0.5237432328728697,
+          "partial_assignment_accuracy": 0.00906344410876133,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.4253048780487805
+        }
+      }
+    ]
+  },
+  "solver": {
+    "pot_version": "0.9.7.post1",
+    "fgw_max_iter": 10000,
+    "fgw_tol": 1e-09,
+    "fugw_version": "0.1.1",
+    "ufgw_solver": "mm",
+    "ufgw_reg_mode": "joint",
+    "ufgw_divergence": "kl",
+    "ufgw_nits_bcd": 10,
+    "ufgw_nits_uot": 1000,
+    "device": "cuda"
+  }
+}

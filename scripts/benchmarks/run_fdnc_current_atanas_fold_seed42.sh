@@ -15,10 +15,10 @@ fi
 DATA_ROOT="$ROOT/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_${FOLD}"
 RUN_ROOT="$ROOT/runs/fdnc_current_grouped_cv_v2/atanas/fold${FOLD}/seed42"
 LIST_DIR="$RUN_ROOT/locked_lists"
-TRAIN="$ROOT/baselines/official/adapters/fdnc_finetune/train_fdnc_official_finetune.py"
-SELECT="$ROOT/baselines/official/adapters/fdnc_finetune/select_fdnc_candidate.py"
+TRAIN="$ROOT/benchmark_official/adapters/fdnc_finetune/train_fdnc_official_finetune.py"
+SELECT="$ROOT/benchmark_official/adapters/fdnc_finetune/select_fdnc_candidate.py"
 EVAL="$ROOT/scripts/fair_identity/evaluate_train_reference_ensemble.py"
-PRETRAINED="$ROOT/baselines/official/third_party/fdnc_official/model/model.bin"
+PRETRAINED="$ROOT/benchmark_official/third_party/fdnc_official/model/model.bin"
 EXPECTED_SHA=ab529eb6a886cb6ab3f199b7aaa4e49b82562dc280b3ac736ed61e25d5138ec9
 
 CUDA_VISIBLE_DEVICES="$GPU" "$PYTHON" -c \

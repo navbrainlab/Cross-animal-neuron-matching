@@ -1,0 +1,122 @@
+[
+  {
+    "identity": "AFDL",
+    "support_templates": 1
+  },
+  {
+    "identity": "AIBL",
+    "support_templates": 1
+  },
+  {
+    "identity": "ALA",
+    "support_templates": 1
+  },
+  {
+    "identity": "AQR",
+    "support_templates": 1
+  },
+  {
+    "identity": "AVAL",
+    "support_templates": 1
+  },
+  {
+    "identity": "AVAR",
+    "support_templates": 1
+  },
+  {
+    "identity": "AVDL",
+    "support_templates": 1
+  },
+  {
+    "identity": "AVEL",
+    "support_templates": 1
+  },
+  {
+    "identity": "FLPL",
+    "support_templates": 1
+  },
+  {
+    "identity": "IL1L",
+    "support_templates": 1
+  },
+  {
+    "identity": "IL1VL",
+    "support_templates": 1
+  },
+  {
+    "identity": "IL1VR",
+    "support_templates": 1
+  },
+  {
+    "identity": "IL2DL",
+    "support_templates": 1
+  },
+  {
+    "identity": "IL2L",
+    "support_templates": 1
+  },
+  {
+    "identity": "IL2VL",
+    "support_templates": 1
+  },
+  {
+    "identity": "OLLL",
+    "support_templates": 1
+  },
+  {
+    "identity": "OLQDL",
+    "support_templates": 1
+  },
+  {
+    "identity": "OLQDR",
+    "support_templates": 1
+  },
+  {
+    "identity": "OLQVL",
+    "support_templates": 1
+  },
+  {
+    "identity": "OLQVR",
+    "support_templates": 1
+  },
+  {
+    "identity": "RIVL",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMDDL",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMDVL",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMDVR",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMED",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMEL",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMEV",
+    "support_templates": 1
+  },
+  {
+    "identity": "SMDDL",
+    "support_templates": 1
+  },
+  {
+    "identity": "SMDVL",
+    "support_templates": 1
+  },
+  {
+    "identity": "URBL",
+    "support_templates": 1
+  }
+]

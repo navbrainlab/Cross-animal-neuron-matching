@@ -1,0 +1,194 @@
+{
+  "protocol": "atanas_full_atlas_vs_single_train_geometry_medoid_test_cv5_seed42_v1",
+  "dataset": "atanas",
+  "split": "test",
+  "fold": 1,
+  "seed": 42,
+  "checkpoint": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/atanas/fold1/seed42/static_atlas/anchored_pure.pt",
+  "checkpoint_epoch": 48,
+  "full_atlas_size": 152,
+  "train_animals": 22,
+  "evaluation_animals": 8,
+  "medoid": {
+    "index": 10,
+    "uid": "2023-01-05-18",
+    "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-05-18__d7235b22.npz",
+    "mean_distance": 0.034500878895778055,
+    "all_mean_distances": [
+      {
+        "index": 10,
+        "uid": "2023-01-05-18",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-05-18__d7235b22.npz",
+        "mean_distance": 0.034500878895778055
+      },
+      {
+        "index": 15,
+        "uid": "2023-01-16-15",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-16-15__2baa3162.npz",
+        "mean_distance": 0.034977226377674364
+      },
+      {
+        "index": 20,
+        "uid": "2023-01-23-15",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-23-15__ff6df852.npz",
+        "mean_distance": 0.035982860129513586
+      },
+      {
+        "index": 14,
+        "uid": "2023-01-16-08",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-16-08__efcc90b0.npz",
+        "mean_distance": 0.03654089563521244
+      },
+      {
+        "index": 16,
+        "uid": "2023-01-16-22",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-16-22__f169d678.npz",
+        "mean_distance": 0.0368283542088874
+      },
+      {
+        "index": 4,
+        "uid": "2022-06-14-01",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2022-06-14-01__4ddfcba0.npz",
+        "mean_distance": 0.03759687189387938
+      },
+      {
+        "index": 12,
+        "uid": "2023-01-13-07",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-13-07__0ba838bb.npz",
+        "mean_distance": 0.037894687714172766
+      },
+      {
+        "index": 11,
+        "uid": "2023-01-09-28",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-09-28__5c9cf484.npz",
+        "mean_distance": 0.0381947945521969
+      },
+      {
+        "index": 0,
+        "uid": "2022-07-20-01",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/test__2022-07-20-01__4147bc9e.npz",
+        "mean_distance": 0.04076003688599487
+      },
+      {
+        "index": 3,
+        "uid": "2023-03-07-01",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/test__2023-03-07-01__9fafa0d7.npz",
+        "mean_distance": 0.04098638320322899
+      },
+      {
+        "index": 13,
+        "uid": "2023-01-16-01",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-16-01__6e634151.npz",
+        "mean_distance": 0.04124050175028441
+      },
+      {
+        "index": 5,
+        "uid": "2022-06-14-07",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2022-06-14-07__1c5b9cbb.npz",
+        "mean_distance": 0.04136379346503375
+      },
+      {
+        "index": 1,
+        "uid": "2023-01-10-07",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/test__2023-01-10-07__af4d7d2d.npz",
+        "mean_distance": 0.041794193174914965
+      },
+      {
+        "index": 9,
+        "uid": "2023-01-05-01",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-05-01__356f8927.npz",
+        "mean_distance": 0.043810495788860766
+      },
+      {
+        "index": 2,
+        "uid": "2023-01-10-14",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/test__2023-01-10-14__e4254980.npz",
+        "mean_distance": 0.04386788698628303
+      },
+      {
+        "index": 19,
+        "uid": "2023-01-19-22",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-19-22__636432cc.npz",
+        "mean_distance": 0.04405108955908884
+      },
+      {
+        "index": 6,
+        "uid": "2022-06-14-13",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2022-06-14-13__ac0e5908.npz",
+        "mean_distance": 0.044616518048647726
+      },
+      {
+        "index": 17,
+        "uid": "2023-01-19-08",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-19-08__9b5cf9ce.npz",
+        "mean_distance": 0.05241422902039043
+      },
+      {
+        "index": 8,
+        "uid": "2022-08-02-01",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2022-08-02-01__17852669.npz",
+        "mean_distance": 0.06004190334475729
+      },
+      {
+        "index": 7,
+        "uid": "2022-07-26-01",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2022-07-26-01__0f9510f7.npz",
+        "mean_distance": 0.060829811053147616
+      },
+      {
+        "index": 21,
+        "uid": "2022-06-28-01",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/val__2022-06-28-01__a91d8128.npz",
+        "mean_distance": 0.06900775897983738
+      },
+      {
+        "index": 18,
+        "uid": "2023-01-19-15",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1/train/train__2023-01-19-15__893d43d8.npz",
+        "mean_distance": 0.08491005751085852
+      }
+    ],
+    "selection_split": "outer_train_only",
+    "uses_validation": false,
+    "uses_test": false,
+    "uses_identity_labels": false,
+    "geometry_normalization": "per-animal median centering, then divide XYZ by 200",
+    "distance": "symmetric mean nearest-neighbour Euclidean distance",
+    "criterion": "minimum mean distance to all other outer-training animals",
+    "tie_break": "lexicographic worm UID, then original train-list index"
+  },
+  "medoid_identity_candidates": 85,
+  "query_universe": "unique supervised test identities present in the Full train-only atlas; GT absent from medoid counts as incorrect, never dropped",
+  "full_baseline_guard": {
+    "saved_metrics": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas/fold1/seed42/metrics/test/full.json",
+    "status": "NUMERICALLY_EXACT_REPRODUCTION"
+  },
+  "full_atlas": {
+    "queries": 669,
+    "covered_queries": 669,
+    "candidate_coverage": 1.0,
+    "top1_real": 0.8026905829596412,
+    "top1_covered": 0.8026905829596412,
+    "top5_real": 0.9402092675635276,
+    "mrr_real": 0.8649249296358548,
+    "hungarian_queries": 669,
+    "hungarian_accuracy": 0.8086696562032885
+  },
+  "single_medoid": {
+    "queries": 669,
+    "covered_queries": 477,
+    "candidate_coverage": 0.7130044843049327,
+    "top1_real": 0.6218236173393124,
+    "top1_covered": 0.8721174004192872,
+    "top5_real": 0.7010463378176383,
+    "mrr_real": 0.6554967846348474,
+    "hungarian_queries": 669,
+    "hungarian_accuracy": 0.6113602391629297
+  },
+  "full_minus_medoid": {
+    "top1_real": 0.1808669656203289,
+    "top5_real": 0.23916292974588937,
+    "mrr_real": 0.20942814500100737,
+    "hungarian_accuracy": 0.19730941704035876
+  }
+}

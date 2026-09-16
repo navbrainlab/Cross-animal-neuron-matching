@@ -40,7 +40,7 @@ def main():
     lines = [
         "# Final RLD robustness tables",
         "",
-        "All cells use the shared manifest query cohort and are reported as mean "
+        "All cells use the canonical main-table query cohort and are reported as mean "
         "[95% paired hierarchical-bootstrap CI], with 10,000 replicates.",
         "",
     ]

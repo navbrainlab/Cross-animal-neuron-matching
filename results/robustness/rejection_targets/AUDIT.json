@@ -1,0 +1,34 @@
+{
+  "protocol": "RLD grouped CV5 x seed42 hierarchical rejection calibration",
+  "raw_schema_version": 3,
+  "positive_class": "materialized __OUTLIER_* synthetic distractors",
+  "known_class": "unique supervised identity present in current atlas reference",
+  "excluded_targets": "native unlabeled/uncertain/duplicate/reference-absent nodes",
+  "calibration_split": "validation only, with independently materialized distractors",
+  "calibration_levels_pooled_per_fold": true,
+  "one_threshold_per_fold_score_and_recall_target": true,
+  "thresholds_frozen_across_test_severities": true,
+  "test_labels_used_for_threshold_selection": false,
+  "checkpoint_selection_unchanged": true,
+  "retrained": false,
+  "fold_first_aggregation": true,
+  "paired_ci": "two-sided 95% Student-t interval across biological folds",
+  "paired_effect_direction": {
+    "reject_aware_top1": "candidate minus current default",
+    "known_false_reject": "current default minus candidate"
+  },
+  "recall_targets": [
+    0.8,
+    0.9,
+    0.95
+  ],
+  "settings": {
+    "current_argmax": "p(dustbin) > max real probability",
+    "binary_0_5": "p(dustbin) > 0.5",
+    "probability_val": "p(dustbin) > fold-specific validation threshold",
+    "log_margin_val": "log p(dustbin) - log(max real probability) > fold-specific validation threshold"
+  },
+  "figure_written": true,
+  "cells": 640,
+  "summary_rows": 48
+}

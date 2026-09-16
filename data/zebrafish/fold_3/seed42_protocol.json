@@ -1,0 +1,61 @@
+{
+  "protocol": "zebrafish_MPRT_LOFO8_60m_seed42",
+  "fold": 3,
+  "train_fish": [
+    "func_20150410",
+    "func_20150417",
+    "islet_20170216",
+    "lineage_20160328",
+    "lineage_20170111",
+    "lineage_20170925"
+  ],
+  "val_fish": "islet_20170202",
+  "test_fish": "func_20161004",
+  "gap_minutes": 60,
+  "window_seconds": 30,
+  "activity_points": 128,
+  "minimum_shared": 20,
+  "identity_scope": "pair-local; no canonical identity shared across fish",
+  "test_unlocked": true,
+  "unlock_manifest": "external-run-record",
+  "splits": {
+    "train": {
+      "split": "train",
+      "records": 164,
+      "pairs": 82,
+      "specimens": [
+        "func_20150410",
+        "func_20150417",
+        "islet_20170216",
+        "lineage_20160328",
+        "lineage_20170111",
+        "lineage_20170925"
+      ],
+      "minimum_shared": 57,
+      "maximum_shared": 122,
+      "queries_directional_not_precomputed": true
+    },
+    "val": {
+      "split": "val",
+      "records": 26,
+      "pairs": 13,
+      "specimens": [
+        "islet_20170202"
+      ],
+      "minimum_shared": 70,
+      "maximum_shared": 70,
+      "queries_directional_not_precomputed": true
+    },
+    "test": {
+      "split": "test",
+      "records": 12,
+      "pairs": 6,
+      "specimens": [
+        "func_20161004"
+      ],
+      "minimum_shared": 64,
+      "maximum_shared": 64,
+      "queries_directional_not_precomputed": true
+    }
+  }
+}

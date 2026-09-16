@@ -1,22 +1,26 @@
 #!/usr/bin/env python3
-"""Atanas atlas-ablation pilot: Full static atlas vs one train-only geometry medoid.
+"""Atlas ablation: Full static atlas vs one train-only geometry medoid.
 
-STRICT PILOT ONLY
------------------
-* Dataset: Atanas grouped outer CV5 × 3 model seeds
-* Model seeds: 1, 42, 123
-* Evaluation split: VALIDATION ONLY (this script has no test option)
+The historical invocation is the validation-only CV5 × 3-seed pilot. A
+formal main-table-compatible invocation uses ``--split test --seeds 42``.
+
+Protocol
+--------
+* Dataset: Atanas or Kato/RLD grouped outer CV5
+* Model seeds: configurable; defaults to the historical 1, 42, 123
+* Evaluation split: validation or held-out test
 * Full arm: existing final static-atlas MPRT checkpoint
 * w/o Atlas arm: same exact checkpoint/model, but replace the multi-animal static
   atlas at inference with ONE outer-train geometry-medoid worm.
-* No retraining, no validation-based template selection, no test access.
+* No retraining and no validation/test-based template selection.
 * Medoid selection uses XYZ only, no cell identity labels.
 * Query universe is LOCKED to the Full Atlas training-identity vocabulary.
   If a GT identity is absent from the medoid worm, that query is counted WRONG
   (it is NOT dropped from the denominator).
 
 The script first re-evaluates Full Atlas and requires exact agreement with the
-existing component-ablation validation metrics before accepting medoid results.
+existing component-ablation metric on the selected split before accepting
+medoid results.
 """
 
 from __future__ import annotations
@@ -69,12 +73,18 @@ class Totals:
     def candidate_coverage(self) -> float:
         return self.covered_queries / max(self.queries, 1)
 
+    @property
+    def top1_covered(self) -> float:
+        """Top-1 conditional on the GT identity being in the medoid vocabulary."""
+        return self.top1 / max(self.covered_queries, 1)
+
     def metrics(self) -> dict[str, Any]:
         return {
             "queries": int(self.queries),
             "covered_queries": int(self.covered_queries),
             "candidate_coverage": float(self.candidate_coverage),
             "top1_real": float(self.top1_real),
+            "top1_covered": float(self.top1_covered),
             "top5_real": float(self.top5_real),
             "mrr_real": float(self.mrr_real),
             "hungarian_queries": int(self.queries),
@@ -211,10 +221,31 @@ def evaluate_output(
 
     totals = Totals()
     records: list[dict[str, Any]] = []
+    candidate_col_to_identity = {
+        int(column): str(identity)
+        for identity, column in candidate_identity_to_col.items()
+    }
 
     for node_index, identity in queries:
         totals.queries += 1
         target_col = candidate_identity_to_col.get(identity)
+        row = real[int(node_index)]
+        predicted_col = int(torch.argmax(row).item())
+        stable_order = torch.argsort(row, descending=True, stable=True)
+        stable_top5_cols = [
+            int(value) for value in stable_order[: min(5, int(real.shape[1]))].tolist()
+        ]
+        hp = int(assignment.get(int(node_index), -1))
+        decoded = {
+            "predicted_col": predicted_col,
+            "predicted_identity": candidate_col_to_identity.get(predicted_col, ""),
+            "top5_cols": "|".join(map(str, stable_top5_cols)),
+            "top5_identities": "|".join(
+                candidate_col_to_identity.get(column, "") for column in stable_top5_cols
+            ),
+            "hungarian_prediction_col": hp,
+            "hungarian_prediction_identity": candidate_col_to_identity.get(hp, ""),
+        }
 
         if target_col is None:
             records.append(
@@ -227,8 +258,12 @@ def evaluate_output(
                     "top1": 0,
                     "top5": 0,
                     "rr": 0.0,
-                    "hungarian_prediction_col": int(assignment.get(node_index, -1)),
                     "hungarian_correct": 0,
+                    "strictly_greater_candidates": "",
+                    "equal_score_candidates": "",
+                    "rank_min": "",
+                    "rank_max": "",
+                    **decoded,
                 }
             )
             continue
@@ -239,13 +274,13 @@ def evaluate_output(
             )
 
         totals.covered_queries += 1
-        row = real[int(node_index)]
         score = row[int(target_col)]
-        rank = 1 + int((row > score).sum().item())
+        greater = int((row > score).sum().item())
+        tied = int((row == score).sum().item())
+        rank = 1 + greater
         top1 = int(rank == 1)
         top5 = int(rank <= min(5, int(real.shape[1])))
         rr = 1.0 / float(rank)
-        hp = int(assignment.get(int(node_index), -1))
         hc = int(hp == int(target_col))
 
         totals.top1 += top1
@@ -263,15 +298,21 @@ def evaluate_output(
                 "top1": top1,
                 "top5": top5,
                 "rr": float(rr),
-                "hungarian_prediction_col": hp,
                 "hungarian_correct": hc,
+                "strictly_greater_candidates": greater,
+                "equal_score_candidates": tied,
+                "rank_min": greater + 1,
+                "rank_max": greater + tied,
+                **decoded,
             }
         )
 
     return totals, records
 
 
-def exact_guard(observed: dict[str, Any], saved: dict[str, Any], fold: int) -> None:
+def exact_guard(
+    observed: dict[str, Any], saved: dict[str, Any], fold: int, split: str
+) -> None:
     keys = ("queries", "top1_real", "top5_real", "mrr_real", "hungarian_accuracy")
     diffs = {}
     for key in keys:
@@ -285,7 +326,7 @@ def exact_guard(observed: dict[str, Any], saved: dict[str, Any], fold: int) -> N
             diffs[key] = {"recomputed": a, "saved": b}
     if diffs:
         raise RuntimeError(
-            f"Fold{fold}: Full Atlas validation baseline was NOT exactly reproduced: {diffs}"
+            f"Fold{fold}: Full Atlas {split} baseline was NOT exactly reproduced: {diffs}"
         )
 
 
@@ -299,26 +340,70 @@ def mean_sd(xs: list[float]) -> tuple[float, float]:
 def main() -> None:
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--repo-root", type=Path, default=REPO_DEFAULT)
+    p.add_argument(
+        "--dataset",
+        choices=("atanas", "rld"),
+        default="atanas",
+        help="Use rld for the Kato/RLD benchmark dataset",
+    )
     p.add_argument("--device", default="cuda")
     p.add_argument("--activity-length", type=int, default=512)
+    p.add_argument("--split", choices=("val", "test"), default="val")
+    p.add_argument(
+        "--seeds",
+        type=int,
+        nargs="+",
+        default=list(SEEDS),
+        help="Model seeds to evaluate (formal main-table protocol: --seeds 42)",
+    )
     p.add_argument(
         "--output-root",
         type=Path,
         default=None,
-        help="Default: runs/mprt_v1_1_atlas_medoid_atanas_cv5x3_v1",
+        help=(
+            "Default: historical validation directory for val/1,42,123; "
+            "otherwise a split/seed-specific directory"
+        ),
     )
     args = p.parse_args()
 
     repo = args.repo_root.resolve()
-    package_root = repo / "neurid"
-    data_root = repo / "Data/Atanas_SF_unified_000776/cv5_grouped_v1"
-    final_root = repo / "runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/atanas"
-    component_root = repo / "runs/mprt_v1_1_component_ablation_cv5x3_v1/atanas"
-    out_root = (
-        args.output_root.resolve()
-        if args.output_root is not None
-        else repo / "runs/mprt_v1_1_atlas_medoid_atanas_cv5x3_v1"
+    package_root = repo / "mprt_net_v1_1"
+    dataset_roots = {
+        "atanas": repo / "Data/Atanas_SF_unified_000776/cv5_grouped_v1",
+        "rld": repo / "Data/Dunn_001623/cv5_grouped_v1",
+    }
+    data_root = dataset_roots[args.dataset]
+    final_root = (
+        repo / "runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1" / args.dataset
     )
+    component_root = (
+        repo / "runs/mprt_v1_1_component_ablation_cv5x3_v1" / args.dataset
+    )
+    seeds = tuple(dict.fromkeys(args.seeds))
+    if not seeds:
+        raise ValueError("At least one model seed is required")
+    if args.output_root is not None:
+        out_root = args.output_root.resolve()
+    elif args.dataset == "atanas" and args.split == "val" and seeds == SEEDS:
+        out_root = repo / "runs/mprt_v1_1_atlas_medoid_atanas_cv5x3_v1"
+    else:
+        seed_tag = "_".join(str(seed) for seed in seeds)
+        out_root = (
+            repo
+            / f"runs/mprt_v1_1_atlas_medoid_{args.dataset}_cv5_{args.split}_seeds_{seed_tag}_v1"
+        )
+
+    protocol = (
+        f"{args.dataset}_full_atlas_vs_single_train_geometry_medoid_"
+        f"{args.split}_cv5_seed42_v1"
+    )
+    if seeds != (42,):
+        seed_tag = "_".join(map(str, seeds))
+        protocol = (
+            f"{args.dataset}_full_atlas_vs_single_train_geometry_medoid_"
+            f"{args.split}_cv5_seeds_{seed_tag}_v1"
+        )
 
     if not package_root.is_dir():
         raise FileNotFoundError(package_root)
@@ -329,12 +414,16 @@ def main() -> None:
 
     device = torch.device(args.device if torch.cuda.is_available() else "cpu")
     print("=" * 120)
-    print("ATANAS — FULL STATIC ATLAS vs SINGLE TRAIN-ONLY MEDOID — VALIDATION — CV5 × 3 SEEDS")
+    print(
+        f"{args.dataset.upper()} — FULL STATIC ATLAS vs SINGLE TRAIN-ONLY MEDOID — "
+        f"{args.split.upper()} — CV5 × {len(seeds)} SEED(S)"
+    )
     print("=" * 120)
     print("device      :", device)
     print("data root   :", data_root)
     print("output root :", out_root)
-    print("TEST ACCESS : FORBIDDEN — this script reads train + val only")
+    print("seeds       :", ", ".join(map(str, seeds)))
+    print("medoid rule : outer-train geometry only; no validation/test selection")
     print()
 
     fold_results: list[dict[str, Any]] = []
@@ -345,19 +434,19 @@ def main() -> None:
         # The train-only geometry medoid depends only on the biological fold,
         # not on the stochastic model seed. Select it ONCE per fold.
         train_dir = fold_root / "train"
-        val_dir = fold_root / "val"
-        for required in (train_dir, val_dir):
+        eval_dir = fold_root / args.split
+        for required in (train_dir, eval_dir):
             if not required.exists():
                 raise FileNotFoundError(required)
 
         train_paths = split_files(fold_root, "train")
-        val_paths = split_files(fold_root, "val")
-        if not train_paths or not val_paths:
-            raise RuntimeError(f"fold{fold}: empty train or val split")
+        eval_paths = split_files(fold_root, args.split)
+        if not train_paths or not eval_paths:
+            raise RuntimeError(f"fold{fold}: empty train or {args.split} split")
 
         cache = WormCache(
             activity_length=args.activity_length,
-            max_items=max(16, len(train_paths) + len(val_paths)),
+            max_items=max(16, len(train_paths) + len(eval_paths)),
         )
         train_samples = [cache.get(path) for path in train_paths]
         medoid_info = select_train_geometry_medoid(train_samples)
@@ -369,12 +458,12 @@ def main() -> None:
             flush=True,
         )
 
-        for seed in SEEDS:
+        for seed in seeds:
             checkpoint_path = (
                 final_root / f"fold{fold}/seed{seed}/static_atlas/anchored_pure.pt"
             )
             saved_full_path = (
-                component_root / f"fold{fold}/seed{seed}/metrics/val/full.json"
+                component_root / f"fold{fold}/seed{seed}/metrics/{args.split}/full.json"
             )
 
             for required in (checkpoint_path, saved_full_path):
@@ -433,7 +522,7 @@ def main() -> None:
             per_query: list[dict[str, Any]] = []
 
             with torch.inference_mode():
-                for number, path in enumerate(val_paths, start=1):
+                for number, path in enumerate(eval_paths, start=1):
                     sample_cpu = cache.get(path)
                     sample = sample_cpu.to(device)
                     qenc = model.encode_population(sample)
@@ -498,11 +587,22 @@ def main() -> None:
                                 "medoid_rr": float(mr["rr"]),
                                 "full_hungarian_correct": int(fr["hungarian_correct"]),
                                 "medoid_hungarian_correct": int(mr["hungarian_correct"]),
+                                "full_predicted_identity": fr["predicted_identity"],
+                                "medoid_predicted_identity": mr["predicted_identity"],
+                                "full_top5_identities": fr["top5_identities"],
+                                "medoid_top5_identities": mr["top5_identities"],
+                                "full_hungarian_prediction_identity": fr["hungarian_prediction_identity"],
+                                "medoid_hungarian_prediction_identity": mr["hungarian_prediction_identity"],
+                                "full_rank_min": fr["rank_min"],
+                                "full_rank_max": fr["rank_max"],
+                                "medoid_rank_min": mr["rank_min"],
+                                "medoid_rank_max": mr["rank_max"],
                             }
                         )
 
                     print(
-                        f"fold{fold} seed{seed} val {number:02d}/{len(val_paths):02d} "
+                        f"fold{fold} seed{seed} {args.split} "
+                        f"{number:02d}/{len(eval_paths):02d} "
                         f"uid={sample_cpu.uid} canonical_queries={len(queries)}",
                         flush=True,
                     )
@@ -512,7 +612,7 @@ def main() -> None:
             full_metrics["candidate_coverage"] = 1.0
 
             saved_full = json.loads(saved_full_path.read_text(encoding="utf-8"))
-            exact_guard(full_metrics, saved_full, fold)
+            exact_guard(full_metrics, saved_full, fold, args.split)
 
             medoid_metrics = medoid_totals.metrics()
 
@@ -527,19 +627,20 @@ def main() -> None:
             }
 
             result = {
-                "protocol": "atanas_full_atlas_vs_single_train_geometry_medoid_val_cv5x3_v1",
-                "split": "val",
+                "protocol": protocol,
+                "dataset": args.dataset,
+                "split": args.split,
                 "fold": fold,
                 "seed": seed,
                 "checkpoint": str(checkpoint_path.resolve()),
                 "checkpoint_epoch": checkpoint.get("epoch"),
                 "full_atlas_size": int(len(full_identity_to_slot)),
                 "train_animals": len(train_paths),
-                "val_animals": len(val_paths),
+                "evaluation_animals": len(eval_paths),
                 "medoid": medoid_info,
                 "medoid_identity_candidates": len(candidate_labels),
                 "query_universe": (
-                    "unique supervised validation identities present in the Full train-only atlas; "
+                    f"unique supervised {args.split} identities present in the Full train-only atlas; "
                     "GT absent from medoid counts as incorrect, never dropped"
                 ),
                 "full_baseline_guard": {
@@ -585,19 +686,27 @@ def main() -> None:
             if device.type == "cuda":
                 torch.cuda.empty_cache()
 
-    metrics = ("top1_real", "top5_real", "mrr_real", "hungarian_accuracy")
+    arm_metrics = (
+        "top1_real",
+        "top1_covered",
+        "top5_real",
+        "mrr_real",
+        "hungarian_accuracy",
+    )
+    delta_metrics = ("top1_real", "top5_real", "mrr_real", "hungarian_accuracy")
     summary: dict[str, Any] = {
-        "protocol": "atanas_full_atlas_vs_single_train_geometry_medoid_val_cv5x3_v1",
-        "split": "val",
+        "protocol": protocol,
+        "dataset": args.dataset,
+        "split": args.split,
         "folds": list(FOLDS),
-        "seeds": list(SEEDS),
+        "seeds": list(seeds),
         "fold_results": fold_results,
         "aggregate": {},
     }
 
     for arm_key in ("full_atlas", "single_medoid"):
         summary["aggregate"][arm_key] = {}
-        for metric in metrics:
+        for metric in arm_metrics:
             vals = [float(r[arm_key][metric]) for r in fold_results]
             mean, sd = mean_sd(vals)
             summary["aggregate"][arm_key][metric] = {
@@ -615,7 +724,7 @@ def main() -> None:
     }
 
     summary["aggregate"]["full_minus_medoid"] = {}
-    for metric in metrics:
+    for metric in delta_metrics:
         vals = [float(r["full_minus_medoid"][metric]) for r in fold_results]
         mean, sd = mean_sd(vals)
         summary["aggregate"]["full_minus_medoid"][metric] = {
@@ -639,7 +748,10 @@ def main() -> None:
         return f"{item['mean']:.4f}±{item['sample_sd']:.4f}"
 
     print("\\n" + "=" * 124)
-    print("ATANAS — FULL ATLAS vs SINGLE MEDOID — VALIDATION — 5 FOLDS × 3 SEEDS")
+    print(
+        f"{args.dataset.upper()} — FULL ATLAS vs SINGLE MEDOID — "
+        f"{args.split.upper()} — 5 FOLDS × {len(seeds)} SEED(S)"
+    )
     print("=" * 124)
     print(
         f"{'Arm':24s} {'Top-1':>16s} {'Top-5':>16s} {'MRR':>18s} "
@@ -655,12 +767,13 @@ def main() -> None:
         f"{num(F['mrr_real']):>18s} {pct(F['hungarian_accuracy']):>16s} "
         f"{'100.00%':>16s}"
     )
+    print(f"Single Medoid covered-only Top-1: {pct(M['top1_covered'])}")
     print()
     dt = D["top1_real"]
     print(
         "Full Atlas - Single Medoid Top-1 = "
         f"{100*dt['mean']:+.2f}±{100*dt['sample_sd']:.2f} pp; "
-        f"Full wins {dt['fold_wins_full']}/15 cells"
+        f"Full wins {dt['fold_wins_full']}/{len(fold_results)} cells"
     )
 
     print("\\nCell-level Top-1:")
@@ -674,7 +787,10 @@ def main() -> None:
             f"MedoidUID={r['medoid']['uid']}"
         )
 
-    print("\\nFold-averaged paired ΔTop-1 (mean over 3 model seeds):")
+    print(
+        f"\\nFold-averaged paired ΔTop-1 "
+        f"(mean over {len(seeds)} model seed(s)):"
+    )
     fold_deltas = []
     for fold in FOLDS:
         values = [
@@ -682,9 +798,9 @@ def main() -> None:
             for r in fold_results
             if int(r["fold"]) == fold
         ]
-        if len(values) != len(SEEDS):
+        if len(values) != len(seeds):
             raise RuntimeError(
-                f"fold{fold}: expected {len(SEEDS)} seeds, got {len(values)}"
+                f"fold{fold}: expected {len(seeds)} seeds, got {len(values)}"
             )
         value = statistics.mean(values)
         fold_deltas.append(value)

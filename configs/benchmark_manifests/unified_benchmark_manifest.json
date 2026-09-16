@@ -35,20 +35,6 @@
       "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/geotransformer/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
     },
     {
-      "name": "RGM",
-      "stochastic": true,
-      "seeds": [1, 42, 123],
-      "reference_reducer": "mean",
-      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/rgm/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
-    },
-    {
-      "name": "Multi-modal Graph Transformer",
-      "stochastic": true,
-      "seeds": [1, 42, 123],
-      "reference_reducer": "mean",
-      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/multimodal_graph_transformer/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
-    },
-    {
       "name": "Vanilla FGW",
       "stochastic": false,
       "seeds": [42],
@@ -61,13 +47,6 @@
       "seeds": [1, 42, 123],
       "reference_reducer": "mean",
       "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/ours_static/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
-    },
-    {
-      "name": "Ours (Dynamic)",
-      "stochastic": true,
-      "seeds": [1, 42, 123],
-      "reference_reducer": "mean",
-      "path": "/home/ubuntu/klb/nuclr/nuclr/runs/unified_benchmark/ours_dynamic/{dataset}/fold{fold}/seed{seed}/test_candidate_scores.csv"
     }
   ]
 }

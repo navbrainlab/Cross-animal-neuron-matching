@@ -24,10 +24,18 @@ OUTPUT = REPO / "runs/mprt_v1_1_component_ablation_test_cv5_seed42_final"
 DATASETS = ("atanas", "rld")
 FOLDS = set(range(5))
 SEED = 42
-VARIANTS = ("full", "geometry_only", "node_only", "no_transport", "activity_only")
+VARIANTS = (
+    "full",
+    "geometry_only",
+    "no_population",
+    "node_only",
+    "no_transport",
+    "activity_only",
+)
 DISPLAY = {
     "full": "Full NeuRID",
     "geometry_only": "w/o Activity",
+    "no_population": "w/o Relation-conditioned Population Encoder",
     "node_only": "w/o Population Relations (Node-only)",
     "no_transport": "w/o Relation Transport",
     "activity_only": "w/o Geometry (Activity-only)",
@@ -162,7 +170,7 @@ def main() -> None:
         "selection": "exactly the seed42 rows from the locked CV5x3 cells; no metric recomputation",
         "legacy_cv5x3_policy": "retained only as a supplementary stability check",
         "validation": {
-            "expected_cells": 50,
+            "expected_cells": 60,
             "observed_cells": len(rows),
             "each_dataset_variant_has_five_folds": all(
                 row["folds"] == 5 for row in summary_rows

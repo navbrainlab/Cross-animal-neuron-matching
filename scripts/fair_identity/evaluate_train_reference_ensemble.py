@@ -2,7 +2,7 @@
 """Evaluate pairwise matchers against one training-geometry medoid template.
 
 Supported adapters are CPD, fDNC, pre-extracted NuCLR, and an MPRT-family
-checkpoint (including compatible FGW/RGM ablations). GeoTransformer is handled
+checkpoint (including the compatible FGW control). GeoTransformer is handled
 by the preserved full official pipeline under ``../geotransformer_official``.
 For each outer fold, the template is selected
 using only the normalized geometry of outer-training animals.  Every held-out
@@ -24,7 +24,7 @@ import numpy as np
 import torch
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "neurid"))
+sys.path.insert(0, str(ROOT / "mprt_net_v1_1"))
 
 from baselines.atanas_locked import cpd_scores, normalize_xyz
 from scripts.lib.fair_identity_protocol import (

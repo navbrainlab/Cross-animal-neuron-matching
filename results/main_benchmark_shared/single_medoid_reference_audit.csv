@@ -1,0 +1,81 @@
+dataset,fold,method,reference_uid,matches_frozen_reference
+atanas,0,NeurID (single medoid),2023-01-05-18,1
+atanas,0,CPD,2023-01-05-18,1
+atanas,0,fDNC,2023-01-05-18,1
+atanas,0,NuCLR,2023-01-05-18,1
+atanas,0,GeoTransformer,2023-01-05-18,1
+atanas,0,NGM-v2,2023-01-05-18,1
+atanas,0,Vanilla FGW,2023-01-05-18,1
+atanas,0,FUGW (G+A; official),2023-01-05-18,1
+atanas,1,NeurID (single medoid),2023-01-05-18,1
+atanas,1,CPD,2023-01-05-18,1
+atanas,1,fDNC,2023-01-05-18,1
+atanas,1,NuCLR,2023-01-05-18,1
+atanas,1,GeoTransformer,2023-01-05-18,1
+atanas,1,NGM-v2,2023-01-05-18,1
+atanas,1,Vanilla FGW,2023-01-05-18,1
+atanas,1,FUGW (G+A; official),2023-01-05-18,1
+atanas,2,NeurID (single medoid),2023-01-05-18,1
+atanas,2,CPD,2023-01-05-18,1
+atanas,2,fDNC,2023-01-05-18,1
+atanas,2,NuCLR,2023-01-05-18,1
+atanas,2,GeoTransformer,2023-01-05-18,1
+atanas,2,NGM-v2,2023-01-05-18,1
+atanas,2,Vanilla FGW,2023-01-05-18,1
+atanas,2,FUGW (G+A; official),2023-01-05-18,1
+atanas,3,NeurID (single medoid),2023-01-16-15,1
+atanas,3,CPD,2023-01-16-15,1
+atanas,3,fDNC,2023-01-16-15,1
+atanas,3,NuCLR,2023-01-16-15,1
+atanas,3,GeoTransformer,2023-01-16-15,1
+atanas,3,NGM-v2,2023-01-16-15,1
+atanas,3,Vanilla FGW,2023-01-16-15,1
+atanas,3,FUGW (G+A; official),2023-01-16-15,1
+atanas,4,NeurID (single medoid),2023-01-09-22,1
+atanas,4,CPD,2023-01-09-22,1
+atanas,4,fDNC,2023-01-09-22,1
+atanas,4,NuCLR,2023-01-09-22,1
+atanas,4,GeoTransformer,2023-01-09-22,1
+atanas,4,NGM-v2,2023-01-09-22,1
+atanas,4,Vanilla FGW,2023-01-09-22,1
+atanas,4,FUGW (G+A; official),2023-01-09-22,1
+rld,0,NeurID (single medoid),20240426-22-49-55,1
+rld,0,CPD,20240426-22-49-55,1
+rld,0,fDNC,20240426-22-49-55,1
+rld,0,NuCLR,20240426-22-49-55,1
+rld,0,GeoTransformer,20240426-22-49-55,1
+rld,0,NGM-v2,20240426-22-49-55,1
+rld,0,Vanilla FGW,20240426-22-49-55,1
+rld,0,FUGW (G+A; official),20240426-22-49-55,1
+rld,1,NeurID (single medoid),20240828-17-07-39,1
+rld,1,CPD,20240828-17-07-39,1
+rld,1,fDNC,20240828-17-07-39,1
+rld,1,NuCLR,20240828-17-07-39,1
+rld,1,GeoTransformer,20240828-17-07-39,1
+rld,1,NGM-v2,20240828-17-07-39,1
+rld,1,Vanilla FGW,20240828-17-07-39,1
+rld,1,FUGW (G+A; official),20240828-17-07-39,1
+rld,2,NeurID (single medoid),20230322-21-41-10,1
+rld,2,CPD,20230322-21-41-10,1
+rld,2,fDNC,20230322-21-41-10,1
+rld,2,NuCLR,20230322-21-41-10,1
+rld,2,GeoTransformer,20230322-21-41-10,1
+rld,2,NGM-v2,20230322-21-41-10,1
+rld,2,Vanilla FGW,20230322-21-41-10,1
+rld,2,FUGW (G+A; official),20230322-21-41-10,1
+rld,3,NeurID (single medoid),20230909-16-14-25,1
+rld,3,CPD,20230909-16-14-25,1
+rld,3,fDNC,20230909-16-14-25,1
+rld,3,NuCLR,20230909-16-14-25,1
+rld,3,GeoTransformer,20230909-16-14-25,1
+rld,3,NGM-v2,20230909-16-14-25,1
+rld,3,Vanilla FGW,20230909-16-14-25,1
+rld,3,FUGW (G+A; official),20230909-16-14-25,1
+rld,4,NeurID (single medoid),20230909-16-14-25,1
+rld,4,CPD,20230909-16-14-25,1
+rld,4,fDNC,20230909-16-14-25,1
+rld,4,NuCLR,20230909-16-14-25,1
+rld,4,GeoTransformer,20230909-16-14-25,1
+rld,4,NGM-v2,20230909-16-14-25,1
+rld,4,Vanilla FGW,20230909-16-14-25,1
+rld,4,FUGW (G+A; official),20230909-16-14-25,1

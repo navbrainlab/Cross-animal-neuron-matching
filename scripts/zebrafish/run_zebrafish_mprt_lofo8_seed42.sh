@@ -5,14 +5,13 @@ action="${1:-all}"  # prepare | audit | train | lock | unlock | test | aggregate
 
 repo_root="${REPO_ROOT:-/home/ubuntu/klb/nuclr/nuclr}"
 python_bin="${PYTHON_BIN:-/home/ubuntu/anaconda3/envs/nuclr310/bin/python}"
-mprt_root="${MPRT_ROOT:-$repo_root/neurid}"
+mprt_root="${MPRT_ROOT:-$repo_root/mprt_net_v1_1}"
 source_root="${SOURCE_ROOT:-$repo_root/Data/Zebrafish_LOFO8_joint_from_scratch}"
 data_root="${DATA_ROOT:-$repo_root/Data/Zebrafish_MPRT_LOFO8_60m}"
 run_root="${RUN_ROOT:-$repo_root/runs/mprt_v1_1/zebrafish_lofo8_seed42}"
 legacy_fold1_full="${LEGACY_FOLD1_FULL:-$repo_root/runs/mprt_v1_1/zebrafish_lofo/fold1/seed42/full}"
 lock_manifest="$run_root/LOCKED_BEFORE_TEST.json"
 epochs="${EPOCHS:-80}"
-device="${DEVICE:-cuda}"
 
 read -r -a fold_array <<< "${FOLDS:-1 2 3 4 5 6 7 8}"
 read -r -a seed_array <<< "${SEEDS:-42}"
@@ -22,7 +21,6 @@ read -r -a gpu_array <<< "${GPUS:-0 1}"
 script_root="$repo_root/scripts/zebrafish"
 prepare_script="$script_root/prepare_zebrafish_mprt_lofo8_seed42.py"
 lock_script="$script_root/lock_zebrafish_mprt_seed42_pretest.py"
-euclidean_script="$script_root/evaluate_zebrafish_euclidean.py"
 permutation_script="$script_root/audit_zebrafish_mprt_permutation.py"
 aggregate_script="$script_root/aggregate_zebrafish_mprt_lofo8_seed42.py"
 
@@ -30,14 +28,13 @@ die() { echo "ERROR: $*" >&2; exit 2; }
 require_file() { [[ -f "$1" ]] || die "missing file: $1"; }
 require_dir() { [[ -d "$1" ]] || die "missing directory: $1"; }
 
-for script in "$prepare_script" "$lock_script" "$euclidean_script" \
+for script in "$prepare_script" "$lock_script" \
               "$permutation_script" "$aggregate_script"; do
   require_file "$script"
 done
 require_dir "$mprt_root/mprt_net"
 require_dir "$source_root"
 (( ${#gpu_array[@]} > 0 )) || die "GPUS cannot be empty"
-[[ "$device" == "cuda" || "$device" == "cpu" ]] || die "DEVICE must be cuda or cpu"
 
 run_directory() {
   local fold="$1" seed="$2" variant="$3"
@@ -84,7 +81,7 @@ audit_stage() {
       CUDA_VISIBLE_DEVICES="${gpu_array[0]}" "$python_bin" -m mprt_net.self_check \
         --dataset-root "$data_root/fold_${fold}" \
         --split "$split" \
-        --device "$device"
+        --device cuda
     done
   done
 }
@@ -128,7 +125,7 @@ train_one() {
     --sinkhorn-iterations 20 \
     --transport-steps 2 \
     --structural-weight 1.0 \
-    --device "$device" \
+    --device cuda \
     2>&1 | tee "$directory/train.log"
 }
 
@@ -202,7 +199,7 @@ test_one() {
     --checkpoint "$checkpoint" \
     --activity-length 128 \
     --min-shared 20 \
-    --device "$device" \
+    --device cuda \
     --output "$directory/test_metrics.json" \
     --pair-output "$directory/test_pair_metrics.jsonl" \
     2>&1 | tee "$directory/test_eval.log"
@@ -241,18 +238,6 @@ test_stage() {
 
   cd "$mprt_root"
   for fold in {1..8}; do
-    baseline_dir="$run_root/baselines/fold_${fold}"
-    mkdir -p "$baseline_dir"
-    if [[ ! -f "$baseline_dir/euclidean.json" ]]; then
-      "$python_bin" "$euclidean_script" \
-        --dataset-root "$data_root/fold_${fold}" \
-        --split test \
-        --activity-length 128 \
-        --min-shared 20 \
-        --output "$baseline_dir/euclidean.json" \
-        --pair-output "$baseline_dir/euclidean_pairs.jsonl"
-    fi
-
     audit_dir="$run_root/audits/fold_${fold}"
     mkdir -p "$audit_dir"
     full_seed42="$(run_directory "$fold" 42 full)/best.pt"
@@ -263,7 +248,7 @@ test_stage() {
         --split test \
         --activity-length 128 \
         --min-shared 20 \
-        --device "$device" \
+        --device cuda \
         --output "$audit_dir/permutation_full_seed42.json"
     fi
   done

@@ -21,9 +21,9 @@ fi
 OFFICIAL_FOLD=$((FOLD + 1))
 
 DATA_ROOT="$ROOT/Data/Dunn_001623/cv5_grouped_v1/fold_${FOLD}"
-TRAIN_SCRIPT="$ROOT/baselines/official/adapters/fdnc_finetune/train_fdnc_official_finetune.py"
+TRAIN_SCRIPT="$ROOT/benchmark_official/adapters/fdnc_finetune/train_fdnc_official_finetune.py"
 MEDOID_EVAL_SCRIPT="$ROOT/scripts/fair_identity/evaluate_train_reference_ensemble.py"
-PRETRAINED="$ROOT/baselines/official/third_party/fdnc_official/model/model.bin"
+PRETRAINED="$ROOT/benchmark_official/third_party/fdnc_official/model/model.bin"
 EXPECTED_PRETRAINED_SHA256="ab529eb6a886cb6ab3f199b7aaa4e49b82562dc280b3ac736ed61e25d5138ec9"
 
 RUN_ROOT="$ROOT/runs/fdnc_current_grouped_cv_v2/rld/fold${FOLD}/seed${SEED}"

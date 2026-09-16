@@ -1,0 +1,12 @@
+method,query_uid,node_index,gt_identity,rank,top1_correct,top5_correct,hungarian_correct,top1_identity,top5_identity_list,hungarian_identity,note
+CPD,1,1,1,1,1,1,0,1,0,0,Top-1 identity saved; Top-5 identity list and per-query Hungarian assignment not saved
+fDNC,1,1,1,1,1,1,0,1,0,0,Top-1 identity saved; Top-5 identity list and per-query Hungarian assignment not saved
+GeoTransformer,1,1,1,1,1,1,1,1,0,0,Top-1 identity saved; only Top-5/Hungarian correctness saved
+NGM-v2,1,1,1,1,1,1,1,1,1,0,"FullScore replay export includes the complete matrix, candidate order, stable Top-5 list, and explicit tie diagnostics for every medoid-covered query"
+Vanilla FGW,1,1,1,1,1,1,1,1,0,0,Top-1 identity saved; only Top-5/Hungarian correctness saved
+FUGW (G+A; official),1,1,1,1,1,1,1,1,1,1,"Official FUGW full score matrix, candidate order, stable Top-5 list, and Hungarian-predicted identity saved"
+StatAtlas,1,1,1,1,1,1,1,1,0,1,Top-1 and Hungarian identities saved; Top-5 identity list not saved
+CRF_ID,1,1,1,1,1,1,1,1,0,0,Normalized evaluator saved Top-1 identity and correctness flags; full score matrices remain in server raw outputs
+NuCLR,1,1,1,1,1,1,1,0,0,0,Saved query rows contain integer GT/rank/correctness only
+NeurID (single medoid),1,1,1,1,1,1,1,0,0,0,Saved query rows contain ranks/correctness only
+NeurID (population atlas),1,1,1,1,1,1,1,0,0,0,Saved query rows contain ranks/correctness only

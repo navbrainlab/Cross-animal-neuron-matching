@@ -1,0 +1,20 @@
+{
+  "contrast": "NeuRID minus CRF_ID",
+  "metric": "Top-1 accuracy",
+  "unit": "held-out fish",
+  "n": 8,
+  "mean_delta": 0.01046366774473867,
+  "mean_delta_pp": 1.046366774473867,
+  "sd_delta": 0.024440936200020195,
+  "sd_delta_pp": 2.4440936200020196,
+  "se_delta": 0.008641175862791024,
+  "se_delta_pp": 0.8641175862791024,
+  "ci_level": 0.95,
+  "ci_method": "two-sided paired t interval over held-out-fish differences",
+  "degrees_of_freedom": 7,
+  "t_critical": 2.3646242510102993,
+  "ci_low": -0.009969466257661833,
+  "ci_high": 0.03089680174713917,
+  "ci_low_pp": -0.9969466257661832,
+  "ci_high_pp": 3.089680174713917
+}

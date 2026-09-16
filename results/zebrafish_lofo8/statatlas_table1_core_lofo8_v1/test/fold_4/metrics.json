@@ -1,0 +1,142 @@
+{
+  "deterministic": true,
+  "display_name": "StatAtlas",
+  "endpoint_truth_used_for_metrics_only": true,
+  "endpoint_truth_used_in_scoring": false,
+  "fold": 4,
+  "lock_sha256": "c8a196b46e7328c80884ea6eae86c3b47a0ad76c4503054f82a1355b3fd02120",
+  "method": "statatlas",
+  "metrics": {
+    "hungarian": 0.9637362637362638,
+    "mrr": 0.9706959706959702,
+    "queries": 1820,
+    "top1": 0.9439560439560439,
+    "top5": 1.0
+  },
+  "physical_pairs": 13,
+  "q_and_r_timepoints_used_in_atlas": false,
+  "reference_protocol": "same-fish leave-two-timepoints-out per physical q/r pair",
+  "schema": "zebrafish-statatlas-table1-core-lofo8-v1",
+  "seed": null,
+  "selected_config": {
+    "covariance_ridge_fraction": 1e-08,
+    "icp_trim": 0.8
+  },
+  "source_hashes": {
+    "evaluator": "8284f4f0705cb68fab003826c117e3710179b74b63c24b436d495220c20dd450",
+    "multireference_loader": "59b85e5f39a0ab26259606ea0f9392759b02536a2281689f8bbd2f031b859c89",
+    "query_record_io": "749a4c8d9e32d9a664e86e5705d8394a7fb724a8d914c3423c357d3c1e5ee2b8",
+    "table1_statatlas_adapter": "9821dc56877ba24d819e1305056bc3f5732b697e212e261f6818c1a86bb09d13"
+  },
+  "test_manifest": {
+    "entries": [
+      {
+        "name": "islet_20170202__gap60m__p000__q.npz",
+        "sha256": "b26476cb57d7e056543ddade9480a978c103fae6f286b4a99190474af4606c8d"
+      },
+      {
+        "name": "islet_20170202__gap60m__p000__r.npz",
+        "sha256": "156ae018ab2a237338cbb23f75839376ab14a4518a57a2d187e37cf1727af0bc"
+      },
+      {
+        "name": "islet_20170202__gap60m__p001__q.npz",
+        "sha256": "e44b4a39764b1de27f4a92f106875afb6ee09c2878c77b592381b5a7b6ffd5e5"
+      },
+      {
+        "name": "islet_20170202__gap60m__p001__r.npz",
+        "sha256": "90d9be02e852d6f84d51f79048497efb8b5b49964fb1d50815df4355374a82e3"
+      },
+      {
+        "name": "islet_20170202__gap60m__p002__q.npz",
+        "sha256": "1339812d5b3cb900b1b98ad68d0294ff51c6dbe43c6fe9881739d835c6607478"
+      },
+      {
+        "name": "islet_20170202__gap60m__p002__r.npz",
+        "sha256": "4acb12e33fd0694e47a6c56f66f0c27fa4df160b9cbbba27a3ac3e2c6a4e224a"
+      },
+      {
+        "name": "islet_20170202__gap60m__p003__q.npz",
+        "sha256": "c65c13b3c322d1b11e7fb43094df50e49a4c3ee2ecbdae73b5a2c74b748a4109"
+      },
+      {
+        "name": "islet_20170202__gap60m__p003__r.npz",
+        "sha256": "dc64988f12539af25264e0c6582d3070afb743efde8c74445fea68725457763d"
+      },
+      {
+        "name": "islet_20170202__gap60m__p004__q.npz",
+        "sha256": "fa4608cc8e773e94a0134e6896711d2a308170ca4fe09d851e67d49d29af9b53"
+      },
+      {
+        "name": "islet_20170202__gap60m__p004__r.npz",
+        "sha256": "94fa62ce40d0a861c3d6778c11aefdb93f20f678e29e587f54b964993f0c8413"
+      },
+      {
+        "name": "islet_20170202__gap60m__p005__q.npz",
+        "sha256": "c26cfb92b3582915db0cad298a01724f128dc4bea511a92a3654e60305f74e1a"
+      },
+      {
+        "name": "islet_20170202__gap60m__p005__r.npz",
+        "sha256": "3c4103049843256b448984b907303d7bb007dbb972f1c82022b906095271df8d"
+      },
+      {
+        "name": "islet_20170202__gap60m__p006__q.npz",
+        "sha256": "a98576d3d2bbacc3885c4f0b228c50a7c049a2a44d1f53dbc2bb1bb2cb1c37cb"
+      },
+      {
+        "name": "islet_20170202__gap60m__p006__r.npz",
+        "sha256": "bfd21e0bc79b08d1dbb5b20bd04db432b3921520434708aa1b995a170a7d06d8"
+      },
+      {
+        "name": "islet_20170202__gap60m__p007__q.npz",
+        "sha256": "4c35341d17e8bbd05b48fbf4430f0b256b7b079b786da393f9ecee6e202648ad"
+      },
+      {
+        "name": "islet_20170202__gap60m__p007__r.npz",
+        "sha256": "8a519143c32bc999125819e3e2c3bf79658d2bf6290100cf27e51b87d6f4cdff"
+      },
+      {
+        "name": "islet_20170202__gap60m__p008__q.npz",
+        "sha256": "dbe62aa2074e594debadd9b8ddc8d37c138bfe2bad91399b6e5854a2ea3ca255"
+      },
+      {
+        "name": "islet_20170202__gap60m__p008__r.npz",
+        "sha256": "c25c28f39b7fa2845e83399578a5a2897b3cd5d5fa2cba3e6b966052762c70d5"
+      },
+      {
+        "name": "islet_20170202__gap60m__p009__q.npz",
+        "sha256": "03f7cf95153eea6b762184580c910a90140f1b7e495678473931316ac703a275"
+      },
+      {
+        "name": "islet_20170202__gap60m__p009__r.npz",
+        "sha256": "24fc8402ee66267c10b7edca9af21f5f6ad0a923b5ae009b5c3b0abaecdd57ef"
+      },
+      {
+        "name": "islet_20170202__gap60m__p010__q.npz",
+        "sha256": "69bb91741265b4659c2b041e88570a05819c43c59ad49730e7e6d75702bed6fa"
+      },
+      {
+        "name": "islet_20170202__gap60m__p010__r.npz",
+        "sha256": "f69570fb435523f711ff3eacd5f2f434f4083517b27a3dbd2704f535284fa6e1"
+      },
+      {
+        "name": "islet_20170202__gap60m__p011__q.npz",
+        "sha256": "bd8ab7b95f12f44afe2f4b61d74eec9da4b9dd649d850fc695cf4940331db3fd"
+      },
+      {
+        "name": "islet_20170202__gap60m__p011__r.npz",
+        "sha256": "163e018b9db3a1040672acf90ab4527d356db60d4f92adf69848fcc81d3b0137"
+      },
+      {
+        "name": "islet_20170202__gap60m__p012__q.npz",
+        "sha256": "7bf7ba8cd6eaa31589275bd6aa038d2120e7cd7ae85ed2ea461cff4e96d595db"
+      },
+      {
+        "name": "islet_20170202__gap60m__p012__r.npz",
+        "sha256": "7b43480aa6f672f4ecd02b7364ae97bb7ec1f4b1a3d8c91287f3815b746fcb61"
+      }
+    ],
+    "sha256": "fa040cbcf5fd73948591f0d7b0cea45e8bcf02044dca062b95a0867b07a9243c",
+    "source_files": 26,
+    "split": "test"
+  }
+}

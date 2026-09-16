@@ -1,4 +1,6 @@
 import argparse
+import csv
+import gzip
 import json
 from pathlib import Path
 
@@ -11,6 +13,7 @@ from dataset import test_data_loader
 from model import create_model
 from loss import build_dense_scores
 from evaluate_semantic import load_checkpoint
+from scripts.zebrafish.query_record_io import QUERY_COLUMNS, records_from_score_matrix
 
 
 def move_to_device(x, device):
@@ -225,12 +228,36 @@ def main():
         type=int,
         default=3536,
     )
+    ap.add_argument("--query-output", type=Path, default=None)
+    ap.add_argument("--fold", type=int, choices=range(1, 9), default=None)
+    ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--num-workers", type=int, default=0)
 
     args = ap.parse_args()
 
     device = torch.device(args.device)
+    if device.type == "cpu":
+        # The pinned upstream revision constructs several temporary tensors
+        # with a literal ``.cuda()``.  For CPU-only archival replay, redirect
+        # only that no-argument convenience call; model/data placement still
+        # follows the explicit ``device`` above.
+        torch.Tensor.cuda = lambda self, *unused_args, **unused_kwargs: self
+        def _cpu_index_select(data, index, dim):
+            selected = data.index_select(dim, index.reshape(-1))
+            if index.ndim > 1:
+                shape = data.shape[:dim] + index.shape + data.shape[dim + 1:]
+                selected = selected.reshape(*shape)
+            return selected
+        import geotransformer.modules.kpconv.kpconv as _kpconv
+        import geotransformer.modules.kpconv.functional as _kpfunctional
+        import geotransformer.modules.ops.pointcloud_partition as _partition
+        import geotransformer.modules.registration.matching as _matching
+        for _module in (_kpconv, _kpfunctional, _partition, _matching):
+            if hasattr(_module, "index_select"):
+                _module.index_select = _cpu_index_select
 
     cfg = make_cfg()
+    cfg.test.num_workers = args.num_workers
 
     loader_result = test_data_loader(cfg)
 
@@ -255,6 +282,7 @@ def main():
     }
 
     pair_rows = []
+    query_rows = []
 
     with torch.no_grad():
 
@@ -292,6 +320,34 @@ def main():
                 ref_ids,
                 src_ids,
             )
+            if args.query_output:
+                if args.fold is None:
+                    raise ValueError("--fold is required with --query-output")
+                gt = (
+                    (ref_ids[:, None] == src_ids[None, :])
+                    & (ref_ids[:, None] >= 0)
+                    & (src_ids[None, :] >= 0)
+                )
+                row_target = torch.where(
+                    gt.any(dim=1), gt.float().argmax(dim=1), -torch.ones(gt.shape[0], device=gt.device, dtype=torch.long)
+                )
+                col_target = torch.where(
+                    gt.any(dim=0), gt.float().argmax(dim=0), -torch.ones(gt.shape[1], device=gt.device, dtype=torch.long)
+                )
+                query_rows.extend(records_from_score_matrix(
+                    method="geotransformer", fold=args.fold, seed=args.seed,
+                    pair_index=total["pairs"],
+                    pair_id=Path(data_dict["ref_name"][0] if isinstance(data_dict["ref_name"], list) else data_dict["ref_name"]).stem.rsplit("__q", 1)[0],
+                    score=dense.detach().cpu().numpy(),
+                    valid_score=(dense > -1e8).detach().cpu().numpy(),
+                    q_uid=Path(data_dict["ref_name"][0] if isinstance(data_dict["ref_name"], list) else data_dict["ref_name"]).stem,
+                    r_uid=Path(data_dict["src_name"][0] if isinstance(data_dict["src_name"], list) else data_dict["src_name"]).stem,
+                    q_ids=ref_ids.detach().cpu().numpy(),
+                    r_ids=src_ids.detach().cpu().numpy(),
+                    row_target=row_target.detach().cpu().numpy(),
+                    col_target=col_target.detach().cpu().numpy(),
+                    top1_from_prediction=True,
+                ))
 
             total["pairs"] += 1
 
@@ -389,6 +445,13 @@ def main():
         )
         + "\n"
     )
+    if args.query_output:
+        args.query_output.parent.mkdir(parents=True, exist_ok=True)
+        opener = gzip.open if args.query_output.suffix == ".gz" else open
+        with opener(args.query_output, "wt", encoding="utf-8", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=QUERY_COLUMNS)
+            writer.writeheader()
+            writer.writerows(query_rows)
 
     print("Saved:", out)
 

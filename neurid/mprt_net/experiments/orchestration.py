@@ -117,7 +117,12 @@ def run_command(
     environment["CUDA_VISIBLE_DEVICES"] = gpu
     log_path.parent.mkdir(parents=True, exist_ok=True)
     with PRINT_LOCK:
-        print(f"[RUN GPU{gpu}] {shlex.join(command)}", flush=True)
+        rendered = (
+            shlex.join(command)
+            if hasattr(shlex, "join")
+            else " ".join(shlex.quote(item) for item in command)
+        )
+        print(f"[RUN GPU{gpu}] {rendered}", flush=True)
     with log_path.open("w", encoding="utf-8") as log:
         process = subprocess.Popen(
             command,

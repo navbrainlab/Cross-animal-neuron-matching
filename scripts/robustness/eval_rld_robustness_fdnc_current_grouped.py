@@ -12,6 +12,9 @@ CORR_ROOT = ROOT / "runs/rld_robustness_cv5_seed42_v2/corruptions"
 CLEAN_ROOT = ROOT / "runs/fdnc_current_grouped_cv_v2/rld"
 OUT_ROOT = ROOT / "runs/rld_robustness_cv5_seed42_v2/results/fdnc"
 EVAL = ROOT / "scripts/fair_identity/evaluate_train_reference_ensemble.py"
+CANONICAL_QUERY_MANIFEST = (
+    ROOT / "runs/unified_main_benchmark_cv5_seed42_v2/canonical_query_manifest.csv"
+)
 
 COND_RE = re.compile(r"^(coord_noise|missing|outlier)_l([0-9]+(?:\.[0-9]+)?)_p([0-9]+)$")
 
@@ -88,20 +91,53 @@ def exact_clean_guard(saved:dict,replay:dict,fold:int):
         raise RuntimeError(f"fold{fold} clean replay mismatch: {bad}")
     print(f"[CLEAN GUARD EXACT] fold{fold}",flush=True)
 
-def result_row(fold,row,report,clean):
+def canonical_queries(path: Path):
+    frame = pd.read_csv(path)
+    frame = frame[frame["dataset"] == "rld"]
+    return {
+        (int(fold), str(uid)): set(zip(group["node_index"].astype(int), group["identity"].astype(str)))
+        for (fold, uid), group in frame.groupby(["fold", "uid"])
+    }
+
+
+def canonical_query_count(fold: int, root: Path, canonical: dict) -> int:
+    condition = loadj(root / "CORRUPTION.json")
+    total = 0
+    for record in condition["files"]:
+        uid = str(record["recording_uid"])
+        kept = set(int(value) for value in record["kept_source_indices"])
+        total += sum(
+            int(source_row in kept)
+            for source_row, _ in canonical.get((fold, uid), set())
+        )
+    return total
+
+
+def result_row(fold,row,report,clean,canonical,clean_canonical_q):
     m=metric_block(report); cm=metric_block(clean)
-    q=int(m["queries"]); cq=int(cm["queries"])
-    cov=q/cq if cq else float("nan")
+    native_q=int(m["queries"]); clean_native_q=int(cm["queries"])
+    q=canonical_query_count(fold,row["root"],canonical)
+    correct=float(m["top1"])*native_q
+    top5_correct=float(m["top5"])*native_q
+    rr_sum=float(m["mrr"])*native_q
+    hungarian_correct=float(m["hungarian_accuracy"])*native_q
+    cov=q/clean_canonical_q if clean_canonical_q else float("nan")
     return {
         "fold":fold,"kind":row["kind"],"severity":row["severity"],
         "perturbation_seed":row["perturbation_seed"],
-        "queries":q,"clean_queries":cq,
-        "top1":float(m["top1"]),"top5":float(m["top5"]),
-        "mrr":float(m["mrr"]),"hungarian":float(m["hungarian_accuracy"]),
+        "queries":q,"clean_queries":clean_canonical_q,
+        "reference_covered_queries":native_q,
+        "clean_reference_covered_queries":clean_native_q,
+        "reference_coverage":native_q/q if q else float("nan"),
+        "top1":correct/q if q else float("nan"),
+        "top5":top5_correct/q if q else float("nan"),
+        "mrr":rr_sum/q if q else float("nan"),
+        "hungarian":hungarian_correct/q if q else float("nan"),
+        "conditional_top1_reference_covered":float(m["top1"]),
         "coverage_vs_clean":cov,
-        "effective_top1":float(m["top1"])*cov,
-        "effective_top5":float(m["top5"])*cov,
-        "effective_hungarian":float(m["hungarian_accuracy"])*cov,
+        "effective_top1":correct/clean_canonical_q if clean_canonical_q else float("nan"),
+        "effective_top5":top5_correct/clean_canonical_q if clean_canonical_q else float("nan"),
+        "effective_hungarian":hungarian_correct/clean_canonical_q if clean_canonical_q else float("nan"),
         "template_uid":report["template_selection"]["template_uid"],
         "checkpoint":report["checkpoint"],
     }
@@ -117,7 +153,7 @@ def summarize(rows):
     for (kind,sev),g in fold_df.groupby(["kind","severity"]):
         r={"kind":kind,"severity":float(sev),"folds":int(len(g))}
         for k in metrics:
-            v=g[k].to_numpy(float)
+            v=g[k].values.astype(float)
             r[k+"_mean"]=float(v.mean())
             r[k+"_sd"]=float(v.std(ddof=1)) if len(v)>1 else 0.0
         out.append(r)
@@ -134,7 +170,7 @@ def summarize(rows):
               f"EffTop1={100*r['effective_top1_mean']:.2f}±{100*r['effective_top1_sd']:.2f}%")
 
 def main():
-    global CORR_ROOT, OUT_ROOT
+    global CORR_ROOT, OUT_ROOT, CANONICAL_QUERY_MANIFEST
     ap=argparse.ArgumentParser()
     ap.add_argument("--folds",default="0")
     ap.add_argument("--kinds",default="coord_noise")
@@ -142,15 +178,23 @@ def main():
     ap.add_argument("--corruption-root",type=Path,default=CORR_ROOT)
     ap.add_argument("--out-root",type=Path,default=OUT_ROOT)
     ap.add_argument("--device",default="cuda")
+    ap.add_argument("--canonical-query-manifest",type=Path,default=CANONICAL_QUERY_MANIFEST)
     args=ap.parse_args()
     CORR_ROOT=args.corruption_root.resolve()
     OUT_ROOT=args.out_root.resolve()
+    CANONICAL_QUERY_MANIFEST=args.canonical_query_manifest.resolve()
+    canonical=canonical_queries(CANONICAL_QUERY_MANIFEST)
     folds=[int(x) for x in args.folds.split(",") if x.strip()]
     kinds={x.strip() for x in args.kinds.split(",") if x.strip()}
     allrows=[]
     for fold in folds:
         base,ckpt,clean_metrics_path=clean_paths(fold)
         clean=loadj(clean_metrics_path)
+        clean_canonical_q=sum(
+            len(query_rows)
+            for (candidate_fold, _uid), query_rows in canonical.items()
+            if candidate_fold == fold
+        )
 
         # Always replay severity0 through corruption materialization first.
         zero=CORR_ROOT/f"fold{fold}/coord_noise_l0.00_p0"
@@ -158,13 +202,21 @@ def main():
         zr=dict(fold=fold,kind="coord_noise",severity=0.0,perturbation_seed=0,name=zero.name,root=zero)
         replay=run_condition(fold,zr,ckpt,args.force,args.device)
         exact_clean_guard(clean,replay,fold)
-        allrows.append(result_row(fold,zr,replay,clean))
+        allrows.append(result_row(fold,zr,replay,clean,canonical,clean_canonical_q))
 
         for row in discover(fold,kinds):
             if row["kind"]=="coord_noise" and abs(row["severity"])<1e-15 and row["perturbation_seed"]==0:
                 continue
             rep=run_condition(fold,row,ckpt,args.force,args.device)
-            allrows.append(result_row(fold,row,rep,clean))
+            if rep["template_selection"]["template_uid"] != clean["template_selection"]["template_uid"]:
+                raise RuntimeError(
+                    f"fold{fold} {row['name']}: reference changed from "
+                    f"{clean['template_selection']['template_uid']} to "
+                    f"{rep['template_selection']['template_uid']}"
+                )
+            allrows.append(result_row(
+                fold,row,rep,clean,canonical,clean_canonical_q
+            ))
     summarize(allrows)
     print("\nCOMPLETE")
     print("results:",OUT_ROOT)

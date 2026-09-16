@@ -2,8 +2,4 @@ method	repository	commit	branch_or_head
 fDNC	https://github.com/XinweiYu/fDNC_Neuron_ID.git	cbd2b1b2e623c22fe1921562afed1967fe58e139	master
 WormID_NWBelegans	https://github.com/focolab/NWBelegans.git	74e976ac80c38facd396dadbf2f35d913dd0ed6d	main
 Statistical_Atlas_submodule	https://github.com/amin-nejat/stat-atlas.git	29652ab83b6ff870b71a5969e25328fa8e488c90	DETACHED
-NeurPIR	https://github.com/ww20hust/NeurPIR.git	2653d97f79c3ec573973c3c226071156757af235	main
 NuCLR	https://github.com/nerdslab/NuCLR.git	0fa409b304147ace00507063d44f03155691af62	main
-MulT	https://github.com/yaohungt/Multimodal-Transformer.git	a670936824ee722c8494fd98d204977a1d663c7a	master
-NeuPRINT	https://github.com/lumimim/NeuPRINT.git	c3cfddfb87b65d5d1f3aa3b3b75197e4dfccb018	main
-GWTune	https://github.com/oizumi-lab/GWTune.git	8ad4fd949a477f7b7fb6a67205348a3a747026ec	main

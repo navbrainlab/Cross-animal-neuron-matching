@@ -13,7 +13,7 @@ from pathlib import Path
 
 
 CORE_METHOD_ORDER = ("CPD", "fDNC", "NuCLR", "GeoTransformer")
-ATANAS_EXTRA_METHOD_ORDER = ("RGM", "NGM-v2", "Vanilla FGW")
+ATANAS_EXTRA_METHOD_ORDER = ("NGM-v2", "Vanilla FGW")
 METHOD_ORDER = (*CORE_METHOD_ORDER, *ATANAS_EXTRA_METHOD_ORDER, "Ours")
 METRICS = ("top1", "top5", "mrr", "hungarian")
 
@@ -63,22 +63,6 @@ def read_rows(repo: Path) -> list[dict[str, object]]:
                 }
             )
 
-    rgm_path = repo / "runs/unified_benchmark/rgm/atanas/cv5x3_summary.json"
-    with rgm_path.open() as handle:
-        rgm = json.load(handle)
-    for source in rgm["cells"]:
-        if int(source["seed"]) != 42:
-            continue
-        rows.append(
-            {
-                "dataset": "atanas", "method": "RGM", "fold": int(source["fold"]),
-                "seed": 42, "mode": "", "top1": float(source["top1"]),
-                "top5": float(source["top5"]), "mrr": float(source["mrr"]),
-                "hungarian": float(source["hungarian"]), "queries": int(source["queries"]),
-                "source_path": str(rgm_path.relative_to(repo)),
-            }
-        )
-
     for fold in range(5):
         ngm_path = repo / f"runs/unified_benchmark/ngmv2/atanas/fold{fold}/seed42/test_metrics.json"
         with ngm_path.open() as handle:
@@ -103,20 +87,6 @@ def read_rows(repo: Path) -> list[dict[str, object]]:
                 "top5": float(source["top5"]), "mrr": float(source["mrr"]),
                 "hungarian": float(source["hungarian"]), "queries": int(source["queries"]),
                 "source_path": str(fgw_path.relative_to(repo)),
-            }
-        )
-
-    for fold in range(5):
-        rgm_path = repo / f"runs/unified_benchmark/rgm/rld/fold{fold}/seed42/test_metrics.json"
-        with rgm_path.open() as handle:
-            source = json.load(handle)
-        test = source["test"]
-        rows.append(
-            {
-                "dataset": "rld", "method": "RGM", "fold": fold, "seed": 42,
-                "mode": "", "top1": float(test["top1"]), "top5": float(test["top5"]),
-                "mrr": float(test["mrr"]), "hungarian": float(test["hungarian"]),
-                "queries": int(test["queries"]), "source_path": str(rgm_path.relative_to(repo)),
             }
         )
 
@@ -241,10 +211,10 @@ def write_outputs(rows: list[dict[str, object]], output_dir: Path) -> None:
             "## Provenance notes",
             "",
             "- CPD, fDNC, NuCLR, and GeoTransformer are filtered from `runs/fair_identity_medoid_template_v1/cv5x3_summary/cells.csv`.",
-            "- RGM and NGM-v2 use their saved seed-42 fold cells under `runs/unified_benchmark/`; Vanilla FGW uses the corresponding deterministic five-fold results.",
+            "- NGM-v2 uses its saved seed-42 fold cells under `runs/unified_benchmark/`; Vanilla FGW uses the corresponding deterministic five-fold results.",
             "- Ours is filtered from `runs/fair_identity_retest_v1/ours/cells.csv` with `mode=static`.",
             "- CPD is seed-invariant, so its seed-42 values equal its earlier 5-fold result.",
-            "- These CSVs describe the current Atanas/RLD fair-identity benchmark. They are not results for the empty `Data/Atanas21_GWOT_MD_paper` directory.",
+            "- These CSVs describe the manuscript Atanas/Kato fair-identity benchmark.",
         ]
     )
     (output_dir / "BENCHMARK_SEED42.md").write_text("\n".join(lines) + "\n")
@@ -259,9 +229,9 @@ def write_outputs(rows: list[dict[str, object]], output_dir: Path) -> None:
         "ours_mode": "static",
         "metrics_stored_as": "fractions in CSV; Markdown renders Top-1, Top-5, and Hungarian as percentages",
         "validation": {
-            "expected_dataset_method_cells": 16,
+            "expected_dataset_method_cells": 14,
             "observed_dataset_method_cells": len(groups),
-            "expected_fold_rows": 80,
+            "expected_fold_rows": 70,
             "observed_fold_rows": len(rows),
             "all_cells_have_five_distinct_folds": True,
             "all_rows_seed_42": True,
@@ -273,10 +243,7 @@ def write_outputs(rows: list[dict[str, object]], output_dir: Path) -> None:
             }
             for path in source_paths
         ],
-        "scope_note": (
-            "These sources are the current Atanas/RLD fair-identity benchmark, not "
-            "Data/Atanas21_GWOT_MD_paper."
-        ),
+        "scope_note": "These sources are the manuscript Atanas/Kato fair-identity benchmark.",
     }
     (output_dir / "PROTOCOL.json").write_text(
         json.dumps(protocol, indent=2, ensure_ascii=False) + "\n"

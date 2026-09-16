@@ -1,0 +1,15 @@
+{
+  "raw_schema_version": 3,
+  "fold": 0,
+  "severity": 0.3,
+  "perturbation_seed": 0,
+  "setting": "probability_val_r95",
+  "recordings": 19,
+  "known_queries": 270,
+  "synthetic_unknown_queries": 565,
+  "known_top1_real": 0.4888888888888889,
+  "reject_aware_top1": 0.3888888888888889,
+  "known_false_reject_rate": 0.4703703703703704,
+  "unknown_recall": 0.9292035398230089,
+  "unknown_precision": 0.8052147239263804
+}

@@ -1,0 +1,111 @@
+dataset,fold,method,reference_type,reference_uid,candidate_identity_count,candidate_manifest,matches_frozen_reference
+atanas,0,NeurID (single medoid),single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,0,CPD,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,0,fDNC,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,0,NuCLR,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,0,GeoTransformer,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,0,NGM-v2,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,0,Vanilla FGW,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,0,FUGW (G+A; official),single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,0,NeurID (population atlas),learned_population_atlas,,152,population_atlas_outer_train_identities.csv,N/A
+atanas,0,StatAtlas,statistical_atlas,16ac478607b9b79c10ad9ab4d0cad08ebe8bd76b172741a0e643fd85a58c8044,133,statatlas_candidate_identities.csv,N/A
+atanas,0,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A
+atanas,1,NeurID (single medoid),single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,1,CPD,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,1,fDNC,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,1,NuCLR,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,1,GeoTransformer,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,1,NGM-v2,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,1,Vanilla FGW,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,1,FUGW (G+A; official),single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,1,NeurID (population atlas),learned_population_atlas,,152,population_atlas_outer_train_identities.csv,N/A
+atanas,1,StatAtlas,statistical_atlas,782174d7d8b96ebe4b4626aeb63a890cda8e561f0117939845d9da49b1fad93a,136,statatlas_candidate_identities.csv,N/A
+atanas,1,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A
+atanas,2,NeurID (single medoid),single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,2,CPD,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,2,fDNC,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,2,NuCLR,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,2,GeoTransformer,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,2,NGM-v2,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,2,Vanilla FGW,single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,2,FUGW (G+A; official),single_medoid,2023-01-05-18,85,medoid_candidate_identities.csv,1
+atanas,2,NeurID (population atlas),learned_population_atlas,,152,population_atlas_outer_train_identities.csv,N/A
+atanas,2,StatAtlas,statistical_atlas,9d8a9b780ef5a88d52dc02db33b41a77810582cecdd812ec471ac83aa87972c5,135,statatlas_candidate_identities.csv,N/A
+atanas,2,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A
+atanas,3,NeurID (single medoid),single_medoid,2023-01-16-15,87,medoid_candidate_identities.csv,1
+atanas,3,CPD,single_medoid,2023-01-16-15,87,medoid_candidate_identities.csv,1
+atanas,3,fDNC,single_medoid,2023-01-16-15,87,medoid_candidate_identities.csv,1
+atanas,3,NuCLR,single_medoid,2023-01-16-15,87,medoid_candidate_identities.csv,1
+atanas,3,GeoTransformer,single_medoid,2023-01-16-15,87,medoid_candidate_identities.csv,1
+atanas,3,NGM-v2,single_medoid,2023-01-16-15,87,medoid_candidate_identities.csv,1
+atanas,3,Vanilla FGW,single_medoid,2023-01-16-15,87,medoid_candidate_identities.csv,1
+atanas,3,FUGW (G+A; official),single_medoid,2023-01-16-15,87,medoid_candidate_identities.csv,1
+atanas,3,NeurID (population atlas),learned_population_atlas,,157,population_atlas_outer_train_identities.csv,N/A
+atanas,3,StatAtlas,statistical_atlas,989833d59f7c18553f38109d5ab1456c15c927ce556ab32b23a2b8f61b3eec03,136,statatlas_candidate_identities.csv,N/A
+atanas,3,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A
+atanas,4,NeurID (single medoid),single_medoid,2023-01-09-22,93,medoid_candidate_identities.csv,1
+atanas,4,CPD,single_medoid,2023-01-09-22,93,medoid_candidate_identities.csv,1
+atanas,4,fDNC,single_medoid,2023-01-09-22,93,medoid_candidate_identities.csv,1
+atanas,4,NuCLR,single_medoid,2023-01-09-22,93,medoid_candidate_identities.csv,1
+atanas,4,GeoTransformer,single_medoid,2023-01-09-22,93,medoid_candidate_identities.csv,1
+atanas,4,NGM-v2,single_medoid,2023-01-09-22,93,medoid_candidate_identities.csv,1
+atanas,4,Vanilla FGW,single_medoid,2023-01-09-22,93,medoid_candidate_identities.csv,1
+atanas,4,FUGW (G+A; official),single_medoid,2023-01-09-22,93,medoid_candidate_identities.csv,1
+atanas,4,NeurID (population atlas),learned_population_atlas,,156,population_atlas_outer_train_identities.csv,N/A
+atanas,4,StatAtlas,statistical_atlas,f11e2f0890a85768f05cfb197f8ca7f443026b13e5c94579fcc479a2567652b1,135,statatlas_candidate_identities.csv,N/A
+atanas,4,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A
+rld,0,NeurID (single medoid),single_medoid,20240426-22-49-55,7,medoid_candidate_identities.csv,1
+rld,0,CPD,single_medoid,20240426-22-49-55,7,medoid_candidate_identities.csv,1
+rld,0,fDNC,single_medoid,20240426-22-49-55,7,medoid_candidate_identities.csv,1
+rld,0,NuCLR,single_medoid,20240426-22-49-55,7,medoid_candidate_identities.csv,1
+rld,0,GeoTransformer,single_medoid,20240426-22-49-55,7,medoid_candidate_identities.csv,1
+rld,0,NGM-v2,single_medoid,20240426-22-49-55,7,medoid_candidate_identities.csv,1
+rld,0,Vanilla FGW,single_medoid,20240426-22-49-55,7,medoid_candidate_identities.csv,1
+rld,0,FUGW (G+A; official),single_medoid,20240426-22-49-55,7,medoid_candidate_identities.csv,1
+rld,0,NeurID (population atlas),learned_population_atlas,,124,population_atlas_outer_train_identities.csv,N/A
+rld,0,StatAtlas,statistical_atlas,4f4a0b73f5dcf1da7433a92fdf3db4c915eca5f7562b9166db1916e7c5ead2f4,64,statatlas_candidate_identities.csv,N/A
+rld,0,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A
+rld,1,NeurID (single medoid),single_medoid,20240828-17-07-39,17,medoid_candidate_identities.csv,1
+rld,1,CPD,single_medoid,20240828-17-07-39,17,medoid_candidate_identities.csv,1
+rld,1,fDNC,single_medoid,20240828-17-07-39,17,medoid_candidate_identities.csv,1
+rld,1,NuCLR,single_medoid,20240828-17-07-39,17,medoid_candidate_identities.csv,1
+rld,1,GeoTransformer,single_medoid,20240828-17-07-39,17,medoid_candidate_identities.csv,1
+rld,1,NGM-v2,single_medoid,20240828-17-07-39,17,medoid_candidate_identities.csv,1
+rld,1,Vanilla FGW,single_medoid,20240828-17-07-39,17,medoid_candidate_identities.csv,1
+rld,1,FUGW (G+A; official),single_medoid,20240828-17-07-39,17,medoid_candidate_identities.csv,1
+rld,1,NeurID (population atlas),learned_population_atlas,,145,population_atlas_outer_train_identities.csv,N/A
+rld,1,StatAtlas,statistical_atlas,90f31b75877538c9f1e9ae1b90e9e57a064b089fb0c10944616d78b65b984f08,62,statatlas_candidate_identities.csv,N/A
+rld,1,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A
+rld,2,NeurID (single medoid),single_medoid,20230322-21-41-10,30,medoid_candidate_identities.csv,1
+rld,2,CPD,single_medoid,20230322-21-41-10,30,medoid_candidate_identities.csv,1
+rld,2,fDNC,single_medoid,20230322-21-41-10,30,medoid_candidate_identities.csv,1
+rld,2,NuCLR,single_medoid,20230322-21-41-10,30,medoid_candidate_identities.csv,1
+rld,2,GeoTransformer,single_medoid,20230322-21-41-10,30,medoid_candidate_identities.csv,1
+rld,2,NGM-v2,single_medoid,20230322-21-41-10,30,medoid_candidate_identities.csv,1
+rld,2,Vanilla FGW,single_medoid,20230322-21-41-10,30,medoid_candidate_identities.csv,1
+rld,2,FUGW (G+A; official),single_medoid,20230322-21-41-10,30,medoid_candidate_identities.csv,1
+rld,2,NeurID (population atlas),learned_population_atlas,,143,population_atlas_outer_train_identities.csv,N/A
+rld,2,StatAtlas,statistical_atlas,05579acfaa55e910d229f9738d0d7a23cf616306279da9d9043ba8cc163d6e1b,62,statatlas_candidate_identities.csv,N/A
+rld,2,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A
+rld,3,NeurID (single medoid),single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,3,CPD,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,3,fDNC,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,3,NuCLR,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,3,GeoTransformer,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,3,NGM-v2,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,3,Vanilla FGW,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,3,FUGW (G+A; official),single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,3,NeurID (population atlas),learned_population_atlas,,145,population_atlas_outer_train_identities.csv,N/A
+rld,3,StatAtlas,statistical_atlas,d82ae8c2157cd7cb349991c68596a2e23960779b80bc07693507baa644883ab5,67,statatlas_candidate_identities.csv,N/A
+rld,3,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A
+rld,4,NeurID (single medoid),single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,4,CPD,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,4,fDNC,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,4,NuCLR,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,4,GeoTransformer,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,4,NGM-v2,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,4,Vanilla FGW,single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,4,FUGW (G+A; official),single_medoid,20230909-16-14-25,6,medoid_candidate_identities.csv,1
+rld,4,NeurID (population atlas),learned_population_atlas,,119,population_atlas_outer_train_identities.csv,N/A
+rld,4,StatAtlas,statistical_atlas,a6fb76dffcaa64dc7a654d475fea96ef62ce7dfb49f0af6b6c6b62e474f76100,63,statatlas_candidate_identities.csv,N/A
+rld,4,CRF_ID,relational_atlas,official_crfid_relational_atlas_178,178,crfid_candidate_identities.csv,N/A

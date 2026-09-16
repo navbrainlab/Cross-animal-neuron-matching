@@ -1,0 +1,237 @@
+{
+  "fold_metrics": {
+    "Q": 306,
+    "top1": 0.026143790849673203,
+    "top5": 0.10457516339869281,
+    "mrr": 0.07612682524095367,
+    "hungarian": 0.026143790849673203,
+    "coverage": 0.9803921568627451,
+    "covered_top1": 0.02666666666666667,
+    "covered_top5": 0.10666666666666667,
+    "official_duplicate_accuracy": 0.026143790849673203,
+    "fold": 1,
+    "n_worms": 19
+  },
+  "worms": [
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-18-09-07.npz",
+      "Q": 19,
+      "covered": 17,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.22166514580407548,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": [
+        "REMV",
+        "RID"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-16-13-38.npz",
+      "Q": 24,
+      "covered": 23,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.28840213866615017,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": [
+        "RID"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-17-29-27.npz",
+      "Q": 26,
+      "covered": 25,
+      "top1_correct": 0,
+      "top5_correct": 2,
+      "rr_sum": 1.3630474334188882,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": [
+        "RID"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-21-32-57.npz",
+      "Q": 21,
+      "covered": 20,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.5710986233826899,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": [
+        "RID"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20221106-21-00-09.npz",
+      "Q": 22,
+      "covered": 22,
+      "top1_correct": 0,
+      "top5_correct": 1,
+      "rr_sum": 0.7480462911605622,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-21-41-10.npz",
+      "Q": 30,
+      "covered": 30,
+      "top1_correct": 3,
+      "top5_correct": 15,
+      "rr_sum": 7.132177624336514,
+      "hungarian_correct": 3,
+      "official_correct": 3,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-22-43-03.npz",
+      "Q": 32,
+      "covered": 32,
+      "top1_correct": 2,
+      "top5_correct": 7,
+      "rr_sum": 4.907618746518582,
+      "hungarian_correct": 2,
+      "official_correct": 2,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230502-20-41-23.npz",
+      "Q": 2,
+      "covered": 2,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.2777777777777778,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-17-09-01.npz",
+      "Q": 2,
+      "covered": 2,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.052121212121212124,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-16-32-28.npz",
+      "Q": 7,
+      "covered": 7,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.16380805638542914,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-19-07-30.npz",
+      "Q": 6,
+      "covered": 6,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.0674129005700499,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230904-15-09-05.npz",
+      "Q": 47,
+      "covered": 47,
+      "top1_correct": 0,
+      "top5_correct": 2,
+      "rr_sum": 1.491681049803307,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-15-40-07.npz",
+      "Q": 17,
+      "covered": 17,
+      "top1_correct": 0,
+      "top5_correct": 1,
+      "rr_sum": 0.6730134517546682,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-16-14-25.npz",
+      "Q": 6,
+      "covered": 6,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.2205182750126784,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230921-17-15-33.npz",
+      "Q": 5,
+      "covered": 5,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.17778545028545029,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-19-18-14.npz",
+      "Q": 9,
+      "covered": 9,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.10979802036729205,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-16-04-26.npz",
+      "Q": 8,
+      "covered": 8,
+      "top1_correct": 0,
+      "top5_correct": 0,
+      "rr_sum": 0.5910446495513815,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-15-07-00.npz",
+      "Q": 8,
+      "covered": 8,
+      "top1_correct": 0,
+      "top5_correct": 1,
+      "rr_sum": 0.6326358871480823,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": []
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240829-13-39-15.npz",
+      "Q": 15,
+      "covered": 14,
+      "top1_correct": 3,
+      "top5_correct": 3,
+      "rr_sum": 3.605155789667032,
+      "hungarian_correct": 3,
+      "official_correct": 3,
+      "missing_gt": [
+        "RID"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "dataset": "Atanas/SF 000776",
+  "fold": 0,
+  "query_record": "2022-08-02-01",
+  "query_split": "held-out test",
+  "reference_record": "2022-06-14-13",
+  "reference_split": "train",
+  "pair_selection_rule": "Within the fixed fold, maximize formal shared-identity coverage; break ties by query and reference record name.",
+  "pair_candidates_considered": 176,
+  "shared_formal_identities": 84,
+  "displayed_identities": 84,
+  "identity_order_rule": "Ascending normalized training-reference x, then y, z, then identity name.",
+  "similarity_definition": "Pearson correlation between relation profiles aligned on common named anchors, excluding query and candidate identities.",
+  "gap_definition": "S_same - S_candidate for every wrong candidate",
+  "hard_definition": "Three spatially nearest wrong identities in the training reference from the full shared-identity pool.",
+  "shared_heatmap_color_scale": [
+    -1.0,
+    1.0
+  ],
+  "shared_gap_histogram_range": [
+    -2.0,
+    2.0
+  ],
+  "missing_color": "#BDBDBD",
+  "missing_cells": {
+    "geo": 0,
+    "act": 0
+  },
+  "summary": {
+    "Geometry": {
+      "all_wrong_candidate_gap_median": 0.026465572065233853,
+      "spatial_hard_gap_mean": -0.010333209690469773,
+      "spatial_hard_gap_median": 0.0016605341985284142,
+      "fraction_spatial_hard_gaps_positive": 0.5476190476190477
+    },
+    "Activity": {
+      "all_wrong_candidate_gap_median": 0.46166013984908827,
+      "spatial_hard_gap_mean": 0.3017881919953946,
+      "spatial_hard_gap_median": 0.18505829917178485,
+      "fraction_spatial_hard_gaps_positive": 0.7936507936507936
+    }
+  },
+  "query_export": "/home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility/results/visualization_export_atanas_seed42/neurid_query_neurons_atanas_cv5_seed42.csv",
+  "query_export_sha256": "11ea31c52bd72786692416aba668c549fd9ba024309e952c5d70bbcf8d05af74"
+}

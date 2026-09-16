@@ -14,7 +14,7 @@ import numpy as np
 
 SEEDS = (42,)
 VARIANTS = (
-    ("full", "Full NeuRID"),
+    ("full", "Full MPRT"),
     ("no_transport", "No relation transport"),
     ("geometry_only", "Geometry-only"),
     ("activity_only", "Activity-only"),
@@ -119,9 +119,6 @@ def main() -> None:
                 }
                 rows.append(row)
                 query_counts.add(row["queries"])
-        euclidean_path = run_root / "baselines" / f"fold_{fold}" / "euclidean.json"
-        euclidean = read_metric(euclidean_path)
-        query_counts.add(int(euclidean["queries"]))
         if len(query_counts) != 1:
             raise RuntimeError(f"fold {fold}: query-count mismatch {sorted(query_counts)}")
 
@@ -166,22 +163,6 @@ def main() -> None:
             )
         summary[variant] = {"label": label, "metrics": metric_summary}
 
-    # Euclidean has one deterministic result per held-out fish.
-    euclidean_summary = {}
-    for metric in METRICS:
-        values = np.asarray([
-            float(read_metric(run_root / "baselines" / f"fold_{fold}" / "euclidean.json")[metric])
-            for fold in range(1, 9)
-        ])
-        rng = np.random.default_rng(args.bootstrap_seed + 900 + METRICS.index(metric))
-        boot = values[rng.integers(0, 8, size=(args.bootstrap, 8))].mean(axis=1)
-        euclidean_summary[metric] = {
-            "mean": float(values.mean()),
-            "fish_sd": float(values.std(ddof=1)),
-            "fish_values": values.tolist(),
-            "bootstrap_ci95": [float(np.quantile(boot, 0.025)), float(np.quantile(boot, 0.975))],
-        }
-
     contrast_specs = (
         ("full", "no_transport", "Full_minus_NoTransport"),
         ("full", "geometry_only", "Full_minus_GeometryOnly"),
@@ -223,7 +204,6 @@ def main() -> None:
         "uncertainty": "held-out-fish bootstrap and across-fish SD",
         "fish_names": fish_names,
         "learned_variants": summary,
-        "euclidean": euclidean_summary,
         "paired_top1_contrasts": contrasts,
         "permutation_audit": "PASS for Full/seed42 on every held-out fish",
         "run_metrics_csv": str(csv_path),
@@ -232,7 +212,7 @@ def main() -> None:
     json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     lines = [
-        "# Zebrafish NeuRID: 8-fold LOFO, seed42",
+        "# Zebrafish MPRT-Net: 8-fold LOFO, seed42",
         "",
         "Primary point estimate averages the 8 held-out fish. The ± term below "
         "is the SD across held-out fish; 95% CIs bootstrap held-out fish.",
@@ -240,14 +220,6 @@ def main() -> None:
         "| Method | Top-1 | Top-5 | MRR | Hungarian | Hierarchical 95% CI (Top-1) |",
         "|---|---:|---:|---:|---:|---:|",
     ]
-    eu = euclidean_summary
-    lines.append(
-        "| Euclidean | "
-        f"{pct(eu['top1_real']['mean'])} ± {pct(eu['top1_real']['fish_sd'])} | "
-        f"{pct(eu['top5_real']['mean'])} | {eu['mrr_real']['mean']:.4f} | "
-        f"{pct(eu['hungarian_accuracy']['mean'])} | "
-        f"[{pct(eu['top1_real']['bootstrap_ci95'][0])}, {pct(eu['top1_real']['bootstrap_ci95'][1])}] |"
-    )
     for variant, label in VARIANTS:
         metrics = summary[variant]["metrics"]
         top1 = metrics["top1_real"]

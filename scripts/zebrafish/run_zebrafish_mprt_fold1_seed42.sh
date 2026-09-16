@@ -10,7 +10,7 @@ data_root="${DATA_ROOT:-$repo_root/Data/Zebrafish_MPRT_LOFO8_60m/fold_1}"
 run_root="${RUN_ROOT:-$repo_root/runs/mprt_v1_1/zebrafish_lofo/fold1/seed42/full}"
 gpu="${GPU:-0}"
 
-cd "$repo_root/neurid"
+cd "$repo_root/mprt_net_v1_1"
 
 prepare_stage() {
   "$python_bin" "$repo_root/scripts/zebrafish/prepare_zebrafish_mprt_fold1.py" \

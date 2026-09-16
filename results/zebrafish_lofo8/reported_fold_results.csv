@@ -1,0 +1,81 @@
+method,display_name,fold,test_fish,seed,queries,top1,top5,mrr,hungarian,source_record
+cpd,CPD,1,func_20150410,,3536,0.8472850678733032,0.9906674208144797,0.9107122701757094,0.8925339366515838,../runs/mprt_v1_1/zebrafish_lofo8_seed42/baselines/fold_1/cpd.json
+fdnc,fDNC,1,func_20150410,42,3536,0.5755090497737556,0.9841628959276018,0.742615523773612,0.7632918552036199,../runs/zebrafish_spatial_baselines_lofo8_seed42/fold_1/fdnc/summary.json
+nuclr,NuCLR,1,func_20150410,42,3536,0.021210407239819005,0.09785067873303167,0.0817743788103003,0.027149321266968326,../runs/zebrafish_nuclr_lofo8_seed42/fold_1/summary.json
+geotransformer,GeoTransformer,1,func_20150410,42,3536,0.5958710407239819,0.7304864253393665,0.6566539091222426,0.5797511312217195,../runs/zebrafish_geotransformer_lofo8_seed42/fold_1_k64/summary.json
+ngm_v2,NGM-v2,1,func_20150410,42,3536,0.7683823529411765,0.9660633484162896,0.8526943701250784,0.7635746606334841,../runs/zebrafish_ngmv2_lofo8_seed42/fold_1/summary.json
+vanilla_fgw,Vanilla FGW,1,func_20150410,,3536,0.6620475113122172,0.9994343891402715,0.8045343137254901,0.6532805429864253,../runs/zebrafish_vanilla_fgw_lofo8/fold_1/summary.json
+fugw_ga_official,FUGW (G+A; official),1,func_20150410,,3536,0.556843891402715,0.9479638009049773,0.7237928619370805,0.7279411764705882,../runs/zebrafish_fugw_official_ga_lofo8/fold_1/test_metrics.json
+statatlas,StatAtlas,1,func_20150410,,3536,0.45588235294117646,0.6504524886877828,0.5538285069126535,0.4626696832579186,../runs/zebrafish_statatlas_table1_core_lofo8_v1/test/fold_1/metrics.json
+crf_id_dagger,CRF_ID†,1,func_20150410,,3536,0.9250565610859729,0.9968891402714932,0.9567923733506313,0.9298642533936652,../runs/zebrafish_crfid_table1_core_lofo8_v1/test/fold_1/metrics.json
+ours,Ours,1,func_20150410,42,3536,0.8832013574660633,0.9923642533936652,0.9282412787907803,0.879524886877828,../runs/mprt_v1_1/zebrafish_lofo/fold1/seed42/full/test_metrics.json
+cpd,CPD,2,func_20150417,,3954,0.909711684370258,0.9984825493171472,0.9486053941463303,0.9635811836115327,../runs/mprt_v1_1/zebrafish_lofo8_seed42/baselines/fold_2/cpd.json
+fdnc,fDNC,2,func_20150417,42,3954,0.8495194739504299,1.0,0.920384420839656,0.9797673242286292,../runs/zebrafish_spatial_baselines_lofo8_seed42/fold_2/fdnc/summary.json
+nuclr,NuCLR,2,func_20150417,42,3954,0.03388973191704603,0.13657056145675264,0.10978357509561004,0.03388973191704603,../runs/zebrafish_nuclr_lofo8_seed42/fold_2/summary.json
+geotransformer,GeoTransformer,2,func_20150417,42,3954,0.8080424886191199,0.9099645928174,0.8530529815257047,0.8300455235204856,../runs/zebrafish_geotransformer_lofo8_seed42/fold_2/summary.json
+ngm_v2,NGM-v2,2,func_20150417,42,3954,0.8737986848760748,0.9871016691957512,0.923512660272903,0.8715225088517956,../runs/zebrafish_ngmv2_lofo8_seed42/fold_2/summary.json
+vanilla_fgw,Vanilla FGW,2,func_20150417,,3954,0.8457258472432979,1.0,0.9199839824650142,0.8396560445118867,../runs/zebrafish_vanilla_fgw_lofo8/fold_2/summary.json
+fugw_ga_official,FUGW (G+A; official),2,func_20150417,,3954,0.7870510875063227,0.9926656550328781,0.8794773635031219,0.9185634800202327,../runs/zebrafish_fugw_official_ga_lofo8/fold_2/test_metrics.json
+statatlas,StatAtlas,2,func_20150417,,3954,0.9350025290844715,0.9992412746585736,0.9627550160175352,0.9372787051087507,../runs/zebrafish_statatlas_table1_core_lofo8_v1/test/fold_2/metrics.json
+crf_id_dagger,CRF_ID†,2,func_20150417,,3954,0.9782498735457764,1.0,0.988703422694318,0.9792615073343449,../runs/zebrafish_crfid_table1_core_lofo8_v1/test/fold_2/metrics.json
+ours,Ours,2,func_20150417,42,3954,0.996206373292868,1.0,0.9981031866464339,0.9944360141628731,../runs/mprt_v1_1/zebrafish_lofo8_seed42/fold_2/seed42/full/test_metrics.json
+cpd,CPD,3,func_20161004,,768,0.8776041666666666,1.0,0.9345703125,0.9244791666666666,../runs/mprt_v1_1/zebrafish_lofo8_seed42/baselines/fold_3/cpd.json
+fdnc,fDNC,3,func_20161004,42,768,0.9453125,1.0,0.97265625,1.0,../runs/zebrafish_spatial_baselines_lofo8_seed42/fold_3/fdnc/summary.json
+nuclr,NuCLR,3,func_20161004,42,768,0.01953125,0.11588541666666667,0.0948188674090009,0.018229166666666668,../runs/zebrafish_nuclr_lofo8_seed42/fold_3/summary.json
+geotransformer,GeoTransformer,3,func_20161004,42,768,0.703125,0.87890625,0.7786907951037089,0.6848958333333334,../runs/zebrafish_geotransformer_lofo8_seed42/fold_3/summary.json
+ngm_v2,NGM-v2,3,func_20161004,42,768,0.8177083333333334,0.9934895833333334,0.8916248139880952,0.8072916666666666,../runs/zebrafish_ngmv2_lofo8_seed42/fold_3/summary.json
+vanilla_fgw,Vanilla FGW,3,func_20161004,,768,0.984375,1.0,0.9921875,0.984375,../runs/zebrafish_vanilla_fgw_lofo8/fold_3/summary.json
+fugw_ga_official,FUGW (G+A; official),3,func_20161004,,768,0.7083333333333334,0.9622395833333334,0.8224759898374138,0.8255208333333334,../runs/zebrafish_fugw_official_ga_lofo8/fold_3/test_metrics.json
+statatlas,StatAtlas,3,func_20161004,,768,0.9752604166666666,1.0,0.9876302083333334,0.9791666666666666,../runs/zebrafish_statatlas_table1_core_lofo8_v1/test/fold_3/metrics.json
+crf_id_dagger,CRF_ID†,3,func_20161004,,768,0.9817708333333334,1.0,0.9906684027777777,0.9791666666666666,../runs/zebrafish_crfid_table1_core_lofo8_v1/test/fold_3/metrics.json
+ours,Ours,3,func_20161004,42,768,0.9895833333333334,1.0,0.9947916666666666,0.9895833333333334,../runs/mprt_v1_1/zebrafish_lofo8_seed42/fold_3/seed42/full/test_metrics.json
+cpd,CPD,4,islet_20170202,,1820,0.8472527472527472,0.9923076923076923,0.9142015729631696,0.9,../runs/mprt_v1_1/zebrafish_lofo8_seed42/baselines/fold_4/cpd.json
+fdnc,fDNC,4,islet_20170202,42,1820,0.8406593406593407,1.0,0.9153388278388278,0.9846153846153847,../runs/zebrafish_spatial_baselines_lofo8_seed42/fold_4/fdnc/summary.json
+nuclr,NuCLR,4,islet_20170202,42,1820,0.02032967032967033,0.08021978021978023,0.07770962876697264,0.01868131868131868,../runs/zebrafish_nuclr_lofo8_seed42/fold_4/summary.json
+geotransformer,GeoTransformer,4,islet_20170202,42,1820,0.6824175824175824,0.7758241758241758,0.7269741037389734,0.6780219780219781,../runs/zebrafish_geotransformer_lofo8_seed42/fold_4/summary.json
+ngm_v2,NGM-v2,4,islet_20170202,42,1820,0.8456043956043956,0.9945054945054945,0.9091784406070121,0.8538461538461538,../runs/zebrafish_ngmv2_lofo8_seed42/fold_4/summary.json
+vanilla_fgw,Vanilla FGW,4,islet_20170202,,1820,0.9,1.0,0.95,0.9,../runs/zebrafish_vanilla_fgw_lofo8/fold_4/summary.json
+fugw_ga_official,FUGW (G+A; official),4,islet_20170202,,1820,0.6489010989010989,0.9631868131868132,0.7855898380101073,0.7615384615384615,../runs/zebrafish_fugw_official_ga_lofo8/fold_4/test_metrics.json
+statatlas,StatAtlas,4,islet_20170202,,1820,0.9439560439560439,1.0,0.9706959706959702,0.9637362637362638,../runs/zebrafish_statatlas_table1_core_lofo8_v1/test/fold_4/metrics.json
+crf_id_dagger,CRF_ID†,4,islet_20170202,,1820,0.9626373626373627,0.9994505494505495,0.9808791208791208,0.9659340659340659,../runs/zebrafish_crfid_table1_core_lofo8_v1/test/fold_4/metrics.json
+ours,Ours,4,islet_20170202,42,1820,0.9862637362637363,1.0,0.9927655733548678,0.989010989010989,../runs/mprt_v1_1/zebrafish_lofo8_seed42/fold_4/seed42/full/test_metrics.json
+cpd,CPD,5,islet_20170216,,1464,0.9002732240437158,1.0,0.9450250401522944,0.924863387978142,../runs/mprt_v1_1/zebrafish_lofo8_seed42/baselines/fold_5/cpd.json
+fdnc,fDNC,5,islet_20170216,42,1464,0.9173497267759563,1.0,0.9581056466302369,0.9918032786885246,../runs/zebrafish_spatial_baselines_lofo8_seed42/fold_5/fdnc/summary.json
+nuclr,NuCLR,5,islet_20170216,42,1464,0.03551912568306011,0.15163934426229508,0.11782685640243505,0.03278688524590164,../runs/zebrafish_nuclr_lofo8_seed42/fold_5/summary.json
+geotransformer,GeoTransformer,5,islet_20170216,42,1464,0.805327868852459,0.9576502732240437,0.8731899053021207,0.8715846994535519,../runs/zebrafish_geotransformer_lofo8_seed42/fold_5/summary.json
+ngm_v2,NGM-v2,5,islet_20170216,42,1464,0.8770491803278688,0.9986338797814208,0.928950364298725,0.8756830601092896,../runs/zebrafish_ngmv2_lofo8_seed42/fold_5/summary.json
+vanilla_fgw,Vanilla FGW,5,islet_20170216,,1464,0.9508196721311475,1.0,0.9754098360655737,0.9508196721311475,../runs/zebrafish_vanilla_fgw_lofo8/fold_5/summary.json
+fugw_ga_official,FUGW (G+A; official),5,islet_20170216,,1464,0.7534153005464481,0.9918032786885246,0.8603451079885508,0.894808743169399,../runs/zebrafish_fugw_official_ga_lofo8/fold_5/test_metrics.json
+statatlas,StatAtlas,5,islet_20170216,,1464,0.9706284153005464,1.0,0.9849726775956282,0.9890710382513661,../runs/zebrafish_statatlas_table1_core_lofo8_v1/test/fold_5/metrics.json
+crf_id_dagger,CRF_ID†,5,islet_20170216,,1464,0.9474043715846995,1.0,0.9731329690346083,0.9480874316939891,../runs/zebrafish_crfid_table1_core_lofo8_v1/test/fold_5/metrics.json
+ours,Ours,5,islet_20170216,42,1464,0.9877049180327869,1.0,0.9936247757875203,0.9890710382513661,../runs/mprt_v1_1/zebrafish_lofo8_seed42/fold_5/seed42/full/test_metrics.json
+cpd,CPD,6,lineage_20160328,,938,0.9552238805970149,1.0,0.9742714896130917,0.9808102345415778,../runs/mprt_v1_1/zebrafish_lofo8_seed42/baselines/fold_6/cpd.json
+fdnc,fDNC,6,lineage_20160328,42,938,0.7985074626865671,1.0,0.8882906894100925,0.9498933901918977,../runs/zebrafish_spatial_baselines_lofo8_seed42/fold_6/fdnc/summary.json
+nuclr,NuCLR,6,lineage_20160328,42,938,0.03411513859275053,0.16098081023454158,0.12344733045821307,0.023454157782515993,../runs/zebrafish_nuclr_lofo8_seed42/fold_6/summary.json
+geotransformer,GeoTransformer,6,lineage_20160328,42,938,0.6002132196162047,0.6865671641791045,0.6400171841131345,0.5991471215351812,../runs/zebrafish_geotransformer_lofo8_seed42/fold_6/summary.json
+ngm_v2,NGM-v2,6,lineage_20160328,42,938,0.9093816631130064,0.9968017057569296,0.9462183131959252,0.9125799573560768,../runs/zebrafish_ngmv2_lofo8_seed42/fold_6/summary.json
+vanilla_fgw,Vanilla FGW,6,lineage_20160328,,938,0.7878464818763327,1.0,0.8858386638237384,0.7782515991471215,../runs/zebrafish_vanilla_fgw_lofo8/fold_6/summary.json
+fugw_ga_official,FUGW (G+A; official),6,lineage_20160328,,938,0.5618336886993603,0.9552238805970149,0.7320433295746772,0.673773987206823,../runs/zebrafish_fugw_official_ga_lofo8/fold_6/test_metrics.json
+statatlas,StatAtlas,6,lineage_20160328,,938,0.9434968017057569,1.0,0.9707178393745559,0.9637526652452025,../runs/zebrafish_statatlas_table1_core_lofo8_v1/test/fold_6/metrics.json
+crf_id_dagger,CRF_ID†,6,lineage_20160328,,938,0.9786780383795309,1.0,0.9888059701492538,0.976545842217484,../runs/zebrafish_crfid_table1_core_lofo8_v1/test/fold_6/metrics.json
+ours,Ours,6,lineage_20160328,42,938,0.9786780383795309,1.0,0.9891613388874891,0.9744136460554371,../runs/mprt_v1_1/zebrafish_lofo8_seed42/fold_6/seed42/full/test_metrics.json
+cpd,CPD,7,lineage_20170111,,2492,0.9285714285714286,0.9979935794542536,0.9603705122995146,0.9686998394863563,../runs/mprt_v1_1/zebrafish_lofo8_seed42/baselines/fold_7/cpd.json
+fdnc,fDNC,7,lineage_20170111,42,2492,0.8920545746388443,1.0,0.9430109684323168,0.9879614767255217,../runs/zebrafish_spatial_baselines_lofo8_seed42/fold_7/fdnc/summary.json
+nuclr,NuCLR,7,lineage_20170111,42,2492,0.036115569823434994,0.15409309791332262,0.1180613219398713,0.045746388443017656,../runs/zebrafish_nuclr_lofo8_seed42/fold_7/summary.json
+geotransformer,GeoTransformer,7,lineage_20170111,42,2492,0.666131621187801,0.7359550561797753,0.698506182307799,0.6677367576243981,../runs/zebrafish_geotransformer_lofo8_seed42/fold_7/summary.json
+ngm_v2,NGM-v2,7,lineage_20170111,42,2492,0.8711878009630819,0.9959871589085072,0.9251944317052663,0.8739967897271268,../runs/zebrafish_ngmv2_lofo8_seed42/fold_7/summary.json
+vanilla_fgw,Vanilla FGW,7,lineage_20170111,,2492,0.9454253611556982,1.0,0.9727126805778491,0.9454253611556982,../runs/zebrafish_vanilla_fgw_lofo8/fold_7/summary.json
+fugw_ga_official,FUGW (G+A; official),7,lineage_20170111,,2492,0.6673354735152488,0.9759229534510433,0.7983590925304394,0.8764044943820225,../runs/zebrafish_fugw_official_ga_lofo8/fold_7/test_metrics.json
+statatlas,StatAtlas,7,lineage_20170111,,2492,0.973916532905297,1.0,0.9865904226859283,0.9863563402889246,../runs/zebrafish_statatlas_table1_core_lofo8_v1/test/fold_7/metrics.json
+crf_id_dagger,CRF_ID†,7,lineage_20170111,,2492,0.9747191011235955,0.9979935794542536,0.9853599650750533,0.9799357945425361,../runs/zebrafish_crfid_table1_core_lofo8_v1/test/fold_7/metrics.json
+ours,Ours,7,lineage_20170111,42,2492,0.9995987158908507,1.0,0.9997993579454254,1.0,../runs/mprt_v1_1/zebrafish_lofo8_seed42/fold_7/seed42/full/test_metrics.json
+cpd,CPD,8,lineage_20170925,,2184,0.9271978021978022,1.0,0.9609355961446797,0.9725274725274725,../runs/mprt_v1_1/zebrafish_lofo8_seed42/baselines/fold_8/cpd.json
+fdnc,fDNC,8,lineage_20170925,42,2184,0.9120879120879121,1.0,0.9541361416361415,0.9981684981684982,../runs/zebrafish_spatial_baselines_lofo8_seed42/fold_8/fdnc/summary.json
+nuclr,NuCLR,8,lineage_20170925,42,2184,0.021062271062271064,0.09752747252747253,0.08331012497389076,0.023809523809523808,../runs/zebrafish_nuclr_lofo8_seed42/fold_8/summary.json
+geotransformer,GeoTransformer,8,lineage_20170925,42,2184,0.6959706959706959,0.7944139194139194,0.7414606377318665,0.7060439560439561,../runs/zebrafish_geotransformer_lofo8_seed42/fold_8/summary.json
+ngm_v2,NGM-v2,8,lineage_20170925,42,2184,0.9331501831501832,0.9963369963369964,0.9614768384342561,0.9377289377289377,../runs/zebrafish_ngmv2_lofo8_seed42/fold_8/summary.json
+vanilla_fgw,Vanilla FGW,8,lineage_20170925,,2184,0.9752747252747253,1.0,0.9876373626373627,0.9752747252747253,../runs/zebrafish_vanilla_fgw_lofo8/fold_8/summary.json
+fugw_ga_official,FUGW (G+A; official),8,lineage_20170925,,2184,0.7426739926739927,0.978021978021978,0.8470151615475845,0.8543956043956044,../runs/zebrafish_fugw_official_ga_lofo8/fold_8/test_metrics.json
+statatlas,StatAtlas,8,lineage_20170925,,2184,0.9674908424908425,1.0,0.9830738705738705,0.9816849816849816,../runs/zebrafish_statatlas_table1_core_lofo8_v1/test/fold_8/metrics.json
+crf_id_dagger,CRF_ID†,8,lineage_20170925,,2184,0.9826007326007326,1.0,0.9907661782661781,0.9816849816849816,../runs/zebrafish_crfid_table1_core_lofo8_v1/test/fold_8/metrics.json
+ours,Ours,8,lineage_20170925,42,2184,0.9935897435897436,1.0,0.9967948717948718,0.9935897435897436,../runs/mprt_v1_1/zebrafish_lofo8_seed42/fold_8/seed42/full/test_metrics.json

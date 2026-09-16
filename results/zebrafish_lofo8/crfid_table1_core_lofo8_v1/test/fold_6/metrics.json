@@ -1,0 +1,184 @@
+{
+  "deterministic": true,
+  "display_name": "CRF_ID\u2020",
+  "endpoint_truth_used_for_metrics_only": true,
+  "endpoint_truth_used_in_scoring": false,
+  "fold": 6,
+  "lock_sha256": "04247b976590ed4d22dd0e6e5295227ccb6df1ca6bcc4582c6484d84c32a90f2",
+  "matlab_outputs": {
+    "combined_sha256": "ff032ac180e0f98f3b7fa466f696e564b41ed8c481fc15d45c8b7b25616a581f",
+    "files": [
+      {
+        "file": "pair_000_q_output.mat",
+        "sha256": "951ecb2cf746889c3f8fc3e59936ab5f3b7270088170a9a14afc974d05239cd4"
+      },
+      {
+        "file": "pair_000_r_output.mat",
+        "sha256": "8cd08b9a68a5355995d70e186391279dbf432860547a44f6b9a4b83b62eb9610"
+      },
+      {
+        "file": "pair_001_q_output.mat",
+        "sha256": "e09bfe7539f22d056f3f07b6ca84fd9480ae5ab59737792ee38fe09968d07de0"
+      },
+      {
+        "file": "pair_001_r_output.mat",
+        "sha256": "9b55862a7e21a7b6ef554f578891823aa9de25c855612d4dae438d712b35d3ef"
+      },
+      {
+        "file": "pair_002_q_output.mat",
+        "sha256": "aaf723cd33f979d8f3598ec8ce5bb762edf6ae9cc0f062a11c2341de65781133"
+      },
+      {
+        "file": "pair_002_r_output.mat",
+        "sha256": "579f674eab901c47b60d522bb1aca2dc0095db4f08d0e9ba479da717fae414cb"
+      },
+      {
+        "file": "pair_003_q_output.mat",
+        "sha256": "c3f7db95d5c883524ff2ce44e056ea2198d6512194196fc545a302aa25d5160f"
+      },
+      {
+        "file": "pair_003_r_output.mat",
+        "sha256": "98acc690626a9807c2199c5a455f7637789a4724b8ee11f4cc69a44b2961e6b2"
+      },
+      {
+        "file": "pair_004_q_output.mat",
+        "sha256": "e7e208a3424b12bcedbd8caf6a5402af2601d12fbcba3735d276089b7f740823"
+      },
+      {
+        "file": "pair_004_r_output.mat",
+        "sha256": "a7d9e5f66babda53c57d11e8e93bc0049056633f74a9a0aef14e2ab4c2b195d8"
+      },
+      {
+        "file": "pair_005_q_output.mat",
+        "sha256": "2e131acc050da0b46ad3d26eb9ea022836b3b608fda9414eddbc0aa586dcb41d"
+      },
+      {
+        "file": "pair_005_r_output.mat",
+        "sha256": "bc0dce48507fbbebc49fe7aab92cd7bcbb646db52e25f5278de8cf0b9284ca81"
+      },
+      {
+        "file": "pair_006_q_output.mat",
+        "sha256": "05247a71a3b58ab30bfd90c64c097fa9d793f14473c481f24f9e1b8ac0f19cac"
+      },
+      {
+        "file": "pair_006_r_output.mat",
+        "sha256": "cf13ca387f353ab80edf8dc7a1cf735904512d0379418de973dd13e94f85d5d7"
+      },
+      {
+        "file": "pair_007_q_output.mat",
+        "sha256": "21e11dacaaa479ccd4255d2b7c3da28c486fc22df1fb7622d1dcd62c7340179a"
+      },
+      {
+        "file": "pair_007_r_output.mat",
+        "sha256": "4fc794ce728972c86107d764c8c33aa3439867ed71795d85f16410cf5eb5e90e"
+      }
+    ]
+  },
+  "method": "crf_id_dagger",
+  "metrics": {
+    "hungarian": 0.976545842217484,
+    "mrr": 0.9888059701492538,
+    "queries": 938,
+    "top1": 0.9786780383795309,
+    "top5": 1.0
+  },
+  "physical_pairs": 8,
+  "q_and_r_timepoints_used_in_atlas": false,
+  "reference_protocol": "same-fish leave-two-timepoints-out per physical q/r pair",
+  "schema": "zebrafish-crfid-table1-core-lofo8-v1",
+  "seed": null,
+  "selected_config": {
+    "duplicate_resolution": "official iterative clamping",
+    "graph": "fully_connected",
+    "inference": "UGM_Infer_Conditional+UGM_Infer_LBP",
+    "lambda_DV": 0.0,
+    "lambda_LR": 0.0,
+    "lambda_PA": 0.0,
+    "lambda_angle": 1.0,
+    "lambda_geo": 0.0,
+    "node_potential": "uniform",
+    "pair_score_fn": "B_q @ B_r.T"
+  },
+  "source_hashes": {
+    "evaluator": "86a1827b286117f4acf55f284ff102645208dd68ca779aac90bb63bcd6aba770",
+    "matlab_batch_driver": "cf1bc3076d14330ae0a3ad507751664ae6737a64d63fa120462cfb21931447a4",
+    "official_compare_hidden": "69b27b01ad3afb3c799381fa4a9c0c903c3504a57e1c18355fd837408ca61118",
+    "official_duplicate_labels": "b2d558de562b14d5d36f6ee4084aa86ee368bf05757a15ec12722a0e0a6ef89a",
+    "official_get_relative_angles": "c914624bc0bcf7c55befaa6a2f62d71ee41cc9c1c8389baf6e7635f700de5f4c",
+    "official_ugm_conditional": "17357b3ec041f19c9679afda071d2c1e3a0673918f3da7ce975b58f9b84489b4",
+    "official_ugm_lbp": "a402ca52262e7ff760404d6b35c0bdefb1458e9123efaf4814e6c71091ae1265",
+    "query_record_io": "749a4c8d9e32d9a664e86e5705d8394a7fb724a8d914c3423c357d3c1e5ee2b8",
+    "table1_matlab_adapter": "732f40637f94e0246f55b254b8c8e07c8d2e107a0d009dce39f2a3af426b9283"
+  },
+  "test_manifest": {
+    "entries": [
+      {
+        "name": "lineage_20160328__gap60m__p000__q.npz",
+        "sha256": "337aa9a1d11f764f0a63a202511da9f139967147346ab6a78da26c9907687c2f"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p000__r.npz",
+        "sha256": "ad4025ec33e1f64275d6f4b4f4db7e4a0be1974813b3743fd586f0efb43539fc"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p001__q.npz",
+        "sha256": "f2b732f1472397881a2e44a49de6ebb640205c5bd959e321807a90f761f04915"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p001__r.npz",
+        "sha256": "6d69bd63195bc2bd8af7c0e2aa34aee15d0b93d4b8b3ac69395c742383fb27ae"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p002__q.npz",
+        "sha256": "f59df2065f765c0db03d055525f2c2a9e90a523e4b739b73bbec497faaaf5a99"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p002__r.npz",
+        "sha256": "27819fbb34e528b837e368b8479de2884f19ae0f496949eae22225e07c7b4034"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p003__q.npz",
+        "sha256": "42b02a69ed7fb062bbd49a207cd6a7877261d7c5cb349147c796495772b518ad"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p003__r.npz",
+        "sha256": "0892fa9481c4608bcdf9e4c5834faa427a4c0c72bcc9b65f4225c2fa0e6521d9"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p004__q.npz",
+        "sha256": "c6fe91b9f47663afe16c6baabb0ce86688d89755055efb17824bb02f263ecc07"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p004__r.npz",
+        "sha256": "2bf45949002c232ad6bf37f0f6a13c21197a9f6f9580af0521928687ba615a2c"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p005__q.npz",
+        "sha256": "a987c3e4a5ca54ee6e537ab9b8e8ee67fa699cb7de4b76ce5726ffa3d7bd9835"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p005__r.npz",
+        "sha256": "dd7b0ae43849aa31044b16ea9e54aabe939994da587765bacf7cc4404f34e01d"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p006__q.npz",
+        "sha256": "db146e28cb4108964dd5a7ff449bdbf9f718718544dda5115e33df0a545a3ecd"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p006__r.npz",
+        "sha256": "7251920763ffe0d404d22948f4ff634264fa3a59bbc3d3653a58e0c04ce01aaf"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p007__q.npz",
+        "sha256": "509f32bcd2660298e0ddf43bdd14eb1a4e7e0e1e1a3364cc6ac3920cdda9aba8"
+      },
+      {
+        "name": "lineage_20160328__gap60m__p007__r.npz",
+        "sha256": "6bd399c6331a3005dd282ffb341bb27533f3041c9afa6b437e4786085fa1fa59"
+      }
+    ],
+    "sha256": "58ddeaa52e2eb40340fc0f9d1ead66efbb2c508c3414fc72e83d2b7f824ee7f3",
+    "source_files": 16,
+    "split": "test"
+  }
+}

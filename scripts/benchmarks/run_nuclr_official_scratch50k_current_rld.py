@@ -12,12 +12,12 @@ import numpy as np
 import torch
 
 ROOT = Path("/home/ubuntu/klb/nuclr/nuclr")
-ORIG = ROOT / "baselines/official/adapters/nuclr_official_scratch50k/run_one.py"
+ORIG = ROOT / "benchmark_official/adapters/nuclr_official_scratch50k/run_one.py"
 CV_ROOTS = {
     "atanas": ROOT / "Data/Atanas_SF_unified_000776/cv5_grouped_v1",
     "rld": ROOT / "Data/Dunn_001623/cv5_grouped_v1",
 }
-RUN_ROOT = ROOT / "baselines/official/runs/nuclr_official_scratch50k_current_cv_seed42"
+RUN_ROOT = ROOT / "benchmark_official/runs/nuclr_official_scratch50k_current_cv_seed42"
 
 
 def import_original():
@@ -26,7 +26,7 @@ def import_original():
         ROOT,
         ROOT / "engines",
         ROOT / "table1_clean",
-        ROOT / "baselines" / "official",
+        ROOT / "benchmark_official",
         ORIG.parent,
     ]
     legacy = list(ROOT.rglob("train_hyqurp_nuclr_quantum_crossmodal_v2.py"))

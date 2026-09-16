@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Plot native-CV5 RLD robustness from the formal seed42 summaries."""
+"""Plot canonical-query CV5 RLD robustness from the formal seed42 summary."""
 from __future__ import annotations
 
 import argparse
 import csv
 from pathlib import Path
 
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 from matplotlib.ticker import MultipleLocator, PercentFormatter
@@ -57,45 +59,8 @@ def _read_csv(path: Path):
 
 
 def read_rows(run_root: Path):
-    """Normalize the five native-CV5 summaries to one plotting schema."""
-    rows = []
-
-    for row in _read_csv(run_root / "formal_native_cv5_ours/summary.csv"):
-        rows.append({
-            "method": "ours", "kind": row["kind"],
-            "severity": row["severity"], "top1_mean": row["top1_mean"],
-            "top1_sd": row["top1_sd"],
-        })
-
-    for row in _read_csv(
-        run_root / "formal_native_cv5_cpd_fdnc/summary.csv"
-    ):
-        method = {"CPD": "cpd", "fDNC": "fdnc"}.get(row["method"])
-        if method is None:
-            continue
-        rows.append({
-            "method": method, "kind": row["kind"],
-            "severity": row["severity"], "top1_mean": row["top1_mean"],
-            "top1_sd": row["top1_sd"],
-        })
-
-    numeric_sources = {
-        "geo": (
-            run_root / "results/geotransformer/geotransformer_macro_summary.csv",
-            "top1_mean", "top1_sd",
-        ),
-        "nuclr": (
-            run_root / "results/nuclr/nuclr_macro_summary.csv",
-            "ranking_top1_mean", "ranking_top1_sd",
-        ),
-    }
-    for method, (path, mean_col, sd_col) in numeric_sources.items():
-        for row in _read_csv(path):
-            rows.append({
-                "method": method, "kind": row["kind"],
-                "severity": row["severity"], "top1_mean": row[mean_col],
-                "top1_sd": row[sd_col],
-            })
+    """Read the one shared canonical-query summary for every method."""
+    rows = _read_csv(run_root / "canonical_macro_summary.csv")
 
     expected = {
         (method, kind, severity)
@@ -120,8 +85,8 @@ def read_rows(run_root: Path):
         )
 
     clean_expected = {
-        "ours": 0.6393, "fdnc": 0.4511, "cpd": 0.2651,
-        "geo": 0.1652, "nuclr": 0.1014,
+        "ours": 0.6393, "fdnc": 0.1423, "cpd": 0.0825,
+        "geo": 0.1137, "nuclr": 0.0385,
     }
     for method, target in clean_expected.items():
         clean = [
@@ -132,7 +97,7 @@ def read_rows(run_root: Path):
         ]
         if len(clean) != 1 or abs(clean[0] - target) > 5e-5:
             raise RuntimeError(
-                f"{method} severity=0 does not reproduce the formal Main "
+                f"{method} severity=0 does not reproduce the canonical Main "
                 f"Benchmark: observed={clean}, expected~={target}"
             )
     return rows
@@ -176,7 +141,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--run-root", type=Path, default=DEFAULT_RUN)
     ap.add_argument("--output-dir", type=Path)
-    ap.add_argument("--stem", default="Figure_X_robustness_conditional_top1")
+    ap.add_argument("--stem", default="Figure_X_robustness_canonical_top1")
     args = ap.parse_args()
     rows = read_rows(args.run_root)
     out_dir = args.output_dir or args.run_root / "figures"
@@ -253,7 +218,7 @@ def main():
 
     metadata = {
         "Title": "Robustness to synthetic perturbations",
-        "Subject": "Native-CV5 Top-1 mean and fold SD under held-out test corruption",
+        "Subject": "Canonical-query CV5 Top-1 mean and fold SD under held-out test corruption",
         "Keywords": "RLD robustness CV5 seed42 coordinate noise missing neurons distractors",
     }
     for suffix, kwargs in (

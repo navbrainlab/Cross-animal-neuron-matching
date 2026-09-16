@@ -15,13 +15,22 @@ RUNS = REPO / "runs"
 MAIN = RUNS / "mprt_v1_1_component_ablation_cv5x3_v1" / "test_summary.json"
 ACT_ATANAS = RUNS / "mprt_v1_1_activity_only_atanas_cv5x3_v1" / "test_summary.json"
 ACT_RLD = RUNS / "mprt_v1_1_activity_only_rld_cv5x3_v1" / "test_summary.json"
+NO_POPULATION = RUNS / "mprt_v1_1_no_population_cv5x3_v1" / "test_summary.json"
 OUTPUT = RUNS / "mprt_v1_1_component_ablation_test_cv5x3_final"
 FOLDS = set(range(5))
 SEEDS = {1, 42, 123}
-VARIANTS = ("full", "geometry_only", "node_only", "no_transport", "activity_only")
+VARIANTS = (
+    "full",
+    "geometry_only",
+    "no_population",
+    "node_only",
+    "no_transport",
+    "activity_only",
+)
 DISPLAY = {
     "full": "Full NeuRID",
     "geometry_only": "w/o Activity",
+    "no_population": "w/o Relation-conditioned Population Encoder",
     "node_only": "Node-only",
     "no_transport": "w/o Relation Transport",
     "activity_only": "w/o Geometry (Activity-only)",
@@ -47,24 +56,32 @@ def key(row: dict) -> tuple[str, int, int, str]:
 
 
 def main() -> None:
-    sources = [MAIN, ACT_ATANAS, ACT_RLD]
+    sources = [MAIN, ACT_ATANAS, ACT_RLD, NO_POPULATION]
     payloads = [read(path) for path in sources]
     if any(item.get("split") != "test" for item in payloads):
         raise RuntimeError("All inputs must be locked-test summaries")
 
     main_rows = payloads[0]["rows"]
     activity_rows = payloads[1]["rows"] + payloads[2]["rows"]
+    no_population_rows = payloads[3]["rows"]
     main_full = {key(row): row for row in main_rows if row["variant"] == "full"}
-    activity_full = {key(row): row for row in activity_rows if row["variant"] == "full"}
-    if main_full.keys() != activity_full.keys():
-        raise RuntimeError("Full cell sets differ between locked-test runs")
-    for cell in main_full:
-        for metric in METRICS:
-            if main_full[cell][metric] != activity_full[cell][metric]:
-                raise RuntimeError(f"Full mismatch at {cell}: {metric}")
+    supplemental_rows = (activity_rows, no_population_rows)
+    for source_rows in supplemental_rows:
+        supplemental_full = {
+            key(row): row for row in source_rows if row["variant"] == "full"
+        }
+        if main_full.keys() != supplemental_full.keys():
+            raise RuntimeError("Full cell sets differ between locked-test runs")
+        for cell in main_full:
+            for metric in METRICS:
+                if main_full[cell][metric] != supplemental_full[cell][metric]:
+                    raise RuntimeError(f"Full mismatch at {cell}: {metric}")
 
     rows = list(main_rows)
     rows.extend(row for row in activity_rows if row["variant"] == "activity_only")
+    rows.extend(
+        row for row in no_population_rows if row["variant"] == "no_population"
+    )
     rows.sort(key=lambda row: (row["dataset"], VARIANTS.index(row["variant"]), row["fold"], row["seed"]))
 
     expected = {(dataset, fold, seed, variant) for dataset in ("atanas", "rld") for fold in FOLDS for seed in SEEDS for variant in VARIANTS}
@@ -120,7 +137,7 @@ def main() -> None:
         "test_policy": "held-out test evaluated only after checkpoint hash lock",
         "evaluation_device": "cpu (CUDA unavailable); model/checkpoint/evaluator unchanged",
         "validation": {
-            "expected_cells": 150,
+            "expected_cells": 180,
             "observed_cells": len(rows),
             "each_dataset_variant_has_15_cells": all(row["n_cells"] == 15 for row in summary_rows),
             "full_rows_identical_across_source_runs": True,
@@ -132,6 +149,7 @@ def main() -> None:
                 RUNS / "mprt_v1_1_component_ablation_cv5x3_v1" / "LOCKED_CHECKPOINTS.json",
                 RUNS / "mprt_v1_1_activity_only_atanas_cv5x3_v1" / "LOCKED_CHECKPOINTS.json",
                 RUNS / "mprt_v1_1_activity_only_rld_cv5x3_v1" / "LOCKED_CHECKPOINTS.json",
+                RUNS / "mprt_v1_1_no_population_cv5x3_v1" / "LOCKED_CHECKPOINTS.json",
             )
         ],
     }

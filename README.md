@@ -1,113 +1,82 @@
 # NeuRID
 
-Code release for multimodal cross-animal neuron identity matching with
-population-relational transport. The repository contains the primary NeuRID
-implementation and the audited experiment entry points used for Atanas,
-Kato/RLD, and zebrafish evaluation.
+Official code and prepared evaluation data for **Learning Multimodal
+Population Relations for Cross-Recording Neuron Identification**.
 
-**Formal Atanas and Kato/RLD main-result protocol:** five locked biological
-folds and the single model seed `42`. Reported means and sample standard
-deviations are calculated over the five fold-level values. Deterministic
-methods have no artificial seed. Any CV5 × 3-seed material in this repository
-is historical provenance or a supplementary stability analysis, not a formal
-main result. Zebrafish follows its separately specified LOFO8 × seed-42
-protocol.
+This repository intentionally contains one NeuRID implementation: the model
+described in the manuscript. Historical MPRT-Net implementations, dynamic
+atlas variants, transfer variants, candidate-training variants, and their
+result folders are not part of this public tree.
 
-## Repository layout
+## Contents
 
-- `neurid/`: standalone primary model, training/evaluation code, and tests.
-- `MODEL_CODE_GUIDE.md`: file-by-file guide to the complete NeuRID model implementation.
-- `RUN_DATASETS.md`: ready-to-copy commands for every included dataset.
-- `baselines/`: all comparison methods, official adapters, and overlays.
-- `results/`: compact protocols, audits, fold-level metrics, tables, and figures for the reported experiments.
-- `scripts/benchmarks/`: clean CPD, fDNC, NuCLR, NGM-v2, FGW, and audit entry points.
-- `scripts/benchmarks/crfid/`: CRF-ID preparation, audit, and aggregation tools.
-- `scripts/fair_identity/`: train-set medoid/single-specimen reference protocol.
-- `scripts/neurid/`: NeuRID evaluation and component-ablation launchers.
-- `scripts/mechanisms/`: cross-animal population-relation analyses and figures.
-- `scripts/robustness/`: coordinate-noise, missing-neuron, and distractor experiments.
-- `scripts/scaling/`: runtime and training-population scaling experiments.
-- `scripts/zebrafish/`: zebrafish LOFO preparation, evaluation, and aggregation.
-- `scripts/zm9624/`: ZM9624 preparation and two-direction held-out matching.
-- `workflows/`: locked Atanas and Kato/RLD split preparation and manifests.
-- `docs/protocols/`: evaluation and reporting contracts.
-- `results/supplementary/model_development_cv5x3/`: historical/supplementary
-  CV5 × 3-seed provenance package; excluded from formal-result aggregation.
+- `neurid/mprt_net/`: the complete manuscript model, loss, training, and data loader.
+- `data/`: prepared Atanas, Kato/RLD, and zebrafish folds used by the study.
+- `scripts/neurid/run_cv5.py`: the locked seed-42 five-fold worm runner.
+- `results/`: every manuscript result, including fold/query-level audit data.
+- `baselines/`: comparison-method adapters and upstream-code notes.
+- `workflows/`: source-data extraction and split-construction provenance.
+- `docs/`: architecture, data provenance, and release-boundary documentation.
 
-Raw datasets, checkpoints, large generated run directories, logs, caches,
-local archives, and vendored third-party repositories are intentionally
-excluded. Compact result records needed to trace the reported tables are
-included under `results/`.
+No trained checkpoints, caches, or alternative NeuRID versions are included.
+Frozen numeric outputs used in the paper are included under `results/`.
 
-## Where is the complete model?
+## Install
 
-The complete NeuRID forward model is
-[`neurid/mprt_net/model.py`](neurid/mprt_net/model.py). Its
-geometry/activity encoders, population relations, relational transport,
-Sinkhorn dustbin, losses, training and evaluation code are all in the same
-package. See [`MODEL_CODE_GUIDE.md`](MODEL_CODE_GUIDE.md) for the module map.
-
-## Install the primary model
-
-Python 3.10 or newer is required.
+Python 3.10 or newer is required. Confirm with `python --version` before
+installing.
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 python -m pip install -U pip
-python -m pip install -e './neurid[eval,test]'
+python -m pip install -e './neurid[test]'
 ```
 
-Run the unit tests with:
+## Verify the release
 
 ```bash
+python scripts/check_release.py
 python -m pytest -q neurid/tests
+sha256sum -c data/SHA256SUMS
 ```
 
-Copy-and-run commands for every included dataset are in
-[`RUN_DATASETS.md`](RUN_DATASETS.md).
+## Run the worm experiments
 
-## Data contract
-
-Each animal is stored as an NPZ file. The required arrays and validation rules
-are documented in [`neurid/DATA_CONTRACT.md`](neurid/DATA_CONTRACT.md).
-Dataset files are not included in this repository.
-
-After preparing a dataset, run the numerical/data self-check before training:
+Run a quick smoke experiment on one fold:
 
 ```bash
-python -m mprt_net.self_check --dataset-root /path/to/dataset --split train --device cpu
+python scripts/neurid/run_cv5.py --datasets atanas --folds 0 --epochs 1 \
+  --pairs-per-epoch 1 --device cpu
 ```
 
-## Reproducing experiments
-
-The canonical entry-point index is
-[`docs/protocols/SCRIPT_INDEX.md`](docs/protocols/SCRIPT_INDEX.md). The unified
-cross-validation and perturbation rules are in
-[`docs/protocols/UNIFIED_BENCHMARK_PERTURBATION_PROTOCOL.md`](docs/protocols/UNIFIED_BENCHMARK_PERTURBATION_PROTOCOL.md).
-The code-to-result map and protocol warnings are in
-[`results/README.md`](results/README.md).
-
-Examples:
+Run the formal five-fold, seed-42 protocol:
 
 ```bash
-python -m scripts.fair_identity.evaluate_train_reference_ensemble --help
-python -m scripts.mechanisms.summarize_component_ablation_benchmark_seed42 --help
-bash scripts/zebrafish/run_zebrafish_mprt_lofo8_seed42.sh all
-python -m scripts.robustness.plot_rld_robustness_conditional_top1
+python scripts/neurid/run_cv5.py --datasets atanas,kato_rld --device cuda
 ```
 
-Baseline repositories are not vendored in this release. Their URLs and frozen
-revisions are recorded in [`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md), with
-project-specific overlays under `baselines/adapters/`.
+Outputs are written under `runs/` and are ignored by Git. See
+[`RUN_DATASETS.md`](RUN_DATASETS.md) for dataset paths and the zebrafish layout.
+For paper provenance, see
+[`results/PAPER_RESULTS_MANIFEST.md`](results/PAPER_RESULTS_MANIFEST.md).
 
-## Release boundary
+## Primary model entry points
 
-[`docs/GITHUB_SUBMISSION.md`](docs/GITHUB_SUBMISSION.md) records the exact
-source-release scope and validation checks. Historical or unrelated research
-artifacts remain outside the GitHub commit.
+- Architecture: `neurid/mprt_net/model.py`
+- Training and fixed-atlas evaluation: `neurid/mprt_net/train.py`
+- Input validation/loading: `neurid/mprt_net/data.py`
+- Relation-conditioned attention: `neurid/mprt_net/layers.py`
+- Matching loss: `neurid/mprt_net/losses.py`
+- Log-domain Sinkhorn and relation cost: `neurid/mprt_net/sinkhorn.py`
 
-## License
+The Python API exposes `NeuRID`/`MPRTNet`, `ModelConfig`, and `MPRTOutput`.
 
-The repository retains the upstream Apache-2.0 license. Individual third-party
-methods remain subject to their own licenses.
+## Data and licensing
+
+The repository includes processed NPZ files and locked split metadata. Their
+scientific sources and preparation routes are documented in
+[`data/README.md`](data/README.md). Before making the repository public, the
+maintainer must confirm that redistribution of each processed dataset is
+consistent with its upstream terms. Code is covered by `LICENSE`; upstream
+datasets and baseline implementations retain their own terms.

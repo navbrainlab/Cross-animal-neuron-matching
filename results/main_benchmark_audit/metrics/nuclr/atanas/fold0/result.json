@@ -1,0 +1,30 @@
+{
+  "dataset": "atanas",
+  "fold": 0,
+  "seed": 42,
+  "method": "NuCLR (official scratch, 50k SSL, current grouped CV)",
+  "selected_global_step": 17000,
+  "selected_checkpoint": "/home/ubuntu/klb/nuclr/nuclr/benchmark_official/runs/nuclr_official_scratch50k_current_cv_seed42/atanas/fold_0/seed_42/selected/best.pt",
+  "target_train_steps": 50000,
+  "final_global_step": 50000,
+  "metrics": {
+    "queries": 474,
+    "ranking_top1": 0.21729957805907174,
+    "top3": 0.3881856540084388,
+    "top5": 0.46624472573839665,
+    "top10": 0.6012658227848101,
+    "mrr": 0.340428937155425,
+    "mean_rank": 20.377637130801688,
+    "assignment_top1": 0.2320675105485232
+  },
+  "protocol": {
+    "cv_root": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1",
+    "reference_worm": "2023-01-05-18",
+    "test_opened_after_selection": true,
+    "random_initialization": true,
+    "external_pretraining": false,
+    "zscore_activity": true,
+    "cosine": true,
+    "test_test_pairing": false
+  }
+}

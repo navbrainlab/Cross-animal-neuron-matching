@@ -24,7 +24,7 @@ FOLDS = tuple(range(5))
 SEED = 42
 ARMS = ("full", "geometry_only", "node_only", "no_transport")
 DISPLAY = {
-    "full": "Full NeuRID",
+    "full": "Full MPRT-Net",
     "geometry_only": "w/o Activity",
     "node_only": "w/o Population Relations",
     "no_transport": "w/o Relation Transport",

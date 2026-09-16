@@ -15,12 +15,17 @@ outer-training split, train-only geometry medoid selection, CPD adapter,
 identity vocabulary, tie policy, and metric implementation therefore remain
 identical to the main benchmark.
 
-For missing-neuron experiments, this wrapper additionally reports:
+For missing-neuron experiments, this wrapper additionally reports the
+reference-covered diagnostic:
     coverage_vs_clean_eligible = surviving eligible queries / clean eligible queries
     effective_top1            = top1 * surviving eligible queries / clean eligible queries
 
 Every fold first replays severity=0 and MUST exactly reproduce the saved clean
 CPD benchmark before any nonzero corruption is evaluated.
+
+The formal identity accuracy is rescored by
+``summarize_rld_robustness_hierarchical.py`` on the canonical main-table query
+cohort.  These native fields must not be used as the cross-method denominator.
 """
 
 from __future__ import annotations
@@ -507,6 +512,13 @@ def main():
             validate_training_split(row["root"], expected["report"])
 
             report = run_original_runner(row, force=args.force, workers=args.workers)
+            expected_template = expected["report"]["template_selection"]["template_uid"]
+            observed_template = report["template_selection"]["template_uid"]
+            if observed_template != expected_template:
+                raise RuntimeError(
+                    f"fold{fold} {row['name']}: reference changed from "
+                    f"{expected_template} to {observed_template}"
+                )
             result = augment_result(
                 row, report, clean_queries=clean_queries, guard=None
             )

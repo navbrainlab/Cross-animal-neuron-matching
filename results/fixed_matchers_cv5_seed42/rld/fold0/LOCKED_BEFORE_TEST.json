@@ -1,0 +1,1952 @@
+{
+  "status": "LOCKED_BEFORE_TEST",
+  "protocol": "frozen_table2_neurid_representation_matcher_control_cv5_seed42_v3",
+  "dataset": "rld",
+  "fold": 0,
+  "model_seed": 42,
+  "fold_root": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_0",
+  "checkpoint": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/rld/fold0/seed42/pairwise/full/best.pt",
+  "checkpoint_sha256": "ea013c2c91e4fd62f9ca710b9402ae3e023e2c4776d2435edcfd281332576118",
+  "saved_main_atlas": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/rld/fold0/seed42/static_atlas/anchored_pure.pt",
+  "saved_main_atlas_sha256": "8660a683432c92952c73d45d43cd647a4f9a93a6fb58e059b9626e755398f47d",
+  "encoder_frozen": true,
+  "all_parameters_frozen": true,
+  "activity_length": 512,
+  "parameter_fingerprint": "2a3e9d05f95816858e3d97e57295eafd6bb41a5a8a9e2f05bbb55e3c772443c3",
+  "atlas_build_split": "train",
+  "atlas_build": {
+    "recordings": 57,
+    "atlas_size": 124,
+    "node_observations": 916,
+    "min_identity_observations": 1,
+    "max_identity_observations": 41,
+    "relation_coverage": 0.4743756651878357,
+    "relation_reliability_lambda": 0.0
+  },
+  "atlas_identity_to_slot": {
+    "(CEPDR)": 0,
+    "(DB1)": 1,
+    "ADAL": 2,
+    "ADAR": 3,
+    "ADEL": 4,
+    "ADER": 5,
+    "ADFL": 6,
+    "ADFR": 7,
+    "ADLL": 8,
+    "AFDL": 9,
+    "AFDL?": 10,
+    "AFDR": 11,
+    "AIBL": 12,
+    "AIBR": 13,
+    "AIML": 14,
+    "AIMR": 15,
+    "AINL": 16,
+    "AINR": 17,
+    "AIYL": 18,
+    "AIYR": 19,
+    "AIZL": 20,
+    "ALA": 21,
+    "AQR": 22,
+    "ASEL": 23,
+    "ASER": 24,
+    "ASGL": 25,
+    "ASGR": 26,
+    "ASJR": 27,
+    "ASKL": 28,
+    "ASKR": 29,
+    "AVAL": 30,
+    "AVAR": 31,
+    "AVBL": 32,
+    "AVDL": 33,
+    "AVEL": 34,
+    "AVER": 35,
+    "AVHL": 36,
+    "AVHR": 37,
+    "AVJL": 38,
+    "AVJR": 39,
+    "AVKL": 40,
+    "AVKR": 41,
+    "AWAL": 42,
+    "AWAR": 43,
+    "AWBL": 44,
+    "AWBR": 45,
+    "BAGL": 46,
+    "BAGR": 47,
+    "CEPDL": 48,
+    "CEPDR": 49,
+    "CEPVL": 50,
+    "CEPVR": 51,
+    "FLPL": 52,
+    "FLPR": 53,
+    "IL1DL": 54,
+    "IL1DR": 55,
+    "IL1L": 56,
+    "IL1R": 57,
+    "IL1VL": 58,
+    "IL1VR": 59,
+    "IL2DL": 60,
+    "IL2DR": 61,
+    "IL2L": 62,
+    "IL2VL": 63,
+    "IL2VR": 64,
+    "M1": 65,
+    "M3L": 66,
+    "OLLL": 67,
+    "OLLR": 68,
+    "OLQDL": 69,
+    "OLQDR": 70,
+    "OLQR": 71,
+    "OLQVL": 72,
+    "OLQVR": 73,
+    "RIAL": 74,
+    "RIAR": 75,
+    "RIBL": 76,
+    "RIBR": 77,
+    "RICL": 78,
+    "RID": 79,
+    "RIML": 80,
+    "RIMR": 81,
+    "RIVL": 82,
+    "RIVR": 83,
+    "RMDDL": 84,
+    "RMDDR": 85,
+    "RMDL": 86,
+    "RMDR": 87,
+    "RMDVL": 88,
+    "RMDVR": 89,
+    "RMED": 90,
+    "RMEL": 91,
+    "RMER": 92,
+    "RMEV": 93,
+    "SAAVL": 94,
+    "SAAVR": 95,
+    "SIADL": 96,
+    "SIADR": 97,
+    "SIAR": 98,
+    "SIAVL": 99,
+    "SIAVR": 100,
+    "SIBDR": 101,
+    "SIBVL": 102,
+    "SMBDL": 103,
+    "SMBDR": 104,
+    "SMBVL": 105,
+    "SMBVR": 106,
+    "SMDDL": 107,
+    "SMDDR": 108,
+    "SMDVL": 109,
+    "SMDVR": 110,
+    "URADL": 111,
+    "URADR": 112,
+    "URBL": 113,
+    "URBR": 114,
+    "URXL": 115,
+    "URXR": 116,
+    "URXVR": 117,
+    "URYDL": 118,
+    "URYDR": 119,
+    "URYVL": 120,
+    "URYVR": 121,
+    "VB1": 122,
+    "VB2": 123
+  },
+  "atlas_fingerprint": "67c428952574065a4175b74b88f12776f64d07c3393954e2af76730a6d82367c",
+  "saved_atlas_max_abs_error": 0.003934417385607958,
+  "saved_atlas_verification": {
+    "nodes": {
+      "max_abs": 0.00023958133533596992,
+      "rmse": 3.463828397798352e-05,
+      "relative_l2": 0.0003393845399841666,
+      "max_abs_limit": 0.005,
+      "relative_l2_limit": 0.002
+    },
+    "relations": {
+      "max_abs": 0.003934417385607958,
+      "rmse": 0.0002539986453484744,
+      "relative_l2": 0.0004640480619855225,
+      "max_abs_limit": 0.02,
+      "relative_l2_limit": 0.01
+    },
+    "support": {
+      "max_abs": 0.0,
+      "rmse": 0.0,
+      "relative_l2": 0.0,
+      "max_abs_limit": 1e-07,
+      "relative_l2_limit": 1e-07
+    }
+  },
+  "train_files": [
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-15-36-41.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-16-12-10.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-16-53-12.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-18-51-10.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-20-11-40.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-14-55-14.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-15-32-57.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-16-51-21.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-20-18-26.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-20-52-20.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-22-37-14.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20220302-11-45-51.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20221106-21-47-31.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230317-12-27-51.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-20-16-50.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-21-09-13.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230412-20-15-17.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230502-20-05-02.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-12-56-00.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-13-32-08.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-14-24-57.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-15-01-45.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-15-33-51.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230510-12-53-34.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230510-13-25-46.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230510-15-49-47.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-15-10-44.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-15-50-12.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-16-22-56.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-15-10-21.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-18-20-19.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230904-15-59-40.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-14-26-56.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-16-48-09.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240426-22-49-55.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240427-12-43-44.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240430-21-04-44.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-17-36-55.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-19-51-22.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-12-35-05.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-13-22-25.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-13-55-40.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-15-08-33.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-14-48-32.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-17-55-55.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-20-22-10.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-20-59-45.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-15-24-26.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-17-28-58.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-14-26-00.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-15-48-55.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-16-28-26.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-17-40-58.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-14-16-29.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-14-57-38.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-15-51-58.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-16-23-54.npz"
+  ],
+  "train_file_sha256": {
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-15-36-41.npz": "b3f6973656d46d64c7deee71bbec83bf546b837170a4757877d3cea065292a96",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-16-12-10.npz": "2786a20338f3b8e6acd47d7676f31ee1511b214b521ce05d717dc256aed6b1c7",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-16-53-12.npz": "cd9e57955bbf93f2c91080ce93a78f8247aca641fe468e96dd993760207df1d4",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-18-51-10.npz": "bd34d2cca518f06126504d92d42d40c73774f54bd0e9867f2c89715fba9db185",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-20-11-40.npz": "9ba78f905eab012c1863f0c42a5906e4fa680a85e39c9d6f6afbab50a2b66211",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-14-55-14.npz": "52a2ef5c820c01456b870cae68636aa24637810ac48f32aaa1de59a8e89b6594",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-15-32-57.npz": "038d76d4bb308e445d45a370dd8bb4befffd21a13b9fa069cc7553b6cafc0d03",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-16-51-21.npz": "2f690aec8cb499d313103dbd9112c8dcac84b264869d1a8c009c4ed5d1154577",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-20-18-26.npz": "4b7cc6e42c9cdfaacf14054751bc1c16396c1fba4e8a07588cff5e16cc478801",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-20-52-20.npz": "bb3286b75c85828cbd831e2fe98318ca2082403a7c3fc18431ea1d654b2525a7",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-22-37-14.npz": "15e28f0ece35d5824a98a1c4247bf5491ed8a412824dff3b27ad3de2ac7fbad8",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20220302-11-45-51.npz": "8a63df82f78d11662d971ab956cfecfd6d3e4b3c138c074581a62687506b1d67",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20221106-21-47-31.npz": "16d48b63bb7df89544136b1857fb6913f27599a855de33ce92457a6b65dd5f1f",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230317-12-27-51.npz": "809c44ad6a3395dee6bb504b9289a64be52f8c8d9147c27cffd56e63502d55cf",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-20-16-50.npz": "5a4c69383f6c10bdfc2d9999ba75aea853a12ac4c9f09fea2bf0710ce9520213",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-21-09-13.npz": "0aca8f2cbc2b818bc81a226eada07b5fac897d3dd9831254a6a3e9040f4587af",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230412-20-15-17.npz": "51570b62cd95cb9665996b570aa1e659117ace4261267b70160dc297091edc78",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230502-20-05-02.npz": "378ce7ca38db3782de8ef4b580e5b17d484e33dfb7e1bf61d3933c547825b77d",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-12-56-00.npz": "c258b3dce13d4996412f4ed1909d675648d86df1a83411a9c5d259ea9e5f4bfe",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-13-32-08.npz": "0f4cff916f9712a4dfccd0f30e058bd283b3eecdafc9df91025729e2703be395",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-14-24-57.npz": "abdc87dcd17cdf1606afbe9bb930b295072ba50f5240946ab790665af3f56d61",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-15-01-45.npz": "ada241f4efbb36c9549122c067d183e520994e8404d326902d5c5c9315fdcf0b",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-15-33-51.npz": "9d1ec781bb30612acfa24aa8ebd3590e752d4e18f7e1cdf890255e7fdb1c58fe",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230510-12-53-34.npz": "5c4af1bce1438ebdba97f820dae84e3547a8a422d60ff177b0bae7317f83bdb3",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230510-13-25-46.npz": "026104ff57aeb61f7a25e7c8681298e3bf9e3848e01b39c4d88bec5b15a7412e",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230510-15-49-47.npz": "c6a68f961b3740cce90e5aaeb1ca5269fbae488ff885bf9df04d2492c7d93c95",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-15-10-44.npz": "797b1eba9c29e30dfd27a967b9932b810f7afa571d0d33f9243daaa70fb0fdbf",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-15-50-12.npz": "2b276d64e28c1535e1562f3473ecbb596db1984f8a31caca4c9d778f43261e4a",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-16-22-56.npz": "4a3677195d7ad4758b59da260dac9440c845d3c8d1634c0cbe1677f02fdd7b29",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-15-10-21.npz": "3988f0b91b74e77a290c5ec5504a6950ef398d28bdfa46f5dfb3e2038caa8547",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-18-20-19.npz": "bde41c94d7c19d6e3ad18df857e88cfb0c95b60022ae4532311f97a5df048c82",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230904-15-59-40.npz": "3ea8a636408f6954061bb519cc74ecfde91cc1a423fe2b4d2037fd4f8ee984cb",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-14-26-56.npz": "a3442d62c59dc33a5b0c53b96ae2fe0ea92632e8e75e4b0b4b7d7edbd5ac3937",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-16-48-09.npz": "464166cbf10e0aa05e86db6c575d6d410ea46bec585e42d504a1dc574ba5c49d",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240426-22-49-55.npz": "8a955aadb345d9295463af7ac2d59891d205094ec14151438a3cc5e3c88d260a",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240427-12-43-44.npz": "16b70c206af336232483edb4d0b2913b8dfeabae04f44e48ebd99eb11cc12475",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240430-21-04-44.npz": "936a06ab47f1d3bf92974f8cf8939be82ba296daf2522a117d017d38a3b4b379",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-17-36-55.npz": "3b1c0a2703e286c27f30bff702b3722685daad268f47c6f87171b4dadff22e94",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-19-51-22.npz": "25050915ec7a88edb8fb4584db70b7d53df3c0b0cd0aad1583d0a9650a97030a",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-12-35-05.npz": "f4cedb7a420d7774a83278715e8500e456a17709b343160926e7b0e472c762c6",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-13-22-25.npz": "2d9fca5521e033faf6fb9e786e816cb14a7f21b7be6363a72eb513809e06de22",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-13-55-40.npz": "7e3414d44de376801ac5af332e900c942b181f8ff6cab5d9c4fd84f82ab0db82",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-15-08-33.npz": "e3416ecbf3c88b575f51f1292b96491279220d7f1a2e96473afa19547aa9f98a",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-14-48-32.npz": "05c3fc68f906dcfba013abfbcbc9ad84905083800cbc00be7cd684851c467841",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-17-55-55.npz": "9a72b11f17fd8ea78794e4b61cf62f238eef979dc419e1924ae06055e12e117c",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-20-22-10.npz": "3e6a76ecd5c55b097018683eaa206aa33fcb60a9594379f5ad1ec39635d7acca",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-20-59-45.npz": "21170dd357664c632d06613ad89a5a78fdd662b4f63a4b62ac6c1be8555d2389",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-15-24-26.npz": "41268b9bd7733337cc30695107dbc88c536f793cbf5e5817568acfdec22dee76",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-17-28-58.npz": "9c9f08defdab9b830502e248dff5d37549049d5410381271ecf7300e6181c42d",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-14-26-00.npz": "9f93a331c924f2c82bac46321a2e91d8c39c14ba02e4e9dd1bd2d946d4f9b5da",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-15-48-55.npz": "db3d13668763394b61914a2d84cacd0fa3e503415fc0aaa32c86cd9b80cc6d38",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-16-28-26.npz": "668621b6de7cf485dc1aa471fc52666f12f364b0a05d331e62fe8158593e1ce4",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-17-40-58.npz": "2c4941978753a891294b8623a82ecb5e4bf3fb0ffc9cf3c1ab333b63ada38034",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-14-16-29.npz": "75783919454ba3046b2d4d669a32ca443da26cb7665691078c2f7e7d176e5c01",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-14-57-38.npz": "91244ae3bdb72d013b36a341a2c81b818e0ddb569513b5cac0f4ead8ae54f1da",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-15-51-58.npz": "a6c1279495c76f484371e948580f57e75ee64726b0c34a8ae19e2be3c5c337c6",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-16-23-54.npz": "d61f7b7389263aa12f73bd4b8980f92bbcf474cbbb0eb8589ce91ce1a1c77780"
+  },
+  "validation_files": [
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-18-09-07.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-16-13-38.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-17-29-27.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-21-32-57.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20221106-21-00-09.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-21-41-10.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-22-43-03.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230502-20-41-23.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-17-09-01.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-16-32-28.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-19-07-30.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230904-15-09-05.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-15-40-07.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-16-14-25.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230921-17-15-33.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-19-18-14.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-16-04-26.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-15-07-00.npz",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240829-13-39-15.npz"
+  ],
+  "validation_file_sha256": {
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-18-09-07.npz": "514436d2f29a4e5d00ae6deb487b10b4bbba4c3929d24f91f58dc94925316afa",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-16-13-38.npz": "d219fc3ae6bb4d95d248262b2967529d6b5592629d82c69f4bd1e9259471b25d",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-17-29-27.npz": "5d922b817011850ebafba8c2d0e5be7bbba2e4f65f74bcc295390d3996dad50b",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-21-32-57.npz": "47b06b0331b5f333fdca2898688e232a63745e7e9b6eb0d075d8fa75c1e9b9af",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20221106-21-00-09.npz": "0d52fa6f08d786fa7ee0adc6b6ae0e2cc6c457f2d55a780eacfabaf83128b542",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-21-41-10.npz": "09727bd5232dfa40df415d5fad5103579618f43b17c648bd1eac9eb84f0bd883",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-22-43-03.npz": "42151d86757f7fdd643a2f5c987d1b80282de98bc9a77424caec8d6f5ffd7bad",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230502-20-41-23.npz": "eb79fbb23adc3938f27a0e299d3e9e17e0edb69206657390d4077673a745346f",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-17-09-01.npz": "475c8f52e519daa2c0fd76a6153db5b555bdd8bc82466362c59d0599902cc96e",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-16-32-28.npz": "8c8813530f0715fb9328a0c6642244311bb5165a04d2595155b571312d2ffb05",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-19-07-30.npz": "37ddf562291da85b4dfaa8e2c59bbfe8a58041009005730f9f19980eaa792f96",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230904-15-09-05.npz": "f3b0d83fbcb27f8fb4babc90291d89346ebab46aacc80ba9d3e57816bd5966a7",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-15-40-07.npz": "0be1ba33dd8a46ff03bc7bcba4826ec796d20e491b70cb76fdcea0c087a331ae",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-16-14-25.npz": "6f2372dcd2a244f5f321777c6858d7b8f6228d1ab33ffc1e832a768cde327486",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230921-17-15-33.npz": "298f265109500dfff384381bb6a464673b5ed53500eee1fbdf4d2987fb9e3bf6",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-19-18-14.npz": "68fbc5c1ba5ab06d85734c17c37904e45eebc01ea70880fa83998efcc036c975",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-16-04-26.npz": "934853d0647d84581cfe8f9168c5e11fdd133a367a949ddf647690071e2317b8",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-15-07-00.npz": "21c17a66317a92d25b59a02616818529c4beac70a5540fe93371c0969881e95c",
+    "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240829-13-39-15.npz": "59ac7db07580ab84e10a985496b706aff00c82d3ddc6a3161babfe5466b3b8b9"
+  },
+  "test_opened_before_lock": false,
+  "embedding": "L2-normalized Full NeuRID contextualized node embedding z_i",
+  "fgw_ufgw_feature_cost": "squared Euclidean(z_i/2, z_j/2)",
+  "fgw_ufgw_structure_cost": "within-population squared Euclidean(z_i, z_k)/4",
+  "selection_split": "outer validation animals only",
+  "selection_criterion": "lexicographic Top-1 real, partial assignment accuracy, MRR, Hungarian accuracy, then earliest grid index",
+  "ranking_tie_policy": "stable atlas-slot order",
+  "fixed_matcher_validation": {
+    "sinkhorn": {
+      "known_queries": 302,
+      "novel_queries": 4,
+      "partial_queries": 306,
+      "hungarian_queries": 302,
+      "top1_real": 0.5860927152317881,
+      "top5_real": 0.7781456953642384,
+      "mrr_real": 0.6797963433595954,
+      "partial_assignment_accuracy": 0.5784313725490197,
+      "coverage": 1.0,
+      "known_accept_rate": 1.0,
+      "novel_reject_rate": 0.0,
+      "hungarian_accuracy": 0.543046357615894
+    },
+    "neurid": {
+      "known_queries": 302,
+      "novel_queries": 4,
+      "partial_queries": 306,
+      "hungarian_queries": 302,
+      "top1_real": 0.6622516556291391,
+      "top5_real": 0.8311258278145696,
+      "mrr_real": 0.7389121751707307,
+      "partial_assignment_accuracy": 0.5784313725490197,
+      "coverage": 0.7254901960784313,
+      "known_accept_rate": 0.7317880794701986,
+      "novel_reject_rate": 0.75,
+      "hungarian_accuracy": 0.6423841059602649
+    }
+  },
+  "selected": {
+    "fgw": {
+      "alpha": 0.75
+    },
+    "ufgw": {
+      "alpha": 0.25,
+      "rho": 0.1,
+      "epsilon": 0.01,
+      "rejection_threshold": 0.0
+    }
+  },
+  "validation_sweeps": {
+    "fgw": [
+      {
+        "grid_index": 0,
+        "parameters": {
+          "alpha": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.4867549668874172,
+          "top5_real": 0.6390728476821192,
+          "mrr_real": 0.5684349067061151,
+          "partial_assignment_accuracy": 0.4803921568627451,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4867549668874172
+        }
+      },
+      {
+        "grid_index": 1,
+        "parameters": {
+          "alpha": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.4900662251655629,
+          "top5_real": 0.6456953642384106,
+          "mrr_real": 0.5730598034944379,
+          "partial_assignment_accuracy": 0.48366013071895425,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4900662251655629
+        }
+      },
+      {
+        "grid_index": 2,
+        "parameters": {
+          "alpha": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.4867549668874172,
+          "top5_real": 0.6357615894039735,
+          "mrr_real": 0.5651927556631093,
+          "partial_assignment_accuracy": 0.4803921568627451,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.4867549668874172
+        }
+      },
+      {
+        "grid_index": 3,
+        "parameters": {
+          "alpha": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.49337748344370863,
+          "top5_real": 0.6291390728476821,
+          "mrr_real": 0.5664457928215848,
+          "partial_assignment_accuracy": 0.4869281045751634,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.49337748344370863
+        }
+      },
+      {
+        "grid_index": 4,
+        "parameters": {
+          "alpha": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.10596026490066225,
+          "top5_real": 0.18211920529801323,
+          "mrr_real": 0.15745974992655884,
+          "partial_assignment_accuracy": 0.10457516339869281,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.10596026490066225
+        }
+      }
+    ],
+    "ufgw": [
+      {
+        "grid_index": 0,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5894039735099338,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6823940424307328,
+          "partial_assignment_accuracy": 0.5816993464052288,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5596026490066225
+        }
+      },
+      {
+        "grid_index": 1,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5894039735099338,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6823940424307328,
+          "partial_assignment_accuracy": 0.5816993464052288,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5596026490066225
+        }
+      },
+      {
+        "grid_index": 2,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5894039735099338,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6823940424307328,
+          "partial_assignment_accuracy": 0.5784313725490197,
+          "coverage": 0.9934640522875817,
+          "known_accept_rate": 0.9933774834437086,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5596026490066225
+        }
+      },
+      {
+        "grid_index": 3,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5894039735099338,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6823940424307328,
+          "partial_assignment_accuracy": 0.42483660130718953,
+          "coverage": 0.6830065359477124,
+          "known_accept_rate": 0.6854304635761589,
+          "novel_reject_rate": 0.5,
+          "hungarian_accuracy": 0.5596026490066225
+        }
+      },
+      {
+        "grid_index": 4,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5894039735099338,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6823940424307328,
+          "partial_assignment_accuracy": 0.029411764705882353,
+          "coverage": 0.02287581699346405,
+          "known_accept_rate": 0.023178807947019868,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5596026490066225
+        }
+      },
+      {
+        "grid_index": 5,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5894039735099338,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6823940424307328,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5596026490066225
+        }
+      },
+      {
+        "grid_index": 6,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5894039735099338,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6823940424307328,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5596026490066225
+        }
+      },
+      {
+        "grid_index": 7,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6482134703207264,
+          "partial_assignment_accuracy": 0.5228758169934641,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 8,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6482134703207264,
+          "partial_assignment_accuracy": 0.5228758169934641,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 9,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6482134703207264,
+          "partial_assignment_accuracy": 0.5228758169934641,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 10,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6482134703207264,
+          "partial_assignment_accuracy": 0.5228758169934641,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 11,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6482134703207264,
+          "partial_assignment_accuracy": 0.05228758169934641,
+          "coverage": 0.0718954248366013,
+          "known_accept_rate": 0.0728476821192053,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 12,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6482134703207264,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 13,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6482134703207264,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 14,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6473303326139944,
+          "partial_assignment_accuracy": 0.5228758169934641,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 15,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6473303326139944,
+          "partial_assignment_accuracy": 0.5228758169934641,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 16,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6473303326139944,
+          "partial_assignment_accuracy": 0.5228758169934641,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 17,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6473303326139944,
+          "partial_assignment_accuracy": 0.5228758169934641,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 18,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6473303326139944,
+          "partial_assignment_accuracy": 0.0784313725490196,
+          "coverage": 0.09803921568627451,
+          "known_accept_rate": 0.09933774834437085,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 19,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6473303326139944,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 20,
+        "parameters": {
+          "alpha": 0.25,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5298013245033113,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6473303326139944,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5198675496688742
+        }
+      },
+      {
+        "grid_index": 21,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5827814569536424,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6783644041671447,
+          "partial_assignment_accuracy": 0.5751633986928104,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5562913907284768
+        }
+      },
+      {
+        "grid_index": 22,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5827814569536424,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6783644041671447,
+          "partial_assignment_accuracy": 0.5751633986928104,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5562913907284768
+        }
+      },
+      {
+        "grid_index": 23,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5827814569536424,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6783644041671447,
+          "partial_assignment_accuracy": 0.5751633986928104,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5562913907284768
+        }
+      },
+      {
+        "grid_index": 24,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5827814569536424,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6783644041671447,
+          "partial_assignment_accuracy": 0.5098039215686274,
+          "coverage": 0.8888888888888888,
+          "known_accept_rate": 0.8874172185430463,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5562913907284768
+        }
+      },
+      {
+        "grid_index": 25,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5827814569536424,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6783644041671447,
+          "partial_assignment_accuracy": 0.016339869281045753,
+          "coverage": 0.0032679738562091504,
+          "known_accept_rate": 0.0033112582781456954,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5562913907284768
+        }
+      },
+      {
+        "grid_index": 26,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5827814569536424,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6783644041671447,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5562913907284768
+        }
+      },
+      {
+        "grid_index": 27,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5827814569536424,
+          "top5_real": 0.7913907284768212,
+          "mrr_real": 0.6783644041671447,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5562913907284768
+        }
+      },
+      {
+        "grid_index": 28,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.543046357615894,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6563341620376847,
+          "partial_assignment_accuracy": 0.5359477124183006,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5165562913907285
+        }
+      },
+      {
+        "grid_index": 29,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.543046357615894,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6563341620376847,
+          "partial_assignment_accuracy": 0.5359477124183006,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5165562913907285
+        }
+      },
+      {
+        "grid_index": 30,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.543046357615894,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6563341620376847,
+          "partial_assignment_accuracy": 0.5359477124183006,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5165562913907285
+        }
+      },
+      {
+        "grid_index": 31,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.543046357615894,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6563341620376847,
+          "partial_assignment_accuracy": 0.5359477124183006,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5165562913907285
+        }
+      },
+      {
+        "grid_index": 32,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.543046357615894,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6563341620376847,
+          "partial_assignment_accuracy": 0.029411764705882353,
+          "coverage": 0.02287581699346405,
+          "known_accept_rate": 0.023178807947019868,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5165562913907285
+        }
+      },
+      {
+        "grid_index": 33,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.543046357615894,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6563341620376847,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5165562913907285
+        }
+      },
+      {
+        "grid_index": 34,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.543046357615894,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6563341620376847,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5165562913907285
+        }
+      },
+      {
+        "grid_index": 35,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5496688741721855,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6596110247262834,
+          "partial_assignment_accuracy": 0.5424836601307189,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 36,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5496688741721855,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6596110247262834,
+          "partial_assignment_accuracy": 0.5424836601307189,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 37,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5496688741721855,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6596110247262834,
+          "partial_assignment_accuracy": 0.5424836601307189,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 38,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5496688741721855,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6596110247262834,
+          "partial_assignment_accuracy": 0.5424836601307189,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 39,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5496688741721855,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6596110247262834,
+          "partial_assignment_accuracy": 0.032679738562091505,
+          "coverage": 0.029411764705882353,
+          "known_accept_rate": 0.029801324503311258,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 40,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5496688741721855,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6596110247262834,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 41,
+        "parameters": {
+          "alpha": 0.5,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5496688741721855,
+          "top5_real": 0.7847682119205298,
+          "mrr_real": 0.6596110247262834,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 42,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5728476821192053,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6731530376250464,
+          "partial_assignment_accuracy": 0.565359477124183,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5298013245033113
+        }
+      },
+      {
+        "grid_index": 43,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5728476821192053,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6731530376250464,
+          "partial_assignment_accuracy": 0.565359477124183,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5298013245033113
+        }
+      },
+      {
+        "grid_index": 44,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5728476821192053,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6731530376250464,
+          "partial_assignment_accuracy": 0.565359477124183,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5298013245033113
+        }
+      },
+      {
+        "grid_index": 45,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5728476821192053,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6731530376250464,
+          "partial_assignment_accuracy": 0.5620915032679739,
+          "coverage": 0.9967320261437909,
+          "known_accept_rate": 0.9966887417218543,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5298013245033113
+        }
+      },
+      {
+        "grid_index": 46,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5728476821192053,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6731530376250464,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5298013245033113
+        }
+      },
+      {
+        "grid_index": 47,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5728476821192053,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6731530376250464,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5298013245033113
+        }
+      },
+      {
+        "grid_index": 48,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 0.1,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5728476821192053,
+          "top5_real": 0.7781456953642384,
+          "mrr_real": 0.6731530376250464,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5298013245033113
+        }
+      },
+      {
+        "grid_index": 49,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5529801324503312,
+          "top5_real": 0.7715231788079471,
+          "mrr_real": 0.6611393388215225,
+          "partial_assignment_accuracy": 0.545751633986928,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 50,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5529801324503312,
+          "top5_real": 0.7715231788079471,
+          "mrr_real": 0.6611393388215225,
+          "partial_assignment_accuracy": 0.545751633986928,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 51,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5529801324503312,
+          "top5_real": 0.7715231788079471,
+          "mrr_real": 0.6611393388215225,
+          "partial_assignment_accuracy": 0.545751633986928,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 52,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5529801324503312,
+          "top5_real": 0.7715231788079471,
+          "mrr_real": 0.6611393388215225,
+          "partial_assignment_accuracy": 0.545751633986928,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 53,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5529801324503312,
+          "top5_real": 0.7715231788079471,
+          "mrr_real": 0.6611393388215225,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 54,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5529801324503312,
+          "top5_real": 0.7715231788079471,
+          "mrr_real": 0.6611393388215225,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 55,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 1.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5529801324503312,
+          "top5_real": 0.7715231788079471,
+          "mrr_real": 0.6611393388215225,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 56,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5463576158940397,
+          "top5_real": 0.7748344370860927,
+          "mrr_real": 0.6566630902193189,
+          "partial_assignment_accuracy": 0.5392156862745098,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 57,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5463576158940397,
+          "top5_real": 0.7748344370860927,
+          "mrr_real": 0.6566630902193189,
+          "partial_assignment_accuracy": 0.5392156862745098,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 58,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5463576158940397,
+          "top5_real": 0.7748344370860927,
+          "mrr_real": 0.6566630902193189,
+          "partial_assignment_accuracy": 0.5392156862745098,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 59,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 0.75
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5463576158940397,
+          "top5_real": 0.7748344370860927,
+          "mrr_real": 0.6566630902193189,
+          "partial_assignment_accuracy": 0.5392156862745098,
+          "coverage": 1.0,
+          "known_accept_rate": 1.0,
+          "novel_reject_rate": 0.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 60,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.0
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5463576158940397,
+          "top5_real": 0.7748344370860927,
+          "mrr_real": 0.6566630902193189,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 61,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.25
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5463576158940397,
+          "top5_real": 0.7748344370860927,
+          "mrr_real": 0.6566630902193189,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      },
+      {
+        "grid_index": 62,
+        "parameters": {
+          "alpha": 0.75,
+          "rho": 10.0,
+          "epsilon": 0.01,
+          "rejection_threshold": 1.5
+        },
+        "metrics": {
+          "known_queries": 302,
+          "novel_queries": 4,
+          "partial_queries": 306,
+          "hungarian_queries": 302,
+          "top1_real": 0.5463576158940397,
+          "top5_real": 0.7748344370860927,
+          "mrr_real": 0.6566630902193189,
+          "partial_assignment_accuracy": 0.013071895424836602,
+          "coverage": 0.0,
+          "known_accept_rate": 0.0,
+          "novel_reject_rate": 1.0,
+          "hungarian_accuracy": 0.5132450331125827
+        }
+      }
+    ]
+  },
+  "solver": {
+    "pot_version": "0.9.7.post1",
+    "fgw_max_iter": 10000,
+    "fgw_tol": 1e-09,
+    "fugw_version": "0.1.1",
+    "ufgw_solver": "mm",
+    "ufgw_reg_mode": "joint",
+    "ufgw_divergence": "kl",
+    "ufgw_nits_bcd": 10,
+    "ufgw_nits_uot": 1000,
+    "device": "cuda"
+  }
+}

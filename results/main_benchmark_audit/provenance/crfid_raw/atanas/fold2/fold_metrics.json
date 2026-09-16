@@ -1,0 +1,183 @@
+{
+  "fold_metrics": {
+    "Q": 701,
+    "top1": 0.16262482168330955,
+    "top5": 0.43651925820256776,
+    "mrr": 0.2898725725489335,
+    "hungarian": 0.16262482168330955,
+    "coverage": 0.8901569186875892,
+    "covered_top1": 0.18269230769230768,
+    "covered_top5": 0.49038461538461536,
+    "official_duplicate_accuracy": 0.16262482168330955,
+    "fold": 2,
+    "n_worms": 8
+  },
+  "worms": [
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-15-12.npz",
+      "Q": 94,
+      "covered": 88,
+      "top1_correct": 32,
+      "top5_correct": 56,
+      "rr_sum": 43.59869927975504,
+      "hungarian_correct": 32,
+      "official_correct": 32,
+      "missing_gt": [
+        "MCL",
+        "MI",
+        "RID",
+        "SAAD",
+        "SIA"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-06-01.npz",
+      "Q": 77,
+      "covered": 69,
+      "top1_correct": 12,
+      "top5_correct": 36,
+      "rr_sum": 23.701635498647693,
+      "hungarian_correct": 12,
+      "official_correct": 12,
+      "missing_gt": [
+        "AIM",
+        "M4",
+        "M5",
+        "MCL",
+        "MI",
+        "RID",
+        "SAAD"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-06-08.npz",
+      "Q": 89,
+      "covered": 80,
+      "top1_correct": 16,
+      "top5_correct": 52,
+      "rr_sum": 31.11470087884228,
+      "hungarian_correct": 16,
+      "official_correct": 16,
+      "missing_gt": [
+        "AIA",
+        "MCL",
+        "SAAD",
+        "SIA",
+        "SIA?R",
+        "SIBV",
+        "SMBV",
+        "VB02"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-09-08.npz",
+      "Q": 64,
+      "covered": 50,
+      "top1_correct": 2,
+      "top5_correct": 5,
+      "rr_sum": 5.422442719301909,
+      "hungarian_correct": 2,
+      "official_correct": 2,
+      "missing_gt": [
+        "ADA",
+        "ADE",
+        "AIB",
+        "AIM",
+        "AIN",
+        "AIZ",
+        "IL1V",
+        "MI",
+        "OLQV",
+        "RIC",
+        "RMG",
+        "SAAD",
+        "SMBV",
+        "SMDD"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-09-15.npz",
+      "Q": 102,
+      "covered": 92,
+      "top1_correct": 29,
+      "top5_correct": 63,
+      "rr_sum": 43.9835421867412,
+      "hungarian_correct": 29,
+      "official_correct": 29,
+      "missing_gt": [
+        "AIA",
+        "AIM",
+        "AVK",
+        "M2L",
+        "M4",
+        "M5",
+        "MCL",
+        "MI",
+        "RID",
+        "VB02"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-23-08.npz",
+      "Q": 88,
+      "covered": 80,
+      "top1_correct": 0,
+      "top5_correct": 2,
+      "rr_sum": 1.821087928372699,
+      "hungarian_correct": 0,
+      "official_correct": 0,
+      "missing_gt": [
+        "AIY",
+        "I4",
+        "I6",
+        "M4",
+        "M5",
+        "MCL",
+        "MCR",
+        "RID"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-23-21.npz",
+      "Q": 101,
+      "covered": 88,
+      "top1_correct": 11,
+      "top5_correct": 52,
+      "rr_sum": 28.449803357797496,
+      "hungarian_correct": 11,
+      "official_correct": 11,
+      "missing_gt": [
+        "AIM",
+        "IL1V",
+        "M4",
+        "M5",
+        "MCL",
+        "MCR",
+        "MI",
+        "RID",
+        "RMF",
+        "SMBV"
+      ]
+    },
+    {
+      "source": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-28-07.npz",
+      "Q": 86,
+      "covered": 77,
+      "top1_correct": 12,
+      "top5_correct": 40,
+      "rr_sum": 25.10876150734406,
+      "hungarian_correct": 12,
+      "official_correct": 12,
+      "missing_gt": [
+        "AIY",
+        "I4",
+        "I6",
+        "M4",
+        "M5",
+        "MCL",
+        "MI",
+        "RID"
+      ]
+    }
+  ]
+}

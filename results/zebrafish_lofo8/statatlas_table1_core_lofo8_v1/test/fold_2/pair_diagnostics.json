@@ -1,0 +1,2450 @@
+[
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          349.34833094475556,
+          0.0
+        ],
+        [
+          349.161446669909,
+          0.0
+        ],
+        [
+          349.0281899538947,
+          0.0
+        ],
+        [
+          348.971196099514,
+          0.0
+        ],
+        [
+          348.9262639936189,
+          0.0
+        ],
+        [
+          348.8837029573848,
+          0.0
+        ],
+        [
+          348.84194059427296,
+          0.0
+        ],
+        [
+          348.8007055516081,
+          0.0
+        ],
+        [
+          348.75994610825154,
+          0.0
+        ],
+        [
+          348.7196484201737,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p000",
+    "pair_index": 0,
+    "q_start_frame": 0,
+    "r_start_frame": 14400,
+    "reference_count": 20,
+    "reference_start_frames": [
+      3600,
+      7200,
+      10800,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600,
+      43200,
+      46800,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          354.0684584209472,
+          0.0
+        ],
+        [
+          353.91936143400176,
+          0.0
+        ],
+        [
+          353.78212027303164,
+          0.0
+        ],
+        [
+          353.72619487639383,
+          0.0
+        ],
+        [
+          353.6833933747897,
+          0.0
+        ],
+        [
+          353.6431460893569,
+          0.0
+        ],
+        [
+          353.60373889076214,
+          0.0
+        ],
+        [
+          353.56487861823206,
+          0.0
+        ],
+        [
+          353.5265097991211,
+          0.0
+        ],
+        [
+          353.48861749188,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p001",
+    "pair_index": 1,
+    "q_start_frame": 3600,
+    "r_start_frame": 18000,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      7200,
+      10800,
+      14400,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600,
+      43200,
+      46800,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          357.752662236975,
+          0.0
+        ],
+        [
+          357.61568836025407,
+          0.0
+        ],
+        [
+          357.46100094878875,
+          0.0
+        ],
+        [
+          357.39705029077015,
+          0.0
+        ],
+        [
+          357.34809251075063,
+          0.0
+        ],
+        [
+          357.3020725547657,
+          0.0
+        ],
+        [
+          357.2570115881184,
+          0.0
+        ],
+        [
+          357.2125685765209,
+          0.0
+        ],
+        [
+          357.1686787327147,
+          0.0
+        ],
+        [
+          357.1253247704553,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p002",
+    "pair_index": 2,
+    "q_start_frame": 7200,
+    "r_start_frame": 21600,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      10800,
+      14400,
+      18000,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600,
+      43200,
+      46800,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          362.6770833012218,
+          0.0
+        ],
+        [
+          362.61714238794576,
+          0.0
+        ],
+        [
+          362.4648908599938,
+          0.0
+        ],
+        [
+          362.404564071816,
+          0.0
+        ],
+        [
+          362.3599680413608,
+          0.0
+        ],
+        [
+          362.3184657715841,
+          0.0
+        ],
+        [
+          362.27793845074007,
+          0.0
+        ],
+        [
+          362.23801562058236,
+          0.0
+        ],
+        [
+          362.19862648251666,
+          0.0
+        ],
+        [
+          362.15975250581374,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p003",
+    "pair_index": 3,
+    "q_start_frame": 10800,
+    "r_start_frame": 25200,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      14400,
+      18000,
+      21600,
+      28800,
+      32400,
+      36000,
+      39600,
+      43200,
+      46800,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          367.934740887393,
+          0.0
+        ],
+        [
+          367.8594261197694,
+          0.0
+        ],
+        [
+          367.69645840896266,
+          0.0
+        ],
+        [
+          367.6333675699688,
+          0.0
+        ],
+        [
+          367.5874536848618,
+          0.0
+        ],
+        [
+          367.54491041138664,
+          0.0
+        ],
+        [
+          367.503416570712,
+          0.0
+        ],
+        [
+          367.4625655965689,
+          0.0
+        ],
+        [
+          367.4222796266255,
+          0.0
+        ],
+        [
+          367.38253826067097,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p004",
+    "pair_index": 4,
+    "q_start_frame": 14400,
+    "r_start_frame": 28800,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      18000,
+      21600,
+      25200,
+      32400,
+      36000,
+      39600,
+      43200,
+      46800,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          373.13691325492346,
+          0.0
+        ],
+        [
+          372.9175701533977,
+          0.0
+        ],
+        [
+          372.734574312094,
+          0.0
+        ],
+        [
+          372.66954368650465,
+          0.0
+        ],
+        [
+          372.6245665844722,
+          0.0
+        ],
+        [
+          372.58348009718827,
+          0.0
+        ],
+        [
+          372.543551631621,
+          0.0
+        ],
+        [
+          372.5042980817914,
+          0.0
+        ],
+        [
+          372.46562666767755,
+          0.0
+        ],
+        [
+          372.4275136934849,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p005",
+    "pair_index": 5,
+    "q_start_frame": 18000,
+    "r_start_frame": 32400,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      21600,
+      25200,
+      28800,
+      36000,
+      39600,
+      43200,
+      46800,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          375.23000238593374,
+          0.0
+        ],
+        [
+          374.8341496507502,
+          0.0
+        ],
+        [
+          374.63507103527695,
+          0.0
+        ],
+        [
+          374.5636436979773,
+          0.0
+        ],
+        [
+          374.51369289468164,
+          0.0
+        ],
+        [
+          374.46795471598597,
+          0.0
+        ],
+        [
+          374.4234849485186,
+          0.0
+        ],
+        [
+          374.37975585226036,
+          0.0
+        ],
+        [
+          374.3366647736125,
+          0.0
+        ],
+        [
+          374.2941854347023,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p006",
+    "pair_index": 6,
+    "q_start_frame": 21600,
+    "r_start_frame": 36000,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      25200,
+      28800,
+      32400,
+      39600,
+      43200,
+      46800,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          378.2717558352514,
+          0.0
+        ],
+        [
+          377.7658315414025,
+          0.0
+        ],
+        [
+          377.55359300507297,
+          0.0
+        ],
+        [
+          377.47954312691786,
+          0.0
+        ],
+        [
+          377.4286842072535,
+          0.0
+        ],
+        [
+          377.38246337458355,
+          0.0
+        ],
+        [
+          377.3376158984997,
+          0.0
+        ],
+        [
+          377.2935356574385,
+          0.0
+        ],
+        [
+          377.2501018100544,
+          0.0
+        ],
+        [
+          377.2072839677208,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p007",
+    "pair_index": 7,
+    "q_start_frame": 25200,
+    "r_start_frame": 39600,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      28800,
+      32400,
+      36000,
+      43200,
+      46800,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          378.1064376878328,
+          0.0
+        ],
+        [
+          377.4862642369057,
+          0.0
+        ],
+        [
+          377.2747535563145,
+          0.0
+        ],
+        [
+          377.2019590026525,
+          0.0
+        ],
+        [
+          377.1517659788446,
+          0.0
+        ],
+        [
+          377.106071633446,
+          0.0
+        ],
+        [
+          377.06171765969276,
+          0.0
+        ],
+        [
+          377.0181177185969,
+          0.0
+        ],
+        [
+          376.9751545662252,
+          0.0
+        ],
+        [
+          376.9327985391076,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p008",
+    "pair_index": 8,
+    "q_start_frame": 28800,
+    "r_start_frame": 43200,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      32400,
+      36000,
+      39600,
+      46800,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          380.6676842382842,
+          0.0
+        ],
+        [
+          379.93106241374306,
+          0.0
+        ],
+        [
+          379.70893950797654,
+          0.0
+        ],
+        [
+          379.6348703807631,
+          0.0
+        ],
+        [
+          379.5848333506518,
+          0.0
+        ],
+        [
+          379.53953392362206,
+          0.0
+        ],
+        [
+          379.49562063724414,
+          0.0
+        ],
+        [
+          379.45247289588394,
+          0.0
+        ],
+        [
+          379.4099669598171,
+          0.0
+        ],
+        [
+          379.36807180959227,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p009",
+    "pair_index": 9,
+    "q_start_frame": 32400,
+    "r_start_frame": 46800,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      28800,
+      36000,
+      39600,
+      43200,
+      50400,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          380.1528131610368,
+          0.0
+        ],
+        [
+          379.36517529461196,
+          0.0
+        ],
+        [
+          379.1458247544455,
+          0.0
+        ],
+        [
+          379.0721229190121,
+          0.0
+        ],
+        [
+          379.02163542257165,
+          0.0
+        ],
+        [
+          378.9757329558229,
+          0.0
+        ],
+        [
+          378.93119326064794,
+          0.0
+        ],
+        [
+          378.8874172779084,
+          0.0
+        ],
+        [
+          378.8442847410072,
+          0.0
+        ],
+        [
+          378.8017651873687,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p010",
+    "pair_index": 10,
+    "q_start_frame": 36000,
+    "r_start_frame": 50400,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      39600,
+      43200,
+      46800,
+      54000,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          380.3408764021653,
+          0.0
+        ],
+        [
+          379.5438859705494,
+          0.0
+        ],
+        [
+          379.3207832961709,
+          0.0
+        ],
+        [
+          379.24614744554634,
+          0.0
+        ],
+        [
+          379.19528125005087,
+          0.0
+        ],
+        [
+          379.14918521065835,
+          0.0
+        ],
+        [
+          379.1045066893237,
+          0.0
+        ],
+        [
+          379.0606060253974,
+          0.0
+        ],
+        [
+          379.017351902997,
+          0.0
+        ],
+        [
+          378.9747110992138,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p011",
+    "pair_index": 11,
+    "q_start_frame": 39600,
+    "r_start_frame": 54000,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      43200,
+      46800,
+      50400,
+      57600,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          377.42611322804333,
+          0.0
+        ],
+        [
+          376.6679015571967,
+          0.0
+        ],
+        [
+          376.4645112004266,
+          0.0
+        ],
+        [
+          376.3980696374352,
+          0.0
+        ],
+        [
+          376.3526577882249,
+          0.0
+        ],
+        [
+          376.3114068570438,
+          0.0
+        ],
+        [
+          376.2713914101327,
+          0.0
+        ],
+        [
+          376.2320576877658,
+          0.0
+        ],
+        [
+          376.19329264523265,
+          0.0
+        ],
+        [
+          376.15506774188725,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p012",
+    "pair_index": 12,
+    "q_start_frame": 43200,
+    "r_start_frame": 57600,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600,
+      46800,
+      50400,
+      54000,
+      61200,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          376.68184763005826,
+          0.0
+        ],
+        [
+          376.0239925213059,
+          0.0
+        ],
+        [
+          375.82231668421935,
+          0.0
+        ],
+        [
+          375.75692297431186,
+          0.0
+        ],
+        [
+          375.7133241518059,
+          0.0
+        ],
+        [
+          375.6740339866812,
+          0.0
+        ],
+        [
+          375.63598635908676,
+          0.0
+        ],
+        [
+          375.5986033225031,
+          0.0
+        ],
+        [
+          375.56176814883855,
+          0.0
+        ],
+        [
+          375.52545195934334,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p013",
+    "pair_index": 13,
+    "q_start_frame": 46800,
+    "r_start_frame": 61200,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600,
+      43200,
+      50400,
+      54000,
+      57600,
+      64800,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          373.0757524040401,
+          0.0
+        ],
+        [
+          372.46860766112127,
+          0.0
+        ],
+        [
+          372.2879631017914,
+          0.0
+        ],
+        [
+          372.22889122807067,
+          0.0
+        ],
+        [
+          372.188802029159,
+          0.0
+        ],
+        [
+          372.1523965768732,
+          0.0
+        ],
+        [
+          372.1170653709598,
+          0.0
+        ],
+        [
+          372.0823290997846,
+          0.0
+        ],
+        [
+          372.0480927660963,
+          0.0
+        ],
+        [
+          372.01433264040577,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p014",
+    "pair_index": 14,
+    "q_start_frame": 50400,
+    "r_start_frame": 64800,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600,
+      43200,
+      46800,
+      54000,
+      57600,
+      61200,
+      68400,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          370.54557818678603,
+          0.0
+        ],
+        [
+          369.96311629571096,
+          0.0
+        ],
+        [
+          369.7903112893733,
+          0.0
+        ],
+        [
+          369.73504353353377,
+          0.0
+        ],
+        [
+          369.697331198082,
+          0.0
+        ],
+        [
+          369.66296370748654,
+          0.0
+        ],
+        [
+          369.6295811454395,
+          0.0
+        ],
+        [
+          369.59675557145454,
+          0.0
+        ],
+        [
+          369.5644024245427,
+          0.0
+        ],
+        [
+          369.5325003441922,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame57600",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame72000",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p015",
+    "pair_index": 15,
+    "q_start_frame": 54000,
+    "r_start_frame": 68400,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600,
+      43200,
+      46800,
+      50400,
+      57600,
+      61200,
+      64800,
+      72000,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          366.2975318014941,
+          0.0
+        ],
+        [
+          365.82789192583994,
+          0.0
+        ],
+        [
+          365.66123943483177,
+          0.0
+        ],
+        [
+          365.60760937161973,
+          0.0
+        ],
+        [
+          365.57220981993504,
+          0.0
+        ],
+        [
+          365.5402635127275,
+          0.0
+        ],
+        [
+          365.5092691936935,
+          0.0
+        ],
+        [
+          365.4787787411397,
+          0.0
+        ],
+        [
+          365.4487062294547,
+          0.0
+        ],
+        [
+          365.4190312153144,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame75600"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame61200",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame75600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p016",
+    "pair_index": 16,
+    "q_start_frame": 57600,
+    "r_start_frame": 72000,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600,
+      43200,
+      46800,
+      50400,
+      54000,
+      61200,
+      64800,
+      68400,
+      75600
+    ],
+    "specimen_id": "func_20150417"
+  },
+  {
+    "atlas_identities": 115,
+    "atlas_training": {
+      "atlas_identity_count": 115,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          363.43184068833347,
+          0.0
+        ],
+        [
+          362.93251899668286,
+          0.0
+        ],
+        [
+          362.7591112550302,
+          0.0
+        ],
+        [
+          362.70285065884724,
+          0.0
+        ],
+        [
+          362.66604157698794,
+          0.0
+        ],
+        [
+          362.6329170820677,
+          0.0
+        ],
+        [
+          362.6007817498363,
+          0.0
+        ],
+        [
+          362.56915186293196,
+          0.0
+        ],
+        [
+          362.53793525342184,
+          0.0
+        ],
+        [
+          362.50711059201717,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 20,
+      "train_worm_count_used": 20,
+      "train_worms_original": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000"
+      ],
+      "train_worms_used": [
+        "func_20150417__frame0",
+        "func_20150417__frame3600",
+        "func_20150417__frame7200",
+        "func_20150417__frame10800",
+        "func_20150417__frame14400",
+        "func_20150417__frame18000",
+        "func_20150417__frame21600",
+        "func_20150417__frame25200",
+        "func_20150417__frame28800",
+        "func_20150417__frame32400",
+        "func_20150417__frame36000",
+        "func_20150417__frame39600",
+        "func_20150417__frame43200",
+        "func_20150417__frame46800",
+        "func_20150417__frame50400",
+        "func_20150417__frame54000",
+        "func_20150417__frame57600",
+        "func_20150417__frame64800",
+        "func_20150417__frame68400",
+        "func_20150417__frame72000"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "func_20150417__gap60m__p017",
+    "pair_index": 17,
+    "q_start_frame": 61200,
+    "r_start_frame": 75600,
+    "reference_count": 20,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600,
+      43200,
+      46800,
+      50400,
+      54000,
+      57600,
+      64800,
+      68400,
+      72000
+    ],
+    "specimen_id": "func_20150417"
+  }
+]

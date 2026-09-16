@@ -1,0 +1,80 @@
+{
+  "dataset": "Atanas/SF 000776",
+  "seed": 42,
+  "formal_held_out_queries": 3210,
+  "full_correct_wo_activity_wrong_queries": 1173,
+  "eligible_rescues_with_fixed_training_reference_and_three_hard_candidates": 998,
+  "rescues_where_wo_activity_prediction_is_spatial_hard": 312,
+  "fraction_hard_prediction_among_eligible_rescues": 0.312625250501002,
+  "rescues_where_activity_beats_strongest_hard": 592,
+  "fraction_activity_beats_strongest_hard_among_eligible_rescues": 0.593186372745491,
+  "geometry_ambiguity_definition": "Bottom quartile of max_j |S_same - S_hard,j| among eligible rescues",
+  "geometry_ambiguity_threshold": 0.015408752905250123,
+  "strict_case_definition": "w/o Activity prediction is spatial Hard AND geometry ambiguity is in the bottom quartile AND activity strongest-hard margin is positive",
+  "strict_cases": 48,
+  "fraction_strict_among_eligible_rescues": 0.04809619238476954,
+  "fraction_strict_among_all_full_rescues": 0.04092071611253197,
+  "reference_selection_rule": "For each held-out query record, select the same-fold training record with maximum formal shared-identity coverage; break ties by record name.",
+  "case_pair_selection_rule": "Choose the fixed query-reference pair with the most strict cases; then rank cases by strict tier, descending activity strongest-hard margin, ascending geometry max absolute hard gap, and identity name.",
+  "selected_fold": 3,
+  "selected_query_record": "2023-01-23-15",
+  "selected_reference_record": "2022-08-02-01",
+  "selected_query_identities": [
+    "URYDR",
+    "AWCL",
+    "AWBL",
+    "ASGR",
+    "ASHL",
+    "URADL"
+  ],
+  "displayed_candidate_identities": [
+    "AIBL",
+    "ASEL",
+    "ASGL",
+    "ASGR",
+    "ASHL",
+    "AVJR",
+    "AWAR",
+    "AWBL",
+    "AWBR",
+    "AWCL",
+    "IL1DR",
+    "IL2DL",
+    "IL2L",
+    "OLLL",
+    "OLLR",
+    "RIBL",
+    "URADL",
+    "URBR",
+    "URYDR"
+  ],
+  "n_selected_cases": 6,
+  "hard_k": 3,
+  "min_common_anchors": 8,
+  "same_hard_mean_margin_definition": "S_same - mean_j S_hard,j",
+  "strongest_hard_margin_definition": "S_same - max_j S_hard,j",
+  "shared_color_scale": [
+    -1.0,
+    1.0
+  ],
+  "missing_cells": {
+    "geo": 0,
+    "act": 0
+  },
+  "panel_a_equivalence": {
+    "Geometry": {
+      "checked_cells": 24,
+      "maximum_absolute_error": 3.3306690738754696e-16
+    },
+    "Activity": {
+      "checked_cells": 24,
+      "maximum_absolute_error": 2.220446049250313e-16
+    }
+  },
+  "prediction_source": "/home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility/results/visualization_export_atanas_seed42/neurid_query_neurons_atanas_cv5_seed42.csv",
+  "prediction_source_sha256": "11ea31c52bd72786692416aba668c549fd9ba024309e952c5d70bbcf8d05af74",
+  "geo_same_hard_source": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1/mechanism_population_relation/atanas_geo/panelA_same_hard_random_raw.csv",
+  "geo_same_hard_source_sha256": "62332ee7a4a40be0f03e8b069c18cfb6fd05901911cd2a6b644e5ecbda53175c",
+  "activity_same_hard_source": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1/mechanism_population_relation/atanas_act/panelA_same_hard_random_raw.csv",
+  "activity_same_hard_source_sha256": "08dc4d29d0856f0e2da358a364507e11209121ad20ce199b1a193b239903bbaa"
+}

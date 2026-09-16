@@ -315,7 +315,7 @@ def main() -> None:
     parser.add_argument("--gpus", default="0,1")
     parser.add_argument("--activity-length", type=int, default=512)
     args = parser.parse_args()
-    args.package_root = args.package_root or args.repo_root / "neurid"
+    args.package_root = args.package_root or args.repo_root / "mprt_net_v1_1"
     util = _utilities(args.package_root)
     args.datasets = util.parse_csv(args.datasets)
     args.folds = util.parse_int_csv(args.folds)

@@ -1,0 +1,30 @@
+[
+  {
+    "identity": "AVAL",
+    "support_templates": 1
+  },
+  {
+    "identity": "RIVL",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMDL",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMDVL",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMED",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMEV",
+    "support_templates": 1
+  },
+  {
+    "identity": "SMDVL",
+    "support_templates": 1
+  }
+]

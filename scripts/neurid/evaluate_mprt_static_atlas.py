@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import time
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -27,6 +28,9 @@ class Totals:
     dustbin_top1: int = 0
     hungarian_queries: int = 0
     hungarian_correct: int = 0
+    unknown_queries: int = 0
+    unknown_rejected: int = 0
+    runtime_seconds: float = 0.0
 
     def metrics(self) -> dict[str, float | int]:
         q = max(self.queries, 1)
@@ -40,6 +44,11 @@ class Totals:
             "dustbin_top1_rate": self.dustbin_top1 / q,
             "hungarian_queries": self.hungarian_queries,
             "hungarian_accuracy": self.hungarian_correct / hq,
+            "reject_aware_top1": self.top1_with_dustbin / q,
+            "known_false_reject_rate": self.dustbin_top1 / q,
+            "unknown_queries": self.unknown_queries,
+            "unknown_recall": self.unknown_rejected / max(self.unknown_queries, 1),
+            "runtime_seconds": self.runtime_seconds,
         }
 
 
@@ -48,27 +57,36 @@ def _write_json(path: Path, value: dict[str, Any]) -> None:
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def _targets(sample: Any, identity_to_slot: dict[str, int]) -> tuple[torch.Tensor, dict[int, str]]:
+def _targets(sample: Any, identity_to_slot: dict[str, int]) -> tuple[torch.Tensor, dict[int, str], list[int]]:
     from mprt_net.data import unique_identity_map
 
     target = torch.full((sample.num_nodes,), -1, dtype=torch.long, device=sample.xyz.device)
     identities: dict[int, str] = {}
+    unknown: list[int] = []
     for identity, node_index in unique_identity_map(sample).items():
         slot = identity_to_slot.get(str(identity))
         if slot is None:
+            unknown.append(int(node_index))
             continue
         target[int(node_index)] = int(slot)
         identities[int(node_index)] = str(identity)
-    return target, identities
+    return target, identities, unknown
 
 
-def _evaluate_rows(output: Any, target: torch.Tensor, identities: dict[int, str], uid: str, source_path: str):
+def _evaluate_rows(output: Any, target: torch.Tensor, identities: dict[int, str], unknown: list[int], uid: str, source_path: str):
     probabilities = output.row_conditional.detach()
     real = probabilities[:, :-1]
     valid = (target >= 0) & (target < real.shape[1])
     indices = torch.nonzero(valid, as_tuple=False).flatten()
     totals = Totals()
     records: list[dict[str, Any]] = []
+    if unknown:
+        unknown_index = torch.tensor(unknown, dtype=torch.long, device=probabilities.device)
+        unknown_all = probabilities.index_select(0, unknown_index)
+        totals.unknown_queries = len(unknown)
+        totals.unknown_rejected = int(
+            (unknown_all[:, -1] > unknown_all[:, :-1].amax(dim=1)).sum().item()
+        )
     if indices.numel() == 0:
         return totals, records
 
@@ -137,6 +155,8 @@ def main() -> None:
     parser.add_argument("--variant", required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--query-output", type=Path, required=True)
+    parser.add_argument("--structural-weight-scale", type=float, default=1.0)
+    parser.add_argument("--unary-temperature-scale", type=float, default=1.0)
     args = parser.parse_args()
 
     import sys
@@ -168,11 +188,22 @@ def main() -> None:
         for number, path in enumerate(files, start=1):
             sample_cpu = cache.get(path)
             sample = sample_cpu.to(device)
+            if device.type == "cuda":
+                torch.cuda.synchronize(device)
+            started = time.perf_counter()
             query = model.encode_population(sample)
-            output = model.match_encodings(query, atlas)
-            target, identities = _targets(sample, identity_to_slot)
+            output = model.match_encodings(
+                query,
+                atlas,
+                structural_weight_scale=args.structural_weight_scale,
+                unary_temperature_scale=args.unary_temperature_scale,
+            )
+            if device.type == "cuda":
+                torch.cuda.synchronize(device)
+            elapsed = time.perf_counter() - started
+            target, identities, unknown = _targets(sample, identity_to_slot)
             cell_total, cell_records = _evaluate_rows(
-                output, target, identities, sample_cpu.uid, sample_cpu.source_path
+                output, target, identities, unknown, sample_cpu.uid, sample_cpu.source_path
             )
             total.queries += cell_total.queries
             total.top1 += cell_total.top1
@@ -182,6 +213,9 @@ def main() -> None:
             total.dustbin_top1 += cell_total.dustbin_top1
             total.hungarian_queries += cell_total.hungarian_queries
             total.hungarian_correct += cell_total.hungarian_correct
+            total.unknown_queries += cell_total.unknown_queries
+            total.unknown_rejected += cell_total.unknown_rejected
+            total.runtime_seconds += elapsed
             records.extend(cell_records)
             print(
                 f"evaluate {number:03d}/{len(files):03d} uid={sample_cpu.uid} "
@@ -200,6 +234,8 @@ def main() -> None:
         "checkpoint_epoch": checkpoint.get("epoch"),
         "atlas_size": len(identity_to_slot),
         "recordings": len(files),
+        "structural_weight_scale": args.structural_weight_scale,
+        "unary_temperature_scale": args.unary_temperature_scale,
         **total.metrics(),
     }
     _write_json(args.output, result)

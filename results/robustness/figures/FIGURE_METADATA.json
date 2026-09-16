@@ -1,0 +1,16 @@
+{
+  "title": "Figure X — Robustness to synthetic perturbations",
+  "source": "../hierarchical_bootstrap_summary.csv",
+  "audit_gate": "../AUDIT_GATE.json",
+  "metric": "conditional_top1",
+  "definition": "Top-1 accuracy among the surviving observable queries in the shared manifest cohort",
+  "uncertainty_displayed": "95% paired hierarchical-bootstrap CI, 10000 replicates",
+  "figure_size_inches": [7.1, 2.4],
+  "y_limits_percent": [0, 70],
+  "outputs": {
+    "Figure_X_robustness_conditional_top1.pdf": "4381eafd45064d34c73bcf4c891aa8922444ab52fb3576aa87c64b6043d983b2",
+    "Figure_X_robustness_conditional_top1.svg": "738678800693ab3e95086d54b9d59639da08481dd71454b6a3619f5ae0fcd139",
+    "Figure_X_robustness_conditional_top1.png": "6f335bc8b77954a4cb5d725ed9898da6469f21857c3253d1a631c1aa266c2a53"
+  },
+  "plot_script": "../analysis_code/plot_rld_robustness_conditional_top1.py"
+}

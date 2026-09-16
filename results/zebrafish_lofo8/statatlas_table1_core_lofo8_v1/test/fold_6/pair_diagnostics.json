@@ -1,0 +1,850 @@
+[
+  {
+    "atlas_identities": 61,
+    "atlas_training": {
+      "atlas_identity_count": 61,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          75.23412795080333,
+          0.0
+        ],
+        [
+          74.9683415614909,
+          0.0
+        ],
+        [
+          74.86464832990455,
+          0.0
+        ],
+        [
+          74.77251643004463,
+          0.0
+        ],
+        [
+          74.68556424526189,
+          0.0
+        ],
+        [
+          74.60277335340928,
+          0.0
+        ],
+        [
+          74.52384773847211,
+          0.0
+        ],
+        [
+          74.44860251939991,
+          0.0
+        ],
+        [
+          74.3768724600596,
+          0.0
+        ],
+        [
+          74.30850026555676,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 10,
+      "train_worm_count_used": 10,
+      "train_worms_original": [
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "train_worms_used": [
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "lineage_20160328__gap60m__p000",
+    "pair_index": 0,
+    "q_start_frame": 0,
+    "r_start_frame": 14400,
+    "reference_count": 10,
+    "reference_start_frames": [
+      3600,
+      7200,
+      10800,
+      18000,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600
+    ],
+    "specimen_id": "lineage_20160328"
+  },
+  {
+    "atlas_identities": 61,
+    "atlas_training": {
+      "atlas_identity_count": 61,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          77.55542782588552,
+          0.0
+        ],
+        [
+          77.08862229102502,
+          0.0
+        ],
+        [
+          76.94947794551399,
+          0.0
+        ],
+        [
+          76.83343417461022,
+          0.0
+        ],
+        [
+          76.72502305434509,
+          0.0
+        ],
+        [
+          76.62211121148685,
+          0.0
+        ],
+        [
+          76.52420644606059,
+          0.0
+        ],
+        [
+          76.43104919755268,
+          0.0
+        ],
+        [
+          76.34241699991108,
+          0.0
+        ],
+        [
+          76.25809972131398,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 10,
+      "train_worm_count_used": 10,
+      "train_worms_original": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "train_worms_used": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "lineage_20160328__gap60m__p001",
+    "pair_index": 1,
+    "q_start_frame": 3600,
+    "r_start_frame": 18000,
+    "reference_count": 10,
+    "reference_start_frames": [
+      0,
+      7200,
+      10800,
+      14400,
+      21600,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600
+    ],
+    "specimen_id": "lineage_20160328"
+  },
+  {
+    "atlas_identities": 61,
+    "atlas_training": {
+      "atlas_identity_count": 61,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          82.44258194448696,
+          0.0
+        ],
+        [
+          82.03412352006592,
+          0.0
+        ],
+        [
+          81.8770229859369,
+          0.0
+        ],
+        [
+          81.74726664809984,
+          0.0
+        ],
+        [
+          81.6267869606767,
+          0.0
+        ],
+        [
+          81.51282554958394,
+          0.0
+        ],
+        [
+          81.40474622165985,
+          0.0
+        ],
+        [
+          81.30222221138122,
+          0.0
+        ],
+        [
+          81.20497684264546,
+          0.0
+        ],
+        [
+          81.11274993981459,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 10,
+      "train_worm_count_used": 10,
+      "train_worms_original": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "train_worms_used": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "lineage_20160328__gap60m__p002",
+    "pair_index": 2,
+    "q_start_frame": 7200,
+    "r_start_frame": 21600,
+    "reference_count": 10,
+    "reference_start_frames": [
+      0,
+      3600,
+      10800,
+      14400,
+      18000,
+      25200,
+      28800,
+      32400,
+      36000,
+      39600
+    ],
+    "specimen_id": "lineage_20160328"
+  },
+  {
+    "atlas_identities": 61,
+    "atlas_training": {
+      "atlas_identity_count": 61,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          82.68300083595136,
+          0.0
+        ],
+        [
+          82.21096367619072,
+          0.0
+        ],
+        [
+          82.04904042168239,
+          0.0
+        ],
+        [
+          81.92125332968513,
+          0.0
+        ],
+        [
+          81.80354324604016,
+          0.0
+        ],
+        [
+          81.69248782786747,
+          0.0
+        ],
+        [
+          81.58732517804994,
+          0.0
+        ],
+        [
+          81.48770186782106,
+          0.0
+        ],
+        [
+          81.39333224418506,
+          0.0
+        ],
+        [
+          81.30395044352436,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 10,
+      "train_worm_count_used": 10,
+      "train_worms_original": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "train_worms_used": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "lineage_20160328__gap60m__p003",
+    "pair_index": 3,
+    "q_start_frame": 10800,
+    "r_start_frame": 25200,
+    "reference_count": 10,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      14400,
+      18000,
+      21600,
+      28800,
+      32400,
+      36000,
+      39600
+    ],
+    "specimen_id": "lineage_20160328"
+  },
+  {
+    "atlas_identities": 61,
+    "atlas_training": {
+      "atlas_identity_count": 61,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          83.2620128393255,
+          0.0
+        ],
+        [
+          82.7739348955894,
+          0.0
+        ],
+        [
+          82.59972161281304,
+          0.0
+        ],
+        [
+          82.46493501637603,
+          0.0
+        ],
+        [
+          82.34180641943415,
+          0.0
+        ],
+        [
+          82.22584408076786,
+          0.0
+        ],
+        [
+          82.11610536346988,
+          0.0
+        ],
+        [
+          82.01219121077727,
+          0.0
+        ],
+        [
+          81.91379276797034,
+          0.0
+        ],
+        [
+          81.82062575513565,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 10,
+      "train_worm_count_used": 10,
+      "train_worms_original": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "train_worms_used": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "lineage_20160328__gap60m__p004",
+    "pair_index": 4,
+    "q_start_frame": 14400,
+    "r_start_frame": 28800,
+    "reference_count": 10,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      18000,
+      21600,
+      25200,
+      32400,
+      36000,
+      39600
+    ],
+    "specimen_id": "lineage_20160328"
+  },
+  {
+    "atlas_identities": 61,
+    "atlas_training": {
+      "atlas_identity_count": 61,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          81.09040112197577,
+          0.0
+        ],
+        [
+          80.31089669440723,
+          0.0
+        ],
+        [
+          80.12945669858605,
+          0.0
+        ],
+        [
+          79.99251933378076,
+          0.0
+        ],
+        [
+          79.86639571022366,
+          0.0
+        ],
+        [
+          79.74730974570193,
+          0.0
+        ],
+        [
+          79.63444800201269,
+          0.0
+        ],
+        [
+          79.52743620996466,
+          0.0
+        ],
+        [
+          79.4259751199483,
+          0.0
+        ],
+        [
+          79.32978706351378,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 10,
+      "train_worm_count_used": 10,
+      "train_worms_original": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "train_worms_used": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame36000",
+        "lineage_20160328__frame39600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "lineage_20160328__gap60m__p005",
+    "pair_index": 5,
+    "q_start_frame": 18000,
+    "r_start_frame": 32400,
+    "reference_count": 10,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      21600,
+      25200,
+      28800,
+      36000,
+      39600
+    ],
+    "specimen_id": "lineage_20160328"
+  },
+  {
+    "atlas_identities": 61,
+    "atlas_training": {
+      "atlas_identity_count": 61,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          81.22323299521007,
+          0.0
+        ],
+        [
+          80.53230149822926,
+          0.0
+        ],
+        [
+          80.36549010375893,
+          0.0
+        ],
+        [
+          80.23765961065568,
+          0.0
+        ],
+        [
+          80.11947619881373,
+          0.0
+        ],
+        [
+          80.00766058980065,
+          0.0
+        ],
+        [
+          79.90149301104003,
+          0.0
+        ],
+        [
+          79.80064373437024,
+          0.0
+        ],
+        [
+          79.70484917826944,
+          0.0
+        ],
+        [
+          79.61386449845226,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 10,
+      "train_worm_count_used": 10,
+      "train_worms_original": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame39600"
+      ],
+      "train_worms_used": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame25200",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame39600"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "lineage_20160328__gap60m__p006",
+    "pair_index": 6,
+    "q_start_frame": 21600,
+    "r_start_frame": 36000,
+    "reference_count": 10,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      25200,
+      28800,
+      32400,
+      39600
+    ],
+    "specimen_id": "lineage_20160328"
+  },
+  {
+    "atlas_identities": 61,
+    "atlas_training": {
+      "atlas_identity_count": 61,
+      "color_information": "constant bookkeeping channel only; identity transform; never scored",
+      "degenerate_geometry_policy": "official scaled_rotation/MCR paths are used when finite/full-rank; degenerate train-only geometry uses isotropic similarity and/or Moore-Penrose minimum-norm fallback",
+      "epsilon_pos": 1000.0,
+      "excluded_train_worm_count": 0,
+      "excluded_train_worms": [],
+      "mcr_pinv_fallback_count": 0,
+      "min_counts": 2,
+      "min_required_occurrences": 3,
+      "min_train_labels_per_worm": 4,
+      "n_iter": 10,
+      "official_cost_history": [
+        [
+          78.55756349814077,
+          0.0
+        ],
+        [
+          77.80553444890401,
+          0.0
+        ],
+        [
+          77.62959192979949,
+          0.0
+        ],
+        [
+          77.50126558352055,
+          0.0
+        ],
+        [
+          77.38415221279634,
+          0.0
+        ],
+        [
+          77.27347360011237,
+          0.0
+        ],
+        [
+          77.16833552079704,
+          0.0
+        ],
+        [
+          77.06839790227602,
+          0.0
+        ],
+        [
+          76.97340600965327,
+          0.0
+        ],
+        [
+          76.88312531159497,
+          0.0
+        ]
+      ],
+      "scaled_rotation_fallback_count": 0,
+      "train_worm_count_original": 10,
+      "train_worm_count_used": 10,
+      "train_worms_original": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000"
+      ],
+      "train_worms_used": [
+        "lineage_20160328__frame0",
+        "lineage_20160328__frame3600",
+        "lineage_20160328__frame7200",
+        "lineage_20160328__frame10800",
+        "lineage_20160328__frame14400",
+        "lineage_20160328__frame18000",
+        "lineage_20160328__frame21600",
+        "lineage_20160328__frame28800",
+        "lineage_20160328__frame32400",
+        "lineage_20160328__frame36000"
+      ],
+      "update_beta_policy": "PositionOnlyAtlas copies only the XYZ regression and XYZ Mahalanobis cost branches of pinned official Atlas.update_beta; color regression and color cost are disabled"
+    },
+    "endpoint_truth_used_in_scoring": false,
+    "endpoints_used_in_atlas": false,
+    "pair_id": "lineage_20160328__gap60m__p007",
+    "pair_index": 7,
+    "q_start_frame": 25200,
+    "r_start_frame": 39600,
+    "reference_count": 10,
+    "reference_start_frames": [
+      0,
+      3600,
+      7200,
+      10800,
+      14400,
+      18000,
+      21600,
+      28800,
+      32400,
+      36000
+    ],
+    "specimen_id": "lineage_20160328"
+  }
+]

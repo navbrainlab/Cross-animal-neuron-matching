@@ -1,0 +1,234 @@
+{
+  "protocol": "outer_training_geometry_medoid_template_v1",
+  "method": "CPD",
+  "adapter": "cpd",
+  "fold_root": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_1",
+  "checkpoint": null,
+  "training_animals": 22,
+  "test_animals": 8,
+  "evaluated_test_animals": 8,
+  "test_to_template_pairs": 8,
+  "directed_test_test_pairs": 0,
+  "skipped_test_animals": [],
+  "training_identity_vocabulary_size": 85,
+  "template_selection": {
+    "selection_split": "outer_train_only",
+    "uses_validation": false,
+    "uses_test": false,
+    "uses_identity_labels": false,
+    "geometry_normalization": "per-animal median centering, then divide XYZ by 200",
+    "distance": "symmetric mean nearest-neighbour Euclidean distance",
+    "criterion": "minimum mean distance to all other outer-training animals",
+    "tie_break": "lexicographic worm UID, then original train-list index",
+    "template_uid": "2023-01-05-18",
+    "template_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-18.npz",
+    "template_train_index": 10,
+    "template_mean_distance": 0.034500878895778055,
+    "training_candidates": [
+      {
+        "uid": "2022-07-20-01",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-20-01.npz",
+        "mean_geometry_distance": 0.04076003688599487
+      },
+      {
+        "uid": "2023-01-10-07",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-07.npz",
+        "mean_geometry_distance": 0.041794193174914965
+      },
+      {
+        "uid": "2023-01-10-14",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-10-14.npz",
+        "mean_geometry_distance": 0.04386788698628303
+      },
+      {
+        "uid": "2023-03-07-01",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-03-07-01.npz",
+        "mean_geometry_distance": 0.04098638320322899
+      },
+      {
+        "uid": "2022-06-14-01",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2022-06-14-01.npz",
+        "mean_geometry_distance": 0.03759687189387938
+      },
+      {
+        "uid": "2022-06-14-07",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-07.npz",
+        "mean_geometry_distance": 0.04136379346503375
+      },
+      {
+        "uid": "2022-06-14-13",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-13.npz",
+        "mean_geometry_distance": 0.044616518048647726
+      },
+      {
+        "uid": "2022-07-26-01",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-07-26-01.npz",
+        "mean_geometry_distance": 0.060829811053147616
+      },
+      {
+        "uid": "2022-08-02-01",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-08-02-01.npz",
+        "mean_geometry_distance": 0.06004190334475729
+      },
+      {
+        "uid": "2023-01-05-01",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-01.npz",
+        "mean_geometry_distance": 0.043810495788860766
+      },
+      {
+        "uid": "2023-01-05-18",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-05-18.npz",
+        "mean_geometry_distance": 0.034500878895778055
+      },
+      {
+        "uid": "2023-01-09-28",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-09-28.npz",
+        "mean_geometry_distance": 0.0381947945521969
+      },
+      {
+        "uid": "2023-01-13-07",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-13-07.npz",
+        "mean_geometry_distance": 0.037894687714172766
+      },
+      {
+        "uid": "2023-01-16-01",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/test/2023-01-16-01.npz",
+        "mean_geometry_distance": 0.04124050175028441
+      },
+      {
+        "uid": "2023-01-16-08",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-08.npz",
+        "mean_geometry_distance": 0.03654089563521244
+      },
+      {
+        "uid": "2023-01-16-15",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-15.npz",
+        "mean_geometry_distance": 0.034977226377674364
+      },
+      {
+        "uid": "2023-01-16-22",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-16-22.npz",
+        "mean_geometry_distance": 0.0368283542088874
+      },
+      {
+        "uid": "2023-01-19-08",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-19-08.npz",
+        "mean_geometry_distance": 0.05241422902039043
+      },
+      {
+        "uid": "2023-01-19-15",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-19-15.npz",
+        "mean_geometry_distance": 0.08491005751085852
+      },
+      {
+        "uid": "2023-01-19-22",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/val/2023-01-19-22.npz",
+        "mean_geometry_distance": 0.04405108955908884
+      },
+      {
+        "uid": "2023-01-23-15",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2023-01-23-15.npz",
+        "mean_geometry_distance": 0.035982860129513586
+      },
+      {
+        "uid": "2022-06-28-01",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-28-01.npz",
+        "mean_geometry_distance": 0.06900775897983738
+      }
+    ]
+  },
+  "pair_score_normalization": "zscore",
+  "primary_aggregation": "template_score",
+  "tie_policy": "expected metric under uniform tie breaking",
+  "metrics": {
+    "template_score": {
+      "queries": 477,
+      "top1": 0.5681341719077568,
+      "top5": 0.8448637316561844,
+      "mrr": 0.6883470948627307,
+      "hungarian_accuracy": 0.5786163522012578
+    }
+  },
+  "per_animal": [
+    {
+      "query_uid": "2022-12-21-06",
+      "aggregation": "template_score",
+      "queries": 51,
+      "vocabulary_size": 85,
+      "top1": 0.6862745098039216,
+      "top5": 0.9215686274509803,
+      "mrr": 0.7958614275749826,
+      "hungarian_accuracy": 0.7058823529411765
+    },
+    {
+      "query_uid": "2022-07-15-06",
+      "aggregation": "template_score",
+      "queries": 52,
+      "vocabulary_size": 85,
+      "top1": 0.4423076923076923,
+      "top5": 0.7692307692307693,
+      "mrr": 0.5834701434814556,
+      "hungarian_accuracy": 0.46153846153846156
+    },
+    {
+      "query_uid": "2023-01-09-22",
+      "aggregation": "template_score",
+      "queries": 63,
+      "vocabulary_size": 85,
+      "top1": 0.47619047619047616,
+      "top5": 0.8412698412698413,
+      "mrr": 0.6336295966197928,
+      "hungarian_accuracy": 0.5555555555555556
+    },
+    {
+      "query_uid": "2023-01-23-01",
+      "aggregation": "template_score",
+      "queries": 58,
+      "vocabulary_size": 85,
+      "top1": 0.5344827586206896,
+      "top5": 0.8275862068965517,
+      "mrr": 0.6560138079430032,
+      "hungarian_accuracy": 0.5689655172413793
+    },
+    {
+      "query_uid": "2023-01-17-01",
+      "aggregation": "template_score",
+      "queries": 65,
+      "vocabulary_size": 85,
+      "top1": 0.6307692307692307,
+      "top5": 0.8153846153846154,
+      "mrr": 0.7127763275630573,
+      "hungarian_accuracy": 0.6307692307692307
+    },
+    {
+      "query_uid": "2023-01-17-07",
+      "aggregation": "template_score",
+      "queries": 58,
+      "vocabulary_size": 85,
+      "top1": 0.603448275862069,
+      "top5": 0.8793103448275862,
+      "mrr": 0.726139806689876,
+      "hungarian_accuracy": 0.603448275862069
+    },
+    {
+      "query_uid": "2023-01-17-14",
+      "aggregation": "template_score",
+      "queries": 69,
+      "vocabulary_size": 85,
+      "top1": 0.5652173913043478,
+      "top5": 0.927536231884058,
+      "mrr": 0.7063728982120794,
+      "hungarian_accuracy": 0.5362318840579711
+    },
+    {
+      "query_uid": "2023-01-18-01",
+      "aggregation": "template_score",
+      "queries": 61,
+      "vocabulary_size": 85,
+      "top1": 0.6065573770491803,
+      "top5": 0.7704918032786885,
+      "mrr": 0.6927609586586317,
+      "hungarian_accuracy": 0.5737704918032787
+    }
+  ]
+}

@@ -40,16 +40,6 @@ class PopulationEncoding:
 
 
 @dataclass
-class DynamicAtlasEncoding:
-    encoding: PopulationEncoding
-    coefficients: torch.Tensor
-    coordinate_residual: torch.Tensor
-    node_residual: torch.Tensor
-    relation_residual: torch.Tensor
-    attention_weights: torch.Tensor | None = None
-
-
-@dataclass
 class MPRTOutput:
     plan: torch.Tensor
     log_plan: torch.Tensor
@@ -73,281 +63,6 @@ class AtlasMatchOutput:
     alignment_b: MPRTOutput
     atlas_row_conditional: torch.Tensor
     atlas_col_conditional: torch.Tensor
-    dynamic_atlas_a: DynamicAtlasEncoding | None = None
-    dynamic_atlas_b: DynamicAtlasEncoding | None = None
-
-
-class DynamicResidualAtlas(nn.Module):
-    """Bounded low-rank deformation of fixed identity-anchored atlas slots.
-
-    ``global_pool`` is the original DeepSets conditioner and is retained for
-    old-checkpoint compatibility. ``atlas_cross_attention`` makes every atlas
-    slot query the input animal and combines feature attention with a soft
-    standardized-coordinate prior.
-    """
-
-    def __init__(self, config: ModelConfig):
-        super().__init__()
-        self.config = config
-        pose_input_dim = config.hidden_dim + 7
-        hidden = config.dynamic_atlas_hidden_dim
-        rank = config.dynamic_atlas_rank
-        size = config.atlas_size
-        self.conditioner = config.dynamic_atlas_conditioner
-
-        if self.conditioner == "global_pool":
-            # Exact original names and shapes preserve old checkpoints.
-            self.pose_nodes = nn.Sequential(
-                nn.Linear(pose_input_dim, hidden),
-                nn.SiLU(),
-                nn.LayerNorm(hidden),
-                nn.Linear(hidden, hidden),
-                nn.SiLU(),
-            )
-            self.pose_coefficients = nn.Linear(2 * hidden, rank)
-        elif self.conditioner == "atlas_cross_attention":
-            heads = config.dynamic_atlas_attention_heads
-            self.attention_heads = heads
-            self.head_dim = hidden // heads
-            self.atlas_queries = nn.Sequential(
-                nn.Linear(pose_input_dim, hidden),
-                nn.SiLU(),
-                nn.LayerNorm(hidden),
-            )
-            self.condition_keys = nn.Sequential(
-                nn.Linear(pose_input_dim, hidden),
-                nn.SiLU(),
-                nn.LayerNorm(hidden),
-            )
-            self.condition_values = nn.Sequential(
-                nn.Linear(pose_input_dim, hidden),
-                nn.SiLU(),
-                nn.LayerNorm(hidden),
-            )
-            self.slot_context = nn.Sequential(
-                nn.Linear(3 * hidden, hidden),
-                nn.SiLU(),
-                nn.LayerNorm(hidden),
-                nn.Linear(hidden, hidden),
-                nn.SiLU(),
-            )
-            self.pose_coefficients = nn.Linear(hidden, rank)
-        else:  # ModelConfig normally rejects this first.
-            raise ValueError(f"Unknown dynamic atlas conditioner={self.conditioner!r}")
-        # A zero coefficient head makes the initial dynamic model exactly the
-        # frozen static atlas, while nonzero random bases preserve gradients.
-        nn.init.zeros_(self.pose_coefficients.weight)
-        nn.init.zeros_(self.pose_coefficients.bias)
-        self.coordinate_basis = nn.Parameter(0.02 * torch.randn(rank, size, 3))
-        self.node_basis = nn.Parameter(
-            0.02 * torch.randn(rank, size, config.hidden_dim)
-        )
-        self.geometry_to_relation = nn.Sequential(
-            nn.Linear(7, hidden),
-            nn.SiLU(),
-            nn.Linear(hidden, config.relation_dim),
-        )
-
-    @staticmethod
-    def _edge_geometry(coordinates: torch.Tensor) -> torch.Tensor:
-        displacement = coordinates[:, None, :] - coordinates[None, :, :]
-        distance = torch.linalg.vector_norm(displacement, dim=-1, keepdim=True)
-        unit = displacement / distance.clamp_min(1e-6)
-        return torch.cat([displacement, unit, distance], dim=-1)
-
-    @staticmethod
-    def _node_input(encoding: PopulationEncoding) -> torch.Tensor:
-        if encoding.coordinates is None:
-            raise ValueError("Dynamic atlas conditioning requires node coordinates")
-        coordinates = encoding.coordinates
-        radius = coordinates.square().sum(dim=-1, keepdim=True).sqrt()
-        return torch.cat(
-            [
-                F.normalize(encoding.nodes, dim=-1),
-                coordinates,
-                coordinates.square(),
-                radius,
-            ],
-            dim=-1,
-        )
-
-    def _global_coefficients(
-        self,
-        condition: PopulationEncoding,
-    ) -> tuple[torch.Tensor, None]:
-        per_node = self.pose_nodes(self._node_input(condition))
-        pooled = torch.cat(
-            [per_node.mean(dim=0), per_node.max(dim=0).values], dim=0
-        )
-        return torch.tanh(self.pose_coefficients(pooled)), None
-
-    def _slot_coefficients(
-        self,
-        condition: PopulationEncoding,
-        atlas: PopulationEncoding,
-    ) -> tuple[torch.Tensor, torch.Tensor]:
-        condition_input = self._node_input(condition)
-        atlas_input = self._node_input(atlas)
-        num_slots = atlas_input.shape[0]
-        num_nodes = condition_input.shape[0]
-        if num_nodes == 0:
-            raise ValueError("Dynamic atlas cannot attend to an empty population")
-
-        queries = self.atlas_queries(atlas_input)
-        keys = self.condition_keys(condition_input)
-        values = self.condition_values(condition_input)
-        queries_by_head = queries.view(
-            num_slots, self.attention_heads, self.head_dim
-        )
-        keys_by_head = keys.view(num_nodes, self.attention_heads, self.head_dim)
-        values_by_head = values.view(
-            num_nodes, self.attention_heads, self.head_dim
-        )
-        logits = torch.einsum(
-            "shd,nhd->hsn", queries_by_head, keys_by_head
-        ) / math.sqrt(float(self.head_dim))
-
-        squared_distance = torch.cdist(
-            atlas.coordinates, condition.coordinates
-        ).square()
-        sigma = self.config.dynamic_atlas_geometry_sigma
-        geometry_bias = -squared_distance / (2.0 * sigma * sigma)
-        logits = logits + (
-            self.config.dynamic_atlas_geometry_weight * geometry_bias[None, :, :]
-        )
-        attention = F.softmax(logits, dim=-1)
-        dropped_attention = F.dropout(
-            attention, p=self.config.dropout, training=self.training
-        )
-        context_by_head = torch.einsum(
-            "hsn,nhd->shd", dropped_attention, values_by_head
-        )
-        context = context_by_head.reshape(num_slots, -1)
-        slot_features = self.slot_context(
-            torch.cat([queries, context, context - queries], dim=-1)
-        )
-        coefficients = torch.tanh(self.pose_coefficients(slot_features))
-        if atlas.support is not None:
-            valid = (atlas.support > 0).to(coefficients.dtype)
-            coefficients = coefficients * valid[:, None]
-        return coefficients, attention.mean(dim=0)
-
-    def forward(
-        self,
-        condition: PopulationEncoding,
-        atlas: PopulationEncoding,
-    ) -> DynamicAtlasEncoding:
-        if atlas.coordinates is None:
-            raise ValueError("Dynamic atlas requires frozen atlas coordinates")
-        if self.conditioner == "global_pool":
-            coefficients, attention_weights = self._global_coefficients(condition)
-        else:
-            coefficients, attention_weights = self._slot_coefficients(condition, atlas)
-        rank = float(self.config.dynamic_atlas_rank)
-        coefficient_equation = "r,rsd->sd" if coefficients.ndim == 1 else "sr,rsd->sd"
-        node_equation = "r,rsh->sh" if coefficients.ndim == 1 else "sr,rsh->sh"
-        coordinate_residual = (
-            self.config.dynamic_atlas_coordinate_scale
-            * torch.einsum(
-                coefficient_equation,
-                coefficients,
-                torch.tanh(self.coordinate_basis),
-            )
-            / rank
-        )
-        node_residual = (
-            self.config.dynamic_atlas_node_scale
-            * torch.einsum(
-                node_equation,
-                coefficients,
-                torch.tanh(self.node_basis),
-            )
-            / rank
-        )
-        dynamic_coordinates = atlas.coordinates + coordinate_residual
-        dynamic_nodes = F.normalize(atlas.nodes + node_residual, dim=-1)
-
-        static_geometry = self._edge_geometry(atlas.coordinates)
-        dynamic_geometry = self._edge_geometry(dynamic_coordinates)
-        relation_residual = self.config.dynamic_atlas_relation_scale * torch.tanh(
-            self.geometry_to_relation(dynamic_geometry)
-            - self.geometry_to_relation(static_geometry)
-        )
-        if atlas.relation_support is not None:
-            relation_residual = relation_residual * atlas.relation_support[..., None]
-        elif atlas.support is not None:
-            pair_support = (atlas.support > 0)[:, None] & (atlas.support > 0)[None, :]
-            relation_residual = relation_residual * pair_support[..., None]
-        dynamic_relations = atlas.relations + relation_residual
-        encoding = PopulationEncoding(
-            nodes=dynamic_nodes,
-            relations=dynamic_relations,
-            geometry_relations=dynamic_geometry,
-            activity_relations=atlas.activity_relations,
-            coordinates=dynamic_coordinates,
-            support=atlas.support,
-            relation_support=atlas.relation_support,
-            relation_count=atlas.relation_count,
-        )
-        return DynamicAtlasEncoding(
-            encoding=encoding,
-            coefficients=coefficients,
-            coordinate_residual=coordinate_residual,
-            node_residual=node_residual,
-            relation_residual=relation_residual,
-            attention_weights=attention_weights,
-        )
-
-    def regularization(
-        self,
-        atlas: PopulationEncoding,
-        dynamic: DynamicAtlasEncoding,
-    ) -> dict[str, torch.Tensor]:
-        if atlas.coordinates is None:
-            raise ValueError("Dynamic atlas regularization requires coordinates")
-        coordinate = dynamic.coordinate_residual
-        magnitude = (
-            coordinate.square().mean()
-            + dynamic.node_residual.square().mean()
-            + dynamic.relation_residual.square().mean()
-        )
-        size = coordinate.shape[0]
-        if size < 2:
-            zero = magnitude * 0.0
-            return {"magnitude": magnitude, "smoothness": zero, "distortion": zero}
-
-        k = min(self.config.dynamic_atlas_smooth_k, size - 1)
-        static_distance = torch.cdist(atlas.coordinates, atlas.coordinates)
-        invalid = torch.eye(size, dtype=torch.bool, device=static_distance.device)
-        if atlas.support is not None:
-            valid = atlas.support > 0
-            invalid = invalid | ~valid[:, None] | ~valid[None, :]
-        neighbor_distance = static_distance.masked_fill(invalid, torch.inf)
-        neighbors = neighbor_distance.topk(k=k, dim=1, largest=False).indices
-        rows = torch.arange(size, device=coordinate.device)[:, None].expand(-1, k)
-        selected_valid = torch.isfinite(neighbor_distance[rows, neighbors])
-        residual_difference = coordinate[rows] - coordinate[neighbors]
-        squared_difference = residual_difference.square().sum(dim=-1)
-        smoothness = (
-            squared_difference[selected_valid].mean()
-            if bool(selected_valid.any())
-            else magnitude * 0.0
-        )
-
-        dynamic_distance = torch.cdist(
-            dynamic.encoding.coordinates, dynamic.encoding.coordinates
-        )
-        edge_change = dynamic_distance[rows, neighbors] - static_distance[rows, neighbors]
-        distortion = (
-            edge_change[selected_valid].square().mean()
-            if bool(selected_valid.any())
-            else magnitude * 0.0
-        )
-        return {
-            "magnitude": magnitude,
-            "smoothness": smoothness,
-            "distortion": distortion,
-        }
 
 
 class IndependentPopulationEncoder(nn.Module):
@@ -506,13 +221,9 @@ class MPRTNet(nn.Module):
             )
             self.register_buffer("atlas_update_count", torch.zeros((), dtype=torch.long))
             self.register_buffer("atlas_blend", torch.zeros(()))
-            if self.config.dynamic_atlas_enabled:
-                self.register_buffer("atlas_xyz", torch.zeros(size, 3))
-            else:
-                self.atlas_xyz = None
+            self.atlas_xyz = None
             if (
-                self.config.dynamic_atlas_enabled
-                or self.config.atlas_relation_masking
+                self.config.atlas_relation_masking
                 or self.config.relation_objective == "population_relative_quadratic"
             ):
                 self.register_buffer(
@@ -524,10 +235,6 @@ class MPRTNet(nn.Module):
                 self.register_buffer("atlas_relation_count", torch.zeros(size, size))
             else:
                 self.atlas_relation_count = None
-            if self.config.dynamic_atlas_enabled:
-                self.dynamic_atlas_adapter = DynamicResidualAtlas(self.config)
-            else:
-                self.dynamic_atlas_adapter = None
         else:
             self.atlas_nodes = None
             self.atlas_relations = None
@@ -538,7 +245,6 @@ class MPRTNet(nn.Module):
             self.atlas_xyz = None
             self.atlas_relation_support = None
             self.atlas_relation_count = None
-            self.dynamic_atlas_adapter = None
 
     @property
     def unary_temperature(self) -> torch.Tensor:
@@ -584,16 +290,6 @@ class MPRTNet(nn.Module):
             relation_count=self.atlas_relation_count,
         )
 
-    def deform_atlas(
-        self,
-        condition: PopulationEncoding,
-        atlas: PopulationEncoding | None = None,
-    ) -> DynamicAtlasEncoding:
-        if not self.config.dynamic_atlas_enabled or self.dynamic_atlas_adapter is None:
-            raise RuntimeError("The dynamic residual atlas is disabled")
-        base = self.atlas_encoding() if atlas is None else atlas
-        return self.dynamic_atlas_adapter(condition, base)
-
     @torch.no_grad()
     def initialize_atlas(self, encoding: PopulationEncoding) -> None:
         """Bootstrap atlas slots from one high-coverage training animal."""
@@ -609,10 +305,6 @@ class MPRTNet(nn.Module):
         self.atlas_nodes.copy_(F.normalize(encoding.nodes[:size].detach(), dim=-1))
         self.atlas_relations.copy_(encoding.relations[:size, :size].detach())
         self.atlas_support.fill_(1.0)
-        if self.config.dynamic_atlas_enabled:
-            if encoding.coordinates is None:
-                raise ValueError("Dynamic atlas initialization requires coordinates")
-            self.atlas_xyz.copy_(encoding.coordinates[:size].detach())
         if self.atlas_relation_support is not None:
             self.atlas_relation_support.fill_(1.0)
         if self.atlas_relation_count is not None:
@@ -664,12 +356,6 @@ class MPRTNet(nn.Module):
         self.atlas_nodes.copy_(F.normalize(nodes.detach().to(self.atlas_nodes), dim=-1))
         self.atlas_relations.copy_(relations.detach().to(self.atlas_relations))
         self.atlas_support.copy_(support.detach().to(self.atlas_support))
-        if self.config.dynamic_atlas_enabled:
-            if coordinates is None or coordinates.shape != (self.config.atlas_size, 3):
-                raise ValueError("Dynamic atlas coordinates must have shape [atlas_size, 3]")
-            if not torch.isfinite(coordinates).all():
-                raise ValueError("Dynamic atlas coordinates must be finite")
-            self.atlas_xyz.copy_(coordinates.detach().to(self.atlas_xyz))
         if self.atlas_relation_support is not None:
             if relation_support is None:
                 relation_support = (support > 0)[:, None] & (support > 0)[None, :]
@@ -980,12 +666,8 @@ class MPRTNet(nn.Module):
             raise RuntimeError("The shared relational atlas has not been initialized")
         direct = self.match_encodings(encoding_a, encoding_b)
         atlas = self.atlas_encoding()
-        dynamic_a = self.deform_atlas(encoding_a, atlas) if self.config.dynamic_atlas_enabled else None
-        dynamic_b = self.deform_atlas(encoding_b, atlas) if self.config.dynamic_atlas_enabled else None
-        atlas_a = dynamic_a.encoding if dynamic_a is not None else atlas
-        atlas_b = dynamic_b.encoding if dynamic_b is not None else atlas
-        alignment_a = self.match_encodings(encoding_a, atlas_a)
-        alignment_b = self.match_encodings(encoding_b, atlas_b)
+        alignment_a = self.match_encodings(encoding_a, atlas)
+        alignment_b = self.match_encodings(encoding_b, atlas)
         atlas_row, atlas_column = self._atlas_induced_transitions(
             alignment_a, alignment_b
         )
@@ -1006,8 +688,6 @@ class MPRTNet(nn.Module):
             alignment_b=alignment_b,
             atlas_row_conditional=atlas_row,
             atlas_col_conditional=atlas_column,
-            dynamic_atlas_a=dynamic_a,
-            dynamic_atlas_b=dynamic_b,
         )
 
     def forward(self, sample_a: WormSample, sample_b: WormSample) -> MPRTOutput:

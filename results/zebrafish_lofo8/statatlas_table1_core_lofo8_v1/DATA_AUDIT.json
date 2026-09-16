@@ -1,0 +1,192 @@
+{
+  "folds": [
+    {
+      "fold": 1,
+      "splits": {
+        "test": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 18,
+          "min_references": 18,
+          "physical_pairs": 16
+        },
+        "train": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 16,
+          "min_references": 8,
+          "physical_pairs": 67
+        },
+        "val": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 20,
+          "min_references": 20,
+          "physical_pairs": 18
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "splits": {
+        "test": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 20,
+          "min_references": 20,
+          "physical_pairs": 18
+        },
+        "train": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 18,
+          "min_references": 10,
+          "physical_pairs": 77
+        },
+        "val": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 8,
+          "min_references": 8,
+          "physical_pairs": 6
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "splits": {
+        "test": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 8,
+          "min_references": 8,
+          "physical_pairs": 6
+        },
+        "train": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 20,
+          "min_references": 10,
+          "physical_pairs": 82
+        },
+        "val": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 15,
+          "min_references": 15,
+          "physical_pairs": 13
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "splits": {
+        "test": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 15,
+          "min_references": 15,
+          "physical_pairs": 13
+        },
+        "train": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 20,
+          "min_references": 8,
+          "physical_pairs": 76
+        },
+        "val": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 14,
+          "min_references": 14,
+          "physical_pairs": 12
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "splits": {
+        "test": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 14,
+          "min_references": 14,
+          "physical_pairs": 12
+        },
+        "train": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 20,
+          "min_references": 8,
+          "physical_pairs": 81
+        },
+        "val": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 10,
+          "min_references": 10,
+          "physical_pairs": 8
+        }
+      }
+    },
+    {
+      "fold": 6,
+      "splits": {
+        "test": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 10,
+          "min_references": 10,
+          "physical_pairs": 8
+        },
+        "train": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 20,
+          "min_references": 8,
+          "physical_pairs": 79
+        },
+        "val": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 16,
+          "min_references": 16,
+          "physical_pairs": 14
+        }
+      }
+    },
+    {
+      "fold": 7,
+      "splits": {
+        "test": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 16,
+          "min_references": 16,
+          "physical_pairs": 14
+        },
+        "train": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 20,
+          "min_references": 8,
+          "physical_pairs": 73
+        },
+        "val": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 16,
+          "min_references": 16,
+          "physical_pairs": 14
+        }
+      }
+    },
+    {
+      "fold": 8,
+      "splits": {
+        "test": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 16,
+          "min_references": 16,
+          "physical_pairs": 14
+        },
+        "train": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 20,
+          "min_references": 8,
+          "physical_pairs": 71
+        },
+        "val": {
+          "endpoint_exclusion_pass": true,
+          "max_references": 18,
+          "min_references": 18,
+          "physical_pairs": 16
+        }
+      }
+    }
+  ],
+  "reference_protocol": "same-fish leave-two-timepoints-out per physical q/r pair",
+  "schema": "zebrafish-statatlas-table1-core-lofo8-v1",
+  "stable_tracking_id": "original_row",
+  "status": "PASS"
+}

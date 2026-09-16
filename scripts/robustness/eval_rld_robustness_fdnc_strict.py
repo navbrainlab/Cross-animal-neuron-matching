@@ -46,7 +46,7 @@ import pandas as pd
 import torch
 
 ROOT = Path("/home/ubuntu/klb/nuclr/nuclr")
-FDNC_SOURCE = ROOT / "baselines/official/third_party/fdnc_official"
+FDNC_SOURCE = ROOT / "benchmark_official/third_party/fdnc_official"
 FDNC_EXPECTED_COMMIT = "19c678781cd11a17866af7b6348ac0096a168c06"
 FDNC_MODEL_SHA256 = "ab529eb6a886cb6ab3f199b7aaa4e49b82562dc280b3ac736ed61e25d5138ec9"
 
@@ -170,8 +170,8 @@ def discover_fdnc_assets() -> tuple[Path, Path]:
     # ------------------------------------------------------------------
     source_candidates = [
         ROOT / "third_party/fDNC_Neuron_ID_19c6787",
-        ROOT / "baselines/official/third_party/fDNC_Neuron_ID_19c6787",
-        ROOT / "baselines/official/third_party/fdnc_official",
+        ROOT / "benchmark_official/third_party/fDNC_Neuron_ID_19c6787",
+        ROOT / "benchmark_official/third_party/fdnc_official",
         Path("/home/ubuntu/klb/fDNC_Neuron_ID"),
         ROOT / "third_party/fDNC_Neuron_ID",
     ]
@@ -219,7 +219,7 @@ def discover_fdnc_assets() -> tuple[Path, Path]:
     # 2) Exact released checkpoint. It may live in a different checkout.
     # ------------------------------------------------------------------
     model_candidates = [
-        ROOT / "baselines/official/third_party/fdnc_official/model/model.bin",
+        ROOT / "benchmark_official/third_party/fdnc_official/model/model.bin",
         Path("/home/ubuntu/klb/fDNC_Neuron_ID/model/model.bin"),
         exact_source / "model/model.bin",
     ]
@@ -308,7 +308,7 @@ def _resolve_protocol_script(name: str, required_tokens: tuple[str, ...]) -> Pat
         ROOT / name,
         ROOT / "experiments/mprt_population_relational_transport"
                / "medoid_template_cv5x3_20260825" / "protocol" / name,
-        ROOT / "baselines" / "official" / name,
+        ROOT / "benchmark_official" / name,
         ROOT / "archive/non_primary_models_20260825/root_scripts" / name,
     ]
 

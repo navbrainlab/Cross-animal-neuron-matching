@@ -1,0 +1,12 @@
+{
+  "fold": 1,
+  "atlas_file": "/home/ubuntu/klb/nuclr/CRF_Cell_ID/sample_run/data_neuron_relationship_annotation_updated.mat",
+  "atlas_count": 1,
+  "atlas_states": 178,
+  "frame_calibration": "outer-fold train only",
+  "test_labels_used": false,
+  "atanas_train_atlas_built": false,
+  "shared_train_ids": 142,
+  "alignment_rmse": 0.35040038544441426,
+  "det_R": 0.9999999999999982
+}

@@ -12,13 +12,18 @@
     "bootstrap confidence interval",
     "query-weighted pooled mean"
   ],
+  "paired_contrasts": {
+    "NeuRID_minus_CRF_ID_Top1": {
+      "unit": "held-out fish",
+      "n": 8,
+      "definition": "NeuRID fold Top-1 minus CRF_ID fold Top-1",
+      "confidence_interval": "two-sided paired t interval",
+      "degrees_of_freedom": 7,
+      "source": "query_evaluation/paired_top1_ours_vs_crfid.json"
+    }
+  },
   "methods": {
     "CPD": {
-      "seed": null,
-      "deterministic": true,
-      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
-    },
-    "Euclidean": {
       "seed": null,
       "deterministic": true,
       "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
@@ -38,11 +43,6 @@
       "deterministic": false,
       "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
     },
-    "RGM": {
-      "seed": 42,
-      "deterministic": false,
-      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
-    },
     "NGM-v2": {
       "seed": 42,
       "deterministic": false,
@@ -51,20 +51,38 @@
     "Vanilla FGW": {
       "seed": null,
       "deterministic": true,
+      "modality_label": "GG",
+      "matching_cost_inputs": ["xyz"],
+      "activity_used": false,
+      "activity_weight": 0.0,
       "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
     },
-    "StatAtlas (pairwise adaptation)": {
+    "FUGW (G+A; official)": {
+      "seed": null,
+      "deterministic": true,
+      "official_package": "fugw==0.1.1",
+      "modality_label": "G+A",
+      "matching_cost_inputs": ["xyz", "activity_raw"],
+      "hyperparameter_selection": "outer validation only",
+      "canonical_query_replay": true,
+      "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
+    },
+    "StatAtlas": {
       "seed": null,
       "deterministic": true,
       "activity_used": false,
-      "canonical_global_atlas": false,
+      "modality_label": "GG",
+      "table1_core_reused": true,
+      "reference_protocol": "same-fish leave-two-timepoints-out per physical q/r pair",
       "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
     },
-    "CRF-ID (pairwise Python adaptation)": {
+    "CRF_ID†": {
       "seed": null,
       "deterministic": true,
       "activity_used": false,
-      "canonical_global_atlas": false,
+      "modality_label": "GG",
+      "table1_core_reused": true,
+      "reference_protocol": "same-fish leave-two-timepoints-out per physical q/r pair",
       "folds_verified": [1, 2, 3, 4, 5, 6, 7, 8]
     },
     "Ours": {

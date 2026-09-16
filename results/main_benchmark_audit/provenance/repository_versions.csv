@@ -1,0 +1,5 @@
+repository,server_path,commit,dirty,status
+nuclr_workspace,/home/ubuntu/klb/nuclr/nuclr,0fa409b304147ace00507063d44f03155691af62,True,ok
+geotransformer_official,/home/ubuntu/klb/nuclr/geotransformer_official,e7a135af4c318ff3b8d7f6c963df094d7e4ea540,True,ok
+ThinkMatch_official,/home/ubuntu/klb/nuclr/ThinkMatch_official,9f669cb22916f3e06c214f058daa5ac349bd7e15,True,ok
+CRF_Cell_ID,/home/ubuntu/klb/nuclr/CRF_Cell_ID,1166cdb8b26ca1851011112b620e41b044012518,True,ok

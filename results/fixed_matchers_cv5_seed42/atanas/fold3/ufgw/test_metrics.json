@@ -1,0 +1,33 @@
+{
+  "protocol": "frozen_table2_neurid_representation_matcher_control_cv5_seed42_v3",
+  "method": "UFGW",
+  "method_key": "ufgw",
+  "dataset": "atanas",
+  "fold": 3,
+  "seed": 42,
+  "split": "test",
+  "checkpoint": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/atanas/fold3/seed42/pairwise/full/best.pt",
+  "checkpoint_sha256": "8193706178fde44fb17c75e7d7e9571b456232d9e623473940d9b74ede863c08",
+  "atlas_fingerprint": "120a812c09fe315e162d8245a59c115187b08f390932b3acc3711fa7569ad464",
+  "hyperparameters": {
+    "alpha": 0.25,
+    "rho": 0.1,
+    "epsilon": 0.01,
+    "rejection_threshold": 0.0
+  },
+  "selection_lock": "/home/ubuntu/klb/nuclr/nuclr/runs/frozen_neurid_matchers_cv5_seed42_v3/atanas/fold3/LOCKED_BEFORE_TEST.json",
+  "selection_lock_sha256": "91327b84f80785a276cf90208298141ccdc78303615f40f37f19a89c290de8c8",
+  "test_recordings": 7,
+  "known_queries": 610,
+  "novel_queries": 4,
+  "partial_queries": 614,
+  "hungarian_queries": 610,
+  "top1_real": 0.739344262295082,
+  "top5_real": 0.9098360655737705,
+  "mrr_real": 0.8130970529694368,
+  "partial_assignment_accuracy": 0.7345276872964169,
+  "coverage": 1.0,
+  "known_accept_rate": 1.0,
+  "novel_reject_rate": 0.0,
+  "hungarian_accuracy": 0.739344262295082
+}

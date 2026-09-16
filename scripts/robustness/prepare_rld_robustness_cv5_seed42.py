@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import hashlib
 import json
 import shutil
@@ -12,6 +13,9 @@ import numpy as np
 ROOT = Path("/home/ubuntu/klb/nuclr/nuclr")
 SOURCE = ROOT / "Data/Dunn_001623/cv5_grouped_v1"
 OUT = ROOT / "runs/rld_robustness_cv5_seed42_v2/corruptions"
+DEFAULT_CANONICAL = (
+    ROOT / "runs/unified_main_benchmark_cv5_seed42_v2/canonical_query_manifest.csv"
+)
 SOURCES = {
     "atanas": ROOT / "Data/Atanas_SF_unified_000776/cv5_grouped_v1",
     "rld": SOURCE,
@@ -67,6 +71,11 @@ def uid(path: Path, payload):
         if len(x):
             return str(x[0])
     return path.stem
+
+
+def file_uid(path: Path) -> str:
+    with np.load(path, allow_pickle=True) as payload:
+        return uid(path, payload)
 
 def neuron_axis(key, arr, n):
     return key not in NON_NEURON_KEYS and arr.ndim >= 1 and arr.shape[0] == n
@@ -172,7 +181,14 @@ def transform(path: Path, kind: str, severity: float, pseed: int):
 
     raise ValueError(kind)
 
-def file_manifest(source: Path, output: Path, kind: str, severity: float, pseed: int):
+def file_manifest(
+    source: Path,
+    output: Path,
+    kind: str,
+    severity: float,
+    pseed: int,
+    canonical_rows: set[tuple[int, str]],
+):
     """Describe and hash the exact materialized corruption for one worm."""
     with np.load(source, allow_pickle=True) as z:
         src = {k: np.asarray(z[k]) for k in z.files}
@@ -207,6 +223,23 @@ def file_manifest(source: Path, output: Path, kind: str, severity: float, pseed:
         for i in np.flatnonzero(query_mask)
         if str(labels[i]).strip() and not str(labels[i]).startswith("__OUTLIER_")
     ]
+    source_to_current = {int(source_row): current for current, source_row in enumerate(kept)}
+    canonical_query_rows = []
+    for source_row, identity in sorted(canonical_rows):
+        current_row = source_to_current.get(source_row)
+        if current_row is None:
+            continue
+        if current_row >= len(labels) or str(labels[current_row]) != identity:
+            raise RuntimeError(
+                f"{output}: canonical query identity mismatch at source row "
+                f"{source_row}: expected={identity!r}, "
+                f"observed={str(labels[current_row]) if current_row < len(labels) else None!r}"
+            )
+        canonical_query_rows.append({
+            "source_row": source_row,
+            "row": current_row,
+            "cell_id": identity,
+        })
 
     record = {
         "recording_uid": sample_uid,
@@ -219,6 +252,7 @@ def file_manifest(source: Path, output: Path, kind: str, severity: float, pseed:
         "kept_source_indices": kept.tolist(),
         "deleted_source_indices": deleted.tolist(),
         "evaluable_query_rows_after_corruption": query_rows,
+        "canonical_query_rows_after_corruption": canonical_query_rows,
     }
     if kind == "coord_noise":
         if n_src != n_dst:
@@ -255,6 +289,7 @@ def main():
     )
     ap.add_argument("--only-clean", action="store_true")
     ap.add_argument("--overwrite", action="store_true")
+    ap.add_argument("--canonical-query-manifest", type=Path, default=DEFAULT_CANONICAL)
     args = ap.parse_args()
     folds = [int(x) for x in args.folds.split(",") if x.strip()]
     source_root = (args.source_root or SOURCES[args.dataset]).resolve()
@@ -266,6 +301,21 @@ def main():
         )
     ).resolve()
     protocol_id = f"{args.dataset.upper()}_CV5_seed42_controlled_robustness_v2_hashed"
+
+    canonical = {}
+    with args.canonical_query_manifest.open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            if row["dataset"] != args.dataset:
+                continue
+            key = (int(row["fold"]), row["uid"])
+            canonical.setdefault(key, set()).add(
+                (int(row["node_index"]), row["identity"])
+            )
+    if not canonical:
+        raise RuntimeError(
+            f"no {args.dataset} rows in canonical query manifest: "
+            f"{args.canonical_query_manifest}"
+        )
 
     rows = []
     conditions = [("coord_noise", 0.0, 0)] if args.only_clean else [
@@ -282,6 +332,9 @@ def main():
         test_files = sorted((src / "test").glob("*.npz"))
         if not test_files:
             raise RuntimeError(f"No test npz: {src}")
+        canonical_by_path = {
+            path: canonical.get((fold, file_uid(path)), set()) for path in test_files
+        }
 
         for kind, sev, ps in conditions:
             name = f"{kind}_l{sev:.2f}_p{ps}"
@@ -300,7 +353,14 @@ def main():
                     np.savez_compressed(dst / "test" / f.name, **transform(f, kind, sev, ps))
 
             files = [
-                file_manifest(f, dst / "test" / f.name, kind, sev, ps)
+                file_manifest(
+                    f,
+                    dst / "test" / f.name,
+                    kind,
+                    sev,
+                    ps,
+                    canonical_by_path[f],
+                )
                 for f in test_files
             ]
 
@@ -327,8 +387,17 @@ def main():
         "dataset": args.dataset,
         "manifest_contract": (
             "All methods must verify output_sha256, pass every valid input row "
-            "through inference, and score exactly the listed evaluable query rows."
+            "through inference, and score exactly the listed canonical main-table "
+            "query rows. A method-reference miss remains in the denominator and "
+            "scores zero."
         ),
+        "canonical_query_manifest": str(args.canonical_query_manifest.resolve()),
+        "denominators": {
+            "coord_noise": "clean canonical main-table query rows",
+            "activity_noise": "clean canonical main-table query rows",
+            "missing": "canonical main-table query rows whose source indices survive deletion",
+            "outlier": "clean canonical main-table query rows; distractors enter inference but not identity scoring",
+        },
         "conditions": rows,
     }, indent=2) + "\n")
     (output_root / "MANIFEST.sha256").write_text(

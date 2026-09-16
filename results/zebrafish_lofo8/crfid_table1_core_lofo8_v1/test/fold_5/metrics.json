@@ -1,0 +1,248 @@
+{
+  "deterministic": true,
+  "display_name": "CRF_ID\u2020",
+  "endpoint_truth_used_for_metrics_only": true,
+  "endpoint_truth_used_in_scoring": false,
+  "fold": 5,
+  "lock_sha256": "26d4f3aafd2055e465308559b36c3816269180b61c66abe5476841ea067a899b",
+  "matlab_outputs": {
+    "combined_sha256": "d8375039396de6aa887a40bbbb73bed304be1f299e81b69ea0fd0afc5e3257e0",
+    "files": [
+      {
+        "file": "pair_000_q_output.mat",
+        "sha256": "8ffe99fa09cefade42be9b6a793da0b0f736a85783ecc1162155c1c4d0d867ed"
+      },
+      {
+        "file": "pair_000_r_output.mat",
+        "sha256": "ba6eb42583dae55e0f1de3f21617a26a15f6a14cbdfd150f6bfa316af31559b0"
+      },
+      {
+        "file": "pair_001_q_output.mat",
+        "sha256": "3b5b6e5de446b44972b920c3c60a09bed7cbf20bc7d48d8411e7ab82e5ba70b3"
+      },
+      {
+        "file": "pair_001_r_output.mat",
+        "sha256": "62780449835ee23695c755874300a8f822b0902a7dedc5dc59a11f232c4baf2a"
+      },
+      {
+        "file": "pair_002_q_output.mat",
+        "sha256": "63d063b896954727872a0209f784ec1326191b71aa0099d58b3a55d0c79bd342"
+      },
+      {
+        "file": "pair_002_r_output.mat",
+        "sha256": "6f6b4c48285b3f55bb5e88e7d2e1171fdaa72873167e1939d193035bf071c83d"
+      },
+      {
+        "file": "pair_003_q_output.mat",
+        "sha256": "453026c05b4e3fc7982a25b6f6ded0ba63e8de7a99296161f50c540b8d9ae2c7"
+      },
+      {
+        "file": "pair_003_r_output.mat",
+        "sha256": "6f6ceeb0c57382e2a686ea41eb3aaf0d4e892a40bd77f1cc3b28d57eab6b03f4"
+      },
+      {
+        "file": "pair_004_q_output.mat",
+        "sha256": "168948f86fc884a4794b4d39252474796c2306c4961fc1ddd09d78e665fd5b61"
+      },
+      {
+        "file": "pair_004_r_output.mat",
+        "sha256": "66c10d0ca61a92c71f64da40ac1dc2504ac76ecc5b27ca78c1781b17ef8f6250"
+      },
+      {
+        "file": "pair_005_q_output.mat",
+        "sha256": "7f6733fdc01e1acc2c22dcaeff4947f2e563e531a09f72e15f95ee7b5146e065"
+      },
+      {
+        "file": "pair_005_r_output.mat",
+        "sha256": "b539e29367b8d9ef5456934dcbdc1ae1b8b9b644cc1b673b8d0b974873d9589d"
+      },
+      {
+        "file": "pair_006_q_output.mat",
+        "sha256": "3fd6bf2a68f7f0b01a5cbc97a9807c9fcc2e9c78b7eaa23240a30787feffea22"
+      },
+      {
+        "file": "pair_006_r_output.mat",
+        "sha256": "08ad47aaef423df5a8558b666a943f19e4c72ec1c471ea66b7b51665b75d3fd0"
+      },
+      {
+        "file": "pair_007_q_output.mat",
+        "sha256": "c704144be04521c63722fb5df257663a95fd92e2ba2345528f174868b0ceb93f"
+      },
+      {
+        "file": "pair_007_r_output.mat",
+        "sha256": "83556e06ffbc1e8346e53d3d65397186d369cb190204727f15db4a4252ff78fa"
+      },
+      {
+        "file": "pair_008_q_output.mat",
+        "sha256": "1444fe996c7dc675ec1f14561950cebaae20631bcd5eef1f2d1932cedf4822d1"
+      },
+      {
+        "file": "pair_008_r_output.mat",
+        "sha256": "fde6f55d65b3343c4e11e1acc0d2938e92c416f4fab5c2799deedf3d350b34dd"
+      },
+      {
+        "file": "pair_009_q_output.mat",
+        "sha256": "8396f1b4670b039f712153ccd34f97dacc36e215424f174f6810fabe72c79199"
+      },
+      {
+        "file": "pair_009_r_output.mat",
+        "sha256": "90a9cb88ffb5ba6e442c3b0fbcd7ed70912e08b86693a6e6399fd8c2cca33003"
+      },
+      {
+        "file": "pair_010_q_output.mat",
+        "sha256": "17dbe5233ea58e05ba3f83e6e35d12379fbd794154161c5cfaf26752293aeea0"
+      },
+      {
+        "file": "pair_010_r_output.mat",
+        "sha256": "33b9d1b37e5042d3497bf79943a122af8dbd12578254c275553a1f8a764d0567"
+      },
+      {
+        "file": "pair_011_q_output.mat",
+        "sha256": "b7fd4f17b898c96a1ae4ff119fdee40da9e0feb4a7c5014fa7fe6623c1379afb"
+      },
+      {
+        "file": "pair_011_r_output.mat",
+        "sha256": "81a8b28738d9f3a9f70ea400db1a39ca5c480118eef451f99788deb54fe4837b"
+      }
+    ]
+  },
+  "method": "crf_id_dagger",
+  "metrics": {
+    "hungarian": 0.9480874316939891,
+    "mrr": 0.9731329690346083,
+    "queries": 1464,
+    "top1": 0.9474043715846995,
+    "top5": 1.0
+  },
+  "physical_pairs": 12,
+  "q_and_r_timepoints_used_in_atlas": false,
+  "reference_protocol": "same-fish leave-two-timepoints-out per physical q/r pair",
+  "schema": "zebrafish-crfid-table1-core-lofo8-v1",
+  "seed": null,
+  "selected_config": {
+    "duplicate_resolution": "official iterative clamping",
+    "graph": "fully_connected",
+    "inference": "UGM_Infer_Conditional+UGM_Infer_LBP",
+    "lambda_DV": 0.0,
+    "lambda_LR": 0.0,
+    "lambda_PA": 0.0,
+    "lambda_angle": 1.0,
+    "lambda_geo": 0.0,
+    "node_potential": "uniform",
+    "pair_score_fn": "B_q @ B_r.T"
+  },
+  "source_hashes": {
+    "evaluator": "86a1827b286117f4acf55f284ff102645208dd68ca779aac90bb63bcd6aba770",
+    "matlab_batch_driver": "cf1bc3076d14330ae0a3ad507751664ae6737a64d63fa120462cfb21931447a4",
+    "official_compare_hidden": "69b27b01ad3afb3c799381fa4a9c0c903c3504a57e1c18355fd837408ca61118",
+    "official_duplicate_labels": "b2d558de562b14d5d36f6ee4084aa86ee368bf05757a15ec12722a0e0a6ef89a",
+    "official_get_relative_angles": "c914624bc0bcf7c55befaa6a2f62d71ee41cc9c1c8389baf6e7635f700de5f4c",
+    "official_ugm_conditional": "17357b3ec041f19c9679afda071d2c1e3a0673918f3da7ce975b58f9b84489b4",
+    "official_ugm_lbp": "a402ca52262e7ff760404d6b35c0bdefb1458e9123efaf4814e6c71091ae1265",
+    "query_record_io": "749a4c8d9e32d9a664e86e5705d8394a7fb724a8d914c3423c357d3c1e5ee2b8",
+    "table1_matlab_adapter": "732f40637f94e0246f55b254b8c8e07c8d2e107a0d009dce39f2a3af426b9283"
+  },
+  "test_manifest": {
+    "entries": [
+      {
+        "name": "islet_20170216__gap60m__p000__q.npz",
+        "sha256": "7b0f62b51cb20bfeae6bfbae746980e20b9e7e6352e689b269146c6ab0d7b068"
+      },
+      {
+        "name": "islet_20170216__gap60m__p000__r.npz",
+        "sha256": "b21913d2ef61b4e920a287001a9eb176260db01ef505b177f31dedd8373957bf"
+      },
+      {
+        "name": "islet_20170216__gap60m__p001__q.npz",
+        "sha256": "dde997e8972e04720cce13b0f4eb2f64ee229fb71732deeb3c9d74afbf44b29e"
+      },
+      {
+        "name": "islet_20170216__gap60m__p001__r.npz",
+        "sha256": "fec2a521abd6deb76de4dd087911395ac23f8066b034ed879f7169b0c5d9a24f"
+      },
+      {
+        "name": "islet_20170216__gap60m__p002__q.npz",
+        "sha256": "508c2497ddb68425dc9a9cf549882977657f71e50cd0778bf6f202d68a5c5575"
+      },
+      {
+        "name": "islet_20170216__gap60m__p002__r.npz",
+        "sha256": "25c0a9be7fdf6a3975daf57f363761c61f1f45ebb2c13d2208b5e0090e83bdff"
+      },
+      {
+        "name": "islet_20170216__gap60m__p003__q.npz",
+        "sha256": "9d8e893ee16d1f2613475454c9c2283562622d0576012ba1d619138724cc2488"
+      },
+      {
+        "name": "islet_20170216__gap60m__p003__r.npz",
+        "sha256": "06f477f47e31f5255b0c110d38c23005cf53a14dffe4c45db26c67dc5a7df6c7"
+      },
+      {
+        "name": "islet_20170216__gap60m__p004__q.npz",
+        "sha256": "3491714467785314da70bfa85d486f63adce6c4df048dad420bcb7bef5ec5a08"
+      },
+      {
+        "name": "islet_20170216__gap60m__p004__r.npz",
+        "sha256": "e6eee1e1b5a6b34ff593af9672706f444345d9968ab3a3070e089b3241b37a09"
+      },
+      {
+        "name": "islet_20170216__gap60m__p005__q.npz",
+        "sha256": "7df9b843593037030f717505332ef79a9d5a2a8f538924cc9c39e018b983a5f9"
+      },
+      {
+        "name": "islet_20170216__gap60m__p005__r.npz",
+        "sha256": "b11b92e1c9f2ee20bc1c343bae9ea456e4a9c96b659e1eeac8ea02045ec42437"
+      },
+      {
+        "name": "islet_20170216__gap60m__p006__q.npz",
+        "sha256": "c8872070d9598eb385317515d8702c44a5dada0f7c8db8c2059f952a5a667fcf"
+      },
+      {
+        "name": "islet_20170216__gap60m__p006__r.npz",
+        "sha256": "0f0b2c1c7ad3e509765522c803fa955ae393d12783fced2506741c7f914b4905"
+      },
+      {
+        "name": "islet_20170216__gap60m__p007__q.npz",
+        "sha256": "e4f14184f07369c85d2a613ae004ebe218dc0087fb853d2032d431e312b81672"
+      },
+      {
+        "name": "islet_20170216__gap60m__p007__r.npz",
+        "sha256": "76cb3b638c2bd8a1107fc0ee4a7fcc5ee58404701a398f62d15f921f4204f967"
+      },
+      {
+        "name": "islet_20170216__gap60m__p008__q.npz",
+        "sha256": "aed33c26aa66c139f5c4daac977d812bae3c1d2c640210163e4fa0205d53965a"
+      },
+      {
+        "name": "islet_20170216__gap60m__p008__r.npz",
+        "sha256": "b93095adf9c5206872937a5dd61abe64b2dee822df098ae8aabb3c8f1597736b"
+      },
+      {
+        "name": "islet_20170216__gap60m__p009__q.npz",
+        "sha256": "93d8a039c2449d0de664824fd57650adec3c32cb9ad8499a7d2d384114c2ff52"
+      },
+      {
+        "name": "islet_20170216__gap60m__p009__r.npz",
+        "sha256": "f833a2eed96568baf963b09406e653e40b1bd94f2bedc8e5c168ac25eb0ffefb"
+      },
+      {
+        "name": "islet_20170216__gap60m__p010__q.npz",
+        "sha256": "36d41ea704310ac41aba27aa510d8146999995f669e2b57255f3bce6effa43a0"
+      },
+      {
+        "name": "islet_20170216__gap60m__p010__r.npz",
+        "sha256": "7a97d3789a4f4c036f549066ee0b18c8e663aeed7aa7137f0b57281c8e6d805e"
+      },
+      {
+        "name": "islet_20170216__gap60m__p011__q.npz",
+        "sha256": "ad620b23691de92a558a837d76453285ed697cc872a4b66150116b6578214b26"
+      },
+      {
+        "name": "islet_20170216__gap60m__p011__r.npz",
+        "sha256": "49d928ef1eb95b64062fe185c623ac5d4e1b76dd06c38afbd22b2b2b45346be5"
+      }
+    ],
+    "sha256": "ed40a8850f71a21f4f5016c8206173f93a41523350d02aee718cf97f2ad80302",
+    "source_files": 24,
+    "split": "test"
+  }
+}

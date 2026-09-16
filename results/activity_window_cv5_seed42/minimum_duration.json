@@ -1,0 +1,15 @@
+{
+  "definition": "shortest tested duration whose mean of fold-wise Top-1/full-Top-1 ratios reaches the stated threshold",
+  "thresholds": {
+    "atanas": {
+      "minimum_seconds_at_90pct_top1_retention": 900,
+      "minimum_seconds_at_95pct_top1_retention": 900,
+      "minimum_seconds_at_99pct_top1_retention": 900
+    },
+    "rld": {
+      "minimum_seconds_at_90pct_top1_retention": 900,
+      "minimum_seconds_at_95pct_top1_retention": null,
+      "minimum_seconds_at_99pct_top1_retention": null
+    }
+  }
+}

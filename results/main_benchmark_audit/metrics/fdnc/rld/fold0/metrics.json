@@ -1,0 +1,502 @@
+{
+  "protocol": "outer_training_geometry_medoid_template_v1",
+  "method": "fDNC official fine-tuned (current RLD grouped CV)",
+  "adapter": "fdnc",
+  "fold_root": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_0",
+  "checkpoint": "/home/ubuntu/klb/nuclr/nuclr/runs/fdnc_current_grouped_cv_v2/rld/fold0/seed42/selected/best.pt",
+  "training_animals": 57,
+  "test_animals": 19,
+  "evaluated_test_animals": 16,
+  "test_to_template_pairs": 16,
+  "directed_test_test_pairs": 0,
+  "skipped_test_animals": [
+    {
+      "query_uid": "20220316-15-34-20",
+      "reason": "no clean test identity occurs in the training vocabulary"
+    },
+    {
+      "query_uid": "20230322-22-12-12",
+      "reason": "no clean test identity occurs in the training vocabulary"
+    },
+    {
+      "query_uid": "20240526-18-19-39",
+      "reason": "no clean test identity occurs in the training vocabulary"
+    }
+  ],
+  "training_identity_vocabulary_size": 7,
+  "template_selection": {
+    "selection_split": "outer_train_only",
+    "uses_validation": false,
+    "uses_test": false,
+    "uses_identity_labels": false,
+    "geometry_normalization": "per-animal median centering, then divide XYZ by 200",
+    "distance": "symmetric mean nearest-neighbour Euclidean distance",
+    "criterion": "minimum mean distance to all other outer-training animals",
+    "tie_break": "lexicographic worm UID, then original train-list index",
+    "template_uid": "20240426-22-49-55",
+    "template_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240426-22-49-55.npz",
+    "template_train_index": 34,
+    "template_mean_distance": 0.04266076129938369,
+    "training_candidates": [
+      {
+        "uid": "20240902-15-36-41",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-15-36-41.npz",
+        "mean_geometry_distance": 0.05019251143970669
+      },
+      {
+        "uid": "20240902-16-12-10",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-16-12-10.npz",
+        "mean_geometry_distance": 0.045669828278836554
+      },
+      {
+        "uid": "20240902-16-53-12",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-16-53-12.npz",
+        "mean_geometry_distance": 0.04949050685346929
+      },
+      {
+        "uid": "20240902-18-51-10",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-18-51-10.npz",
+        "mean_geometry_distance": 0.0481936050693658
+      },
+      {
+        "uid": "20240902-20-11-40",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240902-20-11-40.npz",
+        "mean_geometry_distance": 0.044145208089214995
+      },
+      {
+        "uid": "20240904-14-55-14",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-14-55-14.npz",
+        "mean_geometry_distance": 0.04558343456852041
+      },
+      {
+        "uid": "20240904-15-32-57",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-15-32-57.npz",
+        "mean_geometry_distance": 0.045594463233484574
+      },
+      {
+        "uid": "20240904-16-51-21",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240904-16-51-21.npz",
+        "mean_geometry_distance": 0.05064385482104256
+      },
+      {
+        "uid": "20240917-20-18-26",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-20-18-26.npz",
+        "mean_geometry_distance": 0.046704042903857705
+      },
+      {
+        "uid": "20240917-20-52-20",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-20-52-20.npz",
+        "mean_geometry_distance": 0.04943329220365441
+      },
+      {
+        "uid": "20240917-22-37-14",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240917-22-37-14.npz",
+        "mean_geometry_distance": 0.047116226271483756
+      },
+      {
+        "uid": "20220302-11-45-51",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20220302-11-45-51.npz",
+        "mean_geometry_distance": 0.06436097423891385
+      },
+      {
+        "uid": "20221106-21-47-31",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20221106-21-47-31.npz",
+        "mean_geometry_distance": 0.06058523280026929
+      },
+      {
+        "uid": "20230317-12-27-51",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230317-12-27-51.npz",
+        "mean_geometry_distance": 0.05162153010299249
+      },
+      {
+        "uid": "20230322-20-16-50",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-20-16-50.npz",
+        "mean_geometry_distance": 0.04713301598392873
+      },
+      {
+        "uid": "20230322-21-09-13",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230322-21-09-13.npz",
+        "mean_geometry_distance": 0.05228969149829813
+      },
+      {
+        "uid": "20230412-20-15-17",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230412-20-15-17.npz",
+        "mean_geometry_distance": 0.05163815124586385
+      },
+      {
+        "uid": "20230502-20-05-02",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230502-20-05-02.npz",
+        "mean_geometry_distance": 0.049593409344915775
+      },
+      {
+        "uid": "20230506-12-56-00",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-12-56-00.npz",
+        "mean_geometry_distance": 0.04884356968018496
+      },
+      {
+        "uid": "20230506-13-32-08",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-13-32-08.npz",
+        "mean_geometry_distance": 0.04769522933430322
+      },
+      {
+        "uid": "20230506-14-24-57",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-14-24-57.npz",
+        "mean_geometry_distance": 0.050158965997020445
+      },
+      {
+        "uid": "20230506-15-01-45",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-15-01-45.npz",
+        "mean_geometry_distance": 0.05349642697034773
+      },
+      {
+        "uid": "20230506-15-33-51",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230506-15-33-51.npz",
+        "mean_geometry_distance": 0.051350269521170604
+      },
+      {
+        "uid": "20230510-12-53-34",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230510-12-53-34.npz",
+        "mean_geometry_distance": 0.051268030459741466
+      },
+      {
+        "uid": "20230510-13-25-46",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230510-13-25-46.npz",
+        "mean_geometry_distance": 0.047332063737655174
+      },
+      {
+        "uid": "20230510-15-49-47",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230510-15-49-47.npz",
+        "mean_geometry_distance": 0.04433382892660658
+      },
+      {
+        "uid": "20230604-15-10-44",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-15-10-44.npz",
+        "mean_geometry_distance": 0.05403060345922512
+      },
+      {
+        "uid": "20230604-15-50-12",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-15-50-12.npz",
+        "mean_geometry_distance": 0.05045041128293467
+      },
+      {
+        "uid": "20230604-16-22-56",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230604-16-22-56.npz",
+        "mean_geometry_distance": 0.047498440189017235
+      },
+      {
+        "uid": "20230903-15-10-21",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-15-10-21.npz",
+        "mean_geometry_distance": 0.04925082436449892
+      },
+      {
+        "uid": "20230903-18-20-19",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230903-18-20-19.npz",
+        "mean_geometry_distance": 0.051130003669841655
+      },
+      {
+        "uid": "20230904-15-59-40",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230904-15-59-40.npz",
+        "mean_geometry_distance": 0.04436738627841609
+      },
+      {
+        "uid": "20230909-14-26-56",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-14-26-56.npz",
+        "mean_geometry_distance": 0.056233515770939435
+      },
+      {
+        "uid": "20230909-16-48-09",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20230909-16-48-09.npz",
+        "mean_geometry_distance": 0.05078184476187475
+      },
+      {
+        "uid": "20240426-22-49-55",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240426-22-49-55.npz",
+        "mean_geometry_distance": 0.04266076129938369
+      },
+      {
+        "uid": "20240427-12-43-44",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240427-12-43-44.npz",
+        "mean_geometry_distance": 0.04520931116494371
+      },
+      {
+        "uid": "20240430-21-04-44",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240430-21-04-44.npz",
+        "mean_geometry_distance": 0.05091749316807812
+      },
+      {
+        "uid": "20240526-17-36-55",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-17-36-55.npz",
+        "mean_geometry_distance": 0.05949411253993243
+      },
+      {
+        "uid": "20240526-19-51-22",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240526-19-51-22.npz",
+        "mean_geometry_distance": 0.0645431562798768
+      },
+      {
+        "uid": "20240626-12-35-05",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-12-35-05.npz",
+        "mean_geometry_distance": 0.0457323477150595
+      },
+      {
+        "uid": "20240626-13-22-25",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-13-22-25.npz",
+        "mean_geometry_distance": 0.05956592418610036
+      },
+      {
+        "uid": "20240626-13-55-40",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-13-55-40.npz",
+        "mean_geometry_distance": 0.04692936381791293
+      },
+      {
+        "uid": "20240626-15-08-33",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240626-15-08-33.npz",
+        "mean_geometry_distance": 0.05256044310826137
+      },
+      {
+        "uid": "20240629-14-48-32",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-14-48-32.npz",
+        "mean_geometry_distance": 0.05381910831353183
+      },
+      {
+        "uid": "20240629-17-55-55",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-17-55-55.npz",
+        "mean_geometry_distance": 0.05021052883568232
+      },
+      {
+        "uid": "20240629-20-22-10",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-20-22-10.npz",
+        "mean_geometry_distance": 0.04828799806306343
+      },
+      {
+        "uid": "20240629-20-59-45",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240629-20-59-45.npz",
+        "mean_geometry_distance": 0.04801387307480671
+      },
+      {
+        "uid": "20240714-15-24-26",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-15-24-26.npz",
+        "mean_geometry_distance": 0.045354092832763
+      },
+      {
+        "uid": "20240714-17-28-58",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240714-17-28-58.npz",
+        "mean_geometry_distance": 0.04517251395014763
+      },
+      {
+        "uid": "20240724-14-26-00",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-14-26-00.npz",
+        "mean_geometry_distance": 0.04345791355845891
+      },
+      {
+        "uid": "20240724-15-48-55",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-15-48-55.npz",
+        "mean_geometry_distance": 0.05788824485608694
+      },
+      {
+        "uid": "20240724-16-28-26",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-16-28-26.npz",
+        "mean_geometry_distance": 0.061913427470947295
+      },
+      {
+        "uid": "20240724-17-40-58",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240724-17-40-58.npz",
+        "mean_geometry_distance": 0.043860729679918685
+      },
+      {
+        "uid": "20240828-14-16-29",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-14-16-29.npz",
+        "mean_geometry_distance": 0.04826774510428907
+      },
+      {
+        "uid": "20240828-14-57-38",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-14-57-38.npz",
+        "mean_geometry_distance": 0.04907356653481416
+      },
+      {
+        "uid": "20240828-15-51-58",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-15-51-58.npz",
+        "mean_geometry_distance": 0.04535313452858125
+      },
+      {
+        "uid": "20240828-16-23-54",
+        "path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/date_disjoint_full95_v1/all/20240828-16-23-54.npz",
+        "mean_geometry_distance": 0.04353233087948379
+      }
+    ]
+  },
+  "pair_score_normalization": "zscore",
+  "primary_aggregation": "template_score",
+  "tie_policy": "expected metric under uniform tie breaking",
+  "metrics": {
+    "template_score": {
+      "queries": 77,
+      "top1": 0.2857142857142857,
+      "top5": 0.9090909090909091,
+      "mrr": 0.5048237476808903,
+      "hungarian_accuracy": 0.42857142857142855
+    }
+  },
+  "per_animal": [
+    {
+      "query_uid": "20240902-17-33-24",
+      "aggregation": "template_score",
+      "queries": 5,
+      "vocabulary_size": 7,
+      "top1": 0.2,
+      "top5": 1.0,
+      "mrr": 0.47333333333333333,
+      "hungarian_accuracy": 0.2
+    },
+    {
+      "query_uid": "20220426-11-26-14",
+      "aggregation": "template_score",
+      "queries": 3,
+      "vocabulary_size": 7,
+      "top1": 0.3333333333333333,
+      "top5": 0.6666666666666666,
+      "mrr": 0.47222222222222227,
+      "hungarian_accuracy": 0.3333333333333333
+    },
+    {
+      "query_uid": "20220426-11-32-18",
+      "aggregation": "template_score",
+      "queries": 4,
+      "vocabulary_size": 7,
+      "top1": 0.5,
+      "top5": 0.75,
+      "mrr": 0.6041666666666667,
+      "hungarian_accuracy": 0.0
+    },
+    {
+      "query_uid": "20221106-21-23-19",
+      "aggregation": "template_score",
+      "queries": 4,
+      "vocabulary_size": 7,
+      "top1": 0.25,
+      "top5": 1.0,
+      "mrr": 0.5208333333333333,
+      "hungarian_accuracy": 0.25
+    },
+    {
+      "query_uid": "20221215-22-02-55",
+      "aggregation": "template_score",
+      "queries": 6,
+      "vocabulary_size": 7,
+      "top1": 0.16666666666666666,
+      "top5": 1.0,
+      "mrr": 0.39444444444444443,
+      "hungarian_accuracy": 0.5
+    },
+    {
+      "query_uid": "20230317-12-51-42",
+      "aggregation": "template_score",
+      "queries": 2,
+      "vocabulary_size": 7,
+      "top1": 1.0,
+      "top5": 1.0,
+      "mrr": 1.0,
+      "hungarian_accuracy": 1.0
+    },
+    {
+      "query_uid": "20230322-18-57-04",
+      "aggregation": "template_score",
+      "queries": 6,
+      "vocabulary_size": 7,
+      "top1": 0.16666666666666666,
+      "top5": 0.8333333333333334,
+      "mrr": 0.4265873015873016,
+      "hungarian_accuracy": 0.3333333333333333
+    },
+    {
+      "query_uid": "20230510-16-36-46",
+      "aggregation": "template_score",
+      "queries": 7,
+      "vocabulary_size": 7,
+      "top1": 0.2857142857142857,
+      "top5": 1.0,
+      "mrr": 0.5714285714285714,
+      "hungarian_accuracy": 1.0
+    },
+    {
+      "query_uid": "20230903-17-18-45",
+      "aggregation": "template_score",
+      "queries": 6,
+      "vocabulary_size": 7,
+      "top1": 0.16666666666666666,
+      "top5": 1.0,
+      "mrr": 0.4305555555555556,
+      "hungarian_accuracy": 0.3333333333333333
+    },
+    {
+      "query_uid": "20230904-14-30-52",
+      "aggregation": "template_score",
+      "queries": 5,
+      "vocabulary_size": 7,
+      "top1": 0.2,
+      "top5": 0.8,
+      "mrr": 0.4185714285714285,
+      "hungarian_accuracy": 0.2
+    },
+    {
+      "query_uid": "20240426-23-12-40",
+      "aggregation": "template_score",
+      "queries": 5,
+      "vocabulary_size": 7,
+      "top1": 0.4,
+      "top5": 0.8,
+      "mrr": 0.6000000000000001,
+      "hungarian_accuracy": 0.4
+    },
+    {
+      "query_uid": "20240430-20-31-05",
+      "aggregation": "template_score",
+      "queries": 1,
+      "vocabulary_size": 7,
+      "top1": 0.0,
+      "top5": 1.0,
+      "mrr": 0.3333333333333333,
+      "hungarian_accuracy": 0.0
+    },
+    {
+      "query_uid": "20240626-14-30-55",
+      "aggregation": "template_score",
+      "queries": 5,
+      "vocabulary_size": 7,
+      "top1": 0.4,
+      "top5": 1.0,
+      "mrr": 0.54,
+      "hungarian_accuracy": 0.4
+    },
+    {
+      "query_uid": "20240629-14-14-08",
+      "aggregation": "template_score",
+      "queries": 7,
+      "vocabulary_size": 7,
+      "top1": 0.14285714285714285,
+      "top5": 0.7142857142857143,
+      "mrr": 0.3741496598639456,
+      "hungarian_accuracy": 0.2857142857142857
+    },
+    {
+      "query_uid": "20240828-17-07-39",
+      "aggregation": "template_score",
+      "queries": 5,
+      "vocabulary_size": 7,
+      "top1": 0.4,
+      "top5": 1.0,
+      "mrr": 0.5833333333333334,
+      "hungarian_accuracy": 0.8
+    },
+    {
+      "query_uid": "20240829-13-00-31",
+      "aggregation": "template_score",
+      "queries": 6,
+      "vocabulary_size": 7,
+      "top1": 0.3333333333333333,
+      "top5": 1.0,
+      "mrr": 0.5694444444444444,
+      "hungarian_accuracy": 0.5
+    }
+  ]
+}

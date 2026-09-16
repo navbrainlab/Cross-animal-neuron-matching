@@ -1,0 +1,1442 @@
+dataset,fold,animal_id,method,n_eval,n_correct,n_shared,n_correct_shared
+Atanas,0,2022-07-26-01,CPD,65,27,51,27
+Atanas,0,2022-07-26-01,CRF_ID,65,18,51,14
+Atanas,0,2022-07-26-01,FUGW (G+A; official),65,17,51,17
+Atanas,0,2022-07-26-01,GeoTransformer,65,27,51,27
+Atanas,0,2022-07-26-01,NGM-v2,65,22,51,22
+Atanas,0,2022-07-26-01,NeurID (population atlas),65,53,51,42
+Atanas,0,2022-07-26-01,NeurID (single medoid),65,38,51,38
+Atanas,0,2022-07-26-01,NuCLR,65,16,51,16
+Atanas,0,2022-07-26-01,StatAtlas,65,2,51,2
+Atanas,0,2022-07-26-01,Vanilla FGW,65,10,51,10
+Atanas,0,2022-07-26-01,fDNC,65,6,51,6
+Atanas,0,2022-08-02-01,CPD,110,40,70,40
+Atanas,0,2022-08-02-01,CRF_ID,110,36,70,29
+Atanas,0,2022-08-02-01,FUGW (G+A; official),110,8,70,8
+Atanas,0,2022-08-02-01,GeoTransformer,110,35,70,35
+Atanas,0,2022-08-02-01,NGM-v2,110,22,70,22
+Atanas,0,2022-08-02-01,NeurID (population atlas),110,72,70,51
+Atanas,0,2022-08-02-01,NeurID (single medoid),110,47,70,47
+Atanas,0,2022-08-02-01,NuCLR,110,22,70,22
+Atanas,0,2022-08-02-01,StatAtlas,110,2,70,1
+Atanas,0,2022-08-02-01,Vanilla FGW,110,19,70,19
+Atanas,0,2022-08-02-01,fDNC,110,1,70,1
+Atanas,0,2023-01-05-01,CPD,83,32,62,32
+Atanas,0,2023-01-05-01,CRF_ID,83,14,62,12
+Atanas,0,2023-01-05-01,FUGW (G+A; official),83,21,62,21
+Atanas,0,2023-01-05-01,GeoTransformer,83,26,62,26
+Atanas,0,2023-01-05-01,NGM-v2,83,24,62,24
+Atanas,0,2023-01-05-01,NeurID (population atlas),83,59,62,45
+Atanas,0,2023-01-05-01,NeurID (single medoid),83,45,62,45
+Atanas,0,2023-01-05-01,NuCLR,83,15,62,15
+Atanas,0,2023-01-05-01,StatAtlas,83,2,62,2
+Atanas,0,2023-01-05-01,Vanilla FGW,83,21,62,21
+Atanas,0,2023-01-05-01,fDNC,83,25,62,25
+Atanas,0,2023-01-13-07,CPD,80,39,57,39
+Atanas,0,2023-01-13-07,CRF_ID,80,16,57,11
+Atanas,0,2023-01-13-07,FUGW (G+A; official),80,29,57,29
+Atanas,0,2023-01-13-07,GeoTransformer,80,31,57,31
+Atanas,0,2023-01-13-07,NGM-v2,80,35,57,35
+Atanas,0,2023-01-13-07,NeurID (population atlas),80,57,57,43
+Atanas,0,2023-01-13-07,NeurID (single medoid),80,37,57,37
+Atanas,0,2023-01-13-07,NuCLR,80,10,57,10
+Atanas,0,2023-01-13-07,StatAtlas,80,4,57,1
+Atanas,0,2023-01-13-07,Vanilla FGW,80,23,57,23
+Atanas,0,2023-01-13-07,fDNC,80,35,57,35
+Atanas,0,2023-01-16-15,CPD,86,34,64,34
+Atanas,0,2023-01-16-15,CRF_ID,86,13,64,12
+Atanas,0,2023-01-16-15,FUGW (G+A; official),86,27,64,27
+Atanas,0,2023-01-16-15,GeoTransformer,86,28,64,28
+Atanas,0,2023-01-16-15,NGM-v2,86,38,64,38
+Atanas,0,2023-01-16-15,NeurID (population atlas),86,71,64,56
+Atanas,0,2023-01-16-15,NeurID (single medoid),86,55,64,55
+Atanas,0,2023-01-16-15,NuCLR,86,15,64,15
+Atanas,0,2023-01-16-15,StatAtlas,86,5,64,3
+Atanas,0,2023-01-16-15,Vanilla FGW,86,24,64,24
+Atanas,0,2023-01-16-15,fDNC,86,29,64,29
+Atanas,0,2023-01-16-22,CPD,89,39,65,39
+Atanas,0,2023-01-16-22,CRF_ID,89,19,65,18
+Atanas,0,2023-01-16-22,FUGW (G+A; official),89,15,65,15
+Atanas,0,2023-01-16-22,GeoTransformer,89,25,65,25
+Atanas,0,2023-01-16-22,NGM-v2,89,33,65,33
+Atanas,0,2023-01-16-22,NeurID (population atlas),89,69,65,52
+Atanas,0,2023-01-16-22,NeurID (single medoid),89,50,65,50
+Atanas,0,2023-01-16-22,NuCLR,89,15,65,15
+Atanas,0,2023-01-16-22,StatAtlas,89,1,65,1
+Atanas,0,2023-01-16-22,Vanilla FGW,89,18,65,18
+Atanas,0,2023-01-16-22,fDNC,89,41,65,41
+Atanas,0,2023-01-19-15,CPD,59,12,38,12
+Atanas,0,2023-01-19-15,CRF_ID,59,6,38,6
+Atanas,0,2023-01-19-15,FUGW (G+A; official),59,3,38,3
+Atanas,0,2023-01-19-15,GeoTransformer,59,7,38,7
+Atanas,0,2023-01-19-15,NGM-v2,59,5,38,5
+Atanas,0,2023-01-19-15,NeurID (population atlas),59,20,38,14
+Atanas,0,2023-01-19-15,NeurID (single medoid),59,12,38,12
+Atanas,0,2023-01-19-15,NuCLR,59,4,38,4
+Atanas,0,2023-01-19-15,StatAtlas,59,0,38,0
+Atanas,0,2023-01-19-15,Vanilla FGW,59,1,38,1
+Atanas,0,2023-01-19-15,fDNC,59,4,38,4
+Atanas,0,2023-01-19-22,CPD,92,15,64,15
+Atanas,0,2023-01-19-22,CRF_ID,92,17,64,15
+Atanas,0,2023-01-19-22,FUGW (G+A; official),92,11,64,11
+Atanas,0,2023-01-19-22,GeoTransformer,92,23,64,23
+Atanas,0,2023-01-19-22,NGM-v2,92,19,64,19
+Atanas,0,2023-01-19-22,NeurID (population atlas),92,69,64,52
+Atanas,0,2023-01-19-22,NeurID (single medoid),92,55,64,55
+Atanas,0,2023-01-19-22,NuCLR,92,6,64,6
+Atanas,0,2023-01-19-22,StatAtlas,92,8,64,3
+Atanas,0,2023-01-19-22,Vanilla FGW,92,13,64,13
+Atanas,0,2023-01-19-22,fDNC,92,27,64,27
+Atanas,1,2022-07-15-06,CPD,69,23,52,23
+Atanas,1,2022-07-15-06,CRF_ID,69,11,52,8
+Atanas,1,2022-07-15-06,FUGW (G+A; official),69,13,52,13
+Atanas,1,2022-07-15-06,GeoTransformer,69,25,52,25
+Atanas,1,2022-07-15-06,NGM-v2,69,15,52,15
+Atanas,1,2022-07-15-06,NeurID (population atlas),69,46,52,38
+Atanas,1,2022-07-15-06,NeurID (single medoid),69,45,52,45
+Atanas,1,2022-07-15-06,NuCLR,69,9,52,9
+Atanas,1,2022-07-15-06,StatAtlas,69,1,52,0
+Atanas,1,2022-07-15-06,Vanilla FGW,69,7,52,7
+Atanas,1,2022-07-15-06,fDNC,69,22,52,22
+Atanas,1,2022-12-21-06,CPD,65,35,51,35
+Atanas,1,2022-12-21-06,CRF_ID,65,21,51,18
+Atanas,1,2022-12-21-06,FUGW (G+A; official),65,28,51,28
+Atanas,1,2022-12-21-06,GeoTransformer,65,23,51,23
+Atanas,1,2022-12-21-06,NGM-v2,65,26,51,26
+Atanas,1,2022-12-21-06,NeurID (population atlas),65,54,51,42
+Atanas,1,2022-12-21-06,NeurID (single medoid),65,42,51,42
+Atanas,1,2022-12-21-06,NuCLR,65,18,51,18
+Atanas,1,2022-12-21-06,StatAtlas,65,1,51,0
+Atanas,1,2022-12-21-06,Vanilla FGW,65,7,51,7
+Atanas,1,2022-12-21-06,fDNC,65,24,51,24
+Atanas,1,2023-01-09-22,CPD,92,30,63,30
+Atanas,1,2023-01-09-22,CRF_ID,92,23,63,19
+Atanas,1,2023-01-09-22,FUGW (G+A; official),92,24,63,24
+Atanas,1,2023-01-09-22,GeoTransformer,92,34,63,34
+Atanas,1,2023-01-09-22,NGM-v2,92,31,63,31
+Atanas,1,2023-01-09-22,NeurID (population atlas),92,81,63,58
+Atanas,1,2023-01-09-22,NeurID (single medoid),92,57,63,57
+Atanas,1,2023-01-09-22,NuCLR,92,17,63,17
+Atanas,1,2023-01-09-22,StatAtlas,92,2,63,2
+Atanas,1,2023-01-09-22,Vanilla FGW,92,19,63,19
+Atanas,1,2023-01-09-22,fDNC,92,40,63,40
+Atanas,1,2023-01-17-01,CPD,90,41,65,41
+Atanas,1,2023-01-17-01,CRF_ID,90,31,65,25
+Atanas,1,2023-01-17-01,FUGW (G+A; official),90,20,65,20
+Atanas,1,2023-01-17-01,GeoTransformer,90,28,65,28
+Atanas,1,2023-01-17-01,NGM-v2,90,25,65,25
+Atanas,1,2023-01-17-01,NeurID (population atlas),90,75,65,57
+Atanas,1,2023-01-17-01,NeurID (single medoid),90,59,65,59
+Atanas,1,2023-01-17-01,NuCLR,90,14,65,14
+Atanas,1,2023-01-17-01,StatAtlas,90,4,65,2
+Atanas,1,2023-01-17-01,Vanilla FGW,90,24,65,24
+Atanas,1,2023-01-17-01,fDNC,90,34,65,34
+Atanas,1,2023-01-17-07,CPD,80,35,58,35
+Atanas,1,2023-01-17-07,CRF_ID,80,25,58,23
+Atanas,1,2023-01-17-07,FUGW (G+A; official),80,26,58,26
+Atanas,1,2023-01-17-07,GeoTransformer,80,35,58,35
+Atanas,1,2023-01-17-07,NGM-v2,80,34,58,34
+Atanas,1,2023-01-17-07,NeurID (population atlas),80,67,58,51
+Atanas,1,2023-01-17-07,NeurID (single medoid),80,50,58,50
+Atanas,1,2023-01-17-07,NuCLR,80,15,58,15
+Atanas,1,2023-01-17-07,StatAtlas,80,3,58,1
+Atanas,1,2023-01-17-07,Vanilla FGW,80,17,58,17
+Atanas,1,2023-01-17-07,fDNC,80,32,58,32
+Atanas,1,2023-01-17-14,CPD,104,39,69,39
+Atanas,1,2023-01-17-14,CRF_ID,104,10,69,8
+Atanas,1,2023-01-17-14,FUGW (G+A; official),104,12,69,12
+Atanas,1,2023-01-17-14,GeoTransformer,104,37,69,37
+Atanas,1,2023-01-17-14,NGM-v2,104,33,69,33
+Atanas,1,2023-01-17-14,NeurID (population atlas),104,77,69,57
+Atanas,1,2023-01-17-14,NeurID (single medoid),104,55,69,55
+Atanas,1,2023-01-17-14,NuCLR,104,15,69,15
+Atanas,1,2023-01-17-14,StatAtlas,104,3,69,3
+Atanas,1,2023-01-17-14,Vanilla FGW,104,25,69,25
+Atanas,1,2023-01-17-14,fDNC,104,37,69,37
+Atanas,1,2023-01-18-01,CPD,82,37,61,37
+Atanas,1,2023-01-18-01,CRF_ID,82,21,61,20
+Atanas,1,2023-01-18-01,FUGW (G+A; official),82,22,61,22
+Atanas,1,2023-01-18-01,GeoTransformer,82,36,61,36
+Atanas,1,2023-01-18-01,NGM-v2,82,21,61,21
+Atanas,1,2023-01-18-01,NeurID (population atlas),82,70,61,57
+Atanas,1,2023-01-18-01,NeurID (single medoid),82,55,61,55
+Atanas,1,2023-01-18-01,NuCLR,82,12,61,12
+Atanas,1,2023-01-18-01,StatAtlas,82,1,61,1
+Atanas,1,2023-01-18-01,Vanilla FGW,82,27,61,27
+Atanas,1,2023-01-18-01,fDNC,82,32,61,32
+Atanas,1,2023-01-23-01,CPD,87,31,58,31
+Atanas,1,2023-01-23-01,CRF_ID,87,23,58,13
+Atanas,1,2023-01-23-01,FUGW (G+A; official),87,20,58,20
+Atanas,1,2023-01-23-01,GeoTransformer,87,27,58,27
+Atanas,1,2023-01-23-01,NGM-v2,87,25,58,25
+Atanas,1,2023-01-23-01,NeurID (population atlas),87,67,58,49
+Atanas,1,2023-01-23-01,NeurID (single medoid),87,53,58,53
+Atanas,1,2023-01-23-01,NuCLR,87,10,58,10
+Atanas,1,2023-01-23-01,StatAtlas,87,4,58,3
+Atanas,1,2023-01-23-01,Vanilla FGW,87,11,58,11
+Atanas,1,2023-01-23-01,fDNC,87,29,58,29
+Atanas,2,2022-06-28-07,CPD,81,28,53,28
+Atanas,2,2022-06-28-07,CRF_ID,81,12,53,9
+Atanas,2,2022-06-28-07,FUGW (G+A; official),81,22,53,22
+Atanas,2,2022-06-28-07,GeoTransformer,81,27,53,27
+Atanas,2,2022-06-28-07,NGM-v2,81,20,53,20
+Atanas,2,2022-06-28-07,NeurID (population atlas),81,57,53,42
+Atanas,2,2022-06-28-07,NeurID (single medoid),81,43,53,43
+Atanas,2,2022-06-28-07,NuCLR,81,13,53,13
+Atanas,2,2022-06-28-07,StatAtlas,81,4,53,2
+Atanas,2,2022-06-28-07,Vanilla FGW,81,12,53,12
+Atanas,2,2022-06-28-07,fDNC,81,27,53,27
+Atanas,2,2022-07-15-12,CPD,90,39,62,39
+Atanas,2,2022-07-15-12,CRF_ID,90,32,62,25
+Atanas,2,2022-07-15-12,FUGW (G+A; official),90,24,62,24
+Atanas,2,2022-07-15-12,GeoTransformer,90,31,62,31
+Atanas,2,2022-07-15-12,NGM-v2,90,31,62,31
+Atanas,2,2022-07-15-12,NeurID (population atlas),90,73,62,54
+Atanas,2,2022-07-15-12,NeurID (single medoid),90,56,62,56
+Atanas,2,2022-07-15-12,NuCLR,90,16,62,16
+Atanas,2,2022-07-15-12,StatAtlas,90,11,62,9
+Atanas,2,2022-07-15-12,Vanilla FGW,90,24,62,24
+Atanas,2,2022-07-15-12,fDNC,90,26,62,26
+Atanas,2,2023-01-06-01,CPD,74,25,52,25
+Atanas,2,2023-01-06-01,CRF_ID,74,12,52,10
+Atanas,2,2023-01-06-01,FUGW (G+A; official),74,17,52,17
+Atanas,2,2023-01-06-01,GeoTransformer,74,32,52,32
+Atanas,2,2023-01-06-01,NGM-v2,74,33,52,33
+Atanas,2,2023-01-06-01,NeurID (population atlas),74,52,52,39
+Atanas,2,2023-01-06-01,NeurID (single medoid),74,41,52,41
+Atanas,2,2023-01-06-01,NuCLR,74,15,52,15
+Atanas,2,2023-01-06-01,StatAtlas,74,3,52,2
+Atanas,2,2023-01-06-01,Vanilla FGW,74,6,52,6
+Atanas,2,2023-01-06-01,fDNC,74,27,52,27
+Atanas,2,2023-01-06-08,CPD,82,30,58,30
+Atanas,2,2023-01-06-08,CRF_ID,82,16,58,12
+Atanas,2,2023-01-06-08,FUGW (G+A; official),82,22,58,22
+Atanas,2,2023-01-06-08,GeoTransformer,82,30,58,30
+Atanas,2,2023-01-06-08,NGM-v2,82,17,58,17
+Atanas,2,2023-01-06-08,NeurID (population atlas),82,56,58,42
+Atanas,2,2023-01-06-08,NeurID (single medoid),82,45,58,45
+Atanas,2,2023-01-06-08,NuCLR,82,10,58,10
+Atanas,2,2023-01-06-08,StatAtlas,82,1,58,0
+Atanas,2,2023-01-06-08,Vanilla FGW,82,13,58,13
+Atanas,2,2023-01-06-08,fDNC,82,22,58,22
+Atanas,2,2023-01-09-08,CPD,51,12,43,12
+Atanas,2,2023-01-09-08,CRF_ID,51,2,43,2
+Atanas,2,2023-01-09-08,FUGW (G+A; official),51,9,43,9
+Atanas,2,2023-01-09-08,GeoTransformer,51,4,43,4
+Atanas,2,2023-01-09-08,NGM-v2,51,8,43,8
+Atanas,2,2023-01-09-08,NeurID (population atlas),51,23,43,18
+Atanas,2,2023-01-09-08,NeurID (single medoid),51,18,43,18
+Atanas,2,2023-01-09-08,NuCLR,51,7,43,7
+Atanas,2,2023-01-09-08,StatAtlas,51,1,43,1
+Atanas,2,2023-01-09-08,Vanilla FGW,51,7,43,7
+Atanas,2,2023-01-09-08,fDNC,51,5,43,5
+Atanas,2,2023-01-09-15,CPD,98,36,71,36
+Atanas,2,2023-01-09-15,CRF_ID,98,29,71,25
+Atanas,2,2023-01-09-15,FUGW (G+A; official),98,25,71,25
+Atanas,2,2023-01-09-15,GeoTransformer,98,45,71,45
+Atanas,2,2023-01-09-15,NGM-v2,98,35,71,35
+Atanas,2,2023-01-09-15,NeurID (population atlas),98,75,71,53
+Atanas,2,2023-01-09-15,NeurID (single medoid),98,52,71,52
+Atanas,2,2023-01-09-15,NuCLR,98,16,71,16
+Atanas,2,2023-01-09-15,StatAtlas,98,17,71,11
+Atanas,2,2023-01-09-15,Vanilla FGW,98,21,71,21
+Atanas,2,2023-01-09-15,fDNC,98,46,71,46
+Atanas,2,2023-01-23-08,CPD,87,1,62,1
+Atanas,2,2023-01-23-08,CRF_ID,87,0,62,0
+Atanas,2,2023-01-23-08,FUGW (G+A; official),87,2,62,2
+Atanas,2,2023-01-23-08,GeoTransformer,87,1,62,1
+Atanas,2,2023-01-23-08,NGM-v2,87,1,62,1
+Atanas,2,2023-01-23-08,NeurID (population atlas),87,4,62,3
+Atanas,2,2023-01-23-08,NeurID (single medoid),87,4,62,4
+Atanas,2,2023-01-23-08,NuCLR,87,8,62,8
+Atanas,2,2023-01-23-08,StatAtlas,87,1,62,1
+Atanas,2,2023-01-23-08,Vanilla FGW,87,1,62,1
+Atanas,2,2023-01-23-08,fDNC,87,2,62,2
+Atanas,2,2023-01-23-21,CPD,93,40,66,40
+Atanas,2,2023-01-23-21,CRF_ID,93,11,66,7
+Atanas,2,2023-01-23-21,FUGW (G+A; official),93,22,66,22
+Atanas,2,2023-01-23-21,GeoTransformer,93,38,66,38
+Atanas,2,2023-01-23-21,NGM-v2,93,35,66,35
+Atanas,2,2023-01-23-21,NeurID (population atlas),93,69,66,54
+Atanas,2,2023-01-23-21,NeurID (single medoid),93,53,66,53
+Atanas,2,2023-01-23-21,NuCLR,93,15,66,15
+Atanas,2,2023-01-23-21,StatAtlas,93,5,66,1
+Atanas,2,2023-01-23-21,Vanilla FGW,93,14,66,14
+Atanas,2,2023-01-23-21,fDNC,93,28,66,28
+Atanas,3,2022-06-14-01,CPD,78,14,54,14
+Atanas,3,2022-06-14-01,CRF_ID,78,14,54,12
+Atanas,3,2022-06-14-01,FUGW (G+A; official),78,9,54,9
+Atanas,3,2022-06-14-01,GeoTransformer,78,24,54,24
+Atanas,3,2022-06-14-01,NGM-v2,78,14,54,14
+Atanas,3,2022-06-14-01,NeurID (population atlas),78,58,54,42
+Atanas,3,2022-06-14-01,NeurID (single medoid),78,44,54,44
+Atanas,3,2022-06-14-01,NuCLR,78,7,54,7
+Atanas,3,2022-06-14-01,StatAtlas,78,0,54,0
+Atanas,3,2022-06-14-01,Vanilla FGW,78,15,54,15
+Atanas,3,2022-06-14-01,fDNC,78,21,54,21
+Atanas,3,2022-06-14-07,CPD,87,31,62,31
+Atanas,3,2022-06-14-07,CRF_ID,87,22,62,19
+Atanas,3,2022-06-14-07,FUGW (G+A; official),87,20,62,20
+Atanas,3,2022-06-14-07,GeoTransformer,87,35,62,35
+Atanas,3,2022-06-14-07,NGM-v2,87,31,62,31
+Atanas,3,2022-06-14-07,NeurID (population atlas),87,66,62,49
+Atanas,3,2022-06-14-07,NeurID (single medoid),87,49,62,49
+Atanas,3,2022-06-14-07,NuCLR,87,7,62,7
+Atanas,3,2022-06-14-07,StatAtlas,87,7,62,6
+Atanas,3,2022-06-14-07,Vanilla FGW,87,23,62,23
+Atanas,3,2022-06-14-07,fDNC,87,34,62,34
+Atanas,3,2022-07-20-01,CPD,94,24,65,24
+Atanas,3,2022-07-20-01,CRF_ID,94,21,65,16
+Atanas,3,2022-07-20-01,FUGW (G+A; official),94,27,65,27
+Atanas,3,2022-07-20-01,GeoTransformer,94,29,65,29
+Atanas,3,2022-07-20-01,NGM-v2,94,17,65,17
+Atanas,3,2022-07-20-01,NeurID (population atlas),94,76,65,55
+Atanas,3,2022-07-20-01,NeurID (single medoid),94,50,65,50
+Atanas,3,2022-07-20-01,NuCLR,94,12,65,12
+Atanas,3,2022-07-20-01,StatAtlas,94,5,65,4
+Atanas,3,2022-07-20-01,Vanilla FGW,94,20,65,20
+Atanas,3,2022-07-20-01,fDNC,94,35,65,35
+Atanas,3,2023-01-09-28,CPD,90,25,63,25
+Atanas,3,2023-01-09-28,CRF_ID,90,21,63,18
+Atanas,3,2023-01-09-28,FUGW (G+A; official),90,26,63,26
+Atanas,3,2023-01-09-28,GeoTransformer,90,28,63,28
+Atanas,3,2023-01-09-28,NGM-v2,90,30,63,30
+Atanas,3,2023-01-09-28,NeurID (population atlas),90,73,63,52
+Atanas,3,2023-01-09-28,NeurID (single medoid),90,56,63,56
+Atanas,3,2023-01-09-28,NuCLR,90,15,63,15
+Atanas,3,2023-01-09-28,StatAtlas,90,1,63,1
+Atanas,3,2023-01-09-28,Vanilla FGW,90,15,63,15
+Atanas,3,2023-01-09-28,fDNC,90,32,63,32
+Atanas,3,2023-01-16-01,CPD,82,31,66,31
+Atanas,3,2023-01-16-01,CRF_ID,82,16,66,11
+Atanas,3,2023-01-16-01,FUGW (G+A; official),82,16,66,16
+Atanas,3,2023-01-16-01,GeoTransformer,82,29,66,29
+Atanas,3,2023-01-16-01,NGM-v2,82,22,66,22
+Atanas,3,2023-01-16-01,NeurID (population atlas),82,67,66,55
+Atanas,3,2023-01-16-01,NeurID (single medoid),82,50,66,50
+Atanas,3,2023-01-16-01,NuCLR,82,12,66,12
+Atanas,3,2023-01-16-01,StatAtlas,82,1,66,1
+Atanas,3,2023-01-16-01,Vanilla FGW,82,17,66,17
+Atanas,3,2023-01-16-01,fDNC,82,22,66,22
+Atanas,3,2023-01-19-08,CPD,83,20,59,20
+Atanas,3,2023-01-19-08,CRF_ID,83,25,59,17
+Atanas,3,2023-01-19-08,FUGW (G+A; official),83,20,59,20
+Atanas,3,2023-01-19-08,GeoTransformer,83,24,59,24
+Atanas,3,2023-01-19-08,NGM-v2,83,8,59,8
+Atanas,3,2023-01-19-08,NeurID (population atlas),83,56,59,40
+Atanas,3,2023-01-19-08,NeurID (single medoid),83,39,59,39
+Atanas,3,2023-01-19-08,NuCLR,83,12,59,12
+Atanas,3,2023-01-19-08,StatAtlas,83,4,59,3
+Atanas,3,2023-01-19-08,Vanilla FGW,83,12,59,12
+Atanas,3,2023-01-19-08,fDNC,83,27,59,27
+Atanas,3,2023-01-23-15,CPD,96,45,71,45
+Atanas,3,2023-01-23-15,CRF_ID,96,23,71,18
+Atanas,3,2023-01-23-15,FUGW (G+A; official),96,31,71,31
+Atanas,3,2023-01-23-15,GeoTransformer,96,41,71,41
+Atanas,3,2023-01-23-15,NGM-v2,96,46,71,46
+Atanas,3,2023-01-23-15,NeurID (population atlas),96,86,71,68
+Atanas,3,2023-01-23-15,NeurID (single medoid),96,70,71,70
+Atanas,3,2023-01-23-15,NuCLR,96,20,71,20
+Atanas,3,2023-01-23-15,StatAtlas,96,17,71,14
+Atanas,3,2023-01-23-15,Vanilla FGW,96,29,71,29
+Atanas,3,2023-01-23-15,fDNC,96,45,71,45
+Atanas,4,2022-06-14-13,CPD,95,21,73,21
+Atanas,4,2022-06-14-13,CRF_ID,95,18,73,14
+Atanas,4,2022-06-14-13,FUGW (G+A; official),95,21,73,21
+Atanas,4,2022-06-14-13,GeoTransformer,95,35,73,35
+Atanas,4,2022-06-14-13,NGM-v2,95,21,73,21
+Atanas,4,2022-06-14-13,NeurID (population atlas),95,68,73,57
+Atanas,4,2022-06-14-13,NeurID (single medoid),95,57,73,57
+Atanas,4,2022-06-14-13,NuCLR,95,19,73,19
+Atanas,4,2022-06-14-13,StatAtlas,95,5,73,4
+Atanas,4,2022-06-14-13,Vanilla FGW,95,16,73,16
+Atanas,4,2022-06-14-13,fDNC,95,24,73,24
+Atanas,4,2022-06-28-01,CPD,74,31,61,31
+Atanas,4,2022-06-28-01,CRF_ID,74,20,61,17
+Atanas,4,2022-06-28-01,FUGW (G+A; official),74,3,61,3
+Atanas,4,2022-06-28-01,GeoTransformer,74,28,61,28
+Atanas,4,2022-06-28-01,NGM-v2,74,23,61,23
+Atanas,4,2022-06-28-01,NeurID (population atlas),74,59,61,51
+Atanas,4,2022-06-28-01,NeurID (single medoid),74,46,61,46
+Atanas,4,2022-06-28-01,NuCLR,74,15,61,15
+Atanas,4,2022-06-28-01,StatAtlas,74,3,61,3
+Atanas,4,2022-06-28-01,Vanilla FGW,74,5,61,5
+Atanas,4,2022-06-28-01,fDNC,74,8,61,8
+Atanas,4,2023-01-05-18,CPD,85,34,63,34
+Atanas,4,2023-01-05-18,CRF_ID,85,19,63,13
+Atanas,4,2023-01-05-18,FUGW (G+A; official),85,27,63,27
+Atanas,4,2023-01-05-18,GeoTransformer,85,40,63,40
+Atanas,4,2023-01-05-18,NGM-v2,85,33,63,33
+Atanas,4,2023-01-05-18,NeurID (population atlas),85,72,63,53
+Atanas,4,2023-01-05-18,NeurID (single medoid),85,53,63,53
+Atanas,4,2023-01-05-18,NuCLR,85,15,63,15
+Atanas,4,2023-01-05-18,StatAtlas,85,1,63,1
+Atanas,4,2023-01-05-18,Vanilla FGW,85,15,63,15
+Atanas,4,2023-01-05-18,fDNC,85,35,63,35
+Atanas,4,2023-01-10-07,CPD,95,45,73,45
+Atanas,4,2023-01-10-07,CRF_ID,95,33,73,28
+Atanas,4,2023-01-10-07,FUGW (G+A; official),95,38,73,38
+Atanas,4,2023-01-10-07,GeoTransformer,95,45,73,45
+Atanas,4,2023-01-10-07,NGM-v2,95,39,73,39
+Atanas,4,2023-01-10-07,NeurID (population atlas),95,81,73,66
+Atanas,4,2023-01-10-07,NeurID (single medoid),95,63,73,63
+Atanas,4,2023-01-10-07,NuCLR,95,17,73,17
+Atanas,4,2023-01-10-07,StatAtlas,95,22,73,18
+Atanas,4,2023-01-10-07,Vanilla FGW,95,10,73,10
+Atanas,4,2023-01-10-07,fDNC,95,27,73,27
+Atanas,4,2023-01-10-14,CPD,91,31,71,31
+Atanas,4,2023-01-10-14,CRF_ID,91,17,71,14
+Atanas,4,2023-01-10-14,FUGW (G+A; official),91,27,71,27
+Atanas,4,2023-01-10-14,GeoTransformer,91,34,71,34
+Atanas,4,2023-01-10-14,NGM-v2,91,17,71,17
+Atanas,4,2023-01-10-14,NeurID (population atlas),91,81,71,63
+Atanas,4,2023-01-10-14,NeurID (single medoid),91,59,71,59
+Atanas,4,2023-01-10-14,NuCLR,91,20,71,20
+Atanas,4,2023-01-10-14,StatAtlas,91,7,71,5
+Atanas,4,2023-01-10-14,Vanilla FGW,91,16,71,16
+Atanas,4,2023-01-10-14,fDNC,91,36,71,36
+Atanas,4,2023-01-16-08,CPD,89,31,65,31
+Atanas,4,2023-01-16-08,CRF_ID,89,24,65,19
+Atanas,4,2023-01-16-08,FUGW (G+A; official),89,25,65,25
+Atanas,4,2023-01-16-08,GeoTransformer,89,31,65,31
+Atanas,4,2023-01-16-08,NGM-v2,89,23,65,23
+Atanas,4,2023-01-16-08,NeurID (population atlas),89,72,65,59
+Atanas,4,2023-01-16-08,NeurID (single medoid),89,59,65,59
+Atanas,4,2023-01-16-08,NuCLR,89,14,65,14
+Atanas,4,2023-01-16-08,StatAtlas,89,5,65,3
+Atanas,4,2023-01-16-08,Vanilla FGW,89,19,65,19
+Atanas,4,2023-01-16-08,fDNC,89,30,65,30
+Atanas,4,2023-03-07-01,CPD,82,28,63,28
+Atanas,4,2023-03-07-01,CRF_ID,82,28,63,23
+Atanas,4,2023-03-07-01,FUGW (G+A; official),82,23,63,23
+Atanas,4,2023-03-07-01,GeoTransformer,82,28,63,28
+Atanas,4,2023-03-07-01,NGM-v2,82,20,63,20
+Atanas,4,2023-03-07-01,NeurID (population atlas),82,69,63,57
+Atanas,4,2023-03-07-01,NeurID (single medoid),82,54,63,54
+Atanas,4,2023-03-07-01,NuCLR,82,13,63,13
+Atanas,4,2023-03-07-01,StatAtlas,82,4,63,4
+Atanas,4,2023-03-07-01,Vanilla FGW,82,8,63,8
+Atanas,4,2023-03-07-01,fDNC,82,32,63,32
+Kato,0,20220426-11-26-14,CPD,9,0,3,0
+Kato,0,20220426-11-26-14,CRF_ID,9,0,3,0
+Kato,0,20220426-11-26-14,FUGW (G+A; official),9,0,3,0
+Kato,0,20220426-11-26-14,GeoTransformer,9,1,3,1
+Kato,0,20220426-11-26-14,NGM-v2,9,1,3,1
+Kato,0,20220426-11-26-14,NeurID (population atlas),9,1,3,1
+Kato,0,20220426-11-26-14,NeurID (single medoid),9,1,3,1
+Kato,0,20220426-11-26-14,NuCLR,9,0,3,0
+Kato,0,20220426-11-26-14,StatAtlas,9,0,3,0
+Kato,0,20220426-11-26-14,Vanilla FGW,9,0,3,0
+Kato,0,20220426-11-26-14,fDNC,9,1,3,1
+Kato,0,20220426-11-32-18,CPD,17,0,4,0
+Kato,0,20220426-11-32-18,CRF_ID,17,0,4,0
+Kato,0,20220426-11-32-18,FUGW (G+A; official),17,0,4,0
+Kato,0,20220426-11-32-18,GeoTransformer,17,1,4,1
+Kato,0,20220426-11-32-18,NGM-v2,17,0,4,0
+Kato,0,20220426-11-32-18,NeurID (population atlas),17,1,4,1
+Kato,0,20220426-11-32-18,NeurID (single medoid),17,3,4,3
+Kato,0,20220426-11-32-18,NuCLR,17,0,4,0
+Kato,0,20220426-11-32-18,StatAtlas,17,0,4,0
+Kato,0,20220426-11-32-18,Vanilla FGW,17,0,4,0
+Kato,0,20220426-11-32-18,fDNC,17,2,4,2
+Kato,0,20221106-21-23-19,CPD,29,1,4,1
+Kato,0,20221106-21-23-19,CRF_ID,29,0,4,0
+Kato,0,20221106-21-23-19,FUGW (G+A; official),29,0,4,0
+Kato,0,20221106-21-23-19,GeoTransformer,29,1,4,1
+Kato,0,20221106-21-23-19,NGM-v2,29,0,4,0
+Kato,0,20221106-21-23-19,NeurID (population atlas),29,16,4,3
+Kato,0,20221106-21-23-19,NeurID (single medoid),29,3,4,3
+Kato,0,20221106-21-23-19,NuCLR,29,1,4,1
+Kato,0,20221106-21-23-19,StatAtlas,29,0,4,0
+Kato,0,20221106-21-23-19,Vanilla FGW,29,0,4,0
+Kato,0,20221106-21-23-19,fDNC,29,1,4,1
+Kato,0,20221215-22-02-55,CPD,11,1,6,1
+Kato,0,20221215-22-02-55,CRF_ID,11,0,6,0
+Kato,0,20221215-22-02-55,FUGW (G+A; official),11,1,6,1
+Kato,0,20221215-22-02-55,GeoTransformer,11,3,6,3
+Kato,0,20221215-22-02-55,NGM-v2,11,1,6,1
+Kato,0,20221215-22-02-55,NeurID (population atlas),11,0,6,0
+Kato,0,20221215-22-02-55,NeurID (single medoid),11,1,6,1
+Kato,0,20221215-22-02-55,NuCLR,11,2,6,2
+Kato,0,20221215-22-02-55,StatAtlas,11,0,6,0
+Kato,0,20221215-22-02-55,Vanilla FGW,11,0,6,0
+Kato,0,20221215-22-02-55,fDNC,11,1,6,1
+Kato,0,20230317-12-51-42,CPD,5,1,2,1
+Kato,0,20230317-12-51-42,CRF_ID,5,0,2,0
+Kato,0,20230317-12-51-42,FUGW (G+A; official),5,0,2,0
+Kato,0,20230317-12-51-42,GeoTransformer,5,1,2,1
+Kato,0,20230317-12-51-42,NGM-v2,5,1,2,1
+Kato,0,20230317-12-51-42,NeurID (population atlas),5,4,2,2
+Kato,0,20230317-12-51-42,NeurID (single medoid),5,2,2,2
+Kato,0,20230317-12-51-42,NuCLR,5,1,2,1
+Kato,0,20230317-12-51-42,StatAtlas,5,0,2,0
+Kato,0,20230317-12-51-42,Vanilla FGW,5,0,2,0
+Kato,0,20230317-12-51-42,fDNC,5,2,2,2
+Kato,0,20230322-18-57-04,CPD,24,2,6,2
+Kato,0,20230322-18-57-04,CRF_ID,24,1,6,0
+Kato,0,20230322-18-57-04,FUGW (G+A; official),24,1,6,1
+Kato,0,20230322-18-57-04,GeoTransformer,24,4,6,4
+Kato,0,20230322-18-57-04,NGM-v2,24,1,6,1
+Kato,0,20230322-18-57-04,NeurID (population atlas),24,17,6,4
+Kato,0,20230322-18-57-04,NeurID (single medoid),24,4,6,4
+Kato,0,20230322-18-57-04,NuCLR,24,2,6,2
+Kato,0,20230322-18-57-04,StatAtlas,24,1,6,0
+Kato,0,20230322-18-57-04,Vanilla FGW,24,0,6,0
+Kato,0,20230322-18-57-04,fDNC,24,1,6,1
+Kato,0,20230322-22-12-12,CPD,3,0,0,0
+Kato,0,20230322-22-12-12,CRF_ID,3,0,0,0
+Kato,0,20230322-22-12-12,FUGW (G+A; official),3,0,0,0
+Kato,0,20230322-22-12-12,GeoTransformer,3,0,0,0
+Kato,0,20230322-22-12-12,NGM-v2,3,0,0,0
+Kato,0,20230322-22-12-12,NeurID (population atlas),3,3,0,0
+Kato,0,20230322-22-12-12,NeurID (single medoid),3,0,0,0
+Kato,0,20230322-22-12-12,NuCLR,3,0,0,0
+Kato,0,20230322-22-12-12,StatAtlas,3,0,0,0
+Kato,0,20230322-22-12-12,Vanilla FGW,3,0,0,0
+Kato,0,20230322-22-12-12,fDNC,3,0,0,0
+Kato,0,20230510-16-36-46,CPD,22,5,7,5
+Kato,0,20230510-16-36-46,CRF_ID,22,0,7,0
+Kato,0,20230510-16-36-46,FUGW (G+A; official),22,6,7,6
+Kato,0,20230510-16-36-46,GeoTransformer,22,2,7,2
+Kato,0,20230510-16-36-46,NGM-v2,22,2,7,2
+Kato,0,20230510-16-36-46,NeurID (population atlas),22,17,7,5
+Kato,0,20230510-16-36-46,NeurID (single medoid),22,7,7,7
+Kato,0,20230510-16-36-46,NuCLR,22,1,7,1
+Kato,0,20230510-16-36-46,StatAtlas,22,3,7,2
+Kato,0,20230510-16-36-46,Vanilla FGW,22,4,7,4
+Kato,0,20230510-16-36-46,fDNC,22,2,7,2
+Kato,0,20230903-17-18-45,CPD,7,5,6,5
+Kato,0,20230903-17-18-45,CRF_ID,7,0,6,0
+Kato,0,20230903-17-18-45,FUGW (G+A; official),7,6,6,6
+Kato,0,20230903-17-18-45,GeoTransformer,7,3,6,3
+Kato,0,20230903-17-18-45,NGM-v2,7,0,6,0
+Kato,0,20230903-17-18-45,NeurID (population atlas),7,6,6,5
+Kato,0,20230903-17-18-45,NeurID (single medoid),7,5,6,5
+Kato,0,20230903-17-18-45,NuCLR,7,0,6,0
+Kato,0,20230903-17-18-45,StatAtlas,7,2,6,2
+Kato,0,20230903-17-18-45,Vanilla FGW,7,2,6,2
+Kato,0,20230903-17-18-45,fDNC,7,1,6,1
+Kato,0,20230904-14-30-52,CPD,49,0,5,0
+Kato,0,20230904-14-30-52,CRF_ID,49,0,5,0
+Kato,0,20230904-14-30-52,FUGW (G+A; official),49,1,5,1
+Kato,0,20230904-14-30-52,GeoTransformer,49,1,5,1
+Kato,0,20230904-14-30-52,NGM-v2,49,0,5,0
+Kato,0,20230904-14-30-52,NeurID (population atlas),49,22,5,5
+Kato,0,20230904-14-30-52,NeurID (single medoid),49,5,5,5
+Kato,0,20230904-14-30-52,NuCLR,49,0,5,0
+Kato,0,20230904-14-30-52,StatAtlas,49,0,5,0
+Kato,0,20230904-14-30-52,Vanilla FGW,49,0,5,0
+Kato,0,20230904-14-30-52,fDNC,49,1,5,1
+Kato,0,20240426-23-12-40,CPD,8,0,5,0
+Kato,0,20240426-23-12-40,CRF_ID,8,0,5,0
+Kato,0,20240426-23-12-40,FUGW (G+A; official),8,1,5,1
+Kato,0,20240426-23-12-40,GeoTransformer,8,0,5,0
+Kato,0,20240426-23-12-40,NGM-v2,8,0,5,0
+Kato,0,20240426-23-12-40,NeurID (population atlas),8,6,5,5
+Kato,0,20240426-23-12-40,NeurID (single medoid),8,4,5,4
+Kato,0,20240426-23-12-40,NuCLR,8,0,5,0
+Kato,0,20240426-23-12-40,StatAtlas,8,0,5,0
+Kato,0,20240426-23-12-40,Vanilla FGW,8,0,5,0
+Kato,0,20240426-23-12-40,fDNC,8,2,5,2
+Kato,0,20240430-20-31-05,CPD,7,0,1,0
+Kato,0,20240430-20-31-05,CRF_ID,7,0,1,0
+Kato,0,20240430-20-31-05,FUGW (G+A; official),7,0,1,0
+Kato,0,20240430-20-31-05,GeoTransformer,7,0,1,0
+Kato,0,20240430-20-31-05,NGM-v2,7,0,1,0
+Kato,0,20240430-20-31-05,NeurID (population atlas),7,3,1,0
+Kato,0,20240430-20-31-05,NeurID (single medoid),7,1,1,1
+Kato,0,20240430-20-31-05,NuCLR,7,1,1,1
+Kato,0,20240430-20-31-05,StatAtlas,7,0,1,0
+Kato,0,20240430-20-31-05,Vanilla FGW,7,0,1,0
+Kato,0,20240430-20-31-05,fDNC,7,0,1,0
+Kato,0,20240526-18-19-39,CPD,5,0,0,0
+Kato,0,20240526-18-19-39,CRF_ID,5,0,0,0
+Kato,0,20240526-18-19-39,FUGW (G+A; official),5,0,0,0
+Kato,0,20240526-18-19-39,GeoTransformer,5,0,0,0
+Kato,0,20240526-18-19-39,NGM-v2,5,0,0,0
+Kato,0,20240526-18-19-39,NeurID (population atlas),5,5,0,0
+Kato,0,20240526-18-19-39,NeurID (single medoid),5,0,0,0
+Kato,0,20240526-18-19-39,NuCLR,5,0,0,0
+Kato,0,20240526-18-19-39,StatAtlas,5,1,0,0
+Kato,0,20240526-18-19-39,Vanilla FGW,5,0,0,0
+Kato,0,20240526-18-19-39,fDNC,5,0,0,0
+Kato,0,20240626-14-30-55,CPD,9,1,5,1
+Kato,0,20240626-14-30-55,CRF_ID,9,0,5,0
+Kato,0,20240626-14-30-55,FUGW (G+A; official),9,2,5,2
+Kato,0,20240626-14-30-55,GeoTransformer,9,0,5,0
+Kato,0,20240626-14-30-55,NGM-v2,9,1,5,1
+Kato,0,20240626-14-30-55,NeurID (population atlas),9,6,5,4
+Kato,0,20240626-14-30-55,NeurID (single medoid),9,4,5,4
+Kato,0,20240626-14-30-55,NuCLR,9,0,5,0
+Kato,0,20240626-14-30-55,StatAtlas,9,0,5,0
+Kato,0,20240626-14-30-55,Vanilla FGW,9,0,5,0
+Kato,0,20240626-14-30-55,fDNC,9,2,5,2
+Kato,0,20240629-14-14-08,CPD,8,7,7,7
+Kato,0,20240629-14-14-08,CRF_ID,8,0,7,0
+Kato,0,20240629-14-14-08,FUGW (G+A; official),8,4,7,4
+Kato,0,20240629-14-14-08,GeoTransformer,8,5,7,5
+Kato,0,20240629-14-14-08,NGM-v2,8,4,7,4
+Kato,0,20240629-14-14-08,NeurID (population atlas),8,5,7,5
+Kato,0,20240629-14-14-08,NeurID (single medoid),8,6,7,6
+Kato,0,20240629-14-14-08,NuCLR,8,0,7,0
+Kato,0,20240629-14-14-08,StatAtlas,8,1,7,1
+Kato,0,20240629-14-14-08,Vanilla FGW,8,4,7,4
+Kato,0,20240629-14-14-08,fDNC,8,1,7,1
+Kato,0,20240828-17-07-39,CPD,17,0,5,0
+Kato,0,20240828-17-07-39,CRF_ID,17,0,5,0
+Kato,0,20240828-17-07-39,FUGW (G+A; official),17,0,5,0
+Kato,0,20240828-17-07-39,GeoTransformer,17,0,5,0
+Kato,0,20240828-17-07-39,NGM-v2,17,1,5,1
+Kato,0,20240828-17-07-39,NeurID (population atlas),17,10,5,4
+Kato,0,20240828-17-07-39,NeurID (single medoid),17,5,5,5
+Kato,0,20240828-17-07-39,NuCLR,17,4,5,4
+Kato,0,20240828-17-07-39,StatAtlas,17,0,5,0
+Kato,0,20240828-17-07-39,Vanilla FGW,17,0,5,0
+Kato,0,20240828-17-07-39,fDNC,17,2,5,2
+Kato,0,20240829-13-00-31,CPD,18,2,6,2
+Kato,0,20240829-13-00-31,CRF_ID,18,0,6,0
+Kato,0,20240829-13-00-31,FUGW (G+A; official),18,3,6,3
+Kato,0,20240829-13-00-31,GeoTransformer,18,3,6,3
+Kato,0,20240829-13-00-31,NGM-v2,18,2,6,2
+Kato,0,20240829-13-00-31,NeurID (population atlas),18,15,6,6
+Kato,0,20240829-13-00-31,NeurID (single medoid),18,6,6,6
+Kato,0,20240829-13-00-31,NuCLR,18,1,6,1
+Kato,0,20240829-13-00-31,StatAtlas,18,1,6,0
+Kato,0,20240829-13-00-31,Vanilla FGW,18,1,6,1
+Kato,0,20240829-13-00-31,fDNC,18,2,6,2
+Kato,0,20240902-17-33-24,CPD,22,0,5,0
+Kato,0,20240902-17-33-24,CRF_ID,22,0,5,0
+Kato,0,20240902-17-33-24,FUGW (G+A; official),22,0,5,0
+Kato,0,20240902-17-33-24,GeoTransformer,22,3,5,3
+Kato,0,20240902-17-33-24,NGM-v2,22,0,5,0
+Kato,0,20240902-17-33-24,NeurID (population atlas),22,20,5,5
+Kato,0,20240902-17-33-24,NeurID (single medoid),22,5,5,5
+Kato,0,20240902-17-33-24,NuCLR,22,1,5,1
+Kato,0,20240902-17-33-24,StatAtlas,22,0,5,0
+Kato,0,20240902-17-33-24,Vanilla FGW,22,0,5,0
+Kato,0,20240902-17-33-24,fDNC,22,1,5,1
+Kato,1,20221106-21-00-09,CPD,22,0,8,0
+Kato,1,20221106-21-00-09,CRF_ID,22,0,8,0
+Kato,1,20221106-21-00-09,FUGW (G+A; official),22,0,8,0
+Kato,1,20221106-21-00-09,GeoTransformer,22,2,8,2
+Kato,1,20221106-21-00-09,NGM-v2,22,1,8,1
+Kato,1,20221106-21-00-09,NeurID (population atlas),22,11,8,5
+Kato,1,20221106-21-00-09,NeurID (single medoid),22,6,8,6
+Kato,1,20221106-21-00-09,NuCLR,22,0,8,0
+Kato,1,20221106-21-00-09,StatAtlas,22,0,8,0
+Kato,1,20221106-21-00-09,Vanilla FGW,22,0,8,0
+Kato,1,20221106-21-00-09,fDNC,22,2,8,2
+Kato,1,20230322-21-41-10,CPD,29,0,8,0
+Kato,1,20230322-21-41-10,CRF_ID,29,3,8,1
+Kato,1,20230322-21-41-10,FUGW (G+A; official),29,0,8,0
+Kato,1,20230322-21-41-10,GeoTransformer,29,3,8,3
+Kato,1,20230322-21-41-10,NGM-v2,29,2,8,2
+Kato,1,20230322-21-41-10,NeurID (population atlas),29,13,8,5
+Kato,1,20230322-21-41-10,NeurID (single medoid),29,7,8,7
+Kato,1,20230322-21-41-10,NuCLR,29,0,8,0
+Kato,1,20230322-21-41-10,StatAtlas,29,0,8,0
+Kato,1,20230322-21-41-10,Vanilla FGW,29,0,8,0
+Kato,1,20230322-21-41-10,fDNC,29,0,8,0
+Kato,1,20230322-22-43-03,CPD,32,0,7,0
+Kato,1,20230322-22-43-03,CRF_ID,32,2,7,0
+Kato,1,20230322-22-43-03,FUGW (G+A; official),32,0,7,0
+Kato,1,20230322-22-43-03,GeoTransformer,32,4,7,4
+Kato,1,20230322-22-43-03,NGM-v2,32,1,7,1
+Kato,1,20230322-22-43-03,NeurID (population atlas),32,18,7,6
+Kato,1,20230322-22-43-03,NeurID (single medoid),32,6,7,6
+Kato,1,20230322-22-43-03,NuCLR,32,1,7,1
+Kato,1,20230322-22-43-03,StatAtlas,32,0,7,0
+Kato,1,20230322-22-43-03,Vanilla FGW,32,0,7,0
+Kato,1,20230322-22-43-03,fDNC,32,3,7,3
+Kato,1,20230502-20-41-23,CPD,2,0,2,0
+Kato,1,20230502-20-41-23,CRF_ID,2,0,2,0
+Kato,1,20230502-20-41-23,FUGW (G+A; official),2,0,2,0
+Kato,1,20230502-20-41-23,GeoTransformer,2,0,2,0
+Kato,1,20230502-20-41-23,NGM-v2,2,0,2,0
+Kato,1,20230502-20-41-23,NeurID (population atlas),2,1,2,1
+Kato,1,20230502-20-41-23,NeurID (single medoid),2,2,2,2
+Kato,1,20230502-20-41-23,NuCLR,2,0,2,0
+Kato,1,20230502-20-41-23,StatAtlas,2,0,2,0
+Kato,1,20230502-20-41-23,Vanilla FGW,2,0,2,0
+Kato,1,20230502-20-41-23,fDNC,2,0,2,0
+Kato,1,20230604-17-09-01,CPD,2,0,2,0
+Kato,1,20230604-17-09-01,CRF_ID,2,0,2,0
+Kato,1,20230604-17-09-01,FUGW (G+A; official),2,2,2,2
+Kato,1,20230604-17-09-01,GeoTransformer,2,0,2,0
+Kato,1,20230604-17-09-01,NGM-v2,2,0,2,0
+Kato,1,20230604-17-09-01,NeurID (population atlas),2,2,2,2
+Kato,1,20230604-17-09-01,NeurID (single medoid),2,2,2,2
+Kato,1,20230604-17-09-01,NuCLR,2,0,2,0
+Kato,1,20230604-17-09-01,StatAtlas,2,0,2,0
+Kato,1,20230604-17-09-01,Vanilla FGW,2,0,2,0
+Kato,1,20230604-17-09-01,fDNC,2,0,2,0
+Kato,1,20230903-16-32-28,CPD,7,1,4,1
+Kato,1,20230903-16-32-28,CRF_ID,7,0,4,0
+Kato,1,20230903-16-32-28,FUGW (G+A; official),7,0,4,0
+Kato,1,20230903-16-32-28,GeoTransformer,7,0,4,0
+Kato,1,20230903-16-32-28,NGM-v2,7,0,4,0
+Kato,1,20230903-16-32-28,NeurID (population atlas),7,4,4,1
+Kato,1,20230903-16-32-28,NeurID (single medoid),7,3,4,3
+Kato,1,20230903-16-32-28,NuCLR,7,1,4,1
+Kato,1,20230903-16-32-28,StatAtlas,7,0,4,0
+Kato,1,20230903-16-32-28,Vanilla FGW,7,0,4,0
+Kato,1,20230903-16-32-28,fDNC,7,2,4,2
+Kato,1,20230903-19-07-30,CPD,6,0,4,0
+Kato,1,20230903-19-07-30,CRF_ID,6,0,4,0
+Kato,1,20230903-19-07-30,FUGW (G+A; official),6,1,4,1
+Kato,1,20230903-19-07-30,GeoTransformer,6,1,4,1
+Kato,1,20230903-19-07-30,NGM-v2,6,0,4,0
+Kato,1,20230903-19-07-30,NeurID (population atlas),6,6,4,4
+Kato,1,20230903-19-07-30,NeurID (single medoid),6,4,4,4
+Kato,1,20230903-19-07-30,NuCLR,6,2,4,2
+Kato,1,20230903-19-07-30,StatAtlas,6,1,4,0
+Kato,1,20230903-19-07-30,Vanilla FGW,6,0,4,0
+Kato,1,20230903-19-07-30,fDNC,6,2,4,2
+Kato,1,20230904-15-09-05,CPD,42,5,10,5
+Kato,1,20230904-15-09-05,CRF_ID,42,0,10,0
+Kato,1,20230904-15-09-05,FUGW (G+A; official),42,4,10,4
+Kato,1,20230904-15-09-05,GeoTransformer,42,3,10,3
+Kato,1,20230904-15-09-05,NGM-v2,42,1,10,1
+Kato,1,20230904-15-09-05,NeurID (population atlas),42,24,10,9
+Kato,1,20230904-15-09-05,NeurID (single medoid),42,9,10,9
+Kato,1,20230904-15-09-05,NuCLR,42,4,10,4
+Kato,1,20230904-15-09-05,StatAtlas,42,1,10,0
+Kato,1,20230904-15-09-05,Vanilla FGW,42,0,10,0
+Kato,1,20230904-15-09-05,fDNC,42,4,10,4
+Kato,1,20230909-15-40-07,CPD,16,5,6,5
+Kato,1,20230909-15-40-07,CRF_ID,16,0,6,0
+Kato,1,20230909-15-40-07,FUGW (G+A; official),16,2,6,2
+Kato,1,20230909-15-40-07,GeoTransformer,16,2,6,2
+Kato,1,20230909-15-40-07,NGM-v2,16,3,6,3
+Kato,1,20230909-15-40-07,NeurID (population atlas),16,14,6,6
+Kato,1,20230909-15-40-07,NeurID (single medoid),16,6,6,6
+Kato,1,20230909-15-40-07,NuCLR,16,2,6,2
+Kato,1,20230909-15-40-07,StatAtlas,16,0,6,0
+Kato,1,20230909-15-40-07,Vanilla FGW,16,2,6,2
+Kato,1,20230909-15-40-07,fDNC,16,4,6,4
+Kato,1,20230909-16-14-25,CPD,6,2,4,2
+Kato,1,20230909-16-14-25,CRF_ID,6,0,4,0
+Kato,1,20230909-16-14-25,FUGW (G+A; official),6,1,4,1
+Kato,1,20230909-16-14-25,GeoTransformer,6,2,4,2
+Kato,1,20230909-16-14-25,NGM-v2,6,1,4,1
+Kato,1,20230909-16-14-25,NeurID (population atlas),6,2,4,1
+Kato,1,20230909-16-14-25,NeurID (single medoid),6,3,4,3
+Kato,1,20230909-16-14-25,NuCLR,6,0,4,0
+Kato,1,20230909-16-14-25,StatAtlas,6,0,4,0
+Kato,1,20230909-16-14-25,Vanilla FGW,6,2,4,2
+Kato,1,20230909-16-14-25,fDNC,6,2,4,2
+Kato,1,20230921-17-15-33,CPD,5,0,3,0
+Kato,1,20230921-17-15-33,CRF_ID,5,0,3,0
+Kato,1,20230921-17-15-33,FUGW (G+A; official),5,0,3,0
+Kato,1,20230921-17-15-33,GeoTransformer,5,1,3,1
+Kato,1,20230921-17-15-33,NGM-v2,5,0,3,0
+Kato,1,20230921-17-15-33,NeurID (population atlas),5,3,3,2
+Kato,1,20230921-17-15-33,NeurID (single medoid),5,3,3,3
+Kato,1,20230921-17-15-33,NuCLR,5,0,3,0
+Kato,1,20230921-17-15-33,StatAtlas,5,0,3,0
+Kato,1,20230921-17-15-33,Vanilla FGW,5,0,3,0
+Kato,1,20230921-17-15-33,fDNC,5,0,3,0
+Kato,1,20240526-19-18-14,CPD,9,0,7,0
+Kato,1,20240526-19-18-14,CRF_ID,9,0,7,0
+Kato,1,20240526-19-18-14,FUGW (G+A; official),9,1,7,1
+Kato,1,20240526-19-18-14,GeoTransformer,9,2,7,2
+Kato,1,20240526-19-18-14,NGM-v2,9,0,7,0
+Kato,1,20240526-19-18-14,NeurID (population atlas),9,7,7,7
+Kato,1,20240526-19-18-14,NeurID (single medoid),9,7,7,7
+Kato,1,20240526-19-18-14,NuCLR,9,0,7,0
+Kato,1,20240526-19-18-14,StatAtlas,9,1,7,1
+Kato,1,20240526-19-18-14,Vanilla FGW,9,1,7,1
+Kato,1,20240526-19-18-14,fDNC,9,2,7,2
+Kato,1,20240714-16-04-26,CPD,8,1,6,1
+Kato,1,20240714-16-04-26,CRF_ID,8,0,6,0
+Kato,1,20240714-16-04-26,FUGW (G+A; official),8,4,6,4
+Kato,1,20240714-16-04-26,GeoTransformer,8,0,6,0
+Kato,1,20240714-16-04-26,NGM-v2,8,1,6,1
+Kato,1,20240714-16-04-26,NeurID (population atlas),8,6,6,4
+Kato,1,20240714-16-04-26,NeurID (single medoid),8,5,6,5
+Kato,1,20240714-16-04-26,NuCLR,8,2,6,2
+Kato,1,20240714-16-04-26,StatAtlas,8,0,6,0
+Kato,1,20240714-16-04-26,Vanilla FGW,8,0,6,0
+Kato,1,20240714-16-04-26,fDNC,8,1,6,1
+Kato,1,20240724-15-07-00,CPD,8,1,5,1
+Kato,1,20240724-15-07-00,CRF_ID,8,0,5,0
+Kato,1,20240724-15-07-00,FUGW (G+A; official),8,3,5,3
+Kato,1,20240724-15-07-00,GeoTransformer,8,3,5,3
+Kato,1,20240724-15-07-00,NGM-v2,8,0,5,0
+Kato,1,20240724-15-07-00,NeurID (population atlas),8,7,5,5
+Kato,1,20240724-15-07-00,NeurID (single medoid),8,5,5,5
+Kato,1,20240724-15-07-00,NuCLR,8,2,5,2
+Kato,1,20240724-15-07-00,StatAtlas,8,0,5,0
+Kato,1,20240724-15-07-00,Vanilla FGW,8,2,5,2
+Kato,1,20240724-15-07-00,fDNC,8,3,5,3
+Kato,1,20240829-13-39-15,CPD,15,0,10,0
+Kato,1,20240829-13-39-15,CRF_ID,15,3,10,2
+Kato,1,20240829-13-39-15,FUGW (G+A; official),15,1,10,1
+Kato,1,20240829-13-39-15,GeoTransformer,15,2,10,2
+Kato,1,20240829-13-39-15,NGM-v2,15,2,10,2
+Kato,1,20240829-13-39-15,NeurID (population atlas),15,12,10,8
+Kato,1,20240829-13-39-15,NeurID (single medoid),15,8,10,8
+Kato,1,20240829-13-39-15,NuCLR,15,1,10,1
+Kato,1,20240829-13-39-15,StatAtlas,15,0,10,0
+Kato,1,20240829-13-39-15,Vanilla FGW,15,1,10,1
+Kato,1,20240829-13-39-15,fDNC,15,2,10,2
+Kato,1,20240902-18-09-07,CPD,18,0,10,0
+Kato,1,20240902-18-09-07,CRF_ID,18,0,10,0
+Kato,1,20240902-18-09-07,FUGW (G+A; official),18,3,10,3
+Kato,1,20240902-18-09-07,GeoTransformer,18,2,10,2
+Kato,1,20240902-18-09-07,NGM-v2,18,0,10,0
+Kato,1,20240902-18-09-07,NeurID (population atlas),18,14,10,9
+Kato,1,20240902-18-09-07,NeurID (single medoid),18,9,10,9
+Kato,1,20240902-18-09-07,NuCLR,18,1,10,1
+Kato,1,20240902-18-09-07,StatAtlas,18,2,10,0
+Kato,1,20240902-18-09-07,Vanilla FGW,18,0,10,0
+Kato,1,20240902-18-09-07,fDNC,18,7,10,7
+Kato,1,20240904-16-13-38,CPD,24,1,14,1
+Kato,1,20240904-16-13-38,CRF_ID,24,0,14,0
+Kato,1,20240904-16-13-38,FUGW (G+A; official),24,2,14,2
+Kato,1,20240904-16-13-38,GeoTransformer,24,2,14,2
+Kato,1,20240904-16-13-38,NGM-v2,24,0,14,0
+Kato,1,20240904-16-13-38,NeurID (population atlas),24,21,14,12
+Kato,1,20240904-16-13-38,NeurID (single medoid),24,14,14,14
+Kato,1,20240904-16-13-38,NuCLR,24,4,14,4
+Kato,1,20240904-16-13-38,StatAtlas,24,5,14,2
+Kato,1,20240904-16-13-38,Vanilla FGW,24,1,14,1
+Kato,1,20240904-16-13-38,fDNC,24,8,14,8
+Kato,1,20240904-17-29-27,CPD,26,1,13,1
+Kato,1,20240904-17-29-27,CRF_ID,26,0,13,0
+Kato,1,20240904-17-29-27,FUGW (G+A; official),26,1,13,1
+Kato,1,20240904-17-29-27,GeoTransformer,26,5,13,5
+Kato,1,20240904-17-29-27,NGM-v2,26,0,13,0
+Kato,1,20240904-17-29-27,NeurID (population atlas),26,24,13,12
+Kato,1,20240904-17-29-27,NeurID (single medoid),26,13,13,13
+Kato,1,20240904-17-29-27,NuCLR,26,2,13,2
+Kato,1,20240904-17-29-27,StatAtlas,26,1,13,1
+Kato,1,20240904-17-29-27,Vanilla FGW,26,0,13,0
+Kato,1,20240904-17-29-27,fDNC,26,2,13,2
+Kato,1,20240917-21-32-57,CPD,21,10,14,10
+Kato,1,20240917-21-32-57,CRF_ID,21,0,14,0
+Kato,1,20240917-21-32-57,FUGW (G+A; official),21,11,14,11
+Kato,1,20240917-21-32-57,GeoTransformer,21,6,14,6
+Kato,1,20240917-21-32-57,NGM-v2,21,5,14,5
+Kato,1,20240917-21-32-57,NeurID (population atlas),21,19,14,13
+Kato,1,20240917-21-32-57,NeurID (single medoid),21,13,14,13
+Kato,1,20240917-21-32-57,NuCLR,21,2,14,2
+Kato,1,20240917-21-32-57,StatAtlas,21,0,14,0
+Kato,1,20240917-21-32-57,Vanilla FGW,21,1,14,1
+Kato,1,20240917-21-32-57,fDNC,21,11,14,11
+Kato,2,20230317-12-27-51,CPD,5,0,4,0
+Kato,2,20230317-12-27-51,CRF_ID,5,0,4,0
+Kato,2,20230317-12-27-51,FUGW (G+A; official),5,0,4,0
+Kato,2,20230317-12-27-51,GeoTransformer,5,2,4,2
+Kato,2,20230317-12-27-51,NGM-v2,5,0,4,0
+Kato,2,20230317-12-27-51,NeurID (population atlas),5,5,4,4
+Kato,2,20230317-12-27-51,NeurID (single medoid),5,4,4,4
+Kato,2,20230317-12-27-51,NuCLR,5,0,4,0
+Kato,2,20230317-12-27-51,StatAtlas,5,0,4,0
+Kato,2,20230317-12-27-51,Vanilla FGW,5,0,4,0
+Kato,2,20230317-12-27-51,fDNC,5,2,4,2
+Kato,2,20230506-12-56-00,CPD,29,0,10,0
+Kato,2,20230506-12-56-00,CRF_ID,29,0,10,0
+Kato,2,20230506-12-56-00,FUGW (G+A; official),29,0,10,0
+Kato,2,20230506-12-56-00,GeoTransformer,29,3,10,3
+Kato,2,20230506-12-56-00,NGM-v2,29,0,10,0
+Kato,2,20230506-12-56-00,NeurID (population atlas),29,10,10,5
+Kato,2,20230506-12-56-00,NeurID (single medoid),29,5,10,5
+Kato,2,20230506-12-56-00,NuCLR,29,0,10,0
+Kato,2,20230506-12-56-00,StatAtlas,29,0,10,0
+Kato,2,20230506-12-56-00,Vanilla FGW,29,0,10,0
+Kato,2,20230506-12-56-00,fDNC,29,4,10,4
+Kato,2,20230506-15-33-51,CPD,27,0,17,0
+Kato,2,20230506-15-33-51,CRF_ID,27,0,17,0
+Kato,2,20230506-15-33-51,FUGW (G+A; official),27,2,17,2
+Kato,2,20230506-15-33-51,GeoTransformer,27,7,17,7
+Kato,2,20230506-15-33-51,NGM-v2,27,0,17,0
+Kato,2,20230506-15-33-51,NeurID (population atlas),27,17,17,11
+Kato,2,20230506-15-33-51,NeurID (single medoid),27,11,17,11
+Kato,2,20230506-15-33-51,NuCLR,27,0,17,0
+Kato,2,20230506-15-33-51,StatAtlas,27,0,17,0
+Kato,2,20230506-15-33-51,Vanilla FGW,27,0,17,0
+Kato,2,20230506-15-33-51,fDNC,27,9,17,9
+Kato,2,20230510-12-53-34,CPD,39,13,25,13
+Kato,2,20230510-12-53-34,CRF_ID,39,4,25,3
+Kato,2,20230510-12-53-34,FUGW (G+A; official),39,6,25,6
+Kato,2,20230510-12-53-34,GeoTransformer,39,5,25,5
+Kato,2,20230510-12-53-34,NGM-v2,39,8,25,8
+Kato,2,20230510-12-53-34,NeurID (population atlas),39,23,25,16
+Kato,2,20230510-12-53-34,NeurID (single medoid),39,19,25,19
+Kato,2,20230510-12-53-34,NuCLR,39,2,25,2
+Kato,2,20230510-12-53-34,StatAtlas,39,9,25,8
+Kato,2,20230510-12-53-34,Vanilla FGW,39,1,25,1
+Kato,2,20230510-12-53-34,fDNC,39,10,25,10
+Kato,2,20230604-15-50-12,CPD,2,0,1,0
+Kato,2,20230604-15-50-12,CRF_ID,2,0,1,0
+Kato,2,20230604-15-50-12,FUGW (G+A; official),2,0,1,0
+Kato,2,20230604-15-50-12,GeoTransformer,2,0,1,0
+Kato,2,20230604-15-50-12,NGM-v2,2,0,1,0
+Kato,2,20230604-15-50-12,NeurID (population atlas),2,2,1,1
+Kato,2,20230604-15-50-12,NeurID (single medoid),2,1,1,1
+Kato,2,20230604-15-50-12,NuCLR,2,0,1,0
+Kato,2,20230604-15-50-12,StatAtlas,2,0,1,0
+Kato,2,20230604-15-50-12,Vanilla FGW,2,0,1,0
+Kato,2,20230604-15-50-12,fDNC,2,0,1,0
+Kato,2,20230604-16-22-56,CPD,2,0,2,0
+Kato,2,20230604-16-22-56,CRF_ID,2,0,2,0
+Kato,2,20230604-16-22-56,FUGW (G+A; official),2,0,2,0
+Kato,2,20230604-16-22-56,GeoTransformer,2,0,2,0
+Kato,2,20230604-16-22-56,NGM-v2,2,0,2,0
+Kato,2,20230604-16-22-56,NeurID (population atlas),2,2,2,2
+Kato,2,20230604-16-22-56,NeurID (single medoid),2,2,2,2
+Kato,2,20230604-16-22-56,NuCLR,2,0,2,0
+Kato,2,20230604-16-22-56,StatAtlas,2,0,2,0
+Kato,2,20230604-16-22-56,Vanilla FGW,2,0,2,0
+Kato,2,20230604-16-22-56,fDNC,2,0,2,0
+Kato,2,20230909-16-48-09,CPD,32,1,12,1
+Kato,2,20230909-16-48-09,CRF_ID,32,0,12,0
+Kato,2,20230909-16-48-09,FUGW (G+A; official),32,0,12,0
+Kato,2,20230909-16-48-09,GeoTransformer,32,2,12,2
+Kato,2,20230909-16-48-09,NGM-v2,32,0,12,0
+Kato,2,20230909-16-48-09,NeurID (population atlas),32,19,12,8
+Kato,2,20230909-16-48-09,NeurID (single medoid),32,10,12,10
+Kato,2,20230909-16-48-09,NuCLR,32,0,12,0
+Kato,2,20230909-16-48-09,StatAtlas,32,0,12,0
+Kato,2,20230909-16-48-09,Vanilla FGW,32,0,12,0
+Kato,2,20230909-16-48-09,fDNC,32,2,12,2
+Kato,2,20240426-22-49-55,CPD,7,0,6,0
+Kato,2,20240426-22-49-55,CRF_ID,7,0,6,0
+Kato,2,20240426-22-49-55,FUGW (G+A; official),7,0,6,0
+Kato,2,20240426-22-49-55,GeoTransformer,7,1,6,1
+Kato,2,20240426-22-49-55,NGM-v2,7,0,6,0
+Kato,2,20240426-22-49-55,NeurID (population atlas),7,5,6,5
+Kato,2,20240426-22-49-55,NeurID (single medoid),7,5,6,5
+Kato,2,20240426-22-49-55,NuCLR,7,0,6,0
+Kato,2,20240426-22-49-55,StatAtlas,7,0,6,0
+Kato,2,20240426-22-49-55,Vanilla FGW,7,0,6,0
+Kato,2,20240426-22-49-55,fDNC,7,1,6,1
+Kato,2,20240430-21-04-44,CPD,11,0,3,0
+Kato,2,20240430-21-04-44,CRF_ID,11,0,3,0
+Kato,2,20240430-21-04-44,FUGW (G+A; official),11,0,3,0
+Kato,2,20240430-21-04-44,GeoTransformer,11,0,3,0
+Kato,2,20240430-21-04-44,NGM-v2,11,0,3,0
+Kato,2,20240430-21-04-44,NeurID (population atlas),11,5,3,2
+Kato,2,20240430-21-04-44,NeurID (single medoid),11,1,3,1
+Kato,2,20240430-21-04-44,NuCLR,11,1,3,1
+Kato,2,20240430-21-04-44,StatAtlas,11,0,3,0
+Kato,2,20240430-21-04-44,Vanilla FGW,11,0,3,0
+Kato,2,20240430-21-04-44,fDNC,11,0,3,0
+Kato,2,20240626-12-35-05,CPD,10,3,7,3
+Kato,2,20240626-12-35-05,CRF_ID,10,1,7,1
+Kato,2,20240626-12-35-05,FUGW (G+A; official),10,2,7,2
+Kato,2,20240626-12-35-05,GeoTransformer,10,0,7,0
+Kato,2,20240626-12-35-05,NGM-v2,10,1,7,1
+Kato,2,20240626-12-35-05,NeurID (population atlas),10,7,7,6
+Kato,2,20240626-12-35-05,NeurID (single medoid),10,6,7,6
+Kato,2,20240626-12-35-05,NuCLR,10,1,7,1
+Kato,2,20240626-12-35-05,StatAtlas,10,2,7,2
+Kato,2,20240626-12-35-05,Vanilla FGW,10,2,7,2
+Kato,2,20240626-12-35-05,fDNC,10,2,7,2
+Kato,2,20240626-13-22-25,CPD,9,0,2,0
+Kato,2,20240626-13-22-25,CRF_ID,9,0,2,0
+Kato,2,20240626-13-22-25,FUGW (G+A; official),9,0,2,0
+Kato,2,20240626-13-22-25,GeoTransformer,9,0,2,0
+Kato,2,20240626-13-22-25,NGM-v2,9,1,2,1
+Kato,2,20240626-13-22-25,NeurID (population atlas),9,4,2,1
+Kato,2,20240626-13-22-25,NeurID (single medoid),9,1,2,1
+Kato,2,20240626-13-22-25,NuCLR,9,0,2,0
+Kato,2,20240626-13-22-25,StatAtlas,9,0,2,0
+Kato,2,20240626-13-22-25,Vanilla FGW,9,1,2,1
+Kato,2,20240626-13-22-25,fDNC,9,0,2,0
+Kato,2,20240629-17-55-55,CPD,6,0,5,0
+Kato,2,20240629-17-55-55,CRF_ID,6,0,5,0
+Kato,2,20240629-17-55-55,FUGW (G+A; official),6,1,5,1
+Kato,2,20240629-17-55-55,GeoTransformer,6,1,5,1
+Kato,2,20240629-17-55-55,NGM-v2,6,1,5,1
+Kato,2,20240629-17-55-55,NeurID (population atlas),6,5,5,5
+Kato,2,20240629-17-55-55,NeurID (single medoid),6,5,5,5
+Kato,2,20240629-17-55-55,NuCLR,6,2,5,2
+Kato,2,20240629-17-55-55,StatAtlas,6,0,5,0
+Kato,2,20240629-17-55-55,Vanilla FGW,6,0,5,0
+Kato,2,20240629-17-55-55,fDNC,6,1,5,1
+Kato,2,20240724-16-28-26,CPD,6,0,1,0
+Kato,2,20240724-16-28-26,CRF_ID,6,0,1,0
+Kato,2,20240724-16-28-26,FUGW (G+A; official),6,0,1,0
+Kato,2,20240724-16-28-26,GeoTransformer,6,1,1,1
+Kato,2,20240724-16-28-26,NGM-v2,6,0,1,0
+Kato,2,20240724-16-28-26,NeurID (population atlas),6,2,1,1
+Kato,2,20240724-16-28-26,NeurID (single medoid),6,1,1,1
+Kato,2,20240724-16-28-26,NuCLR,6,0,1,0
+Kato,2,20240724-16-28-26,StatAtlas,6,0,1,0
+Kato,2,20240724-16-28-26,Vanilla FGW,6,0,1,0
+Kato,2,20240724-16-28-26,fDNC,6,0,1,0
+Kato,2,20240724-17-40-58,CPD,8,0,4,0
+Kato,2,20240724-17-40-58,CRF_ID,8,0,4,0
+Kato,2,20240724-17-40-58,FUGW (G+A; official),8,0,4,0
+Kato,2,20240724-17-40-58,GeoTransformer,8,0,4,0
+Kato,2,20240724-17-40-58,NGM-v2,8,0,4,0
+Kato,2,20240724-17-40-58,NeurID (population atlas),8,4,4,2
+Kato,2,20240724-17-40-58,NeurID (single medoid),8,2,4,2
+Kato,2,20240724-17-40-58,NuCLR,8,1,4,1
+Kato,2,20240724-17-40-58,StatAtlas,8,0,4,0
+Kato,2,20240724-17-40-58,Vanilla FGW,8,0,4,0
+Kato,2,20240724-17-40-58,fDNC,8,1,4,1
+Kato,2,20240902-16-12-10,CPD,19,1,8,1
+Kato,2,20240902-16-12-10,CRF_ID,19,0,8,0
+Kato,2,20240902-16-12-10,FUGW (G+A; official),19,0,8,0
+Kato,2,20240902-16-12-10,GeoTransformer,19,1,8,1
+Kato,2,20240902-16-12-10,NGM-v2,19,0,8,0
+Kato,2,20240902-16-12-10,NeurID (population atlas),19,10,8,6
+Kato,2,20240902-16-12-10,NeurID (single medoid),19,6,8,6
+Kato,2,20240902-16-12-10,NuCLR,19,3,8,3
+Kato,2,20240902-16-12-10,StatAtlas,19,0,8,0
+Kato,2,20240902-16-12-10,Vanilla FGW,19,0,8,0
+Kato,2,20240902-16-12-10,fDNC,19,3,8,3
+Kato,2,20240902-18-51-10,CPD,21,0,10,0
+Kato,2,20240902-18-51-10,CRF_ID,21,0,10,0
+Kato,2,20240902-18-51-10,FUGW (G+A; official),21,3,10,3
+Kato,2,20240902-18-51-10,GeoTransformer,21,5,10,5
+Kato,2,20240902-18-51-10,NGM-v2,21,0,10,0
+Kato,2,20240902-18-51-10,NeurID (population atlas),21,13,10,7
+Kato,2,20240902-18-51-10,NeurID (single medoid),21,9,10,9
+Kato,2,20240902-18-51-10,NuCLR,21,0,10,0
+Kato,2,20240902-18-51-10,StatAtlas,21,0,10,0
+Kato,2,20240902-18-51-10,Vanilla FGW,21,0,10,0
+Kato,2,20240902-18-51-10,fDNC,21,2,10,2
+Kato,2,20240902-20-11-40,CPD,24,1,9,1
+Kato,2,20240902-20-11-40,CRF_ID,24,0,9,0
+Kato,2,20240902-20-11-40,FUGW (G+A; official),24,3,9,3
+Kato,2,20240902-20-11-40,GeoTransformer,24,3,9,3
+Kato,2,20240902-20-11-40,NGM-v2,24,2,9,2
+Kato,2,20240902-20-11-40,NeurID (population atlas),24,20,9,8
+Kato,2,20240902-20-11-40,NeurID (single medoid),24,9,9,9
+Kato,2,20240902-20-11-40,NuCLR,24,1,9,1
+Kato,2,20240902-20-11-40,StatAtlas,24,0,9,0
+Kato,2,20240902-20-11-40,Vanilla FGW,24,1,9,1
+Kato,2,20240902-20-11-40,fDNC,24,4,9,4
+Kato,2,20240917-20-18-26,CPD,22,0,8,0
+Kato,2,20240917-20-18-26,CRF_ID,22,0,8,0
+Kato,2,20240917-20-18-26,FUGW (G+A; official),22,0,8,0
+Kato,2,20240917-20-18-26,GeoTransformer,22,0,8,0
+Kato,2,20240917-20-18-26,NGM-v2,22,0,8,0
+Kato,2,20240917-20-18-26,NeurID (population atlas),22,15,8,7
+Kato,2,20240917-20-18-26,NeurID (single medoid),22,7,8,7
+Kato,2,20240917-20-18-26,NuCLR,22,0,8,0
+Kato,2,20240917-20-18-26,StatAtlas,22,0,8,0
+Kato,2,20240917-20-18-26,Vanilla FGW,22,0,8,0
+Kato,2,20240917-20-18-26,fDNC,22,2,8,2
+Kato,2,20240917-22-37-14,CPD,20,0,11,0
+Kato,2,20240917-22-37-14,CRF_ID,20,0,11,0
+Kato,2,20240917-22-37-14,FUGW (G+A; official),20,1,11,1
+Kato,2,20240917-22-37-14,GeoTransformer,20,3,11,3
+Kato,2,20240917-22-37-14,NGM-v2,20,0,11,0
+Kato,2,20240917-22-37-14,NeurID (population atlas),20,15,11,9
+Kato,2,20240917-22-37-14,NeurID (single medoid),20,9,11,9
+Kato,2,20240917-22-37-14,NuCLR,20,3,11,3
+Kato,2,20240917-22-37-14,StatAtlas,20,0,11,0
+Kato,2,20240917-22-37-14,Vanilla FGW,20,0,11,0
+Kato,2,20240917-22-37-14,fDNC,20,4,11,4
+Kato,3,20221106-21-47-31,CPD,32,5,6,5
+Kato,3,20221106-21-47-31,CRF_ID,32,0,6,0
+Kato,3,20221106-21-47-31,FUGW (G+A; official),32,3,6,3
+Kato,3,20221106-21-47-31,GeoTransformer,32,4,6,4
+Kato,3,20221106-21-47-31,NGM-v2,32,2,6,2
+Kato,3,20221106-21-47-31,NeurID (population atlas),32,10,6,1
+Kato,3,20221106-21-47-31,NeurID (single medoid),32,5,6,5
+Kato,3,20221106-21-47-31,NuCLR,32,0,6,0
+Kato,3,20221106-21-47-31,StatAtlas,32,0,6,0
+Kato,3,20221106-21-47-31,Vanilla FGW,32,1,6,1
+Kato,3,20221106-21-47-31,fDNC,32,3,6,3
+Kato,3,20230412-20-15-17,CPD,23,0,6,0
+Kato,3,20230412-20-15-17,CRF_ID,23,0,6,0
+Kato,3,20230412-20-15-17,FUGW (G+A; official),23,1,6,1
+Kato,3,20230412-20-15-17,GeoTransformer,23,2,6,2
+Kato,3,20230412-20-15-17,NGM-v2,23,1,6,1
+Kato,3,20230412-20-15-17,NeurID (population atlas),23,11,6,2
+Kato,3,20230412-20-15-17,NeurID (single medoid),23,4,6,4
+Kato,3,20230412-20-15-17,NuCLR,23,0,6,0
+Kato,3,20230412-20-15-17,StatAtlas,23,0,6,0
+Kato,3,20230412-20-15-17,Vanilla FGW,23,0,6,0
+Kato,3,20230412-20-15-17,fDNC,23,3,6,3
+Kato,3,20230502-20-05-02,CPD,1,0,0,0
+Kato,3,20230502-20-05-02,CRF_ID,1,0,0,0
+Kato,3,20230502-20-05-02,FUGW (G+A; official),1,0,0,0
+Kato,3,20230502-20-05-02,GeoTransformer,1,0,0,0
+Kato,3,20230502-20-05-02,NGM-v2,1,0,0,0
+Kato,3,20230502-20-05-02,NeurID (population atlas),1,1,0,0
+Kato,3,20230502-20-05-02,NeurID (single medoid),1,0,0,0
+Kato,3,20230502-20-05-02,NuCLR,1,0,0,0
+Kato,3,20230502-20-05-02,StatAtlas,1,0,0,0
+Kato,3,20230502-20-05-02,Vanilla FGW,1,0,0,0
+Kato,3,20230502-20-05-02,fDNC,1,0,0,0
+Kato,3,20230506-15-01-45,CPD,31,6,6,6
+Kato,3,20230506-15-01-45,CRF_ID,31,0,6,0
+Kato,3,20230506-15-01-45,FUGW (G+A; official),31,3,6,3
+Kato,3,20230506-15-01-45,GeoTransformer,31,4,6,4
+Kato,3,20230506-15-01-45,NGM-v2,31,1,6,1
+Kato,3,20230506-15-01-45,NeurID (population atlas),31,24,6,6
+Kato,3,20230506-15-01-45,NeurID (single medoid),31,6,6,6
+Kato,3,20230506-15-01-45,NuCLR,31,0,6,0
+Kato,3,20230506-15-01-45,StatAtlas,31,1,6,0
+Kato,3,20230506-15-01-45,Vanilla FGW,31,1,6,1
+Kato,3,20230506-15-01-45,fDNC,31,5,6,5
+Kato,3,20230510-13-25-46,CPD,32,5,6,5
+Kato,3,20230510-13-25-46,CRF_ID,32,0,6,0
+Kato,3,20230510-13-25-46,FUGW (G+A; official),32,3,6,3
+Kato,3,20230510-13-25-46,GeoTransformer,32,2,6,2
+Kato,3,20230510-13-25-46,NGM-v2,32,2,6,2
+Kato,3,20230510-13-25-46,NeurID (population atlas),32,22,6,4
+Kato,3,20230510-13-25-46,NeurID (single medoid),32,4,6,4
+Kato,3,20230510-13-25-46,NuCLR,32,1,6,1
+Kato,3,20230510-13-25-46,StatAtlas,32,1,6,0
+Kato,3,20230510-13-25-46,Vanilla FGW,32,0,6,0
+Kato,3,20230510-13-25-46,fDNC,32,6,6,6
+Kato,3,20230510-15-49-47,CPD,28,1,5,1
+Kato,3,20230510-15-49-47,CRF_ID,28,0,5,0
+Kato,3,20230510-15-49-47,FUGW (G+A; official),28,0,5,0
+Kato,3,20230510-15-49-47,GeoTransformer,28,1,5,1
+Kato,3,20230510-15-49-47,NGM-v2,28,0,5,0
+Kato,3,20230510-15-49-47,NeurID (population atlas),28,15,5,3
+Kato,3,20230510-15-49-47,NeurID (single medoid),28,5,5,5
+Kato,3,20230510-15-49-47,NuCLR,28,1,5,1
+Kato,3,20230510-15-49-47,StatAtlas,28,0,5,0
+Kato,3,20230510-15-49-47,Vanilla FGW,28,0,5,0
+Kato,3,20230510-15-49-47,fDNC,28,2,5,2
+Kato,3,20230604-15-10-44,CPD,2,0,0,0
+Kato,3,20230604-15-10-44,CRF_ID,2,0,0,0
+Kato,3,20230604-15-10-44,FUGW (G+A; official),2,0,0,0
+Kato,3,20230604-15-10-44,GeoTransformer,2,0,0,0
+Kato,3,20230604-15-10-44,NGM-v2,2,0,0,0
+Kato,3,20230604-15-10-44,NeurID (population atlas),2,2,0,0
+Kato,3,20230604-15-10-44,NeurID (single medoid),2,0,0,0
+Kato,3,20230604-15-10-44,NuCLR,2,0,0,0
+Kato,3,20230604-15-10-44,StatAtlas,2,0,0,0
+Kato,3,20230604-15-10-44,Vanilla FGW,2,0,0,0
+Kato,3,20230604-15-10-44,fDNC,2,0,0,0
+Kato,3,20230903-15-10-21,CPD,7,5,5,5
+Kato,3,20230903-15-10-21,CRF_ID,7,0,5,0
+Kato,3,20230903-15-10-21,FUGW (G+A; official),7,3,5,3
+Kato,3,20230903-15-10-21,GeoTransformer,7,2,5,2
+Kato,3,20230903-15-10-21,NGM-v2,7,1,5,1
+Kato,3,20230903-15-10-21,NeurID (population atlas),7,3,5,3
+Kato,3,20230903-15-10-21,NeurID (single medoid),7,5,5,5
+Kato,3,20230903-15-10-21,NuCLR,7,1,5,1
+Kato,3,20230903-15-10-21,StatAtlas,7,0,5,0
+Kato,3,20230903-15-10-21,Vanilla FGW,7,1,5,1
+Kato,3,20230903-15-10-21,fDNC,7,4,5,4
+Kato,3,20230903-18-20-19,CPD,6,0,2,0
+Kato,3,20230903-18-20-19,CRF_ID,6,0,2,0
+Kato,3,20230903-18-20-19,FUGW (G+A; official),6,1,2,1
+Kato,3,20230903-18-20-19,GeoTransformer,6,1,2,1
+Kato,3,20230903-18-20-19,NGM-v2,6,1,2,1
+Kato,3,20230903-18-20-19,NeurID (population atlas),6,4,2,1
+Kato,3,20230903-18-20-19,NeurID (single medoid),6,1,2,1
+Kato,3,20230903-18-20-19,NuCLR,6,0,2,0
+Kato,3,20230903-18-20-19,StatAtlas,6,2,2,2
+Kato,3,20230903-18-20-19,Vanilla FGW,6,0,2,0
+Kato,3,20230903-18-20-19,fDNC,6,1,2,1
+Kato,3,20230909-14-26-56,CPD,14,0,5,0
+Kato,3,20230909-14-26-56,CRF_ID,14,0,5,0
+Kato,3,20230909-14-26-56,FUGW (G+A; official),14,0,5,0
+Kato,3,20230909-14-26-56,GeoTransformer,14,5,5,5
+Kato,3,20230909-14-26-56,NGM-v2,14,2,5,2
+Kato,3,20230909-14-26-56,NeurID (population atlas),14,4,5,3
+Kato,3,20230909-14-26-56,NeurID (single medoid),14,5,5,5
+Kato,3,20230909-14-26-56,NuCLR,14,0,5,0
+Kato,3,20230909-14-26-56,StatAtlas,14,0,5,0
+Kato,3,20230909-14-26-56,Vanilla FGW,14,0,5,0
+Kato,3,20230909-14-26-56,fDNC,14,3,5,3
+Kato,3,20240427-12-43-44,CPD,6,2,4,2
+Kato,3,20240427-12-43-44,CRF_ID,6,0,4,0
+Kato,3,20240427-12-43-44,FUGW (G+A; official),6,2,4,2
+Kato,3,20240427-12-43-44,GeoTransformer,6,0,4,0
+Kato,3,20240427-12-43-44,NGM-v2,6,2,4,2
+Kato,3,20240427-12-43-44,NeurID (population atlas),6,1,4,1
+Kato,3,20240427-12-43-44,NeurID (single medoid),6,4,4,4
+Kato,3,20240427-12-43-44,NuCLR,6,0,4,0
+Kato,3,20240427-12-43-44,StatAtlas,6,0,4,0
+Kato,3,20240427-12-43-44,Vanilla FGW,6,0,4,0
+Kato,3,20240427-12-43-44,fDNC,6,1,4,1
+Kato,3,20240526-17-36-55,CPD,5,1,3,1
+Kato,3,20240526-17-36-55,CRF_ID,5,0,3,0
+Kato,3,20240526-17-36-55,FUGW (G+A; official),5,2,3,2
+Kato,3,20240526-17-36-55,GeoTransformer,5,3,3,3
+Kato,3,20240526-17-36-55,NGM-v2,5,1,3,1
+Kato,3,20240526-17-36-55,NeurID (population atlas),5,4,3,3
+Kato,3,20240526-17-36-55,NeurID (single medoid),5,3,3,3
+Kato,3,20240526-17-36-55,NuCLR,5,0,3,0
+Kato,3,20240526-17-36-55,StatAtlas,5,0,3,0
+Kato,3,20240526-17-36-55,Vanilla FGW,5,1,3,1
+Kato,3,20240526-17-36-55,fDNC,5,1,3,1
+Kato,3,20240626-13-55-40,CPD,8,0,4,0
+Kato,3,20240626-13-55-40,CRF_ID,8,0,4,0
+Kato,3,20240626-13-55-40,FUGW (G+A; official),8,1,4,1
+Kato,3,20240626-13-55-40,GeoTransformer,8,1,4,1
+Kato,3,20240626-13-55-40,NGM-v2,8,1,4,1
+Kato,3,20240626-13-55-40,NeurID (population atlas),8,6,4,3
+Kato,3,20240626-13-55-40,NeurID (single medoid),8,4,4,4
+Kato,3,20240626-13-55-40,NuCLR,8,0,4,0
+Kato,3,20240626-13-55-40,StatAtlas,8,0,4,0
+Kato,3,20240626-13-55-40,Vanilla FGW,8,0,4,0
+Kato,3,20240626-13-55-40,fDNC,8,1,4,1
+Kato,3,20240629-20-22-10,CPD,10,6,6,6
+Kato,3,20240629-20-22-10,CRF_ID,10,0,6,0
+Kato,3,20240629-20-22-10,FUGW (G+A; official),10,2,6,2
+Kato,3,20240629-20-22-10,GeoTransformer,10,4,6,4
+Kato,3,20240629-20-22-10,NGM-v2,10,2,6,2
+Kato,3,20240629-20-22-10,NeurID (population atlas),10,6,6,5
+Kato,3,20240629-20-22-10,NeurID (single medoid),10,6,6,6
+Kato,3,20240629-20-22-10,NuCLR,10,0,6,0
+Kato,3,20240629-20-22-10,StatAtlas,10,0,6,0
+Kato,3,20240629-20-22-10,Vanilla FGW,10,0,6,0
+Kato,3,20240629-20-22-10,fDNC,10,4,6,4
+Kato,3,20240724-15-48-55,CPD,8,0,4,0
+Kato,3,20240724-15-48-55,CRF_ID,8,0,4,0
+Kato,3,20240724-15-48-55,FUGW (G+A; official),8,1,4,1
+Kato,3,20240724-15-48-55,GeoTransformer,8,4,4,4
+Kato,3,20240724-15-48-55,NGM-v2,8,1,4,1
+Kato,3,20240724-15-48-55,NeurID (population atlas),8,6,4,3
+Kato,3,20240724-15-48-55,NeurID (single medoid),8,4,4,4
+Kato,3,20240724-15-48-55,NuCLR,8,0,4,0
+Kato,3,20240724-15-48-55,StatAtlas,8,0,4,0
+Kato,3,20240724-15-48-55,Vanilla FGW,8,0,4,0
+Kato,3,20240724-15-48-55,fDNC,8,1,4,1
+Kato,3,20240828-14-57-38,CPD,21,0,5,0
+Kato,3,20240828-14-57-38,CRF_ID,21,1,5,0
+Kato,3,20240828-14-57-38,FUGW (G+A; official),21,1,5,1
+Kato,3,20240828-14-57-38,GeoTransformer,21,1,5,1
+Kato,3,20240828-14-57-38,NGM-v2,21,2,5,2
+Kato,3,20240828-14-57-38,NeurID (population atlas),21,17,5,4
+Kato,3,20240828-14-57-38,NeurID (single medoid),21,4,5,4
+Kato,3,20240828-14-57-38,NuCLR,21,0,5,0
+Kato,3,20240828-14-57-38,StatAtlas,21,6,5,3
+Kato,3,20240828-14-57-38,Vanilla FGW,21,0,5,0
+Kato,3,20240828-14-57-38,fDNC,21,3,5,3
+Kato,3,20240828-15-51-58,CPD,24,1,6,1
+Kato,3,20240828-15-51-58,CRF_ID,24,0,6,0
+Kato,3,20240828-15-51-58,FUGW (G+A; official),24,0,6,0
+Kato,3,20240828-15-51-58,GeoTransformer,24,2,6,2
+Kato,3,20240828-15-51-58,NGM-v2,24,1,6,1
+Kato,3,20240828-15-51-58,NeurID (population atlas),24,23,6,5
+Kato,3,20240828-15-51-58,NeurID (single medoid),24,6,6,6
+Kato,3,20240828-15-51-58,NuCLR,24,0,6,0
+Kato,3,20240828-15-51-58,StatAtlas,24,0,6,0
+Kato,3,20240828-15-51-58,Vanilla FGW,24,0,6,0
+Kato,3,20240828-15-51-58,fDNC,24,3,6,3
+Kato,3,20240828-16-23-54,CPD,20,2,5,2
+Kato,3,20240828-16-23-54,CRF_ID,20,0,5,0
+Kato,3,20240828-16-23-54,FUGW (G+A; official),20,0,5,0
+Kato,3,20240828-16-23-54,GeoTransformer,20,2,5,2
+Kato,3,20240828-16-23-54,NGM-v2,20,0,5,0
+Kato,3,20240828-16-23-54,NeurID (population atlas),20,15,5,5
+Kato,3,20240828-16-23-54,NeurID (single medoid),20,5,5,5
+Kato,3,20240828-16-23-54,NuCLR,20,0,5,0
+Kato,3,20240828-16-23-54,StatAtlas,20,0,5,0
+Kato,3,20240828-16-23-54,Vanilla FGW,20,0,5,0
+Kato,3,20240828-16-23-54,fDNC,20,2,5,2
+Kato,3,20240902-15-36-41,CPD,18,0,6,0
+Kato,3,20240902-15-36-41,CRF_ID,18,0,6,0
+Kato,3,20240902-15-36-41,FUGW (G+A; official),18,2,6,2
+Kato,3,20240902-15-36-41,GeoTransformer,18,2,6,2
+Kato,3,20240902-15-36-41,NGM-v2,18,2,6,2
+Kato,3,20240902-15-36-41,NeurID (population atlas),18,14,6,6
+Kato,3,20240902-15-36-41,NeurID (single medoid),18,6,6,6
+Kato,3,20240902-15-36-41,NuCLR,18,0,6,0
+Kato,3,20240902-15-36-41,StatAtlas,18,0,6,0
+Kato,3,20240902-15-36-41,Vanilla FGW,18,0,6,0
+Kato,3,20240902-15-36-41,fDNC,18,3,6,3
+Kato,4,20230322-20-16-50,CPD,28,1,2,1
+Kato,4,20230322-20-16-50,CRF_ID,28,1,2,0
+Kato,4,20230322-20-16-50,FUGW (G+A; official),28,0,2,0
+Kato,4,20230322-20-16-50,GeoTransformer,28,1,2,1
+Kato,4,20230322-20-16-50,NGM-v2,28,0,2,0
+Kato,4,20230322-20-16-50,NeurID (population atlas),28,15,2,2
+Kato,4,20230322-20-16-50,NeurID (single medoid),28,2,2,2
+Kato,4,20230322-20-16-50,NuCLR,28,0,2,0
+Kato,4,20230322-20-16-50,StatAtlas,28,0,2,0
+Kato,4,20230322-20-16-50,Vanilla FGW,28,0,2,0
+Kato,4,20230322-20-16-50,fDNC,28,2,2,2
+Kato,4,20230322-21-09-13,CPD,4,0,0,0
+Kato,4,20230322-21-09-13,CRF_ID,4,0,0,0
+Kato,4,20230322-21-09-13,FUGW (G+A; official),4,0,0,0
+Kato,4,20230322-21-09-13,GeoTransformer,4,0,0,0
+Kato,4,20230322-21-09-13,NGM-v2,4,0,0,0
+Kato,4,20230322-21-09-13,NeurID (population atlas),4,4,0,0
+Kato,4,20230322-21-09-13,NeurID (single medoid),4,0,0,0
+Kato,4,20230322-21-09-13,NuCLR,4,0,0,0
+Kato,4,20230322-21-09-13,StatAtlas,4,0,0,0
+Kato,4,20230322-21-09-13,Vanilla FGW,4,0,0,0
+Kato,4,20230322-21-09-13,fDNC,4,0,0,0
+Kato,4,20230506-13-32-08,CPD,16,4,6,4
+Kato,4,20230506-13-32-08,CRF_ID,16,1,6,1
+Kato,4,20230506-13-32-08,FUGW (G+A; official),16,4,6,4
+Kato,4,20230506-13-32-08,GeoTransformer,16,2,6,2
+Kato,4,20230506-13-32-08,NGM-v2,16,2,6,2
+Kato,4,20230506-13-32-08,NeurID (population atlas),16,9,6,1
+Kato,4,20230506-13-32-08,NeurID (single medoid),16,3,6,3
+Kato,4,20230506-13-32-08,NuCLR,16,0,6,0
+Kato,4,20230506-13-32-08,StatAtlas,16,0,6,0
+Kato,4,20230506-13-32-08,Vanilla FGW,16,1,6,1
+Kato,4,20230506-13-32-08,fDNC,16,3,6,3
+Kato,4,20230506-14-24-57,CPD,36,0,5,0
+Kato,4,20230506-14-24-57,CRF_ID,36,0,5,0
+Kato,4,20230506-14-24-57,FUGW (G+A; official),36,2,5,2
+Kato,4,20230506-14-24-57,GeoTransformer,36,2,5,2
+Kato,4,20230506-14-24-57,NGM-v2,36,1,5,1
+Kato,4,20230506-14-24-57,NeurID (population atlas),36,20,5,3
+Kato,4,20230506-14-24-57,NeurID (single medoid),36,4,5,4
+Kato,4,20230506-14-24-57,NuCLR,36,0,5,0
+Kato,4,20230506-14-24-57,StatAtlas,36,7,5,3
+Kato,4,20230506-14-24-57,Vanilla FGW,36,0,5,0
+Kato,4,20230506-14-24-57,fDNC,36,3,5,3
+Kato,4,20230904-15-59-40,CPD,33,0,3,0
+Kato,4,20230904-15-59-40,CRF_ID,33,0,3,0
+Kato,4,20230904-15-59-40,FUGW (G+A; official),33,1,3,1
+Kato,4,20230904-15-59-40,GeoTransformer,33,1,3,1
+Kato,4,20230904-15-59-40,NGM-v2,33,1,3,1
+Kato,4,20230904-15-59-40,NeurID (population atlas),33,19,3,2
+Kato,4,20230904-15-59-40,NeurID (single medoid),33,2,3,2
+Kato,4,20230904-15-59-40,NuCLR,33,0,3,0
+Kato,4,20230904-15-59-40,StatAtlas,33,8,3,2
+Kato,4,20230904-15-59-40,Vanilla FGW,33,0,3,0
+Kato,4,20230904-15-59-40,fDNC,33,3,3,3
+Kato,4,20240526-19-51-22,CPD,4,0,1,0
+Kato,4,20240526-19-51-22,CRF_ID,4,0,1,0
+Kato,4,20240526-19-51-22,FUGW (G+A; official),4,0,1,0
+Kato,4,20240526-19-51-22,GeoTransformer,4,1,1,1
+Kato,4,20240526-19-51-22,NGM-v2,4,0,1,0
+Kato,4,20240526-19-51-22,NeurID (population atlas),4,3,1,1
+Kato,4,20240526-19-51-22,NeurID (single medoid),4,1,1,1
+Kato,4,20240526-19-51-22,NuCLR,4,0,1,0
+Kato,4,20240526-19-51-22,StatAtlas,4,1,1,1
+Kato,4,20240526-19-51-22,Vanilla FGW,4,0,1,0
+Kato,4,20240526-19-51-22,fDNC,4,0,1,0
+Kato,4,20240626-15-08-33,CPD,7,0,1,0
+Kato,4,20240626-15-08-33,CRF_ID,7,0,1,0
+Kato,4,20240626-15-08-33,FUGW (G+A; official),7,1,1,1
+Kato,4,20240626-15-08-33,GeoTransformer,7,0,1,0
+Kato,4,20240626-15-08-33,NGM-v2,7,0,1,0
+Kato,4,20240626-15-08-33,NeurID (population atlas),7,5,1,0
+Kato,4,20240626-15-08-33,NeurID (single medoid),7,1,1,1
+Kato,4,20240626-15-08-33,NuCLR,7,0,1,0
+Kato,4,20240626-15-08-33,StatAtlas,7,1,1,1
+Kato,4,20240626-15-08-33,Vanilla FGW,7,0,1,0
+Kato,4,20240626-15-08-33,fDNC,7,0,1,0
+Kato,4,20240629-14-48-32,CPD,8,2,3,2
+Kato,4,20240629-14-48-32,CRF_ID,8,0,3,0
+Kato,4,20240629-14-48-32,FUGW (G+A; official),8,2,3,2
+Kato,4,20240629-14-48-32,GeoTransformer,8,2,3,2
+Kato,4,20240629-14-48-32,NGM-v2,8,1,3,1
+Kato,4,20240629-14-48-32,NeurID (population atlas),8,7,3,3
+Kato,4,20240629-14-48-32,NeurID (single medoid),8,3,3,3
+Kato,4,20240629-14-48-32,NuCLR,8,0,3,0
+Kato,4,20240629-14-48-32,StatAtlas,8,0,3,0
+Kato,4,20240629-14-48-32,Vanilla FGW,8,0,3,0
+Kato,4,20240629-14-48-32,fDNC,8,3,3,3
+Kato,4,20240629-20-59-45,CPD,6,1,3,1
+Kato,4,20240629-20-59-45,CRF_ID,6,0,3,0
+Kato,4,20240629-20-59-45,FUGW (G+A; official),6,1,3,1
+Kato,4,20240629-20-59-45,GeoTransformer,6,0,3,0
+Kato,4,20240629-20-59-45,NGM-v2,6,1,3,1
+Kato,4,20240629-20-59-45,NeurID (population atlas),6,5,3,3
+Kato,4,20240629-20-59-45,NeurID (single medoid),6,3,3,3
+Kato,4,20240629-20-59-45,NuCLR,6,0,3,0
+Kato,4,20240629-20-59-45,StatAtlas,6,0,3,0
+Kato,4,20240629-20-59-45,Vanilla FGW,6,0,3,0
+Kato,4,20240629-20-59-45,fDNC,6,2,3,2
+Kato,4,20240714-15-24-26,CPD,9,0,0,0
+Kato,4,20240714-15-24-26,CRF_ID,9,0,0,0
+Kato,4,20240714-15-24-26,FUGW (G+A; official),9,0,0,0
+Kato,4,20240714-15-24-26,GeoTransformer,9,0,0,0
+Kato,4,20240714-15-24-26,NGM-v2,9,0,0,0
+Kato,4,20240714-15-24-26,NeurID (population atlas),9,8,0,0
+Kato,4,20240714-15-24-26,NeurID (single medoid),9,0,0,0
+Kato,4,20240714-15-24-26,NuCLR,9,0,0,0
+Kato,4,20240714-15-24-26,StatAtlas,9,0,0,0
+Kato,4,20240714-15-24-26,Vanilla FGW,9,0,0,0
+Kato,4,20240714-15-24-26,fDNC,9,0,0,0
+Kato,4,20240714-17-28-58,CPD,6,3,3,3
+Kato,4,20240714-17-28-58,CRF_ID,6,0,3,0
+Kato,4,20240714-17-28-58,FUGW (G+A; official),6,1,3,1
+Kato,4,20240714-17-28-58,GeoTransformer,6,2,3,2
+Kato,4,20240714-17-28-58,NGM-v2,6,0,3,0
+Kato,4,20240714-17-28-58,NeurID (population atlas),6,5,3,3
+Kato,4,20240714-17-28-58,NeurID (single medoid),6,3,3,3
+Kato,4,20240714-17-28-58,NuCLR,6,0,3,0
+Kato,4,20240714-17-28-58,StatAtlas,6,0,3,0
+Kato,4,20240714-17-28-58,Vanilla FGW,6,0,3,0
+Kato,4,20240714-17-28-58,fDNC,6,2,3,2
+Kato,4,20240724-14-26-00,CPD,8,0,1,0
+Kato,4,20240724-14-26-00,CRF_ID,8,0,1,0
+Kato,4,20240724-14-26-00,FUGW (G+A; official),8,0,1,0
+Kato,4,20240724-14-26-00,GeoTransformer,8,0,1,0
+Kato,4,20240724-14-26-00,NGM-v2,8,0,1,0
+Kato,4,20240724-14-26-00,NeurID (population atlas),8,8,1,1
+Kato,4,20240724-14-26-00,NeurID (single medoid),8,1,1,1
+Kato,4,20240724-14-26-00,NuCLR,8,0,1,0
+Kato,4,20240724-14-26-00,StatAtlas,8,0,1,0
+Kato,4,20240724-14-26-00,Vanilla FGW,8,0,1,0
+Kato,4,20240724-14-26-00,fDNC,8,0,1,0
+Kato,4,20240828-14-16-29,CPD,24,1,5,1
+Kato,4,20240828-14-16-29,CRF_ID,24,1,5,0
+Kato,4,20240828-14-16-29,FUGW (G+A; official),24,0,5,0
+Kato,4,20240828-14-16-29,GeoTransformer,24,2,5,2
+Kato,4,20240828-14-16-29,NGM-v2,24,0,5,0
+Kato,4,20240828-14-16-29,NeurID (population atlas),24,12,5,4
+Kato,4,20240828-14-16-29,NeurID (single medoid),24,4,5,4
+Kato,4,20240828-14-16-29,NuCLR,24,0,5,0
+Kato,4,20240828-14-16-29,StatAtlas,24,0,5,0
+Kato,4,20240828-14-16-29,Vanilla FGW,24,0,5,0
+Kato,4,20240828-14-16-29,fDNC,24,3,5,3
+Kato,4,20240902-16-53-12,CPD,19,1,4,1
+Kato,4,20240902-16-53-12,CRF_ID,19,0,4,0
+Kato,4,20240902-16-53-12,FUGW (G+A; official),19,0,4,0
+Kato,4,20240902-16-53-12,GeoTransformer,19,3,4,3
+Kato,4,20240902-16-53-12,NGM-v2,19,0,4,0
+Kato,4,20240902-16-53-12,NeurID (population atlas),19,18,4,4
+Kato,4,20240902-16-53-12,NeurID (single medoid),19,4,4,4
+Kato,4,20240902-16-53-12,NuCLR,19,0,4,0
+Kato,4,20240902-16-53-12,StatAtlas,19,0,4,0
+Kato,4,20240902-16-53-12,Vanilla FGW,19,0,4,0
+Kato,4,20240902-16-53-12,fDNC,19,4,4,4
+Kato,4,20240904-14-55-14,CPD,26,0,6,0
+Kato,4,20240904-14-55-14,CRF_ID,26,0,6,0
+Kato,4,20240904-14-55-14,FUGW (G+A; official),26,1,6,1
+Kato,4,20240904-14-55-14,GeoTransformer,26,4,6,4
+Kato,4,20240904-14-55-14,NGM-v2,26,0,6,0
+Kato,4,20240904-14-55-14,NeurID (population atlas),26,16,6,6
+Kato,4,20240904-14-55-14,NeurID (single medoid),26,6,6,6
+Kato,4,20240904-14-55-14,NuCLR,26,0,6,0
+Kato,4,20240904-14-55-14,StatAtlas,26,0,6,0
+Kato,4,20240904-14-55-14,Vanilla FGW,26,0,6,0
+Kato,4,20240904-14-55-14,fDNC,26,4,6,4
+Kato,4,20240904-15-32-57,CPD,17,0,4,0
+Kato,4,20240904-15-32-57,CRF_ID,17,0,4,0
+Kato,4,20240904-15-32-57,FUGW (G+A; official),17,1,4,1
+Kato,4,20240904-15-32-57,GeoTransformer,17,0,4,0
+Kato,4,20240904-15-32-57,NGM-v2,17,2,4,2
+Kato,4,20240904-15-32-57,NeurID (population atlas),17,11,4,3
+Kato,4,20240904-15-32-57,NeurID (single medoid),17,3,4,3
+Kato,4,20240904-15-32-57,NuCLR,17,0,4,0
+Kato,4,20240904-15-32-57,StatAtlas,17,6,4,2
+Kato,4,20240904-15-32-57,Vanilla FGW,17,0,4,0
+Kato,4,20240904-15-32-57,fDNC,17,3,4,3
+Kato,4,20240904-16-51-21,CPD,23,1,5,1
+Kato,4,20240904-16-51-21,CRF_ID,23,1,5,1
+Kato,4,20240904-16-51-21,FUGW (G+A; official),23,0,5,0
+Kato,4,20240904-16-51-21,GeoTransformer,23,3,5,3
+Kato,4,20240904-16-51-21,NGM-v2,23,1,5,1
+Kato,4,20240904-16-51-21,NeurID (population atlas),23,18,5,4
+Kato,4,20240904-16-51-21,NeurID (single medoid),23,4,5,4
+Kato,4,20240904-16-51-21,NuCLR,23,0,5,0
+Kato,4,20240904-16-51-21,StatAtlas,23,0,5,0
+Kato,4,20240904-16-51-21,Vanilla FGW,23,0,5,0
+Kato,4,20240904-16-51-21,fDNC,23,4,5,4
+Kato,4,20240917-20-52-20,CPD,20,1,4,1
+Kato,4,20240917-20-52-20,CRF_ID,20,0,4,0
+Kato,4,20240917-20-52-20,FUGW (G+A; official),20,0,4,0
+Kato,4,20240917-20-52-20,GeoTransformer,20,1,4,1
+Kato,4,20240917-20-52-20,NGM-v2,20,1,4,1
+Kato,4,20240917-20-52-20,NeurID (population atlas),20,14,4,4
+Kato,4,20240917-20-52-20,NeurID (single medoid),20,4,4,4
+Kato,4,20240917-20-52-20,NuCLR,20,1,4,1
+Kato,4,20240917-20-52-20,StatAtlas,20,1,4,0
+Kato,4,20240917-20-52-20,Vanilla FGW,20,0,4,0
+Kato,4,20240917-20-52-20,fDNC,20,3,4,3

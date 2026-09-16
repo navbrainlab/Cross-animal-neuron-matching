@@ -1,30 +1,27 @@
-# Files/directories intended for the source-release commit.
+# Public release boundary (relative to this repository).
+.gitattributes
 .gitignore
+LICENSE
 README.md
 MODEL_CODE_GUIDE.md
 RUN_DATASETS.md
-src/nn/attention.py
 neurid/
+data/
 scripts/__init__.py
 scripts/README.md
 scripts/check_release.py
+scripts/lib/
+scripts/neurid/
 scripts/benchmarks/
 scripts/fair_identity/
-scripts/lib/
 scripts/mechanisms/
-scripts/neurid/
 scripts/robustness/
-scripts/scaling/
 scripts/zebrafish/
-scripts/zm9624/
-workflows/README.md
-workflows/atanas/
-workflows/atanas_multifold_v1/
-workflows/dunn_001623/
-workflows/atanas_clean_27_6_5_test_ids.txt
-workflows/atanas_clean_spatial_baselines_config.json
-workflows/stage_outer_test_after_lock.py
-configs/benchmark_manifests/
-baselines/
-docs/
 results/
+baselines/
+configs/
+docs/
+workflows/
+
+# Deliberately absent: new runs, checkpoints, caches, logs, raw source downloads,
+# and every historical/alternative NeuRID implementation.

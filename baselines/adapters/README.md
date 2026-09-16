@@ -6,7 +6,6 @@ weights, logs, and build products are not vendored.
 
 - `geotransformer/`: copy the experiment directories and launchers into the
   root of the frozen GeoTransformer checkout recorded in `docs/THIRD_PARTY.md`.
-- `rgm/`: copy the three launchers into the frozen RGM checkout root.
 - `thinkmatch/python310-ortools.patch`: apply to the frozen ThinkMatch checkout
   before running NGM-v2 under the Python 3.10 environment used here.
 

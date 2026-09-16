@@ -1,0 +1,115 @@
+{
+  "protocol": "zebrafish_longitudinal_LOFO_fold1_locked_test",
+  "matching_unit": "same fish, q/r windows separated by 60 minutes",
+  "held_out_test_fish": "func_20150410",
+  "checkpoint_selected_using": "validation fish func_20150417 only",
+  "checkpoint": "external-run-record",
+  "checkpoint_sha256": "c7bb669ec5f5cf09b3bb4c674eb455301c37b264f29c2fbdde5f02775496318c",
+  "activity_points": 128,
+  "minimum_shared": 20,
+  "test": {
+    "split": "test",
+    "records": 32,
+    "legal_pairs": 16,
+    "minimum_shared": 99,
+    "maximum_shared": 122,
+    "pairs": [
+      {
+        "left": "func_20150410__gap60m__p000__q.npz",
+        "right": "func_20150410__gap60m__p000__r.npz",
+        "pair_id": "func_20150410__gap60m__p000",
+        "shared": 99
+      },
+      {
+        "left": "func_20150410__gap60m__p001__q.npz",
+        "right": "func_20150410__gap60m__p001__r.npz",
+        "pair_id": "func_20150410__gap60m__p001",
+        "shared": 100
+      },
+      {
+        "left": "func_20150410__gap60m__p002__q.npz",
+        "right": "func_20150410__gap60m__p002__r.npz",
+        "pair_id": "func_20150410__gap60m__p002",
+        "shared": 101
+      },
+      {
+        "left": "func_20150410__gap60m__p003__q.npz",
+        "right": "func_20150410__gap60m__p003__r.npz",
+        "pair_id": "func_20150410__gap60m__p003",
+        "shared": 103
+      },
+      {
+        "left": "func_20150410__gap60m__p004__q.npz",
+        "right": "func_20150410__gap60m__p004__r.npz",
+        "pair_id": "func_20150410__gap60m__p004",
+        "shared": 105
+      },
+      {
+        "left": "func_20150410__gap60m__p005__q.npz",
+        "right": "func_20150410__gap60m__p005__r.npz",
+        "pair_id": "func_20150410__gap60m__p005",
+        "shared": 106
+      },
+      {
+        "left": "func_20150410__gap60m__p006__q.npz",
+        "right": "func_20150410__gap60m__p006__r.npz",
+        "pair_id": "func_20150410__gap60m__p006",
+        "shared": 109
+      },
+      {
+        "left": "func_20150410__gap60m__p007__q.npz",
+        "right": "func_20150410__gap60m__p007__r.npz",
+        "pair_id": "func_20150410__gap60m__p007",
+        "shared": 111
+      },
+      {
+        "left": "func_20150410__gap60m__p008__q.npz",
+        "right": "func_20150410__gap60m__p008__r.npz",
+        "pair_id": "func_20150410__gap60m__p008",
+        "shared": 112
+      },
+      {
+        "left": "func_20150410__gap60m__p009__q.npz",
+        "right": "func_20150410__gap60m__p009__r.npz",
+        "pair_id": "func_20150410__gap60m__p009",
+        "shared": 115
+      },
+      {
+        "left": "func_20150410__gap60m__p010__q.npz",
+        "right": "func_20150410__gap60m__p010__r.npz",
+        "pair_id": "func_20150410__gap60m__p010",
+        "shared": 115
+      },
+      {
+        "left": "func_20150410__gap60m__p011__q.npz",
+        "right": "func_20150410__gap60m__p011__r.npz",
+        "pair_id": "func_20150410__gap60m__p011",
+        "shared": 116
+      },
+      {
+        "left": "func_20150410__gap60m__p012__q.npz",
+        "right": "func_20150410__gap60m__p012__r.npz",
+        "pair_id": "func_20150410__gap60m__p012",
+        "shared": 116
+      },
+      {
+        "left": "func_20150410__gap60m__p013__q.npz",
+        "right": "func_20150410__gap60m__p013__r.npz",
+        "pair_id": "func_20150410__gap60m__p013",
+        "shared": 118
+      },
+      {
+        "left": "func_20150410__gap60m__p014__q.npz",
+        "right": "func_20150410__gap60m__p014__r.npz",
+        "pair_id": "func_20150410__gap60m__p014",
+        "shared": 120
+      },
+      {
+        "left": "func_20150410__gap60m__p015__q.npz",
+        "right": "func_20150410__gap60m__p015__r.npz",
+        "pair_id": "func_20150410__gap60m__p015",
+        "shared": 122
+      }
+    ]
+  }
+}

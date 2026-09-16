@@ -1,0 +1,70 @@
+[
+  {
+    "identity": "ADFL",
+    "support_templates": 1
+  },
+  {
+    "identity": "ADFR",
+    "support_templates": 1
+  },
+  {
+    "identity": "ALA",
+    "support_templates": 1
+  },
+  {
+    "identity": "AVAL",
+    "support_templates": 1
+  },
+  {
+    "identity": "AVAR",
+    "support_templates": 1
+  },
+  {
+    "identity": "AVEL",
+    "support_templates": 1
+  },
+  {
+    "identity": "AWAR",
+    "support_templates": 1
+  },
+  {
+    "identity": "AWBR",
+    "support_templates": 1
+  },
+  {
+    "identity": "RIAR",
+    "support_templates": 1
+  },
+  {
+    "identity": "RID",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMDL",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMDR",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMDVR",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMED",
+    "support_templates": 1
+  },
+  {
+    "identity": "RMEV",
+    "support_templates": 1
+  },
+  {
+    "identity": "SMDVL",
+    "support_templates": 1
+  },
+  {
+    "identity": "SMDVR",
+    "support_templates": 1
+  }
+]

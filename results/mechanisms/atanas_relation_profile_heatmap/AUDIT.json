@@ -1,0 +1,72 @@
+{
+  "dataset": "Atanas/SF 000776",
+  "fold": 0,
+  "query_record": "2022-08-02-01",
+  "query_split": "held-out test",
+  "reference_record": "2022-06-14-13",
+  "reference_split": "train",
+  "pair_selection_rule": "Within fold 0, maximize the number of formal held-out query identities shared with one training reference record; break ties by query and reference record name.",
+  "pair_candidates_considered": 176,
+  "shared_formal_identities": 84,
+  "subset_selection_rule": "Choose the 18 shared identities nearest the centroid of all shared identities in the normalized 3D coordinates of the training reference.",
+  "identity_order_rule": "Ascending normalized reference x, then y, z, then identity name.",
+  "displayed_identities": [
+    "RMEL",
+    "CEPVR",
+    "OLQVL",
+    "CEPVL",
+    "SAAVR",
+    "RIAR",
+    "AVAR",
+    "SAAVL",
+    "URXL",
+    "CEPDL",
+    "SMDDR",
+    "RMEV",
+    "RIAL",
+    "AVER",
+    "AVAL",
+    "RMDL",
+    "AIBR",
+    "AVEL"
+  ],
+  "n_displayed_identities": 18,
+  "similarity_definition": "Pearson correlation between relation profiles aligned on common named anchors, excluding the query and candidate identities themselves.",
+  "geometry_relation": "negative Euclidean distance after per-recording normalization",
+  "activity_relation": "neuron-neuron activity correlation",
+  "min_common_anchors": 8,
+  "hard_definition": "Three spatially nearest wrong identities in the training reference, selected from the full shared-identity pool independently of relation similarity.",
+  "hard_k": 3,
+  "displayed_hard_cells": 38,
+  "rows_with_at_least_one_displayed_hard": 18,
+  "shared_color_scale": [
+    -1.0,
+    1.0
+  ],
+  "missing_color": "#BDBDBD",
+  "missing_cells": {
+    "geo": 0,
+    "act": 0
+  },
+  "panel_a_equivalence": {
+    "Geometry": {
+      "checked_cells": 56,
+      "maximum_absolute_error": 1.6653345369377348e-16
+    },
+    "Activity": {
+      "checked_cells": 56,
+      "maximum_absolute_error": 3.3306690738754696e-16
+    }
+  },
+  "fold_root": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_0",
+  "query_export": "/home/ubuntu/klb/nuclr/nuclr/NeuRID_reproducibility/results/visualization_export_atanas_seed42/neurid_query_neurons_atanas_cv5_seed42.csv",
+  "query_export_sha256": "11ea31c52bd72786692416aba668c549fd9ba024309e952c5d70bbcf8d05af74",
+  "geo_raw": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1/mechanism_population_relation/atanas_geo/panelA_same_hard_random_raw.csv",
+  "geo_raw_sha256": "62332ee7a4a40be0f03e8b069c18cfb6fd05901911cd2a6b644e5ecbda53175c",
+  "act_raw": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1/mechanism_population_relation/atanas_act/panelA_same_hard_random_raw.csv",
+  "act_raw_sha256": "08dc4d29d0856f0e2da358a364507e11209121ad20ce199b1a193b239903bbaa",
+  "query_record_source_npz": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-08-02-01.npz",
+  "reference_record_source_npz": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/full/train/2022-06-14-13.npz",
+  "query_fold_materialization": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_0/test/train__2022-08-02-01__17852669.npz",
+  "reference_fold_materialization": "/home/ubuntu/klb/nuclr/nuclr/Data/Atanas_SF_unified_000776/cv5_grouped_v1/fold_0/train/train__2022-06-14-13__ac0e5908.npz"
+}

@@ -1,0 +1,539 @@
+{
+  "protocol": "zebrafish_longitudinal_LOFO_fold1_train_val_only",
+  "matching_unit": "same fish, q/r windows separated by 60 minutes",
+  "train_fish": 6,
+  "validation_fish": "func_20150417",
+  "locked_test_fish_not_accessed": "func_20150410",
+  "activity_points": 128,
+  "minimum_shared": 20,
+  "splits": {
+    "train": {
+      "split": "train",
+      "records": 134,
+      "legal_pairs": 67,
+      "minimum_shared": 57,
+      "maximum_shared": 89,
+      "pairs": [
+        {
+          "left": "func_20161004__gap60m__p000__q.npz",
+          "right": "func_20161004__gap60m__p000__r.npz",
+          "pair_id": "func_20161004__gap60m__p000",
+          "shared": 64
+        },
+        {
+          "left": "func_20161004__gap60m__p001__q.npz",
+          "right": "func_20161004__gap60m__p001__r.npz",
+          "pair_id": "func_20161004__gap60m__p001",
+          "shared": 64
+        },
+        {
+          "left": "func_20161004__gap60m__p002__q.npz",
+          "right": "func_20161004__gap60m__p002__r.npz",
+          "pair_id": "func_20161004__gap60m__p002",
+          "shared": 64
+        },
+        {
+          "left": "func_20161004__gap60m__p003__q.npz",
+          "right": "func_20161004__gap60m__p003__r.npz",
+          "pair_id": "func_20161004__gap60m__p003",
+          "shared": 64
+        },
+        {
+          "left": "func_20161004__gap60m__p004__q.npz",
+          "right": "func_20161004__gap60m__p004__r.npz",
+          "pair_id": "func_20161004__gap60m__p004",
+          "shared": 64
+        },
+        {
+          "left": "func_20161004__gap60m__p005__q.npz",
+          "right": "func_20161004__gap60m__p005__r.npz",
+          "pair_id": "func_20161004__gap60m__p005",
+          "shared": 64
+        },
+        {
+          "left": "islet_20170202__gap60m__p000__q.npz",
+          "right": "islet_20170202__gap60m__p000__r.npz",
+          "pair_id": "islet_20170202__gap60m__p000",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p001__q.npz",
+          "right": "islet_20170202__gap60m__p001__r.npz",
+          "pair_id": "islet_20170202__gap60m__p001",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p002__q.npz",
+          "right": "islet_20170202__gap60m__p002__r.npz",
+          "pair_id": "islet_20170202__gap60m__p002",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p003__q.npz",
+          "right": "islet_20170202__gap60m__p003__r.npz",
+          "pair_id": "islet_20170202__gap60m__p003",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p004__q.npz",
+          "right": "islet_20170202__gap60m__p004__r.npz",
+          "pair_id": "islet_20170202__gap60m__p004",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p005__q.npz",
+          "right": "islet_20170202__gap60m__p005__r.npz",
+          "pair_id": "islet_20170202__gap60m__p005",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p006__q.npz",
+          "right": "islet_20170202__gap60m__p006__r.npz",
+          "pair_id": "islet_20170202__gap60m__p006",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p007__q.npz",
+          "right": "islet_20170202__gap60m__p007__r.npz",
+          "pair_id": "islet_20170202__gap60m__p007",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p008__q.npz",
+          "right": "islet_20170202__gap60m__p008__r.npz",
+          "pair_id": "islet_20170202__gap60m__p008",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p009__q.npz",
+          "right": "islet_20170202__gap60m__p009__r.npz",
+          "pair_id": "islet_20170202__gap60m__p009",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p010__q.npz",
+          "right": "islet_20170202__gap60m__p010__r.npz",
+          "pair_id": "islet_20170202__gap60m__p010",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p011__q.npz",
+          "right": "islet_20170202__gap60m__p011__r.npz",
+          "pair_id": "islet_20170202__gap60m__p011",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170202__gap60m__p012__q.npz",
+          "right": "islet_20170202__gap60m__p012__r.npz",
+          "pair_id": "islet_20170202__gap60m__p012",
+          "shared": 70
+        },
+        {
+          "left": "islet_20170216__gap60m__p000__q.npz",
+          "right": "islet_20170216__gap60m__p000__r.npz",
+          "pair_id": "islet_20170216__gap60m__p000",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p001__q.npz",
+          "right": "islet_20170216__gap60m__p001__r.npz",
+          "pair_id": "islet_20170216__gap60m__p001",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p002__q.npz",
+          "right": "islet_20170216__gap60m__p002__r.npz",
+          "pair_id": "islet_20170216__gap60m__p002",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p003__q.npz",
+          "right": "islet_20170216__gap60m__p003__r.npz",
+          "pair_id": "islet_20170216__gap60m__p003",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p004__q.npz",
+          "right": "islet_20170216__gap60m__p004__r.npz",
+          "pair_id": "islet_20170216__gap60m__p004",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p005__q.npz",
+          "right": "islet_20170216__gap60m__p005__r.npz",
+          "pair_id": "islet_20170216__gap60m__p005",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p006__q.npz",
+          "right": "islet_20170216__gap60m__p006__r.npz",
+          "pair_id": "islet_20170216__gap60m__p006",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p007__q.npz",
+          "right": "islet_20170216__gap60m__p007__r.npz",
+          "pair_id": "islet_20170216__gap60m__p007",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p008__q.npz",
+          "right": "islet_20170216__gap60m__p008__r.npz",
+          "pair_id": "islet_20170216__gap60m__p008",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p009__q.npz",
+          "right": "islet_20170216__gap60m__p009__r.npz",
+          "pair_id": "islet_20170216__gap60m__p009",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p010__q.npz",
+          "right": "islet_20170216__gap60m__p010__r.npz",
+          "pair_id": "islet_20170216__gap60m__p010",
+          "shared": 61
+        },
+        {
+          "left": "islet_20170216__gap60m__p011__q.npz",
+          "right": "islet_20170216__gap60m__p011__r.npz",
+          "pair_id": "islet_20170216__gap60m__p011",
+          "shared": 61
+        },
+        {
+          "left": "lineage_20160328__gap60m__p000__q.npz",
+          "right": "lineage_20160328__gap60m__p000__r.npz",
+          "pair_id": "lineage_20160328__gap60m__p000",
+          "shared": 57
+        },
+        {
+          "left": "lineage_20160328__gap60m__p001__q.npz",
+          "right": "lineage_20160328__gap60m__p001__r.npz",
+          "pair_id": "lineage_20160328__gap60m__p001",
+          "shared": 57
+        },
+        {
+          "left": "lineage_20160328__gap60m__p002__q.npz",
+          "right": "lineage_20160328__gap60m__p002__r.npz",
+          "pair_id": "lineage_20160328__gap60m__p002",
+          "shared": 57
+        },
+        {
+          "left": "lineage_20160328__gap60m__p003__q.npz",
+          "right": "lineage_20160328__gap60m__p003__r.npz",
+          "pair_id": "lineage_20160328__gap60m__p003",
+          "shared": 58
+        },
+        {
+          "left": "lineage_20160328__gap60m__p004__q.npz",
+          "right": "lineage_20160328__gap60m__p004__r.npz",
+          "pair_id": "lineage_20160328__gap60m__p004",
+          "shared": 59
+        },
+        {
+          "left": "lineage_20160328__gap60m__p005__q.npz",
+          "right": "lineage_20160328__gap60m__p005__r.npz",
+          "pair_id": "lineage_20160328__gap60m__p005",
+          "shared": 60
+        },
+        {
+          "left": "lineage_20160328__gap60m__p006__q.npz",
+          "right": "lineage_20160328__gap60m__p006__r.npz",
+          "pair_id": "lineage_20160328__gap60m__p006",
+          "shared": 60
+        },
+        {
+          "left": "lineage_20160328__gap60m__p007__q.npz",
+          "right": "lineage_20160328__gap60m__p007__r.npz",
+          "pair_id": "lineage_20160328__gap60m__p007",
+          "shared": 61
+        },
+        {
+          "left": "lineage_20170111__gap60m__p000__q.npz",
+          "right": "lineage_20170111__gap60m__p000__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p000",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p001__q.npz",
+          "right": "lineage_20170111__gap60m__p001__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p001",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p002__q.npz",
+          "right": "lineage_20170111__gap60m__p002__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p002",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p003__q.npz",
+          "right": "lineage_20170111__gap60m__p003__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p003",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p004__q.npz",
+          "right": "lineage_20170111__gap60m__p004__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p004",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p005__q.npz",
+          "right": "lineage_20170111__gap60m__p005__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p005",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p006__q.npz",
+          "right": "lineage_20170111__gap60m__p006__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p006",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p007__q.npz",
+          "right": "lineage_20170111__gap60m__p007__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p007",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p008__q.npz",
+          "right": "lineage_20170111__gap60m__p008__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p008",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p009__q.npz",
+          "right": "lineage_20170111__gap60m__p009__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p009",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p010__q.npz",
+          "right": "lineage_20170111__gap60m__p010__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p010",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p011__q.npz",
+          "right": "lineage_20170111__gap60m__p011__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p011",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p012__q.npz",
+          "right": "lineage_20170111__gap60m__p012__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p012",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170111__gap60m__p013__q.npz",
+          "right": "lineage_20170111__gap60m__p013__r.npz",
+          "pair_id": "lineage_20170111__gap60m__p013",
+          "shared": 89
+        },
+        {
+          "left": "lineage_20170925__gap60m__p000__q.npz",
+          "right": "lineage_20170925__gap60m__p000__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p000",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p001__q.npz",
+          "right": "lineage_20170925__gap60m__p001__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p001",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p002__q.npz",
+          "right": "lineage_20170925__gap60m__p002__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p002",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p003__q.npz",
+          "right": "lineage_20170925__gap60m__p003__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p003",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p004__q.npz",
+          "right": "lineage_20170925__gap60m__p004__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p004",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p005__q.npz",
+          "right": "lineage_20170925__gap60m__p005__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p005",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p006__q.npz",
+          "right": "lineage_20170925__gap60m__p006__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p006",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p007__q.npz",
+          "right": "lineage_20170925__gap60m__p007__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p007",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p008__q.npz",
+          "right": "lineage_20170925__gap60m__p008__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p008",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p009__q.npz",
+          "right": "lineage_20170925__gap60m__p009__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p009",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p010__q.npz",
+          "right": "lineage_20170925__gap60m__p010__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p010",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p011__q.npz",
+          "right": "lineage_20170925__gap60m__p011__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p011",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p012__q.npz",
+          "right": "lineage_20170925__gap60m__p012__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p012",
+          "shared": 78
+        },
+        {
+          "left": "lineage_20170925__gap60m__p013__q.npz",
+          "right": "lineage_20170925__gap60m__p013__r.npz",
+          "pair_id": "lineage_20170925__gap60m__p013",
+          "shared": 78
+        }
+      ]
+    },
+    "val": {
+      "split": "val",
+      "records": 36,
+      "legal_pairs": 18,
+      "minimum_shared": 106,
+      "maximum_shared": 113,
+      "pairs": [
+        {
+          "left": "func_20150417__gap60m__p000__q.npz",
+          "right": "func_20150417__gap60m__p000__r.npz",
+          "pair_id": "func_20150417__gap60m__p000",
+          "shared": 106
+        },
+        {
+          "left": "func_20150417__gap60m__p001__q.npz",
+          "right": "func_20150417__gap60m__p001__r.npz",
+          "pair_id": "func_20150417__gap60m__p001",
+          "shared": 107
+        },
+        {
+          "left": "func_20150417__gap60m__p002__q.npz",
+          "right": "func_20150417__gap60m__p002__r.npz",
+          "pair_id": "func_20150417__gap60m__p002",
+          "shared": 108
+        },
+        {
+          "left": "func_20150417__gap60m__p003__q.npz",
+          "right": "func_20150417__gap60m__p003__r.npz",
+          "pair_id": "func_20150417__gap60m__p003",
+          "shared": 108
+        },
+        {
+          "left": "func_20150417__gap60m__p004__q.npz",
+          "right": "func_20150417__gap60m__p004__r.npz",
+          "pair_id": "func_20150417__gap60m__p004",
+          "shared": 108
+        },
+        {
+          "left": "func_20150417__gap60m__p005__q.npz",
+          "right": "func_20150417__gap60m__p005__r.npz",
+          "pair_id": "func_20150417__gap60m__p005",
+          "shared": 108
+        },
+        {
+          "left": "func_20150417__gap60m__p006__q.npz",
+          "right": "func_20150417__gap60m__p006__r.npz",
+          "pair_id": "func_20150417__gap60m__p006",
+          "shared": 108
+        },
+        {
+          "left": "func_20150417__gap60m__p007__q.npz",
+          "right": "func_20150417__gap60m__p007__r.npz",
+          "pair_id": "func_20150417__gap60m__p007",
+          "shared": 108
+        },
+        {
+          "left": "func_20150417__gap60m__p008__q.npz",
+          "right": "func_20150417__gap60m__p008__r.npz",
+          "pair_id": "func_20150417__gap60m__p008",
+          "shared": 109
+        },
+        {
+          "left": "func_20150417__gap60m__p009__q.npz",
+          "right": "func_20150417__gap60m__p009__r.npz",
+          "pair_id": "func_20150417__gap60m__p009",
+          "shared": 110
+        },
+        {
+          "left": "func_20150417__gap60m__p010__q.npz",
+          "right": "func_20150417__gap60m__p010__r.npz",
+          "pair_id": "func_20150417__gap60m__p010",
+          "shared": 110
+        },
+        {
+          "left": "func_20150417__gap60m__p011__q.npz",
+          "right": "func_20150417__gap60m__p011__r.npz",
+          "pair_id": "func_20150417__gap60m__p011",
+          "shared": 111
+        },
+        {
+          "left": "func_20150417__gap60m__p012__q.npz",
+          "right": "func_20150417__gap60m__p012__r.npz",
+          "pair_id": "func_20150417__gap60m__p012",
+          "shared": 112
+        },
+        {
+          "left": "func_20150417__gap60m__p013__q.npz",
+          "right": "func_20150417__gap60m__p013__r.npz",
+          "pair_id": "func_20150417__gap60m__p013",
+          "shared": 112
+        },
+        {
+          "left": "func_20150417__gap60m__p014__q.npz",
+          "right": "func_20150417__gap60m__p014__r.npz",
+          "pair_id": "func_20150417__gap60m__p014",
+          "shared": 113
+        },
+        {
+          "left": "func_20150417__gap60m__p015__q.npz",
+          "right": "func_20150417__gap60m__p015__r.npz",
+          "pair_id": "func_20150417__gap60m__p015",
+          "shared": 113
+        },
+        {
+          "left": "func_20150417__gap60m__p016__q.npz",
+          "right": "func_20150417__gap60m__p016__r.npz",
+          "pair_id": "func_20150417__gap60m__p016",
+          "shared": 113
+        },
+        {
+          "left": "func_20150417__gap60m__p017__q.npz",
+          "right": "func_20150417__gap60m__p017__r.npz",
+          "pair_id": "func_20150417__gap60m__p017",
+          "shared": 113
+        }
+      ]
+    }
+  }
+}

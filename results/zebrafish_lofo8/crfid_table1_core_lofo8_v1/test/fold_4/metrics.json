@@ -1,0 +1,264 @@
+{
+  "deterministic": true,
+  "display_name": "CRF_ID\u2020",
+  "endpoint_truth_used_for_metrics_only": true,
+  "endpoint_truth_used_in_scoring": false,
+  "fold": 4,
+  "lock_sha256": "b69480310dea6d5990db27cf40b8a135e20f88adb293c8f11640bb5587368c90",
+  "matlab_outputs": {
+    "combined_sha256": "b34a60804ca2a69b53a3f68ff1de144b7d2708f7dfd19375bc5e73f1c2f6e9ea",
+    "files": [
+      {
+        "file": "pair_000_q_output.mat",
+        "sha256": "83859fc166d1ab989be421fe2030324fb720b86904f37d9d8685c5479ab72e89"
+      },
+      {
+        "file": "pair_000_r_output.mat",
+        "sha256": "ba1447827da1cf97b566ea90ce5825f947b7c8b4c6eb6be08ea9bcfaf81b212e"
+      },
+      {
+        "file": "pair_001_q_output.mat",
+        "sha256": "ea2539c6f7ed4a15639e0afd859c73c1eeb8bc5a92415ae0ca54fa4e265d370c"
+      },
+      {
+        "file": "pair_001_r_output.mat",
+        "sha256": "29f97462943242b9a4bf7dc9806a6fbaa94af8b61355ed9f1bbc9292bbdf21ce"
+      },
+      {
+        "file": "pair_002_q_output.mat",
+        "sha256": "a5248db92396397b9919587ea6fbd91ae87f502c04e6e10e69aacb809e5897ca"
+      },
+      {
+        "file": "pair_002_r_output.mat",
+        "sha256": "ba551cdf6b9349e9339631d9e1268e17c227ed738c93df0fe741ae0ddbfba3dc"
+      },
+      {
+        "file": "pair_003_q_output.mat",
+        "sha256": "9c5e17e1929bd2b2cbe3b4fed27cc7ced07886699304304ba61044bdf7048dcd"
+      },
+      {
+        "file": "pair_003_r_output.mat",
+        "sha256": "e61cdb7305a53bada2c60d9c2aadd7083540dbbc04aa9366331840f94ccfa666"
+      },
+      {
+        "file": "pair_004_q_output.mat",
+        "sha256": "3f0775c5d5e3029f44a65f484c16337537a91c4c72a3022a3d0491aa45c9eb7b"
+      },
+      {
+        "file": "pair_004_r_output.mat",
+        "sha256": "758ae59dd569a69b6dcbb87c91f705815af7a02e2752f35b0808229aa33732a2"
+      },
+      {
+        "file": "pair_005_q_output.mat",
+        "sha256": "0a654b3e5640a095440134982f15cc7b0c3c5a8e18b64d0754e23412ac831317"
+      },
+      {
+        "file": "pair_005_r_output.mat",
+        "sha256": "028d9d39683b8940c9a7cfcd53f6853dea0023c54c239ff2a9a0242cb894c61b"
+      },
+      {
+        "file": "pair_006_q_output.mat",
+        "sha256": "dc821e7ba7907b9b8d427835e3413b674deed1c9e7bb07dc591b6e8e0d94aa55"
+      },
+      {
+        "file": "pair_006_r_output.mat",
+        "sha256": "21ebe37fa75097265be07a48148a6c5dea0b783e718f6b8384f9ea50589f260e"
+      },
+      {
+        "file": "pair_007_q_output.mat",
+        "sha256": "c8ce3e30dc16f7933c8cb8797a0b96964d70b6c3323b51d7e2fa2024f9bfdff1"
+      },
+      {
+        "file": "pair_007_r_output.mat",
+        "sha256": "9b070aa4d89b48b71f711ba0b547cc804dea0af3aa6e71ca8b38022ac5d536e3"
+      },
+      {
+        "file": "pair_008_q_output.mat",
+        "sha256": "1a8aeac456f10342289c3a4bd226b711385c5ec89daeb43ba0186ef4ac8f0832"
+      },
+      {
+        "file": "pair_008_r_output.mat",
+        "sha256": "c15a6679607c62e25052f0bf6071d212a1af7edf9167a0894c45f7a61151f2c4"
+      },
+      {
+        "file": "pair_009_q_output.mat",
+        "sha256": "d23f85da6ed4be2fa54d31cf09ff57ca76c8c81acba1235bdeebe0664d85e27e"
+      },
+      {
+        "file": "pair_009_r_output.mat",
+        "sha256": "a68ef91569bf15529760db1d9c8589c6b4676f1e85159803ef52c4dee6f67461"
+      },
+      {
+        "file": "pair_010_q_output.mat",
+        "sha256": "90a9af59d31d71e691fd797920ff611f156faa1291d48d72ce945665a1ba6b47"
+      },
+      {
+        "file": "pair_010_r_output.mat",
+        "sha256": "161095bb431d646a9f013a56f505e713c9c86b1322a236cf9aba0070d5b6f358"
+      },
+      {
+        "file": "pair_011_q_output.mat",
+        "sha256": "df6424b7aab2c1d65baf9f90b59cef89fb7905dfe77c66a663773ab90e75fd92"
+      },
+      {
+        "file": "pair_011_r_output.mat",
+        "sha256": "8f2056ecfd0221d38925463d07f1391c208eab9a424f50191bc22b0e62e1bbba"
+      },
+      {
+        "file": "pair_012_q_output.mat",
+        "sha256": "9a55030642384cb8d721b693d1939138d9065482ed751af1972e07816c5180c0"
+      },
+      {
+        "file": "pair_012_r_output.mat",
+        "sha256": "7b6b380d1df775580648f16292c0d8cd4a50780407b28d6b0b7f5e782d6b18f9"
+      }
+    ]
+  },
+  "method": "crf_id_dagger",
+  "metrics": {
+    "hungarian": 0.9659340659340659,
+    "mrr": 0.9808791208791208,
+    "queries": 1820,
+    "top1": 0.9626373626373627,
+    "top5": 0.9994505494505495
+  },
+  "physical_pairs": 13,
+  "q_and_r_timepoints_used_in_atlas": false,
+  "reference_protocol": "same-fish leave-two-timepoints-out per physical q/r pair",
+  "schema": "zebrafish-crfid-table1-core-lofo8-v1",
+  "seed": null,
+  "selected_config": {
+    "duplicate_resolution": "official iterative clamping",
+    "graph": "fully_connected",
+    "inference": "UGM_Infer_Conditional+UGM_Infer_LBP",
+    "lambda_DV": 0.0,
+    "lambda_LR": 0.0,
+    "lambda_PA": 0.0,
+    "lambda_angle": 1.0,
+    "lambda_geo": 0.0,
+    "node_potential": "uniform",
+    "pair_score_fn": "B_q @ B_r.T"
+  },
+  "source_hashes": {
+    "evaluator": "86a1827b286117f4acf55f284ff102645208dd68ca779aac90bb63bcd6aba770",
+    "matlab_batch_driver": "cf1bc3076d14330ae0a3ad507751664ae6737a64d63fa120462cfb21931447a4",
+    "official_compare_hidden": "69b27b01ad3afb3c799381fa4a9c0c903c3504a57e1c18355fd837408ca61118",
+    "official_duplicate_labels": "b2d558de562b14d5d36f6ee4084aa86ee368bf05757a15ec12722a0e0a6ef89a",
+    "official_get_relative_angles": "c914624bc0bcf7c55befaa6a2f62d71ee41cc9c1c8389baf6e7635f700de5f4c",
+    "official_ugm_conditional": "17357b3ec041f19c9679afda071d2c1e3a0673918f3da7ce975b58f9b84489b4",
+    "official_ugm_lbp": "a402ca52262e7ff760404d6b35c0bdefb1458e9123efaf4814e6c71091ae1265",
+    "query_record_io": "749a4c8d9e32d9a664e86e5705d8394a7fb724a8d914c3423c357d3c1e5ee2b8",
+    "table1_matlab_adapter": "732f40637f94e0246f55b254b8c8e07c8d2e107a0d009dce39f2a3af426b9283"
+  },
+  "test_manifest": {
+    "entries": [
+      {
+        "name": "islet_20170202__gap60m__p000__q.npz",
+        "sha256": "b26476cb57d7e056543ddade9480a978c103fae6f286b4a99190474af4606c8d"
+      },
+      {
+        "name": "islet_20170202__gap60m__p000__r.npz",
+        "sha256": "156ae018ab2a237338cbb23f75839376ab14a4518a57a2d187e37cf1727af0bc"
+      },
+      {
+        "name": "islet_20170202__gap60m__p001__q.npz",
+        "sha256": "e44b4a39764b1de27f4a92f106875afb6ee09c2878c77b592381b5a7b6ffd5e5"
+      },
+      {
+        "name": "islet_20170202__gap60m__p001__r.npz",
+        "sha256": "90d9be02e852d6f84d51f79048497efb8b5b49964fb1d50815df4355374a82e3"
+      },
+      {
+        "name": "islet_20170202__gap60m__p002__q.npz",
+        "sha256": "1339812d5b3cb900b1b98ad68d0294ff51c6dbe43c6fe9881739d835c6607478"
+      },
+      {
+        "name": "islet_20170202__gap60m__p002__r.npz",
+        "sha256": "4acb12e33fd0694e47a6c56f66f0c27fa4df160b9cbbba27a3ac3e2c6a4e224a"
+      },
+      {
+        "name": "islet_20170202__gap60m__p003__q.npz",
+        "sha256": "c65c13b3c322d1b11e7fb43094df50e49a4c3ee2ecbdae73b5a2c74b748a4109"
+      },
+      {
+        "name": "islet_20170202__gap60m__p003__r.npz",
+        "sha256": "dc64988f12539af25264e0c6582d3070afb743efde8c74445fea68725457763d"
+      },
+      {
+        "name": "islet_20170202__gap60m__p004__q.npz",
+        "sha256": "fa4608cc8e773e94a0134e6896711d2a308170ca4fe09d851e67d49d29af9b53"
+      },
+      {
+        "name": "islet_20170202__gap60m__p004__r.npz",
+        "sha256": "94fa62ce40d0a861c3d6778c11aefdb93f20f678e29e587f54b964993f0c8413"
+      },
+      {
+        "name": "islet_20170202__gap60m__p005__q.npz",
+        "sha256": "c26cfb92b3582915db0cad298a01724f128dc4bea511a92a3654e60305f74e1a"
+      },
+      {
+        "name": "islet_20170202__gap60m__p005__r.npz",
+        "sha256": "3c4103049843256b448984b907303d7bb007dbb972f1c82022b906095271df8d"
+      },
+      {
+        "name": "islet_20170202__gap60m__p006__q.npz",
+        "sha256": "a98576d3d2bbacc3885c4f0b228c50a7c049a2a44d1f53dbc2bb1bb2cb1c37cb"
+      },
+      {
+        "name": "islet_20170202__gap60m__p006__r.npz",
+        "sha256": "bfd21e0bc79b08d1dbb5b20bd04db432b3921520434708aa1b995a170a7d06d8"
+      },
+      {
+        "name": "islet_20170202__gap60m__p007__q.npz",
+        "sha256": "4c35341d17e8bbd05b48fbf4430f0b256b7b079b786da393f9ecee6e202648ad"
+      },
+      {
+        "name": "islet_20170202__gap60m__p007__r.npz",
+        "sha256": "8a519143c32bc999125819e3e2c3bf79658d2bf6290100cf27e51b87d6f4cdff"
+      },
+      {
+        "name": "islet_20170202__gap60m__p008__q.npz",
+        "sha256": "dbe62aa2074e594debadd9b8ddc8d37c138bfe2bad91399b6e5854a2ea3ca255"
+      },
+      {
+        "name": "islet_20170202__gap60m__p008__r.npz",
+        "sha256": "c25c28f39b7fa2845e83399578a5a2897b3cd5d5fa2cba3e6b966052762c70d5"
+      },
+      {
+        "name": "islet_20170202__gap60m__p009__q.npz",
+        "sha256": "03f7cf95153eea6b762184580c910a90140f1b7e495678473931316ac703a275"
+      },
+      {
+        "name": "islet_20170202__gap60m__p009__r.npz",
+        "sha256": "24fc8402ee66267c10b7edca9af21f5f6ad0a923b5ae009b5c3b0abaecdd57ef"
+      },
+      {
+        "name": "islet_20170202__gap60m__p010__q.npz",
+        "sha256": "69bb91741265b4659c2b041e88570a05819c43c59ad49730e7e6d75702bed6fa"
+      },
+      {
+        "name": "islet_20170202__gap60m__p010__r.npz",
+        "sha256": "f69570fb435523f711ff3eacd5f2f434f4083517b27a3dbd2704f535284fa6e1"
+      },
+      {
+        "name": "islet_20170202__gap60m__p011__q.npz",
+        "sha256": "bd8ab7b95f12f44afe2f4b61d74eec9da4b9dd649d850fc695cf4940331db3fd"
+      },
+      {
+        "name": "islet_20170202__gap60m__p011__r.npz",
+        "sha256": "163e018b9db3a1040672acf90ab4527d356db60d4f92adf69848fcc81d3b0137"
+      },
+      {
+        "name": "islet_20170202__gap60m__p012__q.npz",
+        "sha256": "7bf7ba8cd6eaa31589275bd6aa038d2120e7cd7ae85ed2ea461cff4e96d595db"
+      },
+      {
+        "name": "islet_20170202__gap60m__p012__r.npz",
+        "sha256": "7b43480aa6f672f4ecd02b7364ae97bb7ec1f4b1a3d8c91287f3815b746fcb61"
+      }
+    ],
+    "sha256": "fa040cbcf5fd73948591f0d7b0cea45e8bcf02044dca062b95a0867b07a9243c",
+    "source_files": 26,
+    "split": "test"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "protocol": "rld_full_atlas_vs_single_train_geometry_medoid_test_cv5_seed42_v1",
+  "dataset": "rld",
+  "split": "test",
+  "fold": 3,
+  "seed": 42,
+  "checkpoint": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_dynamic_residual_atlas_cv5x3_v1/rld/fold3/seed42/static_atlas/anchored_pure.pt",
+  "checkpoint_epoch": 71,
+  "full_atlas_size": 145,
+  "train_animals": 57,
+  "evaluation_animals": 19,
+  "medoid": {
+    "index": 36,
+    "uid": "20230909-16-14-25",
+    "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230909-16-14-25__1ce065a5.npz",
+    "mean_distance": 0.04161495131501009,
+    "all_mean_distances": [
+      {
+        "index": 36,
+        "uid": "20230909-16-14-25",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230909-16-14-25__1ce065a5.npz",
+        "mean_distance": 0.04161495131501009
+      },
+      {
+        "index": 54,
+        "uid": "20240828-17-07-39",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/val__20240828-17-07-39__7d57ffb7.npz",
+        "mean_distance": 0.0419372645118089
+      },
+      {
+        "index": 17,
+        "uid": "20230317-12-51-42",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230317-12-51-42__ee7cf2ed.npz",
+        "mean_distance": 0.04298415372410808
+      },
+      {
+        "index": 4,
+        "uid": "20240902-20-11-40",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240902-20-11-40__8e027d87.npz",
+        "mean_distance": 0.043171732906155134
+      },
+      {
+        "index": 50,
+        "uid": "20240714-16-04-26",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240714-16-04-26__25b86368.npz",
+        "mean_distance": 0.04355345766323019
+      },
+      {
+        "index": 0,
+        "uid": "20240902-16-12-10",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240902-16-12-10__7647f7b0.npz",
+        "mean_distance": 0.043577403623968794
+      },
+      {
+        "index": 19,
+        "uid": "20230322-21-41-10",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230322-21-41-10__68e571c7.npz",
+        "mean_distance": 0.04366625335254644
+      },
+      {
+        "index": 35,
+        "uid": "20230909-15-40-07",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230909-15-40-07__b05ac7c6.npz",
+        "mean_distance": 0.044245078076520415
+      },
+      {
+        "index": 39,
+        "uid": "20240426-22-49-55",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240426-22-49-55__1da0e1a7.npz",
+        "mean_distance": 0.04433020227675566
+      },
+      {
+        "index": 5,
+        "uid": "20240904-16-13-38",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240904-16-13-38__f1471777.npz",
+        "mean_distance": 0.04441267183260193
+      },
+      {
+        "index": 13,
+        "uid": "20221106-21-00-09",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20221106-21-00-09__09a0b8d2.npz",
+        "mean_distance": 0.04529399377444294
+      },
+      {
+        "index": 34,
+        "uid": "20230904-15-09-05",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230904-15-09-05__8abbb802.npz",
+        "mean_distance": 0.04584934499458731
+      },
+      {
+        "index": 2,
+        "uid": "20240902-18-09-07",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240902-18-09-07__95b23b60.npz",
+        "mean_distance": 0.045908559724779106
+      },
+      {
+        "index": 43,
+        "uid": "20240526-18-19-39",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240526-18-19-39__90a95eba.npz",
+        "mean_distance": 0.045983350138213905
+      },
+      {
+        "index": 53,
+        "uid": "20240724-17-40-58",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/val__20240724-17-40-58__3876e251.npz",
+        "mean_distance": 0.046076724798832465
+      },
+      {
+        "index": 55,
+        "uid": "20240829-13-00-31",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/val__20240829-13-00-31__f5f26b28.npz",
+        "mean_distance": 0.046233006660219546
+      },
+      {
+        "index": 7,
+        "uid": "20240917-20-18-26",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240917-20-18-26__86af46bb.npz",
+        "mean_distance": 0.04658777700591809
+      },
+      {
+        "index": 1,
+        "uid": "20240902-17-33-24",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240902-17-33-24__9b2f6f70.npz",
+        "mean_distance": 0.046622373112972966
+      },
+      {
+        "index": 45,
+        "uid": "20240626-12-35-05",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240626-12-35-05__211655c5.npz",
+        "mean_distance": 0.04670646589896583
+      },
+      {
+        "index": 23,
+        "uid": "20230506-12-56-00",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230506-12-56-00__22f6ec67.npz",
+        "mean_distance": 0.04685720477222192
+      },
+      {
+        "index": 40,
+        "uid": "20240426-23-12-40",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240426-23-12-40__eca116e3.npz",
+        "mean_distance": 0.04709368242632279
+      },
+      {
+        "index": 51,
+        "uid": "20240724-15-07-00",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/val__20240724-15-07-00__3bfc59cb.npz",
+        "mean_distance": 0.04729820616255822
+      },
+      {
+        "index": 30,
+        "uid": "20230903-16-32-28",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230903-16-32-28__f139478f.npz",
+        "mean_distance": 0.047490772015236035
+      },
+      {
+        "index": 20,
+        "uid": "20230322-22-12-12",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230322-22-12-12__6383e838.npz",
+        "mean_distance": 0.047813698285996874
+      },
+      {
+        "index": 6,
+        "uid": "20240904-17-29-27",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240904-17-29-27__89ba9935.npz",
+        "mean_distance": 0.0480157678267196
+      },
+      {
+        "index": 11,
+        "uid": "20220426-11-26-14",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20220426-11-26-14__566b98d7.npz",
+        "mean_distance": 0.048037277387788395
+      },
+      {
+        "index": 38,
+        "uid": "20230921-17-15-33",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230921-17-15-33__7e38f7b1.npz",
+        "mean_distance": 0.048147373360845236
+      },
+      {
+        "index": 21,
+        "uid": "20230322-22-43-03",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230322-22-43-03__263d116b.npz",
+        "mean_distance": 0.04818725995520536
+      },
+      {
+        "index": 37,
+        "uid": "20230909-16-48-09",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230909-16-48-09__8ffb3e48.npz",
+        "mean_distance": 0.048612569612226465
+      },
+      {
+        "index": 9,
+        "uid": "20240917-22-37-14",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240917-22-37-14__8e0dd17d.npz",
+        "mean_distance": 0.048770814513238
+      },
+      {
+        "index": 18,
+        "uid": "20230322-18-57-04",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230322-18-57-04__9b40dc1c.npz",
+        "mean_distance": 0.04885880552134098
+      },
+      {
+        "index": 41,
+        "uid": "20240430-20-31-05",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240430-20-31-05__b180fb93.npz",
+        "mean_distance": 0.04912368816213203
+      },
+      {
+        "index": 16,
+        "uid": "20230317-12-27-51",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230317-12-27-51__d9cfb273.npz",
+        "mean_distance": 0.04926241693424901
+      },
+      {
+        "index": 27,
+        "uid": "20230604-15-50-12",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230604-15-50-12__2e46de74.npz",
+        "mean_distance": 0.04930935587844831
+      },
+      {
+        "index": 28,
+        "uid": "20230604-16-22-56",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230604-16-22-56__21786b5b.npz",
+        "mean_distance": 0.04941799154801728
+      },
+      {
+        "index": 8,
+        "uid": "20240917-21-32-57",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240917-21-32-57__79d5d848.npz",
+        "mean_distance": 0.04953557778474278
+      },
+      {
+        "index": 32,
+        "uid": "20230903-19-07-30",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230903-19-07-30__a37ab37d.npz",
+        "mean_distance": 0.04994194672759476
+      },
+      {
+        "index": 3,
+        "uid": "20240902-18-51-10",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/test__20240902-18-51-10__65122831.npz",
+        "mean_distance": 0.049999224990598494
+      },
+      {
+        "index": 31,
+        "uid": "20230903-17-18-45",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230903-17-18-45__a6adcba4.npz",
+        "mean_distance": 0.050146279606148876
+      },
+      {
+        "index": 42,
+        "uid": "20240430-21-04-44",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240430-21-04-44__9ef731e3.npz",
+        "mean_distance": 0.05028984384870123
+      },
+      {
+        "index": 25,
+        "uid": "20230510-12-53-34",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230510-12-53-34__0508114e.npz",
+        "mean_distance": 0.05034984507494445
+      },
+      {
+        "index": 47,
+        "uid": "20240626-14-30-55",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240626-14-30-55__cb271409.npz",
+        "mean_distance": 0.050417097710753624
+      },
+      {
+        "index": 56,
+        "uid": "20240829-13-39-15",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/val__20240829-13-39-15__269f754b.npz",
+        "mean_distance": 0.05071272785912579
+      },
+      {
+        "index": 14,
+        "uid": "20221106-21-23-19",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20221106-21-23-19__5c1ba7b0.npz",
+        "mean_distance": 0.05084172452413234
+      },
+      {
+        "index": 29,
+        "uid": "20230604-17-09-01",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230604-17-09-01__463c457e.npz",
+        "mean_distance": 0.05169936607179331
+      },
+      {
+        "index": 49,
+        "uid": "20240629-17-55-55",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240629-17-55-55__51d00abe.npz",
+        "mean_distance": 0.052411766082995144
+      },
+      {
+        "index": 15,
+        "uid": "20221215-22-02-55",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20221215-22-02-55__13b8ecc9.npz",
+        "mean_distance": 0.052504527897327784
+      },
+      {
+        "index": 24,
+        "uid": "20230506-15-33-51",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230506-15-33-51__8ad093bc.npz",
+        "mean_distance": 0.05297463337023659
+      },
+      {
+        "index": 26,
+        "uid": "20230510-16-36-46",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230510-16-36-46__27b2b5a4.npz",
+        "mean_distance": 0.053359520583722404
+      },
+      {
+        "index": 22,
+        "uid": "20230502-20-41-23",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230502-20-41-23__2165ec1f.npz",
+        "mean_distance": 0.05373153997974911
+      },
+      {
+        "index": 48,
+        "uid": "20240629-14-14-08",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240629-14-14-08__4e49fe0f.npz",
+        "mean_distance": 0.0574251092686367
+      },
+      {
+        "index": 33,
+        "uid": "20230904-14-30-52",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20230904-14-30-52__53fee4fe.npz",
+        "mean_distance": 0.058911402629921505
+      },
+      {
+        "index": 46,
+        "uid": "20240626-13-22-25",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240626-13-22-25__0b6ce516.npz",
+        "mean_distance": 0.059754895577193635
+      },
+      {
+        "index": 44,
+        "uid": "20240526-19-18-14",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20240526-19-18-14__28f19b5b.npz",
+        "mean_distance": 0.06060075914243856
+      },
+      {
+        "index": 52,
+        "uid": "20240724-16-28-26",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/val__20240724-16-28-26__6d81a78c.npz",
+        "mean_distance": 0.061141676375235286
+      },
+      {
+        "index": 10,
+        "uid": "20220316-15-34-20",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20220316-15-34-20__04bb7805.npz",
+        "mean_distance": 0.06783450042250687
+      },
+      {
+        "index": 12,
+        "uid": "20220426-11-32-18",
+        "source_path": "/home/ubuntu/klb/nuclr/nuclr/Data/Dunn_001623/cv5_grouped_v1/fold_3/train/train__20220426-11-32-18__486b09fd.npz",
+        "mean_distance": 0.06926337388433819
+      }
+    ],
+    "selection_split": "outer_train_only",
+    "uses_validation": false,
+    "uses_test": false,
+    "uses_identity_labels": false,
+    "geometry_normalization": "per-animal median centering, then divide XYZ by 200",
+    "distance": "symmetric mean nearest-neighbour Euclidean distance",
+    "criterion": "minimum mean distance to all other outer-training animals",
+    "tie_break": "lexicographic worm UID, then original train-list index"
+  },
+  "medoid_identity_candidates": 6,
+  "query_universe": "unique supervised test identities present in the Full train-only atlas; GT absent from medoid counts as incorrect, never dropped",
+  "full_baseline_guard": {
+    "saved_metrics": "/home/ubuntu/klb/nuclr/nuclr/runs/mprt_v1_1_component_ablation_cv5x3_v1/rld/fold3/seed42/metrics/test/full.json",
+    "status": "NUMERICALLY_EXACT_REPRODUCTION"
+  },
+  "full_atlas": {
+    "queries": 296,
+    "covered_queries": 296,
+    "candidate_coverage": 1.0,
+    "top1_real": 0.6351351351351351,
+    "top1_covered": 0.6351351351351351,
+    "top5_real": 0.8074324324324325,
+    "mrr_real": 0.7113373252972762,
+    "hungarian_queries": 296,
+    "hungarian_accuracy": 0.6216216216216216
+  },
+  "single_medoid": {
+    "queries": 296,
+    "covered_queries": 84,
+    "candidate_coverage": 0.28378378378378377,
+    "top1_real": 0.26013513513513514,
+    "top1_covered": 0.9166666666666666,
+    "top5_real": 0.28378378378378377,
+    "mrr_real": 0.2713963963963964,
+    "hungarian_queries": 296,
+    "hungarian_accuracy": 0.20608108108108109
+  },
+  "full_minus_medoid": {
+    "top1_real": 0.37499999999999994,
+    "top5_real": 0.5236486486486487,
+    "mrr_real": 0.4399409289008798,
+    "hungarian_accuracy": 0.4155405405405405
+  }
+}

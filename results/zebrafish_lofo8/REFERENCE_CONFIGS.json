@@ -1,0 +1,507 @@
+{
+  "schema": "neurid-zebrafish-lofo8-reference-config-v1",
+  "dataset": "Zebrafish-Longitudinal",
+  "fold_protocol": "LOFO8; fold k tests fish k, validates on the next fish cyclically, and trains on the remaining six fish",
+  "gap_minutes": 60,
+  "shared_table1_core_reference_manifest": "results/zebrafish_lofo8/table1_core_reference_manifest.csv",
+  "shared_reference_policy": "for each physical q/r pair, expose all remaining unique timepoints of the same fish; q and r are excluded; unchanged pairwise baselines may ignore these extra records but receive the same manifest",
+  "fold_order": [
+    "func_20150410",
+    "func_20150417",
+    "func_20161004",
+    "islet_20170202",
+    "islet_20170216",
+    "lineage_20160328",
+    "lineage_20170111",
+    "lineage_20170925"
+  ],
+  "candidate_order": {
+    "physical_pair_order": "pair_id ascending (UTF-8/Python lexicographic order)",
+    "side_order": [
+      "q_to_r",
+      "r_to_q"
+    ],
+    "node_order": "original NPZ row order after finite-XYZ and valid_xyz_mask filtering; no label-based candidate filtering",
+    "rank": "1 + number of candidates with score strictly greater than the target score (optimistic score-tie rank)",
+    "prediction_tie_break": "first maximum in the declared candidate order",
+    "top5": "rank <= min(5, candidate_count), except GeoTransformer uses its native exposed-candidate top-k",
+    "hungarian": "one assignment on the physical q/r score matrix unless the native method explicitly scores directions independently",
+    "audit_file": "test_pairs.csv",
+    "per_query_binding": "candidate_order_sha256 plus candidate index"
+  },
+  "aggregation": {
+    "unit": "held-out fish",
+    "fold_weighting": "unweighted",
+    "standard_deviation": "sample SD across 8 fold values",
+    "ddof": 1,
+    "random_seed_replicates": 1
+  },
+  "methods": {
+    "cpd": {
+      "display_name": "CPD",
+      "seed": null,
+      "deterministic": true,
+      "reference": {
+        "implementation": "pycpd.DeformableRegistration"
+      },
+      "config": {
+        "type": "deformable",
+        "beta": 2.0,
+        "alpha": 3.0,
+        "max_iterations": 100,
+        "tolerance": 1e-05,
+        "xyz_preprocessing": "mprt_net.relations.standardize_xyz",
+        "directions": "independent q->r and r->q",
+        "hungarian_score": "mean of bidirectional negative squared distances"
+      }
+    },
+    "fdnc": {
+      "display_name": "fDNC",
+      "seed": 42,
+      "deterministic": false,
+      "reference": {
+        "repository": "https://github.com/XinweiYu/fDNC_Neuron_ID.git",
+        "commit": "cbd2b1b2e623c22fe1921562afed1967fe58e139"
+      },
+      "config": {
+        "initialization": "random from scratch",
+        "hidden_dim": 128,
+        "transformer_layers": 6,
+        "normalization": "median_rms",
+        "checkpoint_selection": "validation ranking Top-1",
+        "best_epoch_by_fold": [
+          1,
+          26,
+          44,
+          32,
+          2,
+          2,
+          32,
+          4
+        ]
+      }
+    },
+    "nuclr": {
+      "display_name": "NuCLR",
+      "seed": 42,
+      "deterministic": false,
+      "reference": {
+        "repository": "https://github.com/nerdslab/NuCLR.git",
+        "commit": "0fa409b304147ace00507063d44f03155691af62"
+      },
+      "config": {
+        "model": "NuclrV2gaCa2",
+        "embedding": "backbone output; projector disabled",
+        "similarity": "cosine",
+        "checkpoint_selection": "validation SSL loss",
+        "best_epoch_by_fold": [
+          25,
+          24,
+          15,
+          23,
+          26,
+          29,
+          27,
+          11
+        ]
+      }
+    },
+    "geotransformer": {
+      "display_name": "GeoTransformer",
+      "seed": 42,
+      "deterministic": false,
+      "reference": {
+        "repository": "https://github.com/qinzheng93/GeoTransformer.git",
+        "commit": "e7a135af4c318ff3b8d7f6c963df094d7e4ea540"
+      },
+      "config": {
+        "GT_PATCH_K": 32,
+        "GT_COARSE_K": 64,
+        "checkpoint_selection": "highest validation Top-1; earlier checkpoint on exact tie",
+        "checkpoint_iteration_by_fold": [
+          1500,
+          500,
+          5500,
+          11000,
+          2000,
+          1000,
+          1000,
+          6000
+        ]
+      }
+    },
+    "ngm_v2": {
+      "display_name": "NGM-v2",
+      "seed": 42,
+      "deterministic": false,
+      "reference": {
+        "repository": "https://github.com/Thinklab-SJTU/ThinkMatch.git",
+        "commit": "9f669cb22916f3e06c214f058daa5ac349bd7e15"
+      },
+      "config": {
+        "input": "XYZ geometry only",
+        "feature_dim": 64,
+        "graph": "symmetric 3D Delaunay",
+        "epochs": 20,
+        "pairs_per_epoch": 200,
+        "learning_rate": 0.002,
+        "checkpoint_selection": "highest validation Top-1; earlier epoch on exact tie",
+        "best_epoch_by_fold": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          3,
+          1,
+          2
+        ]
+      }
+    },
+    "vanilla_fgw": {
+      "display_name": "Vanilla FGW",
+      "seed": null,
+      "deterministic": true,
+      "reference": {
+        "implementation": "POT official fused_gromov_wasserstein"
+      },
+      "config": {
+        "modality_label": "GG",
+        "input": "XYZ geometry only",
+        "matching_cost_inputs": [
+          "xyz"
+        ],
+        "feature_cost": "normalized squared Euclidean distance between query and reference XYZ coordinates",
+        "structure_cost": "normalized within-population Euclidean distance computed from XYZ coordinates",
+        "activity_used": false,
+        "activity_weight": 0.0,
+        "alpha_semantics": "POT FGW structural-geometry weight; both mixed terms use XYZ geometry, so alpha is not an activity weight",
+        "normalization": "train-only per-axis z-score",
+        "alpha_candidates_in_order": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0
+        ],
+        "selection": "validation Top-1, then MRR, Hungarian, distance to 0.5, alpha",
+        "selected_alpha_by_fold": [
+          0.0,
+          0.5,
+          0.75,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.25
+        ]
+      }
+    },
+    "fugw_ga_official": {
+      "display_name": "FUGW (G+A; official)",
+      "seed": null,
+      "deterministic": true,
+      "reference": {
+        "repository": "https://github.com/alexisthual/fugw.git",
+        "package": "fugw==0.1.1",
+        "implementation": "fugw.mappings.FUGW dense solver"
+      },
+      "config": {
+        "modality_label": "G+A",
+        "matching_cost_inputs": [
+          "xyz",
+          "activity_raw"
+        ],
+        "linear_feature_term": "pair-normalized squared Euclidean distance between train-z-scored XYZ",
+        "gw_structure_term": "within-side normalized RMS distance between archived 128-point activity traces",
+        "alpha_semantics": "alpha * activity GW + (1-alpha) * geometry Wasserstein",
+        "alpha_candidates_in_order": [
+          0.25,
+          0.5,
+          0.75
+        ],
+        "rho_candidates_in_order": [
+          0.1,
+          1.0,
+          10.0
+        ],
+        "eps_candidates_in_order": [
+          0.01
+        ],
+        "selection": "validation Top-1, then MRR, Hungarian, declared grid order",
+        "selected_by_fold": [
+          {
+            "fold": 1,
+            "alpha": 0.25,
+            "rho": 0.1,
+            "eps": 0.01
+          },
+          {
+            "fold": 2,
+            "alpha": 0.25,
+            "rho": 10.0,
+            "eps": 0.01
+          },
+          {
+            "fold": 3,
+            "alpha": 0.25,
+            "rho": 0.1,
+            "eps": 0.01
+          },
+          {
+            "fold": 4,
+            "alpha": 0.25,
+            "rho": 10.0,
+            "eps": 0.01
+          },
+          {
+            "fold": 5,
+            "alpha": 0.25,
+            "rho": 0.1,
+            "eps": 0.01
+          },
+          {
+            "fold": 6,
+            "alpha": 0.25,
+            "rho": 0.1,
+            "eps": 0.01
+          },
+          {
+            "fold": 7,
+            "alpha": 0.25,
+            "rho": 0.1,
+            "eps": 0.01
+          },
+          {
+            "fold": 8,
+            "alpha": 0.25,
+            "rho": 1.0,
+            "eps": 0.01
+          }
+        ],
+        "solver": "mm",
+        "reg_mode": "joint",
+        "divergence": "kl",
+        "nits_bcd": 10,
+        "nits_uot": 1000,
+        "evaluator": "scripts/zebrafish/evaluate_zebrafish_fugw_ga_fold.py",
+        "auditor": "scripts/zebrafish/audit_zebrafish_fugw_ga_lofo8.py"
+      }
+    },
+    "statatlas": {
+      "display_name": "StatAtlas",
+      "seed": null,
+      "deterministic": true,
+      "reference": {
+        "repository": "https://github.com/amin-nejat/stat-atlas.git",
+        "commit": "29652ab83b6ff870b71a5969e25328fa8e488c90",
+        "table1_adapter": "baselines/official/adapters/stat_atlas/evaluate_statatlas_official.py",
+        "table1_adapter_sha256": "9821dc56877ba24d819e1305056bc3f5732b697e212e261f6818c1a86bb09d13"
+      },
+      "config": {
+        "modality_label": "GG",
+        "matching_cost_inputs": [
+          "xyz"
+        ],
+        "activity_used": false,
+        "activity_weight": 0.0,
+        "reference_protocol": "same-fish leave-two-timepoints-out for each physical q/r pair",
+        "stable_tracking_id": "original_row",
+        "reference_condition_change": "uses multiple allowed same-fish timepoints; both endpoints are excluded; all compared methods must receive the same reference information",
+        "table1_core": {
+          "atlas": "train_official_atlas",
+          "registration": "label_free_align",
+          "posterior": "atlas_identity_posterior",
+          "score_fn": "P_q @ P_r.T",
+          "hungarian": "linear_sum_assignment(-(P_q @ P_r.T))"
+        },
+        "atlas_hyperparameters": {
+          "min_counts": 2,
+          "epsilon_pos": 1000.0,
+          "atlas_iterations": 10,
+          "min_train_labels_per_worm": 4,
+          "icp_iterations": 25
+        },
+        "candidate_order": [
+          {
+            "icp_trim": 0.6,
+            "covariance_ridge_fraction": 1e-08
+          },
+          {
+            "icp_trim": 0.6,
+            "covariance_ridge_fraction": 1e-06
+          },
+          {
+            "icp_trim": 0.6,
+            "covariance_ridge_fraction": 0.0001
+          },
+          {
+            "icp_trim": 0.8,
+            "covariance_ridge_fraction": 1e-08
+          },
+          {
+            "icp_trim": 0.8,
+            "covariance_ridge_fraction": 1e-06
+          },
+          {
+            "icp_trim": 0.8,
+            "covariance_ridge_fraction": 0.0001
+          },
+          {
+            "icp_trim": 1.0,
+            "covariance_ridge_fraction": 1e-08
+          },
+          {
+            "icp_trim": 1.0,
+            "covariance_ridge_fraction": 1e-06
+          },
+          {
+            "icp_trim": 1.0,
+            "covariance_ridge_fraction": 0.0001
+          }
+        ],
+        "selection": "validation Top-1, MRR, Hungarian, Top-5; earlier candidate wins exact ties",
+        "selected_by_fold": [
+          {
+            "fold": 1,
+            "icp_trim": 1.0,
+            "covariance_ridge_fraction": 0.0001
+          },
+          {
+            "fold": 2,
+            "icp_trim": 0.6,
+            "covariance_ridge_fraction": 1e-08
+          },
+          {
+            "fold": 3,
+            "icp_trim": 1.0,
+            "covariance_ridge_fraction": 0.0001
+          },
+          {
+            "fold": 4,
+            "icp_trim": 0.8,
+            "covariance_ridge_fraction": 1e-08
+          },
+          {
+            "fold": 5,
+            "icp_trim": 1.0,
+            "covariance_ridge_fraction": 1e-08
+          },
+          {
+            "fold": 6,
+            "icp_trim": 1.0,
+            "covariance_ridge_fraction": 1e-08
+          },
+          {
+            "fold": 7,
+            "icp_trim": 0.8,
+            "covariance_ridge_fraction": 1e-08
+          },
+          {
+            "fold": 8,
+            "icp_trim": 0.6,
+            "covariance_ridge_fraction": 1e-08
+          }
+        ],
+        "evaluator": "scripts/zebrafish/evaluate_zebrafish_statatlas_table1_lofo8.py",
+        "evaluator_sha256": "8284f4f0705cb68fab003826c117e3710179b74b63c24b436d495220c20dd450",
+        "result_archive": "results/zebrafish_lofo8/statatlas_table1_core_lofo8_v1"
+      }
+    },
+    "crf_id_dagger": {
+      "display_name": "CRF_ID†",
+      "seed": null,
+      "deterministic": true,
+      "reference": {
+        "repository": "https://github.com/shiveshc/CRF_Cell_ID.git",
+        "commit": "1166cdb8b26ca1851011112b620e41b044012518"
+      },
+      "config": {
+        "modality_label": "GG",
+        "matching_cost_inputs": [
+          "xyz"
+        ],
+        "activity_used": false,
+        "activity_weight": 0.0,
+        "reference_protocol": "same-fish leave-two-timepoints-out for each physical q/r pair",
+        "stable_tracking_id": "original_row",
+        "reference_condition_change": "uses multiple allowed same-fish timepoints; both endpoints are excluded; all compared methods must receive the same reference information",
+        "table1_core": {
+          "graph": "fully connected",
+          "node_potential": "uniform",
+          "lambda_PA": 0.0,
+          "lambda_LR": 0.0,
+          "lambda_DV": 0.0,
+          "lambda_geo": 0.0,
+          "lambda_angle": 1.0,
+          "inference": "UGM_Infer_Conditional + UGM_Infer_LBP",
+          "duplicate_resolution": "official iterative clamping",
+          "belief_output": "conserved_nodeBel"
+        },
+        "pair_score_fn": "B_q @ B_r.T",
+        "hungarian": "linear_sum_assignment(-(B_q @ B_r.T))",
+        "candidate_order": [
+          {
+            "graph": "fully_connected",
+            "node_potential": "uniform",
+            "lambda_PA": 0.0,
+            "lambda_LR": 0.0,
+            "lambda_DV": 0.0,
+            "lambda_geo": 0.0,
+            "lambda_angle": 1.0,
+            "inference": "UGM_Infer_Conditional+UGM_Infer_LBP",
+            "duplicate_resolution": "official iterative clamping",
+            "pair_score_fn": "B_q @ B_r.T"
+          }
+        ],
+        "selection": "singleton Table 1 configuration validated and locked before test",
+        "selected_candidate_index_by_fold": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "matlab_adapter": "scripts/zebrafish/matlab/annotation_CRF_atanas.m",
+        "matlab_adapter_sha256": "732f40637f94e0246f55b254b8c8e07c8d2e107a0d009dce39f2a3af426b9283",
+        "evaluator": "scripts/zebrafish/evaluate_zebrafish_crfid_table1_lofo8.py",
+        "evaluator_sha256": "86a1827b286117f4acf55f284ff102645208dd68ca779aac90bb63bcd6aba770",
+        "result_archive": "results/zebrafish_lofo8/crfid_table1_core_lofo8_v1"
+      }
+    },
+    "ours": {
+      "display_name": "Ours",
+      "seed": 42,
+      "deterministic": false,
+      "reference": {
+        "implementation": "neurid/mprt_net/model.py"
+      },
+      "config": {
+        "variant": "full",
+        "hidden_dim": 96,
+        "edge_dim": 48,
+        "relation_dim": 8,
+        "activity_channels": 32,
+        "population_layers": 2,
+        "transport_steps": 2,
+        "sinkhorn_iterations": 20,
+        "structural_weight": 1.0,
+        "hard_knn_k": 16,
+        "checkpoint_selection": "validation Top-1",
+        "checkpoint_epoch_by_fold": [
+          74,
+          48,
+          71,
+          49,
+          21,
+          53,
+          54,
+          41
+        ]
+      }
+    }
+  }
+}

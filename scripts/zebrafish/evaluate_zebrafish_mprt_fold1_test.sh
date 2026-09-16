@@ -26,7 +26,7 @@ cd "$repo_root"
   --checkpoint "$checkpoint" \
   --min-shared 20
 
-cd "$repo_root/neurid"
+cd "$repo_root/mprt_net_v1_1"
 
 CUDA_VISIBLE_DEVICES="$gpu" "$python_bin" -m mprt_net.self_check \
   --dataset-root "$data_root" \

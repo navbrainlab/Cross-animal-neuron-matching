@@ -47,6 +47,34 @@ def test_controlled_relation_variants_are_finite(values):
     assert torch.isfinite(output.plan).all()
 
 
+def test_no_population_keeps_relation_transport_active():
+    """The (0, 1) ablation removes population attention, not relation transport."""
+
+    torch.manual_seed(102)
+    config = ModelConfig(
+        hidden_dim=32,
+        edge_dim=16,
+        relation_dim=4,
+        activity_channels=8,
+        num_heads=4,
+        population_layers=2,
+        transport_steps=2,
+        sinkhorn_iterations=20,
+        dropout=0.0,
+        use_population_encoder=False,
+        use_relation_transport=True,
+    )
+    model = MPRTNet(config)
+    output = model(sample("no-pop-a"), sample("no-pop-b", 8))
+
+    assert len(model.encoder.population.layers) == 0
+    assert output.encoding_a.relations.shape == (7, 7, config.relation_dim)
+    assert output.encoding_b.relations.shape == (8, 8, config.relation_dim)
+    assert len(output.relation_costs) == config.transport_steps
+    assert all(torch.isfinite(cost).all() for cost in output.relation_costs)
+    assert not torch.equal(output.final_logits, output.unary_logits)
+
+
 def test_invalid_relation_graph_mode_is_rejected():
     with pytest.raises(ValueError):
         ModelConfig(relation_graph_mode="not-a-mode")

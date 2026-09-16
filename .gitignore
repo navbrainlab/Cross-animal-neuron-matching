@@ -164,6 +164,15 @@ tensorboard/
 data/processed
 data/raw
 
+# The three prepared manuscript datasets are intentional release assets.
+!data/
+!data/**/*.npz
+
+# Published numeric artifacts and score matrices are intentional release assets.
+!results/**/*.npy
+!results/**/*.npz
+!results/**/*.mat
+
 notebooks_untracked/
 tmp/
 checkpoints/

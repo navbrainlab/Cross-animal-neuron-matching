@@ -1,0 +1,20 @@
+{
+  "scope": "all 80 distractor condition cells across five folds",
+  "checked_condition_recordings": 1520,
+  "known_query_instances": 23312,
+  "synthetic_unknown_query_instances": 40515,
+  "context_only_node_instances_excluded": 120832,
+  "validation_known_query_instances": 21840,
+  "validation_synthetic_unknown_query_instances": 40515,
+  "checks": {
+    "known_is_unique_supervised_and_present_in_fold_reference": true,
+    "synthetic_unknown_has_outlier_prefix_and_is_absent_from_reference": true,
+    "query_rows_exactly_equal_known_union_synthetic_unknown": true,
+    "native_unlabeled_nodes_are_excluded_from_metric_targets": true,
+    "saved_cell_identity_matches_source_node": true,
+    "validation_and_test_recording_uids_are_disjoint": true,
+    "validation_recall_constraints_and_saved_metrics_recompute": true,
+    "one_calibrated_threshold_is_frozen_across_test_conditions": true
+  },
+  "status": "PASS"
+}

@@ -7,6 +7,15 @@ reported uncertainty is the sample SD (`ddof=1`) of the eight fold values.
 
 ## Files
 
+- `ABLATION_RESULTS_ZH.md`: Chinese summary of the four NeuRID ablations
+  (`full`, `no_transport`, `geometry_only`, and `activity_only`), including
+  paired Top-1 effects, confidence intervals, and limitations. The exact
+  train/evaluate launcher is
+  `../../scripts/zebrafish/run_zebrafish_mprt_lofo8_seed42.sh`; its aggregation
+  code is `../../scripts/zebrafish/aggregate_zebrafish_mprt_lofo8_seed42.py`.
+- `all_run_metrics.csv` and `zebrafish_mprt_lofo8_seed42_summary.{json,md}`:
+  machine-readable fold-level ablation results and their held-out-fish
+  aggregate.
 - `reported_fold_results.csv`: the authoritative 96 method × fold table. The
   StatAtlas and CRF_ID† rows come from the new Table-1-core locked reruns; all
   other rows retain their prior locked-test records.
